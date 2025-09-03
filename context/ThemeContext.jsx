@@ -26,14 +26,16 @@ export const ThemeContextProvider = ({ children }) => {
   const theme = createTheme({
     palette: {
       mode,
-      primary: { main: '#1976d2' },
-      secondary: { main: '#009688' },
+      primary: { main: '#1976d2' }, // Google blue
       background: {
-        default: mode === 'dark' ? '#121212' : '#fff',
-        paper: mode === 'dark' ? '#1e1e1e' : '#fff',
+        default: mode === 'dark' ? '#000' : '#fff',
+        paper: mode === 'dark' ? '#222' : '#fff',
       },
       text: {
-        primary: mode === 'dark' ? '#e0e0e0' : '#212121',
+        primary: mode === 'dark' ? '#fff' : '#000',
+      },
+      action: {
+        active: '#1976d2', // Default color for icons/buttons
       },
     },
     typography: {
