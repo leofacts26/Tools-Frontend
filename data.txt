@@ -10,7 +10,7 @@ Icons: MUI Icons
 
 State Management: Context API (theme, language, auth if needed)
 
-i18n: next-intl (or next-i18next) for multi-language routing
+i18n: next-intl (or next-intl) for multi-language routing
 
 Dark/Light Mode: Built-in with MUI theme + Context toggle
 
@@ -64,6 +64,11 @@ Ads/Monetization: Google AdSense integration + Affiliate links
 │── /lib
 │   │── seo-config.js
 │   │── utils.js
+│── /messages
+│   │── en.json
+│   │── fr.json
+│   │── de.json
+│   │── hi.json
 │── /public
 │   │── /images
 │   │── /icons

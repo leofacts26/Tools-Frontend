@@ -1,3 +1,13 @@
+"use client"
+import {useTranslations} from 'next-intl';
+
+
 export default function Page() {
-  return <h1>Homepage per locale</h1>
+  const t = useTranslations();
+  return (
+    <>
+    <h1>{t('siteTitle')}</h1>;
+    <h2>zldhkfkljhb</h2>
+    </>
+  )
 }

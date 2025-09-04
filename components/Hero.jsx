@@ -1,23 +1,31 @@
+"use client";
+
 import { useGlobalContext } from '@/context/context';
 import phoneImg from '../images/phone.svg';
-console.log(phoneImg, "phoneImg");
+import React from 'react';
+import { ThemeContext } from '../context/ThemeContext';
+import { useTranslations } from 'next-intl';
+
 
 const Hero = () => {
   const { closeSubmenu } = useGlobalContext();
+  const theme = React.useContext(ThemeContext);
+  const t = useTranslations();
+
   return (
-    <section className='hero' onMouseOver={closeSubmenu}>
+    <section className={`hero ${theme.mode === 'dark' ? 'hero-dark' : 'hero-light'}`} onMouseOver={closeSubmenu}>
       <div className='hero-center'>
         <article className='hero-info'>
           <h1>
-            Free Online Tools for Everyone,  <br />
-            Everywhere
+            {t('siteTitle')}
           </h1>
           <p>
-            Millions of companies of all sizes—from startups to Fortune 500s—use
-            Stripe’s software and APIs to accept payments, send payouts, and
-            manage their businesses online.
+            {t('tagline')}
           </p>
-          <button className='btn'>Start now</button>
+          <button className='btn'>startNow</button>
+          <button className='btn theme-toggle-btn' onClick={theme.toggleTheme} style={{ marginLeft: '1rem' }}>
+            {theme.mode === 'dark' ? '🌞 Light Mode' : '🌙 Dark Mode'}
+          </button>
         </article>
         <article className='hero-images'>
           <img src={phoneImg.src} className='phone-img' alt='phone' />

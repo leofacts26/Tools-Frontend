@@ -1,3 +1,4 @@
+"use client"
 import sublinks from '@/lib/data';
 import React, { useState, useContext } from 'react';
 const AppContext = React.createContext();

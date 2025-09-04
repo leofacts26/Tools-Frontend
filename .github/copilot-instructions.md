@@ -10,7 +10,7 @@ Copilot should follow these instructions to keep the project consistent, scalabl
 - UI: **Material UI (MUI)**
 - Icons: **MUI Icons**
 - State Management: **Context API** (theme, language, global state)
-- Internationalization: `next-intl` or `next-i18next` (multi-language)
+- Internationalization: `next-intl` or `next-intl` (multi-language)
 - Dark/Light Mode: **MUI ThemeProvider + Context**
 - Fonts: **Roboto** (default) or **Poppins/Inter** (Google Fonts)
 - SEO: Next.js Metadata API + sitemap + robots.txt
