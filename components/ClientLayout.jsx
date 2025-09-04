@@ -23,7 +23,7 @@ export default function ClientLayout({children, initialTheme}) {
           >
             <Navbar />
             <Sidebar />
-            <Hero />
+            {/* <Hero /> */}
             <Submenu />
             <main style={{flex: 1}}>{children}</main>
             <Footer />
