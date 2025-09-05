@@ -7,13 +7,12 @@ import Typography from "@mui/material/Typography";
 const CssTextField = styled(TextField)({
   "& .MuiInputBase-root": {
     borderRadius: "4px",
-    backgroundColor: "var(--clr-primary-4)",
-    color: "var(--clr-white)",
+    backgroundColor: "var(--clr-primary-7)",
+    color: "var(--clr-primary-1)",
     fontWeight: 600,
-    fontSize: "18px",
+    fontSize: "14px",
     paddingRight: "8px",
-    height: "40px",
-    width: "130px",
+    height: "30px",
   },
   "& .MuiOutlinedInput-notchedOutline": {
     border: "none",
@@ -29,27 +28,33 @@ const CssTextField = styled(TextField)({
     WebkitAppearance: "none",
     margin: 0,
   },
-  /* optional: style adornment here if you prefer central place */
-  "& .MuiInputAdornment-root": {
-    // color and fontWeight here will apply if you don't use Typography/disableTypography
-    // color: "#009B72",
-    // fontWeight: 600,
-  },
 });
 
-const CustomInput = ({ amount, setAmount }) => {
+const CustomInput = ({
+  value,
+  onChange,
+  startAdornment,
+  endAdornment,
+  width = 100,
+}) => {
   return (
     <CssTextField
       type="number"
-      value={amount}
-      onChange={(e) => setAmount(Number(e.target.value))}
+      value={value}
+      onChange={(e) => onChange(Number(e.target.value))}
       InputProps={{
-        startAdornment: (
+        startAdornment: startAdornment ? (
           <InputAdornment position="start">
-            <Typography sx={{ color: "var(--clr-white)", fontWeight: 600 }}>₹</Typography>
+            <Typography sx={{ color: "var(--clr-primary-1)", fontWeight: 600 }}>{startAdornment}</Typography>
           </InputAdornment>
-        ),
+        ) : null,
+        endAdornment: endAdornment ? (
+          <InputAdornment position="end">
+            <Typography sx={{ color: "var(--clr-primary-1)", fontWeight: 600 }}>{endAdornment}</Typography>
+          </InputAdornment>
+        ) : null,
       }}
+      sx={{ width }}
     />
   );
 };

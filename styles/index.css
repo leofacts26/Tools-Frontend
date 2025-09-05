@@ -524,3 +524,9 @@ p {
   color: var(--fg-muted);
   margin-right: 1rem;
 }
+
+.recharts-wrapper:focus,
+.recharts-surface:focus,
+.recharts-pie:focus {
+  outline: none !important;
+}

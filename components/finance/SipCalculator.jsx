@@ -22,6 +22,7 @@ import {
   Legend,
 } from "recharts";
 import CustomInput from "../common/CustomInput";
+import CustomSlider from "../common/CustomSlider";
 
 const COLORS = ["#9e9e9e", "#2196f3"]; // Gray for invested, Blue for returns
 
@@ -62,28 +63,34 @@ export default function SipCalculator() {
     new Intl.NumberFormat("en-IN", { style: "currency", currency: "INR", maximumFractionDigits: 0 }).format(val);
 
   return (
-    <Box>
-      <Paper elevation={0} sx={{ borderRadius: 2, p: { xs: 2, md: 4 }, boxShadow: "0 2px 8px rgba(0,0,0,0.05)" }}>
+    <>
+      <Paper elevation={0} sx={{ border: "none", borderRadius: 2, p: { xs: 2, md: 4 }, boxShadow: "0 2px 8px rgba(0,0,0,0.05)" }}>
         {/* Tabs */}
-        <Tabs value={tab} onChange={(e, v) => setTab(v)} centered textColor="primary" indicatorColor="primary">
+        <Tabs value={tab} onChange={(e, v) => setTab(v)} textColor="primary" indicatorColor="primary">
           <Tab label="SIP" sx={{ textTransform: "none", fontWeight: 600 }} />
           <Tab label="Lumpsum" sx={{ textTransform: "none", fontWeight: 600 }} />
         </Tabs>
 
         <Divider sx={{ my: 3 }} />
 
+
         <Box sx={{ flexGrow: 1 }}>
           <Grid container spacing={2}>
 
-            <Grid size xs={12} md={6}>
+            <Grid size xs={12} md={12}>
               <Box sx={{ mb: 4 }}>
-                <Stack direction="row" alignItems="center" spacing={2}>
+                <Stack direction="row" alignItems="center" justifyContent="space-between" spacing={2}>
                   <Typography variant="subtitle1" gutterBottom>
                     {tab === 0 ? "Monthly investment" : "Lumpsum investment"}
                   </Typography>
-                  <CustomInput amount={amount} setAmount={setAmount} />
+                  <CustomInput
+                    value={amount}
+                    onChange={setAmount}
+                    startAdornment="₹"
+                  />
                 </Stack>
-                <Slider
+                {/* Amount Slider */}
+                <CustomSlider
                   value={amount}
                   min={1000}
                   max={tab === 0 ? 200000 : 10000000}
@@ -94,18 +101,19 @@ export default function SipCalculator() {
               </Box>
 
               <Box sx={{ mb: 4 }}>
-                <Typography variant="subtitle1" gutterBottom>
-                  Expected return rate (p.a)
-                </Typography>
-                <TextField
-                  fullWidth
-                  type="number"
-                  value={annualReturn}
-                  onChange={(e) => setAnnualReturn(Number(e.target.value))}
-                  InputProps={{ endAdornment: <InputAdornment position="end">%</InputAdornment> }}
-                />
-                
-                <Slider
+                <Stack direction="row" alignItems="center" justifyContent="space-between" spacing={2}>
+                  <Typography variant="subtitle1" gutterBottom>
+                    Expected return rate (p.a)
+                  </Typography>
+                  <CustomInput
+                    value={annualReturn}
+                    onChange={setAnnualReturn}
+                    endAdornment="%"
+                  />
+                </Stack>
+
+                {/* Return Rate Slider */}
+                <CustomSlider
                   value={annualReturn}
                   min={1}
                   max={30}
@@ -116,17 +124,19 @@ export default function SipCalculator() {
               </Box>
 
               <Box>
-                <Typography variant="subtitle1" gutterBottom>
-                  Time period
-                </Typography>
-                <TextField
-                  fullWidth
-                  type="number"
-                  value={years}
-                  onChange={(e) => setYears(Number(e.target.value))}
-                  InputProps={{ endAdornment: <InputAdornment position="end">Yr</InputAdornment> }}
-                />
-                <Slider
+                <Stack direction="row" alignItems="center" justifyContent="space-between" spacing={2}>
+                  <Typography variant="subtitle1" gutterBottom>
+                    Time period
+                  </Typography>
+                  <CustomInput
+                    value={years}
+                    onChange={setYears}
+                    endAdornment="Yr"
+                  />
+                </Stack>
+
+                {/* Years Slider */}
+                <CustomSlider
                   value={years}
                   min={1}
                   max={40}
@@ -136,52 +146,55 @@ export default function SipCalculator() {
                 />
               </Box>
 
-              <Box sx={{ mb: 3 }}>
-                <Stack direction="row" alignItems="center" spacing={2}>
-                  <Typography variant="body2" color="text.secondary">
-                    Invested amount
-                  </Typography>
-                  <Typography variant="h6" sx={{ fontWeight: 600 }}>
-                    {currency(totalInvested)}
-                  </Typography>
-                </Stack>
-              </Box>
+              <Box sx={{ mt: 4 }}>
+                <Box sx={{ mb: 1 }}>
+                  <Stack direction="row" alignItems="center" justifyContent="space-between" spacing={2}>
+                    <Typography variant="body2" color="text.secondary">
+                      Invested amount
+                    </Typography>
+                    <Typography variant="h6" sx={{ fontWeight: 600, fontSize: "16px" }}>
+                      {currency(totalInvested)}
+                    </Typography>
+                  </Stack>
+                </Box>
 
-              <Box sx={{ mb: 3 }}>
-                <Stack direction="row" alignItems="center" spacing={2}>
-                  <Typography variant="body2" color="text.secondary">
-                    Est. returns
-                  </Typography>
-                  <Typography variant="h6" color="primary" sx={{ fontWeight: 600 }}>
-                    {currency(gain)}
-                  </Typography>
-                </Stack>
-              </Box>
+                <Box sx={{ mb: 1 }}>
+                  <Stack direction="row" alignItems="center" justifyContent="space-between" spacing={2}>
+                    <Typography variant="body2" color="text.secondary">
+                      Est. returns
+                    </Typography>
+                    <Typography variant="h6" color="primary" sx={{ fontWeight: 600, fontSize: "16px" }}>
+                      {currency(gain)}
+                    </Typography>
+                  </Stack>
+                </Box>
 
-              <Box sx={{ mb: 4 }}>
-                <Stack direction="row" alignItems="center" spacing={2}>
-                  <Typography variant="body2" color="text.secondary">
-                    Total value
-                  </Typography>
-                  <Typography variant="h6" sx={{ fontWeight: 600 }}>
-                    {currency(maturity)}
-                  </Typography>
-                </Stack>
+                <Box sx={{ mb: 1 }}>
+                  <Stack direction="row" alignItems="center" justifyContent="space-between" spacing={2}>
+                    <Typography variant="body2" color="text.secondary">
+                      Total value
+                    </Typography>
+                    <Typography variant="h6" sx={{ fontWeight: 600, fontSize: "16px" }}>
+                      {currency(maturity)}
+                    </Typography>
+                  </Stack>
+                </Box>
               </Box>
 
             </Grid>
 
             {/* Right side results */}
-            <Grid size xs={12} md={6}>
-              <Box sx={{ width: "400px", height: 350 }}>
+            <Grid size xs={12} md={12}>
+              <Box sx={{ width: "450px", height: 350 }}>
                 <ResponsiveContainer>
-                  <PieChart>
+                  <PieChart tabIndex={-1}>
                     <Pie
                       data={pieData}
                       dataKey="value"
                       nameKey="name"
                       innerRadius={70}
                       outerRadius={100}
+                      stroke="none"
                       label={({ name, percent }) => `${name} ${(percent * 100).toFixed(0)}%`}
                     >
                       {pieData.map((entry, index) => (
@@ -199,7 +212,11 @@ export default function SipCalculator() {
         </Box>
 
 
+
+
+
+
       </Paper>
-    </Box>
+    </>
   );
 }
