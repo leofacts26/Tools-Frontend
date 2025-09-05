@@ -1,11 +1,52 @@
 "use client";
 import React, { useState, useRef, useEffect } from "react";
 import { useGlobalContext } from "@/context/context";
-import { usePathname } from "next/navigation";
+import { useParams, usePathname } from "next/navigation";
+import { useLocale } from "next-intl";
+import Link from "next/link";
+
+
+const titleToSlug = (title) =>
+  String(title || "")
+    .trim()
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/^-+|-+$/g, "");
+
 
 const Submenu = () => {
   const { isSubmenuOpen, page, location, closeSubmenu } = useGlobalContext();
   const pathname = usePathname();
+  const params = useParams();
+  const localeFromHook = useLocale();
+
+  // Normalise locale
+  const locale =
+    typeof localeFromHook === "string"
+      ? localeFromHook
+      : (params && params.locale) || "en";
+
+  // 1) try category from params
+  const categoryFromParams = params?.category ?? null;
+
+  // 2) try to derive from the submenu page title (e.g. "Finance" -> "finance")
+  const categoryFromPage = page && page.page ? titleToSlug(page.page) : null;
+
+  // 3) fallback to parsing pathname
+  const categoryFromPath = (() => {
+    if (!pathname) return null;
+    const parts = pathname.split("/").filter(Boolean);
+    // expectation: ['en', 'tools', 'finance', 'sip-calculator']
+    const toolsIndex = parts.indexOf("tools");
+    if (toolsIndex >= 0 && parts.length > toolsIndex + 1) {
+      return parts[toolsIndex + 1];
+    }
+    return null;
+  })();
+
+  // priority: params -> page-derived -> path -> unknown
+  const category =
+    categoryFromParams || categoryFromPage || categoryFromPath || "unknown";
 
   const current = page ?? { page: "", links: [] };
   const title = current.page ?? "";
@@ -77,6 +118,14 @@ const Submenu = () => {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [pathname]);
 
+  // ✅ build href
+   const buildHref = (url) => {
+    if (!url) return `/${locale}/tools/${category}`;
+    if (url.startsWith("/")) return url;
+    return `/${locale}/tools/${category}/${url}`;
+  };
+
+
   return (
     <aside
       className={`${isSubmenuOpen ? "submenu show" : "submenu"}`}
@@ -91,11 +140,12 @@ const Submenu = () => {
         <div className={`submenu-center ${columns}`}>
           {links.map((link, i) => {
             const { url, icon, label } = link;
+            const href = buildHref(url);
             return (
-              <a key={i} href={url} role="menuitem" tabIndex={isSubmenuOpen ? 0 : -1}>
+              <Link key={i} href={href} role="menuitem" tabIndex={isSubmenuOpen ? 0 : -1}>
                 {icon}
                 {label}
-              </a>
+              </Link>
             );
           })}
         </div>

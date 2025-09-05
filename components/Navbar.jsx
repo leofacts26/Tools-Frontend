@@ -18,7 +18,7 @@ const SUPPORTED_LOCALES = ["en", "fr", "hi", "de"]; // keep in sync with middlew
 
 export default function Navbar() {
   const { openSidebar, openSubmenu, closeSubmenu } = useGlobalContext();
-  const theme = React.useContext(ThemeContext);
+  const { mode, toggleTheme } = React.useContext(ThemeContext);
 
   const router = useRouter();
   const pathname = usePathname();
@@ -54,7 +54,7 @@ export default function Navbar() {
 
   return (
     <nav
-      className={`nav ${theme.mode === "dark" ? "nav-dark" : "nav-light"}`}
+      className="nav"
       onMouseOver={handleSubmenu}
     >
       <div className="nav-center">
@@ -77,8 +77,8 @@ export default function Navbar() {
 
         <div>
           {mounted && (
-            <IconButton sx={{ ml: 2 }} onClick={theme.toggleTheme} color="inherit" aria-label="Toggle theme">
-              {theme.mode === "dark" ? <Brightness7Icon /> : <Brightness4Icon />}
+            <IconButton sx={{ ml: 2 }}  onClick={toggleTheme} color="inherit" aria-label="Toggle theme">
+              {mode === "dark" ? <Brightness7Icon /> : <Brightness4Icon />}
             </IconButton>
           )}
 

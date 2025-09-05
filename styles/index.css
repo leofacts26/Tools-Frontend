@@ -1,94 +1,174 @@
+/****************************************
+ * 1) Brand palette (kept from your file)
+ ****************************************/
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* font-family: "Roboto",sans-serif;
+font-family: "Inter",sans-serif; */
+
 :root {
-  /* dark shades of primary color*/
   --clr-primary-1: hsl(205, 86%, 17%);
   --clr-primary-2: hsl(205, 77%, 27%);
   --clr-primary-3: hsl(205, 72%, 37%);
   --clr-primary-4: hsl(205, 63%, 48%);
-  /* primary/main color */
   --clr-primary-5: hsl(205, 78%, 60%);
-  /* lighter shades of primary color */
   --clr-primary-6: hsl(205, 89%, 70%);
   --clr-primary-7: hsl(205, 90%, 76%);
   --clr-primary-8: hsl(205, 86%, 81%);
   --clr-primary-9: hsl(205, 90%, 88%);
   --clr-primary-10: hsl(205, 100%, 96%);
-  /* darkest grey - used for headings */
+
+  --clr-white: #fff;
+  --clr-black: #111;
+
+  /* legacy greys (kept for reference if needed) */
   --clr-grey-1: hsl(209, 61%, 16%);
   --clr-grey-2: hsl(211, 39%, 23%);
   --clr-grey-3: hsl(209, 34%, 30%);
   --clr-grey-4: hsl(209, 28%, 39%);
-  /* grey used for paragraphs */
   --clr-grey-5: hsl(210, 22%, 49%);
   --clr-grey-6: hsl(209, 23%, 60%);
   --clr-grey-7: hsl(211, 27%, 70%);
   --clr-grey-8: hsl(210, 31%, 80%);
   --clr-grey-9: hsl(212, 33%, 89%);
   --clr-grey-10: hsl(210, 36%, 96%);
-  --clr-white: #fff;
-  --clr-red-dark: hsl(360, 67%, 44%);
-  --clr-red-light: hsl(360, 71%, 66%);
-  --clr-green-dark: hsl(125, 67%, 44%);
-  --clr-green-light: hsl(125, 71%, 66%);
-  --clr-black: #222;
-  --transition: all 0.3s linear;
-  --spacing: 0.1rem;
-  --radius: 0.25rem;
-  --light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-  --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+
+  --transition: all .2s ease;
+  --spacing: .02em;
+  --radius: .25rem;
+  --light-shadow: 0 5px 15px rgba(0, 0, 0, .1);
+  --dark-shadow: 0 5px 15px rgba(0, 0, 0, .2);
   --max-width: 1170px;
   --fixed-width: 620px;
-  --background: #ffffff;
-  --foreground: #171717;
+
+  /****************************************
+   * 2) Semantic tokens (LIGHT defaults)
+   ****************************************/
+  --bg: #ffffff;
+  /* page background */
+  --fg: #111111;
+  /* main text color */
+  --fg-muted: #555555;
+  /* secondary text */
+  --card: #ffffff;
+  /* surfaces/cards/menus */
+  --border: #e8e8e8;
+  /* borders/dividers */
+  --shadow: 0 6px 24px rgba(0, 0, 0, .08);
+
+  --link: hsl(205, 78%, 45%);
+  --link-hover: hsl(205, 78%, 35%);
+  --primary: var(--clr-primary-5);
+  --primary-hover: var(--clr-primary-4);
+
+  /* navbar specific (keep your look: white links) */
+  --nav-fg: var(--fg);
+
+  /* font-family  */
+  --primary-font: "Roboto", sans-serif;
+  --secondary-font: "Inter", sans-serif;
+
+  /* font size  */
+  --font-size-12: 0.75rem;
+  --font-size-14: 0.875rem;
+  --font-size-16: 1rem;
+  --font-size-18: 1.125rem;
+  --font-size-20: 1.25rem;
+  --font-size-22: 1.375rem;
+  --font-size-24: 1.5rem;
+  --font-size-28: 1.75rem;
+  --font-size-32: 2rem;
+  --font-size-40: 2.5rem;
+  --font-size-44: 2.75rem;
+  --font-size-56: 3.5rem;
+  --font-weight-regular: 435;
+  --font-weight-medium: 535;
+  --font-weight-bold: 660;
+
+  color-scheme: light dark;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+/****************************************
+ * 3) Dark mode overrides
+ ****************************************/
+html.dark {
+  --bg: #0b0b0b;
+  --fg: #f4f4f4;
+  --fg-muted: #c7c7c7;
+  --card: #141414;
+  --border: #2a2a2a;
+  --shadow: 0 8px 30px rgba(0, 0, 0, .45);
+
+  --link: hsl(205, 78%, 60%);
+  --link-hover: hsl(205, 78%, 70%);
+
+  /* navbar texts still white in dark (same as your original) */
+  --nav-fg: #ffffff;
 }
 
-
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-}
-
-
+/****************************************
+ * 4) Reset & base
+ ****************************************/
 *,
-::after,
-::before {
-  margin: 0;
-  padding: 0;
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
+html,
 body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--fg);
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
     Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  background: var(--clr-grey-10);
-  color: var(--clr-grey-1);
   line-height: 1.5;
-  font-size: 0.875rem;
+  font-size: 0.95rem;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+img,
+svg,
+video,
+canvas {
+  display: block;
+  max-width: 100%;
 }
 
 ul {
-  list-style-type: none;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 a {
   text-decoration: none;
+  color: var(--link);
 }
 
+a:hover {
+  color: var(--link-hover);
+}
+
+/****************************************
+ * 5) Typography (inherit color to auto-switch)
+ ****************************************/
 h1,
 h2,
 h3,
-h4 {
+h4,
+h5,
+h6 {
+  color: inherit;
   letter-spacing: var(--spacing);
   text-transform: capitalize;
   line-height: 1.25;
-  margin-bottom: 0.75rem;
+  margin: 0 0 .75rem;
 }
 
 h1 {
@@ -104,12 +184,12 @@ h3 {
 }
 
 h4 {
-  font-size: 0.875rem;
+  font-size: .875rem;
 }
 
 p {
-  margin-bottom: 1.25rem;
-  color: var(--clr-grey-5);
+  margin: 0 0 1.25rem;
+  color: inherit;
 }
 
 @media screen and (min-width: 800px) {
@@ -141,9 +221,19 @@ p {
   }
 }
 
-/*  global classes */
+/* globals  */
+.finance-heading {
+  margin-top: 31px;
+  line-height: 2.4375rem;
+  font-weight: var(--font-weight-bold);
+  font-size: var(--font-size-28);
+  font-family: var(--primary-font);
+  color: var(--fg-muted);
+}
 
-/* section */
+/****************************************
+ * 6) Section container
+ ****************************************/
 .section {
   width: 90vw;
   margin: 0 auto;
@@ -156,11 +246,9 @@ p {
   }
 }
 
-/*
-=============== 
-Stripe Styles
-===============
-*/
+/****************************************
+ * 7) Navbar (keep your functionality & look)
+ ****************************************/
 .nav {
   height: 5rem;
   display: flex;
@@ -169,6 +257,10 @@ Stripe Styles
   background: transparent;
   position: relative;
   z-index: 1;
+  color: var(--nav-fg);
+  background-color: var(--bg);
+  box-shadow: var(--shadow);
+  /* nav text stays white, as before */
 }
 
 .nav-center {
@@ -182,21 +274,6 @@ Stripe Styles
   align-items: center;
 }
 
-.btn {
-  font-size: 1rem;
-  padding: 0.25rem 0.75rem;
-  border-radius: var(--radius);
-  border-color: transparent;
-  color: white;
-  background: var(--clr-black);
-  cursor: pointer;
-  transition: var(--transition);
-}
-
-.btn:hover {
-  background: var(--clr-grey-5);
-}
-
 .nav-links {
   display: none;
 }
@@ -205,30 +282,6 @@ Stripe Styles
   display: none;
 }
 
-.hero::before {
-  content: '';
-  position: absolute;
-  width: 100%;
-  height: 65%;
-  top: 0;
-  left: 0;
-  background: url(../images/hero.svg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  z-index: -1;
-}
-
-.hero {
-  position: relative;
-  min-height: 100vh;
-  margin-top: -5rem;
-  display: grid;
-  grid-template-columns: 1fr;
-  justify-items: center;
-}
-
-
-/* nav media query */
 @media screen and (min-width: 800px) {
   .nav-center {
     display: grid;
@@ -245,13 +298,11 @@ Stripe Styles
   }
 
   .nav-links {
-    display: block;
-    justify-self: center;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-self: center;
+    grid-template-columns: repeat(4, 1fr);
     text-align: center;
     height: 100%;
-    display: grid;
     align-items: center;
   }
 
@@ -264,14 +315,61 @@ Stripe Styles
     background: transparent;
     border-color: transparent;
     font-size: 1.1rem;
-    color: white;
+    color: var(--nav-fg);
+    /* <- keep white like your original */
     text-transform: capitalize;
     letter-spacing: 1px;
     width: 10rem;
+    cursor: pointer;
   }
 }
 
-/* hero media query */
+/****************************************
+ * 8) Buttons
+ ****************************************/
+.btn {
+  font-size: 1rem;
+  padding: .25rem .75rem;
+  border-radius: var(--radius);
+  border: 1px solid transparent;
+  color: #fff;
+  background: var(--primary);
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.btn:hover {
+  background: var(--clr-primary-4);
+}
+
+/****************************************
+ * 9) Hero
+ ****************************************/
+.hero {
+  position: relative;
+  min-height: 100vh;
+  margin-top: -5rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  background: var(--bg);
+  color: inherit;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 65%;
+  top: 0;
+  left: 0;
+  background: url(../images/hero.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: -1;
+  opacity: .25;
+}
+
 @media screen and (min-width: 800px) {
   .hero::before {
     background-size: contain;
@@ -279,9 +377,9 @@ Stripe Styles
   }
 }
 
-
-
-/* sidebar */
+/****************************************
+ * 10) Sidebar
+ ****************************************/
 .sidebar-wrapper {
   position: fixed;
   top: 0;
@@ -294,7 +392,7 @@ Stripe Styles
   z-index: -1;
   transition: var(--transition);
   transform: scale(0);
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, .5);
 }
 
 .sidebar-wrapper.show {
@@ -307,9 +405,11 @@ Stripe Styles
   width: 90vw;
   height: 95vh;
   max-width: var(--fixed-width);
-  background: var(--clr-white);
+  background: var(--card);
+  color: var(--fg);
   border-radius: var(--radius);
   box-shadow: var(--dark-shadow);
+  border: 1px solid var(--border);
   position: relative;
   padding: 4rem 2rem;
 }
@@ -318,7 +418,7 @@ Stripe Styles
   font-size: 2rem;
   background: transparent;
   border-color: transparent;
-  color: var(--clr-grey-5);
+  color: var(--fg-muted);
   position: absolute;
   top: 1rem;
   right: 1rem;
@@ -332,19 +432,18 @@ Stripe Styles
 .sidebar-sublinks {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  row-gap: 0.25rem;
+  row-gap: .25rem;
 }
 
 .sidebar-sublinks a {
-  display: block;
-  color: var(--clr-grey-1);
-  text-transform: capitalize;
   display: flex;
   align-items: center;
+  color: inherit;
+  text-transform: capitalize;
 }
 
 .sidebar-sublinks svg {
-  color: var(--clr-grey-5);
+  color: var(--fg-muted);
   margin-right: 1rem;
 }
 
@@ -354,9 +453,12 @@ Stripe Styles
   }
 }
 
-/* links */
+/****************************************
+ * 11) Submenu (hover menu)
+ ****************************************/
 .submenu {
-  background: var(--clr-white);
+  background: var(--card);
+  color: var(--fg);
   box-shadow: var(--dark-shadow);
   position: absolute;
   top: 4rem;
@@ -367,6 +469,7 @@ Stripe Styles
   padding: 2rem;
   border-radius: var(--radius);
   transition: var(--transition);
+  border: 1px solid var(--border);
 }
 
 .submenu::before {
@@ -376,7 +479,7 @@ Stripe Styles
   height: 0;
   border-left: 5px solid transparent;
   border-right: 5px solid transparent;
-  border-bottom: 5px solid var(--clr-white);
+  border-bottom: 5px solid var(--card);
   position: absolute;
   top: -5px;
   left: 50%;
@@ -389,7 +492,7 @@ Stripe Styles
 
 .submenu-center {
   display: grid;
-  gap: 0.25rem 2rem;
+  gap: .25rem 2rem;
 }
 
 .col-2 {
@@ -406,18 +509,18 @@ Stripe Styles
 
 .submenu h4 {
   margin-bottom: 1.5rem;
+  color: inherit;
 }
 
 .submenu-center a {
   width: 10rem;
-  display: block;
-  color: var(--clr-grey-1);
-  text-transform: capitalize;
   display: flex;
   align-items: center;
+  color: inherit;
+  text-transform: capitalize;
 }
 
 .submenu-center svg {
-  color: var(--clr-grey-5);
+  color: var(--fg-muted);
   margin-right: 1rem;
 }
