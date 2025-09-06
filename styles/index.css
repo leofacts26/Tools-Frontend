@@ -250,10 +250,13 @@ p {
 }
 
 .ou-list li {
+  color: var(--fg-muted);
   margin-bottom: .5rem;
   padding-left: 1.25rem;
   position: relative;
   font-family: var(--secondary-font);
+  font-size: var(--font-size-16);
+  font-weight: var(--font-weight-regular);
 }
 
 /* .wrapper {

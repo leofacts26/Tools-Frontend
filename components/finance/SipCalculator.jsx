@@ -25,7 +25,7 @@ import CustomTooltip from "../common/CustomTooltip";
 
 const COLORS = ["#EF8275", "#3AA7A3"]; // Gray for invested, Blue for returns
 
-export default function SipCalculator() {
+export default function SipCalculator({ sipcalc }) {
   const [tab, setTab] = useState(0); // 0 = SIP, 1 = Lumpsum
   const [amount, setAmount] = useState(25000);
   const [years, setYears] = useState(10);
@@ -54,8 +54,8 @@ export default function SipCalculator() {
   const gain = maturity - totalInvested;
 
   const pieData = [
-    { name: "Invested", value: totalInvested },
-    { name: "Returns", value: gain },
+    { name: sipcalc?.chart?.invested ?? "Invested", value: totalInvested },
+    { name: sipcalc?.chart?.returns ?? "Returns", value: gain },
   ];
 
   const currency = (val) =>
@@ -70,8 +70,8 @@ export default function SipCalculator() {
       <Paper elevation={0} sx={{ border: "none", borderRadius: 2, p: { xs: 2, md: 4 }, boxShadow: "0 2px 8px rgba(0,0,0,0.05)" }}>
         {/* Tabs */}
         <Tabs value={tab} onChange={(e, v) => setTab(v)} textColor="primary" indicatorColor="primary">
-          <Tab label="SIP" sx={{ textTransform: "none", fontWeight: 600 }} />
-          <Tab label="Lumpsum" sx={{ textTransform: "none", fontWeight: 600 }} />
+          <Tab label={sipcalc?.tabs?.sip ?? "SIP"} sx={{ textTransform: "none", fontWeight: 600 }} />
+          <Tab label={sipcalc?.tabs?.lumpsum ?? "Lumpsum"} sx={{ textTransform: "none", fontWeight: 600 }} />
         </Tabs>
 
         <Divider sx={{ my: 3 }} />
@@ -84,7 +84,8 @@ export default function SipCalculator() {
               <Box sx={{ mb: 4 }}>
                 <Stack direction="row" alignItems="center" justifyContent="space-between" spacing={2}>
                   <Typography variant="subtitle1" gutterBottom>
-                    {tab === 0 ? "Monthly investment" : "Lumpsum investment"}
+                    {tab === 0 ? sipcalc?.form?.monthlyInvestment ?? "Monthly investment"
+                      : sipcalc?.form?.lumpsumInvestment ?? "Lumpsum investment"}
                   </Typography>
                   <CustomInput
                     value={amount}
@@ -106,7 +107,7 @@ export default function SipCalculator() {
               <Box sx={{ mb: 4 }}>
                 <Stack direction="row" alignItems="center" justifyContent="space-between" spacing={2}>
                   <Typography variant="subtitle1" gutterBottom>
-                    Expected return rate (p.a)
+                    {sipcalc?.form?.expectedReturn ?? "Expected return rate (p.a)"}
                   </Typography>
                   <CustomInput
                     value={annualReturn}
@@ -129,7 +130,7 @@ export default function SipCalculator() {
               <Box>
                 <Stack direction="row" alignItems="center" justifyContent="space-between" spacing={2}>
                   <Typography variant="subtitle1" gutterBottom>
-                    Time period
+                    {sipcalc?.form?.timePeriod ?? "Time period"}
                   </Typography>
                   <CustomInput
                     value={years}
@@ -153,7 +154,7 @@ export default function SipCalculator() {
                 <Box sx={{ mb: 1 }}>
                   <Stack direction="row" alignItems="center" justifyContent="space-between" spacing={2}>
                     <Typography variant="body2" color="text.secondary">
-                      Invested amount
+                      {sipcalc?.results?.investedAmount ?? "Invested amount"}
                     </Typography>
                     <Typography variant="h6" sx={{ fontWeight: 600, fontSize: "15px" }}>
                       {currency(totalInvested)}
@@ -164,7 +165,7 @@ export default function SipCalculator() {
                 <Box sx={{ mb: 1 }}>
                   <Stack direction="row" alignItems="center" justifyContent="space-between" spacing={2}>
                     <Typography variant="body2" color="text.secondary">
-                      Est. returns
+                      {sipcalc?.results?.estimatedReturns ?? "Est. returns"}
                     </Typography>
                     <Typography variant="h6" color="primary" sx={{ fontWeight: 600, fontSize: "15px" }}>
                       {currency(gain)}
@@ -175,7 +176,7 @@ export default function SipCalculator() {
                 <Box sx={{ mb: 1 }}>
                   <Stack direction="row" alignItems="center" justifyContent="space-between" spacing={2}>
                     <Typography variant="body2" color="text.secondary">
-                      Total value
+                      {sipcalc?.results?.totalValue ?? "Total value"}
                     </Typography>
                     <Typography variant="h6" sx={{ fontWeight: 600, fontSize: "15px" }}>
                       {currency(maturity)}

@@ -1,0 +1,27 @@
+{
+  "site": {
+    "title": "Free Online Tools",
+    "tagline": "For Everyone"
+  },
+
+  "nav": {
+    "tools": "Everywhere 🌍",
+    "blog": "Blog",
+    "about": "About",
+    "contact": "Contact",
+    "categories": {
+      "finance": "Finance Tools",
+      "student": "Student Tools",
+      "utilities": "Utilities",
+      "fun": "Fun"
+    }
+  },
+
+  "homePage": {
+    "hero": {
+      "title": "Free Online Tools for Everyone, Everywhere",
+      "description": "Millions of companies of all sizes—from startups to Fortune 500s—use Stripe’s software and APIs to accept payments, send payouts, and manage their businesses online.",
+      "cta": "Start now"
+    }
+  }
+}

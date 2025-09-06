@@ -1,0 +1,35 @@
+{
+  "navbar": {
+    "finance": {
+      "page": "Finance",
+      "links": {
+        "sip-calculator": { "label": "SIP Calculator" },
+        "terminal": { "label": "Terminal" },
+        "connect": { "label": "Connect" }
+      }
+    },
+    "students": {
+      "page": "Students",
+      "links": {
+        "plugins": { "label": "Plugins" },
+        "libraries": { "label": "Libraries" },
+        "help": { "label": "Help" },
+        "billing": { "label": "Billing" }
+      }
+    },
+    "utilities": {
+      "page": "Utilities",
+      "links": {
+        "about": { "label": "About" },
+        "customers": { "label": "Customers" }
+      }
+    },
+    "others": {
+      "page": "Others",
+      "links": {
+        "others": { "label": "Others" },
+        "customers": { "label": "Customers" }
+      }
+    }
+  }
+}
