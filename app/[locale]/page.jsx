@@ -7,7 +7,7 @@ export default function Page() {
   return (
     <>
       <section>
-          <h1>{t('siteTitle')}</h1>
+          <h1>{t('site.title')}</h1>
       </section>
     </>
   )

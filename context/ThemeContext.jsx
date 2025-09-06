@@ -43,7 +43,7 @@ export function ThemeContextProvider({ initialTheme = "light", children }) {
   const theme = React.useMemo(() => createTheme({
     palette: {
       mode,
-      primary: { main: "#1976d2" },
+      primary: { main: "#2CA6A4" },
       background: {
         default: mode === "dark" ? "#000" : "#fff",
         paper: mode === "dark" ? "#161616" : "#fff"

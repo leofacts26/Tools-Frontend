@@ -4,9 +4,6 @@ import {
   Box,
   Grid,
   Typography,
-  TextField,
-  InputAdornment,
-  Slider,
   Tabs,
   Tab,
   Divider,
@@ -20,11 +17,13 @@ import {
   ResponsiveContainer,
   Tooltip,
   Legend,
+  LabelList,
 } from "recharts";
 import CustomInput from "../common/CustomInput";
 import CustomSlider from "../common/CustomSlider";
+import CustomTooltip from "../common/CustomTooltip";
 
-const COLORS = ["#9e9e9e", "#2196f3"]; // Gray for invested, Blue for returns
+const COLORS = ["#EF8275", "#3AA7A3"]; // Gray for invested, Blue for returns
 
 export default function SipCalculator() {
   const [tab, setTab] = useState(0); // 0 = SIP, 1 = Lumpsum
@@ -62,6 +61,10 @@ export default function SipCalculator() {
   const currency = (val) =>
     new Intl.NumberFormat("en-IN", { style: "currency", currency: "INR", maximumFractionDigits: 0 }).format(val);
 
+
+
+
+
   return (
     <>
       <Paper elevation={0} sx={{ border: "none", borderRadius: 2, p: { xs: 2, md: 4 }, boxShadow: "0 2px 8px rgba(0,0,0,0.05)" }}>
@@ -77,7 +80,7 @@ export default function SipCalculator() {
         <Box sx={{ flexGrow: 1 }}>
           <Grid container spacing={2}>
 
-            <Grid size xs={12} md={12}>
+            <Grid size={{ xs: 12, sm: 12, md: 6, lg: 6 }}>
               <Box sx={{ mb: 4 }}>
                 <Stack direction="row" alignItems="center" justifyContent="space-between" spacing={2}>
                   <Typography variant="subtitle1" gutterBottom>
@@ -152,7 +155,7 @@ export default function SipCalculator() {
                     <Typography variant="body2" color="text.secondary">
                       Invested amount
                     </Typography>
-                    <Typography variant="h6" sx={{ fontWeight: 600, fontSize: "16px" }}>
+                    <Typography variant="h6" sx={{ fontWeight: 600, fontSize: "15px" }}>
                       {currency(totalInvested)}
                     </Typography>
                   </Stack>
@@ -163,7 +166,7 @@ export default function SipCalculator() {
                     <Typography variant="body2" color="text.secondary">
                       Est. returns
                     </Typography>
-                    <Typography variant="h6" color="primary" sx={{ fontWeight: 600, fontSize: "16px" }}>
+                    <Typography variant="h6" color="primary" sx={{ fontWeight: 600, fontSize: "15px" }}>
                       {currency(gain)}
                     </Typography>
                   </Stack>
@@ -174,7 +177,7 @@ export default function SipCalculator() {
                     <Typography variant="body2" color="text.secondary">
                       Total value
                     </Typography>
-                    <Typography variant="h6" sx={{ fontWeight: 600, fontSize: "16px" }}>
+                    <Typography variant="h6" sx={{ fontWeight: 600, fontSize: "15px" }}>
                       {currency(maturity)}
                     </Typography>
                   </Stack>
@@ -184,9 +187,9 @@ export default function SipCalculator() {
             </Grid>
 
             {/* Right side results */}
-            <Grid size xs={12} md={12}>
-              <Box sx={{ width: "450px", height: 350 }}>
-                <ResponsiveContainer>
+            <Grid size={{ xs: 12, sm: 12, md: 6, lg: 6 }} display="flex" alignItems="center" justifyContent={"center"}>
+              <Box >
+                <ResponsiveContainer width={320} height={400} aspect={1}>
                   <PieChart tabIndex={-1}>
                     <Pie
                       data={pieData}
@@ -195,13 +198,18 @@ export default function SipCalculator() {
                       innerRadius={70}
                       outerRadius={100}
                       stroke="none"
-                      label={({ name, percent }) => `${name} ${(percent * 100).toFixed(0)}%`}
+                      labelLine={false}
+                      label={false}
                     >
                       {pieData.map((entry, index) => (
                         <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
                       ))}
+
                     </Pie>
-                    <Tooltip formatter={(val) => currency(val)} />
+                    <Tooltip
+                      content={(props) => <CustomTooltip {...props} currencyFn={currency} />}
+                    />
+
                     <Legend verticalAlign="bottom" height={36} />
                   </PieChart>
                 </ResponsiveContainer>

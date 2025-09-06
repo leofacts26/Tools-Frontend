@@ -7,7 +7,7 @@ import Typography from "@mui/material/Typography";
 const CssTextField = styled(TextField)({
   "& .MuiInputBase-root": {
     borderRadius: "4px",
-    backgroundColor: "var(--clr-primary-7)",
+    backgroundColor: "var(--clr-primary-light)",
     color: "var(--clr-primary-1)",
     fontWeight: 600,
     fontSize: "14px",

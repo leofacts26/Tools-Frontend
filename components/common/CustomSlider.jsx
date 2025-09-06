@@ -3,16 +3,16 @@ import { styled } from "@mui/material/styles";
 import Slider from "@mui/material/Slider";
 
 const StyledSlider = styled(Slider)(({ theme }) => ({
-  color: "var(--clr-primary-5)",  // consistent brand color
+  color: "var(--clr-primary-1)",  // consistent brand color
   height: 6,
   borderRadius: 4,
   "& .MuiSlider-thumb": {
     height: 26,
     width: 26,
-    backgroundColor: "var(--clr-primary-10)",
-    border: "2px solid var(--clr-primary-10)",
+    backgroundColor: "var(--clr-white)",
+    // border: "2px solid var(--clr-primary-7)",
     "&:hover": {
-      boxShadow: "0px 0px 0px 8px rgba(33, 150, 243, 0.16)", // hover ring
+      boxShadow: "0px 0px 0px 8px var(--clr-primary-7)", // hover ring
     },
   },
   "& .MuiSlider-track": {
