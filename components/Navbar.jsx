@@ -12,7 +12,7 @@ import LanguageIcon from "@mui/icons-material/Language";
 import Menu from "@mui/material/Menu";
 import MenuItem from "@mui/material/MenuItem";
 import { useRouter, usePathname } from "next/navigation";
-import { useLocale } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 
 const SUPPORTED_LOCALES = ["en", "fr", "hi", "de"]; // keep in sync with middleware & /messages
 
@@ -23,6 +23,7 @@ export default function Navbar() {
   const router = useRouter();
   const pathname = usePathname();
   const currentLocale = useLocale();
+  const t = useTranslations("common");
 
   const [langAnchorEl, setLangAnchorEl] = React.useState(null);
   const [mounted, setMounted] = React.useState(false);
@@ -32,15 +33,15 @@ export default function Navbar() {
   const handleLangClose = () => setLangAnchorEl(null);
 
   // Let next-intl swap the locale segment & keep the rest of the path
- const handleLangChange = (lng) => {
-  handleLangClose();
+  const handleLangChange = (lng) => {
+    handleLangClose();
 
-  // Remove the current locale prefix (e.g., "/en/about" -> "/about")
-  const newPath = pathname.replace(/^\/[a-z]{2}(?=\/|$)/, "") || "/";
+    // Remove the current locale prefix (e.g., "/en/about" -> "/about")
+    const newPath = pathname.replace(/^\/[a-z]{2}(?=\/|$)/, "") || "/";
 
-  // Push with new locale
-  router.push(`/${lng}${newPath}`);
-};
+    // Push with new locale
+    router.push(`/${lng}${newPath}`);
+  };
 
   const displaySubmenu = (e) => {
     const page = e.target.textContent;
@@ -51,6 +52,8 @@ export default function Navbar() {
   const handleSubmenu = (e) => {
     if (!e.target.classList.contains("link-btn")) closeSubmenu();
   };
+
+  const navSections = ["finance", "students", "utilities", "others"];
 
   return (
     <nav
@@ -66,10 +69,15 @@ export default function Navbar() {
         </div>
 
         <ul className="nav-links">
-          {["Finance", "Students", "Utilities", "Others"].map((item) => (
-            <li key={item}>
-              <button className="link-btn" onMouseOver={displaySubmenu}>
-                {item}
+          {navSections.map((key) => (
+            <li key={key}>
+              <button
+                className="link-btn"
+                data-key={key}
+                onMouseOver={displaySubmenu}
+                type="button"
+              >
+                {t(`navbar.${key}.page`)}
               </button>
             </li>
           ))}
@@ -77,7 +85,7 @@ export default function Navbar() {
 
         <div>
           {mounted && (
-            <IconButton sx={{ ml: 2 }}  onClick={toggleTheme} color="inherit" aria-label="Toggle theme">
+            <IconButton sx={{ ml: 2 }} onClick={toggleTheme} color="inherit" aria-label="Toggle theme">
               {mode === "dark" ? <Brightness7Icon /> : <Brightness4Icon />}
             </IconButton>
           )}

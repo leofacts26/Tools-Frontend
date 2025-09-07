@@ -31,5 +31,11 @@
         "customers": { "label": "Customers" }
       }
     }
+  },
+  "footer": {
+    "about": "About Us",
+    "privacy": "Privacy Policy",
+    "terms": "Terms & Conditions",
+    "contact": "Contact"
   }
 }
