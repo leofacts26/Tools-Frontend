@@ -2,7 +2,14 @@ import FAQAccordion from "@/components/common/FAQAccordion";
 import SIPFormulaBlock from "@/components/common/SIPFormulaBlock";
 import SipCalculator from "@/components/finance/SipCalculator";
 import { Box, Container, Grid, Paper } from "@mui/material";
-
+import {
+  Table,
+  TableBody,
+  TableCell,
+  TableContainer,
+  TableHead,
+  TableRow,
+} from "@mui/material";
 
 
 
@@ -112,24 +119,29 @@ export default async function Page({ params }) {
                     <strong>Example:</strong> {sipcalc.article.formulaExplained.exampleIntro}
                   </p>
 
-                  <table>
-                    <thead>
-                      <tr>
-                        {sipcalc.article.formulaExplained.table.headers.map((header, index) => (
-                          <th key={index}>{header}</th>
-                        ))}
-                      </tr>
-                    </thead>
-                    <tbody>
-                      {sipcalc.article.formulaExplained.table.rows.map((row, rowIndex) => (
-                        <tr key={rowIndex}>
-                          {row.map((cell, cellIndex) => (
-                            <td key={cellIndex}>{cell}</td>
+                  <TableContainer component={Paper}>
+                    <Table aria-label="SIP Table">
+                      <TableHead>
+                        <TableRow>
+                          {sipcalc.article.formulaExplained.table.headers.map((header, index) => (
+                            <TableCell key={index} style={{ fontWeight: "600" }}>
+                              {header}
+                            </TableCell>
                           ))}
-                        </tr>
-                      ))}
-                    </tbody>
-                  </table>
+                        </TableRow>
+                      </TableHead>
+                      <TableBody>
+                        {sipcalc.article.formulaExplained.table.rows.map((row, rowIndex) => (
+                          <TableRow key={rowIndex}>
+                            {row.map((cell, cellIndex) => (
+                              <TableCell key={cellIndex}>{cell}</TableCell>
+                            ))}
+                          </TableRow>
+                        ))}
+                      </TableBody>
+                    </Table>
+                  </TableContainer>
+                  <br />
 
                   <p>{sipcalc.article.formulaExplained.conclusion}</p>
                 </section>
