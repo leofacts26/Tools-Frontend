@@ -62,6 +62,9 @@ export default function SipCalculator({ sipcalc }) {
     new Intl.NumberFormat("en-IN", { style: "currency", currency: "INR", maximumFractionDigits: 0 }).format(val);
 
 
+  const [mounted, setMounted] = React.useState(false);
+  React.useEffect(() => setMounted(true), []);
+
 
 
 
@@ -69,11 +72,12 @@ export default function SipCalculator({ sipcalc }) {
     <>
       <Paper elevation={0} sx={{ border: "none", borderRadius: 2, p: { xs: 2, md: 4 }, boxShadow: "0 2px 8px rgba(0,0,0,0.05)" }}>
         {/* Tabs */}
-        <Tabs value={tab} onChange={(e, v) => setTab(v)} textColor="primary" indicatorColor="primary">
-          <Tab label={sipcalc?.tabs?.sip ?? "SIP"} sx={{ textTransform: "none", fontWeight: 600 }} />
-          <Tab label={sipcalc?.tabs?.lumpsum ?? "Lumpsum"} sx={{ textTransform: "none", fontWeight: 600 }} />
+       { mounted ? (
+        <Tabs value={tab} onChange={(e, v) => setTab(v)} aria-label="SIP Tabs">
+          <Tab id="tab-sip" aria-controls="tabpanel-sip" label={sipcalc?.tabs?.sip ?? "SIP"} />
+          <Tab id="tab-lumpsum" aria-controls="tabpanel-lumpsum" label={sipcalc?.tabs?.lumpsum ?? "Lumpsum"} />
         </Tabs>
-
+        ) : null}
         <Divider sx={{ my: 3 }} />
 
 

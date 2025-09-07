@@ -40,22 +40,30 @@ const CustomInput = ({
   return (
     <CssTextField
       type="number"
-      value={value}
-      onChange={(e) => onChange(Number(e.target.value))}
+      value={value ?? ""}   // fallback to empty string
+      onChange={(e) => {
+        const num = e.target.value === "" ? "" : Number(e.target.value);
+        onChange(num);
+      }}
       InputProps={{
         startAdornment: startAdornment ? (
           <InputAdornment position="start">
-            <Typography sx={{ color: "var(--clr-primary-1)", fontWeight: 600 }}>{startAdornment}</Typography>
+            <Typography sx={{ color: "var(--clr-primary-1)", fontWeight: 600 }}>
+              {startAdornment}
+            </Typography>
           </InputAdornment>
         ) : null,
         endAdornment: endAdornment ? (
           <InputAdornment position="end">
-            <Typography sx={{ color: "var(--clr-primary-1)", fontWeight: 600 }}>{endAdornment}</Typography>
+            <Typography sx={{ color: "var(--clr-primary-1)", fontWeight: 600 }}>
+              {endAdornment}
+            </Typography>
           </InputAdornment>
         ) : null,
       }}
       sx={{ width }}
     />
+
   );
 };
 
