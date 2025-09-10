@@ -65,10 +65,12 @@ Ads/Monetization: Google AdSense integration + Affiliate links
 │   │── seo-config.js
 │   │── utils.js
 │── /messages
-│   │── en.json
-│   │── fr.json
-│   │── de.json
-│   │── hi.json
+│   /en
+    │── common.js
+    │── sipcalc.js
+    /hi
+    │── common.js
+    │── sipcalc.js
 │── /public
 │   │── /images
 │   │── /icons

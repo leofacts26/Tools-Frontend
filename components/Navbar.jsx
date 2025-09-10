@@ -44,9 +44,10 @@ export default function Navbar() {
   };
 
   const displaySubmenu = (e) => {
-    const page = e.target.textContent;
-    const rect = e.target.getBoundingClientRect();
-    openSubmenu(page, { center: (rect.left + rect.right) / 2, bottom: rect.bottom - 3 });
+    // read stable key from the button (use currentTarget)
+    const key = e.currentTarget?.dataset?.key;
+    const rect = e.currentTarget.getBoundingClientRect();
+    openSubmenu(key, { center: (rect.left + rect.right) / 2, bottom: rect.bottom - 3 });
   };
 
   const handleSubmenu = (e) => {
@@ -74,7 +75,7 @@ export default function Navbar() {
               <button
                 className="link-btn"
                 data-key={key}
-                onMouseOver={displaySubmenu}
+                onMouseEnter={displaySubmenu}
                 type="button"
               >
                 {t(`navbar.${key}.page`)}
@@ -83,7 +84,8 @@ export default function Navbar() {
           ))}
         </ul>
 
-        <div>
+        <div className="desktop-icon">
+          <div className="desktop-icon-flex">
           {mounted && (
             <IconButton sx={{ ml: 2 }} onClick={toggleTheme} color="inherit" aria-label="Toggle theme">
               {mode === "dark" ? <Brightness7Icon /> : <Brightness4Icon />}
@@ -124,6 +126,7 @@ export default function Navbar() {
               </Menu>
             </>
           )}
+        </div>
         </div>
       </div>
     </nav>

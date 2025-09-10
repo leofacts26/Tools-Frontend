@@ -1,4 +1,14 @@
 {
+  "seo": {
+    "title": "एसआईपी कैलकुलेटर - मुफ़्त ऑनलाइन एसआईपी निवेश कैलकुलेटर",
+    "description": "मासिक एसआईपी निवेश के लिए अनुमानित रिटर्न। एसआईपी बनाम लम्पसम की तुलना करें और फॉर्मूला सीखें।",
+    "slug": "tools/finance/sip-calculator",
+    "image": "/images/og/sipcalc-en.png",
+    "isArticle": true,
+    "publishDate": "2024-01-01",
+    "modifiedDate": "2024-09-01",
+    "author": "प्रसं"
+  },
   "site": {
     "heading": "एसआईपी कैलकुलेटर"
   },

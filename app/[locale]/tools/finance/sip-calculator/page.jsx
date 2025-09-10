@@ -1,3 +1,4 @@
+import { createMetadata, SITE } from "@/lib/seo";
 import FAQAccordion from "@/components/common/FAQAccordion";
 import SIPFormulaBlock from "@/components/common/SIPFormulaBlock";
 import SipCalculator from "@/components/finance/SipCalculator";
@@ -13,14 +14,98 @@ import {
 
 
 
+export async function generateMetadata({ params }) {
+  const locale = params?.locale || "en";
+
+  // load localized common defaults and the page content (sipcalc.json)
+  const common = (await import(`../../../../../messages/${locale}/common.json`).catch(() => ({}))).default || {};
+  const sipcalc = (await import(`../../../../../messages/${locale}/sipcalc.json`).catch(() => ({}))).default || {};
+
+  // use the seo block from sipcalc.json (user provided)
+  const pageSeo = sipcalc.seo || {};
+
+  // build opts for createMetadata (your lib/seo.js expects similar keys)
+  const opts = {
+    title: pageSeo.title || sipcalc.site?.heading || common.site?.name || SITE.name,
+    description: pageSeo.description || common.site?.description || "",
+    slug: pageSeo.slug || "",
+    image: pageSeo.image || common.site?.defaultImage || "",
+    locale,
+    isArticle: Boolean(pageSeo.isArticle),
+    publishDate: pageSeo.publishDate,
+    modifiedDate: pageSeo.modifiedDate,
+    faqs: sipcalc.faqs || [],
+  };
+
+  // createMetadata returns { title, description, openGraph, alternates, twitter, jsonLd }
+  const meta = createMetadata(opts);
+
+  // Build alternates/hreflang entries for all locales configured in SITE
+  const alternates = { canonical: meta.openGraph.url, languages: {} };
+  for (const lng of SITE.locales) {
+    const other = (await import(`../../../../../messages/${lng}/sipcalc.json`).catch(() => ({}))).default || {};
+    const otherSlug = other?.seo?.slug || opts.slug;
+    if (otherSlug) alternates.languages[lng] = `${SITE.url}/${lng}/${otherSlug}`;
+  }
+
+  // return the Next.js metadata object
+  return {
+    title: meta.title,
+    description: meta.description,
+    alternates,
+    openGraph: meta.openGraph,
+    twitter: meta.twitter,
+    robots: pageSeo?.noindex ? { index: false, follow: false } : undefined,
+  };
+}
 
 
 export default async function Page({ params }) {
   const { locale } = params;
   const sipcalc = (await import(`../../../../../messages/${locale}/sipcalc.json`)).default;
 
+  // Build JSON-LD for FAQ (if any)
+  const faqJsonLd =
+    sipcalc.faqs && sipcalc.faqs.length
+      ? {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        mainEntity: sipcalc.faqs.map((f) => ({
+          "@type": "Question",
+          name: f.q,
+          acceptedAnswer: { "@type": "Answer", text: f.a },
+        })),
+      }
+      : null;
+
+  // Build Article JSON-LD if isArticle true
+  const articleJsonLd = sipcalc.seo?.isArticle
+    ? {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      headline: sipcalc.seo?.title || sipcalc.site?.heading,
+      description: sipcalc.seo?.description || "",
+      author: { "@type": "Person", name: sipcalc.seo?.author || "Author" },
+      datePublished: sipcalc.seo?.publishDate,
+      dateModified: sipcalc.seo?.modifiedDate,
+      image: sipcalc.seo?.image ? `${SITE.url}${sipcalc.seo.image}` : undefined,
+      mainEntityOfPage: { "@type": "WebPage", "@id:": `${SITE.url}/${locale}/${sipcalc.seo?.slug || ""}` },
+    }
+    : null;
+
+
 
   return <>
+
+    {/* JSON-LD: FAQ */}
+    {faqJsonLd && (
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
+    )}
+
+    {/* JSON-LD: Article */}
+    {articleJsonLd && (
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />
+    )}
 
     <Container maxWidth="lg">
       <header>

@@ -14,12 +14,31 @@ const AppProvider = ({ children }) => {
   const closeSidebar = () => {
     setIsSidebarOpen(false);
   };
-  const openSubmenu = (text, coordinates) => {
-    const page = sublinks.find((link) => link.page === text);
-    setPage(page);
-    setLocation(coordinates);
+  // context.js (inside AppProvider)
+  const slugify = (s = "") =>
+    String(s).trim().toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-+|-+$/g, "");
+
+  const openSubmenu = (key, loc) => {
+    console.log("openSubmenu called with", { key, loc });
+    // prefer explicit key property (recommended). fallback to slugified page match.
+    const found =
+      sublinks.find((s) => s.key === key) ||
+      sublinks.find((s) => slugify(s.page) === key);
+
+    console.log("openSubmenu -> found:", found);
+
+    if (!found) {
+      setPage({ page: "", links: [] });
+      setLocation(loc || { center: 0, bottom: 0 });
+      setIsSubmenuOpen(false);
+      return;
+    }
+
+    setPage(found);
+    setLocation(loc || { center: 0, bottom: 0 });
     setIsSubmenuOpen(true);
   };
+
   const closeSubmenu = () => {
     setIsSubmenuOpen(false);
   };
