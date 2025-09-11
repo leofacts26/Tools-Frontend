@@ -15,8 +15,9 @@ import LanguageIcon from "@mui/icons-material/Language";
 import Menu from "@mui/material/Menu";
 import MenuItem from "@mui/material/MenuItem";
 import { usePathname, useRouter } from "next/navigation";
+import { LOCALES } from "@/lib/locales";
 
-const SUPPORTED_LOCALES = ["en", "fr", "hi", "de"];
+const SUPPORTED_LOCALES = LOCALES;
 
 /**
  * Build href for a sidebar item.

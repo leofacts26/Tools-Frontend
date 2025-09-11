@@ -3,7 +3,7 @@
     "finance": {
       "page": "वित्त",
       "links": {
-        "sip-calculator": { "label": "एसआईपी कैलकुलेटर" },
+        "sip-calculator": { "label": "SIP कैलकुलेटर" },
         "terminal": { "label": "टर्मिनल" },
         "connect": { "label": "कनेक्ट" }
       }

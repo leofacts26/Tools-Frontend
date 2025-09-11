@@ -1,9 +1,10 @@
 // middleware.js
 import createMiddleware from 'next-intl/middleware';
+import { DEFAULT_LOCALE, LOCALES } from './lib/locales';
 
 export default createMiddleware({
-  locales: ['en', 'fr', 'hi', 'de'],
-  defaultLocale: 'en'
+  locales: LOCALES,
+  defaultLocale: DEFAULT_LOCALE
 });
 
 export const config = {

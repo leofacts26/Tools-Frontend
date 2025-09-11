@@ -13,8 +13,9 @@ import Menu from "@mui/material/Menu";
 import MenuItem from "@mui/material/MenuItem";
 import { useRouter, usePathname } from "next/navigation";
 import { useLocale, useTranslations } from "next-intl";
+import { LOCALES } from "@/lib/locales";
 
-const SUPPORTED_LOCALES = ["en", "fr", "hi", "de"]; // keep in sync with middleware & /messages
+const SUPPORTED_LOCALES = LOCALES; // keep in sync with middleware & /messages
 
 export default function Navbar() {
   const { openSidebar, openSubmenu, closeSubmenu } = useGlobalContext();
@@ -85,6 +86,48 @@ export default function Navbar() {
         </ul>
 
         <div className="desktop-icon">
+          {mounted && (
+            <div className="desktop-icon-flex">
+              <IconButton sx={{ ml: 2 }} onClick={toggleTheme} color="inherit" aria-label="Toggle theme">
+                {mode === "dark" ? <Brightness7Icon /> : <Brightness4Icon />}
+              </IconButton>
+
+              <IconButton
+                sx={{ ml: 1 }}
+                onClick={handleLangClick}
+                color="inherit"
+                aria-controls={Boolean(langAnchorEl) ? "lang-menu" : undefined}
+                aria-haspopup="true"
+                aria-expanded={Boolean(langAnchorEl) ? "true" : undefined}
+                aria-label="Change language"
+              >
+                <LanguageIcon />
+              </IconButton>
+              <Menu
+                id="lang-menu"
+                anchorEl={langAnchorEl}
+                open={Boolean(langAnchorEl)}
+                onClose={handleLangClose}
+                anchorOrigin={{ vertical: "bottom", horizontal: "right" }}
+                transformOrigin={{ vertical: "top", horizontal: "right" }}
+              >
+                {SUPPORTED_LOCALES.map((lng) => (
+                  <MenuItem
+                    key={lng}
+                    onClick={() => handleLangChange(lng)}
+                    selected={currentLocale === lng}
+                    dense
+                  >
+                    {lng.toUpperCase()}
+                  </MenuItem>
+                ))}
+              </Menu>
+            </div>
+          )}
+        </div>
+
+
+        {/* <div className="desktop-icon">
           <div className="desktop-icon-flex">
           {mounted && (
             <IconButton sx={{ ml: 2 }} onClick={toggleTheme} color="inherit" aria-label="Toggle theme">
@@ -127,7 +170,7 @@ export default function Navbar() {
             </>
           )}
         </div>
-        </div>
+        </div> */}
       </div>
     </nav>
   );
