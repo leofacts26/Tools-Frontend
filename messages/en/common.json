@@ -4,6 +4,8 @@
       "page": "Finance",
       "links": {
         "sip-calculator": { "label": "SIP Calculator" },
+        "lumpsum-calculator": { "label": "Lumpsum Calculator" },
+        "swp-calculator": { "label": "SWP Calculator" },
         "terminal": { "label": "Terminal" },
         "connect": { "label": "Connect" }
       }

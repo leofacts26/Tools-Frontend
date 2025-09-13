@@ -3,32 +3,60 @@
     "finance": {
       "page": "ఆర్థికం",
       "links": {
-        "sip-calculator": { "label": "SIP కాల్కులేటర్" },
-        "terminal": { "label": "టర్మినల్" },
-        "connect": { "label": "కనెక్ట్" }
+        "sip-calculator": {
+          "label": "SIP కాల్కులేటర్"
+        },
+        "lumpsum-calculator": {
+          "label": "Lumpsum కాల్కులేటర్"
+        },
+        "swp-calculator": {
+          "label": "SWP కాల్కులేటర్"
+        },
+        "terminal": {
+          "label": "టర్మినల్"
+        },
+        "connect": {
+          "label": "కనెక్ట్"
+        }
       }
     },
     "students": {
       "page": "విద్యార్థులు",
       "links": {
-        "plugins": { "label": "ప్లగిన్లు" },
-        "libraries": { "label": "లైబ్రరీలు" },
-        "help": { "label": "సహాయం" },
-        "billing": { "label": "బిల్లింగ్" }
+        "plugins": {
+          "label": "ప్లగిన్లు"
+        },
+        "libraries": {
+          "label": "లైబ్రరీలు"
+        },
+        "help": {
+          "label": "సహాయం"
+        },
+        "billing": {
+          "label": "బిల్లింగ్"
+        }
       }
     },
     "utilities": {
       "page": "ఉపయోగాలు",
       "links": {
-        "about": { "label": "గురించి" },
-        "customers": { "label": "గ్రాహకులు" }
+        "about": {
+          "label": "గురించి"
+        },
+        "customers": {
+          "label": "గ్రాహకులు"
+        }
       }
     },
     "others": {
       "page": "ఇతరాలు",
       "links": {
-        "others": { "label": "ఇతరాలు" },
-        "customers": { "label": "గ్రాహకులు" }
+        "others": {
+          "label": "ఇతరాలు"
+        },
+        "customers": {
+          "label": "గ్రాహకులు"
+        }
       }
     }
   },

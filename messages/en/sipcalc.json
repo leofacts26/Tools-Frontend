@@ -10,7 +10,8 @@
     "author": "Your Site"
   },
   "site": {
-    "heading": "SIP Calculator"
+    "heading": "SIP Calculator",
+    "headingLumpsum": "Lumpsum Calculator"
   },
   "tabs": {
     "sip": "SIP",

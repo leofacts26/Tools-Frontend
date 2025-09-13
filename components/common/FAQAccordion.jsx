@@ -60,6 +60,8 @@ const ControlsRow = styled(Stack)(({ theme }) => ({
 }));
 
 export default function FAQAccordion({ faqs = [], title = "FAQs on SIP Calculator & Investments" }) {
+  console.log(faqs, "faqs");
+  
   // make sure faqs is an array to avoid undefined errors
   const safeFaqs = Array.isArray(faqs) ? faqs : [];
 

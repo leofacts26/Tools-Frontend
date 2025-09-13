@@ -4,6 +4,8 @@
       "page": "वित्त",
       "links": {
         "sip-calculator": { "label": "SIP कैलकुलेटर" },
+        "lumpsum-calculator": { "label": "Lumpsum कैलकुलेटर" },
+        "swp-calculator": { "label": "SWP कैलकुलेटर" },
         "terminal": { "label": "टर्मिनल" },
         "connect": { "label": "कनेक्ट" }
       }

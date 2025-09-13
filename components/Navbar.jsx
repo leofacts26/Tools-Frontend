@@ -14,6 +14,7 @@ import MenuItem from "@mui/material/MenuItem";
 import { useRouter, usePathname } from "next/navigation";
 import { useLocale, useTranslations } from "next-intl";
 import { LOCALES } from "@/lib/locales";
+import { navSections } from "@/lib/utils";
 
 const SUPPORTED_LOCALES = LOCALES; // keep in sync with middleware & /messages
 
@@ -55,34 +56,43 @@ export default function Navbar() {
     if (!e.target.classList.contains("link-btn")) closeSubmenu();
   };
 
-  const navSections = ["finance", "students", "utilities", "others"];
 
   return (
-    <nav
-      className="nav"
-      onMouseOver={handleSubmenu}
-    >
+    <nav className="nav" onMouseOver={handleSubmenu}>
       <div className="nav-center">
         <div className="nav-header">
           <img src={logo.src} className="nav-logo" alt="Logo" />
-          <button className="btn toggle-btn" onClick={openSidebar} aria-label="Open sidebar">
-            <FaBars />
-          </button>
+
+          {mounted ? (
+            <button
+              className="btn toggle-btn"
+              onClick={openSidebar}
+              aria-label="Open sidebar"
+              type="button"
+            >
+              <FaBars />
+            </button>
+          ) : (
+            // static placeholder that matches server output (keeps markup simple)
+            <span aria-hidden="true" style={{ width: 40, display: "inline-block" }} />
+          )}
         </div>
 
         <ul className="nav-links">
-          {navSections.map((key) => (
-            <li key={key}>
-              <button
-                className="link-btn"
-                data-key={key}
-                onMouseEnter={displaySubmenu}
-                type="button"
-              >
-                {t(`navbar.${key}.page`)}
-              </button>
-            </li>
-          ))}
+          {mounted
+            ? navSections.map((key) => (
+              <li key={key}>
+                <button
+                  className="link-btn"
+                  data-key={key}
+                  onMouseEnter={displaySubmenu}
+                  type="button"
+                >
+                  {t(`navbar.${key}.page`)}
+                </button>
+              </li>
+            ))
+            : navSections.map((key) => <li key={key}><span>{key}</span></li>)}
         </ul>
 
         <div className="desktop-icon">
@@ -103,6 +113,7 @@ export default function Navbar() {
               >
                 <LanguageIcon />
               </IconButton>
+
               <Menu
                 id="lang-menu"
                 anchorEl={langAnchorEl}
@@ -125,52 +136,6 @@ export default function Navbar() {
             </div>
           )}
         </div>
-
-
-        {/* <div className="desktop-icon">
-          <div className="desktop-icon-flex">
-          {mounted && (
-            <IconButton sx={{ ml: 2 }} onClick={toggleTheme} color="inherit" aria-label="Toggle theme">
-              {mode === "dark" ? <Brightness7Icon /> : <Brightness4Icon />}
-            </IconButton>
-          )}
-
-          {mounted && (
-            <>
-              <IconButton
-                sx={{ ml: 1 }}
-                onClick={handleLangClick}
-                color="inherit"
-                aria-controls={Boolean(langAnchorEl) ? "lang-menu" : undefined}
-                aria-haspopup="true"
-                aria-expanded={Boolean(langAnchorEl) ? "true" : undefined}
-                aria-label="Change language"
-              >
-                <LanguageIcon />
-              </IconButton>
-              <Menu
-                id="lang-menu"
-                anchorEl={langAnchorEl}
-                open={Boolean(langAnchorEl)}
-                onClose={handleLangClose}
-                anchorOrigin={{ vertical: "bottom", horizontal: "right" }}
-                transformOrigin={{ vertical: "top", horizontal: "right" }}
-              >
-                {SUPPORTED_LOCALES.map((lng) => (
-                  <MenuItem
-                    key={lng}
-                    onClick={() => handleLangChange(lng)}
-                    selected={currentLocale === lng}
-                    dense
-                  >
-                    {lng.toUpperCase()}
-                  </MenuItem>
-                ))}
-              </Menu>
-            </>
-          )}
-        </div>
-        </div> */}
       </div>
     </nav>
   );

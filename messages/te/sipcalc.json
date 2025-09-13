@@ -10,7 +10,8 @@
     "author": "మీ సైట్"
   },
   "site": {
-    "heading": "SIP కాల్కులేటర్"
+    "heading": "SIP కాల్కులేటర్",
+    "headingLumpsum": "లంప్సమ్ కాలిక్యులేటర్"
   },
   "tabs": {
     "sip": "SIP",

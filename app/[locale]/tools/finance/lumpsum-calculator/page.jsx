@@ -10,8 +10,8 @@ import {
   TableHead,
   TableRow,
 } from "@mui/material";
-import PopularCalculators from "@/components/PopularCalculators";
 import Heading from "@/components/common/Heading";
+import PopularCalculators from "@/components/PopularCalculators";
 import SipCalculator from "@/components/calculators/SipCalculator";
 
 
@@ -110,7 +110,8 @@ export default async function Page({ params }) {
     )}
 
     <Container maxWidth="lg">
-      <Heading title={sipcalc.site?.heading ?? "SIP Calculator"} />
+
+      <Heading title={sipcalc.site?.headingLumpsum ?? "Lumpsum Calculator"} />
 
       <Box sx={{ flexGrow: 1 }}>
         <Grid container spacing={2}>
@@ -126,8 +127,10 @@ export default async function Page({ params }) {
     </Container>
 
     <Container maxWidth="lg">
+
       <Box sx={{ flexGrow: 1, mt: 3 }}>
         <Grid container spacing={2}>
+          {/* Main content column (article + calculator) */}
           <Grid size={{ xs: 12, sm: 12, md: 12, lg: 8 }}>
             <Paper elevation={0} sx={{ border: "none", borderRadius: 2, p: { xs: 2, md: 4 }, boxShadow: "0 2px 8px rgba(0,0,0,0.05)" }}>
 
@@ -349,14 +352,17 @@ export default async function Page({ params }) {
 
 
               </article>
+
+
               <FAQAccordion faqs={sipcalc?.faqs ?? []} />
 
+
             </Paper>
-          </Grid>
 
+          </Grid>
           <Grid size={{ xs: 12, sm: 12, md: 12, lg: 4 }}>
-          </Grid>
 
+          </Grid>
         </Grid>
       </Box>
     </Container >

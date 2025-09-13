@@ -22,14 +22,28 @@ import {
 import CustomInput from "../common/CustomInput";
 import CustomSlider from "../common/CustomSlider";
 import CustomTooltip from "../common/CustomTooltip";
+import { usePathname, useRouter } from "next/navigation";
+import { COLORS, fmtINR } from "@/lib/utils";
+import SWPResultsSummary from "../common/SWPResultsSummary";
 
-const COLORS = ["#EF8275", "#3AA7A3"]; // Gray for invested, Blue for returns
+
+// Gray for invested, Blue for returns
 
 export default function SipCalculator({ sipcalc }) {
-  const [tab, setTab] = useState(0); // 0 = SIP, 1 = Lumpsum
+  const pathname = usePathname();
+  const router = useRouter();
+
+  const tabFromPath = (p) => (p?.includes("lumpsum") ? 1 : 0);
+  const [tab, setTab] = useState(() => tabFromPath(pathname));
   const [amount, setAmount] = useState(25000);
   const [years, setYears] = useState(10);
   const [annualReturn, setAnnualReturn] = useState(12);
+
+
+  React.useEffect(() => {
+    const t = tabFromPath(pathname);
+    if (t !== tab) setTab(t);
+  }, [pathname]);
 
   // compute monthly rate from annual (compounded)
   const monthlyRate = useMemo(() => {
@@ -65,18 +79,25 @@ export default function SipCalculator({ sipcalc }) {
   const [mounted, setMounted] = React.useState(false);
   React.useEffect(() => setMounted(true), []);
 
-
+  const handleTabChange = (e, v) => {
+    setTab(v);
+    // preserve locale if path starts with /<locale>/...
+    const parts = (pathname || "").split("/").filter(Boolean); // ["en","tools","finance","lumpsum-calculator"]
+    const localePrefix = parts.length ? `/${parts[0]}` : "";
+    const target = v === 1 ? `${localePrefix}/tools/finance/lumpsum-calculator` : `${localePrefix}/tools/finance/sip-calculator`;
+    router.push(target);
+  };
 
 
   return (
     <>
       <Paper elevation={0} sx={{ border: "none", borderRadius: 2, p: { xs: 2, md: 4 }, boxShadow: "0 2px 8px rgba(0,0,0,0.05)" }}>
         {/* Tabs */}
-       { mounted ? (
-        <Tabs value={tab} onChange={(e, v) => setTab(v)} aria-label="SIP Tabs">
-          <Tab id="tab-sip" aria-controls="tabpanel-sip" label={sipcalc?.tabs?.sip ?? "SIP"} />
-          <Tab id="tab-lumpsum" aria-controls="tabpanel-lumpsum" label={sipcalc?.tabs?.lumpsum ?? "Lumpsum"} />
-        </Tabs>
+        {mounted ? (
+          <Tabs value={tab} onChange={handleTabChange} aria-label="SIP Tabs">
+            <Tab id="tab-sip" aria-controls="tabpanel-sip" label={sipcalc?.tabs?.sip ?? "SIP"} />
+            <Tab id="tab-lumpsum" aria-controls="tabpanel-lumpsum" label={sipcalc?.tabs?.lumpsum ?? "Lumpsum"} />
+          </Tabs>
         ) : null}
         <Divider sx={{ my: 3 }} />
 
@@ -154,40 +175,20 @@ export default function SipCalculator({ sipcalc }) {
                 />
               </Box>
 
-              <Box sx={{ mt: 4 }}>
-                <Box sx={{ mb: 1 }}>
-                  <Stack direction="row" alignItems="center" justifyContent="space-between" spacing={2}>
-                    <Typography variant="body2" color="text.secondary">
-                      {sipcalc?.results?.investedAmount ?? "Invested amount"}
-                    </Typography>
-                    <Typography variant="h6" sx={{ fontWeight: 600, fontSize: "15px" }}>
-                      {currency(totalInvested)}
-                    </Typography>
-                  </Stack>
-                </Box>
+             
 
-                <Box sx={{ mb: 1 }}>
-                  <Stack direction="row" alignItems="center" justifyContent="space-between" spacing={2}>
-                    <Typography variant="body2" color="text.secondary">
-                      {sipcalc?.results?.estimatedReturns ?? "Est. returns"}
-                    </Typography>
-                    <Typography variant="h6" color="primary" sx={{ fontWeight: 600, fontSize: "15px" }}>
-                      {currency(gain)}
-                    </Typography>
-                  </Stack>
-                </Box>
+              <SWPResultsSummary
+                fh={sipcalc?.results?.investedAmount ?? "Invested amount"}
+                sh={sipcalc?.results?.estimatedReturns ?? "Est. returns"}
+                th={sipcalc?.results?.totalValue ?? "Total value"}
+                investedAmount={totalInvested}
+                estimatedReturns={gain}
+                totalValue={maturity}
+                currency={fmtINR}
+              />
 
-                <Box sx={{ mb: 1 }}>
-                  <Stack direction="row" alignItems="center" justifyContent="space-between" spacing={2}>
-                    <Typography variant="body2" color="text.secondary">
-                      {sipcalc?.results?.totalValue ?? "Total value"}
-                    </Typography>
-                    <Typography variant="h6" sx={{ fontWeight: 600, fontSize: "15px" }}>
-                      {currency(maturity)}
-                    </Typography>
-                  </Stack>
-                </Box>
-              </Box>
+
+
 
             </Grid>
 
