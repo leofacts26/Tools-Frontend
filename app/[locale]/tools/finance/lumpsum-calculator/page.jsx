@@ -1,15 +1,6 @@
 import { createMetadata, SITE } from "@/lib/seo";
 import FAQAccordion from "@/components/common/FAQAccordion";
-import SIPFormulaBlock from "@/components/common/SIPFormulaBlock";
 import { Box, Container, Grid, Paper } from "@mui/material";
-import {
-  Table,
-  TableBody,
-  TableCell,
-  TableContainer,
-  TableHead,
-  TableRow,
-} from "@mui/material";
 import Heading from "@/components/common/Heading";
 import PopularCalculators from "@/components/PopularCalculators";
 import SipCalculator from "@/components/calculators/SipCalculator";
@@ -21,14 +12,14 @@ export async function generateMetadata({ params }) {
 
   // load localized common defaults and the page content (sipcalc.json)
   const common = (await import(`../../../../../messages/${locale}/common.json`).catch(() => ({}))).default || {};
-  const sipcalc = (await import(`../../../../../messages/${locale}/sipcalc.json`).catch(() => ({}))).default || {};
+  const lumpsumcalc = (await import(`../../../../../messages/${locale}/lumpsumcalc.json`).catch(() => ({}))).default || {};
 
-  // use the seo block from sipcalc.json (user provided)
-  const pageSeo = sipcalc.seo || {};
+  // use the seo block from lumpsumcalc.json (user provided)
+  const pageSeo = lumpsumcalc.seo || {};
 
   // build opts for createMetadata (your lib/seo.js expects similar keys)
   const opts = {
-    title: pageSeo.title || sipcalc.site?.heading || common.site?.name || SITE.name,
+    title: pageSeo.title || lumpsumcalc.site?.heading || common.site?.name || SITE.name,
     description: pageSeo.description || common.site?.description || "",
     slug: pageSeo.slug || "",
     image: pageSeo.image || common.site?.defaultImage || "",
@@ -36,7 +27,7 @@ export async function generateMetadata({ params }) {
     isArticle: Boolean(pageSeo.isArticle),
     publishDate: pageSeo.publishDate,
     modifiedDate: pageSeo.modifiedDate,
-    faqs: sipcalc.faqs || [],
+    faqs: lumpsumcalc.faqs || [],
   };
 
   // createMetadata returns { title, description, openGraph, alternates, twitter, jsonLd }
@@ -45,7 +36,7 @@ export async function generateMetadata({ params }) {
   // Build alternates/hreflang entries for all locales configured in SITE
   const alternates = { canonical: meta.openGraph.url, languages: {} };
   for (const lng of SITE.locales) {
-    const other = (await import(`../../../../../messages/${lng}/sipcalc.json`).catch(() => ({}))).default || {};
+    const other = (await import(`../../../../../messages/${lng}/lumpsumcalc.json`).catch(() => ({}))).default || {};
     const otherSlug = other?.seo?.slug || opts.slug;
     if (otherSlug) alternates.languages[lng] = `${SITE.url}/${lng}/${otherSlug}`;
   }
@@ -64,15 +55,15 @@ export async function generateMetadata({ params }) {
 
 export default async function Page({ params }) {
   const { locale } = params;
-  const sipcalc = (await import(`../../../../../messages/${locale}/sipcalc.json`)).default;
+  const lumpsumcalc = (await import(`../../../../../messages/${locale}/lumpsumcalc.json`)).default;
 
   // Build JSON-LD for FAQ (if any)
   const faqJsonLd =
-    sipcalc.faqs && sipcalc.faqs.length
+    lumpsumcalc.faqs && lumpsumcalc.faqs.length
       ? {
         "@context": "https://schema.org",
         "@type": "FAQPage",
-        mainEntity: sipcalc.faqs.map((f) => ({
+        mainEntity: lumpsumcalc.faqs.map((f) => ({
           "@type": "Question",
           name: f.q,
           acceptedAnswer: { "@type": "Answer", text: f.a },
@@ -81,17 +72,17 @@ export default async function Page({ params }) {
       : null;
 
   // Build Article JSON-LD if isArticle true
-  const articleJsonLd = sipcalc.seo?.isArticle
+  const articleJsonLd = lumpsumcalc.seo?.isArticle
     ? {
       "@context": "https://schema.org",
       "@type": "Article",
-      headline: sipcalc.seo?.title || sipcalc.site?.heading,
-      description: sipcalc.seo?.description || "",
-      author: { "@type": "Person", name: sipcalc.seo?.author || "Author" },
-      datePublished: sipcalc.seo?.publishDate,
-      dateModified: sipcalc.seo?.modifiedDate,
-      image: sipcalc.seo?.image ? `${SITE.url}${sipcalc.seo.image}` : undefined,
-      mainEntityOfPage: { "@type": "WebPage", "@id:": `${SITE.url}/${locale}/${sipcalc.seo?.slug || ""}` },
+      headline: lumpsumcalc.seo?.title || lumpsumcalc.site?.heading,
+      description: lumpsumcalc.seo?.description || "",
+      author: { "@type": "Person", name: lumpsumcalc.seo?.author || "Author" },
+      datePublished: lumpsumcalc.seo?.publishDate,
+      dateModified: lumpsumcalc.seo?.modifiedDate,
+      image: lumpsumcalc.seo?.image ? `${SITE.url}${lumpsumcalc.seo.image}` : undefined,
+      mainEntityOfPage: { "@type": "WebPage", "@id:": `${SITE.url}/${locale}/${lumpsumcalc.seo?.slug || ""}` },
     }
     : null;
 
@@ -111,12 +102,12 @@ export default async function Page({ params }) {
 
     <Container maxWidth="lg">
 
-      <Heading title={sipcalc.site?.headingLumpsum ?? "Lumpsum Calculator"} />
+      <Heading title={lumpsumcalc.site?.headingLumpsum ?? "Lumpsum Calculator"} />
 
       <Box sx={{ flexGrow: 1 }}>
         <Grid container spacing={2}>
           <Grid size={{ xs: 12, sm: 12, md: 12, lg: 8 }}>
-            <SipCalculator sipcalc={sipcalc} />
+            <SipCalculator sipcalc={lumpsumcalc} />
           </Grid>
 
           <Grid size={{ xs: 12, sm: 12, md: 12, lg: 4 }}>
@@ -134,155 +125,117 @@ export default async function Page({ params }) {
           <Grid size={{ xs: 12, sm: 12, md: 12, lg: 8 }}>
             <Paper elevation={0} sx={{ border: "none", borderRadius: 2, p: { xs: 2, md: 4 }, boxShadow: "0 2px 8px rgba(0,0,0,0.05)" }}>
 
-              <article aria-labelledby="What is a SIP Calculator & Why You Need It?" className="finance-article">
-                <header>
-                  <h2 id="What is a SIP Calculator & Why You Need It?" className="finance-sub-heading">
-                    {sipcalc.article.whatIsHeading}
+              <article aria-labelledby="lumpsum-intro" className="finance-article">
+
+
+                {/* --- Introduction to Lumpsum Investment --- */}
+                <section aria-labelledby="lumpsum-intro">
+                  <h2 id="lumpsum-intro" className="finance-sub-heading">
+                    {lumpsumcalc.article.introduction.heading}
                   </h2>
-                  <p>
-                    {sipcalc.article.whatIsParagraph}
-                  </p>
-                </header>
-
-                <section aria-labelledby="how-it-works">
-                  <h3 id="how-it-works" className="finance-sub-heading">{sipcalc.article.howItWorks.heading}</h3>
-                  <p>
-                    {sipcalc.article.howItWorks.paragraph1}
-                  </p>
-
-                  <SIPFormulaBlock
-                    title={sipcalc.article.howItWorks.formula.title}
-                    formula={sipcalc.article.howItWorks.formula.body}
-                  />
-
-                  <p>
-                    <strong>Example:</strong> {sipcalc.article.howItWorks.example}
-                  </p>
+                  {lumpsumcalc.article.introduction.paragraphs.map((p, i) => (
+                    <p key={i}>{p}</p>
+                  ))}
                 </section>
 
-                <section aria-labelledby="benefits">
-                  <h3 id="benefits" className="finance-sub-heading">{sipcalc.article.benefits.heading}</h3>
+                {/* --- What is a Lumpsum Calculator? --- */}
+                <section aria-labelledby="lumpsum-what-is">
+                  <h2 id="lumpsum-what-is" className="finance-sub-heading">
+                    {lumpsumcalc.article.whatIs.heading}
+                  </h2>
+                  {lumpsumcalc.article.whatIs.paragraphs.map((para, i) => (
+                    <p key={i}>{para}</p>
+                  ))}
+                </section>
+
+                {/* --- How Does a Lumpsum Calculator Work? --- */}
+                <section aria-labelledby="lumpsum-how-it-works">
+                  <h2 id="lumpsum-how-it-works" className="finance-sub-heading">
+                    {lumpsumcalc.article.howItWorks.heading}
+                  </h2>
+
+                  <p>{lumpsumcalc.article.howItWorks.intro}</p>
+
                   <ul className="ou-list">
-                    {sipcalc.article.benefits.points.map((point, index) => (
-                      <li key={index}>{point}</li>
+                    {lumpsumcalc.article.howItWorks.inputs.map((item, i) => (
+                      <li key={i}>{item}</li>
                     ))}
                   </ul>
+
+                  <p>{lumpsumcalc.article.howItWorks.resultsIntro}</p>
+
+                  <ul className="ou-list">
+                    {lumpsumcalc.article.howItWorks.results.map((item, i) => (
+                      <li key={i}>{item}</li>
+                    ))}
+                  </ul>
+
+                  <p><strong>{lumpsumcalc.article.howItWorks.exampleIntro}</strong></p>
+
+                  <ul className="ou-list">
+                    <li>{lumpsumcalc.article.howItWorks.example.invested}</li>
+                    <li>{lumpsumcalc.article.howItWorks.example.returns}</li>
+                    <li>{lumpsumcalc.article.howItWorks.example.total}</li>
+                  </ul>
+
+                  <p>{lumpsumcalc.article.howItWorks.conclusion}</p>
                 </section>
 
-                <section aria-labelledby="benefits" >
-                  <h3 id="benefits" className="finance-sub-heading">{sipcalc.article.benefitsOnline.heading}</h3>
-                  <p>
-                    {sipcalc.article.benefitsOnline.intro}
-                  </p>
+                <section aria-labelledby="lumpsum-types-of-returns">
+                  <h2 id="lumpsum-types-of-returns" className="finance-sub-heading">
+                    {lumpsumcalc.article.typesOfReturns.heading}
+                  </h2>
+
+                  <p>{lumpsumcalc.article.typesOfReturns.intro}</p>
+
                   <ol className="ou-list">
-                    {sipcalc.article.benefitsOnline.points.map((point, index) => (
-                      <li key={index}>
-                        <strong>{point.title}</strong> — {point.description}
+                    {lumpsumcalc.article.typesOfReturns.returns.map((r, idx) => (
+                      <li key={idx}>
+                        <strong>{r.title}.</strong> — {r.description}
                       </li>
                     ))}
                   </ol>
 
-                  <p>
-                    {sipcalc.article.benefitsOnline.conclusion}
-                  </p>
+                  <p>{lumpsumcalc.article.typesOfReturns.conclusion}</p>
                 </section>
 
-                <section aria-labelledby="sip-formula">
-                  <h3 id="sip-formula" className="finance-sub-heading">{sipcalc.article.formulaExplained.heading}</h3>
-                  <p>
-                    {sipcalc.article.formulaExplained.intro}
-                  </p>
+                {/* --- Benefits of Using a Lumpsum Calculator --- */}
+                <section aria-labelledby="lumpsum-benefits">
+                  <h2 id="lumpsum-benefits" className="finance-sub-heading">
+                    {lumpsumcalc.article.benefits.heading}
+                  </h2>
 
-                  <SIPFormulaBlock
-                    title={sipcalc.article.formulaExplained.formula.title}
-                    formula={sipcalc.article.formulaExplained.formula.body}
-                  />
-                  <p>
-                    <strong>Example:</strong> {sipcalc.article.formulaExplained.exampleIntro}
-                  </p>
-
-                  <TableContainer component={Paper}>
-                    <Table aria-label="SIP Table">
-                      <TableHead>
-                        <TableRow>
-                          {sipcalc.article.formulaExplained.table.headers.map((header, index) => (
-                            <TableCell key={index} style={{ fontWeight: "600" }}>
-                              {header}
-                            </TableCell>
-                          ))}
-                        </TableRow>
-                      </TableHead>
-                      <TableBody>
-                        {sipcalc.article.formulaExplained.table.rows.map((row, rowIndex) => (
-                          <TableRow key={rowIndex}>
-                            {row.map((cell, cellIndex) => (
-                              <TableCell key={cellIndex}>{cell}</TableCell>
-                            ))}
-                          </TableRow>
-                        ))}
-                      </TableBody>
-                    </Table>
-                  </TableContainer>
-                  <br />
-
-                  <p>{sipcalc.article.formulaExplained.conclusion}</p>
-                </section>
-
-                <section aria-labelledby="sip-vs-lumpsum">
-                  <h3 id="sip-vs-lumpsum" className="finance-sub-heading">{sipcalc.article.sipVsLumpsum.heading}</h3>
-                  <p>
-                    {sipcalc.article.sipVsLumpsum.intro}
-                  </p>
-
-                  <div>
-                    <h4 className="finance-sub-heading-h4">{sipcalc.article.sipVsLumpsum.sip.title}</h4>
-                    <ul className="ou-list">
-                      {sipcalc.article.sipVsLumpsum.sip.points.map((point, index) => (
-                        <li key={index}>{point}</li>
-                      ))}
-                    </ul>
-                  </div>
-
-                  <div>
-                    <h4 className="finance-sub-heading-h4">{sipcalc.article.sipVsLumpsum.lumpsum.title}</h4>
-                    <ul className="ou-list">
-                      {sipcalc.article.sipVsLumpsum.lumpsum.points.map((point, index) => (
-                        <li key={index}>{point}</li>
-                      ))}
-                    </ul>
-                  </div>
-
-                  <aside aria-labelledby="key-difference">
-                    <h4 id="key-difference" className="finance-sub-heading-h4"> {sipcalc.article.sipVsLumpsum.keyDifference.title}</h4>
-                    <p>
-                      {sipcalc.article.sipVsLumpsum.keyDifference.points.map((point, index) => (
-                        <span key={index}>
-                          <strong>{point.label}</strong> → {point.description}
-                          <br />
-                        </span>
-                      ))}
-                    </p>
-                  </aside>
-
-                  <p>
-                    {sipcalc.article.sipVsLumpsum.conclusion}
-                  </p>
-                </section>
-
-                <section aria-labelledby="how-to-use">
-                  <h3 id="how-to-use" className="finance-sub-heading">{sipcalc.article.howToUse.heading}</h3>
-                  <p>
-                    {sipcalc.article.howToUse.intro}
-                  </p>
+                  <p>{lumpsumcalc.article.benefits.intro}</p>
 
                   <ol className="ou-list">
-                    {sipcalc.article.howToUse.steps.map((step, index) => (
-                      <li key={index}>
+                    {lumpsumcalc.article.benefits.points.map((point, idx) => (
+                      <li key={idx}>
+                        <strong>{point.title}.</strong> — {point.description}
+                      </li>
+                    ))}
+                  </ol>
+
+                  <p>{lumpsumcalc.article.benefits.conclusion}</p>
+                </section>
+
+
+                {/* Integration JSX — insert inside your single <article> as a <section> */}
+                <section aria-labelledby="lumpsum-how-to-use">
+                  <h2 id="lumpsum-how-to-use" className="finance-sub-heading">
+                    {lumpsumcalc.article.howToUse.heading}
+                  </h2>
+
+                  <p>{lumpsumcalc.article.howToUse.intro}</p>
+
+                  <ol className="ou-list">
+                    {lumpsumcalc.article.howToUse.steps.map((step, idx) => (
+                      <li key={idx}>
                         <strong>{step.title}</strong> — {step.description}
+                        {step.example && <div className="example" aria-hidden="true">{step.example}</div>}
                         {step.subpoints && (
                           <ul>
-                            {step.subpoints.map((sub, subIndex) => (
-                              <li key={subIndex}>{sub}</li>
+                            {step.subpoints.map((sp, sidx) => (
+                              <li key={sidx}>{sp}</li>
                             ))}
                           </ul>
                         )}
@@ -290,72 +243,69 @@ export default async function Page({ params }) {
                     ))}
                   </ol>
 
-                  <p>{sipcalc.article.howToUse.conclusion}</p>
-
+                  <p>{lumpsumcalc.article.howToUse.conclusion}</p>
                 </section>
 
-                <section aria-labelledby="sip-vs-manual">
-                  <h3 id="sip-vs-manual" className="finance-sub-heading">{sipcalc.article.sipVsManual.heading}</h3>
-                  <p>
-                    {sipcalc.article.sipVsManual.intro}
-                  </p>
+                {/* --- Lumpsum vs SIP: Which is Better for You? --- */}
+                <section aria-labelledby="lumpsum-vs-sip">
+                  <h2 id="lumpsum-vs-sip" className="finance-sub-heading">
+                    {lumpsumcalc.article.sipVsLumpsum.heading}
+                  </h2>
+
+                  <p>{lumpsumcalc.article.sipVsLumpsum.intro}</p>
+
+                  <div>
+                    <h3 className="finance-sub-heading-h4">{lumpsumcalc.article.sipVsLumpsum.lumpsum.title}</h3>
+                    <p>{lumpsumcalc.article.sipVsLumpsum.lumpsum.description}</p>
+                  </div>
+
+                  <div>
+                    <h3 className="finance-sub-heading-h4">{lumpsumcalc.article.sipVsLumpsum.sip.title}</h3>
+                    <p>{lumpsumcalc.article.sipVsLumpsum.sip.description}</p>
+                  </div>
+
+                  <p><strong>Which is better?</strong> {lumpsumcalc.article.sipVsLumpsum.whichIsBetter}</p>
+                </section>
+
+                {/* --- Things to Keep in Mind Before Investing Lumpsum --- */}
+                <section aria-labelledby="lumpsum-things-to-keep-in-mind">
+                  <h2 id="lumpsum-things-to-keep-in-mind" className="finance-sub-heading">
+                    {lumpsumcalc.article.thingsToKeepInMind.heading}
+                  </h2>
+
+                  <p>{lumpsumcalc.article.thingsToKeepInMind.intro}</p>
 
                   <ol className="ou-list">
-                    {sipcalc.article.sipVsManual.points.map((point, index) => (
-                      <li key={index}>
-                        <strong>{point.title}</strong> — {point.description}
+                    {lumpsumcalc.article.thingsToKeepInMind.points.map((point, idx) => (
+                      <li key={idx}>
+                        <strong>{point.title}.</strong> — {point.description}
                       </li>
                     ))}
                   </ol>
 
-                  <p>{sipcalc.article.sipVsManual.conclusion}</p>
+                  <p>{lumpsumcalc.article.thingsToKeepInMind.conclusion}</p>
                 </section>
 
-                <section aria-labelledby="reasons-to-use">
-                  <h3 id="reasons-to-use" className="finance-sub-heading">{sipcalc.article.reasonsToUse.heading}</h3>
-                  <p>
-                    {sipcalc.article.reasonsToUse.intro}
-                  </p>
+                {/* --- Conclusion: Smarter Investing with a Lumpsum Calculator --- */}
+                <section aria-labelledby="lumpsum-conclusion">
+                  <h2 id="lumpsum-conclusion" className="finance-sub-heading">
+                    {lumpsumcalc.article.conclusion.heading}
+                  </h2>
 
-                  <ol className="ou-list">
-                    {sipcalc.article.reasonsToUse.points.map((point, index) => (
-                      <li key={index}>
-                        <strong>{point.title}</strong> — {point.description}
-                      </li>
-                    ))}
-                  </ol>
-
-                  <p>{sipcalc.article.reasonsToUse.conclusion}</p>
-                </section>
-
-                <section aria-labelledby="sip-mistakes">
-                  <h3 id="sip-mistakes" className="finance-sub-heading">{sipcalc.article.sipMistakes.heading}</h3>
-                  <p>{sipcalc.article.sipMistakes.intro}</p>
-
-                  <ol className="ou-list">
-                    {sipcalc.article.sipMistakes.points.map((point, index) => (
-                      <li key={index}>
-                        <strong>{point.title}</strong> — {point.description}
-                      </li>
-                    ))}
-                  </ol>
-
-                  <p>{sipcalc.article.sipMistakes.conclusion}</p>
-                </section>
-
-                <section aria-labelledby="final-thoughts">
-                  <h3 id="final-thoughts" className="finance-sub-heading">{sipcalc.article.finalThoughts.heading}</h3>
-                  {sipcalc.article.finalThoughts.paragraphs.map((para, index) => (
-                    <p key={index}>{para}</p>
+                  {lumpsumcalc.article.conclusion.paragraphs.map((para, idx) => (
+                    <p key={idx}>{para}</p>
                   ))}
                 </section>
+
 
 
               </article>
 
 
-              <FAQAccordion faqs={sipcalc?.faqs ?? []} />
 
+
+
+              <FAQAccordion faqs={lumpsumcalc?.faqs ?? []} />
 
             </Paper>
 
