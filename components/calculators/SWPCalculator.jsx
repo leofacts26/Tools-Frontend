@@ -1,56 +1,26 @@
 "use client";
-import { Box, Grid, Paper, Stack, Typography, Divider } from "@mui/material";
-import { useState, useMemo } from "react";
+import { Box, Grid, Paper, Stack, Typography } from "@mui/material";
 import CustomInput from "../common/CustomInput";
 import CustomSlider from "../common/CustomSlider";
 import SWPResultsSummary from "../common/SWPResultsSummary";
 import { fmtINR } from "@/lib/utils";
+import useSWPCalculator from "@/hooks/useSWPCalculator";
 
 const SWPCalculator = ({ swp }) => {
-  const [investment, setInvestment] = useState(500000);
-  const [withdrawal, setWithdrawal] = useState(10000);
-  const [rate, setRate] = useState(8); // annual rate in %
-  const [years, setYears] = useState(5);
-
-
-  // replace your existing useMemo with this block
-  const { totalWithdrawal, finalValue } = useMemo(() => {
-    const P = Number(investment) || 0;
-    const w_raw = Number(withdrawal) || 0;
-    const yrs = Number(years) || 0;
-    const N = Math.max(0, Math.round(yrs * 12));
-    const annual = Number(rate) || 0;
-
-    // monthly rate using compounding conversion (matching Groww)
-    const monthlyRate = Math.pow(1 + annual / 100, 1 / 12) - 1;
-
-    const roundPaise = (x) => Math.round(x * 100) / 100; // two decimals
-    const roundRupee = (x) => Math.round(x); // integer rupee for UI
-
-    let balance = roundPaise(P);
-    let totalWithdrawn = 0;
-
-    for (let m = 1; m <= N; m++) {
-      // 1) apply monthly interest first (compound)
-      if (monthlyRate !== 0) {
-        balance = roundPaise(balance * (1 + monthlyRate));
-      }
-
-      // 2) then withdraw (end-of-month), withdraw rounded to nearest rupee
-      const withdrawThisMonth = Math.min(balance, roundRupee(w_raw));
-      balance = roundPaise(balance - withdrawThisMonth);
-      totalWithdrawn += withdrawThisMonth;
-
-      if (balance <= 0) {
-        balance = 0;
-        break;
-      }
-    }
-
-    return { totalWithdrawal: roundRupee(totalWithdrawn), finalValue: roundRupee(balance) };
-  }, [investment, withdrawal, rate, years]);
-
-
+  const {
+    LIMITS,
+    investment,
+    withdrawal,
+    rate,
+    years,
+    setInvestment,
+    setWithdrawal,
+    setRate,
+    setYears,
+    clampAndSet,
+    errors,
+    results,
+  } = useSWPCalculator();
 
   return (
     <Paper
@@ -64,8 +34,7 @@ const SWPCalculator = ({ swp }) => {
     >
       <Box sx={{ flexGrow: 1 }}>
         <Grid container spacing={2}>
-          <Grid size={{ xs: 12, md: 12 }}>
-
+          <Grid size={12}>
             {/* Total Investment */}
             <Box sx={{ mb: 4 }}>
               <Stack direction="row" alignItems="center" justifyContent="space-between" spacing={2}>
@@ -74,20 +43,21 @@ const SWPCalculator = ({ swp }) => {
                 </Typography>
                 <CustomInput
                   value={investment}
-                  onChange={setInvestment}
+                  onChange={(v) => clampAndSet(v, LIMITS.investment, setInvestment)}
                   startAdornment="₹"
-                  aria-label={swp?.form?.lumpsumInvestment ?? "Total Investment"}
+                  min={LIMITS.investment.min}
+                  max={LIMITS.investment.max}
+                  error={errors.investment.error}
+                  errorMessage={errors.investment.msg}
                 />
               </Stack>
-
               <CustomSlider
-                value={investment}
-                min={1000}
-                max={5000000}
+                value={typeof investment === "number" ? investment : LIMITS.investment.min}
+                min={LIMITS.investment.min}
+                max={LIMITS.investment.max}
                 step={1000}
-                onChange={(e, v) => setInvestment(v)}
+                onChange={(e, v) => setInvestment(Math.round(v))}
                 sx={{ mt: 2 }}
-                aria-label="Total investment slider"
               />
             </Box>
 
@@ -99,20 +69,21 @@ const SWPCalculator = ({ swp }) => {
                 </Typography>
                 <CustomInput
                   value={withdrawal}
-                  onChange={setWithdrawal}
+                  onChange={(v) => clampAndSet(v, LIMITS.withdrawal, setWithdrawal)}
                   startAdornment="₹"
-                  aria-label={swp?.form?.withdrawalLabel ?? "Withdrawal per month"}
+                  min={LIMITS.withdrawal.min}
+                  max={LIMITS.withdrawal.max}
+                  error={errors.withdrawal.error}
+                  errorMessage={errors.withdrawal.msg}
                 />
               </Stack>
-
               <CustomSlider
-                value={withdrawal}
-                min={1000}
-                max={200000}
+                value={typeof withdrawal === "number" ? withdrawal : LIMITS.withdrawal.min}
+                min={LIMITS.withdrawal.min}
+                max={LIMITS.withdrawal.max}
                 step={500}
-                onChange={(e, v) => setWithdrawal(v)}
+                onChange={(e, v) => setWithdrawal(Math.round(v))}
                 sx={{ mt: 2 }}
-                aria-label="Withdrawal slider"
               />
             </Box>
 
@@ -124,20 +95,21 @@ const SWPCalculator = ({ swp }) => {
                 </Typography>
                 <CustomInput
                   value={rate}
-                  onChange={setRate}
+                  onChange={(v) => clampAndSet(v, LIMITS.rate, setRate)}
                   endAdornment="%"
-                  aria-label={swp?.form?.expectedReturn ?? "Expected return rate (p.a)"}
+                  min={LIMITS.rate.min}
+                  max={LIMITS.rate.max}
+                  error={errors.rate.error}
+                  errorMessage={errors.rate.msg}
                 />
               </Stack>
-
               <CustomSlider
-                value={rate}
-                min={0}
-                max={30}
+                value={typeof rate === "number" ? rate : LIMITS.rate.min}
+                min={LIMITS.rate.min}
+                max={LIMITS.rate.max}
                 step={0.1}
-                onChange={(e, v) => setRate(v)}
+                onChange={(e, v) => setRate(Math.min(LIMITS.rate.max, Math.max(LIMITS.rate.min, Number(v))))}
                 sx={{ mt: 2 }}
-                aria-label="Expected return slider"
               />
             </Box>
 
@@ -149,20 +121,21 @@ const SWPCalculator = ({ swp }) => {
                 </Typography>
                 <CustomInput
                   value={years}
-                  onChange={setYears}
+                  onChange={(v) => clampAndSet(v, LIMITS.years, setYears)}
                   endAdornment="Yr"
-                  aria-label={swp?.form?.timePeriod ?? "Time period"}
+                  min={LIMITS.years.min}
+                  max={LIMITS.years.max}
+                  error={errors.years.error}
+                  errorMessage={errors.years.msg}
                 />
               </Stack>
-
               <CustomSlider
-                value={years}
-                min={1}
-                max={50}
+                value={typeof years === "number" ? years : LIMITS.years.min}
+                min={LIMITS.years.min}
+                max={LIMITS.years.max}
                 step={1}
-                onChange={(e, v) => setYears(v)}
+                onChange={(e, v) => setYears(Math.round(v))}
                 sx={{ mt: 2 }}
-                aria-label="Time period slider"
               />
             </Box>
 
@@ -171,12 +144,11 @@ const SWPCalculator = ({ swp }) => {
               fh={swp?.results?.investedAmount ?? "Total investment"}
               sh={swp?.results?.estimatedReturns ?? "Total withdrawal"}
               th={swp?.results?.totalValue ?? "Final value"}
-              investedAmount={investment}
-              estimatedReturns={totalWithdrawal}
-              totalValue={finalValue}
+              investedAmount={results.investedAmount}
+              estimatedReturns={results.totalWithdrawal}
+              totalValue={results.finalValue}
               currency={fmtINR}
             />
-
           </Grid>
         </Grid>
       </Box>

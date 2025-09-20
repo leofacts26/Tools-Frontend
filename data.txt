@@ -51,6 +51,8 @@ Ads/Monetization: Google AdSense integration + Affiliate links
 │   │   │── contact/page.jsx
 │   │   │── privacy/page.jsx
 │   │   │── terms/page.jsx
+│── /hooks
+│   │── useCalculator.jsx
 │── /components
 │   │── Navbar.jsx
 │   │── Footer.jsx

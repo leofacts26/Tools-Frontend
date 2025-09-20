@@ -19,7 +19,7 @@
   },
   "form": {
     "monthlyInvestment": "मासिक निवेश",
-    "lumpsumInvestment": "लंपसम निवेश",
+    "lumpsumInvestment": "कुल निवेश",
     "expectedReturn": "अपेक्षित रिटर्न दर (प्रतिवर्ष)",
     "timePeriod": "समय अवधि"
   },

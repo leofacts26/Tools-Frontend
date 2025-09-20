@@ -1,18 +1,19 @@
+// /components/common/CustomSlider.jsx
+"use client";
 import React from "react";
 import { styled } from "@mui/material/styles";
 import Slider from "@mui/material/Slider";
 
 const StyledSlider = styled(Slider)(({ theme }) => ({
-  color: "var(--clr-primary-1)",  // consistent brand color
+  color: "var(--clr-primary-1)",
   height: 6,
   borderRadius: 4,
   "& .MuiSlider-thumb": {
     height: 26,
     width: 26,
     backgroundColor: "var(--clr-white)",
-    // border: "2px solid var(--clr-primary-7)",
     "&:hover": {
-      boxShadow: "0px 0px 0px 8px var(--clr-primary-7)", // hover ring
+      boxShadow: "0px 0px 0px 8px var(--clr-primary-7)",
     },
   },
   "& .MuiSlider-track": {
@@ -32,6 +33,8 @@ const CustomSlider = ({ value, onChange, min, max, step, sx }) => {
       step={step}
       onChange={onChange}
       sx={sx}
+      aria-valuemin={min}
+      aria-valuemax={max}
     />
   );
 };

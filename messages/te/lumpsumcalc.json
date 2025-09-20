@@ -19,7 +19,7 @@
   },
   "form": {
     "monthlyInvestment": "నెలవారీ పెట్టుబడి",
-    "lumpsumInvestment": "లంప్‌సమ్ పెట్టుబడి",
+    "lumpsumInvestment": "మొత్తం పెట్టుబడి",
     "expectedReturn": "అంచనా రాబడి రేటు (ప్రతి సంవత్సరం)",
     "timePeriod": "కాలవ్యవధి"
   },

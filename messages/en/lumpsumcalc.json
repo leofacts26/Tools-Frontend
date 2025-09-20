@@ -19,7 +19,7 @@
   },
   "form": {
     "monthlyInvestment": "Monthly investment",
-    "lumpsumInvestment": "Lumpsum investment",
+    "lumpsumInvestment": "Total investment",
     "expectedReturn": "Expected return rate (p.a)",
     "timePeriod": "Time period"
   },
