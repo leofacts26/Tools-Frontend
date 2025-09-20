@@ -27,6 +27,7 @@ import SWPResultsSummary from "../common/SWPResultsSummary";
 import useCalculator from "@/hooks/useCalculator";
 import { COLORS, fmtINR } from "@/lib/utils";
 import { usePathname } from "next/navigation";
+import ResultsChart from "../common/ResultsChart";
 
 export default function SipCalculator({ sipcalc }) {
   const pathname = usePathname();
@@ -55,56 +56,101 @@ export default function SipCalculator({ sipcalc }) {
     pathnamePrefix: localePrefix,
   });
 
+  // -------------------------
   // Validation rules (controls UI error states)
-  const amountError = tab === 0 && (!amount || Number(amount) < 100);
-  const amountErrorMessage = "Minimum value allowed is 100";
+  // SIP min = 100, Lumpsum min = 500 (choose 500 to match Groww-style example)
+  // -------------------------
+  const SIP_MIN = 100;
+  const LUMPSUM_MIN = 500; // <- changed to 500 so example values (500,5,505) map correctly
 
-  const returnError = !annualReturn || Number(annualReturn) < 1;
+  const numericAmount = Number.isFinite(Number(amount)) ? Number(amount) : 0;
+  const numericAnnualReturn = Number.isFinite(Number(annualReturn)) ? Number(annualReturn) : 0;
+  const numericYears = Number.isFinite(Number(years)) ? Number(years) : 0;
+
+  const amountError = tab === 0 ? numericAmount < SIP_MIN : numericAmount < LUMPSUM_MIN;
+  const amountErrorMessage = tab === 0 ? `Minimum value allowed is ${SIP_MIN}` : `Minimum value allowed is ${LUMPSUM_MIN}`;
+
+  const returnError = numericAnnualReturn < 1;
   const returnErrorMessage = "Minimum value allowed is 1";
 
-  const yearsError = !years || Number(years) < 1;
+  const yearsError = numericYears < 1;
   const yearsErrorMessage = "Minimum value allowed is 1";
 
-  // --- Clamp / sanitizer: ensure calculations always have sensible minimums
+  // --- safe values for calculation (per-field fallbacks to min when input < min)
   const safeAmount = tab === 1
-    ? Number(amount) >= 1 ? Number(amount) : 100
-    : (Number(amount) >= 100 ? Number(amount) : 100);
+    ? (numericAmount < LUMPSUM_MIN ? LUMPSUM_MIN : Math.min(numericAmount, 10000000))
+    : (numericAmount < SIP_MIN ? SIP_MIN : Math.min(numericAmount, 1000000));
 
-  const safeReturn = Number(annualReturn) >= 1 ? Number(annualReturn) : 1;
-  const safeYears = Number(years) >= 1 ? Number(years) : 1;
+  const safeReturn = numericAnnualReturn < 1 ? 1 : Math.min(numericAnnualReturn, 30);
+  const safeYears = numericYears < 1 ? 1 : Math.min(numericYears, 40);
 
-  // Compute safeResults for display when inputs invalid
+  const roundPaise = (x) => Math.round(x * 100) / 100;
+  const roundRupee = (x) => Math.round(x);
+
+  // Compute base (safe) results — used when inputs invalid or when forming display baseline
   const safeResults = useMemo(() => {
     if (tab === 1) {
+      // lumpsum formula: FV = P * (1+r)^n
       const p = safeAmount;
       const r = safeReturn / 100;
       const n = safeYears;
-      const maturity = p * Math.pow(1 + r, n);
-      const totalInvested = p;
-      const gain = maturity - totalInvested;
+      const maturity = roundRupee(p * Math.pow(1 + r, n));
+      const totalInvested = roundRupee(p);
+      const gain = roundRupee(maturity - totalInvested);
       return { maturity, totalInvested, gain, months: n * 12, monthlyRate: null };
     } else {
+      // SIP
       const monthlyAmount = safeAmount;
       const r = safeReturn / 100;
       const monthlyRate = Math.pow(1 + r, 1 / 12) - 1;
       const months = Math.max(0, Math.round(safeYears * 12));
       if (monthlyRate === 0) {
-        const totalInvested = monthlyAmount * months;
+        const totalInvested = roundRupee(monthlyAmount * months);
         return { maturity: totalInvested, totalInvested, gain: 0, months, monthlyRate };
       }
       const factor = (Math.pow(1 + monthlyRate, months) - 1) / monthlyRate;
-      const maturity = monthlyAmount * factor * (1 + monthlyRate);
-      const totalInvested = monthlyAmount * months;
-      const gain = maturity - totalInvested;
+      const maturity = roundRupee(monthlyAmount * factor * (1 + monthlyRate));
+      const totalInvested = roundRupee(monthlyAmount * months);
+      const gain = roundRupee(maturity - totalInvested);
       return { maturity, totalInvested, gain, months, monthlyRate };
     }
   }, [tab, safeAmount, safeReturn, safeYears]);
 
-  // Decide whether to use actual results or safeResults for display
-  const displayResults = useMemo(() => {
+  // If inputs valid, use real results; otherwise use safeResults baseline
+  const baseDisplayResults = useMemo(() => {
     const allValid = !amountError && !returnError && !yearsError;
     return allValid ? results : safeResults;
   }, [results, safeResults, amountError, returnError, yearsError]);
+
+  // --- Lumpsum-specific Groww-like dynamic display handling
+  // When a lumpsum raw input is exactly 0, show example numbers derived from LUMPSUM_MIN and safeReturn/year
+  const displayResults = useMemo(() => {
+    if (tab !== 1) {
+      return baseDisplayResults;
+    }
+
+    // Start from the base (either real or safe)
+    let { maturity, totalInvested, gain } = baseDisplayResults;
+
+    // If user set amount exactly 0, show Invested = LUMPSUM_MIN
+    if (numericAmount === 0) {
+      totalInvested = roundRupee(LUMPSUM_MIN);
+    }
+
+    // If user set return exactly 0, show estimated returns = Invested * (safeReturn / 100) (1 year)
+    if (numericAnnualReturn === 0) {
+      // compute returns on the current displayed invested amount
+      const computedGain = roundRupee((totalInvested) * (safeReturn / 100));
+      gain = computedGain;
+    }
+
+    // If user set years exactly 0, show total value = invested + gain
+    if (numericYears === 0) {
+      maturity = roundRupee((totalInvested) + (gain));
+    }
+
+    return { maturity, totalInvested, gain, months: numericYears * 12, monthlyRate: null };
+  }, [tab, baseDisplayResults, numericAmount, numericAnnualReturn, numericYears, safeReturn]);
 
   const displayPieData = useMemo(() => [
     { name: sipcalc?.chart?.invested ?? "Invested", value: displayResults.totalInvested },
@@ -118,7 +164,7 @@ export default function SipCalculator({ sipcalc }) {
   const currency = (val) =>
     new Intl.NumberFormat("en-IN", { style: "currency", currency: "INR", maximumFractionDigits: 0 }).format(val);
 
-  // Updated monthly max to 1,000,000
+  // Updated monthly/lumpsum max
   const MONTHLY_MAX = 1000000;
   const LUMPSUM_MAX = 10000000;
 
@@ -150,14 +196,14 @@ export default function SipCalculator({ sipcalc }) {
                   startAdornment="₹"
                   error={amountError}
                   errorMessage={amountErrorMessage}
-                  min={tab === 0 ? 100 : 1}
+                  min={tab === 0 ? SIP_MIN : LUMPSUM_MIN}
                   max={tab === 0 ? MONTHLY_MAX : LUMPSUM_MAX}
                 />
               </Stack>
               {/* Amount Slider */}
               <CustomSlider
                 value={amount}
-                min={tab === 0 ? 100 : 1}
+                min={tab === 0 ? SIP_MIN : LUMPSUM_MIN}
                 max={tab === 0 ? MONTHLY_MAX : LUMPSUM_MAX}
                 step={tab === 0 ? 100 : 1000}
                 onChange={(e, v) => setAmount(v)}
@@ -232,31 +278,17 @@ export default function SipCalculator({ sipcalc }) {
 
           {/* Right side results */}
           <Grid size={{ xs: 12, md: 6 }} display="flex" alignItems="center" justifyContent={"center"}>
-            <Box>
-              <ResponsiveContainer width={320} height={400} aspect={1}>
-                <PieChart tabIndex={-1}>
-                  <Pie
-                    data={displayPieData}
-                    dataKey="value"
-                    nameKey="name"
-                    innerRadius={70}
-                    outerRadius={100}
-                    stroke="none"
-                    labelLine={false}
-                    label={false}
-                  >
-                    {displayPieData.map((entry, index) => (
-                      <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
-                    ))}
-                  </Pie>
-                  <Tooltip
-                    content={(props) => <CustomTooltip {...props} currencyFn={currency} />}
-                  />
-
-                  <Legend verticalAlign="bottom" height={36} />
-                </PieChart>
-              </ResponsiveContainer>
-            </Box>
+            <ResultsChart
+              data={displayPieData}
+              colors={COLORS}
+              width={320}
+              height={400}
+              innerRadius={70}
+              outerRadius={100}
+              currencyFn={currency}
+              ariaLabel="Investment breakdown"
+              emptyMessage="Enter values to see chart"
+            />
           </Grid>
 
         </Grid>
