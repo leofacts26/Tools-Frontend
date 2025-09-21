@@ -31,6 +31,18 @@ const CssTextField = styled(TextField)(({ theme }) => ({
     WebkitAppearance: "none",
     margin: 0,
   },
+
+  /* Disabled state overrides to make it visually clear and not dimmed */
+  "& .MuiInputBase-root.Mui-disabled": {
+    backgroundColor: "#f5f5f5", // light gray bg
+    color: theme.palette.text.disabled,
+    cursor: "not-allowed",
+    // keep height/font consistent
+  },
+  "& .MuiInputBase-input.Mui-disabled": {
+    color: theme.palette.text.disabled,
+    WebkitTextFillColor: theme.palette.text.disabled,
+  },
 }));
 
 // Styled tooltip (white bg, red text, with shadow)
@@ -62,8 +74,11 @@ const CustomInput = ({
   onBlur,
   error = false,
   errorMessage = "",
+  disabled = false,
 }) => {
-  const adornmentColor = error ? "error.main" : "var(--clr-primary-1)";
+  // adornment color: red when error, muted when disabled, otherwise brand color
+  const adornmentColor = error ? "error.main" : disabled ? "text.disabled" : "var(--clr-primary-1)";
+  const inputTextColor = error ? "#d32f2f" : disabled ? "text.disabled" : "var(--clr-primary-1)";
 
   return (
     <Box sx={{ display: "flex", alignItems: "center", gap: 1 }}>
@@ -71,12 +86,17 @@ const CustomInput = ({
         <RedTooltip title={errorMessage} arrow>
           <InfoOutlinedIcon
             fontSize="small"
-            sx={{ color: "error.main", cursor: "pointer" }}
+            sx={{
+              color: "error.main",
+              cursor: "pointer",
+              opacity: disabled ? 0.9 : 1, // still visible when disabled
+            }}
           />
         </RedTooltip>
       )}
 
       <CssTextField
+        disabled={disabled}
         type="number"
         value={value ?? ""}
         onChange={(e) => {
@@ -109,14 +129,14 @@ const CustomInput = ({
         }}
         InputProps={{
           startAdornment: startAdornment ? (
-            <InputAdornment position="start">
+            <InputAdornment position="start" sx={{ pointerEvents: "none" }}>
               <Typography sx={{ color: adornmentColor, fontWeight: 600 }}>
                 {startAdornment}
               </Typography>
             </InputAdornment>
           ) : null,
           endAdornment: endAdornment ? (
-            <InputAdornment position="end">
+            <InputAdornment position="end" sx={{ pointerEvents: "none" }}>
               <Typography sx={{ color: adornmentColor, fontWeight: 600 }}>
                 {endAdornment}
               </Typography>
@@ -133,6 +153,14 @@ const CustomInput = ({
           width,
           "& .MuiInputBase-root": error ? { backgroundColor: "#ffe5e5" } : {},
           "& .MuiInputBase-input": error ? { color: "#d32f2f", fontWeight: 600 } : {},
+          // ensure disabled inputs show our muted color in inline styles too
+          "& .MuiInputBase-root.Mui-disabled": {
+            backgroundColor: "#f5f5f5",
+          },
+          "& .MuiInputBase-input.Mui-disabled": {
+            color: (theme) => theme.palette.text.disabled,
+            fontWeight: 600,
+          },
         }}
       />
     </Box>

@@ -6,8 +6,9 @@
         "sip-calculator": { "label": "SIP Calculator" },
         "lumpsum-calculator": { "label": "Lumpsum Calculator" },
         "swp-calculator": { "label": "SWP Calculator" },
-        "terminal": { "label": "Terminal" },
-        "connect": { "label": "Connect" }
+        "mutual-fund-returns-calculator": { "label": "MF Return Calculator" },
+        "sukanya-samriddhi-yojana-calculator": { "label": "Sukanya Samriddhi Yojana (SSY)" },
+        "ppf-calculator": { "label": "PPF Calculator" }
       }
     },
     "students": {
