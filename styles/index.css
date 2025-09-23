@@ -487,7 +487,7 @@ p {
 .sidebar-sublinks {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  row-gap: .25rem;
+  row-gap: 1.25rem;
 }
 
 .sidebar-sublinks a {
@@ -547,7 +547,7 @@ p {
 
 .submenu-center {
   display: grid;
-  gap: .25rem 2rem;
+  gap: 2.25rem 2rem;
 }
 
 .col-2 {

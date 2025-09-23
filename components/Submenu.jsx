@@ -36,7 +36,7 @@ export default function Submenu() {
     submenu.style.top = `${bottom}px`;
 
     if (links.length === 3) setColumns("col-3");
-    else if (links.length > 3) setColumns("col-4");
+    else if (links.length > 3) setColumns("col-3");
   }, [page, location, links]);
 
   // OUTSIDE DETECTION + ESC key handling

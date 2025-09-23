@@ -8,7 +8,12 @@
         "swp-calculator": { "label": "SWP Calculator" },
         "mutual-fund-returns-calculator": { "label": "MF Return Calculator" },
         "sukanya-samriddhi-yojana-calculator": { "label": "Sukanya Samriddhi Yojana (SSY)" },
-        "ppf-calculator": { "label": "PPF Calculator" }
+        "ppf-calculator": { "label": "PPF Calculator" },
+        "epf-calculator": { "label": "EPF Calculator" },
+        "fd-calculator": { "label": "FD calculator" },
+        "rd-calculator": { "label": "RD calculator" },
+        "nps-calculator": { "label": "NPS calculator" },
+        "simple-interest-calculator": { "label": "Simple Intrest Calculator" }
       }
     },
     "students": {
