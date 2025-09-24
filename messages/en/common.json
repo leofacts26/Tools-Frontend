@@ -38,6 +38,9 @@
         },
         "compound-interest-calculator": {
           "label": "Compound Interest Calculator"
+        },
+        "nsc-calculator": {
+          "label": "NSC Calculator"
         }
       }
     },
