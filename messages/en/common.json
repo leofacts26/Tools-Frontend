@@ -3,40 +3,81 @@
     "finance": {
       "page": "Finance",
       "links": {
-        "sip-calculator": { "label": "SIP Calculator" },
-        "lumpsum-calculator": { "label": "Lumpsum Calculator" },
-        "swp-calculator": { "label": "SWP Calculator" },
-        "mutual-fund-returns-calculator": { "label": "MF Return Calculator" },
-        "sukanya-samriddhi-yojana-calculator": { "label": "Sukanya Samriddhi Yojana (SSY)" },
-        "ppf-calculator": { "label": "PPF Calculator" },
-        "epf-calculator": { "label": "EPF Calculator" },
-        "fd-calculator": { "label": "FD calculator" },
-        "rd-calculator": { "label": "RD calculator" },
-        "nps-calculator": { "label": "NPS calculator" },
-        "simple-interest-calculator": { "label": "Simple Intrest Calculator" }
+        "sip-calculator": {
+          "label": "SIP Calculator"
+        },
+        "lumpsum-calculator": {
+          "label": "Lumpsum Calculator"
+        },
+        "swp-calculator": {
+          "label": "SWP Calculator"
+        },
+        "mutual-fund-returns-calculator": {
+          "label": "MF Return Calculator"
+        },
+        "sukanya-samriddhi-yojana-calculator": {
+          "label": "Sukanya Samriddhi Yojana (SSY)"
+        },
+        "ppf-calculator": {
+          "label": "PPF Calculator"
+        },
+        "epf-calculator": {
+          "label": "EPF Calculator"
+        },
+        "fd-calculator": {
+          "label": "FD calculator"
+        },
+        "rd-calculator": {
+          "label": "RD calculator"
+        },
+        "nps-calculator": {
+          "label": "NPS calculator"
+        },
+        "simple-interest-calculator": {
+          "label": "Simple Intrest Calculator"
+        },
+        "compound-interest-calculator": {
+          "label": "Compound Interest Calculator"
+        }
       }
     },
     "students": {
       "page": "Students",
       "links": {
-        "plugins": { "label": "Plugins" },
-        "libraries": { "label": "Libraries" },
-        "help": { "label": "Help" },
-        "billing": { "label": "Billing" }
+        "plugins": {
+          "label": "Plugins"
+        },
+        "libraries": {
+          "label": "Libraries"
+        },
+        "help": {
+          "label": "Help"
+        },
+        "billing": {
+          "label": "Billing"
+        }
       }
     },
     "utilities": {
       "page": "Utilities",
       "links": {
-        "about": { "label": "About" },
-        "customers": { "label": "Customers" }
+        "about": {
+          "label": "About"
+        },
+        "customers": {
+          "label": "Customers"
+        }
       }
     },
     "others": {
       "page": "Others",
       "links": {
-        "others": { "label": "Others" },
-        "customers": { "label": "Customers" }
+        "others": {
+          "label": "Others"
+        },
+        "customers": {
+          "label": "Customers"
+        }
       }
     }
   },
