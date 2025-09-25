@@ -1,4 +1,3 @@
-// /components/calculators/MFReturnCalculator.jsx
 "use client";
 import React, { useMemo } from "react";
 import { Box, Grid, Paper, Stack, Typography } from "@mui/material";

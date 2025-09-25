@@ -41,6 +41,12 @@
         },
         "nsc-calculator": {
           "label": "NSC Calculator"
+        },
+        "step-up-sip-calculator": {
+          "label": "Step Up SIP Calculator"
+        },
+        "gratuity-calculator": {
+          "label": "Gratuity Calculator"
         }
       }
     },
