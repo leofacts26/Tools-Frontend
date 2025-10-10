@@ -467,6 +467,7 @@ p {
   border: 1px solid var(--border);
   position: relative;
   padding: 1.5rem 2rem;
+  overflow-y: scroll;
 }
 
 .flex-icon-mobile {}

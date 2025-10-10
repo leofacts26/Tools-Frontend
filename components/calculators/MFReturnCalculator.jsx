@@ -53,7 +53,7 @@ const MFReturnCalculator = ({ mf = {} }) => {
             {/* Total Investment (Lumpsum) */}
             <Box sx={{ mb: 4 }}>
               <Stack direction="row" alignItems="center" justifyContent="space-between" spacing={2}>
-                <Typography variant="subtitle1">Total investment</Typography>
+                <Typography variant="subtitle1">{mf.results.investedAmount}</Typography>
                 <CustomInput
                   value={investment}
                   onChange={(v) => clampAndSet(v, LIMITS.investment, setInvestment)}
@@ -78,7 +78,7 @@ const MFReturnCalculator = ({ mf = {} }) => {
             {/* Expected return rate (p.a) */}
             <Box sx={{ mb: 4 }}>
               <Stack direction="row" alignItems="center" justifyContent="space-between" spacing={2}>
-                <Typography variant="subtitle1">Expected return rate (p.a)</Typography>
+                <Typography variant="subtitle1">{mf.results.estimatedReturns}</Typography>
                 <CustomInput
                   value={annualReturn}
                   onChange={(v) => clampAndSet(v, LIMITS.rate, setAnnualReturn)}
@@ -103,7 +103,7 @@ const MFReturnCalculator = ({ mf = {} }) => {
             {/* Time Period */}
             <Box sx={{ mb: 4 }}>
               <Stack direction="row" alignItems="center" justifyContent="space-between" spacing={2}>
-                <Typography variant="subtitle1">Time period</Typography>
+                <Typography variant="subtitle1">{mf.results.totalValue}</Typography>
                 <CustomInput
                   value={years}
                   onChange={(v) => clampAndSet(v, LIMITS.years, setYears)}

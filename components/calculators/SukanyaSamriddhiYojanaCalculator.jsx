@@ -54,16 +54,16 @@ const SukanyaSamriddhiYojanaCalculator = ({
           {/* Left: Inputs */}
           <Grid size={{ xs: 12, md: 6 }}>
             <Box sx={{ mb: 3 }}>
-              <Typography variant="h6">Sukanya Samriddhi Yojana Calculator</Typography>
               <Typography variant="body2" color="text.secondary" sx={{ mt: 1 }}>
-                Latest SSY rate: {ssy?.initialRate ?? 8.2}% (fixed in UI). Using deposit at year-end + monthly compounding.
+                {/* Latest SSY rate: {ssy?.initialRate ?? 8.2}% (fixed in UI). Using deposit at year-end + monthly compounding. */}
+                {ssy.notes.latestRateNote.replace("{rate}", ssy?.initialRate ?? 8.2)}
               </Typography>
             </Box>
 
             {/* Yearly investment */}
             <Box sx={{ mb: 4 }}>
               <Stack direction="row" alignItems="center" justifyContent="space-between" spacing={2}>
-                <Typography variant="subtitle1">Yearly investment</Typography>
+                <Typography variant="subtitle1">{ssy.form.yearlyInvestment}</Typography>
                 <CustomInput
                   value={yearlyInvestment}
                   onChange={(v) => clampAndSet(v, LIMITS.yearlyInvestment, setYearlyInvestment)}
@@ -87,7 +87,7 @@ const SukanyaSamriddhiYojanaCalculator = ({
             {/* Girl's age */}
             <Box sx={{ mb: 4 }}>
               <Stack direction="row" alignItems="center" justifyContent="space-between" spacing={2}>
-                <Typography variant="subtitle1">Girl's age (yrs)</Typography>
+                <Typography variant="subtitle1">{ssy.form.girlsAge}</Typography>
                 <CustomInput
                   value={girlAge}
                   onChange={(v) => clampAndSet(v, LIMITS.girlAge, setGirlAge)}
@@ -112,7 +112,7 @@ const SukanyaSamriddhiYojanaCalculator = ({
             {/* Start period (year) */}
             <Box sx={{ mb: 4 }}>
               <Stack direction="row" alignItems="center" justifyContent="space-between" spacing={2}>
-                <Typography variant="subtitle1">Start period (year)</Typography>
+                <Typography variant="subtitle1">{ssy.form.startPeriod}</Typography>
                 <CustomInput
                   value={startYear}
                   onChange={(v) => clampAndSet(v, LIMITS.startYear, setStartYear)}
@@ -147,7 +147,7 @@ const SukanyaSamriddhiYojanaCalculator = ({
 
             {/* Maturity Year */}
             <Stack direction="row" justifyContent="space-between" alignItems="center" sx={{ mt: 2 }}>
-              <Typography variant="subtitle2">Maturity year</Typography>
+              <Typography variant="subtitle2">{ssy.results.maturityYear}</Typography>
               <Typography variant="h6">{results.maturityYear}</Typography>
             </Stack>
           </Grid>
@@ -171,8 +171,7 @@ const SukanyaSamriddhiYojanaCalculator = ({
 
       <Box sx={{ mt: 3 }}>
         <Typography variant="body2" color="text.secondary">
-          This calculator simulates monthly compounding and deposits at year-end (15 deposits). Setting <code>tuneForGroww</code> to true applies a tiny calibration
-          to match Groww's published example numbers exactly. If you prefer raw mathematical output (no calibration), pass <code>tuneForGroww={false}</code>.
+          {ssy.notes.long}
         </Typography>
       </Box>
     </Paper>

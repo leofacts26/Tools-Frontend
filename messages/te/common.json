@@ -12,11 +12,41 @@
         "swp-calculator": {
           "label": "SWP కాల్కులేటర్"
         },
-        "terminal": {
-          "label": "టర్మినల్"
+        "mutual-fund-returns-calculator": {
+          "label": "MF రిటర్న్ కాలిక్యులేటర్"
         },
-        "connect": {
-          "label": "కనెక్ట్"
+        "sukanya-samriddhi-yojana-calculator": {
+          "label": "సుకన్య సమృద్ధి యోజన (SSY)"
+        },
+        "ppf-calculator": {
+          "label": "PPF కాలిక్యులేటర్"
+        },
+        "epf-calculator": {
+          "label": "EPF కాలిక్యులేటర్"
+        },
+        "fd-calculator": {
+          "label": "FD కాలిక్యులేటర్"
+        },
+        "rd-calculator": {
+          "label": "RD కాలిక్యులేటర్"
+        },
+        "nps-calculator": {
+          "label": "NPS కాలిక్యులేటర్"
+        },
+        "simple-interest-calculator": {
+          "label": "సాధారణ ఇంట్రెస్ట్ కాలిక్యులేటర్"
+        },
+        "compound-interest-calculator": {
+          "label": "సమ్మేళన వడ్డీ కాలిక్యులేటర్"
+        },
+        "nsc-calculator": {
+          "label": "NSC కాలిక్యులేటర్"
+        },
+        "step-up-sip-calculator": {
+          "label": "స్టెప్ అప్ SIP కాలిక్యులేటర్"
+        },
+        "gratuity-calculator": {
+          "label": "గ్రాట్యుటీ కాలిక్యులేటర్"
         }
       }
     },

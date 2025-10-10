@@ -3,34 +3,90 @@
     "finance": {
       "page": "वित्त",
       "links": {
-        "sip-calculator": { "label": "SIP कैलकुलेटर" },
-        "lumpsum-calculator": { "label": "Lumpsum कैलकुलेटर" },
-        "swp-calculator": { "label": "SWP कैलकुलेटर" },
-        "terminal": { "label": "टर्मिनल" },
-        "connect": { "label": "कनेक्ट" }
+        "sip-calculator": {
+          "label": "SIP कैलकुलेटर"
+        },
+        "lumpsum-calculator": {
+          "label": "Lumpsum कैलकुलेटर"
+        },
+        "swp-calculator": {
+          "label": "SWP कैलकुलेटर"
+        },
+        "mutual-fund-returns-calculator": {
+          "label": "एमएफ रिटर्न कैलकुलेटर"
+        },
+        "sukanya-samriddhi-yojana-calculator": {
+          "label": "सुकन्या समृद्धि योजना (एसएसवाई)"
+        },
+        "ppf-calculator": {
+          "label": "पीपीएफ कैलकुलेटर"
+        },
+        "epf-calculator": {
+          "label": "ईपीएफ कैलकुलेटर"
+        },
+        "fd-calculator": {
+          "label": "एफडी कैलकुलेटर"
+        },
+        "rd-calculator": {
+          "label": "आरडी कैलकुलेटर"
+        },
+        "nps-calculator": {
+          "label": "एनपीएस कैलकुलेटर"
+        },
+        "simple-interest-calculator": {
+          "label": "सरल ब्याज कैलक्यूलेटर"
+        },
+        "compound-interest-calculator": {
+          "label": "चक्रवृद्धि ब्याज कैलकुलेटर"
+        },
+        "nsc-calculator": {
+          "label": "एनएससी कैलकुलेटर"
+        },
+        "step-up-sip-calculator": {
+          "label": "स्टेप अप एसआईपी कैलकुलेटर"
+        },
+        "gratuity-calculator": {
+          "label": "ग्रेच्युटी कैलकुलेटर"
+        }
       }
     },
     "students": {
       "page": "विद्यार्थी",
       "links": {
-        "plugins": { "label": "प्लगइन्स" },
-        "libraries": { "label": "लाइब्रेरीज़" },
-        "help": { "label": "मदद" },
-        "billing": { "label": "बिलिंग" }
+        "plugins": {
+          "label": "प्लगइन्स"
+        },
+        "libraries": {
+          "label": "लाइब्रेरीज़"
+        },
+        "help": {
+          "label": "मदद"
+        },
+        "billing": {
+          "label": "बिलिंग"
+        }
       }
     },
     "utilities": {
       "page": "उपयोगिताएँ",
       "links": {
-        "about": { "label": "हमारे बारे में" },
-        "customers": { "label": "ग्राहक" }
+        "about": {
+          "label": "हमारे बारे में"
+        },
+        "customers": {
+          "label": "ग्राहक"
+        }
       }
     },
     "others": {
       "page": "अन्य",
       "links": {
-        "others": { "label": "अन्य" },
-        "customers": { "label": "ग्राहक" }
+        "others": {
+          "label": "अन्य"
+        },
+        "customers": {
+          "label": "ग्राहक"
+        }
       }
     }
   },
