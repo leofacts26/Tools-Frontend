@@ -50,7 +50,7 @@ const PPFCalculator = ({ ppf = {} }) => {
             {/* Yearly investment */}
             <Box sx={{ mb: 4 }}>
               <Stack direction="row" alignItems="center" justifyContent="space-between" spacing={2}>
-                <Typography variant="subtitle1">{ppfCalc.form.yearlyInvestment}</Typography>
+                <Typography variant="subtitle1">{ppf.form.yearlyInvestment}</Typography>
                 <CustomInput
                   value={yearlyInvestment}
                   onChange={(v) => clampAndSet(v, LIMITS.yearlyInvestment, setYearlyInvestment)}
@@ -74,7 +74,7 @@ const PPFCalculator = ({ ppf = {} }) => {
             {/* Time period */}
             <Box sx={{ mb: 4 }}>
               <Stack direction="row" alignItems="center" justifyContent="space-between" spacing={2}>
-                <Typography variant="subtitle1">{ppfCalc.form.timePeriod}</Typography>
+                <Typography variant="subtitle1">{ppf.form.timePeriod}</Typography>
                 <CustomInput
                   value={years}
                   onChange={(v) => clampAndSet(v, LIMITS.years, setYears)}
@@ -98,7 +98,7 @@ const PPFCalculator = ({ ppf = {} }) => {
             {/* Rate (disabled input only, slider removed) */}
             <Box sx={{ mb: 4 }}>
               <Stack direction="row" alignItems="center" justifyContent="space-between" spacing={2}>
-                <Typography variant="subtitle1">{ppfCalc.form.interestRate}</Typography>
+                <Typography variant="subtitle1">{ppf.form.interestRate}</Typography>
                 <CustomInput
                   disabled
                   value={rate}

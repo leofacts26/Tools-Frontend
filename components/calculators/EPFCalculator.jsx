@@ -65,7 +65,7 @@ const EPFCalculator = ({ epf = {}, retirementAge = 58 }) => {
             {/* Monthly Salary */}
             <Box sx={{ mb: 4 }}>
               <Stack direction="row" alignItems="center" justifyContent="space-between" spacing={2}>
-                <Typography variant="subtitle1">Monthly salary (Basic + DA)</Typography>
+                <Typography variant="subtitle1">{epf.form.monthlySalary}</Typography>
                 <CustomInput
                   value={monthlySalary}
                   onChange={(v) => clampAndSet(v, LIMITS.monthlySalary, setMonthlySalary)}
@@ -89,7 +89,7 @@ const EPFCalculator = ({ epf = {}, retirementAge = 58 }) => {
             {/* Age */}
             <Box sx={{ mb: 4 }}>
               <Stack direction="row" alignItems="center" justifyContent="space-between" spacing={2}>
-                <Typography variant="subtitle1">Your age (yrs)</Typography>
+                <Typography variant="subtitle1">{epf.form.age}</Typography>
                 <CustomInput
                   value={age}
                   onChange={(v) => clampAndSet(v, LIMITS.age, setAge)}
@@ -114,7 +114,7 @@ const EPFCalculator = ({ epf = {}, retirementAge = 58 }) => {
             {/* Contribution % */}
             <Box sx={{ mb: 4 }}>
               <Stack direction="row" alignItems="center" justifyContent="space-between" spacing={2}>
-                <Typography variant="subtitle1">Your contribution to EPF</Typography>
+                <Typography variant="subtitle1">{epf.form.employeeContribution}</Typography>
                 <CustomInput
                   value={contributionPct}
                   onChange={(v) => clampAndSet(v, LIMITS.contributionPct, setContributionPct)}
@@ -139,7 +139,7 @@ const EPFCalculator = ({ epf = {}, retirementAge = 58 }) => {
             {/* Annual increase */}
             <Box sx={{ mb: 4 }}>
               <Stack direction="row" alignItems="center" justifyContent="space-between" spacing={2}>
-                <Typography variant="subtitle1">Annual increase in salary</Typography>
+                <Typography variant="subtitle1">{epf.form.annualSalaryIncrease}</Typography>
                 <CustomInput
                   value={annualIncrease}
                   onChange={(v) => clampAndSet(v, LIMITS.annualIncrease, setAnnualIncrease)}
@@ -162,7 +162,7 @@ const EPFCalculator = ({ epf = {}, retirementAge = 58 }) => {
             {/* Rate (disabled) */}
             <Box sx={{ mb: 4 }}>
               <Stack direction="row" alignItems="center" justifyContent="space-between" spacing={2}>
-                <Typography variant="subtitle1">Rate of interest (p.a)</Typography>
+                <Typography variant="subtitle1">{epf.form.interestRate}</Typography>
                 <CustomInput disabled value={rate} endAdornment="%" width={100} />
               </Stack>
             </Box>
