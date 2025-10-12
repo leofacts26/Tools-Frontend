@@ -1,0 +1,248 @@
+{
+  "seo": {
+    "title": "FD Calculator — Calculate Fixed Deposit Interest & Maturity Amount Online",
+    "description": "Use our free FD Calculator to estimate your Fixed Deposit maturity amount and interest earned. Compare tenures, interest rates, and compounding options to plan your investments better.",
+    "slug": "tools/finance/fd-calculator",
+    "image": "/images/og/fdcalc-en.png",
+    "isArticle": true,
+    "publishDate": "2024-01-01",
+    "modifiedDate": "2025-01-01",
+    "author": "Your Site"
+  },
+  "site": {
+    "heading": "FD Calculator"
+  },
+  "form": {
+    "principal": "Total Investment",
+    "interestRate": "Rate of interest (p.a)",
+    "timePeriod": "Time period",
+    "interestType": "Interest type"
+  },
+  "article": {
+    "intro": {
+      "heading": "FD Calculator Introduction — How to Estimate Your Fixed Deposit Maturity in India",
+      "paragraphs": [
+        "A smart saver uses an FD Calculator for Fixed Deposit maturity to turn a locked-in bank deposit into clear, reliable numbers.",
+        "Fixed deposits (FDs) are lump-sum term investments that promise a fixed interest rate for a preset tenure — from as short as 7 days up to 10 years or more.",
+        "An FD Calculator instantly converts your principal, tenure and interest rate into the maturity amount and total interest earned, removing manual guesswork.",
+        "It also helps you compare simple-interest vs compound-interest FDs, test different compounding frequencies (annual, quarterly, monthly), and see how senior-citizen or special rates change outcomes.",
+        "Use the calculator before you invest to choose the best bank/NBFC offering and to plan cash flows precisely at maturity."
+      ]
+    },
+    "whatIsFDSection": {
+      "id": "what-is-fixed-deposit",
+      "heading": "What is Fixed Deposit? — FD Calculator Context: Understanding Fixed Deposit Basics",
+      "paragraphs": [
+        "A Fixed Deposit (FD) is a conservative, low-risk saving product offered by banks and NBFCs where you deposit a sum for a fixed period in exchange for a guaranteed rate of interest.",
+        "Unlike savings accounts, FD interest rates are higher because funds are locked for the tenure you choose; early withdrawal typically incurs a penalty.",
+        "FDs can be simple-interest (interest paid but not compounded) or compound-interest (interest reinvests and itself earns interest), and they may offer special categories — senior citizen FD, tax-saving FD, flexi-FD, and sweep-in FD.",
+        "Interest compounding frequency (annual, semiannual, quarterly, monthly) influences returns: more frequent compounding usually yields a higher maturity amount.",
+        "Use an FD Calculator to understand how principal, rate, tenure and compounding combine to produce the final payout so you can pick the right FD type for your financial goal."
+      ]
+    },
+    "whyUseFDSection": {
+      "id": "why-use-fd-calculator",
+      "heading": "Why use an FD Calculator? — Benefits of an FD Calculator for Choosing the Best FD",
+      "intro": "An FD Calculator for Fixed Deposit planning saves time and prevents calculation errors. It:",
+      "points": [
+        "Converts principal, tenure and interest into exact maturity and interest numbers instantly.",
+        "Lets you compare simple vs compound interest and different compounding frequencies.",
+        "Helps choose between banks/NBFCs by comparing effective returns.",
+        "Shows the effect of tenure or rate changes so you can plan liquidity (short vs long FDs).",
+        "Supports scenario testing: senior-citizen boosts, premature withdrawal penalties, or laddered FDs."
+      ],
+      "conclusion": "Instead of juggling formulas in a spreadsheet, the FD Calculator gives precise, repeatable projections that help you match liquidity needs with return optimization — especially useful when rates vary across institutions."
+    },
+    "howItWorksFDSection": {
+      "id": "how-our-fd-calculator-works",
+      "heading": "How our FD Calculator works — FD Calculation Logic & Output Breakdown",
+      "intro": "Our FD Calculator that models compound and simple interest uses standard finance formulas to compute maturity.",
+      "formulas": [
+        {
+          "type": "Simple Interest Formula",
+          "expression": "M = P + (P × r × t / 100)",
+          "explanation": "Used for non-compounding FDs where interest is paid out at regular intervals or on maturity without reinvestment."
+        },
+        {
+          "type": "Compound Interest Formula",
+          "expression": "M = P × (1 + r_period)^(n × t)",
+          "explanation": "Used for FDs where interest is reinvested. Here, r_period = r / (100 × n)."
+        }
+      ],
+      "steps": [
+        "(1) Accepts principal (P), annual rate (r), tenure (t), and compounding frequency (n).",
+        "(2) Converts r to period rate: r_period = r / (100 × n).",
+        "(3) Computes future value using the appropriate formula depending on FD type (simple or compound).",
+        "(4) Displays total interest (M − P) and effective annual yield (AER)."
+      ],
+      "extra": "It also models premature withdrawal penalties and senior-citizen rate boosts if you input those options, giving a transparent breakdown of assumptions and final numbers."
+    },
+    "fdInputChecklistSection": {
+      "id": "fd-calculator-input-checklist",
+      "heading": "What inputs you need — FD Calculator Input Checklist",
+      "intro": "To get accurate results with an FD Calculator for Fixed Deposits, prepare:",
+      "steps": [
+        "Principal (P) — lump sum you plan to deposit.",
+        "Annual interest rate (r%) — quoted by the bank/NBFC.",
+        "Tenure (t) — length in years, months or days.",
+        "Compounding frequency (n) — annual (1), semi-annual (2), quarterly (4), monthly (12), or daily.",
+        "Interest type — simple interest or compound interest.",
+        "Payout option — cumulative (reinvest interest) or periodic payout (monthly/quarterly).",
+        "Special flags (optional) — senior-citizen rate, tax-saving FD, premature withdrawal plan.",
+        "Penalty assumptions (optional) — if you expect early withdrawal, input penalty rate/duration."
+      ],
+      "conclusion": "Enter these in the order above for a precise maturity and interest breakdown."
+    },
+    "fdFormulaSection": {
+      "id": "fd-calculation-formula",
+      "heading": "Calculation formula (simple explanation) — FD Formulas Users Must Understand",
+      "intro": "FD math uses two core formulas:",
+      "formulas": [
+        {
+          "title": "Simple interest FD:",
+          "expression": "M = P + (P × r × t / 100)",
+          "explanation": "M = maturity amount, P = principal, r = annual rate (%), t = tenure in years."
+        },
+        {
+          "title": "Compound interest FD (general compounding):",
+          "steps": [
+            "Periodic rate: r_period = r / (100 × n) where n = compounding periods per year.",
+            "Number of periods: m = n × t.",
+            "M = P × (1 + r_period)^m."
+          ]
+        },
+        {
+          "title": "Effective Annual Rate (EAR or AER):",
+          "expression": "AER = (1 + r/n)^n − 1 (expressed as %)."
+        },
+        {
+          "title": "Total interest earned:",
+          "expression": "Interest = M − P."
+        }
+      ],
+      "conclusion": "These formulas model how interest either stays separate (simple) or compounds (compound), and how compounding frequency increases effective returns."
+    },
+    "fdStepByStepSection": {
+      "id": "step-by-step-using-fd-calculator",
+      "heading": "Step-by-step: Using the FD Calculator — Ordered Steps to Calculate FD Maturity",
+      "intro": "Follow these steps to use our FD Calculator for Fixed Deposits:",
+      "steps": [
+        "Enter principal (P) — the amount you will deposit.",
+        "Input the annual rate (r%) offered by the bank/NBFC.",
+        "Select tenure (t) in years (or provide months/days).",
+        "Choose compounding frequency (n): annual (1), semiannual (2), quarterly (4), monthly (12), or daily (365).",
+        "Pick interest type: cumulative (compounded) or payout (periodic).",
+        "Add special options: senior-citizen rate, tax-saving tag, or early-withdrawal penalty assumptions.",
+        "Click Calculate to get M (maturity), total interest, period-wise payouts (if applicable), and AER.",
+        "Compare results across tenures or compounding frequencies to pick the best FD product."
+      ],
+      "conclusion": "This structured process ensures accurate projections and helps you select the most rewarding FD plan for your financial goals."
+    },
+    "fdExampleWalkthroughSection": {
+      "id": "fd-calculator-example-walkthrough",
+      "heading": "Illustrative example — FD Calculator Walkthrough with Stepwise Calculation",
+      "intro": "Example: deposit P = ₹100,000 for t = 5 years at r = 10% per annum.",
+      "examples": [
+        {
+          "type": "Simple interest FD",
+          "steps": [
+            "Interest = P × r × t / 100 = 100,000 × 10 × 5 / 100",
+            "First compute 10 × 5 = 50",
+            "Then 100,000 × 50 = 5,000,000",
+            "Divide by 100 → 5,000,000 / 100 = 50,000",
+            "M = P + Interest = 100,000 + 50,000 = ₹150,000"
+          ]
+        },
+        {
+          "type": "Compound interest FD (annual compounding)",
+          "steps": [
+            "Compute (1 + r/100)^t = (1 + 0.10)^5",
+            "1.10^2 = 1.21; 1.10^3 = 1.331; 1.10^4 = 1.4641; 1.10^5 = 1.61051",
+            "M = 100,000 × 1.61051 = ₹161,051"
+          ],
+          "note": "Compound interest yields a higher maturity because interest earns interest."
+        }
+      ]
+    },
+    "fdTypesSection": {
+      "id": "types-of-fixed-deposits",
+      "heading": "Types of Fixed Deposits and features — FD Calculator Guidance on FD Variants",
+      "intro": "Know each FD variant before you invest; the FD Calculator can model most:",
+      "types": [
+        {
+          "title": "Regular FD (cumulative)",
+          "description": "Interest compounds; best for wealth accumulation."
+        },
+        {
+          "title": "Regular FD (periodic payout)",
+          "description": "Interest paid monthly/quarterly; use for income."
+        },
+        {
+          "title": "Senior Citizen FD",
+          "description": "Higher rates; input boosted rate in calculator."
+        },
+        {
+          "title": "Tax-saving FD",
+          "description": "5-year lock-in with tax benefits under specific rules."
+        },
+        {
+          "title": "Flexi FD / Sweep-in",
+          "description": "Links savings and FD for liquidity; calculator can show partial withdrawals."
+        },
+        {
+          "title": "NRI/Resident FD",
+          "description": "Different documentation and sometimes rates."
+        },
+        {
+          "title": "Corporate/Non-callable FD",
+          "description": "May offer higher rates; check creditworthiness."
+        }
+      ],
+      "conclusion": "Select the FD type in the calculator so it applies correct rate, tenure, and withdrawal rules."
+    },
+    "seniorRatesSection": {
+      "id": "senior-citizens-special-fd-rates",
+      "heading": "Senior citizens & special FD rates — How to Model Senior Citizen and Promotional Rates",
+      "intro": "Senior citizens often receive extra interest (a small boost over the base rate). Use the steps below to model this in the FD Calculator:",
+      "steps": [
+        "Identify base rate r_base for the FD and the advertised senior boost Δr.",
+        "Set r = r_base + Δr in the FD Calculator.",
+        "Run the compound formula M = P × (1 + r/n)^(n×t) to see the new maturity."
+      ],
+      "example": {
+        "title": "Example",
+        "body": "If base rate = 7.0% and senior boost = 0.5%, then r = 7.5%. For P = ₹200,000, t = 3 years and annual compounding: compute (1.075)^3 and multiply by ₹200,000 to get M. The calculator can instantly compare base vs senior scenarios so retirees choose the highest effective return."
+      },
+      "conclusion": "Use the calculator to compare the base-rate scenario and the senior-rate scenario to see the incremental benefit — often a small rate boost compounds into a meaningful difference over multi-year tenures."
+    },
+    "withdrawalsPrematureTaxSection": {
+      "id": "withdrawals-premature-closure-and-tax-implications",
+      "heading": "Withdrawals, premature closure and tax implications — FD Calculator Assumptions & Adjustments",
+      "intro": "When modeling FDs, include realistic exit events and tax effects so projections match likely outcomes:",
+      "points": [
+        "Premature closure penalty: many banks deduct a penalty (e.g., 0.5%–1.0% off rate) or pay no interest for the initial period. In the calculator, reduce r or subtract penalty to model early exit.",
+        "Partial withdrawals / breakable FDs: some flexi FDs allow withdrawals; adjust principal schedule and recompute remaining compounding.",
+        "Taxation: interest from FDs is taxable as per your income slab; TDS may apply above thresholds. The FD Calculator can show gross interest; to estimate post-tax return, apply your marginal tax rate to Interest = M − P."
+      ],
+      "example": {
+        "title": "Example adjustment (after-tax)",
+        "body": "If gross interest = ₹50,000 and marginal tax = 30%, after-tax interest ≈ ₹35,000 (50,000 × (1 − 0.30)). For premature closure, if penalty = 0.75% on rate, reduce r by 0.75 percentage points when computing M."
+      },
+      "note": "Always check current bank penalty rules and tax regulations. The calculator provides projections and not tax advice.",
+      "conclusion": "Model withdrawals, penalties and taxes explicitly in the inputs to produce realistic maturity and after-tax return figures."
+    },
+    "fdBenefitsSection": {
+      "id": "benefits-of-using-fd-calculator",
+      "heading": "Benefits of using an online FD Calculator — Clear Advantages & Decision Support",
+      "intro": "An FD Calculator for Fixed Deposit planning brings clarity and speed:",
+      "points": [
+        "Accurate maturity estimates across simple and compound scenarios.",
+        "Comparison tool to evaluate competing bank/NBFC rates and compounding frequencies.",
+        "Scenario testing for senior rates, premature closure penalties, and ladder strategies.",
+        "Cash-flow planning by projecting periodic payouts or lump-sum maturities.",
+        "Tax planning aid by showing gross interest so you can compute post-tax returns."
+      ],
+      "conclusion": "Use the calculator to build FD ladders, compare effective annual yields, and align deposits with future expenses or investment goals. It removes calculation friction and helps you pick the most suitable FD product with confidence."
+    }
+  }
+}

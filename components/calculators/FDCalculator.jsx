@@ -137,7 +137,7 @@ const FDCalculator = ({ fd = {} }) => {
           {/* Total Investment */}
           <Box sx={{ mb: 4 }}>
             <Stack direction="row" alignItems="center" justifyContent="space-between">
-              <Typography variant="subtitle1">Total Investment</Typography>
+              <Typography variant="subtitle1">{fd.form.principal}</Typography>
               <CustomInput
                 value={investment}
                 onChange={(v) => clampAndSet(v, LIMITS.investment, setInvestment)}
@@ -162,7 +162,7 @@ const FDCalculator = ({ fd = {} }) => {
           {/* Rate */}
           <Box sx={{ mb: 4 }}>
             <Stack direction="row" alignItems="center" justifyContent="space-between">
-              <Typography variant="subtitle1">Rate of interest (p.a)</Typography>
+              <Typography variant="subtitle1">{fd.form.interestRate}</Typography>
               <CustomInput
                 value={rate}
                 onChange={(v) => clampAndSet(v, LIMITS.rate, setRate)}
@@ -188,7 +188,7 @@ const FDCalculator = ({ fd = {} }) => {
           <Box sx={{ mb: 4 }}>
             <Stack direction="row" alignItems="center" justifyContent="space-between" spacing={2}>
               <Typography variant="subtitle1" component="div">
-                Time period{" "}
+                {fd.form.timePeriod}
                 <Box
                   component="span"
                   onClick={handleCycleUnit}
@@ -258,7 +258,7 @@ const FDCalculator = ({ fd = {} }) => {
           {/* Interest type */}
           <Box sx={{ mb: 4 }}>
             <Stack direction="row" alignItems="center" justifyContent="space-between">
-              <Typography variant="subtitle1">Interest type</Typography>
+              <Typography variant="subtitle1">{fd.form.interestType}</Typography>
               <ToggleButtonGroup
                 size="small"
                 value={interestType}
