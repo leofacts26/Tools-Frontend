@@ -113,7 +113,7 @@ const RDCalculator = ({ rd = {} }) => {
           {/* Monthly Investment */}
           <Box sx={{ mb: 4 }}>
             <Stack direction="row" alignItems="center" justifyContent="space-between">
-              <Typography variant="subtitle1">Monthly investment</Typography>
+              <Typography variant="subtitle1">{rd.form.monthlyInvestment}</Typography>
               <CustomInput
                 value={monthlyInvestment}
                 onChange={(v) => clampAndSet(v, LIMITS.monthlyInvestment, setMonthlyInvestment)}
@@ -138,7 +138,7 @@ const RDCalculator = ({ rd = {} }) => {
           {/* Rate */}
           <Box sx={{ mb: 4 }}>
             <Stack direction="row" alignItems="center" justifyContent="space-between">
-              <Typography variant="subtitle1">Rate of interest (p.a)</Typography>
+              <Typography variant="subtitle1">{rd.form.interestRate}</Typography>
               <CustomInput
                 value={rate}
                 onChange={(v) => clampAndSet(v, LIMITS.rate, setRate)}
@@ -164,7 +164,7 @@ const RDCalculator = ({ rd = {} }) => {
           <Box sx={{ mb: 4 }}>
             <Stack direction="row" alignItems="center" justifyContent="space-between" spacing={2}>
               <Typography variant="subtitle1" component="div">
-                Time period{" "}
+                {rd.form.timePeriod}
                 <Box
                   component="span"
                   onClick={handleCycleUnit}

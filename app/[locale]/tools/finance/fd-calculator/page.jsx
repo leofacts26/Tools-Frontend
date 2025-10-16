@@ -110,7 +110,7 @@ export default async function Page({ params }) {
 
 
     <Container maxWidth="lg">
-      <Heading title={"FD Calculator"} />
+      <Heading title={fdCalc.site?.heading ?? "FD Calculator"} />
 
       <Box sx={{ flexGrow: 1 }}>
         <Grid container spacing={2}>

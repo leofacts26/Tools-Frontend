@@ -60,7 +60,7 @@ const NPSCalculator = ({ nps = {}, retirementAge = 60 }) => {
             {/* Monthly investment */}
             <Box sx={{ mb: 4 }}>
               <Stack direction="row" alignItems="center" justifyContent="space-between">
-                <Typography variant="subtitle1">Investment per month</Typography>
+                <Typography variant="subtitle1">{nps.form.monthlyInvestment}</Typography>
                 <CustomInput
                   value={monthlyInvestment}
                   onChange={(v) => clampAndSet(v, LIMITS.monthlyInvestment, setMonthlyInvestment)}
@@ -85,7 +85,7 @@ const NPSCalculator = ({ nps = {}, retirementAge = 60 }) => {
             {/* Expected return */}
             <Box sx={{ mb: 4 }}>
               <Stack direction="row" alignItems="center" justifyContent="space-between">
-                <Typography variant="subtitle1">Expected return (p.a)</Typography>
+                <Typography variant="subtitle1">{nps.form.interestRate}</Typography>
                 <CustomInput
                   value={annualReturn}
                   onChange={(v) => clampAndSet(v, LIMITS.annualReturn, setAnnualReturn)}
@@ -110,7 +110,7 @@ const NPSCalculator = ({ nps = {}, retirementAge = 60 }) => {
             {/* Your age */}
             <Box sx={{ mb: 4 }}>
               <Stack direction="row" alignItems="center" justifyContent="space-between">
-                <Typography variant="subtitle1">Your age (yrs)</Typography>
+                <Typography variant="subtitle1">{nps.form.age}</Typography>
                 <CustomInput
                   value={age}
                   onChange={(v) => clampAndSet(v, LIMITS.age, setAge)}
