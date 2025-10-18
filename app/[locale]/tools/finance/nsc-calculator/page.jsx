@@ -18,14 +18,14 @@ export async function generateMetadata({ params }) {
 
   // load localized common defaults and the page content (sipcalc.json)
   const common = (await import(`../../../../../messages/${locale}/common.json`).catch(() => ({}))).default || {};
-  const swpcalc = (await import(`../../../../../messages/${locale}/swpcalc.json`).catch(() => ({}))).default || {};
+  const nscCalc = (await import(`../../../../../messages/${locale}/nscCalc.json`).catch(() => ({}))).default || {};
 
-  // use the seo block from swpcalc.json (user provided)
-  const pageSeo = swpcalc.seo || {};
+  // use the seo block from nscCalc.json (user provided)
+  const pageSeo = nscCalc.seo || {};
 
   // build opts for createMetadata (your lib/seo.js expects similar keys)
   const opts = {
-    title: pageSeo.title || swpcalc.site?.heading || common.site?.name || SITE.name,
+    title: pageSeo.title || nscCalc.site?.heading || common.site?.name || SITE.name,
     description: pageSeo.description || common.site?.description || "",
     slug: pageSeo.slug || "",
     image: pageSeo.image || common.site?.defaultImage || "",
@@ -33,7 +33,7 @@ export async function generateMetadata({ params }) {
     isArticle: Boolean(pageSeo.isArticle),
     publishDate: pageSeo.publishDate,
     modifiedDate: pageSeo.modifiedDate,
-    faqs: swpcalc.faqs || [],
+    faqs: nscCalc.faqs || [],
   };
 
   // createMetadata returns { title, description, openGraph, alternates, twitter, jsonLd }
@@ -42,7 +42,7 @@ export async function generateMetadata({ params }) {
   // Build alternates/hreflang entries for all locales configured in SITE
   const alternates = { canonical: meta.openGraph.url, languages: {} };
   for (const lng of SITE.locales) {
-    const other = (await import(`../../../../../messages/${lng}/swpcalc.json`).catch(() => ({}))).default || {};
+    const other = (await import(`../../../../../messages/${lng}/nscCalc.json`).catch(() => ({}))).default || {};
     const otherSlug = other?.seo?.slug || opts.slug;
     if (otherSlug) alternates.languages[lng] = `${SITE.url}/${lng}/${otherSlug}`;
   }
@@ -64,18 +64,16 @@ export async function generateMetadata({ params }) {
 export default async function Page({ params }) {
 
   const { locale } = params;
-  const swp = (await import(`../../../../../messages/${locale}/swpcalc.json`)).default;
-
-  console.log(swp, "swp?.faqs");
+  const nscCalc = (await import(`../../../../../messages/${locale}/nscCalc.json`)).default;
 
 
   // Build JSON-LD for FAQ (if any)
   const faqJsonLd =
-    swp.faqs && swp.faqs.length
+    nscCalc.faqs && nscCalc.faqs.length
       ? {
         "@context": "https://schema.org",
         "@type": "FAQPage",
-        mainEntity: swp.faqs.map((f) => ({
+        mainEntity: nscCalc.faqs.map((f) => ({
           "@type": "Question",
           name: f.q,
           acceptedAnswer: { "@type": "Answer", text: f.a },
@@ -84,17 +82,17 @@ export default async function Page({ params }) {
       : null;
 
   // Build Article JSON-LD if isArticle true
-  const articleJsonLd = swp.seo?.isArticle
+  const articleJsonLd = nscCalc.seo?.isArticle
     ? {
       "@context": "https://schema.org",
       "@type": "Article",
-      headline: swp.seo?.title || swp.site?.heading,
-      description: swp.seo?.description || "",
-      author: { "@type": "Person", name: swp.seo?.author || "Author" },
-      datePublished: swp.seo?.publishDate,
-      dateModified: swp.seo?.modifiedDate,
-      image: swp.seo?.image ? `${SITE.url}${swp.seo.image}` : undefined,
-      mainEntityOfPage: { "@type": "WebPage", "@id:": `${SITE.url}/${locale}/${swp.seo?.slug || ""}` },
+      headline: nscCalc.seo?.title || nscCalc.site?.heading,
+      description: nscCalc.seo?.description || "",
+      author: { "@type": "Person", name: nscCalc.seo?.author || "Author" },
+      datePublished: nscCalc.seo?.publishDate,
+      dateModified: nscCalc.seo?.modifiedDate,
+      image: nscCalc.seo?.image ? `${SITE.url}${nscCalc.seo.image}` : undefined,
+      mainEntityOfPage: { "@type": "WebPage", "@id:": `${SITE.url}/${locale}/${nscCalc.seo?.slug || ""}` },
     }
     : null;
 
@@ -119,7 +117,7 @@ export default async function Page({ params }) {
       <Box sx={{ flexGrow: 1 }}>
         <Grid container spacing={2}>
           <Grid size={{ xs: 12, sm: 12, md: 12, lg: 8 }}>
-            <NSCCalculator swp={swp} />
+            <NSCCalculator nsc={nscCalc} />
           </Grid>
 
           <Grid size={{ xs: 12, sm: 12, md: 12, lg: 4 }}>
@@ -128,6 +126,179 @@ export default async function Page({ params }) {
         </Grid>
       </Box>
     </Container>
+
+
+
+    <Container maxWidth="lg">
+      <Box sx={{ flexGrow: 1, mt: 3 }}>
+        <Grid container spacing={2}>
+          <Grid size={{ xs: 12, sm: 12, md: 12, lg: 8 }}>
+            <Paper elevation={0} sx={{ border: "none", borderRadius: 2, p: { xs: 2, md: 4 }, boxShadow: "0 2px 8px rgba(0,0,0,0.05)" }}>
+
+              <article aria-labelledby="what-is-nsc-calculator" className="finance-article">
+                <header>
+                  <h2 id="what-is-nsc-calculator" className="finance-sub-heading">
+                    {nscCalc.article.intro.heading}
+                  </h2>
+
+                  {nscCalc.article.intro.paragraphs.map((para, idx) => (
+                    <p key={idx}>{para}</p>
+                  ))}
+                </header>
+
+                <section aria-labelledby="what-is-nsc" className="finance-article-section">
+                  <h3 id="what-is-nsc" className="finance-sub-heading">
+                    {nscCalc.article.whatIs.heading}
+                  </h3>
+
+                  {nscCalc.article.whatIs.paragraphs.map((para, idx) => (
+                    <p key={idx}>{para}</p>
+                  ))}
+                </section>
+
+                <section aria-labelledby="how-nsc-calculator-helps" className="finance-article-section">
+                  <h3 id="how-nsc-calculator-helps" className="finance-sub-heading">
+                    {nscCalc.article.howItHelps.heading}
+                  </h3>
+
+                  <p>{nscCalc.article.howItHelps.intro}</p>
+
+                  <ul className="un-list">
+                    {nscCalc.article.howItHelps.points.map((point, idx) => (
+                      <li key={idx}>{point}</li>
+                    ))}
+                  </ul>
+
+                  <p><em>{nscCalc.article.howItHelps.note}</em></p>
+                </section>
+
+                <section aria-labelledby="nsc-formula" className="finance-article-section">
+                  <h3 id="nsc-formula" className="finance-sub-heading">
+                    {nscCalc.article.formula.heading}
+                  </h3>
+
+                  <p>{nscCalc.article.formula.intro}</p>
+
+                  {nscCalc.article.formula.methods.map((method, idx) => (
+                    <div key={idx} className="formula-block">
+                      <h4>{method.title}</h4>
+                      <ul className="un-list">
+                        {method.formulas.map((formula, fIdx) => (
+                          <li key={fIdx}>
+                            <code>{formula}</code>
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                  ))}
+
+                  <h4>Where:</h4>
+                  <ul className="un-list">
+                    {nscCalc.article.formula.definitions.map((def, idx) => (
+                      <li key={idx}>{def}</li>
+                    ))}
+                  </ul>
+
+                  <p><em>{nscCalc.article.formula.note}</em></p>
+                </section>
+
+                <section aria-labelledby="nsc-inputs" className="finance-article-section">
+                  <h3 id="nsc-inputs" className="finance-sub-heading">
+                    {nscCalc.article.inputs.heading}
+                  </h3>
+
+                  <p>{nscCalc.article.inputs.intro}</p>
+
+                  <ol className="ou-list">
+                    {nscCalc.article.inputs.list.map((item, idx) => (
+                      <li key={idx}>{item}</li>
+                    ))}
+                  </ol>
+
+                  <p><em>{nscCalc.article.inputs.note}</em></p>
+                </section>
+
+                <section aria-labelledby="nsc-calculation" className="finance-article-section">
+                  <h3 id="nsc-calculation" className="finance-sub-heading">
+                    {nscCalc.article.calculation.heading}
+                  </h3>
+
+                  <p>{nscCalc.article.calculation.intro}</p>
+
+                  <ol className="ou-list">
+                    {nscCalc.article.calculation.steps.map((step, idx) => (
+                      <li key={idx}>{step}</li>
+                    ))}
+                  </ol>
+
+                  <p><em>{nscCalc.article.calculation.example}</em></p>
+                </section>
+
+                <section aria-labelledby="how-to-use-nsc" className="finance-article-section">
+                  <h3 id="how-to-use-nsc" className="finance-sub-heading">
+                    {nscCalc.article.howToUse.heading}
+                  </h3>
+
+                  <p>{nscCalc.article.howToUse.intro}</p>
+
+                  <ol className="ou-list">
+                    {nscCalc.article.howToUse.steps.map((step, idx) => (
+                      <li key={idx}>{step}</li>
+                    ))}
+                  </ol>
+
+                  <p><em>{nscCalc.article.howToUse.note}</em></p>
+                </section>
+
+                <section aria-labelledby="nsc-advantages" className="finance-article-section">
+                  <h3 id="nsc-advantages" className="finance-sub-heading">
+                    {nscCalc.article.advantages.heading}
+                  </h3>
+
+                  <p>{nscCalc.article.advantages.intro}</p>
+
+                  <ul className="un-list">
+                    {nscCalc.article.advantages.points.map((point, idx) => (
+                      <li key={idx}>{point}</li>
+                    ))}
+                  </ul>
+
+                  <p><em>{nscCalc.article.advantages.note}</em></p>
+                </section>
+
+                <section aria-labelledby="nsc-notes" className="finance-article-section">
+                  <h3 id="nsc-notes" className="finance-sub-heading">
+                    {nscCalc.article.notes.heading}
+                  </h3>
+
+                  <ul className="un-list">
+                    {nscCalc.article.notes.points.map((note, idx) => (
+                      <li key={idx}>{note}</li>
+                    ))}
+                  </ul>
+                </section>
+
+
+
+
+
+
+
+
+              </article>
+
+
+
+            </Paper>
+          </Grid>
+
+          <Grid size={{ xs: 12, sm: 12, md: 12, lg: 4 }}>
+          </Grid>
+
+        </Grid>
+      </Box>
+    </Container >
+
 
 
 

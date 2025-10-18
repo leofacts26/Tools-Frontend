@@ -1,0 +1,157 @@
+{
+  "seo": {
+    "title": "Simple Interest Calculator — Calculate Interest and Total Amount Online",
+    "description": "Use our free Simple Interest Calculator to quickly calculate the interest and total amount on your principal investment. Enter principal, rate, and time to get instant results for loans or savings.",
+    "slug": "tools/finance/simple-interest-calculator",
+    "image": "/images/og/simpleinterestcalc-en.png",
+    "isArticle": true,
+    "publishDate": "2024-01-01",
+    "modifiedDate": "2025-01-01",
+    "author": "Your Site"
+  },
+  "site": {
+    "heading": "Simple Interest Calculator"
+  },
+  "form": {
+    "principal": "Principal amount",
+    "interestRate": "Rate of interest (p.a)",
+    "timePeriod": "Time period"
+  },
+  "article": {
+    "intro": {
+      "heading": "Why Use a Simple Interest Calculator",
+      "paragraphs": [
+        "Simple interest is the quickest way to calculate interest on a principal when interest does not compound.",
+        "If you have short-term loans, certain savings products, or structured repayments where interest is charged only on the original principal, a Simple Interest Calculator gives you exact numbers in seconds.",
+        "Instead of manually applying formulas or risking arithmetic mistakes, the calculator takes your principal, annual rate and time period and produces the interest and total amount payable at maturity.",
+        "It’s ideal for students, borrowers, lenders and small-business owners who need a no-nonsense view of interest costs and outcomes.",
+        "Use the tool to compare offers, budget repayments, or check how much a short-term investment will yield without compounding."
+      ]
+    },
+    "whatIs": {
+      "heading": "What is Simple Interest? — Simple Interest Calculator Context",
+      "paragraphs": [
+        "Simple interest is the interest computed only on the original principal throughout the investment or loan tenure. Unlike compound interest — where accrued interest is periodically added back to principal so interest earns interest — simple interest treats the principal as fixed.",
+        "Common use cases include short-term loans, certain bond coupons, vehicle loans with flat-rate structures, and short-duration promissory notes. The simplicity makes calculations transparent: the interest grows linearly with time. That predictability is useful for budgeting and comparing offers.",
+        "However, for most long-term investments and many bank products, compound interest usually provides higher returns (or higher costs for borrowers).",
+        "A Simple Interest Calculator helps you compute: (1) the Simple Interest (SI) earned/owed, and (2) the Total Amount (A) = principal + SI — making comparisons and decisions fast and reliable."
+      ]
+    },
+    "formula": {
+      "heading": "Simple Interest Formula — Formulas the Simple Interest Calculator Uses",
+      "intro": "There are two equivalent ways to present simple interest formulas. Use whichever notation fits your inputs:",
+      "methods": [
+        {
+          "title": "1. Using decimal rate r (r = R/100):",
+          "formulas": [
+            "Total amount: A = P × (1 + r × t)",
+            "Simple interest: SI = P × r × t"
+          ]
+        },
+        {
+          "title": "2. Using percentage rate R directly:",
+          "formulas": [
+            "Simple interest: SI = (P × R × T) / 100",
+            "Total amount: A = P + SI = P + (P × R × T) / 100"
+          ]
+        }
+      ],
+      "definitions": [
+        "P = Principal (initial amount)",
+        "R = Annual interest rate in percent",
+        "r = Annual interest rate in decimal (r = R/100)",
+        "T or t = Time in years (convert months/days to years)"
+      ],
+      "note": "These linear formulas make the mathematics straightforward and are what the calculator applies under the hood."
+    },
+    "howToCalculate": {
+      "id": "how-to-calculate-simple-interest",
+      "heading": "How to Calculate Simple Interest Using the Calculator — Inputs & Behavior",
+      "intro": "The Simple Interest Calculator needs three core inputs: principal P, annual rate R%, and time T (in years or months). Steps the tool follows:",
+      "steps": [
+        "If you enter time in months/days, it converts to years (T_years = months / 12 or days / 365).",
+        "It computes simple interest via SI = (P × R × T_years) / 100.",
+        "It returns the maturity/repayment amount A = P + SI."
+      ],
+      "optionalFeatures": [
+        "Toggles for currency and formatting (₹, USD, rounding precision).",
+        "Option to show results as yearly interest or total earned over the period.",
+        "Input validation and helpful error messages for negative or missing values."
+      ],
+      "note": "The calculator does not assume compounding — if you need compounding use a compound interest or FD calculator."
+    },
+    "benefits": {
+      "heading": "How can a Simple Interest Calculator Help You? — Practical Benefits",
+      "intro": "A Simple Interest Calculator helps in multiple practical ways:",
+      "points": [
+        "Budgeting loan repayments — know exact interest payable on short-term loans.",
+        "Comparing offers — compare flat-rate lending vs simple-interest schemes quickly.",
+        "Investment planning — estimate returns on instruments that use simple interest.",
+        "Transparency — avoid human errors in multi-step arithmetic.",
+        "Quick “what-if” tests — change principal, rate or tenure to see immediate impact."
+      ],
+      "note": "For borrowers and lenders alike, the tool is a fast, reliable way to convert opaque rate quotes into concrete rupee values you can plan around."
+    },
+    "advantages": {
+      "heading": "Advantages of Using a Simple Interest Calculator — Why It Beats Manual Math",
+      "intro": "Using an online Simple Interest Calculator offers clear advantages:",
+      "points": [
+        "Speed: instant results versus hand calculations.",
+        "Accuracy: eliminates arithmetic mistakes and unit-conversion errors.",
+        "Convenience: supports months/days input and automatic conversion to years.",
+        "Scenario testing: run multiple scenarios in seconds to choose the best option.",
+        "Accessibility: usable on phones or desktops without spreadsheets.",
+        "Educational: shows stepwise formula output so users learn the math behind results."
+      ],
+      "note": "It’s especially helpful for short-term lending decisions, invoice financing, or quick checks before signing loan agreements."
+    },
+    "steps": {
+      "heading": "Step-by-step: Using the Simple Interest Calculator — Ordered Steps",
+      "intro": "Follow these steps to get accurate results:",
+      "list": [
+        "Enter Principal (P): the original loan or investment amount.",
+        "Enter Annual Rate (R%): the quoted yearly interest percentage.",
+        "Enter Time (T): in years; if you have months or days, select the appropriate unit — the calculator converts automatically.",
+        "Choose rounding precision (optional): e.g., nearest rupee or two decimals.",
+        "Click “Calculate”. The output shows: SI (simple interest), A (total amount), and a small breakdown (P, R, T).",
+        "Use “What-if” inputs to compare durations or rate changes.",
+        "Export or save the results if you need the calculation for documentation."
+      ],
+      "note": "This ordered flow keeps calculations repeatable and auditable."
+    },
+    "example": {
+      "heading": "Illustrative example — Worked Example with Correct Arithmetic",
+      "intro": "Example: Mr. A lends P = ₹15,000 at R = 5% per annum for T = 2 years. Compute:",
+      "steps": [
+        "SI = (P × R × T) / 100.",
+        "Multiply: 15,000 × 5 = 75,000.",
+        "Multiply by T: 75,000 × 2 = 150,000.",
+        "Divide by 100: 150,000 / 100 = ₹1,500.",
+        "So Simple Interest = ₹1,500.",
+        "Total amount A = P + SI = 15,000 + 1,500 = ₹16,500."
+      ],
+      "note": "The calculator will display both figures and can also show per-year interest (₹750 per year), helping budget cash flows. For months, convert T appropriately — e.g., 6 months = 0.5 years."
+    },
+    "decision": {
+      "heading": "When to Use Simple Interest vs Compound Interest — Decision Guidance",
+      "intro": "Choose the correct calculator based on how interest is applied in your financial product:",
+      "simpleUse": {
+        "title": "Choose Simple Interest when:",
+        "points": [
+          "Interest is explicitly charged only on the original principal (flat-rate schemes, some short-term loans).",
+          "The tenure is short (few months to a couple of years) and the lender uses non-compounding rules.",
+          "You need linear, predictable interest costs."
+        ]
+      },
+      "compoundUse": {
+        "title": "Choose Compound Interest when:",
+        "points": [
+          "Interest is periodically added to principal (bank deposits, many long-term investments).",
+          "You want to model growth where interest earns interest.",
+          "Tenure is long and compounding materially changes outcomes."
+        ]
+      },
+      "note": "If you’re unsure which applies, check the financial product’s terms. Our Simple Interest Calculator is for non-compounding cases; use a compound interest or FD calculator for reinvested interest scenarios."
+    }
+  }
+}

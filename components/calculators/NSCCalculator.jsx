@@ -52,9 +52,9 @@ const NSCCalculator = ({ nsc = {} }) => {
   return (
     <Paper elevation={0} sx={{ border: "none", borderRadius: 2, p: { xs: 2, md: 4 }, boxShadow: "0 2px 8px rgba(0,0,0,0.05)" }}>
       <Box sx={{ mb: 2 }}>
-        <Typography variant="h6">NSC (National Savings Certificate) Calculator</Typography>
+        <Typography variant="h6">    {nsc.article.nsccalculator.heading} </Typography>
         <Typography variant="body2" color="text.secondary" sx={{ mt: 1 }}>
-          NSC example: 5 year tenure. Choose compounding frequency (Yearly / Half-Yearly).
+          {nsc.article.nsccalculator.subHeading}
         </Typography>
       </Box>
 
@@ -66,7 +66,7 @@ const NSCCalculator = ({ nsc = {} }) => {
           {/* Amount invested (Principal) */}
           <Box sx={{ mb: 4 }}>
             <Stack direction="row" alignItems="center" justifyContent="space-between" spacing={2}>
-              <Typography variant="subtitle1">Amount invested</Typography>
+              <Typography variant="subtitle1">{nsc.form.principal}</Typography>
               <CustomInput
                 value={principal}
                 onChange={(v) => clampAndSet(v, LIMITS.principal, setPrincipal)}
@@ -92,7 +92,7 @@ const NSCCalculator = ({ nsc = {} }) => {
           {/* Rate of interest */}
           <Box sx={{ mb: 4 }}>
             <Stack direction="row" alignItems="center" justifyContent="space-between" spacing={2}>
-              <Typography variant="subtitle1">Rate of interest (p.a)</Typography>
+              <Typography variant="subtitle1">{nsc.form.interestRate}</Typography>
               <CustomInput
                 value={rate}
                 onChange={(v) => clampAndSet(v, LIMITS.rate, setRate)}
@@ -118,7 +118,7 @@ const NSCCalculator = ({ nsc = {} }) => {
           {/* Time period (fixed 5 years, disabled) */}
           <Box sx={{ mb: 4 }}>
             <Stack direction="row" alignItems="center" justifyContent="space-between" spacing={2}>
-              <Typography variant="subtitle1">Time period</Typography>
+              <Typography variant="subtitle1">{nsc.form.timePeriod}</Typography>
               <CustomInput
                 disabled
                 value={years}
@@ -137,7 +137,7 @@ const NSCCalculator = ({ nsc = {} }) => {
           {/* Compounding frequency pill (Yearly <-> Half-Yearly) */}
           <Box sx={{ mb: 4 }}>
             <Stack direction="row" alignItems="center" justifyContent="space-between">
-              <Typography variant="subtitle1">Compounding frequency</Typography>
+              <Typography variant="subtitle1">{nsc.form.compoundingFrequency}</Typography>
               <Box
                 component="span"
                 onClick={cycleFrequency}

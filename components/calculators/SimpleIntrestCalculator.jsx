@@ -56,7 +56,7 @@ const SimpleInterestCalculator = ({ si = {} }) => {
           {/* Principal */}
           <Box sx={{ mb: 4 }}>
             <Stack direction="row" alignItems="center" justifyContent="space-between" spacing={2}>
-              <Typography variant="subtitle1">Principal amount</Typography>
+              <Typography variant="subtitle1">{si.form.principal}</Typography>
               <CustomInput
                 value={principal}
                 onChange={(v) => clampAndSet(v, LIMITS.principal, setPrincipal)}
@@ -82,7 +82,7 @@ const SimpleInterestCalculator = ({ si = {} }) => {
           {/* Rate */}
           <Box sx={{ mb: 4 }}>
             <Stack direction="row" alignItems="center" justifyContent="space-between" spacing={2}>
-              <Typography variant="subtitle1">Rate of interest (p.a)</Typography>
+              <Typography variant="subtitle1">{si.form.interestRate}</Typography>
               <CustomInput
                 value={rate}
                 onChange={(v) => clampAndSet(v, LIMITS.rate, setRate)}
@@ -108,7 +108,7 @@ const SimpleInterestCalculator = ({ si = {} }) => {
           {/* Time Period */}
           <Box sx={{ mb: 4 }}>
             <Stack direction="row" alignItems="center" justifyContent="space-between" spacing={2}>
-              <Typography variant="subtitle1">Time period</Typography>
+              <Typography variant="subtitle1">{si.form.timePeriod}</Typography>
               <CustomInput
                 value={years}
                 onChange={(v) => clampAndSet(v, LIMITS.years, setYears)}

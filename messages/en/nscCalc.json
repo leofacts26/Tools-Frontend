@@ -1,0 +1,130 @@
+{
+  "seo": {
+    "title": "NSC Calculator — Calculate National Savings Certificate Interest & Maturity Value Online",
+    "description": "Use our free NSC Calculator to calculate the maturity value and total interest earned on your National Savings Certificate investment. Enter your investment amount, tenure, and interest rate to get accurate results instantly.",
+    "slug": "tools/finance/nsc-calculator",
+    "image": "/images/og/nsc-calculator-en.png",
+    "isArticle": true,
+    "publishDate": "2024-01-01",
+    "modifiedDate": "2025-10-18",
+    "author": "Your Site"
+  },
+  "site": {
+    "heading": "NSC (National Savings Certificate) Calculator"
+  },
+  "form": {
+    "principal": "Amount invested",
+    "interestRate": "Rate of interest (p.a)",
+    "timePeriod": "Time period",
+    "compoundingFrequency": "Compounding frequency"
+  },
+  "article": {
+    "intro": {
+      "heading": "Why Use an NSC Calculator",
+      "paragraphs": [
+        "The National Savings Certificate (NSC) is a safe, government-backed savings product widely used by Indian investors for capital preservation and tax savings.",
+        "Because NSC interest is compounded annually and paid at maturity, the final payoff depends on both the invested sum and the applicable compound rate — which the government may revise quarterly.",
+        "An NSC Calculator removes the manual math: enter the principal and applicable interest rate and the tool returns the maturity amount, effective annual yield and total interest earned for the 5-year term.",
+        "This lets you compare NSC returns with other safe instruments (PPF, Post Office FD), plan 80C tax claims, and decide the right investment amount to match your financial goals."
+      ]
+    },
+    "nsccalculator": {
+      "heading": "NSC (National Savings Certificate) Calculator",
+      "subHeading": "NSC example: 5 year tenure. Choose compounding frequency (Yearly / Half-Yearly)."
+    },
+    "whatIs": {
+      "heading": "What is NSC? — National Savings Certificate Explained",
+      "paragraphs": [
+        "The National Savings Certificate (NSC) is a long-term, fixed-income savings scheme offered at post offices across India and backed by the Government of India.",
+        "NSC has a standard lock-in of five years and pays a fixed rate of interest that is compounded annually and credited at maturity.",
+        "NSC investments qualify for deduction under Section 80C of the Income Tax Act (subject to the overall ₹1.5 lakh limit), which makes it attractive for taxpayers seeking tax-efficient, low-risk instruments.",
+        "There’s a low minimum entry — investments can be started with small sums — and there is effectively no upper limit on how much you can invest, though practical limits may arise from 80C considerations.",
+        "Because it is government-guaranteed, NSC is often preferred by conservative savers who prioritise capital safety and predictable returns."
+      ]
+    },
+    "howItHelps": {
+      "heading": "How can an NSC Calculator help you? — Practical Uses",
+      "intro": "An NSC Calculator gives instant clarity about expected maturity proceeds without manual computation. Use it to:",
+      "points": [
+        "Find the maturity amount for a given lump-sum NSC purchase at the prevailing interest rate.",
+        "See total interest earned over the 5-year lock-in and the effective annual return.",
+        "Compare NSC returns against other small-savings instruments (PPF, FDs, Sukanya schemes).",
+        "Plan 80C tax allocations — know how much principal you need to invest to use tax deductions efficiently.",
+        "Run “what-if” scenarios for different rates (remember the government revises small-savings rates quarterly) so you can decide the right timing and amount for purchase."
+      ],
+      "note": "The tool is quick, accurate and removes arithmetic errors from your planning."
+    },
+    "formula": {
+      "heading": "How the NSC Calculator works — Logic, Formula & Assumptions",
+      "intro": "The NSC Calculator applies annual compounding to a lump-sum investment for the standard NSC tenure (normally 5 years). The core formula used is the standard compound-interest formula:",
+      "methods": [
+        {
+          "title": "Formula (annual compounding):",
+          "formulas": [
+            "Maturity Amount (A) = P × (1 + r)^n"
+          ]
+        }
+      ],
+      "definitions": [
+        "P = Principal invested (₹)",
+        "r = Annual interest rate in decimal (e.g., 7.7% → 0.077)",
+        "n = Number of years (typically 5 for NSC)"
+      ],
+      "note": "Interest earned = A − P. The calculator also displays year-wise growth, total interest, and the effective annual rate, while clearly stating assumptions such as rate and tenure, since official NSC rates may change quarterly."
+    },
+    "inputs": {
+      "heading": "What inputs you need — Ordered Checklist for the NSC Calculator",
+      "intro": "To use the NSC Calculator you’ll need the following inputs (enter in this order for the cleanest results):",
+      "list": [
+        "Investment amount (P) — lump sum you’ll deposit in NSC.",
+        "Interest rate (R%) — the NSC rate in force when you invest (government revises rates quarterly).",
+        "Tenure (n) — usually 5 years for standard NSC; some legacy issues had different tenures.",
+        "Start date (optional) — to show exact maturity date and illustrate year-wise compounding.",
+        "Tax treatment flag (optional) — whether you plan to claim Section 80C for this amount."
+      ],
+      "note": "Enter these and the calculator returns maturity amount, total interest, effective annual yield and a small year-by-year schedule so you can visualise growth."
+    },
+    "calculation": {
+      "heading": "Calculation formula (simple explanation) — Stepwise Formula & Example Setup",
+      "intro": "NSC uses annual compounding, so calculations are straightforward:",
+      "steps": [
+        "Convert interest rate to decimal: r = R / 100.",
+        "Use the compound formula: A = P × (1 + r)^n.",
+        "Compute interest earned: Interest = A − P.",
+        "For effective annual rate (AER): AER = (A / P)^{1/n} − 1 (expressed as a percentage)."
+      ],
+      "example": "Quick example (illustrative): if P = ₹10,00,000, R = 7.7% and n = 5, then r = 0.077 and A = 10,00,000 × (1.077)^5. The calculator will compute this exactly and display both A and the total interest A − P. Use the year-wise breakdown to see how reinvested interest accelerates growth."
+    },
+    "howToUse": {
+      "heading": "How to use the NSC Calculator — Step-by-Step",
+      "intro": "Follow these ordered steps to get a reliable NSC projection:",
+      "steps": [
+        "Enter the lump-sum amount you plan to buy in NSC (P).",
+        "Select or enter the current NSC interest rate (R%) — check the government’s announced rate for the active quarter.",
+        "Confirm the tenure (default = 5 years).",
+        "Optional: input the purchase date to show exact maturity date.",
+        "Click Calculate. Outputs: maturity amount (A), total interest, effective annual yield and a year-by-year schedule."
+      ],
+      "note": "Run comparisons with alternate investments (PPF, FD) by changing rate or tenure to decide the best vehicle for your goal. The calculator is fast and shows the assumptions clearly so you can save or invest with confidence."
+    },
+    "advantages": {
+      "heading": "Advantages of using an NSC Calculator — Why It’s Helpful",
+      "intro": "An NSC Calculator saves time, increases accuracy and supports tax planning:",
+      "points": [
+        "Instant maturity figures: no manual compounding or spreadsheet hassle.",
+        "Accurate interest breakdown: see exactly how much of the final sum is interest vs principal.",
+        "Tax planning aid: estimate how much of your 80C limit will be used by NSC investments.",
+        "Quarterly-rate awareness: because small-savings rates change periodically, the calculator helps you test different rate assumptions and buy when the numbers are attractive.",
+        "Low-risk benchmarking: compare guaranteed NSC returns with other conservative options to match liquidity and tax goals."
+      ],
+      "note": "Use it before buying NSC at your local post office to make an informed, tax-efficient decision."
+    },
+    "notes": {
+      "heading": "Notes & Caveats",
+      "points": [
+        "NSC interest rates are set by the government and are subject to quarterly revision; always confirm the current rate before finalising an investment.",
+        "Interest on NSC is taxable, but the interest credited in earlier years is treated as reinvested and may qualify for deduction under Section 80C in the year it accrues (confirm current tax rules for your filing year)."
+      ]
+    }
+  }
+}
