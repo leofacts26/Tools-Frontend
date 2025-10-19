@@ -44,7 +44,6 @@ const GratuityCalculator = ({ config = {} }) => {
         <Grid container spacing={2}>
           <Grid item xs={12} md={12}>
             <Box sx={{ mb: 2 }}>
-              <Typography variant="h6">Gratuity Calculator</Typography>
               <Typography variant="body2" color="text.secondary" sx={{ mt: 1 }}>
                 Formula used: <code>G = n × b × 15/26</code>. Years are rounded to nearest whole year. Gratuity is capped at ₹10,00,000.
               </Typography>

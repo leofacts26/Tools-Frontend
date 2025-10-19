@@ -1,0 +1,142 @@
+{
+  "seo": {
+    "title": "Gratuity Calculator — Calculate Gratuity Amount Online",
+    "description": "Use our free Gratuity Calculator to calculate how much gratuity you are eligible for under the Payment of Gratuity Act, 1972. Enter your last drawn salary, years of service, and dearness allowance to get the total gratuity amount instantly.",
+    "slug": "tools/finance/gratuity-calculator",
+    "image": "/images/og/gratuitycalc-en.png",
+    "isArticle": true,
+    "publishDate": "2024-01-01",
+    "modifiedDate": "2025-10-18",
+    "author": "GanakaHub"
+  },
+  "site": {
+    "heading": "Gratuity Calculator"
+  },
+  "form": {
+    "monthlyInvestment": "Monthly investment",
+    "annualStepUp": "Annual step up",
+    "expectedReturnRate": "Expected return rate (p.a)",
+    "timePeriod": "Time period"
+  },
+  "article": {
+    "intro": {
+      "heading": "Why Use a Gratuity Calculator",
+      "paragraphs": [
+        "Gratuity is a statutory post-employment benefit that many salaried employees receive when they leave a job after qualifying service.",
+        "Calculating the exact amount — especially when partial years, rounding rules and tax limits come into play — can be confusing.",
+        "A Gratuity Calculator converts your last drawn basic salary (plus dearness allowance) and completed years of service into an accurate gratuity estimate in seconds.",
+        "It helps you check eligibility, plan finances at retirement or resignation, and estimate how much of the payout will be tax-exempt.",
+        "The tool saves time, removes arithmetic mistakes, and shows assumptions (like rounding rules and statutory caps) so you can approach your employer or HR with clarity."
+      ]
+    },
+    "whatIs": {
+      "heading": "What is Gratuity? — Gratuity Policy & Who Qualifies",
+      "paragraphs": [
+        "Gratuity is a lump-sum payment made by an employer to an employee as a reward for long and continuous service, governed in India by the Payment of Gratuity Act, 1972 for covered establishments.",
+        "Under the Act, an employee becomes eligible for gratuity after completing five years of continuous service; the five-year rule is waived in cases of death or permanent disablement resulting from injury or illness.",
+        "The benefit is typically calculated using the employee’s last drawn basic salary plus dearness allowance and the number of years of service; some employers offer more generous schemes but cannot pay less than the statutory minimum.",
+        "The Act and subsequent amendments also specify a maximum statutory ceiling on gratuity paid to qualifying employees."
+      ]
+    },
+    "formula": {
+      "heading": "Gratuity Calculation Formula — How the Math Works",
+      "intro": "The standard statutory formula used for employees covered under the Payment of Gratuity Act, 1972 is as follows:",
+      "methods": [
+        {
+          "title": "Formula (for employees covered under the Act):",
+          "formulas": [
+            "Gratuity = (15 / 26) × Last Drawn Salary (Basic + DA) × Years of Service"
+          ]
+        }
+      ],
+      "definitions": [
+        "15/26 represents 15 days’ wages out of a 26-working-day month.",
+        "Last Drawn Salary = Basic Salary + Dearness Allowance.",
+        "Years of Service = Total completed years of service (fractions rounded as per employer or Act guidance)."
+      ],
+      "note": "For establishments not covered by the Act, employers often follow the rule of half a month’s salary per year of service, though terms may differ. Gratuity is also subject to a statutory maximum limit as prescribed under the law."
+    },
+    "howItHelps": {
+      "heading": "How the Gratuity Calculator Helps You — Practical Benefits",
+      "intro": "A Gratuity Calculator does more than compute one number — it provides clarity, accuracy, and financial insight:",
+      "points": [
+        "Clarifies eligibility and applies the correct statutory formula automatically.",
+        "Shows how rounding rules affect the final gratuity amount based on service years.",
+        "Flags statutory ceilings so you know whether the entire amount is payable or partly treated as ex-gratia.",
+        "Helps you plan finances such as loan repayments or retirement expenses using accurate gratuity estimates.",
+        "Lets you compare company-provided gratuity schemes versus the statutory minimum under the Act.",
+        "Prepares you with documentation and clarity when applying for payment.",
+        "Assists HR and payroll teams by speeding up payout computation and reducing disputes through transparent assumptions."
+      ],
+      "note": "Use the calculator before your exit formalities to verify accuracy and ensure your employer’s payout aligns with the Payment of Gratuity Act."
+    },
+    "inputs": {
+      "heading": "What inputs you need — Ordered Checklist for the Gratuity Calculator",
+      "intro": "To get an accurate gratuity estimate, have the following ready (enter in this order):",
+      "list": [
+        "Last drawn basic salary + Dearness Allowance (DA) — monthly amount.",
+        "Total years of continuous service — include completed years; note rounding rules.",
+        "Date of joining and date of termination — for precise service calculation (optional).",
+        "Reason for termination — normal retirement/resignation, death or disability (death/disablement may waive the 5-year rule).",
+        "Whether your establishment is covered under the Payment of Gratuity Act (most organisations with 10+ employees are).",
+        "Any employer policy that pays more than statutory gratuity (optional)."
+      ],
+      "note": "Enter these values and the calculator will display the statutory gratuity, any cap/ceiling adjustments, and the taxable portion."
+    },
+    "howToUse": {
+      "heading": "Step-by-step: Using the Gratuity Calculator — Ordered Flow",
+      "intro": "Follow this ordered flow to compute an accurate gratuity estimate:",
+      "steps": [
+        "Input last drawn basic salary + DA (monthly).",
+        "Enter total years of completed service (or enter joining and exit dates for an automatic computation).",
+        "Select reason for leaving (retirement, resignation, death/disablement) — this affects eligibility rules.",
+        "Choose whether your employer follows the Payment of Gratuity Act (default = yes for covered establishments).",
+        "Click Calculate to get: statutory gratuity (using 15/26), any rounding applied, the maximum statutory ceiling adjustment (if applicable), and an indicative taxable/exempt amount.",
+        "Review assumptions (ceiling, rounding) and save or export the result for HR discussions or tax planning."
+      ],
+      "note": "Using precise dates and confirming whether your employer offers enhanced gratuity will produce the most accurate result."
+    },
+    "example": {
+      "heading": "Illustrative example — Worked Example with Numbers",
+      "intro": "Here’s a practical example showing how the gratuity amount is computed under the Payment of Gratuity Act:",
+      "steps": [
+        "Example: Last drawn basic + DA = ₹30,000/month; completed service = 5 years.",
+        "Using the statutory formula: Gratuity = (15 / 26) × 30,000 × 5",
+        "Stepwise: 30,000 × 5 = 150,000; 15/26 ≈ 0.5769; 150,000 × 0.5769 ≈ ₹86,538.",
+        "So, the statutory gratuity payable ≈ ₹86,538.",
+        "If an employee had 17 years and 6 months of service and the employer rounds up to 18 years, replace 5 with 18 in the formula.",
+        "If the computed amount exceeds the statutory ceiling, the excess portion may be treated as ex-gratia and taxed differently.",
+        "Use the calculator to test different scenarios for rounding and ceiling limits quickly."
+      ],
+      "note": "This example assumes the establishment is covered under the Payment of Gratuity Act and uses the standard 15/26 formula for computation."
+    },
+    "taxation": {
+      "heading": "Taxation, Ceiling & Legal Limits — What’s Tax-Exempt and What’s Capped",
+      "paragraphs": [
+        "The Payment of Gratuity Act sets the computation method, and the government has increased the statutory ceiling on gratuity payable to ₹20 lakh through the Payment of Gratuity (Amendment) Act and subsequent notifications.",
+        "For tax purposes, the exemption on gratuity under the Income Tax Act is determined as the least of: (a) actual gratuity received, (b) gratuity calculated under the statutory formula (15/26 × salary × years), or (c) the prescribed monetary ceiling (currently ₹20,00,000).",
+        "Government employees may have different rules for gratuity payment and taxation, governed by their respective service conditions.",
+        "Because both the payable ceiling and tax exemption limits have changed over time, the Gratuity Calculator highlights the statutory ceiling and indicates the likely tax-exempt portion, helping you plan withdrawals and tax reporting effectively."
+      ]
+    },
+    "advantages": {
+      "heading": "Advantages of Using a Gratuity Calculator — Quick Summary",
+      "intro": "Using an online Gratuity Calculator gives you:",
+      "points": [
+        "Speed & accuracy — instant, error-free computation of statutory gratuity.",
+        "Transparency — shows assumptions (formula, rounding, ceiling) so you can verify employer calculations.",
+        "Tax planning — identifies the likely exempt portion under income tax rules.",
+        "Scenario testing — compare outcomes for different service lengths, rounding methods, or employer policies that are more generous than statutory minimums.",
+        "Preparedness — equips you with numbers when initiating exit formalities or negotiating final settlements."
+      ],
+      "note": "It’s a practical, low-friction tool for employees and HR alike."
+    },
+    "notes": {
+      "heading": "Notes & Caveats",
+      "points": [
+        "The statutory formula applies to employees covered under the Payment of Gratuity Act; employers not covered by the Act may follow alternate but typically similar formulas — always confirm with HR or your employment contract.",
+        "The government amended the Act to raise the gratuity ceiling to ₹20 lakh; tax exemption rules also reference this cap — check official notifications or tax guidance for the current effective limits before filing returns."
+      ]
+    }
+  }
+}

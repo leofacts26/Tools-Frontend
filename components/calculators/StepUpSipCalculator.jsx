@@ -45,9 +45,9 @@ const StepUpSipCalculator = ({ config = {} }) => {
   return (
     <Paper elevation={0} sx={{ border: "none", borderRadius: 2, p: { xs: 2, md: 4 }, boxShadow: "0 2px 8px rgba(0,0,0,0.05)" }}>
       <Box sx={{ mb: 2 }}>
-        <Typography variant="h6">Step-Up SIP Calculator</Typography>
+        <Typography variant="h6">{config.article.site.heading}</Typography>
         <Typography variant="body2" color="text.secondary" sx={{ mt: 1 }}>
-          Monthly contributions with an annual step-up. Contributions are assumed at the start of each month; returns compounded monthly.
+          {config.article.site.subHeading}
         </Typography>
       </Box>
 
@@ -59,7 +59,7 @@ const StepUpSipCalculator = ({ config = {} }) => {
           {/* Monthly investment */}
           <Box sx={{ mb: 4 }}>
             <Stack direction="row" alignItems="center" justifyContent="space-between" spacing={2}>
-              <Typography variant="subtitle1">Monthly investment</Typography>
+              <Typography variant="subtitle1"> {config.form.monthlyInvestment} </Typography>
               <CustomInput
                 value={monthlyInvestment}
                 onChange={(v) => clampAndSet(v, LIMITS.monthlyInvestment, setMonthlyInvestment)}
@@ -85,7 +85,7 @@ const StepUpSipCalculator = ({ config = {} }) => {
           {/* Annual step-up */}
           <Box sx={{ mb: 4 }}>
             <Stack direction="row" alignItems="center" justifyContent="space-between" spacing={2}>
-              <Typography variant="subtitle1">Annual step up</Typography>
+              <Typography variant="subtitle1"> {config.form.annualStepUp} </Typography>
               <CustomInput
                 value={stepUpPct}
                 onChange={(v) => clampAndSet(v, LIMITS.stepUpPct, setStepUpPct)}
@@ -111,7 +111,7 @@ const StepUpSipCalculator = ({ config = {} }) => {
           {/* Expected return */}
           <Box sx={{ mb: 4 }}>
             <Stack direction="row" alignItems="center" justifyContent="space-between" spacing={2}>
-              <Typography variant="subtitle1">Expected return rate (p.a)</Typography>
+              <Typography variant="subtitle1">{config.form.expectedReturnRate}</Typography>
               <CustomInput
                 value={annualReturn}
                 onChange={(v) => clampAndSet(v, LIMITS.annualReturn, setAnnualReturn)}
@@ -137,7 +137,7 @@ const StepUpSipCalculator = ({ config = {} }) => {
           {/* Time period */}
           <Box sx={{ mb: 4 }}>
             <Stack direction="row" alignItems="center" justifyContent="space-between" spacing={2}>
-              <Typography variant="subtitle1">Time period</Typography>
+              <Typography variant="subtitle1">{config.form.timePeriod}</Typography>
               <CustomInput
                 value={years}
                 onChange={(v) => clampAndSet(v, LIMITS.years, setYears)}
