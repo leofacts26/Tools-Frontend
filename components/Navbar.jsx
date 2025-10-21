@@ -15,6 +15,8 @@ import { useRouter, usePathname } from "next/navigation";
 import { useLocale, useTranslations } from "next-intl";
 import { LOCALES } from "@/lib/locales";
 import { navSections } from "@/lib/utils";
+import { Typography } from "@mui/material";
+import Link from "next/link";
 
 const SUPPORTED_LOCALES = LOCALES; // keep in sync with middleware & /messages
 
@@ -61,7 +63,10 @@ export default function Navbar() {
     <nav className="nav" onMouseOver={handleSubmenu}>
       <div className="nav-center">
         <div className="nav-header">
-          <img src={logo.src} className="nav-logo" alt="Logo" />
+          {/* <img src={logo.src} className="nav-logo" alt="Logo" /> */}
+          <Link href="/" className="nav-logo" aria-label="Ganaka Hub Home">
+            Ganaka <span style={{ color: "#6366f1" }}>Hub</span>
+          </Link>
 
           {mounted ? (
             <button

@@ -88,6 +88,17 @@
           "label": "Customers"
         }
       }
+    },
+    "blog": {
+      "page": "Blog",
+      "links": {
+        "finance": {
+          "label": "Finance"
+        },
+        "earn": {
+          "label": "Earn"
+        }
+      }
     }
   },
   "footer": {
