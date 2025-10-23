@@ -112,7 +112,7 @@ export default async function Page({ params }) {
 
 
     <Container maxWidth="lg">
-      <Heading title={npsCalc.site?.heading ?? "rdCalc Calculator"} />
+      <Heading title={rdCalc.site?.heading ?? "rdCalc Calculator"} />
 
       <Box sx={{ flexGrow: 1 }}>
         <Grid container spacing={2}>

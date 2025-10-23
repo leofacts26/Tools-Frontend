@@ -88,6 +88,17 @@
           "label": "ग्राहक"
         }
       }
+    },
+    "blog": {
+      "page": "ब्लॉग",
+      "links": {
+        "finance": {
+          "label": "वित्त"
+        },
+        "earn": {
+          "label": "कमाना"
+        }
+      }
     }
   },
   "footer": {
