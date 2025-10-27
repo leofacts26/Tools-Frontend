@@ -97,6 +97,50 @@ export default function Page() {
             </Link>
           </Grid>
 
+          <Grid size={4}>
+            <Link href="/finance/what-the-rich-know-schools-never-taught">
+              <Card>
+                <CardActionArea>
+                  <CardMedia
+                    component="img"
+                    image="/finance/What-the-Rich-Know-That-Schools-Never-Taught-You.png"
+                    alt="green iguana"
+                  />
+                  <CardContent>
+                    <Typography gutterBottom variant="h5" component="div" className='card-heading'>
+                      “What the Rich Know That Schools Never Taught You”
+                    </Typography>
+                    <Typography variant="body2" sx={{ color: 'text.secondary' }} className='card-desc'>
+                      Have you ever wondered why some people seem to move ahead in life… while others keep struggling no matter how hard they work?
+                    </Typography>
+                  </CardContent>
+                </CardActionArea>
+              </Card>
+            </Link>
+          </Grid>
+
+          <Grid size={4}>
+            <Link href="/finance/what-the-rich-know-schools-never-taught">
+              <Card>
+                <CardActionArea>
+                  <CardMedia
+                    component="img"
+                    image="/finance/How-Indians-Waste-10,000-Every-Month-Without-Realizing-It.png"
+                    alt="green iguana"
+                  />
+                  <CardContent>
+                    <Typography gutterBottom variant="h5" component="div" className='card-heading'>
+                      “How Indians Waste ₹10,000 Every Month Without Realizing It”
+                    </Typography>
+                    <Typography variant="body2" sx={{ color: 'text.secondary' }} className='card-desc'>
+                      Every month, your salary comes in… and vanishes. You check your bank balance after two weeks — and it’s already gone.
+                    </Typography>
+                  </CardContent>
+                </CardActionArea>
+              </Card>
+            </Link>
+          </Grid>
+
 
         </Grid>
       </Box>
