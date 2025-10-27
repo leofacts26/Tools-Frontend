@@ -41,7 +41,7 @@ const SocialIcon = styled("div")(({ theme }) => ({
 
 export default function Footer() {
   return (
-    <FooterWrapper component="footer">
+    <FooterWrapper component="footer" className="footer">
       <Container maxWidth="lg">
         {/* Join Community Section */}
         <Box textAlign="center" mb={4}>
@@ -95,7 +95,7 @@ export default function Footer() {
             {/* Column 1 */}
             <Grid item xs={12} md={3}>
               <Typography variant="h6" fontWeight="bold">
-                Ganaka <span style={{ color: "#6366f1" }}>Hub</span>
+                Ganaka <span style={{ color: "#ec407a" }}>Hub</span>
               </Typography>
               <Stack direction="row" spacing={2} mt={2}>
                 <SocialIcon><FacebookIcon /></SocialIcon>

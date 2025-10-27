@@ -65,7 +65,7 @@ export default function Navbar() {
         <div className="nav-header">
           {/* <img src={logo.src} className="nav-logo" alt="Logo" /> */}
           <Link href="/" className="nav-logo" aria-label="Ganaka Hub Home">
-            Ganaka <span style={{ color: "#6366f1" }}>Hub</span>
+            Ganaka <span style={{ color: "#ec407a" }}>Hub</span>
           </Link>
 
           {mounted ? (
