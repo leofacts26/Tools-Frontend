@@ -14,14 +14,14 @@ export async function generateMetadata({ params }) {
 
   // load localized common defaults and the page content (sipcalc.json)
   const common = (await import(`../../../../messages/${locale}/common.json`).catch(() => ({}))).default || {};
-  const ZtoC = (await import(`../../../../messages/${locale}/financeBlogs/zero-to-crore.json`).catch(() => ({}))).default || {};
+  const MiddleIncomeTrap = (await import(`../../../../messages/${locale}/financeBlogs/middle-income-trap`).catch(() => ({}))).default || {};
 
-  // use the seo block from zero-to-crore.json (user provided)
-  const pageSeo = ZtoC.seo || {};
+  // use the seo block from middle-income-trap (user provided)
+  const pageSeo = MiddleIncomeTrap.seo || {};
 
   // build opts for createMetadata (your lib/seo.js expects similar keys)
   const opts = {
-    title: pageSeo.title || ZtoC.site?.heading || common.site?.name || SITE.name,
+    title: pageSeo.title || MiddleIncomeTrap.site?.heading || common.site?.name || SITE.name,
     description: pageSeo.description || common.site?.description || "",
     slug: pageSeo.slug || "",
     image: pageSeo.image || common.site?.defaultImage || "",
@@ -29,7 +29,7 @@ export async function generateMetadata({ params }) {
     isArticle: Boolean(pageSeo.isArticle),
     publishDate: pageSeo.publishDate,
     modifiedDate: pageSeo.modifiedDate,
-    faqs: ZtoC.faqs || [],
+    faqs: MiddleIncomeTrap.faqs || [],
   };
 
   // createMetadata returns { title, description, openGraph, alternates, twitter, jsonLd }
@@ -38,7 +38,7 @@ export async function generateMetadata({ params }) {
   // Build alternates/hreflang entries for all locales configured in SITE
   const alternates = { canonical: meta.openGraph.url, languages: {} };
   for (const lng of SITE.locales) {
-    const other = (await import(`../../../../messages/${lng}/financeBlogs/zero-to-crore.json`).catch(() => ({}))).default || {};
+    const other = (await import(`../../../../messages/${lng}/financeBlogs/middle-income-trap`).catch(() => ({}))).default || {};
     const otherSlug = other?.seo?.slug || opts.slug;
     if (otherSlug) alternates.languages[lng] = `${SITE.url}/${lng}/${otherSlug}`;
   }
@@ -61,16 +61,16 @@ export default async function Page({ params }) {
 
 
   const { locale } = params;
-  const ZtoC = (await import(`../../../../messages/${locale}/financeBlogs/zero-to-crore.json`)).default;
+  const MiddleIncomeTrap = (await import(`../../../../messages/${locale}/financeBlogs/middle-income-trap`)).default;
 
 
   // Build JSON-LD for FAQ (if any)
   const faqJsonLd =
-    ZtoC.faqs && ZtoC.faqs.length
+    MiddleIncomeTrap.faqs && MiddleIncomeTrap.faqs.length
       ? {
         "@context": "https://schema.org",
         "@type": "FAQPage",
-        mainEntity: ZtoC.faqs.map((f) => ({
+        mainEntity: MiddleIncomeTrap.faqs.map((f) => ({
           "@type": "Question",
           name: f.q,
           acceptedAnswer: { "@type": "Answer", text: f.a },
@@ -79,17 +79,17 @@ export default async function Page({ params }) {
       : null;
 
   // Build Article JSON-LD if isArticle true
-  const articleJsonLd = ZtoC.seo?.isArticle
+  const articleJsonLd = MiddleIncomeTrap.seo?.isArticle
     ? {
       "@context": "https://schema.org",
       "@type": "Article",
-      headline: ZtoC.seo?.title || ZtoC.site?.heading,
-      description: ZtoC.seo?.description || "",
-      author: { "@type": "Person", name: ZtoC.seo?.author || "Author" },
-      datePublished: ZtoC.seo?.publishDate,
-      dateModified: ZtoC.seo?.modifiedDate,
-      image: ZtoC.seo?.image ? `${SITE.url}${ZtoC.seo.image}` : undefined,
-      mainEntityOfPage: { "@type": "WebPage", "@id:": `${SITE.url}/${locale}/${ZtoC.seo?.slug || ""}` },
+      headline: MiddleIncomeTrap.seo?.title || MiddleIncomeTrap.site?.heading,
+      description: MiddleIncomeTrap.seo?.description || "",
+      author: { "@type": "Person", name: MiddleIncomeTrap.seo?.author || "Author" },
+      datePublished: MiddleIncomeTrap.seo?.publishDate,
+      dateModified: MiddleIncomeTrap.seo?.modifiedDate,
+      image: MiddleIncomeTrap.seo?.image ? `${SITE.url}${MiddleIncomeTrap.seo.image}` : undefined,
+      mainEntityOfPage: { "@type": "WebPage", "@id:": `${SITE.url}/${locale}/${MiddleIncomeTrap.seo?.slug || ""}` },
     }
     : null;
 
@@ -115,8 +115,8 @@ export default async function Page({ params }) {
           <section className="page-title">
             <div style={{ textAlign: 'center', padding: '40px 0px 0px 0px' }}>
               <h1 class="page-heading">
-                <strong>{ZtoC.site.heading.split("—")[0].trim()}</strong>
-                {" — "}{ZtoC.site.heading.split("—")[1].trim()}
+                <strong>{MiddleIncomeTrap.site.heading.split("—")[0].trim()}</strong>
+                {" — "}{MiddleIncomeTrap.site.heading.split("—")[1].trim()}
               </h1>
             </div>
           </section>
@@ -144,7 +144,7 @@ export default async function Page({ params }) {
                 <Grid size={{ xs: 12, md: 12, lg: 6 }}>
                   <h2 className="table-of-content">Table Of Contents</h2>
                   <ol className="order-list">
-                    {ZtoC.article.tableOfContents.map((item, idx) => (
+                    {MiddleIncomeTrap.article.tableOfContents.map((item, idx) => (
                       <li key={idx}>
                         {item.title}
                       </li>
@@ -179,12 +179,12 @@ export default async function Page({ params }) {
 
                   {/* --- Intro Section --- */}
                   <section className="article-intro">
-                    <h2 className="blog-title">{ZtoC.article.intro.title}</h2>
+                    <h2 className="blog-title">{MiddleIncomeTrap.article.intro.title}</h2>
 
-                    {ZtoC.article.intro.image && (
+                    {MiddleIncomeTrap.article.intro.image && (
                       <Image
-                        src={ZtoC.article.intro.image.src}
-                        alt={ZtoC.article.intro.image.alt || ""}
+                        src={MiddleIncomeTrap.article.intro.image.src}
+                        alt={MiddleIncomeTrap.article.intro.image.alt || ""}
                         width={800}             // ✅ Adjust as needed
                         height={450}            // ✅ Maintain aspect ratio
                         className="rounded-xl shadow-md w-full md:w-3/4 mx-auto my-4"
@@ -192,7 +192,7 @@ export default async function Page({ params }) {
                       />
                     )}
 
-                    {ZtoC.article.intro.paragraphs.map((para, idx) => (
+                    {MiddleIncomeTrap.article.intro.paragraphs.map((para, idx) => (
                       <p key={idx} className="intro-paragraph">
                         {para}
                       </p>
@@ -201,7 +201,7 @@ export default async function Page({ params }) {
 
                   {/* --- Blog Sections --- */}
                   <section className="article-sections">
-                    {ZtoC.article.sections.map((section, idx) => (
+                    {MiddleIncomeTrap.article.sections.map((section, idx) => (
                       <div key={idx} className="article-section">
                         <h2 className="section-title">{section.title}</h2>
 

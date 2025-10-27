@@ -13,15 +13,6 @@
     "heading": "How to Build ₹1 Crore from Scratch in India — The Proven Step-by-Step Roadmap"
   },
   "article": {
-    "intro": {
-      "title": "From ₹0 to ₹1 Crore: The Real Roadmap No One Shows You",
-      "paragraphs": [
-        "Let’s be honest — we’ve all seen those “get rich fast” videos that promise you’ll make crores overnight. But real life doesn’t work like that. Most of us start with nothing — a small salary, family pressure, and dreams bigger than our bank balance. And yet, there is a way to go from ₹0 to ₹1 crore — not through luck or scams, but through habits, mindset, and small consistent moves.",
-        "This isn’t about fancy cars or luxury lifestyles. It’s about building real wealth — the kind that gives you peace, choices, and freedom.",
-        "So in this video, I’ll show you the step-by-step Indian roadmap — from your 20s to your 40s — of how ordinary people quietly become crorepatis.",
-        "Let’s begin the journey."
-      ]
-    },
     "tableOfContents": [
       {
         "id": "point-1-broke",
@@ -48,6 +39,19 @@
         "title": "Final thoughts — Your ₹1 Crore Isn’t a Dream — It’s a Discipline"
       }
     ],
+    "intro": {
+      "title": "From ₹0 to ₹1 Crore: The Real Roadmap No One Shows You",
+      "image": {
+        "src": "/finance/zero-to-one-crore/intro-1.088Z.png",
+        "alt": "From ₹0 to ₹1 Crore: The Real Roadmap No One Shows You"
+      },
+      "paragraphs": [
+        "Let’s be honest — we’ve all seen those “get rich fast” videos that promise you’ll make crores overnight. But real life doesn’t work like that. Most of us start with nothing — a small salary, family pressure, and dreams bigger than our bank balance. And yet, there is a way to go from ₹0 to ₹1 crore — not through luck or scams, but through habits, mindset, and small consistent moves.",
+        "This isn’t about fancy cars or luxury lifestyles. It’s about building real wealth — the kind that gives you peace, choices, and freedom.",
+        "So in this video, I’ll show you the step-by-step Indian roadmap — from your 20s to your 40s — of how ordinary people quietly become crorepatis.",
+        "Let’s begin the journey."
+      ]
+    },
     "sections": [
       {
         "title": "💡 Point 1 – It Starts When You’re Broke: The Truth About ₹0 to Something",
