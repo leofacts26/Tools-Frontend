@@ -2,11 +2,12 @@
 import React from "react";
 import { Box, Container, Grid, Typography, Button, Stack, Divider } from "@mui/material";
 import { styled } from "@mui/material/styles";
-import FacebookIcon from "@mui/icons-material/Facebook";
 import YouTubeIcon from "@mui/icons-material/YouTube";
-import TwitterIcon from "@mui/icons-material/Twitter";
+import XIcon from '@mui/icons-material/X';
 import RedditIcon from "@mui/icons-material/Reddit";
 import InstagramIcon from '@mui/icons-material/Instagram';
+import PinterestIcon from '@mui/icons-material/Pinterest';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
 
 const FooterWrapper = styled(Box)(({ theme }) => ({
   background: "linear-gradient(90deg, #4a0e07, #014744, #350600)",
@@ -22,7 +23,7 @@ const FooterHeading = styled(Typography)(({ theme }) => ({
   fontSize: "1.2rem",
 }));
 
-const SocialIcon = styled("div")(({ theme }) => ({
+const SocialIcon = styled("a")(({ theme }) => ({
   display: "flex",
   alignItems: "center",
   justifyContent: "center",
@@ -32,8 +33,10 @@ const SocialIcon = styled("div")(({ theme }) => ({
   border: "1px solid rgba(255,255,255,0.3)",
   cursor: "pointer",
   transition: "all 0.3s ease",
+  textDecoration: "none",
+  color: "inherit",
   "&:hover": {
-    backgroundColor: "rgba(255,255,255,0.2)",
+    backgroundColor: "rgba(255, 255, 255, 1)",
     transform: "scale(1.1)",
   },
 }));
@@ -53,32 +56,36 @@ export default function Footer() {
             Join Our Awesome Community
           </Typography>
           <Stack direction="row" spacing={2} justifyContent="center">
-            <Button
-              variant="contained"
-              startIcon={<InstagramIcon />}
-              sx={{
-                bgcolor: "white",
-                color: "black",
-                borderRadius: "30px",
-                px: 3,
-                "&:hover": { bgcolor: "#e0e0e0" },
-              }}
-            >
-              Instagram
-            </Button>
-            <Button
-              variant="contained"
-              startIcon={<FacebookIcon />}
-              sx={{
-                bgcolor: "#3b82f6",
-                color: "white",
-                borderRadius: "30px",
-                px: 3,
-                "&:hover": { bgcolor: "#2563eb" },
-              }}
-            >
-              Facebook
-            </Button>
+            <a href="https://www.instagram.com/ganakahub/" target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none' }}>
+              <Button
+                variant="contained"
+                startIcon={<InstagramIcon />}
+                sx={{
+                  bgcolor: "white",
+                  color: "black",
+                  borderRadius: "30px",
+                  px: 3,
+                  "&:hover": { bgcolor: "#e0e0e0" },
+                }}
+              >
+                Instagram
+              </Button>
+            </a>
+            <a href="https://in.pinterest.com/ganakahub/" target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none' }}>
+              <Button
+                variant="contained"
+                startIcon={<PinterestIcon />}
+                sx={{
+                  bgcolor: "#eb334fe1",
+                  color: "white",
+                  borderRadius: "30px",
+                  px: 3,
+                  "&:hover": { bgcolor: "#e60023cc" },
+                }}
+              >
+                Pinterest
+              </Button>
+            </a>
           </Stack>
         </Box>
 
@@ -98,32 +105,51 @@ export default function Footer() {
                 Ganaka <span style={{ color: "#ec407a" }}>Hub</span>
               </Typography>
               <Stack direction="row" spacing={2} mt={2}>
-                <SocialIcon><FacebookIcon /></SocialIcon>
-                <SocialIcon><YouTubeIcon /></SocialIcon>
-                <SocialIcon><TwitterIcon /></SocialIcon>
-                <SocialIcon><RedditIcon /></SocialIcon>
+                <SocialIcon
+                  href="https://www.linkedin.com/in/ganakahub/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <LinkedInIcon />
+                </SocialIcon>
+                <SocialIcon
+                  href="https://www.youtube.com/@ganakahub"
+                  target="_blank"
+                  rel="noopener noreferrer"><YouTubeIcon /></SocialIcon>
+                <SocialIcon
+                  href="https://x.com/ganakahub"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                ><XIcon /></SocialIcon>
+                <SocialIcon
+                  href="https://www.reddit.com/user/ganakahub/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                ><RedditIcon /></SocialIcon>
               </Stack>
             </Grid>
 
             {/* Column 2 */}
             <Grid item xs={12} md={3}>
-              <FooterHeading>Products</FooterHeading>
+              <FooterHeading>Finance</FooterHeading>
               <Stack spacing={1}>
-                <Typography variant="body2">UI Components</Typography>
-                <Typography variant="body2">E-commerce</Typography>
-                <Typography variant="body2">Dashboard Kit (Upcoming)</Typography>
-                <Typography variant="body2">Vue Components (Upcoming)</Typography>
+                <Typography variant="body2">SIP Calculator</Typography>
+                <Typography variant="body2">Lumpsum Calculator</Typography>
+                <Typography variant="body2">NPS Calculator</Typography>
+                <Typography variant="body2">Gratuity Calculator</Typography>
+                <Typography variant="body2">EPF Calculator</Typography>
               </Stack>
             </Grid>
 
             {/* Column 3 */}
             <Grid item xs={12} md={3}>
-              <FooterHeading>General</FooterHeading>
+              <FooterHeading>Students</FooterHeading>
               <Stack spacing={1}>
-                <Typography variant="body2">Build Template</Typography>
-                <Typography variant="body2">Codebase Generator</Typography>
-                <Typography variant="body2">Blog</Typography>
-                <Typography variant="body2">Templates</Typography>
+                <Typography variant="body2">GPA Calculator</Typography>
+                <Typography variant="body2">Grade Converter</Typography>
+                <Typography variant="body2">Attendance Calculator</Typography>
+                <Typography variant="body2">Study Timer</Typography>
+                <Typography variant="body2">Flashcard Maker</Typography>
               </Stack>
             </Grid>
 
@@ -133,7 +159,8 @@ export default function Footer() {
               <Stack spacing={1}>
                 <Typography variant="body2">Terms & Condition</Typography>
                 <Typography variant="body2">Privacy Policy</Typography>
-                <Typography variant="body2">License</Typography>
+                <Typography variant="body2">Disclaimer</Typography>
+                <Typography variant="body2">About Us</Typography>
               </Stack>
             </Grid>
           </Grid>
@@ -143,7 +170,7 @@ export default function Footer() {
         {/* Bottom Footer */}
         <Box textAlign="center" mt={5}>
           <Typography variant="body2" sx={{ opacity: 0.6 }}>
-            Copyright © {new Date().getFullYear()} Cosmicalc. All rights reserved
+            Copyright © {new Date().getFullYear()} GanakaHub. All rights reserved
           </Typography>
         </Box>
       </Container>

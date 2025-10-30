@@ -131,7 +131,7 @@ export default async function Page({ params }) {
       <Box sx={{ flexGrow: 1, mt: 3 }}>
         <Grid container spacing={2}>
           <Grid size={{ xs: 12, sm: 12, md: 12, lg: 8 }}>
-            <Paper elevation={0} sx={{ border: "none", borderRadius: 2, p: { xs: 2, md: 4 }, boxShadow: "0 2px 8px rgba(0,0,0,0.05)" }}>
+            {/* <Paper elevation={0} sx={{ border: "none", borderRadius: 2, p: { xs: 2, md: 4 }, boxShadow: "0 2px 8px rgba(0,0,0,0.05)" }}> */}
 
               {/* JSON object assumed to be imported as `mfcalc` */}
               <article aria-labelledby="what-is-mf-return-calculator" className="finance-article">
@@ -379,7 +379,7 @@ export default async function Page({ params }) {
 
 
 
-            </Paper>
+            {/* </Paper> */}
           </Grid>
 
           <Grid size={{ xs: 12, sm: 12, md: 12, lg: 4 }}>

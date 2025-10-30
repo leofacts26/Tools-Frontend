@@ -53,39 +53,33 @@
     "students": {
       "page": "Students",
       "links": {
-        "plugins": {
-          "label": "Plugins"
+        "gpa-calculator": {
+          "label": "GPA Calculator"
         },
-        "libraries": {
-          "label": "Libraries"
-        },
-        "help": {
-          "label": "Help"
-        },
-        "billing": {
-          "label": "Billing"
+        "grade-convertor": {
+          "label": "Grade Converter"
         }
       }
     },
-    "utilities": {
-      "page": "Utilities",
+    "developer": {
+      "page": "Developer",
       "links": {
         "about": {
-          "label": "About"
+          "label": "JSON Formatter"
         },
         "customers": {
-          "label": "Customers"
+          "label": "HTML Beautifier"
         }
       }
     },
     "others": {
       "page": "Others",
       "links": {
-        "others": {
-          "label": "Others"
+        "text-utilities": {
+          "label": "Text Utilities"
         },
-        "customers": {
-          "label": "Customers"
+        "fun-tools": {
+          "label": "Fun Tools"
         }
       }
     },

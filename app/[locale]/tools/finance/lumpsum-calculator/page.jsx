@@ -123,7 +123,7 @@ export default async function Page({ params }) {
         <Grid container spacing={2}>
           {/* Main content column (article + calculator) */}
           <Grid size={{ xs: 12, sm: 12, md: 12, lg: 8 }}>
-            <Paper elevation={0} sx={{ border: "none", borderRadius: 2, p: { xs: 2, md: 4 }, boxShadow: "0 2px 8px rgba(0,0,0,0.05)" }}>
+            {/* <Paper elevation={0} sx={{ border: "none", borderRadius: 2, p: { xs: 2, md: 4 }, boxShadow: "0 2px 8px rgba(0,0,0,0.05)" }}> */}
 
               <article aria-labelledby="lumpsum-intro" className="finance-article">
 
@@ -307,7 +307,7 @@ export default async function Page({ params }) {
 
               <FAQAccordion faqs={lumpsumcalc?.faqs ?? []} />
 
-            </Paper>
+            {/* </Paper> */}
 
           </Grid>
           <Grid size={{ xs: 12, sm: 12, md: 12, lg: 4 }}>

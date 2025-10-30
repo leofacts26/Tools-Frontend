@@ -129,7 +129,7 @@ export default async function Page({ params }) {
       <Box sx={{ flexGrow: 1, mt: 3 }}>
         <Grid container spacing={2}>
           <Grid size={{ xs: 12, sm: 12, md: 12, lg: 8 }}>
-            <Paper elevation={0} sx={{ border: "none", borderRadius: 2, p: { xs: 2, md: 4 }, boxShadow: "0 2px 8px rgba(0,0,0,0.05)" }}>
+            {/* <Paper elevation={0} sx={{ border: "none", borderRadius: 2, p: { xs: 2, md: 4 }, boxShadow: "0 2px 8px rgba(0,0,0,0.05)" }}> */}
 
               <article aria-labelledby="What is a SIP Calculator & Why You Need It?" className="finance-article">
                 <header>
@@ -351,7 +351,7 @@ export default async function Page({ params }) {
               </article>
               <FAQAccordion faqs={sipcalc?.faqs ?? []} />
 
-            </Paper>
+            {/* </Paper> */}
           </Grid>
 
           <Grid size={{ xs: 12, sm: 12, md: 12, lg: 4 }}>

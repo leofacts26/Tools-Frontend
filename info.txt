@@ -1,0 +1,336 @@
+🧭 200 TOOL ROADMAP (Divided by Category)
+🔢 1. Finance Tools (25)
+
+High CPC, excellent for Indian & US audiences.
+
+Tool	Example Keywords
+SIP Calculator	sip calculator online
+EMI Calculator	car loan emi calculator
+GST Calculator	gst inclusive price calculator
+Compound Interest Calculator	compound interest online
+FD Calculator	fd interest calculator
+RD Calculator	recurring deposit
+Mutual Fund Return Calculator	mf calculator
+Income Tax Calculator	income tax india
+Currency Converter	usd to inr converter
+Gold Rate Calculator	22k gold price today
+Loan Eligibility Calculator	loan eligibility
+NPS Calculator	nps corpus estimate
+Retirement Calculator	pension corpus
+HRA Calculator	hra exemption
+Gratuity Calculator	gratuity amount
+SIP vs FD Comparison	sip vs fd
+CAGR Calculator	cagr online
+Inflation Calculator	inflation impact
+Salary Hike Calculator	salary increment
+PF Calculator	provident fund
+Brokerage Calculator	zerodha brokerage
+Stock Return Calculator	stock roi
+Dividend Calculator	dividend income
+Savings Goal Calculator	savings target
+Expense Tracker (Simple)	budget planner
+🧠 2. AI / Productivity Tools (25)
+
+These go viral — huge traffic from students, creators, developers.
+
+Tool	Example Keywords
+AI Text Summarizer	summarize text
+Grammar Checker	grammar fix
+Paraphrase Tool	rewrite text
+Word Counter	word count
+Character Counter	char counter
+Case Converter	upper lower case
+Text Reverser	reverse text
+Remove Duplicates	unique lines
+Random Password Generator	strong password
+Lorem Ipsum Generator	placeholder text
+QR Code Generator	qr maker
+QR Code Scanner (via camera)	scan qr
+Text-to-Emoji Converter	text to emoji
+Emoji Remover	remove emoji
+Hashtag Generator	instagram hashtags
+Blog Title Generator	catchy blog titles
+Keyword Density Checker	seo tool
+Readability Score Checker	readability test
+URL Shortener	short url
+Text to Speech	tts online
+Speech to Text	stt converter
+Image Compressor	compress jpg png
+PDF to Text	extract text from pdf
+Image to Text (OCR)	image ocr
+AI Idea Generator	content idea generator
+👨‍💻 3. Developer Tools (40)
+Tool	Example Keywords
+JSON Formatter	format json
+HTML Beautifier	html beautify
+CSS Beautifier	css formatter
+JS Minifier	js compress
+Base64 Encoder	encode base64
+Base64 Decoder	decode base64
+URL Encoder	url encode
+URL Decoder	decode url
+Color Picker	rgb to hex
+HEX to RGB Converter	hex rgb
+SHA256 Generator	sha hash
+MD5 Generator	md5 hash
+Diff Checker	compare text
+Regex Tester	regex online
+HTML Previewer	preview html
+Markdown to HTML	md converter
+JSON to CSV	json csv
+CSV to JSON	csv json
+XML to JSON	xml json
+JWT Decoder	jwt decode
+Binary to Text	binary text
+Text to Binary	text binary
+Number Converter	decimal hex binary
+Unix Timestamp Converter	epoch time
+Date Formatter	date format
+Random Number Generator	random integer
+UUID Generator	uuid online
+IP Finder	my ip
+HTTP Header Checker	check headers
+Website Screenshot Tool	webpage screenshot
+Meta Tag Generator	seo meta
+Robots.txt Generator	robots generator
+Sitemap Generator	sitemap xml
+HTML Escape	escape html
+HTML Unescape	unescape html
+String Encryptor	encrypt text
+JSON Validator	validate json
+Responsive Tester	test website size
+CSS Gradient Generator	gradient maker
+Color Palette Generator	palette builder
+✍️ 4. Text, Fun & General Tools (40)
+Tool	Example Keywords
+Name Generator	random names
+Username Generator	youtube name
+Nickname Generator	gamer names
+Fancy Text Generator	stylish text
+Font Style Generator	cool fonts
+Birthday Countdown	birthday timer
+Age Calculator	age from dob
+BMI Calculator	body mass index
+BMR Calculator	calorie burn
+Love Calculator	love percentage
+Stopwatch	online stopwatch
+Timer	countdown timer
+Notepad	online notes
+Reminder App	online reminder
+Flashcard Maker	flashcards
+Unit Converter	cm to inch
+Length Converter	meter foot
+Weight Converter	kg pound
+Temperature Converter	celsius fahrenheit
+Speed Converter	kmh mph
+Area Converter	sqft sqm
+Volume Converter	liter gallon
+Time Converter	hours minutes
+Number to Words	456 = four hundred...
+Roman Numeral Converter	roman converter
+Morse Code Translator	morse encoder
+Binary Translator	binary converter
+Random Emoji Generator	emoji random
+Random Quote Generator	quote today
+Random Joke Generator	jokes online
+Random Password Generator	password maker
+Birthday Wish Generator	birthday message
+Greeting Card Maker	greeting online
+Screenshot Editor	crop resize
+Text Divider	line divider
+Word Shuffle	random shuffle
+Sentence Case Tool	sentence case
+Mirror Text	reverse mirror
+Text Sorter	sort alphabetically
+🎨 5. Image, Video & File Tools (30)
+Tool	Example Keywords
+Image Resizer	resize jpg png
+Image Cropper	crop image
+Image Rotator	rotate photo
+Image Filter Editor	apply filters
+Image Converter (png-jpg)	png to jpg
+JPG to PDF	jpg pdf
+PDF to JPG	pdf image
+PDF Merger	merge pdf
+PDF Splitter	split pdf
+Compress PDF	reduce pdf size
+Remove Background (JS)	remove bg
+Video to GIF	video gif
+GIF to Video	gif video
+Image Color Extractor	color from image
+Blur Image Tool	blur photo
+Sharpen Image Tool	sharpen photo
+Meme Generator	meme maker
+Thumbnail Downloader	youtube thumbnail
+YouTube Video Info	video details
+Video Speed Controller	video rate
+Video Trimmer	trim video
+Audio Trimmer	cut mp3
+Audio to Text	audio transcribe
+Image Watermark	watermark tool
+Image Collage Maker	photo collage
+Image Compressor	reduce kb size
+Image Metadata Viewer	view exif
+File Size Converter	mb kb gb
+ZIP Extractor	extract zip
+File Renamer	rename batch
+🗓️ DEVELOPMENT TIMELINE (12-Month Plan)
+Month	Goal	Target
+1–2	Build 10 base components + setup SEO structure	20 tools live
+3–4	Add finance + text utilities	60 tools total
+5–6	Add developer utilities	100 tools total
+7–9	Add AI, file & image tools	150 tools
+10–12	Add remaining + fix SEO + ads + analytics	200 tools
+
+
+
+🧭 MASTER LIST — UTILITY TOOL CATEGORIES
+💰 1. Finance & Money Tools
+
+High CPC niche (₹100–₹400 RPM in AdSense)
+
+SIP, EMI, GST, FD, RD, Tax, NPS, Gratuity, CAGR, Inflation Calculators, etc.
+
+🧠 2. AI & Writing Tools
+
+High engagement niche
+
+AI Text Summarizer, Grammar Checker, Paraphraser, Blog Title Generator, Keyword Suggestion, etc.
+
+👨‍💻 3. Developer Tools
+
+Tech audience = consistent SEO traffic
+
+JSON Formatter, Base64 Encoder/Decoder, HTML/CSS/JS Beautifier, Regex Tester, JWT Decoder, Hash Generator, etc.
+
+🧾 4. Text Utilities
+
+Lightweight tools with 100K+ monthly search volume each
+
+Word Counter, Case Converter, Duplicate Remover, Sorter, Line Break Remover, Reverse Text, etc.
+
+🎨 5. Image Tools
+
+Popular + high CTR niche for creators
+
+Image Compressor, Resizer, Cropper, PNG ↔ JPG Converter, Filter Editor, Meme Generator, Background Remover, etc.
+
+📄 6. PDF & Document Tools
+
+Massive SEO potential
+
+PDF Splitter, PDF Merger, PDF Compressor, Image to PDF, PDF to Word, etc.
+
+🔢 7. Converter Tools
+
+Everyone searches these — evergreen traffic
+
+Currency, Unit, Length, Weight, Temperature, Speed, Time, Number ↔ Words, Roman Numeral, etc.
+
+🧰 8. Calculation Tools
+
+Core utility niche
+
+BMI, Age, BMR, Loan, Discount, Tip, Percentage, Profit/Loss, ROI calculators.
+
+🔍 9. SEO & Web Tools
+
+High CPC keywords, good for affiliate monetization
+
+Meta Tag Generator, Robots.txt, Sitemap Generator, Keyword Density, Plagiarism Checker, Backlink Checker.
+
+🧑‍🎓 10. Student / Education Tools
+
+High volume niche in India
+
+GPA Calculator, Grade Converter, Attendance Calculator, Study Timer, Flashcard Maker, etc.
+
+⚙️ 11. Coding / Data Conversion Tools
+
+For developers & data professionals
+
+JSON ↔ CSV, XML ↔ JSON, Binary ↔ Text, URL Encoder, Timestamp Converter, etc.
+
+🗂️ 12. File Tools
+
+Cross-format converter tools — good for long SEO tails
+
+File Renamer, ZIP Extractor, File Size Converter, File Metadata Viewer, etc.
+
+🔠 13. Text Formatting Tools
+
+Small tools, big traffic
+
+Sentence Case, Uppercase/Lowercase, Add Prefix/Suffix, Remove Extra Spaces, Indent/Unindent.
+
+🔒 14. Security & Privacy Tools
+
+Trust niche (moderate CPC)
+
+Password Generator, Hash Encoder, Base64 Encryptor, Secure Note Tool, File Encryptor.
+
+🧩 15. Fun & Entertainment Tools
+
+High volume, viral category
+
+Love Calculator, Random Joke Generator, Truth/Dare Picker, Random Emoji Generator, Meme Text Creator.
+
+🕒 16. Date & Time Tools
+
+Simple but used daily
+
+Countdown Timer, Stopwatch, Age Calculator, World Clock, Date Difference Calculator.
+
+📱 17. Social Media Tools
+
+Perfect for creators & influencers
+
+Hashtag Generator, Caption Generator, Bio Generator, Thumbnail Downloader, Profile DP Downloader.
+
+🔤 18. Language & Translation Tools
+
+Good global reach
+
+Language Translator, Romanization, Text Transliterator, Unicode Converter.
+
+🌈 19. Color & Design Tools
+
+Loved by designers & developers
+
+Color Picker, HEX ↔ RGB Converter, CSS Gradient Generator, Palette Creator, Contrast Checker.
+
+📊 20. Marketing & Branding Tools
+
+Affiliate-friendly category
+
+Domain Availability Checker, Brand Name Generator, Slogan Generator, Logo Text Generator.
+
+🪄 21. Random Generators
+
+Quick traffic boosters
+
+Random Number, Random Name, Random Word, Random Password, Random Color, Random Quote.
+
+📸 22. Media Tools
+
+For YouTube & social media users
+
+Video to GIF, GIF Compressor, Audio Cutter, Thumbnail Generator, Video Speed Controller.
+
+💬 23. Communication Tools
+
+Practical use cases
+
+QR Code Generator, QR Code Scanner, URL Shortener, WhatsApp Link Generator, Email Extractor.
+
+🏗️ 24. Web Utility Tools
+
+Backend-free web helpers
+
+HTTP Header Checker, IP Finder, Ping Tool, DNS Lookup, SSL Checker.
+
+🧾 25. Miscellaneous Tools
+
+For anything outside standard categories
+
+To-Do List, Notes App, Reminder Tool, Simple Budget Tracker, Daily Planner.

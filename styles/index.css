@@ -235,7 +235,7 @@ body ul li a {
   }
 }
 
-#blog-section p{
+#blog-section p {
   font-size: 18px !important;
 }
 
@@ -775,6 +775,22 @@ body ul li a {
 
 
 
+
+.section-title {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: var(--clr-black);
+  margin-bottom: 1.5rem;
+}
+
+/* hero  */
+.hero-title {
+  font-size: 3.5em;
+  line-height: 1.1em;
+}
+
+
+
 @media only screen and (max-width: 700px) {
   .page-heading {
     font-size: 26px;
@@ -783,11 +799,8 @@ body ul li a {
   .blog-title {
     font-size: 24px;
   }
-}
 
-.section-title {
-  font-size: 1.6rem;
-  font-weight: 700;
-  color: var(--clr-black);
-  margin-bottom: 1.5rem;
+  .hero-title {
+    font-size: 1.5em;
+  }
 }

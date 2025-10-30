@@ -50,8 +50,8 @@ export default function SipCalculator({ sipcalc }) {
     initial: { amount: 25000, years: 10, annualReturn: 12 },
     mode: "sip",
     routeMap: {
-      sip: "/tools/finance/sip-calculator",
-      lumpsum: "/tools/finance/lumpsum-calculator",
+      sip: "/finance/sip-calculator",
+      lumpsum: "/finance/lumpsum-calculator",
     },
     pathnamePrefix: localePrefix,
   });
