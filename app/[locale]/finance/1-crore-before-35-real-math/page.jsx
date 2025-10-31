@@ -7,6 +7,7 @@ import Container from '@mui/material/Container';
 import LastUpdate from '@/components/LastUpdate';
 import Image from 'next/image';
 import { createMetadata, SITE } from "@/lib/seo";
+import FinanceCards from '@/components/cards/FinanceCards';
 
 
 export async function generateMetadata({ params }) {
@@ -241,8 +242,21 @@ export default async function Page({ params }) {
                 </Grid>
               </Grid>
             </Box>
+
+
+            <Box>
+              <Typography variant="h3" align="center" gutterBottom sx={{ fontWeight: 'bold', marginBottom: '20px', marginTop: '70px' }}>
+                Other Topics You May Like
+              </Typography>
+              <FinanceCards  excludeTitle="Become a Crorepati Before 35 — The Real Math" />
+            </Box>
+
+
+
           </Container>
         </section>
+
+
 
 
 
