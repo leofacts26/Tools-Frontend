@@ -804,3 +804,47 @@ body ul li a {
     font-size: 1.5em;
   }
 }
+
+/* terms and conditions  */
+.terms-wrapper {
+  padding: 48px 0 !important;
+  background: var(--bg) !important;
+}
+
+.terms-title {
+  font-size: 34px !important;
+  font-weight: 800 !important;
+  margin-bottom: 8px !important;
+  color: var(--fg) !important;
+}
+
+.terms-subtle {
+  font-size: 14px !important;
+  color: var(--fg-muted) !important;
+  margin-bottom: 24px !important;
+}
+
+.terms-heading {
+  font-size: 22px !important;
+  font-weight: 700 !important;
+  margin-top: 28px !important;
+  margin-bottom: 10px !important;
+  color: var(--fg) !important;
+}
+
+.terms-text {
+  font-size: 16px !important;
+  line-height: 1.75 !important;
+  color: var(--fg) !important;
+  margin-bottom: 12px !important;
+}
+
+.terms-list {
+  margin: 0 0 12px 18px !important;
+}
+
+.terms-list li {
+  margin-bottom: 8px !important;
+  color: var(--fg) !important;
+  line-height: 1.75 !important;
+}
