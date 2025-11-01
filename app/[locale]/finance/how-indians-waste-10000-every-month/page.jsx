@@ -15,14 +15,14 @@ export async function generateMetadata({ params }) {
 
   // load localized common defaults and the page content (sipcalc.json)
   const common = (await import(`../../../../messages/${locale}/common.json`).catch(() => ({}))).default || {};
-  const blogData = (await import(`../../../../messages/${locale}/financeBlogs/what-the-rich-know-schools-never-taught`).catch(() => ({}))).default || {};
+  const BlogContent = (await import(`../../../../messages/${locale}/financeBlogs/how-indians-waste-10000-every-month`).catch(() => ({}))).default || {};
 
-  // use the seo block from what-the-rich-know-schools-never-taught (user provided)
-  const pageSeo = blogData.seo || {};
+  // use the seo block from how-indians-waste-10000-every-month (user provided)
+  const pageSeo = BlogContent.seo || {};
 
   // build opts for createMetadata (your lib/seo.js expects similar keys)
   const opts = {
-    title: pageSeo.title || blogData.site?.heading || common.site?.name || SITE.name,
+    title: pageSeo.title || BlogContent.site?.heading || common.site?.name || SITE.name,
     description: pageSeo.description || common.site?.description || "",
     slug: pageSeo.slug || "",
     image: pageSeo.image || common.site?.defaultImage || "",
@@ -30,7 +30,7 @@ export async function generateMetadata({ params }) {
     isArticle: Boolean(pageSeo.isArticle),
     publishDate: pageSeo.publishDate,
     modifiedDate: pageSeo.modifiedDate,
-    faqs: blogData.faqs || [],
+    faqs: BlogContent.faqs || [],
   };
 
   // createMetadata returns { title, description, openGraph, alternates, twitter, jsonLd }
@@ -39,7 +39,7 @@ export async function generateMetadata({ params }) {
   // Build alternates/hreflang entries for all locales configured in SITE
   const alternates = { canonical: meta.openGraph.url, languages: {} };
   for (const lng of SITE.locales) {
-    const other = (await import(`../../../../messages/${lng}/financeBlogs/what-the-rich-know-schools-never-taught`).catch(() => ({}))).default || {};
+    const other = (await import(`../../../../messages/${lng}/financeBlogs/how-indians-waste-10000-every-month`).catch(() => ({}))).default || {};
     const otherSlug = other?.seo?.slug || opts.slug;
     if (otherSlug) alternates.languages[lng] = `${SITE.url}/${lng}/${otherSlug}`;
   }
@@ -62,16 +62,16 @@ export default async function Page({ params }) {
 
 
   const { locale } = params;
-  const blogData = (await import(`../../../../messages/${locale}/financeBlogs/what-the-rich-know-schools-never-taught`)).default;
+  const BlogContent = (await import(`../../../../messages/${locale}/financeBlogs/how-indians-waste-10000-every-month`)).default;
 
 
   // Build JSON-LD for FAQ (if any)
   const faqJsonLd =
-    blogData.faqs && blogData.faqs.length
+    BlogContent.faqs && BlogContent.faqs.length
       ? {
         "@context": "https://schema.org",
         "@type": "FAQPage",
-        mainEntity: blogData.faqs.map((f) => ({
+        mainEntity: BlogContent.faqs.map((f) => ({
           "@type": "Question",
           name: f.q,
           acceptedAnswer: { "@type": "Answer", text: f.a },
@@ -80,17 +80,17 @@ export default async function Page({ params }) {
       : null;
 
   // Build Article JSON-LD if isArticle true
-  const articleJsonLd = blogData.seo?.isArticle
+  const articleJsonLd = BlogContent.seo?.isArticle
     ? {
       "@context": "https://schema.org",
       "@type": "Article",
-      headline: blogData.seo?.title || blogData.site?.heading,
-      description: blogData.seo?.description || "",
-      author: { "@type": "Person", name: blogData.seo?.author || "Author" },
-      datePublished: blogData.seo?.publishDate,
-      dateModified: blogData.seo?.modifiedDate,
-      image: blogData.seo?.image ? `${SITE.url}${blogData.seo.image}` : undefined,
-      mainEntityOfPage: { "@type": "WebPage", "@id:": `${SITE.url}/${locale}/${blogData.seo?.slug || ""}` },
+      headline: BlogContent.seo?.title || BlogContent.site?.heading,
+      description: BlogContent.seo?.description || "",
+      author: { "@type": "Person", name: BlogContent.seo?.author || "Author" },
+      datePublished: BlogContent.seo?.publishDate,
+      dateModified: BlogContent.seo?.modifiedDate,
+      image: BlogContent.seo?.image ? `${SITE.url}${BlogContent.seo.image}` : undefined,
+      mainEntityOfPage: { "@type": "WebPage", "@id:": `${SITE.url}/${locale}/${BlogContent.seo?.slug || ""}` },
     }
     : null;
 
@@ -116,8 +116,8 @@ export default async function Page({ params }) {
           <section className="page-title">
             <div style={{ textAlign: 'center', padding: '40px 0px 0px 0px' }}>
               <h1 class="page-heading">
-                <strong>{blogData.site.heading.split("—")[0].trim()}</strong>
-                {" — "}{blogData.site.heading.split("—")[1].trim()}
+                <strong>{BlogContent.site.heading.split("—")[0].trim()}</strong>
+                {" — "}{BlogContent.site.heading.split("—")[1].trim()}
               </h1>
             </div>
           </section>
@@ -145,7 +145,7 @@ export default async function Page({ params }) {
                 <Grid size={{ xs: 12, md: 12, lg: 6 }}>
                   <h2 className="table-of-content">Table Of Contents</h2>
                   <ol className="order-list">
-                    {blogData.article.tableOfContents.map((item, idx) => (
+                    {BlogContent.article.tableOfContents.map((item, idx) => (
                       <li key={idx}>
                         {item.title}
                       </li>
@@ -155,7 +155,7 @@ export default async function Page({ params }) {
                 </Grid>
                 <Grid size={{ xs: 12, md: 12, lg: 6 }}>
                   <Image
-                    src="/finance/how-indians-waste-10000-every-month/I-intro-5.011Z.png"
+                    src="/finance/1-crore-before-35-real-math/f-intro-13.854Z.png"
                     alt="From ₹0 to ₹1 Crore"
                     className="img-fluid mb-4 img-rounded"
                     width={763}
@@ -176,7 +176,6 @@ export default async function Page({ params }) {
           <Container>
             <Box sx={{ flexGrow: 1, mt: 4, mb: 4 }}>
               <Grid container spacing={2}>
-
                 <Grid size={{ xs: 12, md: 12, lg: 2 }}>
                   {/* <h3>Left</h3> */}
                 </Grid>
@@ -185,12 +184,12 @@ export default async function Page({ params }) {
 
                   {/* --- Intro Section --- */}
                   <section className="article-intro">
-                    <h2 className="blog-title">{blogData.article.intro.title}</h2>
+                    <h2 className="blog-title">{BlogContent.article.intro.title}</h2>
 
-                    {blogData.article.intro.image && (
+                    {BlogContent.article.intro.image && (
                       <Image
-                        src={blogData.article.intro.image.src}
-                        alt={blogData.article.intro.image.alt || ""}
+                        src={BlogContent.article.intro.image.src}
+                        alt={BlogContent.article.intro.image.alt || ""}
                         width={800}             // ✅ Adjust as needed
                         height={450}            // ✅ Maintain aspect ratio
                         className="rounded-xl shadow-md w-full md:w-3/4 mx-auto my-4"
@@ -198,7 +197,7 @@ export default async function Page({ params }) {
                       />
                     )}
 
-                    {blogData.article.intro.paragraphs.map((para, idx) => (
+                    {BlogContent.article.intro.paragraphs.map((para, idx) => (
                       <p key={idx} className="intro-paragraph">
                         {para}
                       </p>
@@ -207,7 +206,7 @@ export default async function Page({ params }) {
 
                   {/* --- Blog Sections --- */}
                   <section className="article-sections">
-                    {blogData.article.sections.map((section, idx) => (
+                    {BlogContent.article.sections.map((section, idx) => (
                       <div key={idx} className="article-section">
                         <h2 className="section-title">{section.title}</h2>
 
@@ -236,19 +235,27 @@ export default async function Page({ params }) {
                 </Grid>
 
                 <Grid size={{ xs: 12, md: 12, lg: 2 }}>
-                  {/* <h3>Left</h3> */}
+                  {/* <h3>Right</h3> */}
                 </Grid>
 
-                <Box>
-                  <Typography variant="h3" align="center" gutterBottom sx={{ fontWeight: 'bold', marginBottom: '20px', marginTop: '70px' }}>
-                    Other Topics You May Like
-                  </Typography>
-                  <FinanceCards excludeTitle="What the Rich Know That Schools Never Taught You" />
-                </Box>
+
               </Grid>
             </Box>
+
+
+            <Box>
+              <Typography variant="h3" align="center" gutterBottom sx={{ fontWeight: 'bold', marginBottom: '20px', marginTop: '70px' }}>
+                Other Topics You May Like
+              </Typography>
+              <FinanceCards excludeTitle="How Indians Waste ₹10,000 Every Month Without Realizing It" />
+            </Box>
+
+
+
           </Container>
         </section>
+
+
 
 
 

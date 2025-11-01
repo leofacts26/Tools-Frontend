@@ -7,6 +7,7 @@ import Container from '@mui/material/Container';
 import LastUpdate from '@/components/LastUpdate';
 import Image from 'next/image';
 import { createMetadata, SITE } from "@/lib/seo";
+import FinanceCards from '@/components/cards/FinanceCards';
 
 
 export async function generateMetadata({ params }) {
@@ -175,6 +176,11 @@ export default async function Page({ params }) {
           <Container>
             <Box sx={{ flexGrow: 1, mt: 4, mb: 4 }}>
               <Grid container spacing={2}>
+
+                <Grid size={{ xs: 12, md: 12, lg: 2 }}>
+                  {/* <h3>Left</h3> */}
+                </Grid>
+
                 <Grid size={{ xs: 12, md: 8 }}>
 
                   {/* --- Intro Section --- */}
@@ -229,16 +235,16 @@ export default async function Page({ params }) {
 
                 </Grid>
 
-                {/* --- Sidebar --- */}
-                <Grid size={{ xs: 12, md: 4 }}>
-                  <Card>
-                    <CardContent>
-                      <Typography gutterBottom sx={{ color: 'text.secondary', fontSize: 14 }}>
-                        Other Blogs
-                      </Typography>
-                    </CardContent>
-                  </Card>
+                <Grid size={{ xs: 12, md: 12, lg: 2 }}>
+                  {/* <h3>Left</h3> */}
                 </Grid>
+
+                <Box>
+                  <Typography variant="h3" align="center" gutterBottom sx={{ fontWeight: 'bold', marginBottom: '20px', marginTop: '70px' }}>
+                    Other Topics You May Like
+                  </Typography>
+                  <FinanceCards excludeTitle="From ₹0 to ₹1 Crore: The Step-by-Step Roadmap No One Shows You" />
+                </Box>
               </Grid>
             </Box>
           </Container>

@@ -47,7 +47,7 @@ const financeCardData = [
       "Every month, your salary comes in… and vanishes. You check your bank balance after two weeks — and it’s already gone.",
     imageUrl: "/finance/How-Indians-Waste-10,000-Every-Month-Without-Realizing-It.png",
     altText: "How Indians Waste ₹10,000 thumbnail",
-    link: "/finance/what-the-rich-know-schools-never-taught",
+    link: "/finance/how-indians-waste-10000-every-month",
     category: "Finance",
   },
 ];
