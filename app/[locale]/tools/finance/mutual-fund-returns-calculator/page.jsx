@@ -5,6 +5,7 @@ import SWPCalculator from "@/components/calculators/SWPCalculator";
 import { createMetadata, SITE } from "@/lib/seo";
 import FAQAccordion from "@/components/common/FAQAccordion";
 import MFReturnCalculator from "@/components/calculators/MFReturnCalculator";
+import FormulaBlock from "@/components/common/FormulaBlock";
 
 
 
@@ -133,234 +134,233 @@ export default async function Page({ params }) {
           <Grid size={{ xs: 12, sm: 12, md: 12, lg: 8 }}>
             {/* <Paper elevation={0} sx={{ border: "none", borderRadius: 2, p: { xs: 2, md: 4 }, boxShadow: "0 2px 8px rgba(0,0,0,0.05)" }}> */}
 
-              {/* JSON object assumed to be imported as `mfcalc` */}
-              <article aria-labelledby="what-is-mf-return-calculator" className="finance-article">
-                <header>
-                  <h2 id="what-is-mf-return-calculator" className="finance-sub-heading">
-                    {mfcalc.article.whatIsHeading}
-                  </h2>
+            {/* JSON object assumed to be imported as `mfcalc` */}
+            <article aria-labelledby="what-is-mf-return-calculator" className="finance-article">
+              <header>
+                <h2 id="what-is-mf-return-calculator" className="finance-sub-heading">
+                  {mfcalc.article.whatIsHeading}
+                </h2>
 
-                  {mfcalc.article.whatIsParagraphs.map((para, idx) => (
-                    <p key={idx}>{para}</p>
+                {mfcalc.article.whatIsParagraphs.map((para, idx) => (
+                  <p key={idx}>{para}</p>
+                ))}
+              </header>
+
+
+              <section aria-labelledby={mfcalc.article.whatIsSection.id}>
+                <h3 id={mfcalc.article.whatIsSection.id} className="finance-sub-heading">
+                  {mfcalc.article.whatIsSection.heading}
+                </h3>
+
+                {mfcalc.article.whatIsSection.paragraphs.map((para, index) => (
+                  <p key={index}>{para}</p>
+                ))}
+
+                <ul className="ou-list">
+                  {mfcalc.article.whatIsSection.points.map((point, index) => (
+                    <li key={index}>{point}</li>
                   ))}
-                </header>
+                </ul>
+
+                <br />
+
+                <p>{mfcalc.article.whatIsSection.conclusion}</p>
+              </section>
 
 
-                <section aria-labelledby={mfcalc.article.whatIsSection.id}>
-                  <h3 id={mfcalc.article.whatIsSection.id} className="finance-sub-heading">
-                    {mfcalc.article.whatIsSection.heading}
-                  </h3>
 
-                  {mfcalc.article.whatIsSection.paragraphs.map((para, index) => (
-                    <p key={index}>{para}</p>
+              <section aria-labelledby={mfcalc.article.whyUseSection.id}>
+                <h3 id={mfcalc.article.whyUseSection.id} className="finance-sub-heading">
+                  {mfcalc.article.whyUseSection.heading}
+                </h3>
+
+                {mfcalc.article.whyUseSection.paragraphs.map((para, index) => (
+                  <p key={index}>{para}</p>
+                ))}
+
+                <ul className="ou-list">
+                  {mfcalc.article.whyUseSection.points.map((point, index) => (
+                    <li key={index}>
+                      <strong>{point.title}</strong> — {point.description}
+                    </li>
                   ))}
+                </ul>
 
-                  <ul className="ou-list">
-                    {mfcalc.article.whatIsSection.points.map((point, index) => (
-                      <li key={index}>{point}</li>
-                    ))}
-                  </ul>
+                <br />
 
-                  <br />
-
-                  <p>{mfcalc.article.whatIsSection.conclusion}</p>
-                </section>
+                <p>{mfcalc.article.whyUseSection.conclusion}</p>
+              </section>
 
 
+              <section aria-labelledby={mfcalc.article.howItWorksSection.id}>
+                <h3 id={mfcalc.article.howItWorksSection.id} className="finance-sub-heading">
+                  {mfcalc.article.howItWorksSection.heading}
+                </h3>
 
-                <section aria-labelledby={mfcalc.article.whyUseSection.id}>
-                  <h3 id={mfcalc.article.whyUseSection.id} className="finance-sub-heading">
-                    {mfcalc.article.whyUseSection.heading}
-                  </h3>
+                {mfcalc.article.howItWorksSection.paragraphs.map((para, index) => (
+                  <p key={index}>{para}</p>
+                ))}
 
-                  {mfcalc.article.whyUseSection.paragraphs.map((para, index) => (
-                    <p key={index}>{para}</p>
+
+                <FormulaBlock
+                  title={mfcalc.article.howItWorksSection.formula.title}
+                  formula={mfcalc.article.howItWorksSection.formula.body}
+                />
+
+                <ul className="ou-list">
+                  {mfcalc.article.howItWorksSection.variables.map((variable, index) => (
+                    <li key={index}>
+                      <strong>{variable.symbol}</strong> = {variable.description}
+                    </li>
                   ))}
+                </ul>
 
-                  <ul className="ou-list">
-                    {mfcalc.article.whyUseSection.points.map((point, index) => (
-                      <li key={index}>
-                        <strong>{point.title}</strong> — {point.description}
-                      </li>
-                    ))}
-                  </ul>
-
-                  <br />
-
-                  <p>{mfcalc.article.whyUseSection.conclusion}</p>
-                </section>
+                <p>{mfcalc.article.howItWorksSection.conclusion}</p>
+              </section>
 
 
-                <section aria-labelledby={mfcalc.article.howItWorksSection.id}>
-                  <h3 id={mfcalc.article.howItWorksSection.id} className="finance-sub-heading">
-                    {mfcalc.article.howItWorksSection.heading}
-                  </h3>
+              <section aria-labelledby={mfcalc.article.exampleSection.id}>
+                <h3 id={mfcalc.article.exampleSection.id} className="finance-sub-heading">
+                  {mfcalc.article.exampleSection.heading}
+                </h3>
 
-                  {mfcalc.article.howItWorksSection.paragraphs.map((para, index) => (
-                    <p key={index}>{para}</p>
+                {mfcalc.article.exampleSection.paragraphs.map((para, index) => (
+                  <p key={index}>{para}</p>
+                ))}
+
+               
+                <FormulaBlock
+                  title={mfcalc.article.exampleSection.formula.title}
+                  formula={mfcalc.article.exampleSection.formula.body}
+                />
+
+
+                <ul className="ou-list">
+                  {mfcalc.article.exampleSection.results.map((result, index) => (
+                    <li key={index}>{result}</li>
                   ))}
+                </ul>
 
-                  <div className="formula-block" style={{ margin: "16px 0", padding: "12px", background: "#f9fafb", borderRadius: "8px" }}>
-                    <strong>{mfcalc.article.howItWorksSection.formula.title}</strong>
-                    <pre style={{ margin: "8px 0", fontFamily: "monospace" }}>
-                      {mfcalc.article.howItWorksSection.formula.body}
-                    </pre>
+                <p>{mfcalc.article.exampleSection.conclusion}</p>
+              </section>
+
+
+
+              <section aria-labelledby={mfcalc.article.typesSection.id}>
+                <h3 id={mfcalc.article.typesSection.id} className="finance-sub-heading">
+                  {mfcalc.article.typesSection.heading}
+                </h3>
+
+                <p>{mfcalc.article.typesSection.intro}</p>
+
+                {mfcalc.article.typesSection.types.map((t, idx) => (
+                  <div key={idx} style={{ marginBottom: 16 }}>
+                    <h4 className="finance-sub-heading-h4">{t.name}</h4>
+                    <p>{t.description}</p>
+                    <ul className="ou-list">
+                      {t.bullets.map((b, i) => (
+                        <li key={i}>{b}</li>
+                      ))}
+                    </ul>
                   </div>
+                ))}
 
-                  <ul className="ou-list">
-                    {mfcalc.article.howItWorksSection.variables.map((variable, index) => (
-                      <li key={index}>
-                        <strong>{variable.symbol}</strong> = {variable.description}
-                      </li>
-                    ))}
-                  </ul>
-
-                  <p>{mfcalc.article.howItWorksSection.conclusion}</p>
-                </section>
+                <p>{mfcalc.article.typesSection.conclusion}</p>
+              </section>
 
 
-                <section aria-labelledby={mfcalc.article.exampleSection.id}>
-                  <h3 id={mfcalc.article.exampleSection.id} className="finance-sub-heading">
-                    {mfcalc.article.exampleSection.heading}
-                  </h3>
+              <section aria-labelledby={mfcalc.article.benefitsOnlineSection.id}>
+                <h3 id={mfcalc.article.benefitsOnlineSection.id} className="finance-sub-heading">
+                  {mfcalc.article.benefitsOnlineSection.heading}
+                </h3>
 
-                  {mfcalc.article.exampleSection.paragraphs.map((para, index) => (
-                    <p key={index}>{para}</p>
+                <p>{mfcalc.article.benefitsOnlineSection.intro}</p>
+
+                <ul className="ou-list">
+                  {mfcalc.article.benefitsOnlineSection.points.map((point, index) => (
+                    <li key={index}>
+                      <strong>{point.title}</strong> — {point.description}
+                    </li>
                   ))}
-
-                  <div className="formula-block" style={{ margin: "16px 0", padding: "12px", background: "#f9fafb", borderRadius: "8px" }}>
-                    <strong>{mfcalc.article.exampleSection.formula.title}</strong>
-                    <pre style={{ margin: "8px 0", fontFamily: "monospace" }}>
-                      {mfcalc.article.exampleSection.formula.body}
-                    </pre>
-                  </div>
-
-                  <ul className="ou-list">
-                    {mfcalc.article.exampleSection.results.map((result, index) => (
-                      <li key={index}>{result}</li>
-                    ))}
-                  </ul>
-
-                  <p>{mfcalc.article.exampleSection.conclusion}</p>
-                </section>
+                </ul>
+              </section>
 
 
+              <section aria-labelledby={mfcalc.article.howToUseSection.id}>
+                <h3 id={mfcalc.article.howToUseSection.id} className="finance-sub-heading">
+                  {mfcalc.article.howToUseSection.heading}
+                </h3>
 
-                <section aria-labelledby={mfcalc.article.typesSection.id}>
-                  <h3 id={mfcalc.article.typesSection.id} className="finance-sub-heading">
-                    {mfcalc.article.typesSection.heading}
-                  </h3>
+                <p>{mfcalc.article.howToUseSection.intro}</p>
 
-                  <p>{mfcalc.article.typesSection.intro}</p>
-
-                  {mfcalc.article.typesSection.types.map((t, idx) => (
-                    <div key={idx} style={{ marginBottom: 16 }}>
-                      <h4 className="finance-sub-heading-h4">{t.name}</h4>
-                      <p>{t.description}</p>
-                      <ul className="ou-list">
-                        {t.bullets.map((b, i) => (
-                          <li key={i}>{b}</li>
-                        ))}
-                      </ul>
-                    </div>
+                <ol className="ou-list">
+                  {mfcalc.article.howToUseSection.steps.map((step, index) => (
+                    <li key={index}>
+                      <strong>{step.title}</strong> — {step.description}
+                    </li>
                   ))}
+                </ol>
 
-                  <p>{mfcalc.article.typesSection.conclusion}</p>
-                </section>
-
-
-                <section aria-labelledby={mfcalc.article.benefitsOnlineSection.id}>
-                  <h3 id={mfcalc.article.benefitsOnlineSection.id} className="finance-sub-heading">
-                    {mfcalc.article.benefitsOnlineSection.heading}
-                  </h3>
-
-                  <p>{mfcalc.article.benefitsOnlineSection.intro}</p>
-
-                  <ul className="ou-list">
-                    {mfcalc.article.benefitsOnlineSection.points.map((point, index) => (
-                      <li key={index}>
-                        <strong>{point.title}</strong> — {point.description}
-                      </li>
-                    ))}
-                  </ul>
-                </section>
+                <p>{mfcalc.article.howToUseSection.conclusion}</p>
+              </section>
 
 
-                <section aria-labelledby={mfcalc.article.howToUseSection.id}>
-                  <h3 id={mfcalc.article.howToUseSection.id} className="finance-sub-heading">
-                    {mfcalc.article.howToUseSection.heading}
-                  </h3>
+              <section aria-labelledby={mfcalc.article.returnTypesSection.id}>
+                <h3 id={mfcalc.article.returnTypesSection.id} className="finance-sub-heading">
+                  {mfcalc.article.returnTypesSection.heading}
+                </h3>
 
-                  <p>{mfcalc.article.howToUseSection.intro}</p>
+                <p>{mfcalc.article.returnTypesSection.intro}</p>
 
-                  <ol className="ou-list">
-                    {mfcalc.article.howToUseSection.steps.map((step, index) => (
-                      <li key={index}>
-                        <strong>{step.title}</strong> — {step.description}
-                      </li>
-                    ))}
-                  </ol>
-
-                  <p>{mfcalc.article.howToUseSection.conclusion}</p>
-                </section>
-
-
-                <section aria-labelledby={mfcalc.article.returnTypesSection.id}>
-                  <h3 id={mfcalc.article.returnTypesSection.id} className="finance-sub-heading">
-                    {mfcalc.article.returnTypesSection.heading}
-                  </h3>
-
-                  <p>{mfcalc.article.returnTypesSection.intro}</p>
-
-                  <ul className="ou-list">
-                    {mfcalc.article.returnTypesSection.points.map((point, index) => (
-                      <li key={index}>
-                        <strong>{point.title}</strong> — {point.description}
-                      </li>
-                    ))}
-                  </ul>
-
-                  <p>{mfcalc.article.returnTypesSection.conclusion}</p>
-                </section>
-
-
-                <section aria-labelledby={mfcalc.article.accuracySection.id}>
-                  <h3 id={mfcalc.article.accuracySection.id} className="finance-sub-heading">
-                    {mfcalc.article.accuracySection.heading}
-                  </h3>
-
-                  {mfcalc.article.accuracySection.paragraphs.map((para, index) => (
-                    <p key={index}>{para}</p>
+                <ul className="ou-list">
+                  {mfcalc.article.returnTypesSection.points.map((point, index) => (
+                    <li key={index}>
+                      <strong>{point.title}</strong> — {point.description}
+                    </li>
                   ))}
-                </section>
+                </ul>
+
+                <p>{mfcalc.article.returnTypesSection.conclusion}</p>
+              </section>
 
 
-                <section aria-labelledby={mfcalc.article.advantagesSection.id}>
-                  <h3 id={mfcalc.article.advantagesSection.id} className="finance-sub-heading">
-                    {mfcalc.article.advantagesSection.heading}
-                  </h3>
+              <section aria-labelledby={mfcalc.article.accuracySection.id}>
+                <h3 id={mfcalc.article.accuracySection.id} className="finance-sub-heading">
+                  {mfcalc.article.accuracySection.heading}
+                </h3>
 
-                  <p>{mfcalc.article.advantagesSection.intro}</p>
-
-                  <ul className="ou-list">
-                    {mfcalc.article.advantagesSection.points.map((point, index) => (
-                      <li key={index}>{point}</li>
-                    ))}
-                  </ul>
-
-                  <p>{mfcalc.article.advantagesSection.conclusion}</p>
-                </section>
+                {mfcalc.article.accuracySection.paragraphs.map((para, index) => (
+                  <p key={index}>{para}</p>
+                ))}
+              </section>
 
 
-                <section aria-labelledby={mfcalc.article.finalThoughtsSection.id}>
-                  <h3 id={mfcalc.article.finalThoughtsSection.id} className="finance-sub-heading">
-                    {mfcalc.article.finalThoughtsSection.heading}
-                  </h3>
+              <section aria-labelledby={mfcalc.article.advantagesSection.id}>
+                <h3 id={mfcalc.article.advantagesSection.id} className="finance-sub-heading">
+                  {mfcalc.article.advantagesSection.heading}
+                </h3>
 
-                  {mfcalc.article.finalThoughtsSection.paragraphs.map((para, index) => (
-                    <p key={index}>{para}</p>
+                <p>{mfcalc.article.advantagesSection.intro}</p>
+
+                <ul className="ou-list">
+                  {mfcalc.article.advantagesSection.points.map((point, index) => (
+                    <li key={index}>{point}</li>
                   ))}
-                </section>
+                </ul>
+
+                <p>{mfcalc.article.advantagesSection.conclusion}</p>
+              </section>
+
+
+              <section aria-labelledby={mfcalc.article.finalThoughtsSection.id}>
+                <h3 id={mfcalc.article.finalThoughtsSection.id} className="finance-sub-heading">
+                  {mfcalc.article.finalThoughtsSection.heading}
+                </h3>
+
+                {mfcalc.article.finalThoughtsSection.paragraphs.map((para, index) => (
+                  <p key={index}>{para}</p>
+                ))}
+              </section>
 
 
 
@@ -375,7 +375,7 @@ export default async function Page({ params }) {
 
 
 
-              </article>
+            </article>
 
 
 

@@ -92,7 +92,7 @@ export default function FAQAccordion({ faqs = [], title = "FAQs on SIP Calculato
   };
 
   return (
-    <Root>
+    <Root sx={{mb: 4}}>
       <Stack spacing={2}>
         <Typography variant="h6" sx={{ fontWeight: 800 }} className="finance-heading">
           {title}

@@ -7,6 +7,7 @@ import FAQAccordion from "@/components/common/FAQAccordion";
 import MFReturnCalculator from "@/components/calculators/MFReturnCalculator";
 import SukanyaSamriddhiYojanaCalculator from "@/components/calculators/SukanyaSamriddhiYojanaCalculator";
 import PPFCalculator from "@/components/calculators/PPFCalculator";
+import FormulaBlock from "@/components/common/FormulaBlock";
 
 
 
@@ -135,310 +136,291 @@ export default async function Page({ params }) {
           <Grid size={{ xs: 12, sm: 12, md: 12, lg: 8 }}>
             {/* <Paper elevation={0} sx={{ border: "none", borderRadius: 2, p: { xs: 2, md: 4 }, boxShadow: "0 2px 8px rgba(0,0,0,0.05)" }}> */}
 
-              <article aria-labelledby="what-is-ppf-calculator" className="finance-article">
-                <header>
-                  <h2 id="what-is-ppf-calculator" className="finance-sub-heading">
-                    {ppfCalc.article.whatIsHeading}
-                  </h2>
+            <article aria-labelledby="what-is-ppf-calculator" className="finance-article">
+              <header>
+                <h2 id="what-is-ppf-calculator" className="finance-sub-heading">
+                  {ppfCalc.article.whatIsHeading}
+                </h2>
 
-                  {ppfCalc.article.whatIsParagraphs.map((para, idx) => (
-                    <p key={idx}>{para}</p>
+                {ppfCalc.article.whatIsParagraphs.map((para, idx) => (
+                  <p key={idx}>{para}</p>
+                ))}
+              </header>
+
+              <section aria-labelledby={ppfCalc.article.whatIsPPFSection.id}>
+                <h3 id={ppfCalc.article.whatIsPPFSection.id} className="finance-sub-heading">
+                  {ppfCalc.article.whatIsPPFSection.heading}
+                </h3>
+
+                {ppfCalc.article.whatIsPPFSection.paragraphs.map((para, index) => (
+                  <p key={index}>{para}</p>
+                ))}
+
+                <h4 className="finance-sub-heading-h4">
+                  {ppfCalc.article.whatIsPPFSection.subHeading}
+                </h4>
+
+                <ul className="ou-list">
+                  {ppfCalc.article.whatIsPPFSection.points.map((point, index) => (
+                    <li key={index}>{point}</li>
                   ))}
-                </header>
+                </ul>
 
-                <section aria-labelledby={ppfCalc.article.whatIsPPFSection.id}>
-                  <h3 id={ppfCalc.article.whatIsPPFSection.id} className="finance-sub-heading">
-                    {ppfCalc.article.whatIsPPFSection.heading}
-                  </h3>
+                <p>{ppfCalc.article.whatIsPPFSection.conclusion}</p>
+              </section>
 
-                  {ppfCalc.article.whatIsPPFSection.paragraphs.map((para, index) => (
-                    <p key={index}>{para}</p>
+
+              <section aria-labelledby={ppfCalc.article.whatIsPPFCalculatorSection.id}>
+                <h3 id={ppfCalc.article.whatIsPPFCalculatorSection.id} className="finance-sub-heading">
+                  {ppfCalc.article.whatIsPPFCalculatorSection.heading}
+                </h3>
+
+                {ppfCalc.article.whatIsPPFCalculatorSection.paragraphs.map((para, index) => (
+                  <p key={index}>{para}</p>
+                ))}
+
+                <ul className="ou-list">
+                  {ppfCalc.article.whatIsPPFCalculatorSection.points.map((point, index) => (
+                    <li key={index}>{point}</li>
                   ))}
+                </ul>
 
-                  <h4 className="finance-sub-heading-h4">
-                    {ppfCalc.article.whatIsPPFSection.subHeading}
-                  </h4>
-
-                  <ul className="ou-list">
-                    {ppfCalc.article.whatIsPPFSection.points.map((point, index) => (
-                      <li key={index}>{point}</li>
-                    ))}
-                  </ul>
-
-                  <p>{ppfCalc.article.whatIsPPFSection.conclusion}</p>
-                </section>
+                <p>{ppfCalc.article.whatIsPPFCalculatorSection.conclusion}</p>
+              </section>
 
 
-                <section aria-labelledby={ppfCalc.article.whatIsPPFCalculatorSection.id}>
-                  <h3 id={ppfCalc.article.whatIsPPFCalculatorSection.id} className="finance-sub-heading">
-                    {ppfCalc.article.whatIsPPFCalculatorSection.heading}
-                  </h3>
+              <section aria-labelledby={ppfCalc.article.whyUsePPFCalculatorSection.id}>
+                <h3 id={ppfCalc.article.whyUsePPFCalculatorSection.id} className="finance-sub-heading">
+                  {ppfCalc.article.whyUsePPFCalculatorSection.heading}
+                </h3>
 
-                  {ppfCalc.article.whatIsPPFCalculatorSection.paragraphs.map((para, index) => (
-                    <p key={index}>{para}</p>
+                <p>{ppfCalc.article.whyUsePPFCalculatorSection.intro}</p>
+
+                <ul className="ou-list">
+                  {ppfCalc.article.whyUsePPFCalculatorSection.points.map((point, index) => (
+                    <li key={index}>
+                      <strong>{point.title}</strong> — {point.description}
+                    </li>
                   ))}
-
-                  <ul className="ou-list">
-                    {ppfCalc.article.whatIsPPFCalculatorSection.points.map((point, index) => (
-                      <li key={index}>{point}</li>
-                    ))}
-                  </ul>
-
-                  <p>{ppfCalc.article.whatIsPPFCalculatorSection.conclusion}</p>
-                </section>
+                </ul>
+              </section>
 
 
-                <section aria-labelledby={ppfCalc.article.whyUsePPFCalculatorSection.id}>
-                  <h3 id={ppfCalc.article.whyUsePPFCalculatorSection.id} className="finance-sub-heading">
-                    {ppfCalc.article.whyUsePPFCalculatorSection.heading}
-                  </h3>
+              <section aria-labelledby={ppfCalc.article.howPPFCalculatorWorksSection.id}>
+                <h3 id={ppfCalc.article.howPPFCalculatorWorksSection.id} className="finance-sub-heading">
+                  {ppfCalc.article.howPPFCalculatorWorksSection.heading}
+                </h3>
 
-                  <p>{ppfCalc.article.whyUsePPFCalculatorSection.intro}</p>
+                {ppfCalc.article.howPPFCalculatorWorksSection.paragraphs.map((para, index) => (
+                  <p key={index}>{para}</p>
+                ))}
 
-                  <ul className="ou-list">
-                    {ppfCalc.article.whyUsePPFCalculatorSection.points.map((point, index) => (
-                      <li key={index}>
-                        <strong>{point.title}</strong> — {point.description}
-                      </li>
-                    ))}
-                  </ul>
-                </section>
+                <FormulaBlock
+                  title={ppfCalc.article.howPPFCalculatorWorksSection.formula.title}
+                  formula={ppfCalc.article.howPPFCalculatorWorksSection.formula.body}
+                />
 
-
-                <section aria-labelledby={ppfCalc.article.howPPFCalculatorWorksSection.id}>
-                  <h3 id={ppfCalc.article.howPPFCalculatorWorksSection.id} className="finance-sub-heading">
-                    {ppfCalc.article.howPPFCalculatorWorksSection.heading}
-                  </h3>
-
-                  {ppfCalc.article.howPPFCalculatorWorksSection.paragraphs.map((para, index) => (
-                    <p key={index}>{para}</p>
+                <ul className="ou-list">
+                  {ppfCalc.article.howPPFCalculatorWorksSection.variables.map((v, i) => (
+                    <li key={i}>
+                      <strong>{v.symbol}</strong> = {v.description}
+                    </li>
                   ))}
+                </ul>
 
-                  <div
-                    className="formula-block"
-                    style={{
-                      margin: "16px 0",
-                      padding: "12px",
-                      background: "#f9fafb",
-                      borderRadius: "8px"
-                    }}
-                  >
-                    <strong>{ppfCalc.article.howPPFCalculatorWorksSection.formula.title}</strong>
-                    <pre style={{ margin: "8px 0", fontFamily: "monospace" }}>
-                      {ppfCalc.article.howPPFCalculatorWorksSection.formula.body}
-                    </pre>
-                  </div>
-
-                  <ul className="ou-list">
-                    {ppfCalc.article.howPPFCalculatorWorksSection.variables.map((v, i) => (
-                      <li key={i}>
-                        <strong>{v.symbol}</strong> = {v.description}
-                      </li>
-                    ))}
-                  </ul>
-
-                  <p>{ppfCalc.article.howPPFCalculatorWorksSection.conclusion}</p>
-                </section>
+                <p>{ppfCalc.article.howPPFCalculatorWorksSection.conclusion}</p>
+              </section>
 
 
-                <section aria-labelledby={ppfCalc.article.examplePPFCalculationSection.id}>
-                  <h3 id={ppfCalc.article.examplePPFCalculationSection.id} className="finance-sub-heading">
-                    {ppfCalc.article.examplePPFCalculationSection.heading}
-                  </h3>
+              <section aria-labelledby={ppfCalc.article.examplePPFCalculationSection.id}>
+                <h3 id={ppfCalc.article.examplePPFCalculationSection.id} className="finance-sub-heading">
+                  {ppfCalc.article.examplePPFCalculationSection.heading}
+                </h3>
 
-                  {ppfCalc.article.examplePPFCalculationSection.paragraphs.map((para, index) => (
-                    <p key={index}>{para}</p>
+                {ppfCalc.article.examplePPFCalculationSection.paragraphs.map((para, index) => (
+                  <p key={index}>{para}</p>
+                ))}
+
+
+                <FormulaBlock
+                  title={ppfCalc.article.examplePPFCalculationSection.formula.title}
+                  formula={ppfCalc.article.examplePPFCalculationSection.formula.body}
+                />
+
+                <ul className="ou-list">
+                  {ppfCalc.article.examplePPFCalculationSection.results.map((result, i) => (
+                    <li key={i}>{result}</li>
                   ))}
+                </ul>
 
-                  <div
-                    className="formula-block"
-                    style={{
-                      margin: "16px 0",
-                      padding: "12px",
-                      background: "#f9fafb",
-                      borderRadius: "8px"
-                    }}
-                  >
-                    <strong>{ppfCalc.article.examplePPFCalculationSection.formula.title}</strong>
-                    <pre style={{ margin: "8px 0", fontFamily: "monospace" }}>
-                      {ppfCalc.article.examplePPFCalculationSection.formula.body}
-                    </pre>
-                  </div>
-
-                  <ul className="ou-list">
-                    {ppfCalc.article.examplePPFCalculationSection.results.map((result, i) => (
-                      <li key={i}>{result}</li>
-                    ))}
-                  </ul>
-
-                  <p>{ppfCalc.article.examplePPFCalculationSection.conclusion}</p>
-                </section>
+                <p>{ppfCalc.article.examplePPFCalculationSection.conclusion}</p>
+              </section>
 
 
-                <section aria-labelledby={ppfCalc.article.keyFeaturesPPFCalculatorSection.id}>
-                  <h3 id={ppfCalc.article.keyFeaturesPPFCalculatorSection.id} className="finance-sub-heading">
-                    {ppfCalc.article.keyFeaturesPPFCalculatorSection.heading}
-                  </h3>
+              <section aria-labelledby={ppfCalc.article.keyFeaturesPPFCalculatorSection.id}>
+                <h3 id={ppfCalc.article.keyFeaturesPPFCalculatorSection.id} className="finance-sub-heading">
+                  {ppfCalc.article.keyFeaturesPPFCalculatorSection.heading}
+                </h3>
 
-                  <p>{ppfCalc.article.keyFeaturesPPFCalculatorSection.intro}</p>
+                <p>{ppfCalc.article.keyFeaturesPPFCalculatorSection.intro}</p>
 
-                  <ul className="ou-list">
-                    {ppfCalc.article.keyFeaturesPPFCalculatorSection.points.map((point, index) => (
-                      <li key={index}>{point}</li>
-                    ))}
-                  </ul>
+                <ul className="ou-list">
+                  {ppfCalc.article.keyFeaturesPPFCalculatorSection.points.map((point, index) => (
+                    <li key={index}>{point}</li>
+                  ))}
+                </ul>
 
-                  <p>{ppfCalc.article.keyFeaturesPPFCalculatorSection.conclusion}</p>
-                </section>
-
-
-                <section aria-labelledby={ppfCalc.article.howToUsePPFCalculatorSection.id}>
-                  <h3 id={ppfCalc.article.howToUsePPFCalculatorSection.id} className="finance-sub-heading">
-                    {ppfCalc.article.howToUsePPFCalculatorSection.heading}
-                  </h3>
-
-                  <p>{ppfCalc.article.howToUsePPFCalculatorSection.intro}</p>
-
-                  <ol className="ou-list">
-                    {ppfCalc.article.howToUsePPFCalculatorSection.steps.map((step, index) => (
-                      <li key={index}>
-                        <strong>{step.title}</strong> — {step.description}
-                      </li>
-                    ))}
-                  </ol>
-                </section>
+                <p>{ppfCalc.article.keyFeaturesPPFCalculatorSection.conclusion}</p>
+              </section>
 
 
-                <section aria-labelledby={ppfCalc.article.ppfInterestRateHistorySection.id}>
-                  <h3 id={ppfCalc.article.ppfInterestRateHistorySection.id} className="finance-sub-heading">
-                    {ppfCalc.article.ppfInterestRateHistorySection.heading}
-                  </h3>
+              <section aria-labelledby={ppfCalc.article.howToUsePPFCalculatorSection.id}>
+                <h3 id={ppfCalc.article.howToUsePPFCalculatorSection.id} className="finance-sub-heading">
+                  {ppfCalc.article.howToUsePPFCalculatorSection.heading}
+                </h3>
 
-                  <p>{ppfCalc.article.ppfInterestRateHistorySection.intro}</p>
+                <p>{ppfCalc.article.howToUsePPFCalculatorSection.intro}</p>
 
-                  <TableContainer component={Paper} sx={{ my: 2 }}>
-                    <Table aria-label="PPF Interest Rate Table">
-                      <TableHead>
-                        <TableRow>
-                          {ppfCalc.article.ppfInterestRateHistorySection.table.headers.map((header, index) => (
-                            <TableCell key={index} sx={{ fontWeight: 600 }}>
-                              {header}
-                            </TableCell>
+                <ol className="ou-list">
+                  {ppfCalc.article.howToUsePPFCalculatorSection.steps.map((step, index) => (
+                    <li key={index}>
+                      <strong>{step.title}</strong> — {step.description}
+                    </li>
+                  ))}
+                </ol>
+              </section>
+
+
+              <section aria-labelledby={ppfCalc.article.ppfInterestRateHistorySection.id}>
+                <h3 id={ppfCalc.article.ppfInterestRateHistorySection.id} className="finance-sub-heading">
+                  {ppfCalc.article.ppfInterestRateHistorySection.heading}
+                </h3>
+
+                <p>{ppfCalc.article.ppfInterestRateHistorySection.intro}</p>
+
+                <TableContainer component={Paper} sx={{ my: 2 }}>
+                  <Table aria-label="PPF Interest Rate Table">
+                    <TableHead>
+                      <TableRow>
+                        {ppfCalc.article.ppfInterestRateHistorySection.table.headers.map((header, index) => (
+                          <TableCell key={index} sx={{ fontWeight: 600 }}>
+                            {header}
+                          </TableCell>
+                        ))}
+                      </TableRow>
+                    </TableHead>
+                    <TableBody>
+                      {ppfCalc.article.ppfInterestRateHistorySection.table.rows.map((row, rowIndex) => (
+                        <TableRow key={rowIndex}>
+                          {row.map((cell, cellIndex) => (
+                            <TableCell key={cellIndex}>{cell}</TableCell>
                           ))}
                         </TableRow>
-                      </TableHead>
-                      <TableBody>
-                        {ppfCalc.article.ppfInterestRateHistorySection.table.rows.map((row, rowIndex) => (
-                          <TableRow key={rowIndex}>
-                            {row.map((cell, cellIndex) => (
-                              <TableCell key={cellIndex}>{cell}</TableCell>
-                            ))}
-                          </TableRow>
+                      ))}
+                    </TableBody>
+                  </Table>
+                </TableContainer>
+
+                <p>{ppfCalc.article.ppfInterestRateHistorySection.conclusion}</p>
+              </section>
+
+
+              <section aria-labelledby={ppfCalc.article.advantagesOfPPFCalculatorSection.id}>
+                <h3 id={ppfCalc.article.advantagesOfPPFCalculatorSection.id} className="finance-sub-heading">
+                  {ppfCalc.article.advantagesOfPPFCalculatorSection.heading}
+                </h3>
+
+                <ul className="ou-list">
+                  {ppfCalc.article.advantagesOfPPFCalculatorSection.points.map((point, index) => (
+                    <li key={index}>
+                      <strong>{point.title}</strong> — {point.description}
+                    </li>
+                  ))}
+                </ul>
+              </section>
+
+
+              <section aria-labelledby={ppfCalc.article.taxBenefitsPPFSection.id}>
+                <h3 id={ppfCalc.article.taxBenefitsPPFSection.id} className="finance-sub-heading">
+                  {ppfCalc.article.taxBenefitsPPFSection.heading}
+                </h3>
+
+                <p>{ppfCalc.article.taxBenefitsPPFSection.intro}</p>
+
+                <ul className="ou-list">
+                  {ppfCalc.article.taxBenefitsPPFSection.points.map((point, index) => (
+                    <li key={index}>
+                      <strong>{point.title}</strong> — {point.description}
+                    </li>
+                  ))}
+                </ul>
+
+                <p>{ppfCalc.article.taxBenefitsPPFSection.conclusion}</p>
+              </section>
+
+              <section aria-labelledby={ppfCalc.article.ppfWithdrawalSection.id}>
+                <h3 id={ppfCalc.article.ppfWithdrawalSection.id} className="finance-sub-heading">
+                  {ppfCalc.article.ppfWithdrawalSection.heading}
+                </h3>
+
+                <p>{ppfCalc.article.ppfWithdrawalSection.intro}</p>
+
+                <ul className="ou-list">
+                  {ppfCalc.article.ppfWithdrawalSection.points.map((point, index) => (
+                    <li key={index}>
+                      <strong>{point.title}</strong> — {point.description}
+                    </li>
+                  ))}
+                </ul>
+              </section>
+
+
+              <section aria-labelledby={ppfCalc.article.ppfVsOtherInvestmentsSection.id}>
+                <h3 id={ppfCalc.article.ppfVsOtherInvestmentsSection.id} className="finance-sub-heading">
+                  {ppfCalc.article.ppfVsOtherInvestmentsSection.heading}
+                </h3>
+
+                <TableContainer component={Paper} sx={{ my: 2 }}>
+                  <Table aria-label="PPF vs Other Investment Options Table">
+                    <TableHead>
+                      <TableRow>
+                        {ppfCalc.article.ppfVsOtherInvestmentsSection.table.headers.map((header, index) => (
+                          <TableCell key={index} sx={{ fontWeight: 600 }}>
+                            {header}
+                          </TableCell>
                         ))}
-                      </TableBody>
-                    </Table>
-                  </TableContainer>
-
-                  <p>{ppfCalc.article.ppfInterestRateHistorySection.conclusion}</p>
-                </section>
-
-
-                <section aria-labelledby={ppfCalc.article.advantagesOfPPFCalculatorSection.id}>
-                  <h3 id={ppfCalc.article.advantagesOfPPFCalculatorSection.id} className="finance-sub-heading">
-                    {ppfCalc.article.advantagesOfPPFCalculatorSection.heading}
-                  </h3>
-
-                  <ul className="ou-list">
-                    {ppfCalc.article.advantagesOfPPFCalculatorSection.points.map((point, index) => (
-                      <li key={index}>
-                        <strong>{point.title}</strong> — {point.description}
-                      </li>
-                    ))}
-                  </ul>
-                </section>
-
-
-                <section aria-labelledby={ppfCalc.article.taxBenefitsPPFSection.id}>
-                  <h3 id={ppfCalc.article.taxBenefitsPPFSection.id} className="finance-sub-heading">
-                    {ppfCalc.article.taxBenefitsPPFSection.heading}
-                  </h3>
-
-                  <p>{ppfCalc.article.taxBenefitsPPFSection.intro}</p>
-
-                  <ul className="ou-list">
-                    {ppfCalc.article.taxBenefitsPPFSection.points.map((point, index) => (
-                      <li key={index}>
-                        <strong>{point.title}</strong> — {point.description}
-                      </li>
-                    ))}
-                  </ul>
-
-                  <p>{ppfCalc.article.taxBenefitsPPFSection.conclusion}</p>
-                </section>
-
-                <section aria-labelledby={ppfCalc.article.ppfWithdrawalSection.id}>
-                  <h3 id={ppfCalc.article.ppfWithdrawalSection.id} className="finance-sub-heading">
-                    {ppfCalc.article.ppfWithdrawalSection.heading}
-                  </h3>
-
-                  <p>{ppfCalc.article.ppfWithdrawalSection.intro}</p>
-
-                  <ul className="ou-list">
-                    {ppfCalc.article.ppfWithdrawalSection.points.map((point, index) => (
-                      <li key={index}>
-                        <strong>{point.title}</strong> — {point.description}
-                      </li>
-                    ))}
-                  </ul>
-                </section>
-
-
-                <section aria-labelledby={ppfCalc.article.ppfVsOtherInvestmentsSection.id}>
-                  <h3 id={ppfCalc.article.ppfVsOtherInvestmentsSection.id} className="finance-sub-heading">
-                    {ppfCalc.article.ppfVsOtherInvestmentsSection.heading}
-                  </h3>
-
-                  <TableContainer component={Paper} sx={{ my: 2 }}>
-                    <Table aria-label="PPF vs Other Investment Options Table">
-                      <TableHead>
-                        <TableRow>
-                          {ppfCalc.article.ppfVsOtherInvestmentsSection.table.headers.map((header, index) => (
-                            <TableCell key={index} sx={{ fontWeight: 600 }}>
-                              {header}
-                            </TableCell>
+                      </TableRow>
+                    </TableHead>
+                    <TableBody>
+                      {ppfCalc.article.ppfVsOtherInvestmentsSection.table.rows.map((row, rowIndex) => (
+                        <TableRow key={rowIndex}>
+                          {row.map((cell, cellIndex) => (
+                            <TableCell key={cellIndex}>{cell}</TableCell>
                           ))}
                         </TableRow>
-                      </TableHead>
-                      <TableBody>
-                        {ppfCalc.article.ppfVsOtherInvestmentsSection.table.rows.map((row, rowIndex) => (
-                          <TableRow key={rowIndex}>
-                            {row.map((cell, cellIndex) => (
-                              <TableCell key={cellIndex}>{cell}</TableCell>
-                            ))}
-                          </TableRow>
-                        ))}
-                      </TableBody>
-                    </Table>
-                  </TableContainer>
+                      ))}
+                    </TableBody>
+                  </Table>
+                </TableContainer>
 
-                  <p>{ppfCalc.article.ppfVsOtherInvestmentsSection.conclusion}</p>
-                </section>
+                <p>{ppfCalc.article.ppfVsOtherInvestmentsSection.conclusion}</p>
+              </section>
 
 
-                <section aria-labelledby={ppfCalc.article.finalThoughtsPPFSection.id}>
-                  <h3 id={ppfCalc.article.finalThoughtsPPFSection.id} className="finance-sub-heading">
-                    {ppfCalc.article.finalThoughtsPPFSection.heading}
-                  </h3>
+              <section aria-labelledby={ppfCalc.article.finalThoughtsPPFSection.id}>
+                <h3 id={ppfCalc.article.finalThoughtsPPFSection.id} className="finance-sub-heading">
+                  {ppfCalc.article.finalThoughtsPPFSection.heading}
+                </h3>
 
-                  {ppfCalc.article.finalThoughtsPPFSection.paragraphs.map((para, index) => (
-                    <p key={index}>{para}</p>
-                  ))}
-                </section>
+                {ppfCalc.article.finalThoughtsPPFSection.paragraphs.map((para, index) => (
+                  <p key={index}>{para}</p>
+                ))}
+              </section>
 
 
 
 
-              </article>
+            </article>
 
             {/* </Paper> */}
           </Grid>

@@ -1,6 +1,5 @@
 import { createMetadata, SITE } from "@/lib/seo";
 import FAQAccordion from "@/components/common/FAQAccordion";
-import SIPFormulaBlock from "@/components/common/SIPFormulaBlock";
 import { Box, Container, Grid, Paper } from "@mui/material";
 import {
   Table,
@@ -13,6 +12,7 @@ import {
 import PopularCalculators from "@/components/PopularCalculators";
 import Heading from "@/components/common/Heading";
 import SipCalculator from "@/components/calculators/SipCalculator";
+import FormulaBlock from "@/components/common/FormulaBlock";
 
 
 
@@ -147,7 +147,7 @@ export default async function Page({ params }) {
                     {sipcalc.article.howItWorks.paragraph1}
                   </p>
 
-                  <SIPFormulaBlock
+                  <FormulaBlock
                     title={sipcalc.article.howItWorks.formula.title}
                     formula={sipcalc.article.howItWorks.formula.body}
                   />
@@ -190,7 +190,7 @@ export default async function Page({ params }) {
                     {sipcalc.article.formulaExplained.intro}
                   </p>
 
-                  <SIPFormulaBlock
+                  <FormulaBlock
                     title={sipcalc.article.formulaExplained.formula.title}
                     formula={sipcalc.article.formulaExplained.formula.body}
                   />
