@@ -1,0 +1,248 @@
+{
+  "seo": {
+    "title": "FD கால்குலேட்டர் — உங்கள் ஃபிக்ஸ்ட் டெபாசிட் வட்டி & மாச்சுரிட்டி தொகையை ஆன்லைனில் கணக்கிடுங்கள்",
+    "description": "எங்கள் இலவச FD கால்குலேட்டரை பயன்படுத்தி உங்கள் ஃபிக்ஸ்ட் டெபாசிட் (FD) மாச்சுரிட்டி தொகை மற்றும் சம்பாதிக்கும் வட்டியை துல்லியமாக கணக்கிடுங்கள். காலம், வட்டி விகிதம், கம்பவுண்டிங் வகைகள் போன்றவற்றை ஒப்பிட்டு முதலீட்டை சிறப்பாக திட்டமிட உதவும்.",
+    "slug": "tools/finance/fd-calculator",
+    "image": "/images/og/fdcalc-en.png",
+    "isArticle": true,
+    "publishDate": "2024-01-01",
+    "modifiedDate": "2025-01-01",
+    "author": "Your Site"
+  },
+  "site": {
+    "heading": "FD கால்குலேட்டர்"
+  },
+  "form": {
+    "principal": "மொத்த முதலீடு",
+    "interestRate": "வட்டி விகிதம் (ஆண்டிற்கு)",
+    "timePeriod": "கால அளவு",
+    "interestType": "வட்டி வகை"
+  },
+  "article": {
+    "intro": {
+      "heading": "FD Calculator அறிமுகம் — இந்தியாவில் உங்கள் Fixed Deposit மாச்சுரிட்டியை எப்படி கணக்கிடுவது?",
+      "paragraphs": [
+        "ஒரு புத்திசாலி சேமிப்பாளர், Fixed Deposit மாச்சுரிட்டியை துல்லியமாக கணக்கிட FD கால்குலேட்டரை பயன்படுத்துகிறார் — ஏனெனில் இது உங்கள் வைப்புத் தொகையை தெளிவான, நம்பகமான எண்களாக மாற்றுகிறது.",
+        "Fixed Deposits (FDs) என்பது ஒரு மொத்தத் தொகையை குறிப்பிட்ட காலத்திற்கு வைப்பதாகும்; 7 நாட்கள் முதல் 10 ஆண்டுகள் அல்லது அதற்கு மேல் வரை நிர்ணயிக்கப்பட்ட காலத்துக்கு நிரந்தர வட்டிவிகிதம் வழங்கப்படும்.",
+        "FD Calculator உங்கள் முதலீடு, காலம், வட்டி விகிதம் ஆகியவற்றை உடனே கணக்கிட்டு மாச்சுரிட்டி தொகையும், சம்பாதிக்கும் மொத்த வட்டியும் காட்டுகிறது — இதனால் கையேடு கணக்கீடு செய்ய வேண்டிய அவசியம் இல்லை.",
+        "இது Simple Interest மற்றும் Compound Interest FD-களை ஒப்பிடவும், கம்பவுண்டிங் கால அவகாசங்களை (Annual, Quarterly, Monthly) சோதிக்கவும், மூத்த குடிமக்கள் வட்டி அல்லது சிறப்பு வட்டி விகிதத் திட்டங்களின் பாதிப்பை புரிந்துக கொள்ளவும் உதவுகிறது.",
+        "முதலீடு செய்வதற்கு முன் FD Calculator-ஐ பயன்படுத்தி சிறந்த வங்கிகள்/NBFC-களை தேர்வு செய்து, மாச்சுரிட்டி நேரத்தில் பணப்புழக்கத்தை துல்லியமாக திட்டமிடலாம்."
+      ]
+    },
+    "whatIsFDSection": {
+      "id": "what-is-fixed-deposit",
+      "heading": "Fixed Deposit என்றது என்ன? — FD Calculator சூழல்: ஃபிக்ஸ்ட் டெபாசிட் அடிப்படை தகவல்",
+      "paragraphs": [
+        "Fixed Deposit (FD) என்பது வங்கிகள் மற்றும் NBFC-கள் வழங்கும் பாதுகாப்பான, குறைந்த ஆபத்து கொண்ட சேமிப்பு திட்டமாகும்; இதில் நீங்கள் ஒரு தொகையை ஒரு நிரந்தர காலத்திற்கு வைப்பு செய்து, உறுதியான வட்டி விகிதம் பெறுகிறீர்கள்.",
+        "சேமிப்பு கணக்குகளுடன் ஒப்பிடும்போது FD வட்டி விகிதம் அதிகம், ஏனெனில் நீங்கள் தேர்வு செய்யும் காலத்திற்கு பணம் முடக்கப்பட்டிருக்கும்; நடுவில் பணம் எடுப்பது பொதுவாக அபராதத்தைக் கொண்டிருக்கும்.",
+        "FD-கள் Simple Interest (கம்பவுண்டிங் இல்லை) அல்லது Compound Interest (வட்டி மீண்டும் முதலீடு செய்யப்படும்) வடிவங்களில் கிடைக்கின்றன; மேலும் Senior Citizen FD, Tax-Saving FD, Flexi-FD, Sweep-in FD போன்ற சிறப்பு வகைகளும் உள்ளன.",
+        "வட்டி கம்பவுண்டிங் அடிக்கடி (Annual, Semiannual, Quarterly, Monthly) காரணமாக மாச்சுரிட்டி தொகை மாறும்; அதிக அடிக்கடி கம்பவுண்டிங் செய்யப்பட்டால் பொதுவாக அதிக வருமானம் கிடைக்கிறது.",
+        "FD Calculator-ஐ பயன்படுத்தி முதலீடு, வட்டி விகிதம், காலம், கம்பவுண்டிங் ஆகியவை சேர்ந்து உங்கள் இறுதி மாச்சுரிட்டி தொகையை எவ்வாறு உருவாக்குகின்றன என்பதை புரிந்துகொள்ள முடியும் — இதன் மூலம் உங்கள் நிதி இலக்கத்திற்கு சரியான FD வகையைத் தேர்வு செய்யலாம்."
+      ]
+    },
+    "whyUseFDSection": {
+      "id": "why-use-fd-calculator",
+      "heading": "ஏன் FD Calculator பயன்படுத்த வேண்டும்? — சிறந்த Fixed Deposit தேர்வுக்கு FD கால்குலேட்டரின் நன்மைகள்",
+      "intro": "Fixed Deposit திட்டமிடும்போது FD Calculator நேரத்தையும் கணக்குப் பிழைகளையும் தவிர்க்க உதவுகிறது. இது: ",
+      "points": [
+        "உங்கள் முதலீடு, காலம், வட்டி விகிதம் ஆகியவற்றை உடனடியாக துல்லியமான மாச்சுரிட்டி மற்றும் வட்டி தொகைகளாக மாற்றுகிறது.",
+        "Simple Interest vs Compound Interest மற்றும் வெவ்வேறு கம்பவுண்டிங் அடிக்கடிகளையும் எளிதாக ஒப்பிட உதவுகிறது.",
+        "வங்கிகள்/NBFC-கள் வழங்கும் நிகர வருமானத்தை ஒப்பிட்டு சரியான FD-யை தேர்வு செய்ய உதவுகிறது.",
+        "காலம் அல்லது வட்டி விகிதம் மாறினால் ஏற்படும் மாற்றங்களை காட்டி (short vs long FD) liquidity-ஐ திட்டமிட உதவுகிறது.",
+        "Senior Citizen கூடுதல் வட்டி, முன்கூட்டியே பணம் எடுப்பதில் வரும் அபராதம், அல்லது Laddered FD போன்ற பல்வேறு நிலைமைகளை சோதனை செய்ய ஆதரிக்கிறது."
+      ],
+      "conclusion": "Spreadsheet-ல் கணக்குகள் செய்ய சிரமப்படுவதற்குப் பதிலாக, FD Calculator துல்லியமான, மீண்டும் பெறக்கூடிய கணிப்புகளை வழங்குகிறது — இதனால் liquidity தேவைகளையும், அதிக வருமானம் பெறும் வாய்ப்புகளையும் சரியாக சமநிலைப்படுத்த முடியும், குறிப்பாக வங்கி/நிதி நிறுவனங்களின் வட்டி விகிதம் மாறும்போது."
+    },
+    "howItWorksFDSection": {
+      "id": "how-our-fd-calculator-works",
+      "heading": "எங்கள் FD Calculator எப்படி செயல்படுகிறது? — FD கணக்கீட்டு முறை & முடிவு விவரிப்பு",
+      "intro": "Simple Interest மற்றும் Compound Interest ஆகியவற்றை மாதிரியாக்கும் எங்கள் FD Calculator, ஸ்டாண்டர்டு நிதி (finance) சூத்திரங்களை பயன்படுத்தி உங்கள் மாச்சுரிட்டி தொகையை கணக்கிடுகிறது.",
+      "formulas": [
+        {
+          "type": "Simple Interest சூத்திரம்",
+          "expression": "M = P + (P × r × t / 100)",
+          "explanation": "கம்பவுண்டிங் இல்லாத FD-களுக்கு பயன்படுத்தப்படும் சூத்திரம். இதில் வட்டி reinvest செய்யப்படாது; வட்டி நேர கால இடைவெளிகளில் அல்லது மாச்சுரிட்டியில் வழங்கப்படும்."
+        },
+        {
+          "type": "Compound Interest சூத்திரம்",
+          "expression": "M = P × (1 + r_period)^(n × t)",
+          "explanation": "வட்டி மீண்டும் reinvest செய்யப்படும் FD-களுக்கான சூத்திரம். இங்கு r_period = r / (100 × n)."
+        }
+      ],
+      "steps": [
+        "(1) முதலில் முதலீடு (P), வருடாந்திர வட்டி (r), காலம் (t), மற்றும் கம்பவுண்டிங் அடிக்கடி (n) ஆகியவற்றை பெறுகிறது.",
+        "(2) வாட்டியை கால அவகாச வட்டியாக மாற்றுகிறது: r_period = r / (100 × n).",
+        "(3) FD வகைக்கு (Simple அல்லது Compound) ஏற்ப சரியான சூத்திரத்தை பயன்படுத்தி எதிர்கால மதிப்பை (Future Value) கணக்கிடுகிறது.",
+        "(4) மொத்த வட்டி (M − P) மற்றும் Effective Annual Yield (AER) ஆகியவற்றை காட்டுகிறது."
+      ],
+      "extra": "முன்கூட்டியே FD மூடுவதால் ஏற்படும் அபராதங்களும், Senior Citizen கூடுதல் வட்டி நன்மைகளும் சேர்த்து கணக்கிடும் வசதியும் உள்ளது. இதனால் assumptions மற்றும் இறுதி கணக்குகளுக்கு முழு வெளிப்படைத்தன்மை கிடைக்கிறது."
+    },
+    "fdInputChecklistSection": {
+      "id": "fd-calculator-input-checklist",
+      "heading": "எந்த தகவல்கள் தேவை? — FD Calculator Input Checklist",
+      "intro": "Fixed Deposit-க்கான FD Calculator துல்லியமான முடிவுகளை வழங்க, கீழேயுள்ள தகவல்களைத் தயார் செய்து கொள்ளுங்கள்:",
+      "steps": [
+        "Principal (P) — நீங்கள் FD-யில் வைக்க திட்டமிடும் மொத்த தொகை.",
+        "Annual Interest Rate (r%) — வங்கி/NBFC வழங்கும் வருடாந்திர வட்டி விகிதம்.",
+        "Tenure (t) — FD காலம்: ஆண்டுகள், மாதங்கள் அல்லது நாட்கள் என வழங்கலாம்.",
+        "Compounding Frequency (n) — Annual (1), Semi-Annual (2), Quarterly (4), Monthly (12), அல்லது Daily.",
+        "Interest Type — Simple Interest அல்லது Compound Interest.",
+        "Payout Option — Cumulative (வட்டி reinvest) அல்லது Periodic Payout (மாதம்/காலாண்டு வட்டி பெறுதல்).",
+        "Special Flags (விருப்பம்) — Senior Citizen வட்டி, Tax-Saving FD, Premature Withdrawal திட்டம்.",
+        "Penalty Assumptions (விருப்பம்) — முன்கூட்டியே FD உடைத்தால் பொருந்தும் அபராத விகிதம்/காலம்."
+      ],
+      "conclusion": "இந்த விவரங்களை சரியான வரிசையில் உள்ளிடுங்கள்; உங்கள் FD மாச்சுரிட்டி தொகை மற்றும் வட்டி பிரிவுகள் மிகவும் துல்லியமாக கிடைக்கும்."
+    },
+    "fdFormulaSection": {
+      "id": "fd-calculation-formula",
+      "heading": "கணக்கீட்டு சூத்திரம் (எளிய விளக்கம்) — பயனர்கள் அறிந்திருக்க வேண்டிய FD Formulas",
+      "intro": "FD கணக்கீட்டில் இரண்டு முக்கிய நிதி (finance) சூத்திரங்கள் பயன்படுத்தப்படுகின்றன:",
+      "formulas": [
+        {
+          "title": "Simple Interest FD:",
+          "expression": "M = P + (P × r × t / 100)",
+          "explanation": "M = மாச்சுரிட்டி தொகை, P = முதலீடு, r = வருடாந்திர வட்டி விகிதம் (%), t = வருடங்களில் காலம்."
+        },
+        {
+          "title": "Compound Interest FD (பொதுவான கம்பவுண்டிங்):",
+          "steps": [
+            "Periodic Rate: r_period = r / (100 × n), இங்கு n = வருடத்திற்கு எத்தனை முறை கம்பவுண்டிங் நடக்கிறது.",
+            "மொத்த கால அளவு: m = n × t.",
+            "மாச்சுரிட்டி: M = P × (1 + r_period)^m."
+          ]
+        },
+        {
+          "title": "Effective Annual Rate (EAR / AER):",
+          "expression": "AER = (1 + r/n)^n − 1 (%-ஆக வெளிப்படுத்தப்படும்)."
+        },
+        {
+          "title": "மொத்த வட்டி:",
+          "expression": "Interest = M − P."
+        }
+      ],
+      "conclusion": "இந்த சூத்திரங்கள் Simple Interest-ல் வட்டி தனியாக இருப்பதையும், Compound Interest-ல் வட்டி மீண்டும் சேர்ந்து கம்பவுண்டிங் ஆகி வருமானத்தை அதிகரிப்பதையும் தெளிவாக விளக்குகின்றன. மேலும் கம்பவுண்டிங் அடிக்கடி அதிகரித்தால் வருமானமும் இயற்கையாக அதிகரிக்கிறது."
+    },
+    "fdStepByStepSection": {
+      "id": "step-by-step-using-fd-calculator",
+      "heading": "Step-by-step: FD Calculator பயன்படுத்துவது எப்படி? — Ordered Steps for FD Maturity Calculation",
+      "intro": "Fixed Deposit-க்கான எங்கள் FD Calculator-ஐ பயன்படுத்த இக்கட்டளைகளைப் பின்பற்றுங்கள்:",
+      "steps": [
+        "முதலில் Principal (P) — நீங்கள் வைப்பு செய்யும் முதலீட்டு தொகையை உள்ளிடுங்கள்.",
+        "வங்கி/NBFC வழங்கும் வருடாந்திர வட்டி விகிதத்தை (r%) உள்ளிடுங்கள்.",
+        "Tenure (t) — FD காலத்தை ஆண்டுகள், மாதங்கள் அல்லது நாட்கள் என தேர்வு செய்யுங்கள்.",
+        "Compounding Frequency (n) — Annual (1), Semiannual (2), Quarterly (4), Monthly (12) அல்லது Daily (365) எனத் தேர்வு செய்யுங்கள்.",
+        "Interest Type — Cumulative (Compounded) அல்லது Periodic Payout (மாதம்/காலாண்டு வட்டி) எனத் தேர்வு செய்யுங்கள்.",
+        "Special Options — Senior Citizen வட்டி, Tax-Saving FD, Early Withdrawal அபராதம் போன்ற விருப்பங்களைச் சேர்க்கலாம்.",
+        "Calculate பொத்தானை அழுத்தி M (மாச்சுரிட்டி தொகை), மொத்த வட்டி, காலவரிசை payout (தேவையெனில்), மற்றும் AER-ஐ பெறுங்கள்.",
+        "பின் வெவ்வேறு காலம் அல்லது கம்பவுண்டிங் அடிக்கடி ஆகியவற்றின் முடிவுகளை ஒப்பிட்டு சிறந்த FD திட்டத்தைத் தேர்வு செய்யுங்கள்."
+      ],
+      "conclusion": "இந்த ஒழுங்குபடுத்தப்பட்ட செயல்முறை, FD மாச்சுரிட்டி கணிப்புகளை மிகத் துல்லியமாக அளிக்கிறது மற்றும் உங்கள் நிதி இலக்கத்திற்கு அதிக வருமானம் தரும் சரியான FD திட்டத்தைத் தேர்வு செய்ய உதவுகிறது."
+    },
+    "fdExampleWalkthroughSection": {
+      "id": "fd-calculator-example-walkthrough",
+      "heading": "உதாரணக் கணக்கீடு — FD Calculator Step-by-step விளக்கம்",
+      "intro": "உதாரணம்: P = ₹100,000, t = 5 ஆண்டுகள், r = வருடத்திற்கு 10%.",
+      "examples": [
+        {
+          "type": "Simple Interest FD",
+          "steps": [
+            "Interest = P × r × t / 100 = 100,000 × 10 × 5 / 100",
+            "முதல் படி: 10 × 5 = 50",
+            "பிறகு: 100,000 × 50 = 5,000,000",
+            "100-ஆல் பிரிக்கவும் → 5,000,000 / 100 = 50,000",
+            "M = P + Interest = 100,000 + 50,000 = ₹150,000"
+          ]
+        },
+        {
+          "type": "Compound Interest FD (Annual Compounding)",
+          "steps": [
+            "(1 + r/100)^t = (1 + 0.10)^5 கணக்கிடுங்கள்",
+            "1.10^2 = 1.21; 1.10^3 = 1.331; 1.10^4 = 1.4641; 1.10^5 = 1.61051",
+            "M = 100,000 × 1.61051 = ₹161,051"
+          ],
+          "note": "Compound interest-ல் வட்டி மீண்டும் வட்டியை உருவாக்குவதால் மாச்சுரிட்டி தொகை அதிகமாகிறது."
+        }
+      ]
+    },
+    "fdTypesSection": {
+      "id": "types-of-fixed-deposits",
+      "heading": "Fixed Deposit வகைகள் & முக்கிய அம்சங்கள் — FD Calculator வழிகாட்டி",
+      "intro": "முதலீடு செய்வதற்கு முன் ஒவ்வொரு FD வகையையும் புரிந்துகொள்ளுங்கள்; FD Calculator இதனை பெரும்பாலும் மாதிரியாக்க முடியும்:",
+      "types": [
+        {
+          "title": "Regular FD (Cumulative)",
+          "description": "வட்டி கம்பவுண்டிங் ஆகும்; செல்வ உயர்வுக்கு சிறந்தது."
+        },
+        {
+          "title": "Regular FD (Periodic Payout)",
+          "description": "வட்டி மாதம்/காலாண்டு வழங்கப்படும்; நிலையான வருமானத்துக்கு உகந்தது."
+        },
+        {
+          "title": "Senior Citizen FD",
+          "description": "அதிக வட்டி விகிதம்; Calculator-ல் அதிகரிக்கப்பட்ட வட்டியை உள்ளிடவும்."
+        },
+        {
+          "title": "Tax-saving FD",
+          "description": "5 ஆண்டு lock-in மற்றும் வரித்தளர்வு விதிகளுடன் வரும் FD."
+        },
+        {
+          "title": "Flexi FD / Sweep-in",
+          "description": "Savings account-க்கு இணைக்கப்படுகிறது; liquidity கிடைக்கும். Calculator பகுதி withdrawal-ஐ காட்ட முடியும்."
+        },
+        {
+          "title": "NRI/Resident FD",
+          "description": "ஆவணங்கள் மற்றும் சில நேரங்களில் வட்டிவிகிதங்களில் வேறுபாடு இருக்கும்."
+        },
+        {
+          "title": "Corporate / Non-callable FD",
+          "description": "அதிக வட்டி வழங்கக்கூடும்; ஆனால் creditworthiness சரிபார்க்க வேண்டும்."
+        }
+      ],
+      "conclusion": "Calculator-ல் FD வகையைத் தேர்வு செய்யுங்கள்; அதனால் சரியான வட்டி, காலம், withdrawal விதிகள் தானாகப் பயன்படும்."
+    },
+    "seniorRatesSection": {
+      "id": "senior-citizens-special-fd-rates",
+      "heading": "Senior Citizen & Special FD வட்டி — Senior Boost மற்றும் Promotional Rates கணக்கிடுவது எப்படி?",
+      "intro": "Senior Citizen-க்களுக்கு பெரும்பாலும் base rate-க்கு மேலாக சிறிய கூடுதல் வட்டி வழங்கப்படும். இதை FD Calculator-ல் மாதிரியாக்க பின்வரும் படிகளைப் பின்பற்றுங்கள்:",
+      "steps": [
+        "FD-க்கான base rate r_base மற்றும் Senior Citizen கூடுதல் வட்டி Δr-ஐ கண்டறியுங்கள்.",
+        "Calculator-ல் r = r_base + Δr என அமைக்கவும்.",
+        "Compound formula M = P × (1 + r/n)^(n×t) பயன்படுத்தி புதிய மாச்சுரிட்டி மதிப்பை கணக்கிடுங்கள்."
+      ],
+      "example": {
+        "title": "உதாரணம்",
+        "body": "Base rate = 7.0% மற்றும் Senior boost = 0.5% என்றால் r = 7.5%. P = ₹200,000, t = 3 ஆண்டுகள், annual compounding என்று வைத்தால் (1.075)^3 கணக்கிட்டு ₹200,000-இனால் பெருக்கவும். Calculator base rate மற்றும் senior rate இரண்டும் ஒப்பிட்டு அதிக effective return தருவதை உடனே காட்டும்."
+      },
+      "conclusion": "Base-rate மற்றும் Senior-rate இடையேயான வித்தியாசத்தை Calculator மூலம் எளிதாகப் புரிந்துகொள்ளலாம் — சிறிய boost கூட பல ஆண்டுகளில் கணிசமான வருமான உயர்வை தரும்."
+    },
+    "withdrawalsPrematureTaxSection": {
+      "id": "withdrawals-premature-closure-and-tax-implications",
+      "heading": "Withdrawal, Premature Closure & Tax விளைவுகள் — FD Calculator Assumptions & Adjustments",
+      "intro": "Fixed Deposit கணக்கீட்டில், நடைமுறையில் ஏற்படக்கூடிய withdrawal, premature closure மற்றும் tax தாக்கங்களை சேர்த்தால், கணிப்புகள் உண்மைக்கு நெருக்கமாக இருக்கும்:",
+      "points": [
+        "Premature closure penalty: பல வங்கிகள் முன்கூட்டியே FD மூடும்போது 0.5%–1.0% வரை வட்டி குறைப்பு அல்லது தொடக்க காலத்துக்கு வட்டி இல்லாமை போன்ற அபராதங்களை விதிக்கின்றன. Calculator-ல் r-ஐ குறைப்பதன் மூலம் அல்லது penalty-யை கழிப்பதன் மூலம் இதை மாதிரியாக்கலாம்.",
+        "Partial withdrawals / Breakable FDs: சில Flexi FD-களில் பகுதி withdrawal அனுமதி உண்டு. Principal schedule-ஐ மாற்றி மீதமுள்ள compounding-ஐ மீண்டும் கணக்கிடுங்கள்.",
+        "Taxation: FD வட்டிக்கு உங்கள் income slab-க்கு ஏற்ப tax விதிக்கப்படும்; குறிப்பிட்ட வரம்புக்கு மேல் TDS பொருந்தலாம். FD Calculator gross interest-ஐ காட்டும்; post-tax return கணக்கிட Interest = M − P என்பதற்கு உங்கள் marginal tax rate-ஐ பயன்படுத்துங்கள்."
+      ],
+      "example": {
+        "title": "After-tax Adjustment உதாரணம்",
+        "body": "Gross interest = ₹50,000 மற்றும் marginal tax = 30% என்றால், after-tax interest ≈ ₹35,000 (50,000 × (1 − 0.30)). Premature closure penalty = 0.75% என்றால், கணக்கீட்டில் r-ஐ 0.75% குறைத்துப் பயன்படுத்த வேண்டும்."
+      },
+      "note": "வங்கிகளின் penalty விதிமுறைகள் மற்றும் tax சட்டங்களை எப்போதும் தற்போதைய நிலைக்கு ஏற்ப சரிபார்க்கவும். Calculator ஒரு projection கருவி மட்டுமே — இது tax ஆலோசனை அல்ல.",
+      "conclusion": "Withdrawals, penalties, taxes ஆகியவற்றை inputs-ல் தெளிவாக சேர்த்தால், மாச்சுரிட்டி மற்றும் after-tax returns மிகவும் நிஜமானதாக இருக்கும்."
+    },
+    "fdBenefitsSection": {
+      "id": "benefits-of-using-fd-calculator",
+      "heading": "Online FD Calculator பயன்படுத்தும் நன்மைகள் — தெளிவு, வேகம் & சிறந்த முடிவு எடுக்கும் சக்தி",
+      "intro": "FD Calculator, Fixed Deposit திட்டமிடுவதில் வேகத்தையும் தெளிவையும் வழங்குகிறது:",
+      "points": [
+        "Simple & Compound Interest இரண்டிலும் துல்லியமான மாச்சுரிட்டி கணிப்புகள்.",
+        "வங்கி/NBFC வட்டி விகிதங்கள் மற்றும் compounding அடிக்கடிகளை எளிதாக ஒப்பிடும் Comparison tool.",
+        "Senior Citizen rates, Premature closure penalties, Laddering strategies போன்றவற்றை சோதனை செய்ய Scenario Testing வசதி.",
+        "Periodic payout அல்லது lump-sum maturity அடிப்படையில் Cash-flow planning செய்ய உதவும்.",
+        "Gross interest காட்டுவதால் Tax Planning-க்கு உதவுகிறது; அதன்பின் post-tax returns கணக்கிடலாம்."
+      ],
+      "conclusion": "FD Calculator-ஐ பயன்படுத்தி FD ladder உருவாக்கலாம், effective annual yield-களை ஒப்பிடலாம், மற்றும் எதிர்கால செலவுகள்/நிதி இலக்குகளுடன் வைப்பு திட்டங்களை இணைக்கலாம். இது கணக்கீட்டு சிரமத்தை நீக்கி, உங்களுக்கு மிகவும் பொருத்தமான FD தயாரிப்பை நம்பிக்கையுடன் தேர்வு செய்ய உதவுகிறது."
+    }
+  }
+}

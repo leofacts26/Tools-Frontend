@@ -1,0 +1,104 @@
+{
+  "navbar": {
+    "finance": {
+      "page": "நிதி",
+      "links": {
+        "sip-calculator": {
+          "label": "SIP கால்குலேட்டர்"
+        },
+        "lumpsum-calculator": {
+          "label": "லம்ப்சம் கால்குலேட்டர்"
+        },
+        "swp-calculator": {
+          "label": "SWP கால்குலேட்டர்"
+        },
+        "mutual-fund-returns-calculator": {
+          "label": "மியூச்சுவல் ஃபண்ட் ரிட்டர்ன்ஸ் கால்குலேட்டர்"
+        },
+        "sukanya-samriddhi-yojana-calculator": {
+          "label": "சுகன்யா சம்ருத்தி யோஜனா (SSY)"
+        },
+        "ppf-calculator": {
+          "label": "PPF கால்குலேட்டர்"
+        },
+        "epf-calculator": {
+          "label": "EPF கால்குலேட்டர்"
+        },
+        "fd-calculator": {
+          "label": "FD கால்குலேட்டர்"
+        },
+        "rd-calculator": {
+          "label": "RD கால்குலேட்டர்"
+        },
+        "nps-calculator": {
+          "label": "NPS கால்குலேட்டர்"
+        },
+        "simple-interest-calculator": {
+          "label": "சிம்பிள் இன்டரெஸ்ட் கால்குலேட்டர்"
+        },
+        "compound-interest-calculator": {
+          "label": "காம்பவுண்ட் இன்டரெஸ்ட் கால்குலேட்டர்"
+        },
+        "nsc-calculator": {
+          "label": "NSC கால்குலேட்டர்"
+        },
+        "step-up-sip-calculator": {
+          "label": "ஸ்டெப்-அப் SIP கால்குலேட்டர்"
+        },
+        "gratuity-calculator": {
+          "label": "கிராசூட்டி கால்குலேட்டர்"
+        }
+      }
+    },
+    "students": {
+      "page": "மாணவர்கள்",
+      "links": {
+        "gpa-calculator": {
+          "label": "GPA கால்குலேட்டர்"
+        },
+        "grade-convertor": {
+          "label": "கிரேட் கன்வெர்டர்"
+        }
+      }
+    },
+    "developer": {
+      "page": "டெவலப்பர்",
+      "links": {
+        "about": {
+          "label": "JSON ஃபார்மாட்டர்"
+        },
+        "customers": {
+          "label": "HTML பியூட்டிஃபையர்"
+        }
+      }
+    },
+    "others": {
+      "page": "மற்றவை",
+      "links": {
+        "text-utilities": {
+          "label": "உரைக் கருவிகள்"
+        },
+        "fun-tools": {
+          "label": "வேடிக்கை கருவிகள்"
+        }
+      }
+    },
+    "blog": {
+      "page": "ப்ளாக்",
+      "links": {
+        "finance": {
+          "label": "நிதி"
+        },
+        "earn": {
+          "label": "வருமானம்"
+        }
+      }
+    }
+  },
+  "footer": {
+    "about": "எங்களை பற்றி",
+    "privacy": "தனியுரிமைக் கொள்கை",
+    "terms": "விதிமுறைகள் & நிபந்தனைகள்",
+    "contact": "தொடர்பு"
+  }
+}

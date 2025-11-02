@@ -7,43 +7,43 @@
           "label": "SIP कैलकुलेटर"
         },
         "lumpsum-calculator": {
-          "label": "Lumpsum कैलकुलेटर"
+          "label": "लंपसम कैलकुलेटर"
         },
         "swp-calculator": {
           "label": "SWP कैलकुलेटर"
         },
         "mutual-fund-returns-calculator": {
-          "label": "एमएफ रिटर्न कैलकुलेटर"
+          "label": "MF रिटर्न कैलकुलेटर"
         },
         "sukanya-samriddhi-yojana-calculator": {
-          "label": "सुकन्या समृद्धि योजना (एसएसवाई)"
+          "label": "सुकन्या समृद्धि योजना (SSY)"
         },
         "ppf-calculator": {
-          "label": "पीपीएफ कैलकुलेटर"
+          "label": "PPF कैलकुलेटर"
         },
         "epf-calculator": {
-          "label": "ईपीएफ कैलकुलेटर"
+          "label": "EPF कैलकुलेटर"
         },
         "fd-calculator": {
-          "label": "एफडी कैलकुलेटर"
+          "label": "FD कैलकुलेटर"
         },
         "rd-calculator": {
-          "label": "आरडी कैलकुलेटर"
+          "label": "RD कैलकुलेटर"
         },
         "nps-calculator": {
-          "label": "एनपीएस कैलकुलेटर"
+          "label": "NPS कैलकुलेटर"
         },
         "simple-interest-calculator": {
-          "label": "सरल ब्याज कैलक्यूलेटर"
+          "label": "सिंपल इंटरेस्ट कैलकुलेटर"
         },
         "compound-interest-calculator": {
-          "label": "चक्रवृद्धि ब्याज कैलकुलेटर"
+          "label": "कंपाउंड इंटरेस्ट कैलकुलेटर"
         },
         "nsc-calculator": {
-          "label": "एनएससी कैलकुलेटर"
+          "label": "NSC कैलकुलेटर"
         },
         "step-up-sip-calculator": {
-          "label": "स्टेप अप एसआईपी कैलकुलेटर"
+          "label": "स्टेप-अप SIP कैलकुलेटर"
         },
         "gratuity-calculator": {
           "label": "ग्रेच्युटी कैलकुलेटर"
@@ -53,39 +53,33 @@
     "students": {
       "page": "विद्यार्थी",
       "links": {
-        "plugins": {
-          "label": "प्लगइन्स"
+        "gpa-calculator": {
+          "label": "GPA कैलकुलेटर"
         },
-        "libraries": {
-          "label": "लाइब्रेरीज़"
-        },
-        "help": {
-          "label": "मदद"
-        },
-        "billing": {
-          "label": "बिलिंग"
+        "grade-convertor": {
+          "label": "ग्रेड कन्वर्टर"
         }
       }
     },
-    "utilities": {
-      "page": "उपयोगिताएँ",
+    "developer": {
+      "page": "डेवलपर",
       "links": {
         "about": {
-          "label": "हमारे बारे में"
+          "label": "JSON फ़ॉर्मैटर"
         },
         "customers": {
-          "label": "ग्राहक"
+          "label": "HTML ब्यूटीफायर"
         }
       }
     },
     "others": {
       "page": "अन्य",
       "links": {
-        "others": {
-          "label": "अन्य"
+        "text-utilities": {
+          "label": "टेक्स्ट यूटिलिटीज"
         },
-        "customers": {
-          "label": "ग्राहक"
+        "fun-tools": {
+          "label": "मज़ेदार टूल्स"
         }
       }
     },
@@ -96,7 +90,7 @@
           "label": "वित्त"
         },
         "earn": {
-          "label": "कमाना"
+          "label": "कमाई"
         }
       }
     }

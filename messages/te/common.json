@@ -1,102 +1,96 @@
 {
   "navbar": {
     "finance": {
-      "page": "ఆర్థికం",
+      "page": "ఫైనాన్స్",
       "links": {
         "sip-calculator": {
-          "label": "SIP కాల్కులేటర్"
+          "label": "SIP క్యాలిక్యులేటర్"
         },
         "lumpsum-calculator": {
-          "label": "Lumpsum కాల్కులేటర్"
+          "label": "లంప్‌సమ్ క్యాలిక్యులేటర్"
         },
         "swp-calculator": {
-          "label": "SWP కాల్కులేటర్"
+          "label": "SWP క్యాలిక్యులేటర్"
         },
         "mutual-fund-returns-calculator": {
-          "label": "MF రిటర్న్ కాలిక్యులేటర్"
+          "label": "మ్యూచువల్ ఫండ్ రిటర్న్స్ క్యాలిక్యులేటర్"
         },
         "sukanya-samriddhi-yojana-calculator": {
-          "label": "సుకన్య సమృద్ధి యోజన (SSY)"
+          "label": "సుకన్యా సమృద్ధి యోజన (SSY)"
         },
         "ppf-calculator": {
-          "label": "PPF కాలిక్యులేటర్"
+          "label": "PPF క్యాలిక్యులేటర్"
         },
         "epf-calculator": {
-          "label": "EPF కాలిక్యులేటర్"
+          "label": "EPF క్యాలిక్యులేటర్"
         },
         "fd-calculator": {
-          "label": "FD కాలిక్యులేటర్"
+          "label": "FD క్యాలిక్యులేటర్"
         },
         "rd-calculator": {
-          "label": "RD కాలిక్యులేటర్"
+          "label": "RD క్యాలిక్యులేటర్"
         },
         "nps-calculator": {
-          "label": "NPS కాలిక్యులేటర్"
+          "label": "NPS క్యాలిక్యులేటర్"
         },
         "simple-interest-calculator": {
-          "label": "సాధారణ ఇంట్రెస్ట్ కాలిక్యులేటర్"
+          "label": "సింపుల్ ఇంటరెస్ట్ క్యాలిక్యులేటర్"
         },
         "compound-interest-calculator": {
-          "label": "సమ్మేళన వడ్డీ కాలిక్యులేటర్"
+          "label": "కాంపౌండ్ ఇంటరెస్ట్ క్యాలిక్యులేటర్"
         },
         "nsc-calculator": {
-          "label": "NSC కాలిక్యులేటర్"
+          "label": "NSC క్యాలిక్యులేటర్"
         },
         "step-up-sip-calculator": {
-          "label": "స్టెప్ అప్ SIP కాలిక్యులేటర్"
+          "label": "స్టెప్-అప్ SIP క్యాలిక్యులేటర్"
         },
         "gratuity-calculator": {
-          "label": "గ్రాట్యుటీ కాలిక్యులేటర్"
+          "label": "గ్రాచ్యుటీ క్యాలిక్యులేటర్"
         }
       }
     },
     "students": {
-      "page": "విద్యార్థులు",
+      "page": "స్టూడెంట్స్",
       "links": {
-        "plugins": {
-          "label": "ప్లగిన్లు"
+        "gpa-calculator": {
+          "label": "GPA క్యాలిక్యులేటర్"
         },
-        "libraries": {
-          "label": "లైబ్రరీలు"
-        },
-        "help": {
-          "label": "సహాయం"
-        },
-        "billing": {
-          "label": "బిల్లింగ్"
+        "grade-convertor": {
+          "label": "గ్రేడ్ కన్వర్టర్"
         }
       }
     },
-    "utilities": {
-      "page": "ఉపయోగాలు",
+    "developer": {
+      "page": "డెవలపర్",
       "links": {
         "about": {
-          "label": "గురించి"
+          "label": "JSON ఫార్మాట్టర్"
         },
         "customers": {
-          "label": "గ్రాహకులు"
+          "label": "HTML బ్యూటిఫైయర్"
         }
       }
     },
     "others": {
       "page": "ఇతరాలు",
       "links": {
-        "others": {
-          "label": "ఇతరాలు"
+        "text-utilities": {
+          "label": "టెక్స్ట్ యుటిలిటీస్"
         },
-        "customers": {
-          "label": "గ్రాహకులు"
+        "fun-tools": {
+          "label": "ఫన్ టూల్స్"
         }
       }
     },
     "blog": {
-      "page": "బ్లాగు",
+      "page": "బ్లాగ్",
       "links": {
         "finance": {
           "label": "ఫైనాన్స్"
         },
         "earn": {
-          "label": "సంపాదించండి"
+          "label": "అర్న్"
         }
       }
     }
@@ -104,7 +98,7 @@
   "footer": {
     "about": "మా గురించి",
     "privacy": "గోప్యతా విధానం",
-    "terms": "నియమాలు & షరతులు",
+    "terms": "నిబంధనలు & షరతులు",
     "contact": "సంప్రదించండి"
   }
 }
