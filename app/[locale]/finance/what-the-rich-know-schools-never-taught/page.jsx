@@ -224,7 +224,7 @@ export default async function Page({ params }) {
                           )}
                         </Box>
 
-                        {section.paragraphs.map((para, pIdx) => (
+                        {section?.paragraphs?.map((para, pIdx) => (
                           <p key={pIdx} className="section-paragraph">
                             {para}
                           </p>
