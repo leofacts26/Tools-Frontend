@@ -1,0 +1,104 @@
+{
+  "navbar": {
+    "finance": {
+      "page": "ফাইন্যান্স",
+      "links": {
+        "sip-calculator": {
+          "label": "SIP ক্যালকুলেটর"
+        },
+        "lumpsum-calculator": {
+          "label": "Lumpsum ক্যালকুলেটর"
+        },
+        "swp-calculator": {
+          "label": "SWP ক্যালকুলেটর"
+        },
+        "mutual-fund-returns-calculator": {
+          "label": "MF রিটার্ন ক্যালকুলেটর"
+        },
+        "sukanya-samriddhi-yojana-calculator": {
+          "label": "সুকন্যা সমৃদ্ধি যোজনা (SSY)"
+        },
+        "ppf-calculator": {
+          "label": "PPF ক্যালকুলেটর"
+        },
+        "epf-calculator": {
+          "label": "EPF ক্যালকুলেটর"
+        },
+        "fd-calculator": {
+          "label": "FD ক্যালকুলেটর"
+        },
+        "rd-calculator": {
+          "label": "RD ক্যালকুলেটর"
+        },
+        "nps-calculator": {
+          "label": "NPS ক্যালকুলেটর"
+        },
+        "simple-interest-calculator": {
+          "label": "সিম্পল ইন্টারেস্ট ক্যালকুলেটর"
+        },
+        "compound-interest-calculator": {
+          "label": "কম্পাউন্ড ইন্টারেস্ট ক্যালকুলেটর"
+        },
+        "nsc-calculator": {
+          "label": "NSC ক্যালকুলেটর"
+        },
+        "step-up-sip-calculator": {
+          "label": "স্টেপ-আপ SIP ক্যালকুলেটর"
+        },
+        "gratuity-calculator": {
+          "label": "গ্র্যাচুইটি ক্যালকুলেটর"
+        }
+      }
+    },
+    "students": {
+      "page": "স্টুডেন্টস",
+      "links": {
+        "gpa-calculator": {
+          "label": "GPA ক্যালকুলেটর"
+        },
+        "grade-convertor": {
+          "label": "গ্রেড কনভার্টার"
+        }
+      }
+    },
+    "developer": {
+      "page": "ডেভেলপার",
+      "links": {
+        "about": {
+          "label": "JSON ফর্ম্যাটার"
+        },
+        "customers": {
+          "label": "HTML বিউটিফায়ার"
+        }
+      }
+    },
+    "others": {
+      "page": "অন্যান্য",
+      "links": {
+        "text-utilities": {
+          "label": "টেক্সট ইউটিলিটিজ"
+        },
+        "fun-tools": {
+          "label": "ফান টুলস"
+        }
+      }
+    },
+    "blog": {
+      "page": "ব্লগ",
+      "links": {
+        "finance": {
+          "label": "ফাইন্যান্স"
+        },
+        "earn": {
+          "label": "আয়"
+        }
+      }
+    }
+  },
+  "footer": {
+    "about": "আমাদের সম্পর্কে",
+    "privacy": "প্রাইভেসি পলিসি",
+    "terms": "শর্তাবলি",
+    "contact": "যোগাযোগ"
+  }
+}
