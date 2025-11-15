@@ -1,0 +1,130 @@
+{
+  "seo": {
+    "title": "Calculateur NSC — Calculez en ligne les intérêts et la valeur de maturité du National Savings Certificate",
+    "description": "Utilisez notre Calculateur NSC gratuit pour calculer la valeur de maturité et les intérêts totaux gagnés sur votre investissement dans un National Savings Certificate. Entrez votre montant investi, la durée et le taux d’intérêt pour obtenir des résultats précis instantanément.",
+    "slug": "tools/finance/nsc-calculator",
+    "image": "/images/og/nsc-calculator-en.png",
+    "isArticle": true,
+    "publishDate": "2024-01-01",
+    "modifiedDate": "2025-10-18",
+    "author": "Votre site"
+  },
+  "site": {
+    "heading": "Calculateur NSC (National Savings Certificate)"
+  },
+  "form": {
+    "principal": "Montant investi",
+    "interestRate": "Taux d’intérêt (annuel)",
+    "timePeriod": "Durée",
+    "compoundingFrequency": "Fréquence de capitalisation"
+  },
+  "article": {
+    "intro": {
+      "heading": "Pourquoi utiliser un Calculateur NSC",
+      "paragraphs": [
+        "Le National Savings Certificate (NSC) est un produit d’épargne sûr, garanti par le gouvernement, largement utilisé par les investisseurs indiens pour la préservation du capital et les économies d’impôts.",
+        "Comme les intérêts du NSC sont capitalisés annuellement et versés seulement à l’échéance, le montant final dépend à la fois du capital investi et du taux d’intérêt composé — un taux que le gouvernement peut réviser chaque trimestre.",
+        "Un Calculateur NSC élimine les calculs manuels : il suffit d’entrer le montant investi et le taux d’intérêt applicable pour obtenir immédiatement le montant de maturité, le rendement annuel effectif ainsi que les intérêts totaux gagnés sur la période de 5 ans.",
+        "Cela vous permet de comparer les rendements du NSC avec d’autres instruments sûrs (PPF, dépôt fixe Post Office), de planifier vos déductions sous la section 80C, et de déterminer le montant idéal à investir pour atteindre vos objectifs financiers."
+      ]
+    },
+    "nsccalculator": {
+      "heading": "Calculateur NSC (National Savings Certificate)",
+      "subHeading": "Exemple NSC : durée de 5 ans. Choisissez la fréquence de capitalisation (Annuelle / Semestrielle)."
+    },
+    "whatIs": {
+      "heading": "Qu’est-ce que le NSC ? — Certificat d’Épargne Nationale expliqué",
+      "paragraphs": [
+        "Le National Savings Certificate (NSC) est un produit d’épargne à revenu fixe, de long terme, proposé dans les bureaux de poste en Inde et garanti par le Gouvernement indien.",
+        "Le NSC impose une durée de blocage standard de cinq ans et offre un taux d’intérêt fixe, capitalisé annuellement et versé à maturité.",
+        "Les investissements dans le NSC sont éligibles à une déduction fiscale au titre de la section 80C de l’Income Tax Act (dans la limite globale de ₹1,5 lakh), ce qui en fait un choix attractif pour les contribuables souhaitant des instruments sûrs et fiscalement avantageux.",
+        "L’entrée est accessible — les investissements peuvent commencer avec de petits montants — et il n’existe pratiquement aucune limite supérieure d’investissement, bien que les avantages 80C puissent influencer la décision.",
+        "Parce qu’il bénéficie d’une garantie gouvernementale, le NSC est souvent privilégié par les épargnants prudents qui recherchent la sécurité du capital et des rendements prévisibles."
+      ]
+    },
+    "howItHelps": {
+      "heading": "Comment un Calculateur NSC peut-il vous aider ? — Utilisations pratiques",
+      "intro": "Un Calculateur NSC offre une visibilité immédiate sur le montant de maturité attendu, sans aucun calcul manuel. Utilisez-le pour :",
+      "points": [
+        "Trouver le montant de maturité pour un investissement NSC en une seule fois au taux d’intérêt en vigueur.",
+        "Voir le total des intérêts gagnés sur la période de blocage de 5 ans ainsi que le rendement annuel effectif.",
+        "Comparer les rendements du NSC avec d’autres produits d’épargne sécurisés (PPF, FDs, Sukanya Samriddhi).",
+        "Planifier vos allocations sous la Section 80C — savoir combien investir pour optimiser les déductions fiscales.",
+        "Tester différents scénarios (“what-if”) selon les taux d’intérêt (le gouvernement révise les taux d’épargne tous les trimestres) afin de décider du moment idéal et du montant approprié pour investir."
+      ],
+      "note": "L’outil est rapide, précis et élimine les erreurs de calcul dans votre planification financière."
+    },
+    "formula": {
+      "heading": "Comment fonctionne le Calculateur NSC — Logique, Formule & Hypothèses",
+      "intro": "Le Calculateur NSC applique le principe de la capitalisation annuelle à un investissement unique pour la durée standard du NSC (généralement 5 ans). La formule centrale utilisée est la formule classique des intérêts composés :",
+      "methods": [
+        {
+          "title": "Formule (capitalisation annuelle) :",
+          "formulas": [
+            "Montant à maturité (A) = P × (1 + r)^n"
+          ]
+        }
+      ],
+      "definitions": [
+        "P = Montant investi (₹)",
+        "r = Taux d’intérêt annuel en décimal (ex. : 7,7 % → 0,077)",
+        "n = Nombre d’années (en général 5 pour le NSC)"
+      ],
+      "note": "Intérêt gagné = A − P. Le calculateur affiche également la croissance annuelle, le total des intérêts et le taux annuel effectif, tout en précisant les hypothèses comme le taux et la durée — car les taux officiels du NSC peuvent changer chaque trimestre."
+    },
+    "inputs": {
+      "heading": "Quels éléments fournir ? — Liste ordonnée pour utiliser le Calculateur NSC",
+      "intro": "Pour utiliser le Calculateur NSC, préparez les informations suivantes (à saisir dans cet ordre pour les meilleurs résultats) :",
+      "list": [
+        "Montant investi (P) — la somme unique que vous placez dans le NSC.",
+        "Taux d’intérêt (R %) — le taux NSC en vigueur au moment de votre investissement (révisé trimestriellement par le gouvernement).",
+        "Durée (n) — généralement 5 ans pour le NSC standard ; certaines anciennes émissions avaient des durées différentes.",
+        "Date de début (optionnelle) — pour afficher la date exacte de maturité et une vue détaillée de la capitalisation annuelle.",
+        "Indicateur fiscal (optionnel) — si vous comptez demander la déduction fiscale de la Section 80C sur ce montant."
+      ],
+      "note": "Après saisie, le calculateur fournit le montant de maturité, le total des intérêts, le rendement annuel effectif ainsi qu’un tableau annuel pour visualiser la croissance."
+    },
+    "calculation": {
+      "heading": "Formule de calcul (explication simple) — Formule étape par étape & Exemple",
+      "intro": "Le NSC utilise la capitalisation annuelle, ce qui rend les calculs simples et transparents :",
+      "steps": [
+        "Convertir le taux d’intérêt en décimal : r = R / 100.",
+        "Utiliser la formule des intérêts composés : A = P × (1 + r)^n.",
+        "Calculer les intérêts gagnés : Intérêts = A − P.",
+        "Pour le taux annuel effectif (TAE / AER) : AER = (A / P)^{1/n} − 1 (exprimé en pourcentage)."
+      ],
+      "example": "Exemple rapide (illustratif) : si P = ₹10 00 000, R = 7,7 % et n = 5 ans, alors r = 0,077 et A = 10 00 000 × (1,077)^5. Le calculateur génère automatiquement ce résultat et affiche A ainsi que les intérêts totaux (A − P). Consultez le tableau annuel pour visualiser comment les intérêts réinvestis accélèrent la croissance."
+    },
+    "howToUse": {
+      "heading": "Comment utiliser le Calculateur NSC — Guide étape par étape",
+      "intro": "Suivez ces étapes dans l’ordre pour obtenir une projection NSC fiable :",
+      "steps": [
+        "Saisissez le montant que vous souhaitez investir dans le NSC (P).",
+        "Indiquez ou sélectionnez le taux d’intérêt NSC actuel (R %) — référez-vous au taux officiel annoncé pour le trimestre en cours.",
+        "Confirmez la durée (par défaut = 5 ans).",
+        "Optionnel : renseignez la date d’achat pour afficher la date exacte de maturité.",
+        "Cliquez sur Calculer. Résultats affichés : montant à maturité (A), total des intérêts, rendement annuel effectif et un tableau de capitalisation année par année."
+      ],
+      "note": "Comparez avec d’autres placements (PPF, dépôt bancaire/FD) en modifiant le taux ou la durée afin d’identifier le meilleur produit pour vos objectifs financiers. Le calculateur est rapide, précis et expose clairement les hypothèses pour investir en toute confiance."
+    },
+    "advantages": {
+      "heading": "Avantages de l’utilisation d’un Calculateur NSC — Pourquoi c’est utile",
+      "intro": "Un calculateur NSC vous fait gagner du temps, améliore la précision et facilite la planification fiscale :",
+      "points": [
+        "Montant de maturité instantané : plus besoin de calculs manuels ou de tableurs complexes.",
+        "Détail précis des intérêts : visualisez exactement la part d’intérêts et la part de capital dans la somme finale.",
+        "Aide à la planification fiscale : estimez quelle part de votre plafond 80C sera utilisée par vos investissements NSC.",
+        "Anticipation des taux trimestriels : comme les taux des petits instruments d’épargne changent périodiquement, le calculateur vous permet de tester différents scénarios de taux et d’investir au moment le plus avantageux.",
+        "Point de comparaison à faible risque : comparez les rendements garantis du NSC avec d’autres options prudentes pour aligner liquidité et objectifs fiscaux."
+      ],
+      "note": "Utilisez-le avant d’acheter un NSC dans votre bureau de poste afin de prendre une décision éclairée et fiscalement optimisée."
+    },
+    "notes": {
+      "heading": "Notes & Mises en garde",
+      "points": [
+        "Les taux d’intérêt du NSC sont fixés par le gouvernement et peuvent être révisés chaque trimestre ; vérifiez toujours le taux en vigueur avant d’investir.",
+        "Les intérêts du NSC sont imposables, mais les intérêts accumulés les premières années sont considérés comme réinvestis et peuvent être admissibles à la déduction au titre de la section 80C l’année où ils sont générés (vérifiez les règles fiscales en vigueur pour votre année de déclaration)."
+      ]
+    }
+  }
+}

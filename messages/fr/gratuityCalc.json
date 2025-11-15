@@ -1,0 +1,142 @@
+{
+  "seo": {
+    "title": "Calculateur de Gratification — Calculez Votre Montant de Gratification en Ligne",
+    "description": "Utilisez notre Calculateur de Gratification gratuit pour estimer le montant auquel vous avez droit selon la Payment of Gratuity Act, 1972. Saisissez votre dernier salaire perçu, vos années de service et votre indemnité de cherté pour obtenir instantanément votre montant total de gratification.",
+    "slug": "tools/finance/gratuity-calculator",
+    "image": "/images/og/gratuitycalc-en.png",
+    "isArticle": true,
+    "publishDate": "2024-01-01",
+    "modifiedDate": "2025-10-18",
+    "author": "GanakaHub"
+  },
+  "site": {
+    "heading": "Calculateur de Gratification"
+  },
+  "form": {
+    "monthlyInvestment": "Investissement mensuel",
+    "annualStepUp": "Augmentation annuelle",
+    "expectedReturnRate": "Taux de rendement attendu (par an)",
+    "timePeriod": "Durée"
+  },
+  "article": {
+    "intro": {
+      "heading": "Pourquoi utiliser un Calculateur de Gratification",
+      "paragraphs": [
+        "La gratification est une indemnité légale versée aux salariés à la fin de leur emploi, à condition qu’ils aient accompli la durée de service requise.",
+        "Calculer le montant exact — surtout lorsqu’il faut tenir compte des années partielles, des règles d’arrondi et des plafonds fiscaux — peut rapidement devenir complexe.",
+        "Un Calculateur de Gratification transforme votre dernier salaire de base (plus l’indemnité de cherté) et vos années de service en une estimation précise en quelques secondes.",
+        "Il vous aide à vérifier votre éligibilité, à planifier vos finances au moment de la retraite ou de la démission, et à estimer la part de la gratification qui sera exonérée d’impôt.",
+        "L’outil fait gagner du temps, évite les erreurs de calcul et affiche explicitement les hypothèses utilisées (arrondis, plafonds légaux, règles statutaires) afin que vous puissiez échanger avec votre employeur ou le service RH en toute clarté."
+      ]
+    },
+    "whatIs": {
+      "heading": "Qu’est-ce que la Gratification ? — Politique de gratification & Conditions d’éligibilité",
+      "paragraphs": [
+        "La gratification est une somme forfaitaire versée par l’employeur au salarié en reconnaissance de son service long et continu. En Inde, elle est régie par la Payment of Gratuity Act, 1972 pour les établissements couverts.",
+        "Selon la loi, un salarié devient éligible à la gratification après avoir accompli cinq années de service continu ; cette règle des cinq ans est levée en cas de décès ou d’invalidité permanente due à un accident ou à une maladie.",
+        "Le montant est généralement calculé à partir du dernier salaire de base du salarié, ajouté à l’indemnité de cherté, et du nombre total d’années de service. Certains employeurs proposent des régimes plus généreux, mais ils ne peuvent jamais verser moins que le minimum prévu par la loi.",
+        "La loi et ses amendements définissent également un plafond légal maximum sur le montant de la gratification versée aux salariés éligibles."
+      ]
+    },
+    "formula": {
+      "heading": "Formule de Calcul de la Gratification — Comment fonctionne le calcul",
+      "intro": "La formule statutaire standard utilisée pour les salariés couverts par la Payment of Gratuity Act, 1972 est la suivante :",
+      "methods": [
+        {
+          "title": "Formule (pour les salariés couverts par la loi) :",
+          "formulas": [
+            "Gratuity = (15 / 26) × Dernier Salaire (Base + DA) × Années de Service"
+          ]
+        }
+      ],
+      "definitions": [
+        "15/26 représente 15 jours de salaire sur un mois de 26 jours ouvrables.",
+        "Dernier Salaire = Salaire de base + Indemnité de cherté (DA).",
+        "Années de Service = Nombre total d’années de service complètes (les fractions sont arrondies selon la politique de l’employeur ou les directives de la loi)."
+      ],
+      "note": "Pour les établissements non couverts par la loi, les employeurs appliquent généralement la règle d’un demi-mois de salaire par année de service, bien que les modalités puissent varier. La gratification est également soumise à un plafond légal maximum déterminé par la réglementation."
+    },
+    "howItHelps": {
+      "heading": "Comment le Calculateur de Gratification Vous Aide — Avantages Pratiques",
+      "intro": "Un Calculateur de Gratification ne se limite pas à fournir un chiffre — il apporte clarté, précision et véritable compréhension financière :",
+      "points": [
+        "Clarifie votre éligibilité et applique automatiquement la formule légale appropriée.",
+        "Montre comment les règles d’arrondi influencent le montant final de la gratification selon vos années de service.",
+        "Signale les plafonds statutaires afin de savoir si le montant est entièrement payable ou partiellement traité comme ex-gratia.",
+        "Vous aide à planifier vos finances — remboursements de prêts, dépenses de retraite — grâce à des estimations précises.",
+        "Permet de comparer les régimes de gratification offerts par l’entreprise au minimum légal prévu par la loi.",
+        "Vous prépare avec les bons documents et une vision claire lors de la demande de versement.",
+        "Aide les équipes RH et paie en accélérant le calcul, tout en réduisant les litiges grâce à des hypothèses transparentes."
+      ],
+      "note": "Utilisez le calculateur avant vos démarches de sortie pour vérifier l’exactitude du montant et vous assurer que le versement respecte la Payment of Gratuity Act."
+    },
+    "inputs": {
+      "heading": "Les informations nécessaires — Liste ordonnée pour le Calculateur de Gratification",
+      "intro": "Pour obtenir une estimation précise de votre gratification, préparez les éléments suivants (dans cet ordre) :",
+      "list": [
+        "Dernier salaire de base + indemnité de cherté (DA) — montant mensuel.",
+        "Nombre total d’années de service continu — inclure les années complètes et tenir compte des règles d’arrondi.",
+        "Date d’entrée et date de sortie — pour un calcul précis de la durée de service (optionnel).",
+        "Motif de la cessation d’emploi — retraite, démission, décès ou invalidité (le décès/l’invalidité peut supprimer la règle des 5 ans).",
+        "Vérifier si votre établissement est couvert par la Payment of Gratuity Act (la plupart des organisations de plus de 10 employés le sont).",
+        "Toute politique interne offrant une gratification supérieure au minimum légal (optionnel)."
+      ],
+      "note": "Saisissez ces données pour obtenir le montant légal de la gratification, les ajustements liés au plafond statutaire et la part imposable."
+    },
+    "howToUse": {
+      "heading": "Étape par étape : Utiliser le Calculateur de Gratification — Processus Ordonné",
+      "intro": "Suivez ce processus pour obtenir une estimation précise de votre gratification :",
+      "steps": [
+        "Saisissez votre dernier salaire de base + DA (mensuel).",
+        "Entrez le total des années de service accomplies (ou indiquez les dates d’entrée et de sortie pour un calcul automatique).",
+        "Sélectionnez le motif de départ (retraite, démission, décès/invalidité) — cela influence les règles d’éligibilité.",
+        "Indiquez si votre employeur applique la Payment of Gratuity Act (par défaut : oui pour les établissements couverts).",
+        "Cliquez sur Calculer pour obtenir : la gratification statutaire (via la formule 15/26), tout arrondi appliqué, les ajustements liés au plafond légal et une estimation de la part imposable/exonérée.",
+        "Vérifiez les hypothèses (plafond, arrondi), puis enregistrez ou exportez les résultats pour vos discussions avec les RH ou votre planification fiscale."
+      ],
+      "note": "Utiliser des dates précises et confirmer si votre employeur propose une gratification améliorée vous garantit une estimation encore plus fiable."
+    },
+    "example": {
+      "heading": "Exemple illustratif — Exemple chiffré détaillé",
+      "intro": "Voici un exemple pratique montrant comment le montant de la gratification est calculé selon la Payment of Gratuity Act :",
+      "steps": [
+        "Exemple : Dernier salaire de base + DA = 30 000 ₹/mois ; années de service accomplies = 5 ans.",
+        "En utilisant la formule statutaire : Gratuity = (15 / 26) × 30 000 × 5",
+        "Étapes : 30 000 × 5 = 150 000 ; 15/26 ≈ 0,5769 ; 150 000 × 0,5769 ≈ 86 538 ₹.",
+        "Donc, la gratification statutaire payable ≈ 86 538 ₹.",
+        "Si un employé a 17 ans et 6 mois de service et que l’employeur arrondit à 18 ans, remplacez simplement 5 par 18 dans la formule.",
+        "Si le montant calculé dépasse le plafond légal, la portion excédentaire peut être traitée comme ex-gratia et imposée différemment.",
+        "Utilisez le calculateur pour tester rapidement différents scénarios d’arrondi et de plafonds."
+      ],
+      "note": "Cet exemple suppose que l’établissement est couvert par la Payment of Gratuity Act et utilise la formule standard 15/26 pour le calcul."
+    },
+    "taxation": {
+      "heading": "Fiscalité, plafond & limites légales — Ce qui est exonéré et ce qui est plafonné",
+      "paragraphs": [
+        "La Payment of Gratuity Act définit la méthode de calcul, et le gouvernement a relevé le plafond statutaire de la gratification à 20 lakhs ₹ grâce à l’amendement de la Payment of Gratuity Act et aux notifications ultérieures.",
+        "Pour l’impôt, l’exonération de la gratification prévue par l’Income Tax Act correspond au montant le plus faible parmi : (a) la gratification réellement reçue, (b) la gratification calculée selon la formule légale (15/26 × salaire × années), ou (c) le plafond monétaire prescrit (actuellement 20 00 000 ₹).",
+        "Les employés du gouvernement peuvent être soumis à des règles différentes pour le calcul et la fiscalité de la gratification, selon leurs conditions de service.",
+        "Comme les plafonds de versement et les limites d’exonération fiscale ont évolué au fil du temps, le Calculateur de Gratification met en évidence le plafond statutaire et indique la portion probablement exonérée, vous aidant ainsi à planifier vos retraits et votre déclaration fiscale de manière efficace."
+      ]
+    },
+    "advantages": {
+      "heading": "Avantages de l’utilisation d’un Calculateur de Gratification — Résumé rapide",
+      "intro": "Utiliser un calculateur de gratification en ligne vous offre :",
+      "points": [
+        "Rapidité & précision — un calcul immédiat et sans erreur du montant statutaire de la gratification.",
+        "Transparence — affiche les hypothèses (formule, règles d’arrondi, plafond légal) pour vérifier les calculs de l’employeur.",
+        "Planification fiscale — identifie la portion probablement exonérée selon les règles de l’impôt sur le revenu.",
+        "Tests de scénarios — permet de comparer différents résultats selon la durée de service, les méthodes d’arrondi ou les politiques internes plus généreuses que le minimum légal.",
+        "Préparation — vous fournit les chiffres nécessaires pour les démarches de sortie ou les négociations de règlement final."
+      ],
+      "note": "C’est un outil pratique et simple autant pour les employés que pour les équipes RH."
+    },
+    "notes": {
+      "heading": "Notes & mises en garde",
+      "points": [
+        "La formule statutaire s’applique aux employés couverts par la Payment of Gratuity Act ; les employeurs non couverts peuvent appliquer des formules alternatives mais généralement similaires — vérifiez toujours auprès des RH ou dans votre contrat.",
+        "Le gouvernement a modifié la loi pour augmenter le plafond de gratification à 20 lakhs ₹ ; les règles d’exonération fiscale se réfèrent également à ce plafond — consultez les notifications officielles ou les directives fiscales pour confirmer les limites effectivement applicables avant de déposer votre déclaration."
+      ]
+    }
+  }
+}

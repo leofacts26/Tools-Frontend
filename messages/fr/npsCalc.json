@@ -1,0 +1,176 @@
+{
+  "seo": {
+    "title": "Calculateur NPS — Calculez les Rendements du National Pension System et Votre Corpus de Retraite",
+    "description": "Utilisez notre Calculateur NPS gratuit pour estimer votre corpus de retraite, votre pension mensuelle et vos avantages fiscaux dans le cadre du National Pension System. Planifiez votre épargne à long terme grâce à des projections précises et basées sur les données.",
+    "slug": "tools/finance/nps-calculator",
+    "image": "/images/og/npscalc-en.png",
+    "isArticle": true,
+    "publishDate": "2024-01-01",
+    "modifiedDate": "2025-01-01",
+    "author": "Votre Site"
+  },
+  "site": {
+    "heading": "Calculateur NPS"
+  },
+  "form": {
+    "monthlyInvestment": "Investissement mensuel",
+    "interestRate": "Rendement attendu (annuel)",
+    "age": "Votre âge (ans)"
+  },
+  "article": {
+    "intro": {
+      "heading": "Introduction au Calculateur NPS — Prévisionnez Votre Corpus de Retraite avec le Calculateur NPS",
+      "paragraphs": [
+        "Planifier une retraite sécurisée avec un Calculateur NPS pour l’Inde transforme l’incertitude en un chiffre clair et fiable.",
+        "Le National Pension System (NPS) est un régime de retraite à long terme, lié aux marchés, où les cotisations régulières (ou les investissements en une seule fois) se développent dans un corpus de pension géré par des professionnels.",
+        "Notre Calculateur NPS convertit vos cotisations mensuelles ou annuelles, votre rendement attendu, votre âge actuel et votre âge de retraite en un corpus estimé et une pension mensuelle indicative — en tenant compte de l’obligation légale d’utiliser une partie du corpus pour acheter une rente à l’échéance.",
+        "Il est idéal pour les salariés, travailleurs indépendants et NRIs souhaitant comparer leurs niveaux de cotisation, analyser l’impact fiscal et décider de leur allocation d’actifs (actions vs obligations) dans le NPS.",
+        "Utilisez-le pour définir des objectifs de retraite réalistes et choisir une stratégie de cotisation adaptée à votre style de vie."
+      ]
+    },
+    "whatIsNps": {
+      "heading": "Qu’est-ce que le NPS ? — Le Système National de Pension expliqué pour les utilisateurs du Calculateur NPS",
+      "paragraphs": [
+        "Le National Pension System (NPS) est le dispositif d’épargne-retraite réglementé de l’Inde, permettant aux particuliers de constituer un corpus de retraite grâce à des cotisations régulières (mensuelles/annuelles) dans un compte Tier I (obligatoire, avec avantages fiscaux) ou Tier II (facultatif et flexible).",
+        "Géré par des gestionnaires de fonds agréés par la PFRDA, le NPS propose un mélange de fonds liés au marché : actions, obligations d’entreprises et titres d’État — avec une allocation active ou une option automatique (cycle de vie).",
+        "À la retraite (généralement à 60 ans), une partie du corpus accumulé peut être retirée sous forme de capital et le reste doit être utilisé pour acheter une rente générant une pension mensuelle.",
+        "Parce que le NPS combine la capitalisation à long terme avec une gestion professionnelle, il constitue un outil essentiel pour les personnes recherchant croissance et efficacité fiscale.",
+        "Le Calculateur NPS traduit ces mécanismes en chiffres concrets afin de guider vos cotisations et votre stratégie de retrait."
+      ]
+    },
+    "whyUseCalculator": {
+      "heading": "Pourquoi utiliser un Calculateur NPS ? — Avantages du Calculateur NPS pour la planification de la retraite",
+      "paragraphs": [
+        "Un Calculateur NPS fait gagner du temps et élimine les approximations lors de la planification de votre retraite : il montre comment vos cotisations mensuelles ou annuelles croissent grâce aux intérêts composés, estime le montant que vous pourrez retirer en capital et projette le revenu de rente après l’achat d’une pension.",
+        "Utilisez le calculateur pour :",
+        "1) Tester différents niveaux de cotisation afin d’atteindre un corpus cible.",
+        "2) Comparer la pension attendue selon différents taux de rendement estimés.",
+        "3) Évaluer les avantages fiscaux (80C/80CCD).",
+        "4) Simuler des retraits partiels ou des scénarios de sortie anticipée.",
+        "Comme le NPS applique des règles spécifiques sur les retraits en capital et l’achat obligatoire de rente, un calculateur conçu pour ces règles vous aide à anticiper précisément vos flux financiers post-retraite et à choisir la bonne cadence de cotisations dès aujourd’hui."
+      ]
+    },
+    "howItWorks": {
+      "heading": "Comment fonctionne notre Calculateur NPS — Logique, Hypothèses et Résultats",
+      "paragraphs": [
+        "Notre Calculateur NPS modélise deux phases : (A) la phase d’accumulation — la valeur future des cotisations périodiques (mensuelles ou annuelles) capitalisées à un taux de rendement annuel supposé, et (B) la phase de distribution — la manière dont le corpus accumulé sera divisé à la retraite (somme forfaitaire vs rente) et l’estimation de la pension mensuelle.",
+        "Les données saisies sont converties en une fréquence de capitalisation cohérente (mensuelle ou annuelle).",
+        "L’outil calcule : le total des cotisations, le corpus total accumulé à la retraite, le montant suggéré du retrait en capital (selon les règles NPS en vigueur), et une estimation de la rente mensuelle (en utilisant une hypothèse simple de taux de rente).",
+        "Nous affichons clairement les hypothèses (rendement supposé, fréquence des cotisations, âge de retraite, taux de rente) afin que vous puissiez tester différents scénarios.",
+        "Le calculateur ne fournit pas d’offres de rente garanties — il génère des estimations pour faciliter la comparaison."
+      ]
+    },
+    "inputsChecklist": {
+      "heading": "Les données nécessaires — Liste ordonnée pour utiliser le Calculateur NPS",
+      "intro": "Préparez les informations suivantes avant d’utiliser le Calculateur NPS :",
+      "points": [
+        "Cotisation mensuelle ou annuelle (P) — le montant que vous investirez régulièrement.",
+        "Âge actuel et âge prévu pour la retraite (par défaut 60 ans).",
+        "Solde NPS existant (le cas échéant).",
+        "Taux de rendement annuel attendu (r%) — estimation réaliste selon votre allocation d’actifs.",
+        "Fréquence de cotisation — mensuelle ou annuelle.",
+        "Hypothèse de rente — taux de rente prévu à la retraite (pour estimer la pension).",
+        "Régime fiscal (ancien/nouveau) si vous souhaitez visualiser l’impact des déductions 80CCD.",
+        "Optionnel : augmentations salariales prévues (pour modéliser les cotisations employeur/employé), choix Tier I ou Tier II."
+      ],
+      "conclusion": "Saisissez ces informations dans l’ordre indiqué pour obtenir une projection précise."
+    },
+    "calculationFormula": {
+      "heading": "Formule de calcul (explication simple) — Formules utilisées par le Calculateur NPS",
+      "intro": "L’accumulation NPS repose sur l’intérêt composé appliqué à des versements périodiques. Deux formules principales sont utilisées puis combinées :",
+      "steps": [
+        {
+          "title": "Valeur future d’un capital existant (capitalisation annuelle) :",
+          "formula": "FV_balance = PV × (1 + r)^n",
+          "explanation": "où PV = solde actuel, r = rendement annuel (décimal), n = années restant jusqu’à la retraite."
+        },
+        {
+          "title": "Valeur future des cotisations régulières (annuité ordinaire, dépôts mensuels) :",
+          "formula": "FV_contrib = PMT × [((1 + i)^m − 1) / i]",
+          "explanation": "PMT = cotisation mensuelle, i = r / 12 (taux mensuel), m = 12 × n (nombre total de mois)."
+        },
+        {
+          "title": "Corpus total NPS accumulé à la retraite :",
+          "formula": "FV_total = FV_balance + FV_contrib",
+          "explanation": "Combine la capitalisation du solde existant et les cotisations périodiques pour projeter le corpus total."
+        },
+        {
+          "title": "Répartition après la retraite (selon les règles NPS actuelles) :",
+          "formula": "Répartition typique = 60% en capital, 40% pour l’achat d’une rente",
+          "explanation": "Le revenu mensuel de la rente est ensuite approximé selon un taux de rente supposé."
+        }
+      ]
+    },
+    "howToUse": {
+      "heading": "Guide étape par étape : Utiliser le Calculateur NPS — Étapes ordonnées pour obtenir des projections précises",
+      "steps": [
+        "Choisissez la fréquence de cotisation (mensuelle est la plus courante) et saisissez le montant.",
+        "Indiquez votre âge actuel et votre âge de retraite prévu (par défaut : 60 ans).",
+        "Ajoutez votre solde NPS actuel (le cas échéant).",
+        "Définissez le taux de rendement annuel attendu r (%) selon votre allocation actions/obligations — soyez conservateur.",
+        "Sélectionnez le taux d’achat de rente — une hypothèse utilisée pour estimer la pension mensuelle.",
+        "Choisissez votre régime fiscal si vous souhaitez visualiser les avantages (80CCD(1/1B/2)).",
+        "Cliquez sur Calculer — consultez : le total des cotisations, le corpus projeté, le montant du retrait en capital (≈60 %) et la pension mensuelle indicative issue de la rente (≈40 %).",
+        "Refaites des scénarios : augmentez/diminuez les cotisations, ajustez r, ou modifiez l’âge de retraite pour tester l’impact et identifier la cotisation nécessaire pour atteindre votre pension cible."
+      ]
+    },
+    "example": {
+      "heading": "Exemple illustratif — Démonstration du Calculateur NPS avec chiffres",
+      "intro": "Exemple : Âge 30 ans, cotisation mensuelle PMT = ₹5 000, n = 30 ans jusqu’à la retraite à 60 ans, taux de rendement annuel supposé r = 9 % (0,09). En utilisant la formule d’annuité pour les dépôts mensuels :",
+      "formulas": [
+        "Taux mensuel i = 0,09 / 12",
+        "Nombre de mois m = 360",
+        "Valeur future des cotisations : FV_contrib ≈ ₹9 153 717"
+      ],
+      "details": {
+        "totalContributions": "Total des cotisations = ₹5 000 × 360 = ₹1 800 000",
+        "interestEarned": "Intérêts gagnés ≈ ₹7 353 717"
+      },
+      "split": {
+        "lumpSum": "≈60 % en capital ≈ ₹5 492 230",
+        "annuity": "≈40 % pour la rente ≈ ₹3 661 487"
+      },
+      "note": "Ces chiffres sont illustratifs ; le calculateur fournira les valeurs exactes et vous permettra de modifier l’hypothèse de conversion en rente pour estimer votre pension mensuelle. (Valeurs arrondies.)"
+    },
+    "taxBenefits": {
+      "heading": "Avantages fiscaux du NPS — Comment le Calculateur NPS vous aide à maximiser vos économies d’impôts",
+      "paragraphs": [
+        "Le NPS offre plusieurs avantages fiscaux que le calculateur met en évidence : les cotisations au compte Tier I sont admissibles aux déductions selon l’article 80CCD(1) (dans la limite de 80C) et une déduction supplémentaire de ₹50 000 au titre de 80CCD(1B), en plus de la limite de la section 80C.",
+        "Les cotisations de l’employeur peuvent être déclarées au titre de l’article 80CCD(2) (sous conditions).",
+        "Remarque : le choix du régime fiscal (ancien vs nouveau) influence la possibilité de revendiquer ces déductions — le nouveau régime peut en exclure certaines.",
+        "À la retraite, les règles actuelles permettent de retirer une grande partie du corpus sous forme de capital (généralement 60 %, non imposables), tandis que le reste doit être utilisé pour acheter une rente dont les versements sont imposés comme revenu lorsqu’ils sont reçus.",
+        "Vérifiez toujours les règles fiscales les plus récentes avant de prendre une décision ; notre calculateur met en évidence les déductions les plus courantes pour faciliter votre planification."
+      ]
+    },
+    "withdrawals": {
+      "heading": "Retraits, retraits partiels et règles d’annuité — Règles de sortie du NPS et comment le calculateur les modélise",
+      "paragraphs": [
+        "Le NPS comporte des règles de retrait spécifiques qui influencent les projections : les retraits partiels sont autorisés dans des conditions précises (généralement pour des objectifs définis et dans des limites strictes), les sorties anticipées peuvent restreindre l’accès au capital avant une durée minimale de souscription, et à la retraite le corpus est divisé entre un retrait en capital et un achat obligatoire de rente.",
+        "Le calculateur modélise les cas typiques : à la retraite (60 ans), il suppose environ 60 % de retrait en capital et 40 % d’achat de rente, tandis que les sorties anticipées permettent généralement un pourcentage moindre en capital (et donc une part plus importante dédiée à la rente).",
+        "Les retraits partiels et leur traitement fiscal varient selon les règles et les gestionnaires ; notre outil affiche les montants bruts et vous permet de déduire les impôts estimés ou de modéliser l’achat forcé de rente afin de visualiser vos flux nets de trésorerie à la retraite.",
+        "Vérifiez toujours les dernières directives PFRDA/NSDL pour connaître les règles exactes de retrait."
+      ]
+    },
+    "fundOptions": {
+      "heading": "Choisir les options de fonds NPS — Comment l’allocation d’actifs influence les résultats du calculateur NPS",
+      "paragraphs": [
+        "Le NPS vous permet de choisir entre des fonds actions (E), obligations/corporate (C) et titres d’État (G), ainsi qu’entre les options gestion active (vous choisissez les pourcentages d’allocation) ou gestion automatique/cycle de vie (l’allocation évolue avec l’âge).",
+        "Une allocation plus élevée en actions augmente généralement les rendements attendus à long terme (ainsi que la volatilité), tandis qu’une allocation axée sur les obligations ou les titres d’État stabilise les rendements mais limite la croissance potentielle.",
+        "Le Calculateur NPS vous permet de définir un taux de rendement attendu en fonction de votre mix d’actifs (par exemple, un taux plus élevé pour une stratégie plus agressive orientée actions) afin d’observer l’impact de vos choix d’allocation sur votre corpus final et votre pension.",
+        "Utilisez le calculateur pour comparer des portefeuilles prudents vs agressifs et pour estimer le montant supplémentaire à cotiser chaque mois si vous optez pour une allocation plus sûre (et donc à rendement plus faible)."
+      ]
+    },
+    "benefits": {
+      "heading": "Avantages de l’utilisation d’un Calculateur NPS en ligne — Bénéfices rapides et comment exploiter les résultats",
+      "paragraphs": [
+        "Un Calculateur NPS transforme la planification en action : il fournit des estimations d’accumulation précises, modélise l’obligation d’achat de rente, met en avant les déductions fiscales (80CCD) et permet de tester différents scénarios de rendement, de taux de cotisation et d’âge de retraite.",
+        "Avec ces résultats, vous pouvez :",
+        "1) Définir une cotisation mensuelle cible pour atteindre une pension souhaitée.",
+        "2) Optimiser votre allocation d’actifs selon le rendement attendu et le niveau de risque.",
+        "3) Planifier des cotisations fiscalement optimisées selon le régime ancien/nouveau.",
+        "4) Comparer différents scénarios (« que se passe-t-il si j’augmente la cotisation, si je retarde la retraite, si le taux de rente change ? »).",
+        "Utilisez le calculateur chaque année — surtout après une augmentation de salaire — pour garder votre plan de retraite aligné sur vos objectifs et définir la meilleure stratégie NPS pour votre avenir."
+      ]
+    }
+  }
+}

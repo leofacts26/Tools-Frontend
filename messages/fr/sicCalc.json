@@ -1,0 +1,157 @@
+{
+  "seo": {
+    "title": "Calculatrice d’Intérêt Simple — Calculez l’Intérêt et le Montant Total en Ligne",
+    "description": "Utilisez notre calculatrice d’intérêt simple gratuite pour calculer rapidement l’intérêt et le montant total de votre investissement initial. Saisissez le capital, le taux et la durée pour obtenir instantanément les résultats pour vos prêts ou placements.",
+    "slug": "tools/finance/simple-interest-calculator",
+    "image": "/images/og/simpleinterestcalc-fr.png",
+    "isArticle": true,
+    "publishDate": "2024-01-01",
+    "modifiedDate": "2025-01-01",
+    "author": "Votre Site"
+  },
+  "site": {
+    "heading": "Calculatrice d’Intérêt Simple"
+  },
+  "form": {
+    "principal": "Montant du capital",
+    "interestRate": "Taux d’intérêt (annuel)",
+    "timePeriod": "Durée"
+  },
+  "article": {
+    "intro": {
+      "heading": "Pourquoi utiliser une Calculatrice d’Intérêt Simple",
+      "paragraphs": [
+        "L’intérêt simple est la méthode la plus rapide pour calculer l’intérêt sur un capital lorsque l’intérêt ne se capitalise pas.",
+        "Si vous avez des prêts à court terme, certains produits d’épargne ou des plans de remboursement où l’intérêt est appliqué uniquement sur le capital initial, une Calculatrice d’Intérêt Simple vous fournit des chiffres exacts en quelques secondes.",
+        "Au lieu d’appliquer manuellement les formules ou de risquer des erreurs de calcul, la calculatrice prend votre capital, le taux annuel et la durée, puis génère automatiquement l’intérêt et le montant total à payer à l’échéance.",
+        "Elle est idéale pour les étudiants, emprunteurs, prêteurs et propriétaires de petites entreprises qui ont besoin d’une vision claire et directe des coûts d’intérêt.",
+        "Utilisez cet outil pour comparer des offres, planifier vos remboursements ou estimer les gains d’un investissement à court terme sans capitalisation."
+      ]
+    },
+    "whatIs": {
+      "heading": "Qu’est-ce que l’Intérêt Simple ? — Contexte pour la Calculatrice d’Intérêt Simple",
+      "paragraphs": [
+        "L’intérêt simple est un intérêt calculé uniquement sur le capital initial tout au long de la durée du prêt ou de l’investissement. Contrairement à l’intérêt composé — où les intérêts accumulés sont régulièrement ajoutés au capital, générant ainsi des intérêts sur les intérêts — l’intérêt simple considère le capital comme constant.",
+        "Les utilisations courantes incluent les prêts à court terme, certains coupons d’obligations, les prêts automobiles à taux fixe et les billets à ordre de courte durée. Sa simplicité rend les calculs transparents : l’intérêt augmente linéairement avec le temps. Cette prévisibilité est utile pour établir un budget et comparer des offres.",
+        "Cependant, pour la plupart des placements à long terme et de nombreux produits bancaires, l’intérêt composé offre généralement un rendement plus élevé (ou un coût plus élevé pour les emprunteurs).",
+        "Une Calculatrice d’Intérêt Simple vous aide à calculer : (1) l’intérêt simple (SI) gagné ou dû, et (2) le montant total (A) = capital + SI — permettant des comparaisons rapides et fiables."
+      ]
+    },
+    "formula": {
+      "heading": "Formule de l’Intérêt Simple — Formules Utilisées par la Calculatrice d’Intérêt Simple",
+      "intro": "Il existe deux façons équivalentes de présenter les formules d’intérêt simple. Utilisez la notation qui correspond le mieux à vos données :",
+      "methods": [
+        {
+          "title": "1. Avec le taux décimal r (r = R/100) :",
+          "formulas": [
+            "Montant total : A = P × (1 + r × t)",
+            "Intérêt simple : SI = P × r × t"
+          ]
+        },
+        {
+          "title": "2. Avec le taux en pourcentage R directement :",
+          "formulas": [
+            "Intérêt simple : SI = (P × R × T) / 100",
+            "Montant total : A = P + SI = P + (P × R × T) / 100"
+          ]
+        }
+      ],
+      "definitions": [
+        "P = Capital initial",
+        "R = Taux d’intérêt annuel en pourcentage",
+        "r = Taux d’intérêt annuel en décimal (r = R/100)",
+        "T ou t = Durée en années (convertir mois/jours en années)"
+      ],
+      "note": "Ces formules linéaires rendent les calculs très simples et sont exactement celles utilisées par la calculatrice."
+    },
+    "howToCalculate": {
+      "id": "how-to-calculate-simple-interest",
+      "heading": "Comment calculer l’Intérêt Simple avec la Calculatrice — Entrées & Fonctionnement",
+      "intro": "La Calculatrice d’Intérêt Simple nécessite trois données principales : le capital P, le taux annuel R%, et la durée T (en années ou en mois). Voici les étapes suivies par l’outil :",
+      "steps": [
+        "Si vous saisissez la durée en mois/jours, elle est convertie en années (T_années = mois / 12 ou jours / 365).",
+        "Elle calcule l’intérêt simple via SI = (P × R × T_années) / 100.",
+        "Elle renvoie le montant final ou de remboursement A = P + SI."
+      ],
+      "optionalFeatures": [
+        "Options de devise et de formatage (₹, USD, précision d’arrondi).",
+        "Option d’affichage des résultats en intérêt annuel ou intérêt total sur la période.",
+        "Validation des saisies et messages d’erreurs utiles en cas de valeurs négatives ou manquantes."
+      ],
+      "note": "La calculatrice n’applique aucune capitalisation — pour des intérêts composés, utilisez une calculatrice d’intérêt composé ou une calculatrice FD."
+    },
+    "benefits": {
+      "heading": "Comment une Calculatrice d’Intérêt Simple peut-elle vous aider ? — Avantages Pratiques",
+      "intro": "Une Calculatrice d’Intérêt Simple vous aide de plusieurs façons concrètes :",
+      "points": [
+        "Budgétiser les remboursements — connaître exactement l’intérêt payable sur les prêts à court terme.",
+        "Comparer les offres — comparer rapidement les taux à intérêt simple avec les prêts à taux fixe.",
+        "Planification d’investissement — estimer les rendements des instruments utilisant l’intérêt simple.",
+        "Transparence — éviter les erreurs humaines dans les calculs en plusieurs étapes.",
+        "Tests rapides « what-if » — modifier capital, taux ou durée pour voir l’impact instantané."
+      ],
+      "note": "Pour les emprunteurs comme pour les prêteurs, l’outil transforme des taux parfois opaques en montants concrets et compréhensibles."
+    },
+    "advantages": {
+      "heading": "Avantages d’utiliser une Calculatrice d’Intérêt Simple — Pourquoi c’est mieux que le calcul manuel",
+      "intro": "Utiliser une calculatrice d’intérêt simple en ligne offre des avantages évidents :",
+      "points": [
+        "Rapidité : résultats instantanés, sans calculs manuels.",
+        "Précision : élimine les erreurs arithmétiques et les erreurs de conversion.",
+        "Praticité : accepte les durées en mois/jours et convertit automatiquement en années.",
+        "Tests de scénarios : comparez plusieurs options en quelques secondes.",
+        "Accessibilité : utilisable sur mobile ou ordinateur, sans tableur.",
+        "Éducatif : affiche les étapes de la formule pour aider les utilisateurs à comprendre le calcul."
+      ],
+      "note": "Elle est particulièrement utile pour les décisions de prêt à court terme, le financement de factures ou les vérifications rapides avant de signer un contrat."
+    },
+    "steps": {
+      "heading": "Guide étape par étape : Utiliser la Calculatrice d’Intérêt Simple — Étapes Ordonnées",
+      "intro": "Suivez ces étapes pour obtenir des résultats précis :",
+      "list": [
+        "Saisissez le Capital (P) : le montant initial du prêt ou de l’investissement.",
+        "Saisissez le Taux Annuel (R%) : le pourcentage d’intérêt annuel indiqué.",
+        "Saisissez la Durée (T) : en années ; si vous avez des mois ou des jours, sélectionnez l’unité appropriée — la calculatrice convertit automatiquement.",
+        "Choisissez la précision d’arrondi (optionnel) : par exemple, à la roupie la plus proche ou deux décimales.",
+        "Cliquez sur « Calculer ». Le résultat affiche : SI (intérêt simple), A (montant total) et un petit récapitulatif (P, R, T).",
+        "Utilisez les options « What-if » pour comparer plusieurs durées ou variations de taux.",
+        "Exportez ou enregistrez les résultats si vous avez besoin des calculs pour vos documents."
+      ],
+      "note": "Ce processus ordonné garantit des calculs reproductibles et vérifiables."
+    },
+    "example": {
+      "heading": "Exemple illustratif — Exemple Calculé avec Arithmétique Correcte",
+      "intro": "Exemple : M. A prête P = ₹15,000 à un taux R = 5% par an pendant T = 2 ans. Calculons :",
+      "steps": [
+        "SI = (P × R × T) / 100.",
+        "Multiplier : 15,000 × 5 = 75,000.",
+        "Multiplier par T : 75,000 × 2 = 150,000.",
+        "Diviser par 100 : 150,000 / 100 = ₹1,500.",
+        "Donc l’Intérêt Simple = ₹1,500.",
+        "Montant total A = P + SI = 15,000 + 1,500 = ₹16,500."
+      ],
+      "note": "La calculatrice affichera les deux montants et peut aussi montrer l’intérêt annuel (₹750 par an), utile pour planifier les flux de trésorerie. Pour des mois, convertissez T correctement — par ex., 6 mois = 0,5 an."
+    },
+    "decision": {
+      "heading": "Quand utiliser l’Intérêt Simple vs l’Intérêt Composé — Guide de Décision",
+      "intro": "Choisissez la bonne calculatrice selon la manière dont l’intérêt est appliqué dans votre produit financier :",
+      "simpleUse": {
+        "title": "Choisissez l’Intérêt Simple lorsque :",
+        "points": [
+          "L’intérêt est appliqué uniquement sur le capital initial (prêts à taux fixe, certains prêts à court terme).",
+          "La durée est courte (quelques mois à quelques années) et le prêteur n’utilise pas la capitalisation.",
+          "Vous avez besoin de coûts d’intérêt linéaires et prévisibles."
+        ]
+      },
+      "compoundUse": {
+        "title": "Choisissez l’Intérêt Composé lorsque :",
+        "points": [
+          "Les intérêts sont périodiquement ajoutés au capital (dépôts bancaires, investissements à long terme).",
+          "Vous souhaitez modéliser une croissance où l’intérêt génère lui-même des intérêts.",
+          "La durée est longue et la capitalisation influence fortement le résultat."
+        ]
+      },
+      "note": "Si vous n’êtes pas sûr du mode d’application, consultez les modalités du produit financier. Notre Calculatrice d’Intérêt Simple est destinée aux cas sans capitalisation ; pour les intérêts composés, utilisez une calculatrice d’intérêt composé ou FD."
+    }
+  }
+}

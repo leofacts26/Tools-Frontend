@@ -1,0 +1,263 @@
+{
+  "seo": {
+    "title": "Calculateur de FD — Calculez les Intérêts et le Montant de Maturité de votre Dépôt à Terme en Ligne",
+    "description": "Utilisez notre calculateur de FD gratuit pour estimer le montant de maturité de votre Dépôt à Terme et les intérêts gagnés. Comparez les durées, les taux d’intérêt et les options de capitalisation pour mieux planifier vos investissements.",
+    "slug": "tools/finance/fd-calculator",
+    "image": "/images/og/fdcalc-en.png",
+    "isArticle": true,
+    "publishDate": "2024-01-01",
+    "modifiedDate": "2025-01-01",
+    "author": "Votre Site"
+  },
+  "site": {
+    "heading": "Calculateur de FD"
+  },
+  "form": {
+    "principal": "Investissement total",
+    "interestRate": "Taux d’intérêt (annuel)",
+    "timePeriod": "Durée",
+    "interestType": "Type d’intérêt"
+  },
+  "article": {
+    "intro": {
+      "heading": "Introduction au Calculateur de FD — Comment Estimer la Valeur de Maturité d’un Dépôt à Terme en Inde",
+      "paragraphs": [
+        "Un épargnant avisé utilise un calculateur de FD (Fixed Deposit) pour connaître avec précision la valeur de maturité de son dépôt à terme et transformer un placement bloqué en chiffres clairs et fiables.",
+        "Les Fixed Deposits (FDs) sont des investissements à montant unique, placés pour une durée déterminée et assortis d’un taux d’intérêt fixe — parfois aussi court que 7 jours, et pouvant aller jusqu’à 10 ans ou plus.",
+        "Un calculateur de FD convertit instantanément votre capital, votre durée et votre taux d’intérêt en montant de maturité et en intérêts totaux, éliminant ainsi les approximations manuelles.",
+        "Il vous aide également à comparer les FDs à intérêt simple et ceux à intérêt composé, à tester différentes fréquences de capitalisation (annuelle, trimestrielle, mensuelle) et à mesurer l’impact des taux spéciaux applicables aux seniors.",
+        "Utilisez le calculateur avant d’investir afin de choisir la meilleure offre de banque/NBFC et de planifier précisément vos flux de trésorerie au moment de la maturité."
+      ]
+    },
+    "whatIsFDSection": {
+      "id": "what-is-fixed-deposit",
+      "heading": "Qu’est-ce qu’un Dépôt à Terme (Fixed Deposit) ? — Contexte du Calculateur de FD : Comprendre les Bases",
+      "paragraphs": [
+        "Un Fixed Deposit (FD) est un produit d’épargne prudent et à faible risque proposé par les banques et les NBFC, dans lequel vous déposez un montant pour une durée fixe en échange d’un taux d’intérêt garanti.",
+        "Contrairement aux comptes d’épargne, les taux d’intérêt des FD sont plus élevés, car l’argent est bloqué pendant toute la durée choisie ; un retrait anticipé entraîne généralement une pénalité.",
+        "Les FDs peuvent fonctionner à intérêt simple (l’intérêt est versé mais non capitalisé) ou à intérêt composé (l’intérêt est réinvesti et produit lui-même des intérêts), et peuvent inclure des catégories spécifiques — FD pour seniors, FD défiscalisant, flexi-FD ou sweep-in FD.",
+        "La fréquence de capitalisation (annuelle, semestrielle, trimestrielle, mensuelle) influence les rendements : plus la capitalisation est fréquente, plus le montant de maturité est élevé.",
+        "Utilisez un calculateur de FD pour comprendre comment le capital, le taux, la durée et la capitalisation se combinent pour générer le montant final, afin de choisir le type de FD le mieux adapté à votre objectif financier."
+      ]
+    },
+    "whyUseFDSection": {
+      "id": "why-use-fd-calculator",
+      "heading": "Pourquoi utiliser un Calculateur de FD ? — Les Avantages d’un Calculateur de Dépôts à Terme",
+      "intro": "Un calculateur de FD pour planifier un Dépôt à Terme fait gagner du temps et évite les erreurs de calcul. Il permet de :",
+      "points": [
+        "Convertir instantanément capital, durée et taux d’intérêt en montant de maturité et intérêts exacts.",
+        "Comparer les FD à intérêt simple et ceux à intérêt composé ainsi que différentes fréquences de capitalisation.",
+        "Choisir entre les banques/NBFC en comparant les rendements effectifs.",
+        "Visualiser l’impact d’un changement de durée ou de taux afin de planifier votre liquidité (FD courts vs longs).",
+        "Tester différents scénarios : avantages seniors, pénalités de retrait anticipé ou stratégies de FD en paliers."
+      ],
+      "conclusion": "Au lieu de jongler avec des formules dans un tableur, le calculateur de FD fournit des projections précises et reproductibles, idéales pour faire correspondre vos besoins de liquidité à l’optimisation du rendement — particulièrement utile lorsque les taux varient d’une institution à l’autre."
+    },
+    "howItWorksFDSection": {
+      "id": "how-our-fd-calculator-works",
+      "heading": "Comment fonctionne notre Calculateur de FD — Logique de Calcul & Détail des Résultats",
+      "intro": "Notre calculateur de FD, qui modélise l’intérêt simple et l’intérêt composé, utilise des formules financières standard pour calculer le montant de maturité.",
+      "formulas": [
+        {
+          "type": "Formule d’intérêt simple",
+          "expression": "M = P + (P × r × t / 100)",
+          "explanation": "Utilisée pour les FD sans capitalisation, lorsque les intérêts sont versés régulièrement ou uniquement à la maturité sans réinvestissement."
+        },
+        {
+          "type": "Formule d’intérêt composé",
+          "expression": "M = P × (1 + r_period)^(n × t)",
+          "explanation": "Utilisée pour les FD où les intérêts sont réinvestis. Ici, r_period = r / (100 × n)."
+        }
+      ],
+      "steps": [
+        "(1) Le calculateur saisit le capital (P), le taux annuel (r), la durée (t) et la fréquence de capitalisation (n).",
+        "(2) Il convertit le taux annuel en taux par période : r_period = r / (100 × n).",
+        "(3) Il calcule la valeur future en utilisant la formule adaptée (intérêt simple ou composé).",
+        "(4) Il affiche l’intérêt total (M − P) et le rendement annuel effectif (AER)."
+      ],
+      "extra": "Le calculateur modélise également les pénalités de retrait anticipé et les taux majorés pour les seniors si vous les activez, offrant une transparence complète sur les hypothèses et le résultat final."
+    },
+    "fdInputChecklistSection": {
+      "id": "fd-calculator-input-checklist",
+      "heading": "Les informations nécessaires — Liste des Données à Fournir au Calculateur de FD",
+      "intro": "Pour obtenir des résultats précis avec un calculateur de FD pour Dépôts à Terme, préparez :",
+      "steps": [
+        "Le capital (P) — la somme que vous souhaitez déposer.",
+        "Le taux d’intérêt annuel (r%) — proposé par la banque/NBFC.",
+        "La durée (t) — en années, mois ou jours.",
+        "La fréquence de capitalisation (n) — annuelle (1), semestrielle (2), trimestrielle (4), mensuelle (12) ou quotidienne.",
+        "Le type d’intérêt — simple ou composé.",
+        "L’option de paiement — cumulatif (réinvestissement des intérêts) ou versement périodique (mensuel/trimestriel).",
+        "Options spéciales (facultatif) — taux senior, FD défiscalisant, retrait anticipé prévu.",
+        "Hypothèses de pénalités (facultatif) — saisissez le taux ou la durée de pénalité si vous envisagez un retrait avant maturité."
+      ],
+      "conclusion": "Saisissez ces éléments dans cet ordre pour obtenir un calcul précis de la maturité et un détail complet des intérêts."
+    },
+    "fdFormulaSection": {
+      "id": "fd-calculation-formula",
+      "heading": "Formules de calcul (explication simple) — Les Formules FD Essentielles à Connaître",
+      "intro": "Les calculs FD reposent sur deux formules principales :",
+      "formulas": [
+        {
+          "title": "FD à intérêt simple :",
+          "expression": "M = P + (P × r × t / 100)",
+          "explanation": "M = montant à maturité, P = capital, r = taux annuel (%), t = durée en années."
+        },
+        {
+          "title": "FD à intérêt composé (capitalisation générale) :",
+          "steps": [
+            "Taux périodique : r_period = r / (100 × n), où n = nombre de capitalisations par an.",
+            "Nombre total de périodes : m = n × t.",
+            "M = P × (1 + r_period)^m."
+          ]
+        },
+        {
+          "title": "Taux Effectif Annuel (AER) :",
+          "expression": "AER = (1 + r/n)^n − 1 (exprimé en %)."
+        },
+        {
+          "title": "Intérêt total généré :",
+          "expression": "Intérêt = M − P."
+        }
+      ],
+      "conclusion": "Ces formules montrent comment les intérêts restent séparés (intérêt simple) ou se capitalisent (intérêt composé), et comment une capitalisation plus fréquente augmente les rendements effectifs."
+    },
+    "fdStepByStepSection": {
+      "id": "step-by-step-using-fd-calculator",
+      "heading": "Étape par étape : Utiliser le Calculateur de FD — Procédure Ordonnée pour Calculer la Maturité d’un Dépôt à Terme",
+      "intro": "Suivez ces étapes pour utiliser notre Calculateur de FD et déterminer la maturité de votre Dépôt à Terme :",
+      "steps": [
+        "Saisissez le capital (P) — le montant que vous souhaitez déposer.",
+        "Indiquez le taux annuel (r%) proposé par la banque/NBFC.",
+        "Choisissez la durée (t) en années (ou entrez mois/jours).",
+        "Sélectionnez la fréquence de capitalisation (n) : annuelle (1), semestrielle (2), trimestrielle (4), mensuelle (12) ou quotidienne (365).",
+        "Choisissez le type d’intérêt : cumulatif (capitalisé) ou versement périodique.",
+        "Ajoutez les options spéciales : taux senior, FD défiscalisant ou hypothèses de pénalités en cas de retrait anticipé.",
+        "Cliquez sur Calculer pour obtenir M (montant à maturité), le total des intérêts, les versements périodiques (si applicable) et le rendement annuel effectif (AER).",
+        "Comparez les résultats entre les différentes durées ou fréquences de capitalisation pour choisir le meilleur FD."
+      ],
+      "conclusion": "Ce processus structuré garantit des projections précises et vous aide à sélectionner le Dépôt à Terme le plus avantageux pour vos objectifs financiers."
+    },
+    "fdExampleWalkthroughSection": {
+      "id": "fd-calculator-example-walkthrough",
+      "heading": "Exemple illustratif — Démonstration du Calculateur de FD avec Calculs Étape par Étape",
+      "intro": "Exemple : dépôt P = ₹100 000 pour t = 5 ans à r = 10 % par an.",
+      "examples": [
+        {
+          "type": "FD à intérêt simple",
+          "steps": [
+            "Intérêt = P × r × t / 100 = 100 000 × 10 × 5 / 100",
+            "D'abord calculer 10 × 5 = 50",
+            "Puis 100 000 × 50 = 5 000 000",
+            "Diviser par 100 → 5 000 000 / 100 = 50 000",
+            "M = P + Intérêt = 100 000 + 50 000 = ₹150 000"
+          ]
+        },
+        {
+          "type": "FD à intérêt composé (capitalisation annuelle)",
+          "steps": [
+            "Calculer (1 + r/100)^t = (1 + 0.10)^5",
+            "1.10^2 = 1.21 ; 1.10^3 = 1.331 ; 1.10^4 = 1.4641 ; 1.10^5 = 1.61051",
+            "M = 100 000 × 1.61051 = ₹161 051"
+          ],
+          "note": "L’intérêt composé donne une maturité plus élevée, car les intérêts génèrent eux-mêmes des intérêts."
+        }
+      ]
+    },
+    "fdTypesSection": {
+      "id": "types-of-fixed-deposits",
+      "heading": "Types de Dépôts à Terme et Caractéristiques — Guide du Calculateur FD sur les Variantes de FD",
+      "intro": "Connaissez chaque type de FD avant d’investir ; le Calculateur de FD peut modéliser la plupart d’entre eux :",
+      "types": [
+        {
+          "title": "FD Régulier (cumulatif)",
+          "description": "Les intérêts se capitalisent ; idéal pour faire croître son capital."
+        },
+        {
+          "title": "FD Régulier (versement périodique)",
+          "description": "Les intérêts sont versés mensuellement/trimestriellement ; utile pour générer un revenu."
+        },
+        {
+          "title": "FD Senior Citizen",
+          "description": "Taux plus élevés ; indiquez le taux majoré dans le calculateur."
+        },
+        {
+          "title": "FD Défiscalisant",
+          "description": "Blocage de 5 ans avec avantages fiscaux selon les règles applicables."
+        },
+        {
+          "title": "FD Flexi / Sweep-in",
+          "description": "Lie le compte d’épargne et le FD pour plus de liquidité ; le calculateur peut afficher des retraits partiels."
+        },
+        {
+          "title": "FD Résident/NRI",
+          "description": "Exige une documentation spécifique et parfois des taux différents."
+        },
+        {
+          "title": "FD d’Entreprise / Non-Rachetable",
+          "description": "Peut offrir des taux plus élevés ; vérifiez la solvabilité de l’émetteur."
+        }
+      ],
+      "conclusion": "Sélectionnez le type de FD dans le calculateur afin qu’il applique le bon taux, la bonne durée et les règles de retrait appropriées."
+    },
+    "seniorRatesSection": {
+      "id": "senior-citizens-special-fd-rates",
+      "heading": "Taux spéciaux pour seniors — Comment Modéliser les Taux Senior et Promotionnels",
+      "intro": "Les seniors bénéficient souvent d’un taux d’intérêt majoré (un léger bonus ajouté au taux standard). Suivez les étapes ci-dessous pour modéliser ce taux senior dans le Calculateur de FD :",
+      "steps": [
+        "Identifiez le taux de base r_base du FD et la majoration senior annoncée Δr.",
+        "Définissez r = r_base + Δr dans le Calculateur de FD.",
+        "Appliquez ensuite la formule composée M = P × (1 + r/n)^(n×t) pour visualiser la nouvelle maturité."
+      ],
+      "example": {
+        "title": "Exemple",
+        "body": "Si le taux de base est de 7,0 % et le bonus senior de 0,5 %, alors r = 7,5 %. Pour P = ₹200 000, t = 3 ans et une capitalisation annuelle : calculez (1,075)^3 puis multipliez par ₹200 000 pour obtenir M. Le calculateur compare instantanément le scénario classique vs senior afin que les retraités choisissent le meilleur rendement."
+      },
+      "conclusion": "Utilisez le calculateur pour comparer les deux scénarios — taux standard et taux senior — afin de mesurer le bénéfice réel. Même un petit bonus de taux peut produire un gain significatif sur plusieurs années grâce à la capitalisation."
+    },
+    "withdrawalsPrematureTaxSection": {
+      "id": "withdrawals-premature-closure-and-tax-implications",
+      "heading": "Retraits, clôture anticipée et fiscalité — Hypothèses du Calculateur FD & Ajustements",
+      "intro": "Lors de la modélisation d’un FD, intégrez les événements réels possibles — retraits, pénalités et fiscalité — pour obtenir des projections fiables :",
+      "points": [
+        "Pénalité de clôture anticipée : de nombreuses banques appliquent une réduction de taux (ex. : 0,5 % à 1,0 %) ou n’accordent aucun intérêt pendant une période initiale. Dans le calculateur, diminuez r ou appliquez la pénalité pour modéliser une sortie anticipée.",
+        "Retraits partiels / FDs flexibles : certains FDs flexi permettent des retraits ; ajustez alors le capital restant et recalculez la capitalisation.",
+        "Fiscalité : les intérêts des FDs sont imposables selon votre tranche d’imposition ; un TDS peut s’appliquer au-delà d’un seuil. Le calculateur fournit l’intérêt brut ; pour le rendement net, appliquez votre taux marginal à Intérêt = M − P."
+      ],
+      "example": {
+        "title": "Exemple d’ajustement (après impôts)",
+        "body": "Si l’intérêt brut = ₹50 000 et votre tranche d’imposition est de 30 %, l’intérêt net ≈ ₹35 000 (50 000 × (1 − 0,30)). Pour une clôture anticipée avec pénalité de 0,75 %, réduisez r de 0,75 point lors du calcul de M."
+      },
+      "note": "Vérifiez toujours les règles de pénalité et les lois fiscales en vigueur. Le calculateur fournit des projections, et non un conseil fiscal.",
+      "conclusion": "Modélisez clairement retraits, pénalités et fiscalité pour obtenir des estimations réalistes de la maturité et du rendement net après impôts."
+    },
+    "fdBenefitsSection": {
+      "id": "benefits-of-using-fd-calculator",
+      "heading": "Avantages d’un Calculateur FD en ligne — Bénéfices Clairs & Aide à la Décision",
+      "intro": "Un Calculateur de FD pour planifier vos Dépôts à Terme apporte rapidité, précision et visibilité :",
+      "points": [
+        {
+          "title": "Précision",
+          "description": "Estime exactement la maturité pour les scénarios à intérêt simple ou composé."
+        },
+        {
+          "title": "Comparaison",
+          "description": "Permet d’évaluer les taux et fréquences de capitalisation entre différentes banques et NBFC."
+        },
+        {
+          "title": "Tests de scénarios",
+          "description": "Analyse des taux seniors, pénalités de clôture anticipée et stratégies de FD échelonnés."
+        },
+        {
+          "title": "Planification des flux de trésorerie",
+          "description": "Projette les paiements périodiques ou les montants globaux à maturité."
+        },
+        {
+          "title": "Aide à la planification fiscale",
+          "description": "Affiche l’intérêt brut pour vous permettre de calculer votre rendement net après impôts."
+        }
+      ],
+      "conclusion": "Le calculateur facilite la construction de stratégies FD (ladders), la comparaison des rendements effectifs et l’alignement des dépôts avec vos futurs besoins financiers. Il élimine les erreurs de calcul et vous aide à choisir le meilleur FD en toute confiance."
+    }
+  }
+}
