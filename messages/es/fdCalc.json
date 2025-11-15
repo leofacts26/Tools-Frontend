@@ -1,0 +1,248 @@
+{
+  "seo": {
+    "title": "Calculadora de FD — Calcula el Interés y el Monto de Vencimiento de tu Depósito a Plazo",
+    "description": "Utiliza nuestra calculadora de Depósitos a Plazo (FD) para estimar el monto de vencimiento y los intereses generados. Compara plazos, tasas de interés y opciones de capitalización para planificar mejor tus inversiones.",
+    "slug": "tools/finance/fd-calculator",
+    "image": "/images/og/fdcalc-en.png",
+    "isArticle": true,
+    "publishDate": "2024-01-01",
+    "modifiedDate": "2025-01-01",
+    "author": "Tu Sitio"
+  },
+  "site": {
+    "heading": "Calculadora de Depósitos a Plazo (FD)"
+  },
+  "form": {
+    "principal": "Inversión total",
+    "interestRate": "Tasa de interés (anual)",
+    "timePeriod": "Periodo de tiempo",
+    "interestType": "Tipo de interés"
+  },
+  "article": {
+    "intro": {
+      "heading": "Introducción a la Calculadora de FD — Cómo estimar el monto de vencimiento de tu Depósito a Plazo en India",
+      "paragraphs": [
+        "Un ahorrador inteligente utiliza una Calculadora de FD para conocer con precisión el monto de vencimiento de un Depósito a Plazo y convertir una inversión bloqueada en cifras claras y confiables.",
+        "Los Depósitos a Plazo (FD) son inversiones de suma fija con un periodo predeterminado que ofrecen una tasa de interés fija — desde tan solo 7 días hasta 10 años o más.",
+        "Una Calculadora de FD convierte instantáneamente tu capital, plazo y tasa de interés en el monto de vencimiento y el total de intereses generados, eliminando cálculos manuales o suposiciones.",
+        "También te ayuda a comparar depósitos con interés simple vs interés compuesto, probar diferentes frecuencias de capitalización (anual, trimestral, mensual) y visualizar cómo las tasas especiales para personas mayores cambian los resultados.",
+        "Usa la calculadora antes de invertir para elegir el mejor banco/NBFC y planificar con precisión tus flujos de efectivo al vencimiento."
+      ]
+    },
+    "whatIsFDSection": {
+      "id": "what-is-fixed-deposit",
+      "heading": "¿Qué es un Depósito a Plazo (FD)? — Contexto de la Calculadora de FD: Conceptos básicos del Depósito a Plazo",
+      "paragraphs": [
+        "Un Depósito a Plazo (FD) es un producto de ahorro conservador y de bajo riesgo ofrecido por bancos y NBFCs, donde depositas una cantidad fija durante un periodo determinado a cambio de una tasa de interés garantizada.",
+        "A diferencia de las cuentas de ahorro, las tasas de interés de los FD son más altas porque los fondos permanecen bloqueados durante el plazo elegido; los retiros anticipados suelen tener penalización.",
+        "Los FD pueden ser de interés simple (el interés no se capitaliza) o de interés compuesto (el interés se reinvierte y también genera interés), y pueden incluir categorías especiales: FD para personas mayores, FD con beneficios fiscales, flexi-FD y sweep-in FD.",
+        "La frecuencia de capitalización (anual, semestral, trimestral, mensual) influye en los rendimientos: a mayor frecuencia de composición, mayor será el monto final al vencimiento.",
+        "Utiliza una Calculadora de FD para entender cómo el capital, la tasa, el plazo y la capitalización se combinan para producir el pago final, de modo que puedas elegir el tipo de FD adecuado para tu objetivo financiero."
+      ]
+    },
+    "whyUseFDSection": {
+      "id": "why-use-fd-calculator",
+      "heading": "¿Por qué usar una Calculadora de FD? — Beneficios de una Calculadora de Depósitos a Plazo para elegir el mejor FD",
+      "intro": "Una Calculadora de FD para planificar Depósitos a Plazo ahorra tiempo y evita errores de cálculo. Te permite:",
+      "points": [
+        "Convertir capital, plazo y tasa de interés en montos exactos de vencimiento e interés al instante.",
+        "Comparar interés simple vs compuesto y diferentes frecuencias de capitalización.",
+        "Elegir entre bancos/NBFCs comparando los rendimientos efectivos.",
+        "Visualizar el impacto de cambios en el plazo o la tasa para planificar liquidez (FDs cortos vs largos).",
+        "Probar escenarios: tasas especiales para personas mayores, penalizaciones por retiro anticipado o estrategias escalonadas (laddering)."
+      ],
+      "conclusion": "En lugar de manejar fórmulas en una hoja de cálculo, la Calculadora de FD ofrece proyecciones precisas y repetibles que te ayudan a equilibrar liquidez y rendimiento — especialmente útil cuando las tasas varían entre instituciones."
+    },
+    "howItWorksFDSection": {
+      "id": "how-our-fd-calculator-works",
+      "heading": "Cómo funciona nuestra Calculadora de FD — Lógica de cálculo y desglose de resultados",
+      "intro": "Nuestra Calculadora de FD, que modela interés simple y compuesto, utiliza fórmulas financieras estándar para calcular el monto de vencimiento.",
+      "formulas": [
+        {
+          "type": "Fórmula de Interés Simple",
+          "expression": "M = P + (P × r × t / 100)",
+          "explanation": "Usada para depósitos sin capitalización, donde el interés se paga periódicamente o al vencimiento sin reinversión."
+        },
+        {
+          "type": "Fórmula de Interés Compuesto",
+          "expression": "M = P × (1 + r_period)^(n × t)",
+          "explanation": "Usada en FDs donde el interés se reinvierte. Aquí, r_period = r / (100 × n)."
+        }
+      ],
+      "steps": [
+        "(1) Recibe el capital (P), la tasa anual (r), el plazo (t) y la frecuencia de capitalización (n).",
+        "(2) Convierte r en la tasa por periodo: r_period = r / (100 × n).",
+        "(3) Calcula el valor futuro usando la fórmula adecuada según el tipo de FD (simple o compuesto).",
+        "(4) Muestra el interés total (M − P) y el rendimiento anual efectivo (AER)."
+      ],
+      "extra": "También modela penalizaciones por retiro anticipado y tasas especiales para personas mayores si las ingresas, ofreciendo un desglose claro de los supuestos y del resultado final."
+    },
+    "fdInputChecklistSection": {
+      "id": "fd-calculator-input-checklist",
+      "heading": "Qué datos necesitas — Lista de comprobación para la Calculadora de FD",
+      "intro": "Para obtener resultados precisos con una Calculadora de Depósitos a Plazo (FD), prepara lo siguiente:",
+      "steps": [
+        "Capital (P) — la suma total que planeas depositar.",
+        "Tasa de interés anual (r%) — la que ofrece el banco/NBFC.",
+        "Plazo (t) — duración en años, meses o días.",
+        "Frecuencia de capitalización (n) — anual (1), semestral (2), trimestral (4), mensual (12) o diaria.",
+        "Tipo de interés — interés simple o interés compuesto.",
+        "Opción de pago — acumulativo (reinvierte intereses) o pago periódico (mensual/trimestral).",
+        "Indicadores especiales (opcional) — tasa para personas mayores, FD con beneficios fiscales, plan de retiro anticipado.",
+        "Supuestos de penalización (opcional) — si prevés un retiro anticipado, ingresa la penalización/tasa y duración."
+      ],
+      "conclusion": "Introduce estos datos en el orden indicado para obtener un desglose preciso de vencimiento e intereses."
+    },
+    "fdFormulaSection": {
+      "id": "fd-calculation-formula",
+      "heading": "Fórmulas de cálculo (explicación simple) — Fórmulas esenciales del FD que debes conocer",
+      "intro": "Los cálculos de los Depósitos a Plazo utilizan dos fórmulas principales:",
+      "formulas": [
+        {
+          "title": "Depósitos a plazo con interés simple:",
+          "expression": "M = P + (P × r × t / 100)",
+          "explanation": "M = monto al vencimiento, P = capital, r = tasa anual (%), t = plazo en años."
+        },
+        {
+          "title": "Depósitos a plazo con interés compuesto (capitalización general):",
+          "steps": [
+            "Tasa periódica: r_period = r / (100 × n), donde n = número de capitalizaciones por año.",
+            "Número total de periodos: m = n × t.",
+            "M = P × (1 + r_period)^m."
+          ]
+        },
+        {
+          "title": "Tasa Efectiva Anual (EAR o AER):",
+          "expression": "AER = (1 + r/n)^n − 1 (expresado en %)."
+        },
+        {
+          "title": "Interés total generado:",
+          "expression": "Interés = M − P."
+        }
+      ],
+      "conclusion": "Estas fórmulas explican cómo el interés puede mantenerse separado (interés simple) o capitalizarse (interés compuesto), y cómo una mayor frecuencia de capitalización aumenta los rendimientos efectivos."
+    },
+    "fdStepByStepSection": {
+      "id": "step-by-step-using-fd-calculator",
+      "heading": "Paso a paso: Cómo usar la Calculadora de FD — Pasos ordenados para calcular el monto de vencimiento",
+      "intro": "Sigue estos pasos para utilizar nuestra Calculadora de Depósitos a Plazo (FD):",
+      "steps": [
+        "Ingresa el capital (P): la cantidad que vas a depositar.",
+        "Introduce la tasa anual (r%) ofrecida por el banco/NBFC.",
+        "Selecciona el plazo (t) en años (o ingresa meses/días).",
+        "Elige la frecuencia de capitalización (n): anual (1), semestral (2), trimestral (4), mensual (12) o diaria (365).",
+        "Selecciona el tipo de interés: acumulativo (compuesto) o de pago periódico.",
+        "Añade opciones especiales: tasa para personas mayores, etiqueta de FD fiscal, o suposiciones de penalización por retiro anticipado.",
+        "Haz clic en Calcular para obtener M (monto de vencimiento), interés total, pagos por periodo (si aplica) y AER.",
+        "Compara resultados entre distintos plazos o frecuencias de capitalización para elegir el mejor producto FD."
+      ],
+      "conclusion": "Este proceso estructurado garantiza proyecciones precisas y te ayuda a seleccionar el plan de FD más rentable según tus objetivos financieros."
+    },
+    "fdExampleWalkthroughSection": {
+      "id": "fd-calculator-example-walkthrough",
+      "heading": "Ejemplo ilustrativo — Explicación paso a paso con la Calculadora de FD",
+      "intro": "Ejemplo: depósito P = ₹100,000 durante t = 5 años con r = 10% anual.",
+      "examples": [
+        {
+          "type": "FD con interés simple",
+          "steps": [
+            "Interés = P × r × t / 100 = 100,000 × 10 × 5 / 100",
+            "Primero calcula 10 × 5 = 50",
+            "Luego 100,000 × 50 = 5,000,000",
+            "Divide entre 100 → 5,000,000 / 100 = 50,000",
+            "M = P + Interés = 100,000 + 50,000 = ₹150,000"
+          ]
+        },
+        {
+          "type": "FD con interés compuesto (capitalización anual)",
+          "steps": [
+            "Calcula (1 + r/100)^t = (1 + 0.10)^5",
+            "1.10^2 = 1.21; 1.10^3 = 1.331; 1.10^4 = 1.4641; 1.10^5 = 1.61051",
+            "M = 100,000 × 1.61051 = ₹161,051"
+          ],
+          "note": "El interés compuesto genera un monto mayor porque el interés también produce interés."
+        }
+      ]
+    },
+    "fdTypesSection": {
+      "id": "types-of-fixed-deposits",
+      "heading": "Tipos de Depósitos a Plazo y sus características — Guía de la Calculadora FD sobre variantes de FD",
+      "intro": "Conoce cada tipo de FD antes de invertir; la Calculadora de FD puede modelar la mayoría:",
+      "types": [
+        {
+          "title": "FD Regular (acumulativo)",
+          "description": "El interés se capitaliza; ideal para acumular patrimonio."
+        },
+        {
+          "title": "FD Regular (pago periódico)",
+          "description": "El interés se paga mensualmente o trimestralmente; útil para generar ingresos."
+        },
+        {
+          "title": "FD para Personas Mayores",
+          "description": "Ofrece tasas más altas; introduce la tasa incrementada en la calculadora."
+        },
+        {
+          "title": "FD con Beneficio Fiscal",
+          "description": "Bloqueo de 5 años con beneficios fiscales bajo reglas específicas."
+        },
+        {
+          "title": "Flexi FD / Sweep-in",
+          "description": "Vincula la cuenta de ahorros con el FD para mayor liquidez; la calculadora puede mostrar retiros parciales."
+        },
+        {
+          "title": "FD para Residentes/NRI",
+          "description": "Requiere documentación distinta y a veces tasas diferentes."
+        },
+        {
+          "title": "FD Corporativo / No Rescatable",
+          "description": "Puede ofrecer tasas más altas; revisa siempre la solvencia del emisor."
+        }
+      ],
+      "conclusion": "Selecciona el tipo de FD en la calculadora para aplicar correctamente la tasa, el plazo y las reglas de retiro."
+    },
+    "seniorRatesSection": {
+      "id": "senior-citizens-special-fd-rates",
+      "heading": "Personas mayores y tasas especiales de FD — Cómo modelar las tasas especiales y promocionales",
+      "intro": "Las personas mayores suelen recibir una tasa adicional (un pequeño aumento sobre la tasa base). Sigue estos pasos para modelarlo en la Calculadora de FD:",
+      "steps": [
+        "Identifica la tasa base r_base del FD y el incremento anunciado para personas mayores Δr.",
+        "Configura r = r_base + Δr en la Calculadora de FD.",
+        "Ejecuta la fórmula compuesta M = P × (1 + r/n)^(n×t) para ver el nuevo monto de vencimiento."
+      ],
+      "example": {
+        "title": "Ejemplo",
+        "body": "Si la tasa base = 7.0% y el incremento para personas mayores = 0.5%, entonces r = 7.5%. Para P = ₹200,000, t = 3 años y capitalización anual: calcula (1.075)^3 y multiplícalo por ₹200,000 para obtener M. La calculadora puede comparar al instante el escenario base vs el escenario para personas mayores, ayudando a los jubilados a elegir el mayor rendimiento efectivo."
+      },
+      "conclusion": "Utiliza la calculadora para comparar el escenario con tasa base y el escenario con tasa para personas mayores para ver el beneficio incremental — incluso un pequeño aumento de tasa puede convertirse en una diferencia significativa en plazos de varios años."
+    },
+    "withdrawalsPrematureTaxSection": {
+      "id": "withdrawals-premature-closure-and-tax-implications",
+      "heading": "Retiros, cierre anticipado e implicaciones fiscales — Supuestos y ajustes en la Calculadora de FD",
+      "intro": "Al modelar FDs, incluye escenarios reales de salida y efectos fiscales para obtener proyecciones que reflejen resultados probables:",
+      "points": [
+        "Penalización por cierre anticipado: muchos bancos deducen una penalización (por ejemplo, 0.5%–1.0% sobre la tasa) o no pagan intereses durante el periodo inicial. En la calculadora, reduce r o resta la penalización para modelar la salida anticipada.",
+        "Retiros parciales / FDs flexibles: algunos flexi-FDs permiten retiros; ajusta el capital restante y vuelve a calcular la capitalización pendiente.",
+        "Fiscalidad: los intereses de FDs están sujetos a impuestos según tu tramo impositivo; puede aplicarse TDS si superas los umbrales. La Calculadora FD muestra el interés bruto; para estimar el rendimiento neto, aplica tu tasa impositiva marginal al interés = M − P."
+      ],
+      "example": {
+        "title": "Ejemplo de ajuste (después de impuestos)",
+        "body": "Si el interés bruto = ₹50,000 y el impuesto marginal = 30%, el interés neto ≈ ₹35,000 (50,000 × (1 − 0.30)). Para cierre anticipado, si la penalización es 0.75% sobre la tasa, reduce r en 0.75 puntos porcentuales al calcular M."
+      },
+      "note": "Verifica siempre las reglas actuales de penalización del banco y la normativa fiscal. La calculadora proporciona proyecciones, no asesoramiento fiscal.",
+      "conclusion": "Modela explícitamente los retiros, penalizaciones e impuestos en los datos de entrada para generar cifras realistas de vencimiento y rendimiento neto."
+    },
+    "fdBenefitsSection": {
+      "id": "benefits-of-using-fd-calculator",
+      "heading": "Beneficios de usar una Calculadora de FD en línea — Ventajas claras y soporte para decisiones",
+      "intro": "Una Calculadora de FD para planificación de Depósitos a Plazo aporta claridad y rapidez:",
+      "points": [
+        "Estimaciones precisas de vencimiento tanto en escenarios de interés simple como compuesto.",
+        "Herramienta de comparación para evaluar tasas de bancos/NBFC y distintas frecuencias de capitalización.",
+        "Pruebas de escenarios para tasas de personas mayores, penalizaciones por cierre anticipado y estrategias escalonadas (FD ladder).",
+        "Planificación de flujo de efectivo al proyectar pagos periódicos o montos globales al vencimiento.",
+        "Ayuda para planificación fiscal al mostrar el interés bruto y permitir calcular el rendimiento neto."
+      ],
+      "conclusion": "Utiliza la calculadora para crear estrategias de FD escalonadas, comparar rendimientos efectivos anuales y alinear tus depósitos con gastos futuros u objetivos de inversión. Reduce la complejidad del cálculo y te ayuda a elegir el producto FD más adecuado con seguridad."
+    }
+  }
+}

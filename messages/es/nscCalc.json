@@ -1,0 +1,130 @@
+{
+  "seo": {
+    "title": "Calculadora NSC — Calcula en Línea los Intereses y el Valor de Vencimiento del National Savings Certificate",
+    "description": "Utiliza nuestra Calculadora NSC gratuita para calcular el valor de vencimiento y los intereses totales generados por tu inversión en National Savings Certificate. Ingresa el monto, el plazo y la tasa de interés para obtener resultados precisos al instante.",
+    "slug": "tools/finance/nsc-calculator",
+    "image": "/images/og/nsc-calculator-en.png",
+    "isArticle": true,
+    "publishDate": "2024-01-01",
+    "modifiedDate": "2025-10-18",
+    "author": "Your Site"
+  },
+  "site": {
+    "heading": "Calculadora NSC (National Savings Certificate)"
+  },
+  "form": {
+    "principal": "Monto invertido",
+    "interestRate": "Tasa de interés (anual)",
+    "timePeriod": "Periodo de tiempo",
+    "compoundingFrequency": "Frecuencia de capitalización"
+  },
+  "article": {
+    "intro": {
+      "heading": "Por qué usar una Calculadora NSC",
+      "paragraphs": [
+        "El National Savings Certificate (NSC) es un producto de ahorro seguro, respaldado por el gobierno, ampliamente utilizado por los inversionistas en India para la preservación del capital y beneficios fiscales.",
+        "Como los intereses del NSC se capitalizan anualmente y se pagan al vencimiento, el monto final depende tanto del capital invertido como de la tasa compuesta aplicable — una tasa que el gobierno puede revisar trimestralmente.",
+        "Una Calculadora NSC elimina los cálculos manuales: solo introduce el capital y la tasa de interés aplicable y la herramienta mostrará el monto de vencimiento, el rendimiento anual efectivo y los intereses totales generados durante los 5 años.",
+        "Esto te permite comparar los rendimientos del NSC con otros instrumentos seguros (PPF, Depósitos a Plazo del Correo), planificar las deducciones bajo la Sección 80C y decidir la cantidad adecuada a invertir según tus objetivos financieros."
+      ]
+    },
+    "nsccalculator": {
+      "heading": "Calculadora NSC (National Savings Certificate)",
+      "subHeading": "Ejemplo NSC: plazo de 5 años. Elige la frecuencia de capitalización (Anual / Semestral)."
+    },
+    "whatIs": {
+      "heading": "¿Qué es el NSC? — Explicación del National Savings Certificate",
+      "paragraphs": [
+        "El National Savings Certificate (NSC) es un esquema de ahorro de renta fija a largo plazo ofrecido en las oficinas de correos de toda India y respaldado por el Gobierno de India.",
+        "El NSC tiene un periodo de bloqueo estándar de cinco años y paga una tasa de interés fija que se capitaliza anualmente y se acredita al vencimiento.",
+        "Las inversiones en NSC califican para deducción bajo la Sección 80C de la Ley del Impuesto sobre la Renta (hasta el límite total de ₹1.5 lakh), lo que lo convierte en una opción atractiva para contribuyentes que buscan instrumentos seguros y fiscalmente eficientes.",
+        "La inversión mínima es baja — se puede comenzar con montos pequeños — y no existe un límite máximo formal, aunque las ventajas prácticas están vinculadas al límite de deducción 80C.",
+        "Al estar garantizado por el gobierno, el NSC suele ser elegido por ahorradores conservadores que priorizan la seguridad del capital y rendimientos predecibles."
+      ]
+    },
+    "howItHelps": {
+      "heading": "¿Cómo puede ayudarte una Calculadora NSC? — Usos Prácticos",
+      "intro": "Una Calculadora NSC te ofrece claridad instantánea sobre el monto esperado al vencimiento sin necesidad de cálculos manuales. Úsala para:",
+      "points": [
+        "Calcular el monto de vencimiento para una inversión única en NSC usando la tasa de interés vigente.",
+        "Ver los intereses totales generados durante los 5 años de bloqueo y el rendimiento anual efectivo.",
+        "Comparar los rendimientos del NSC con otros instrumentos de ahorro seguro (PPF, FDs, esquemas Sukanya).",
+        "Planificar tus asignaciones bajo la Sección 80C — saber cuánto capital necesitas invertir para aprovechar las deducciones fiscales de forma eficiente.",
+        "Realizar escenarios de “qué pasaría si” con diferentes tasas (recordando que el gobierno revisa trimestralmente las tasas de pequeños ahorros) para decidir el mejor momento y el monto ideal para invertir."
+      ],
+      "note": "La herramienta es rápida, precisa y elimina errores de cálculo en tu planificación."
+    },
+    "formula": {
+      "heading": "Cómo funciona la Calculadora NSC — Lógica, Fórmula y Supuestos",
+      "intro": "La Calculadora NSC aplica la capitalización anual a una inversión de monto único durante el plazo estándar del NSC (generalmente 5 años). La fórmula central utilizada es la fórmula clásica de interés compuesto:",
+      "methods": [
+        {
+          "title": "Fórmula (capitalización anual):",
+          "formulas": [
+            "Monto de Vencimiento (A) = P × (1 + r)^n"
+          ]
+        }
+      ],
+      "definitions": [
+        "P = Capital invertido (₹)",
+        "r = Tasa de interés anual en forma decimal (ejemplo: 7.7% → 0.077)",
+        "n = Número de años (generalmente 5 para NSC)"
+      ],
+      "note": "Interés ganado = A − P. La calculadora también muestra el crecimiento anual, el interés total y la tasa anual efectiva, indicando claramente los supuestos como la tasa y el plazo, ya que las tasas del NSC pueden cambiar trimestralmente."
+    },
+    "inputs": {
+      "heading": "Qué información necesitas — Lista ordenada para usar la Calculadora NSC",
+      "intro": "Para utilizar la Calculadora NSC necesitarás los siguientes datos (ingrésalos en este orden para obtener los mejores resultados):",
+      "list": [
+        "Monto de inversión (P) — suma única que invertirás en NSC.",
+        "Tasa de interés (R%) — la tasa vigente del NSC al momento de invertir (el gobierno la revisa trimestralmente).",
+        "Plazo (n) — normalmente 5 años para el NSC estándar; algunos instrumentos antiguos tenían plazos diferentes.",
+        "Fecha de inicio (opcional) — para mostrar la fecha exacta de vencimiento e ilustrar la capitalización año por año.",
+        "Indicador fiscal (opcional) — si planeas reclamar la deducción bajo la Sección 80C."
+      ],
+      "note": "Al ingresar estos datos, la calculadora mostrará el monto de vencimiento, el interés total, el rendimiento anual efectivo y un pequeño calendario año por año para visualizar el crecimiento."
+    },
+    "calculation": {
+      "heading": "Fórmula de cálculo (explicación sencilla) — Fórmula paso a paso y ejemplo",
+      "intro": "El NSC utiliza capitalización anual, por lo que los cálculos son directos:",
+      "steps": [
+        "Convertir la tasa de interés a decimal: r = R / 100.",
+        "Usar la fórmula de interés compuesto: A = P × (1 + r)^n.",
+        "Calcular el interés generado: Interés = A − P.",
+        "Para la tasa anual efectiva (AER): AER = (A / P)^{1/n} − 1 (expresada como porcentaje)."
+      ],
+      "example": "Ejemplo rápido (ilustrativo): si P = ₹10,00,000, R = 7.7% y n = 5, entonces r = 0.077 y A = 10,00,000 × (1.077)^5. La calculadora realizará este cálculo con precisión y mostrará tanto A como el interés total A − P. Usa la tabla año por año para ver cómo el interés reinvertido acelera el crecimiento."
+    },
+    "howToUse": {
+      "heading": "Cómo usar la Calculadora NSC — Guía paso a paso",
+      "intro": "Sigue estos pasos en orden para obtener una proyección confiable del NSC:",
+      "steps": [
+        "Introduce el monto único que deseas invertir en NSC (P).",
+        "Selecciona o introduce la tasa de interés vigente del NSC (R%) — revisa la tasa anunciada por el gobierno para el trimestre activo.",
+        "Confirma el plazo (valor predeterminado = 5 años).",
+        "Opcional: ingresa la fecha de compra para mostrar la fecha exacta de vencimiento.",
+        "Haz clic en Calcular. Resultados: monto de vencimiento (A), interés total, rendimiento anual efectivo y un calendario año por año."
+      ],
+      "note": "Compara con inversiones alternativas (PPF, FD) modificando la tasa o el plazo para elegir el mejor instrumento según tu objetivo. La calculadora es rápida y muestra claramente los supuestos, lo que te permite ahorrar e invertir con confianza."
+    },
+    "advantages": {
+      "heading": "Ventajas de usar una Calculadora NSC — Por qué es útil",
+      "intro": "Una Calculadora NSC ahorra tiempo, mejora la precisión y apoya la planificación fiscal:",
+      "points": [
+        "Cálculo instantáneo del monto de vencimiento: sin hojas de cálculo ni compuestos manuales.",
+        "Desglose preciso del interés: muestra exactamente cuánto del monto final es interés y cuánto es capital.",
+        "Ayuda para la planificación fiscal: permite estimar cuánto del límite 80C se utilizará con inversiones NSC.",
+        "Conciencia sobre tasas trimestrales: dado que las tasas de pequeños ahorros cambian periódicamente, la calculadora ayuda a probar distintos escenarios y elegir el mejor momento para invertir.",
+        "Comparación de bajo riesgo: compara los rendimientos garantizados del NSC con otras opciones conservadoras para ajustar liquidez y beneficios fiscales."
+      ],
+      "note": "Úsala antes de comprar un NSC en tu oficina de correos para tomar una decisión informada y fiscalmente eficiente."
+    },
+    "notes": {
+      "heading": "Notas y Advertencias",
+      "points": [
+        "Las tasas de interés del NSC son fijadas por el gobierno y pueden revisarse trimestralmente; confirma siempre la tasa vigente antes de finalizar tu inversión.",
+        "El interés generado por el NSC es imponible, pero el interés acumulado en los primeros años se considera reinvertido y puede calificar para deducción bajo la Sección 80C en el año en que se devenga (verifica las normas fiscales actuales correspondientes a tu año de declaración)."
+      ]
+    }
+  }
+}

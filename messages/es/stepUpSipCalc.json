@@ -1,0 +1,163 @@
+{
+  "seo": {
+    "title": "Calculadora Step Up SIP — Calcula Rendimientos Crecientes de SIP en Línea",
+    "description": "Utiliza nuestra Calculadora Step Up SIP gratuita para estimar los rendimientos de tu fondo mutuo cuando aumentas tu monto SIP cada año. Ingresa la inversión mensual, el porcentaje de incremento anual, la duración de la inversión y la tasa de retorno esperada para ver instantáneamente tu corpus total y las proyecciones de crecimiento.",
+    "slug": "tools/finance/step-up-sip-calculator",
+    "image": "/images/og/stepupsipcalc-en.png",
+    "isArticle": true,
+    "publishDate": "2024-01-01",
+    "modifiedDate": "2025-10-18",
+    "author": "GanakaHub"
+  },
+  "site": {
+    "heading": "Calculadora Step Up SIP"
+  },
+  "form": {
+    "monthlyInvestment": "Inversión mensual",
+    "annualStepUp": "Incremento anual",
+    "expectedReturnRate": "Tasa de rendimiento esperada (anual)",
+    "timePeriod": "Período"
+  },
+  "article": {
+    "site": {
+      "heading": "Calculadora Step-Up SIP",
+      "subHeading": "Contribuciones mensuales con un incremento anual. Las aportaciones se asumen al inicio de cada mes; los rendimientos se capitalizan mensualmente."
+    },
+    "intro": {
+      "heading": "Por Qué Usar una Calculadora Step Up SIP",
+      "paragraphs": [
+        "Una Calculadora Step Up SIP te ayuda a proyectar cómo un aumento automático anual en tus contribuciones SIP acelera la creación de riqueza.",
+        "A diferencia de un SIP regular donde el monto mensual permanece constante, un Step-Up SIP incrementa tu cuota por un porcentaje fijo cada año (por ejemplo, +10% anual).",
+        "Esto refleja el crecimiento real del salario y facilita alcanzar objetivos a largo plazo sin cambios drásticos en tu presupuesto inicial.",
+        "La calculadora convierte tu SIP mensual inicial, el porcentaje de incremento anual, el rendimiento esperado del fondo (CAGR) y el plazo en un valor claro de madurez, inversión total y ganancias totales.",
+        "Úsala para planificar inversiones basadas en objetivos (vivienda, educación de hijos, jubilación), decidir un monto SIP inicial cómodo y visualizar cómo pequeños aumentos anuales se convierten en una gran riqueza con el tiempo."
+      ]
+    },
+    "whatIs": {
+      "heading": "¿Qué es un Step Up SIP? — Contexto de la Calculadora Step Up SIP",
+      "paragraphs": [
+        "Un Step Up SIP (también llamado top-up SIP) es un plan de inversión sistemática donde tu contribución mensual aumenta en intervalos predeterminados—generalmente una vez al año—por un porcentaje o monto fijo.",
+        "Por ejemplo, puedes comenzar con ₹5,000/mes en el año 1, luego incrementar un 10% a ₹5,500/mes en el año 2 y continuar con la misma regla en los años siguientes.",
+        "La idea es alinear los ahorros con el aumento de ingresos: incrementos pequeños y graduales son más fáciles de mantener que un aumento grande de una sola vez.",
+        "A diferencia de una inversión de monto único, el Step-Up SIP conserva el beneficio del promedio del costo en rupias y agrega el poder de aportes crecientes.",
+        "Los fondos invertidos mediante Step Up SIP permanecen invertidos y se capitalizan al rendimiento del esquema, lo que convierte esta estrategia en una opción poderosa para objetivos a largo plazo.",
+        "Una Calculadora Step Up SIP modela este calendario escalonado de contribuciones y muestra el impacto acumulado en tu patrimonio final."
+      ]
+    },
+    "howItHelps": {
+      "heading": "¿Cómo puede ayudarte una Calculadora Step Up SIP? — Beneficios Prácticos",
+      "intro": "Una Calculadora Step Up SIP te brinda claridad accionable:",
+      "points": [
+        "Proyecta el corpus final con incrementos anuales planificados para saber si tu objetivo es alcanzable.",
+        "Determina el SIP inicial necesario hoy para llegar a una meta considerando los incrementos anuales.",
+        "Compara escenarios — diferentes porcentajes de incremento, plazos o rendimientos esperados — para elegir el plan más eficiente.",
+        "Visualiza inversión vs ganancias: observa cuánto proviene de tus aportaciones y cuánto de los rendimientos del mercado.",
+        "Planificación ajustada al presupuesto: elige un esquema de step-up que refleje el crecimiento esperado de tu salario para mantener aportes accesibles."
+      ],
+      "note": "En lugar de hojas de cálculo manuales o matemáticas complejas de series, la calculadora ofrece proyecciones instantáneas y precisas que guían una inversión disciplinada."
+    },
+    "formula": {
+      "heading": "Cómo funciona nuestra Calculadora Step Up SIP — Lógica, Fórmula y Supuestos",
+      "intro": "La calculadora trata cada año como un bloque donde las contribuciones mensuales permanecen constantes durante ese año pero aumentan por un factor (1 + g) cada año (g = tasa de incremento anual). Capitaliza las contribuciones mensuales al rendimiento anual asumido del fondo r (convertido en tasa mensual i = r/12). Matemáticamente, puedes expresar el valor futuro (FV) como la suma de los valores futuros de la anualidad de cada año:",
+      "methods": [
+        {
+          "title": "Fórmula (Valor Futuro Step-Up SIP):",
+          "formulas": [
+            "FV = ∑(j=0 a n−1) [ PMT × (1 + g)^j × ((1 + i)^(12 × (n − j)) − 1) / i ]"
+          ]
+        }
+      ],
+      "definitions": [
+        "PMT = Monto mensual inicial del SIP",
+        "g = Tasa de incremento anual (en decimal)",
+        "r = Rendimiento anual esperado (en decimal), i = r / 12",
+        "n = Total de años de inversión"
+      ],
+      "note": "La calculadora suma cada contribución anual (crecida por los incrementos) y la capitaliza durante el período restante. Muestra inversión total, valor final (FV) y el CAGR implícito. Supuestos como el momento del step-up, frecuencia de capitalización y tasa de retorno se presentan de forma transparente."
+    },
+    "inputs": {
+      "heading": "Qué datos necesitas — Lista ordenada para la Calculadora Step Up SIP",
+      "intro": "Para obtener proyecciones precisas, prepara estos datos en orden:",
+      "list": [
+        "SIP mensual inicial (PMT) — el monto con el que comenzarás a invertir.",
+        "Tasa de incremento anual (g%) — porcentaje que aumenta una vez por año.",
+        "Rendimiento anual esperado (r%) — suposición realista de CAGR para la categoría de fondo mutuo elegida.",
+        "Plazo (n) — total de años de inversión.",
+        "Momento de la contribución — mes de inicio y si el incremento se aplica al inicio o al final del año.",
+        "Opcional: top-ups puntuales o contribuciones del empleador.",
+        "Opcional: inflación u objetivo final (para calcular corpus ajustado a inflación o SIP necesario)."
+      ],
+      "note": "Ingresa estos datos y la calculadora generará el valor de madurez, la inversión total y los desgloses necesarios para que compares múltiples planes de forma rápida."
+    },
+    "calculation": {
+      "heading": "Fórmula de cálculo (explicación sencilla) — Fórmula paso a paso y vista simplificada",
+      "intro": "El valor futuro (FV) de un Step Up SIP es la suma de los valores futuros de las anualidades mensuales de cada año. Hay dos formas útiles de representarlo:",
+      "methods": [
+        {
+          "title": "1) Suma exacta (recomendada):",
+          "formulas": [
+            "Para j = 0 a n−1 (índice del año), el SIP mensual del año j = PMT × (1 + g)^j.",
+            "Las 12 contribuciones mensuales de cada año se capitalizan durante 12(n − j) meses a la tasa mensual i = r / 12:",
+            "FV = Σ_{j=0}^{n−1} [ PMT × (1 + g)^j × ((1 + i)^{12(n−j)} − 1) / i ]"
+          ]
+        },
+        {
+          "title": "2) Aproximación con crecimiento continuo (estimación rápida):",
+          "formulas": [
+            "Trata el step-up como una anualidad de crecimiento continuo para una estimación rápida; esto es más veloz pero menos exacto que la suma anterior.",
+            "Usa la sumatoria exacta en la calculadora para obtener precisión."
+          ]
+        }
+      ],
+      "definitions": [
+        "PMT = SIP mensual inicial",
+        "g = Tasa de incremento anual (decimal)",
+        "r = Rendimiento anual esperado (decimal)",
+        "i = Tasa mensual = r / 12",
+        "n = Total de años"
+      ],
+      "note": "La calculadora computa la sumatoria exacta numéricamente, por lo que no necesitas evaluar la serie manualmente."
+    },
+    "howToUse": {
+      "heading": "Paso a paso: Cómo usar la Calculadora Step Up SIP — Flujo ordenado del usuario",
+      "intro": "Sigue estos pasos para usar la Calculadora Step Up SIP de manera eficaz:",
+      "steps": [
+        "Ingresa el SIP mensual inicial (PMT).",
+        "Configura el porcentaje de incremento anual (g%). Ejemplo: 10% = 0.10.",
+        "Elige el rendimiento anual esperado (r%) según la categoría del fondo (equity, híbrido, deuda).",
+        "Selecciona el plazo de inversión (n años).",
+        "Define el momento del step-up (inicio de año o fin de año) y el mes de inicio.",
+        "Agrega aportes únicos o incrementos puntuales si corresponde.",
+        "Haz clic en Calcular para ver: inversión total, corpus proyectado (FV), ganancias totales, calendario de contribuciones por año y gráfico de crecimiento.",
+        "Ejecuta nuevos escenarios — cambia PMT, g o r para analizar alternativas y definir un plan sostenible. Usa los resultados para configurar step-ups automáticos con tu gestora de fondos o banco."
+      ],
+      "note": "Este flujo garantiza precisión y te ayuda a visualizar cómo los incrementos anuales mejoran el rendimiento de tu SIP a lo largo del tiempo."
+    },
+    "example": {
+      "heading": "Ejemplo ilustrativo — Ejemplo práctico de la Calculadora Step Up SIP",
+      "intro": "Aquí tienes un ejemplo de cálculo para demostrar cómo funciona la Calculadora Step Up SIP en la práctica:",
+      "steps": [
+        "Ejemplo: SIP inicial PMT = ₹5,000/mes, g = 10% de incremento anual, rendimiento esperado r = 12% anual, plazo n = 10 años.",
+        "Año 0 SIP mensual = ₹5,000; Año 1 = ₹5,500; Año 2 = ₹6,050; y así sucesivamente, aumentando 10% cada año.",
+        "La calculadora capitaliza las doce contribuciones mensuales de cada año a la tasa mensual i = 12% / 12 = 1%.",
+        "Luego suma los valores futuros de todas las contribuciones a través de los años para calcular el corpus final.",
+        "Los resultados muestran la inversión total (suma de todas las contribuciones mensuales), el corpus proyectado y las ganancias totales.",
+        "Puedes observar cómo incluso incrementos anuales pequeños aumentan significativamente el corpus final en comparación con un SIP plano.",
+        "La calculadora también proporciona un calendario detallado por año para ayudarte a visualizar el crecimiento de las contribuciones."
+      ],
+      "note": "Este ejemplo destaca el poder de la capitalización con incrementos constantes — un step-up anual del 10% puede generar una creación de riqueza significativamente mayor en horizontes largos de inversión."
+    },
+    "advantages": {
+      "heading": "Ventajas de usar una Calculadora Step Up SIP — Por qué es útil",
+      "intro": "Una Calculadora Step Up SIP ofrece ventajas prácticas:",
+      "points": [
+        "Planificación realista: refleja el crecimiento salarial y la inflación aumentando el SIP de forma progresiva.",
+        "Alineación con tus objetivos: ayuda a identificar el SIP inicial y la tasa de incremento necesarios para alcanzar tus metas.",
+        "Ajustado al presupuesto: permite elegir tasas de step-up que sigan siendo accesibles conforme aumenta el ingreso.",
+        "Pruebas de escenarios: compara los rendimientos de SIP plano vs SIP con incrementos para elegir el enfoque óptimo.",
+        "Listo para automatizar: una vez que conoces el calendario, puedes automatizar los incrementos con tu gestora de fondos o banco."
+      ],
+      "note": "La herramienta elimina cálculos complejos de anualidades y entrega cifras claras y accionables para que puedas comprometerte con un plan de inversión disciplinado y escalable."
+    }
+  }
+}

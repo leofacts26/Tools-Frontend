@@ -1,0 +1,142 @@
+{
+  "seo": {
+    "title": "Calculadora de Gratificación — Calcula tu Monto de Gratificación en Línea",
+    "description": "Utiliza nuestra Calculadora de Gratificación gratuita para conocer el monto de gratificación que te corresponde según la Ley de Pago de Gratificación de 1972. Ingresa tu último salario devengado, años de servicio y subsidio por carestía para obtener al instante el monto total de la gratificación.",
+    "slug": "tools/finance/gratuity-calculator",
+    "image": "/images/og/gratuitycalc-en.png",
+    "isArticle": true,
+    "publishDate": "2024-01-01",
+    "modifiedDate": "2025-10-18",
+    "author": "GanakaHub"
+  },
+  "site": {
+    "heading": "Calculadora de Gratificación"
+  },
+  "form": {
+    "monthlyInvestment": "Inversión mensual",
+    "annualStepUp": "Aumento anual",
+    "expectedReturnRate": "Tasa de rendimiento esperada (anual)",
+    "timePeriod": "Período de tiempo"
+  },
+  "article": {
+    "intro": {
+      "heading": "Por qué usar una Calculadora de Gratificación",
+      "paragraphs": [
+        "La gratificación es un beneficio legal posterior al empleo que muchos trabajadores asalariados reciben al dejar un trabajo después de cumplir el servicio mínimo obligatorio.",
+        "Calcular el monto exacto — especialmente cuando intervienen años parciales, reglas de redondeo y límites fiscales — puede resultar confuso.",
+        "Una Calculadora de Gratificación convierte tu salario básico final (más el subsidio por carestía) y los años de servicio completados en una estimación precisa de la gratificación en segundos.",
+        "Te ayuda a comprobar tu elegibilidad, planificar tus finanzas en la jubilación o renuncia, y estimar qué parte del pago estará exenta de impuestos.",
+        "La herramienta ahorra tiempo, elimina errores de cálculo y muestra las suposiciones (como reglas de redondeo y límites legales), para que puedas hablar con tu empleador o departamento de RR. HH. con total claridad."
+      ]
+    },
+    "whatIs": {
+      "heading": "¿Qué es la Gratificación? — Política de Gratificación y Quién Califica",
+      "paragraphs": [
+        "La gratificación es un pago único que el empleador entrega al empleado como reconocimiento por un servicio continuo y prolongado, regulado en India por la Ley de Pago de Gratificación de 1972 para las entidades cubiertas.",
+        "Según la Ley, un empleado se vuelve elegible para recibir gratificación después de completar cinco años de servicio continuo; la regla de cinco años se elimina en casos de fallecimiento o discapacidad permanente por lesión o enfermedad.",
+        "El beneficio suele calcularse usando el salario básico final del empleado más el subsidio por carestía y el número de años de servicio; algunos empleadores ofrecen planes más generosos, pero ninguno puede pagar menos del mínimo legal.",
+        "La Ley y sus enmiendas también establecen un tope máximo legal para el monto de gratificación pagado a los empleados que califican."
+      ]
+    },
+    "formula": {
+      "heading": "Fórmula de Cálculo de la Gratificación — Cómo Funciona el Cálculo",
+      "intro": "La fórmula legal estándar utilizada para los empleados cubiertos por la Ley de Pago de Gratificación de 1972 es la siguiente:",
+      "methods": [
+        {
+          "title": "Fórmula (para empleados cubiertos por la Ley):",
+          "formulas": [
+            "Gratificación = (15 / 26) × Salario Final (Básico + DA) × Años de Servicio"
+          ]
+        }
+      ],
+      "definitions": [
+        "15/26 representa 15 días de salario de un mes laboral de 26 días.",
+        "Salario Final = Salario Básico + Subsidio por Carestía (DA).",
+        "Años de Servicio = Total de años de servicio completados (las fracciones se redondean según las reglas del empleador o la Ley)."
+      ],
+      "note": "Para organizaciones no cubiertas por la Ley, los empleadores suelen seguir la regla de medio mes de salario por año de servicio, aunque los términos pueden variar. La gratificación también está sujeta a un límite máximo legal según lo prescrito por la ley."
+    },
+    "howItHelps": {
+      "heading": "Cómo te Ayuda la Calculadora de Gratificación — Beneficios Prácticos",
+      "intro": "Una Calculadora de Gratificación hace mucho más que calcular un monto — te ofrece claridad, precisión y una visión financiera completa:",
+      "points": [
+        "Aclara la elegibilidad y aplica automáticamente la fórmula legal correcta.",
+        "Muestra cómo las reglas de redondeo afectan el monto final según los años de servicio.",
+        "Indica los límites legales para saber si recibirás el monto completo o si una parte se considera ex-gratia.",
+        "Te ayuda a planificar tus finanzas, como pagos de préstamos o gastos de jubilación, usando estimaciones precisas.",
+        "Permite comparar los planes de gratificación de la empresa con el mínimo legal exigido por la Ley.",
+        "Te prepara con la documentación necesaria y claridad antes de solicitar el pago.",
+        "Ayuda a los equipos de RR. HH. y nómina a acelerar cálculos y reducir disputas gracias a supuestos transparentes."
+      ],
+      "note": "Usa la calculadora antes de iniciar tus trámites de salida para verificar la exactitud y asegurarte de que el pago de tu empleador cumple con la Ley de Pago de Gratificación."
+    },
+    "inputs": {
+      "heading": "Qué datos necesitas — Lista Ordenada para la Calculadora de Gratificación",
+      "intro": "Para obtener una estimación precisa de la gratificación, ten listos los siguientes datos (ingrésalos en este orden):",
+      "list": [
+        "Último salario básico + Subsidio por Carestía (DA) — monto mensual.",
+        "Total de años de servicio continuo — incluye años completos; toma en cuenta las reglas de redondeo.",
+        "Fecha de incorporación y fecha de salida — para un cálculo exacto del tiempo de servicio (opcional).",
+        "Motivo de terminación — jubilación/renuncia, fallecimiento o discapacidad (los casos de fallecimiento/discapacidad pueden eximir la regla de 5 años).",
+        "Si tu empresa está cubierta por la Ley de Pago de Gratificación (la mayoría de las organizaciones con 10+ empleados lo están).",
+        "Cualquier política del empleador que pague más que la gratificación legal (opcional)."
+      ],
+      "note": "Ingresa estos valores y la calculadora mostrará la gratificación legal, cualquier ajuste por límite máximo, y la parte sujeta a impuestos."
+    },
+    "howToUse": {
+      "heading": "Paso a paso: Cómo usar la Calculadora de Gratificación — Flujo Ordenado",
+      "intro": "Sigue este flujo ordenado para calcular una estimación precisa de tu gratificación:",
+      "steps": [
+        "Ingresa el salario básico final + DA (mensual).",
+        "Introduce el total de años de servicio completados (o ingresa fechas de ingreso y salida para un cálculo automático).",
+        "Selecciona el motivo de salida (jubilación, renuncia, fallecimiento/discapacidad) — esto afecta las reglas de elegibilidad.",
+        "Indica si tu empleador se rige por la Ley de Pago de Gratificación (por defecto = sí, para empresas cubiertas).",
+        "Haz clic en Calcular para obtener: la gratificación legal (usando 15/26), cualquier redondeo aplicado, el ajuste por límite máximo legal (si corresponde) y una estimación de la parte exenta/gravada.",
+        "Revisa los supuestos (límite, redondeo) y guarda o exporta el resultado para discutirlo con RR. HH. o para planificación fiscal."
+      ],
+      "note": "Usar fechas exactas y confirmar si tu empleador ofrece una gratificación superior al mínimo legal producirá el cálculo más preciso."
+    },
+    "example": {
+      "heading": "Ejemplo ilustrativo — Ejemplo Práctico con Números",
+      "intro": "Aquí tienes un ejemplo práctico que muestra cómo se calcula el monto de la gratificación según la Ley de Pago de Gratificación:",
+      "steps": [
+        "Ejemplo: Último salario básico + DA = ₹30,000/mes; servicio completado = 5 años.",
+        "Usando la fórmula legal: Gratificación = (15 / 26) × 30,000 × 5",
+        "Cálculo paso a paso: 30,000 × 5 = 150,000; 15/26 ≈ 0.5769; 150,000 × 0.5769 ≈ ₹86,538.",
+        "Por lo tanto, la gratificación legal aproximada = ₹86,538.",
+        "Si un empleado tuviera 17 años y 6 meses de servicio y el empleador redondea a 18 años, reemplaza 5 por 18 en la fórmula.",
+        "Si el monto calculado excede el límite legal, el exceso puede considerarse ex gratia y estar sujeto a un tratamiento fiscal diferente.",
+        "Usa la calculadora para probar distintos escenarios de redondeo y límites máximos rápidamente."
+      ],
+      "note": "Este ejemplo asume que la empresa está cubierta por la Ley de Pago de Gratificación y utiliza la fórmula estándar de 15/26 para el cálculo."
+    },
+    "taxation": {
+      "heading": "Tributación, Límites y Topes Legales — Qué Está Exento y Qué Tiene Tope",
+      "paragraphs": [
+        "La Ley de Pago de Gratuidad establece el método de cálculo, y el gobierno ha aumentado el límite máximo legal de pago de gratificación a ₹20 lakh mediante la Ley de Enmienda y notificaciones posteriores.",
+        "A efectos fiscales, la exención sobre la gratificación según la Ley del Impuesto sobre la Renta se determina como el menor de: (a) la gratificación realmente recibida, (b) la gratificación calculada según la fórmula legal (15/26 × salario × años), o (c) el tope monetario prescrito (actualmente ₹20,00,000).",
+        "Los empleados del gobierno pueden tener reglas distintas para el pago y la tributación de la gratificación según sus condiciones de servicio.",
+        "Dado que tanto el límite pagadero como el límite de exención fiscal han cambiado con el tiempo, la Calculadora de Gratificación resalta el tope legal e indica la parte probablemente exenta de impuestos, ayudándote a planificar retiros y reportes fiscales de manera eficaz."
+      ]
+    },
+    "advantages": {
+      "heading": "Ventajas de usar una Calculadora de Gratificación — Resumen Rápido",
+      "intro": "Usar una calculadora de gratificación en línea te ofrece:",
+      "points": [
+        "Rapidez y precisión — cálculo instantáneo y sin errores de la gratificación legal.",
+        "Transparencia — muestra las suposiciones (fórmula, redondeo, tope) para que puedas verificar los cálculos de tu empleador.",
+        "Planificación fiscal — identifica la parte probablemente exenta según las normas del impuesto sobre la renta.",
+        "Pruebas de escenarios — compara resultados según distintos años de servicio, métodos de redondeo o políticas empresariales más generosas que el mínimo legal.",
+        "Preparación — te brinda cifras claras al iniciar trámites de salida o negociar el liquidación final."
+      ],
+      "note": "Es una herramienta práctica y eficiente tanto para empleados como para equipos de RR. HH."
+    },
+    "notes": {
+      "heading": "Notas y Advertencias",
+      "points": [
+        "La fórmula legal se aplica a empleados cubiertos por la Ley de Pago de Gratificación; los empleadores no cubiertos pueden usar fórmulas diferentes pero generalmente similares — confirma siempre con RR. HH. o con tu contrato laboral.",
+        "El gobierno ha modificado la ley para elevar el límite máximo de gratificación a ₹20 lakh; las reglas de exención fiscal también hacen referencia a este tope — consulta las notificaciones oficiales o directrices fiscales vigentes antes de presentar tu declaración."
+      ]
+    }
+  }
+}

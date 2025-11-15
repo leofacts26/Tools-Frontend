@@ -1,0 +1,104 @@
+{
+  "navbar": {
+    "finance": {
+      "page": "Finanzas",
+      "links": {
+        "sip-calculator": {
+          "label": "Calculadora SIP"
+        },
+        "lumpsum-calculator": {
+          "label": "Calculadora Lumpsum"
+        },
+        "swp-calculator": {
+          "label": "Calculadora SWP"
+        },
+        "mutual-fund-returns-calculator": {
+          "label": "Calculadora de Rendimientos de Fondos Mutuos"
+        },
+        "sukanya-samriddhi-yojana-calculator": {
+          "label": "Sukanya Samriddhi Yojana (SSY)"
+        },
+        "ppf-calculator": {
+          "label": "Calculadora PPF"
+        },
+        "epf-calculator": {
+          "label": "Calculadora EPF"
+        },
+        "fd-calculator": {
+          "label": "Calculadora FD"
+        },
+        "rd-calculator": {
+          "label": "Calculadora RD"
+        },
+        "nps-calculator": {
+          "label": "Calculadora NPS"
+        },
+        "simple-interest-calculator": {
+          "label": "Calculadora de Interés Simple"
+        },
+        "compound-interest-calculator": {
+          "label": "Calculadora de Interés Compuesto"
+        },
+        "nsc-calculator": {
+          "label": "Calculadora NSC"
+        },
+        "step-up-sip-calculator": {
+          "label": "Calculadora SIP Incremental"
+        },
+        "gratuity-calculator": {
+          "label": "Calculadora de Gratificación"
+        }
+      }
+    },
+    "students": {
+      "page": "Estudiantes",
+      "links": {
+        "gpa-calculator": {
+          "label": "Calculadora GPA"
+        },
+        "grade-convertor": {
+          "label": "Convertidor de Calificaciones"
+        }
+      }
+    },
+    "developer": {
+      "page": "Desarrollador",
+      "links": {
+        "about": {
+          "label": "Formateador JSON"
+        },
+        "customers": {
+          "label": "Embellecedor HTML"
+        }
+      }
+    },
+    "others": {
+      "page": "Otros",
+      "links": {
+        "text-utilities": {
+          "label": "Utilidades de Texto"
+        },
+        "fun-tools": {
+          "label": "Herramientas Divertidas"
+        }
+      }
+    },
+    "blog": {
+      "page": "Blog",
+      "links": {
+        "finance": {
+          "label": "Finanzas"
+        },
+        "earn": {
+          "label": "Ganar"
+        }
+      }
+    }
+  },
+  "footer": {
+    "about": "Sobre Nosotros",
+    "privacy": "Política de Privacidad",
+    "terms": "Términos y Condiciones",
+    "contact": "Contacto"
+  }
+}

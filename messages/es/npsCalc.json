@@ -1,0 +1,176 @@
+{
+  "seo": {
+    "title": "Calculadora NPS — Calcula los Rendimientos del Sistema Nacional de Pensiones y tu Fondo de Jubilación",
+    "description": "Utiliza nuestra Calculadora NPS gratuita para estimar tu corpus de jubilación, el monto de tu pensión y los beneficios fiscales bajo el Sistema Nacional de Pensiones. Planifica tus ahorros a largo plazo con proyecciones precisas y basadas en datos.",
+    "slug": "tools/finance/nps-calculator",
+    "image": "/images/og/npscalc-en.png",
+    "isArticle": true,
+    "publishDate": "2024-01-01",
+    "modifiedDate": "2025-01-01",
+    "author": "Your Site"
+  },
+  "site": {
+    "heading": "Calculadora NPS"
+  },
+  "form": {
+    "monthlyInvestment": "Inversión mensual",
+    "interestRate": "Rendimiento esperado (anual)",
+    "age": "Tu edad (años)"
+  },
+  "article": {
+    "intro": {
+      "heading": "Introducción a la Calculadora NPS — Proyecta tu Fondo de Jubilación con la Calculadora NPS",
+      "paragraphs": [
+        "Planificar una jubilación segura con la Calculadora NPS para India convierte la incertidumbre en cifras claras y confiables.",
+        "El Sistema Nacional de Pensiones (NPS) es un plan de jubilación a largo plazo, vinculado al mercado, donde las aportaciones periódicas (o en una sola exhibición) crecen dentro de un corpus gestionado profesionalmente.",
+        "Nuestra Calculadora NPS transforma tus aportes mensuales o anuales, el rendimiento esperado, tu edad actual y tu edad de jubilación en un corpus estimado y una pensión mensual aproximada — tomando en cuenta el requisito legal de utilizar una parte del corpus para comprar una anualidad al momento de la jubilación.",
+        "Es ideal para empleados, trabajadores por cuenta propia y NRIs que desean comparar niveles de aportación, analizar beneficios fiscales y decidir la asignación de activos (acciones vs deuda) dentro del NPS.",
+        "Úsala para establecer metas de jubilación realistas y elegir la estrategia de aportación que mejor se adapte a tu estilo de vida."
+      ]
+    },
+    "whatIsNps": {
+      "heading": "¿Qué es el NPS? — Explicación del Sistema Nacional de Pensiones para Usuarios de la Calculadora NPS",
+      "paragraphs": [
+        "El Sistema Nacional de Pensiones (NPS) es el vehículo regulado de ahorro para la jubilación en India, que permite a los individuos construir un corpus pensional mediante aportaciones regulares (mensuales/anuales) en una cuenta Tier I (obligatoria, con beneficios fiscales) o Tier II (opcional y flexible).",
+        "Gestionado por administradores de fondos autorizados por la PFRDA, el NPS ofrece una combinación de fondos vinculados al mercado: acciones, deuda corporativa y valores gubernamentales — tú eliges entre asignación activa o una opción automática basada en el ciclo de vida.",
+        "Al jubilarse (normalmente a los 60 años), una parte del corpus acumulado puede retirarse como suma global y el resto debe utilizarse para comprar una anualidad que genere una pensión mensual.",
+        "Como el NPS combina la capitalización a largo plazo con clases de activos gestionadas profesionalmente, es una herramienta esencial de planificación de jubilación para quienes buscan crecimiento y eficiencia fiscal.",
+        "La Calculadora NPS ayuda a convertir estas características en cifras concretas que guían tus aportaciones y tu estrategia de retiro."
+      ]
+    },
+    "whyUseCalculator": {
+      "heading": "¿Por qué usar una Calculadora NPS? — Beneficios de la Calculadora NPS para la Planificación de la Jubilación",
+      "paragraphs": [
+        "Una Calculadora NPS ahorra tiempo y elimina las suposiciones al planificar la jubilación: muestra cómo crecen tus aportes mensuales o anuales bajo rendimientos compuestos, estima la suma global que puedes retirar y proyecta el ingreso de pensión que podrías recibir tras comprar una anualidad.",
+        "Usa la calculadora para:",
+        "1) Probar distintos niveles de aportación para alcanzar un corpus objetivo.",
+        "2) Comparar la pensión esperada con diferentes tasas de rendimiento asumidas.",
+        "3) Evaluar las compensaciones de beneficios fiscales (80C/80CCD).",
+        "4) Simular retiros parciales o escenarios de salida anticipada.",
+        "Debido a que el NPS tiene reglas específicas sobre retiros en suma global y compra obligatoria de anualidades, una calculadora diseñada según esas reglas te ayuda a anticipar con precisión tus flujos de caja posteriores a la jubilación y elegir hoy el ritmo de aportación adecuado."
+      ]
+    },
+    "howItWorks": {
+      "heading": "Cómo funciona nuestra Calculadora NPS — Lógica, Supuestos y Resultados",
+      "paragraphs": [
+        "Nuestra Calculadora NPS modela dos partes: (A) la fase de acumulación — el valor futuro de las aportaciones periódicas (mensuales o anuales) capitalizadas a una tasa anual asumida, y (B) la fase de distribución — cómo se dividirá el corpus acumulado al jubilarse (suma global vs anualidad) y la pensión estimada resultante.",
+        "Las entradas se convierten a una frecuencia de capitalización coherente (mensual o equivalente anual).",
+        "La herramienta calcula: total de aportaciones, corpus total acumulado al jubilarse, monto sugerido para retiro en suma global (según las reglas actuales del NPS) y una pensión mensual indicativa (usando un supuesto simple de conversión a anualidad).",
+        "Mostramos claramente los supuestos (rendimiento asumido, frecuencia de aportación, edad de jubilación, tasa de anualidad) para que puedas repetir escenarios.",
+        "La calculadora no proporciona ofertas garantizadas de anualidades — entrega estimaciones para comparar opciones."
+      ]
+    },
+    "inputsChecklist": {
+      "heading": "Qué datos necesitas — Lista ordenada para usar la Calculadora NPS",
+      "intro": "Prepara estos datos antes de usar la Calculadora NPS:",
+      "points": [
+        "Aportación mensual o anual (P) — la cantidad que invertirás regularmente.",
+        "Edad actual y edad de jubilación planificada (por defecto, 60).",
+        "Saldo NPS existente (si lo hay).",
+        "Tasa anual de rendimiento esperada (r%) — estimación realista basada en tu asignación de activos.",
+        "Frecuencia de aportación — mensual o anual.",
+        "Supuesto de compra de anualidad — tasa de anualidad esperada al jubilarte (para estimar la pensión).",
+        "Régimen fiscal (viejo/nuevo) si deseas que la herramienta muestre visualmente las deducciones 80CCD.",
+        "Opcional: incrementos salariales esperados (para modelar aportes del empleado/empleador), selección Tier I vs Tier II."
+      ],
+      "conclusion": "Ingresa estos datos en el orden indicado para obtener una proyección precisa."
+    },
+    "calculationFormula": {
+      "heading": "Fórmula de cálculo (explicación simple) — Fórmulas que utiliza la Calculadora NPS",
+      "intro": "La acumulación en el NPS funciona con interés compuesto sobre aportaciones periódicas. Se utilizan dos fórmulas y luego se combinan:",
+      "steps": [
+        {
+          "title": "Valor futuro de un monto existente (capitalizado anualmente):",
+          "formula": "FV_balance = PV × (1 + r)^n",
+          "explanation": "donde PV = saldo actual, r = rendimiento anual (decimal), n = años restantes para la jubilación."
+        },
+        {
+          "title": "Valor futuro de aportaciones regulares (anualidad ordinaria, depósitos mensuales):",
+          "formula": "FV_contrib = PMT × [((1 + i)^m − 1) / i]",
+          "explanation": "PMT = aportación mensual, i = r / 12 (tasa mensual), m = 12 × n (número de meses)."
+        },
+        {
+          "title": "Corpus total acumulado del NPS al jubilarte:",
+          "formula": "FV_total = FV_balance + FV_contrib",
+          "explanation": "Combina el saldo capitalizado y las aportaciones periódicas para proyectar tu corpus total."
+        },
+        {
+          "title": "Distribución posterior a la jubilación (según reglas actuales del NPS):",
+          "formula": "División típica = 60% retiro en suma global, 40% compra de anualidad",
+          "explanation": "El ingreso por pensión se estima aplicando una tasa de anualidad asumida."
+        }
+      ]
+    },
+    "howToUse": {
+      "heading": "Paso a paso: Cómo usar la Calculadora NPS — Pasos ordenados para obtener proyecciones precisas",
+      "steps": [
+        "Elige la frecuencia de aportación (mensual es lo más común) e introduce el monto.",
+        "Ingresa tu edad actual y la edad de jubilación (por defecto = 60).",
+        "Añade el saldo NPS actual (si lo tienes).",
+        "Establece el rendimiento anual esperado r (%) según tu combinación de renta variable/renta fija — usa valores conservadores.",
+        "Selecciona la tasa de compra de anualidad (supuesto utilizado para estimar la pensión mensual).",
+        "Elige el régimen fiscal si deseas ver los beneficios tributarios (80CCD(1/1B/2)).",
+        "Haz clic en ‘Calcular’ — verás: aportes totales, corpus proyectado, suma global proyectada (≈60%) y pensión mensual indicativa derivada de la anualidad (≈40%).",
+        "Vuelve a ejecutar escenarios: aumenta/disminuye aportaciones, ajusta r o cambia la edad de jubilación para identificar cuánto necesitas aportar para alcanzar tu pensión objetivo."
+      ]
+    },
+    "example": {
+      "heading": "Ejemplo ilustrativo — Ejemplo práctico de la Calculadora NPS con cifras",
+      "intro": "Ejemplo: Edad 30, aportación mensual PMT = ₹5,000, n = 30 años hasta la jubilación a los 60, rendimiento anual asumido r = 9% (0.09). Usando la fórmula de anualidad para depósitos mensuales:",
+      "formulas": [
+        "Tasa mensual i = 0.09 / 12",
+        "Número de meses m = 360",
+        "Valor futuro de las aportaciones: FV_contrib ≈ ₹9,153,717"
+      ],
+      "details": {
+        "totalContributions": "Aportaciones totales = ₹5,000 × 360 = ₹1,800,000",
+        "interestEarned": "Intereses generados ≈ ₹7,353,717"
+      },
+      "split": {
+        "lumpSum": "≈60% suma global ≈ ₹5,492,230",
+        "annuity": "≈40% para anualidad ≈ ₹3,661,487"
+      },
+      "note": "Estas cifras son ilustrativas; la calculadora generará los valores exactos y te permitirá cambiar el supuesto de conversión a anualidad para estimar la pensión mensual. (Cifras redondeadas.)"
+    },
+    "taxBenefits": {
+      "heading": "Beneficios fiscales del NPS y deducciones — Cómo la Calculadora NPS te ayuda a maximizar el ahorro fiscal",
+      "paragraphs": [
+        "El NPS ofrece ventajas fiscales que la calculadora destaca: las aportaciones al Tier I son elegibles para deducciones según la Sección 80CCD(1) (dentro de los límites de la Sección 80C) y una deducción adicional bajo 80CCD(1B) de hasta ₹50,000 por encima de la Sección 80C.",
+        "Las aportaciones del empleador pueden reclamarse conforme a la Sección 80CCD(2) (sujetas a límites).",
+        "Nota: la elección del régimen fiscal (antiguo vs nuevo) determina si puedes reclamar estas deducciones — el nuevo régimen puede excluir algunas deducciones del NPS.",
+        "Al momento del retiro, las reglas actuales permiten retirar una parte mayoritaria del corpus como suma global (normalmente 60%, tratado como exento de impuestos), mientras que la parte restante debe utilizarse para comprar una anualidad cuyos pagos se gravan como ingresos cuando se reciben.",
+        "Confirma siempre las normas fiscales más recientes antes de tomar decisiones; nuestra calculadora resalta las deducciones más comunes para ayudarte a planificar."
+      ]
+    },
+    "withdrawals": {
+      "heading": "Retiros, retiros parciales y reglas de anualidad — Reglas de salida del NPS y cómo la calculadora las modela",
+      "paragraphs": [
+        "El NPS cuenta con reglas específicas de retiro que afectan las proyecciones: los retiros parciales están permitidos bajo condiciones definidas (generalmente para objetivos específicos y sujetos a límites), las salidas anticipadas pueden restringir el acceso a sumas globales antes de un periodo mínimo, y en la jubilación el corpus se divide entre suma global y compra obligatoria de anualidad.",
+        "La calculadora modela los casos típicos: en la jubilación (a los 60 años) asume ~60% como suma global y ~40% como anualidad, mientras que en salidas anticipadas normalmente se permite un porcentaje menor como suma global (y un requisito mayor de anualidad).",
+        "Los retiros parciales y su tratamiento fiscal pueden variar según las reglas y el proveedor; nuestra herramienta muestra cifras brutas y te permite restar impuestos estimados o modelar la compra obligatoria de anualidad para que puedas ver los flujos netos de jubilación.",
+        "Consulta siempre las directrices más recientes de PFRDA/NSDL para conocer las reglas exactas de retiro."
+      ]
+    },
+    "fundOptions": {
+      "heading": "Elegir opciones de fondos del NPS — Cómo la asignación de activos influye en los resultados de la Calculadora NPS",
+      "paragraphs": [
+        "El NPS te permite elegir entre fondos de renta variable (E), corporativa/deuda (C) y valores gubernamentales (G), así como entre la opción activa (eliges la asignación %) o la opción automática/ciclo de vida (la asignación cambia con la edad).",
+        "Una mayor asignación a renta variable generalmente aumenta los rendimientos esperados a largo plazo (y la volatilidad), mientras que una mayor asignación a deuda/valores gubernamentales suaviza los rendimientos pero normalmente reduce el crecimiento a largo plazo.",
+        "La Calculadora NPS te permite fijar un rendimiento esperado acorde con la mezcla de activos (por ejemplo, un rendimiento más alto para combinaciones agresivas con mayor porcentaje en E), para que puedas ver cómo la asignación impacta tu corpus y pensión final.",
+        "Usa la calculadora para comparar mezclas conservadoras vs agresivas y para estimar cuánto deberías incrementar tu aportación mensual si eliges una asignación más segura (de menor rendimiento)."
+      ]
+    },
+    "benefits": {
+      "heading": "Beneficios de Usar una Calculadora NPS en Línea — Ventajas Rápidas y Cómo Actuar Según los Resultados",
+      "paragraphs": [
+        "Una Calculadora NPS convierte la planificación en acción: genera estimaciones precisas de acumulación, modela el requisito obligatorio de anualidad, destaca las deducciones fiscales (80CCD) y permite probar múltiples escenarios según rendimientos, tasas de contribución y edad de jubilación.",
+        "Con estos resultados puedes:",
+        "1) Establecer una contribución mensual objetivo para alcanzar la pensión deseada.",
+        "2) Optimizar la asignación de activos según rendimientos esperados versus riesgo.",
+        "3) Planificar aportaciones eficientes en impuestos bajo los regímenes fiscal antiguo y nuevo.",
+        "4) Comparar escenarios “qué pasaría si” (aumentar contribución, retrasar la jubilación, cambiar la tasa de anualidad).",
+        "Utiliza la calculadora cada año —especialmente después de aumentos salariales— para mantener tu plan de jubilación en buen rumbo y asegurar la estrategia NPS adecuada para tus objetivos."
+      ]
+    }
+  }
+}

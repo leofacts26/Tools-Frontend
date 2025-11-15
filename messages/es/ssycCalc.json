@@ -1,0 +1,261 @@
+{
+  "seo": {
+    "title": "Calculadora Sukanya Samriddhi Yojana — Calcula el Monto de Madurez e Interés del SSY",
+    "description": "Utiliza nuestra Calculadora gratuita de Sukanya Samriddhi Yojana para estimar el monto de madurez, el interés generado y el ahorro total para el futuro de tu hija. Planifica mejor con proyecciones SSY precisas basadas en la tasa de interés actual.",
+    "slug": "tools/finance/sukanya-samriddhi-yojana-calculator",
+    "image": "/images/og/ssy-calc.png",
+    "isArticle": true,
+    "publishDate": "2024-01-01",
+    "modifiedDate": "2025-01-01",
+    "author": "Ganaka Hub"
+  },
+  "site": {
+    "heading": "Calculadora Sukanya Samriddhi Yojana"
+  },
+  "form": {
+    "yearlyInvestment": "Inversión anual",
+    "girlsAge": "Edad de la niña (años)",
+    "startPeriod": "Año de inicio",
+    "ssyRateLabel": "Tasa de interés SSY (fija)",
+    "compoundingNoteShort": "Depósitos al final del año, capitalización mensual"
+  },
+  "results": {
+    "maturityYear": "Año de madurez"
+  },
+  "notes": {
+    "long": "Tasa SSY más reciente: 8.2% (fija en la interfaz). Esta calculadora simula capitalización mensual y depósitos anuales realizados al final de cada año (por ejemplo, 15 depósitos para un período de contribución de 15 años). Activar tuneForGroww en true aplica un pequeño ajuste para coincidir exactamente con los ejemplos publicados por Groww. Si prefieres el cálculo matemático puro (sin ajuste), establece tuneForGroww en false.",
+    "latestRateNote": "Tasa SSY más reciente: {rate}% (fija en la interfaz). Usando depósito al final del año + capitalización mensual."
+  },
+  "article": {
+    "whatIsHeading": "Calculadora Sukanya Samriddhi Yojana (SSY) – Planifica un Futuro Brillante para tu Hija",
+    "whatIsParagraphs": [
+      "La Sukanya Samriddhi Yojana (SSY) es uno de los esquemas de ahorro más beneficiosos respaldados por el gobierno, diseñado para promover la seguridad financiera de las niñas en India. Introducido en 2015 como parte de la iniciativa Beti Bachao, Beti Padhao, este plan motiva a los padres a ahorrar de manera constante para los futuros gastos educativos y matrimoniales de su hija, al mismo tiempo que ofrece rendimientos atractivos y libres de impuestos.",
+      "Con una tasa de interés anual del 8.2% (a partir de 2025), el esquema SSY garantiza una sólida acumulación de riqueza a largo plazo. Sin embargo, para entender cómo crecerá tu inversión con el tiempo y qué puedes esperar al vencimiento, necesitas una herramienta financiera fácil de usar: la Calculadora Sukanya Samriddhi Yojana."
+    ],
+    "whatIsSection": {
+      "id": "what-is-sukanya-samriddhi-yojana-calculator",
+      "heading": "¿Qué es la Calculadora Sukanya Samriddhi Yojana?",
+      "paragraphs": [
+        "La Calculadora Sukanya Samriddhi Yojana es una herramienta financiera en línea que ayuda a padres o tutores a estimar el monto de madurez y el interés total generado según sus contribuciones anuales.",
+        "Al ingresar datos simples como tu inversión anual, la edad de la niña y el año de inicio, la calculadora muestra instantáneamente:"
+      ],
+      "points": [
+        "El año de madurez,",
+        "El monto total invertido,",
+        "El interés total generado, y",
+        "El valor final de madurez."
+      ],
+      "conclusion": "Esto te evita cálculos manuales y te brinda una imagen clara de cómo crecerán tus ahorros dentro de la estructura de capitalización del esquema."
+    },
+    "eligibilitySection": {
+      "id": "who-can-use-ssy-calculator",
+      "heading": "¿Quién Puede Usar la Calculadora SSY?",
+      "intro": "Antes de usar la calculadora, asegúrate de cumplir los requisitos para la Sukanya Samriddhi Yojana. Para abrir una cuenta SSY, se deben cumplir las siguientes condiciones:",
+      "eligibilityPoints": [
+        "La niña debe ser residente india.",
+        "La niña debe tener menos de 10 años al momento de abrir la cuenta.",
+        "Solo se permiten dos cuentas por familia (una por cada niña)."
+      ],
+      "documentsHeading": "Documentos Requeridos:",
+      "documents": [
+        "Formulario debidamente completado para apertura de cuenta SSY.",
+        "Certificado de nacimiento de la niña.",
+        "Identificación y prueba de domicilio del tutor.",
+        "Certificado médico (en caso de gemelas o trillizas)."
+      ],
+      "conclusion": "Una vez que cumplas los requisitos, los padres pueden empezar a contribuir y usar la calculadora para planificar sus ahorros anuales de manera más eficiente."
+    },
+    "whyUseSection": {
+      "id": "why-use-ssy-calculator",
+      "heading": "¿Por Qué Deberías Usar la Calculadora Sukanya Samriddhi Yojana?",
+      "intro": "Planificar las finanzas para la educación y el matrimonio de tu hija es una de las mayores responsabilidades de la paternidad. La calculadora SSY te ayuda a planificar mejor mostrando cómo tu dinero crece mediante capitalización durante 21 años. Aquí tienes las principales razones para usarla:",
+      "points": [
+        {
+          "title": "Estimaciones Precisas de Madurez",
+          "description": "Conoce al instante cuánto recibirás cuando el esquema llegue a su madurez."
+        },
+        {
+          "title": "Planificación Basada en Objetivos",
+          "description": "Ajusta tus contribuciones anuales para alcanzar un corpus objetivo específico."
+        },
+        {
+          "title": "Ahorro de Tiempo",
+          "description": "Evita cálculos manuales; obtén resultados precisos en segundos."
+        },
+        {
+          "title": "Planificación Fiscal Simplificada",
+          "description": "Conoce cuánto de tu inversión califica para deducciones según la Sección 80C."
+        },
+        {
+          "title": "Ajustes Flexibles",
+          "description": "Experimenta con diferentes inversiones anuales según tu capacidad financiera."
+        }
+      ],
+      "conclusion": "En resumen, la calculadora actúa como una hoja de ruta financiera, ayudándote a visualizar el impacto a largo plazo del ahorro disciplinado."
+    },
+    "howItWorksSection": {
+      "id": "how-does-ssy-calculator-work",
+      "heading": "¿Cómo Funciona la Calculadora SSY?",
+      "paragraphs": [
+        "La Calculadora Sukanya Samriddhi funciona bajo el principio del interés compuesto, donde el interés se calcula anualmente y se agrega al saldo de la cuenta.",
+        "La fórmula utilizada es:"
+      ],
+      "formula": {
+        "title": "Fórmula de Interés Compuesto:",
+        "body": "A = P × (1 + r/n)^(n × t)"
+      },
+      "variables": [
+        {
+          "symbol": "A",
+          "description": "Monto de madurez"
+        },
+        {
+          "symbol": "P",
+          "description": "Monto principal (tu contribución anual)"
+        },
+        {
+          "symbol": "r",
+          "description": "Tasa de interés anual (actualmente 8.2%)"
+        },
+        {
+          "symbol": "n",
+          "description": "Frecuencia de capitalización (1 para anual)"
+        },
+        {
+          "symbol": "t",
+          "description": "Plazo en años (máximo 21 años)"
+        }
+      ],
+      "exampleHeading": "Ejemplo de Cálculo:",
+      "exampleIntro": [
+        "Supongamos que inviertes ₹1,00,000 cada año durante 14 años.",
+        "Usando la calculadora SSY con una tasa del 8.2%:"
+      ],
+      "exampleResults": [
+        "Tu inversión total = ₹14,00,000",
+        "Interés total generado ≈ ₹17,14,000",
+        "Monto final de madurez ≈ ₹31,14,000"
+      ],
+      "conclusion": "💡 Eso es más del doble de la cantidad invertida — una demostración clara del poder del interés compuesto en SSY."
+    },
+    "featuresSection": {
+      "id": "key-features-of-ssy-calculator",
+      "heading": "Características Principales de la Calculadora Sukanya Samriddhi Yojana",
+      "points": [
+        "Muestra el Año de Madurez – Calcula cuándo madurará tu cuenta SSY (21 años desde la apertura).",
+        "Muestra Inversión Total e Interés – Desglosa capital y ganancias para mayor claridad.",
+        "Cálculos Instantáneos – Obtén resultados precisos en segundos después de ingresar los datos.",
+        "Gratis y Fácil de Usar – No requiere registro ni inicio de sesión.",
+        "Múltiples Iteraciones – Prueba distintos montos de contribución para alcanzar tu corpus objetivo."
+      ],
+      "conclusion": "Esto la convierte en una de las herramientas de planificación financiera más prácticas para padres con hijas pequeñas."
+    },
+    "taxBenefitsSection": {
+      "id": "tax-benefits-of-ssy",
+      "heading": "Beneficios Fiscales del Sukanya Samriddhi Yojana",
+      "intro": "Una de las mayores ventajas del SSY es su estatus fiscal EEE (Exento-Exento-Exento):",
+      "points": [
+        {
+          "title": "Exención sobre la Inversión",
+          "description": "Las contribuciones de hasta ₹1.5 lakh por año fiscal califican para deducción bajo la Sección 80C."
+        },
+        {
+          "title": "Interés Libre de Impuestos",
+          "description": "El interés generado durante el período de inversión es completamente libre de impuestos."
+        },
+        {
+          "title": "Monto de Madurez Libre de Impuestos",
+          "description": "El corpus final recibido al vencimiento no es imponible."
+        }
+      ],
+      "conclusion": "Esto convierte al esquema SSY en uno de los planes de ahorro más eficientes fiscalmente disponibles hoy en India."
+    },
+    "howToUseSection": {
+      "id": "how-to-use-ssy-calculator",
+      "heading": "Cómo Usar la Calculadora Sukanya Samriddhi Yojana (Paso a Paso)",
+      "intro": "Usar la calculadora SSY en línea es extremadamente sencillo:",
+      "steps": [
+        {
+          "title": "Ingresa el Monto de Inversión Anual",
+          "description": "Por ejemplo, ₹50,000 al año."
+        },
+        {
+          "title": "Ingresa la Edad de la Niña",
+          "description": "La niña debe tener menos de 10 años al momento de abrir la cuenta."
+        },
+        {
+          "title": "Ingresa el Año de Inicio de la Inversión",
+          "description": "Esto ayuda a determinar el año de madurez (21 años desde el inicio)."
+        },
+        {
+          "title": "Haz clic en “Calcular”",
+          "description": "La calculadora mostrará al instante el monto de madurez, el interés generado y la inversión total."
+        },
+        {
+          "title": "Vuelve a Ingresar Valores",
+          "description": "Puedes probar múltiples escenarios hasta encontrar el monto de ahorro ideal."
+        }
+      ]
+    },
+    "benefitsOnlineSection": {
+      "id": "benefits-of-using-ssy-calculator-online",
+      "heading": "Beneficios de Usar la Calculadora SSY en Línea",
+      "intro": "Aquí tienes las razones por las que usar una calculadora SSY es mejor que hacer cálculos manuales:",
+      "points": [
+        {
+          "title": "Proporciona Proyecciones Precisas",
+          "description": "Evita errores humanos y obtén estimaciones exactas."
+        },
+        {
+          "title": "Ahorra Tiempo",
+          "description": "Resultados instantáneos sin necesidad de cálculos manuales."
+        },
+        {
+          "title": "Simplifica la Planificación Financiera",
+          "description": "Ajusta los objetivos de ahorro según los resultados esperados."
+        },
+        {
+          "title": "Fomenta la Constancia",
+          "description": "Ver el potencial del monto final motiva a los padres a mantener la disciplina."
+        },
+        {
+          "title": "Accesible en Cualquier Lugar",
+          "description": "Puedes usar la herramienta en cualquier momento y desde cualquier dispositivo."
+        }
+      ],
+      "conclusion": "Al usar esta calculadora regularmente, podrás seguir el crecimiento de tu inversión y asegurar el futuro financiero de tu hija."
+    },
+    "maturitySection": {
+      "id": "what-happens-at-maturity",
+      "heading": "¿Qué Sucede al Momento de la Madurez?",
+      "intro": "La cuenta Sukanya Samriddhi madura 21 años después de su apertura o cuando la niña se casa después de cumplir 18 años, lo que ocurra primero. Al momento de la madurez:",
+      "points": [
+        "El corpus completo, incluido el capital y el interés acumulado, puede ser retirado por la niña.",
+        "El monto puede utilizarse para educación superior o gastos de matrimonio.",
+        "Para retirar los fondos, se deben presentar documentos como prueba de identidad, certificado de edad y documentos de respaldo (como certificados de admisión o matrimonio).",
+        "Se permite un retiro parcial de hasta el 50% cuando la niña cumple 18 años, para gastos relacionados con la educación."
+      ]
+    },
+    "whyBestSection": {
+      "id": "why-ssy-best-investment-for-girl-child",
+      "heading": "Por Qué el Esquema SSY es la Mejor Inversión para una Niña",
+      "points": [
+        "Seguridad Respaldada por el Gobierno – Rendimientos seguros y garantizados respaldados por el Gobierno de India.",
+        "Alta Tasa de Interés – Entre las más altas dentro de los esquemas de ahorro pequeños.",
+        "Crecimiento Libre de Impuestos – Exención fiscal completa según la Sección 80C.",
+        "Estabilidad Financiera a Largo Plazo – Ideal para financiar educación o matrimonio.",
+        "Fomenta la Planificación Financiera Temprana – Promueve hábitos responsables de ahorro en los padres."
+      ]
+    },
+    "finalThoughtsSection": {
+      "id": "final-thoughts",
+      "heading": "Reflexión Final",
+      "paragraphs": [
+        "La Calculadora Sukanya Samriddhi Yojana es una herramienta imprescindible para todo padre que busque un futuro seguro y próspero para su hija. No solo te muestra cómo crecerá tu dinero, sino que también te ayuda a establecer metas financieras realistas para las próximas dos décadas.",
+        "Al invertir de forma constante y usar esta calculadora para monitorear tu crecimiento, podrás asegurar la educación y el matrimonio de tu hija sin preocupaciones financieras.",
+        "💡 Comienza hoy — usa nuestra Calculadora Sukanya Samriddhi Yojana gratuita y planifica el futuro de tu hija con confianza.",
+        "Seguro. Inteligente. Libre de Impuestos."
+      ]
+    }
+  }
+}

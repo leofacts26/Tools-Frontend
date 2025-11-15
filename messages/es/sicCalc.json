@@ -1,0 +1,157 @@
+{
+  "seo": {
+    "title": "Calculadora de Interés Simple — Calcula Interés y Monto Total en Línea",
+    "description": "Utiliza nuestra Calculadora de Interés Simple gratuita para calcular rápidamente el interés y el monto total de tu inversión o préstamo. Ingresa capital, tasa y tiempo para obtener resultados instantáneos.",
+    "slug": "tools/finance/simple-interest-calculator",
+    "image": "/images/og/simpleinterestcalc-en.png",
+    "isArticle": true,
+    "publishDate": "2024-01-01",
+    "modifiedDate": "2025-01-01",
+    "author": "Your Site"
+  },
+  "site": {
+    "heading": "Calculadora de Interés Simple"
+  },
+  "form": {
+    "principal": "Monto del capital",
+    "interestRate": "Tasa de interés (anual)",
+    "timePeriod": "Período"
+  },
+  "article": {
+    "intro": {
+      "heading": "Por qué usar una Calculadora de Interés Simple",
+      "paragraphs": [
+        "El interés simple es la forma más rápida de calcular los intereses sobre un capital cuando los intereses no se capitalizan.",
+        "Si tienes préstamos a corto plazo, ciertos productos de ahorro o planes donde el interés se calcula únicamente sobre el capital original, una Calculadora de Interés Simple te ofrece cifras exactas en segundos.",
+        "En lugar de aplicar fórmulas manualmente o correr el riesgo de cometer errores, la calculadora toma tu capital, tasa anual y periodo de tiempo y produce el interés y el monto total pagadero al vencimiento.",
+        "Es ideal para estudiantes, prestatarios, prestamistas y propietarios de pequeños negocios que necesitan una visión clara y directa de los costos e ingresos por intereses.",
+        "Utiliza la herramienta para comparar ofertas, planificar pagos o comprobar cuánto generará una inversión a corto plazo sin capitalización."
+      ]
+    },
+    "whatIs": {
+      "heading": "¿Qué es el Interés Simple? — Contexto de la Calculadora de Interés Simple",
+      "paragraphs": [
+        "El interés simple es el interés calculado únicamente sobre el capital original durante todo el plazo del préstamo o inversión. A diferencia del interés compuesto — donde los intereses generados se agregan periódicamente al capital — el interés simple mantiene el capital fijo.",
+        "Los casos más comunes incluyen préstamos a corto plazo, ciertos cupones de bonos, préstamos vehiculares con tasa fija y pagarés de corta duración. Su simplicidad hace que los cálculos sean transparentes: el interés crece linealmente con el tiempo. Esa previsibilidad ayuda a presupuestar y comparar opciones.",
+        "Sin embargo, para la mayoría de las inversiones a largo plazo y muchos productos bancarios, el interés compuesto suele ofrecer rendimientos más altos (o mayores costos para los prestatarios).",
+        "Una Calculadora de Interés Simple te ayuda a calcular: (1) el Interés Simple (SI) ganado o adeudado, y (2) el Monto Total (A) = capital + SI — facilitando comparaciones y decisiones rápidas y confiables."
+      ]
+    },
+    "formula": {
+      "heading": "Fórmula de Interés Simple — Fórmulas que Usa la Calculadora de Interés Simple",
+      "intro": "Existen dos formas equivalentes de expresar las fórmulas del interés simple. Usa la notación que mejor se adapte a tus datos:",
+      "methods": [
+        {
+          "title": "1. Usando la tasa decimal r (r = R/100):",
+          "formulas": [
+            "Monto total: A = P × (1 + r × t)",
+            "Interés simple: SI = P × r × t"
+          ]
+        },
+        {
+          "title": "2. Usando la tasa porcentual R directamente:",
+          "formulas": [
+            "Interés simple: SI = (P × R × T) / 100",
+            "Monto total: A = P + SI = P + (P × R × T) / 100"
+          ]
+        }
+      ],
+      "definitions": [
+        "P = Capital (monto inicial)",
+        "R = Tasa de interés anual en porcentaje",
+        "r = Tasa de interés anual en decimal (r = R/100)",
+        "T o t = Tiempo en años (convierte meses/días a años)"
+      ],
+      "note": "Estas fórmulas lineales simplifican los cálculos y son las que aplica la calculadora internamente."
+    },
+    "howToCalculate": {
+      "id": "how-to-calculate-simple-interest",
+      "heading": "Cómo Calcular el Interés Simple Usando la Calculadora — Entradas y Funcionamiento",
+      "intro": "La Calculadora de Interés Simple necesita tres datos principales: capital P, tasa anual R% y tiempo T (en años o meses). Estos son los pasos que sigue la herramienta:",
+      "steps": [
+        "Si ingresas el tiempo en meses/días, lo convierte a años (T_years = meses / 12 o días / 365).",
+        "Calcula el interés simple usando SI = (P × R × T_years) / 100.",
+        "Devuelve el monto total al vencimiento/pago A = P + SI."
+      ],
+      "optionalFeatures": [
+        "Opciones para cambiar moneda y formato (₹, USD, precisión de redondeo).",
+        "Opción para mostrar resultados como interés anual o interés total generado.",
+        "Validación de datos y mensajes de error útiles para valores negativos o faltantes."
+      ],
+      "note": "La calculadora no asume capitalización — si necesitas interés compuesto usa una calculadora de interés compuesto o FD."
+    },
+    "benefits": {
+      "heading": "¿Cómo te Puede Ayudar una Calculadora de Interés Simple? — Beneficios Prácticos",
+      "intro": "Una Calculadora de Interés Simple ayuda de varias maneras prácticas:",
+      "points": [
+        "Planificación de pagos de préstamos — conoce el interés exacto a pagar en préstamos a corto plazo.",
+        "Comparación de ofertas — compara rápidamente préstamos de tasa fija vs esquemas de interés simple.",
+        "Planificación de inversiones — estima rendimientos en instrumentos que usan interés simple.",
+        "Transparencia — evita errores humanos en cálculos aritméticos.",
+        "Pruebas rápidas “what-if” — cambia capital, tasa o plazo para ver el impacto inmediato."
+      ],
+      "note": "Para prestatarios y prestamistas, la herramienta convierte cotizaciones confusas en valores exactos y claros que permiten una mejor planificación."
+    },
+    "advantages": {
+      "heading": "Ventajas de Usar una Calculadora de Interés Simple — Por Qué Supera el Cálculo Manual",
+      "intro": "Usar una Calculadora de Interés Simple en línea ofrece ventajas claras:",
+      "points": [
+        "Velocidad: resultados instantáneos en lugar de cálculos manuales.",
+        "Precisión: elimina errores aritméticos y fallos en la conversión de unidades.",
+        "Comodidad: admite entrada en meses/días y conversión automática a años.",
+        "Análisis de escenarios: prueba múltiples situaciones en segundos para elegir la mejor opción.",
+        "Accesibilidad: usable en móviles o computadoras sin hojas de cálculo.",
+        "Educativo: muestra fórmulas paso a paso para que el usuario comprenda el cálculo."
+      ],
+      "note": "Es especialmente útil para decisiones de préstamos a corto plazo, financiamiento de facturas o verificaciones rápidas antes de firmar acuerdos de crédito."
+    },
+    "steps": {
+      "heading": "Guía paso a paso: Cómo usar la Calculadora de Interés Simple — Pasos Ordenados",
+      "intro": "Sigue estos pasos para obtener resultados precisos:",
+      "list": [
+        "Ingresa el Capital (P): el monto original del préstamo o inversión.",
+        "Ingresa la Tasa Anual (R%): el porcentaje de interés anual indicado.",
+        "Ingresa el Tiempo (T): en años; si tienes meses o días, selecciona la unidad adecuada — la calculadora convierte automáticamente.",
+        "Elige la precisión de redondeo (opcional): por ejemplo, valor entero o dos decimales.",
+        "Haz clic en “Calcular”. El resultado muestra: SI (interés simple), A (monto total) y un desglose pequeño (P, R, T).",
+        "Usa las funciones de “¿Qué pasa si…?” para comparar duraciones o cambios de tasa.",
+        "Exporta o guarda los resultados si necesitas la operación para documentación."
+      ],
+      "note": "Este flujo ordenado mantiene los cálculos repetibles y auditables."
+    },
+    "example": {
+      "heading": "Ejemplo ilustrativo — Ejemplo Resuelto con Aritmética Correcta",
+      "intro": "Ejemplo: El Sr. A presta P = ₹15,000 a una tasa R = 5% anual por T = 2 años. Calcular:",
+      "steps": [
+        "SI = (P × R × T) / 100.",
+        "Multiplica: 15,000 × 5 = 75,000.",
+        "Multiplica por T: 75,000 × 2 = 150,000.",
+        "Divide entre 100: 150,000 / 100 = ₹1,500.",
+        "Por lo tanto, Interés Simple = ₹1,500.",
+        "Monto total A = P + SI = 15,000 + 1,500 = ₹16,500."
+      ],
+      "note": "La calculadora mostrará ambas cifras y también puede mostrar el interés por año (₹750 por año), lo que ayuda a planificar flujo de caja. Para meses, convierte T adecuadamente — por ejemplo, 6 meses = 0.5 años."
+    },
+    "decision": {
+      "heading": "Cuándo Usar Interés Simple vs Interés Compuesto — Guía de Decisión",
+      "intro": "Elige la calculadora correcta según cómo se aplica el interés en tu producto financiero:",
+      "simpleUse": {
+        "title": "Elige Interés Simple cuando:",
+        "points": [
+          "El interés se cobra explícitamente solo sobre el capital original (esquemas de tasa fija, algunos préstamos a corto plazo).",
+          "El plazo es corto (unos meses o un par de años) y el prestamista usa reglas sin capitalización.",
+          "Necesitas costos de interés lineales y predecibles."
+        ]
+      },
+      "compoundUse": {
+        "title": "Elige Interés Compuesto cuando:",
+        "points": [
+          "El interés se agrega periódicamente al capital (depósitos bancarios, muchas inversiones a largo plazo).",
+          "Quieres modelar crecimiento donde el interés genera más interés.",
+          "El plazo es largo y la capitalización cambia significativamente los resultados."
+        ]
+      },
+      "note": "Si no estás seguro de cuál aplica, revisa los términos del producto financiero. Nuestra Calculadora de Interés Simple es para casos sin capitalización; usa una calculadora de interés compuesto o FD para escenarios con reinversión de intereses."
+    }
+  }
+}
