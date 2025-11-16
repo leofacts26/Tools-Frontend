@@ -1,0 +1,142 @@
+{
+  "seo": {
+    "title": "Gratifikationsrechner — Berechnen Sie Ihren Gratuity-Betrag Online",
+    "description": "Nutzen Sie unseren kostenlosen Gratifikationsrechner, um Ihren Anspruch gemäß dem Payment of Gratuity Act, 1972 zu berechnen. Geben Sie Ihr zuletzt gezahltes Gehalt, Ihre Dienstjahre und den Dearness Allowance ein, um sofort den gesamten Gratuity-Betrag zu erhalten.",
+    "slug": "tools/finance/gratuity-calculator",
+    "image": "/images/og/gratuitycalc-en.png",
+    "isArticle": true,
+    "publishDate": "2024-01-01",
+    "modifiedDate": "2025-10-18",
+    "author": "GanakaHub"
+  },
+  "site": {
+    "heading": "Gratifikationsrechner"
+  },
+  "form": {
+    "monthlyInvestment": "Monatliche Einzahlung",
+    "annualStepUp": "Jährliche Erhöhung",
+    "expectedReturnRate": "Erwartete Rendite (p.a.)",
+    "timePeriod": "Laufzeit"
+  },
+  "article": {
+    "intro": {
+      "heading": "Warum einen Gratifikationsrechner verwenden?",
+      "paragraphs": [
+        "Die Gratifikation ist eine gesetzliche Leistung, die viele Angestellte nach Beendigung ihres Arbeitsverhältnisses erhalten, sofern sie die Mindestdienstzeit erfüllen.",
+        "Die genaue Berechnung — insbesondere wenn Teiljahre, Rundungsregeln und steuerliche Grenzen berücksichtigt werden müssen — kann kompliziert sein.",
+        "Ein Gratifikationsrechner wandelt Ihr zuletzt bezogenes Grundgehalt (plus Dearness Allowance) und die abgeleisteten Dienstjahre in wenigen Sekunden in eine präzise Gratuity-Schätzung um.",
+        "Er hilft Ihnen, Anspruchsberechtigung zu prüfen, finanzielle Planung bei Kündigung oder Ruhestand vorzunehmen und abzuschätzen, welcher Teil der Zahlung steuerfrei ist.",
+        "Das Tool spart Zeit, verhindert Rechenfehler und zeigt Annahmen wie Rundungsregeln und gesetzliche Obergrenzen an — so können Sie informiert mit Ihrem Arbeitgeber oder der Personalabteilung sprechen."
+      ]
+    },
+    "whatIs": {
+      "heading": "Was ist Gratuity? — Gratuity-Regeln & Anspruchsvoraussetzungen",
+      "paragraphs": [
+        "Die Gratuity ist eine einmalige Zahlung des Arbeitgebers an den Arbeitnehmer als Anerkennung für langjährige und kontinuierliche Dienstzeit. In Indien wird sie für bestimmte Betriebe durch den Payment of Gratuity Act, 1972 geregelt.",
+        "Nach dem Gesetz wird ein Arbeitnehmer nach fünf Jahren ununterbrochener Dienstzeit anspruchsberechtigt; die Fünf-Jahres-Regel entfällt bei Tod oder dauerhafter Erwerbsunfähigkeit infolge von Verletzung oder Krankheit.",
+        "Der Betrag wird in der Regel auf Grundlage des zuletzt bezogenen Grundgehalts plus Dearness Allowance sowie der Dienstjahre berechnet. Manche Arbeitgeber bieten großzügigere Regelungen an, jedoch niemals unter dem gesetzlichen Minimum.",
+        "Das Gesetz und spätere Änderungen legen zudem eine maximale gesetzliche Obergrenze für die auszuzahlende Gratuity fest."
+      ]
+    },
+    "formula": {
+      "heading": "Formel zur Berechnung der Gratuity — Wie die Berechnung funktioniert",
+      "intro": "Die standardisierte gesetzliche Formel für Arbeitnehmer, die unter den Payment of Gratuity Act, 1972 fallen, lautet wie folgt:",
+      "methods": [
+        {
+          "title": "Formel (für Arbeitnehmer, die unter das Gesetz fallen):",
+          "formulas": [
+            "Gratuity = (15 / 26) × Letztes gezahltes Gehalt (Basic + DA) × Dienstjahre"
+          ]
+        }
+      ],
+      "definitions": [
+        "15/26 entspricht 15 Tagen Lohn auf Basis eines 26-Tage-Monats.",
+        "Letztes gezahltes Gehalt = Grundgehalt + Dearness Allowance.",
+        "Dienstjahre = Vollständig abgeleistete Dienstjahre (Teiljahre werden gemäß Arbeitgeber- oder Gesetzesregeln gerundet)."
+      ],
+      "note": "Für Betriebe, die nicht unter das Gesetz fallen, wird oft die Regel „ein halber Monatslohn pro Dienstjahr“ verwendet, wobei die genauen Bedingungen variieren können. Die Gratuity unterliegt außerdem einer gesetzlichen Höchstgrenze gemäß den aktuellen Bestimmungen."
+    },
+    "howItHelps": {
+      "heading": "Wie der Gratifikationsrechner Ihnen hilft — Praktische Vorteile",
+      "intro": "Ein Gratifikationsrechner liefert weit mehr als nur eine Zahl — er bietet Klarheit, Genauigkeit und echte finanzielle Orientierung:",
+      "points": [
+        "Er klärt die Anspruchsberechtigung und wendet automatisch die korrekte gesetzliche Formel an.",
+        "Er zeigt, wie Rundungsregeln den endgültigen Gratifikationsbetrag je nach Dienstjahren beeinflussen.",
+        "Er weist auf gesetzliche Höchstgrenzen hin, damit Sie wissen, ob der gesamte Betrag ausgezahlt wird oder ein Teil als Ex-gratia gilt.",
+        "Er hilft bei der Finanzplanung für Ruhestand, Darlehenstilgung oder größere Ausgaben durch präzise Gratuity-Schätzungen.",
+        "Er ermöglicht den Vergleich zwischen arbeitgeberseitigen Zusatzregelungen und dem gesetzlichen Minimum nach dem Payment of Gratuity Act.",
+        "Er bereitet Sie mit klaren Zahlen und Unterlagen auf Gespräche mit Arbeitgeber oder HR vor.",
+        "Er unterstützt HR- und Payroll-Teams durch schnellere Berechnungen und reduziert Streitfälle dank transparenter Annahmen."
+      ],
+      "note": "Nutzen Sie den Rechner vor Ihren Exit-Formalitäten, um die Richtigkeit zu prüfen und sicherzugehen, dass die Auszahlung Ihres Arbeitgebers dem Payment of Gratuity Act entspricht."
+    },
+    "inputs": {
+      "heading": "Welche Eingaben Sie benötigen — Geordnete Checkliste für den Gratifikationsrechner",
+      "intro": "Für eine präzise Gratuity-Berechnung halten Sie Folgendes bereit (in dieser Reihenfolge eingeben):",
+      "list": [
+        "Zuletzt bezogenes Grundgehalt + Dearness Allowance (DA) — Monatsbetrag.",
+        "Gesamtzahl der durchgehenden Dienstjahre — vollständige Jahre; Rundungsregeln beachten.",
+        "Eintrittsdatum und Austrittsdatum — für genaue Berechnung der Dienstzeit (optional).",
+        "Grund für die Beendigung — reguläre Rente/Kündigung, Tod oder Invalidität (Tod/Invalidität kann die 5-Jahres-Regel aufheben).",
+        "Ob Ihr Unternehmen unter den Payment of Gratuity Act fällt (die meisten Organisationen mit 10+ Mitarbeitern tun dies).",
+        "Arbeitgeberrichtlinien, die mehr als die gesetzliche Mindestgratuity vorsehen (optional)."
+      ],
+      "note": "Nach Eingabe dieser Werte zeigt der Rechner die gesetzliche Gratuity, Deckelungsanpassungen sowie den steuerpflichtigen bzw. steuerfreien Anteil an."
+    },
+    "howToUse": {
+      "heading": "Schritt-für-Schritt: Den Gratifikationsrechner verwenden — Strukturierter Ablauf",
+      "intro": "Folgen Sie diesem strukturierten Ablauf, um eine genaue Gratifikationsberechnung zu erhalten:",
+      "steps": [
+        "Geben Sie das zuletzt bezogene Grundgehalt + DA (monatlich) ein.",
+        "Tragen Sie die vollendeten Dienstjahre ein (oder geben Sie Eintritts- und Austrittsdatum ein, um die Dienstzeit automatisch berechnen zu lassen).",
+        "Wählen Sie den Grund des Ausscheidens (Ruhestand, Kündigung, Tod/Invalidität) — dieser beeinflusst die Anspruchsregeln.",
+        "Wählen Sie aus, ob Ihr Arbeitgeber den Payment of Gratuity Act anwendet (Standard = ja für gedeckte Betriebe).",
+        "Klicken Sie auf „Berechnen“, um folgende Angaben zu erhalten: gesetzliche Gratifikation (15/26-Formel), angewandte Rundung, gesetzliche Obergrenzen (falls zutreffend) sowie einen Hinweis auf steuerfreien/steuerpflichtigen Anteil.",
+        "Prüfen Sie die Annahmen (Deckelung, Rundung) und speichern oder exportieren Sie das Ergebnis für HR-Gespräche oder Steuerplanung."
+      ],
+      "note": "Je genauer Ihre Daten (insbesondere Eintritts-/Austrittsdatum und Arbeitgeberregelungen), desto präziser wird die Berechnung."
+    },
+    "example": {
+      "heading": "Anschauliches Beispiel — Durchgerechnetes Beispiel mit Zahlen",
+      "intro": "Hier ist ein praktisches Beispiel, das zeigt, wie der Gratifikationsbetrag nach dem Payment of Gratuity Act berechnet wird:",
+      "steps": [
+        "Beispiel: Zuletzt bezogenes Grundgehalt + DA = ₹30.000/Monat; abgeleistete Dienstzeit = 5 Jahre.",
+        "Nach der gesetzlichen Formel: Gratuity = (15 / 26) × 30.000 × 5",
+        "Schrittweise: 30.000 × 5 = 150.000; 15/26 ≈ 0,5769; 150.000 × 0,5769 ≈ ₹86.538.",
+        "Die gesetzliche Gratifikation beträgt also ≈ ₹86.538.",
+        "Hat ein Mitarbeitender z. B. 17 Jahre und 6 Monate gearbeitet und rundet der Arbeitgeber auf 18 Jahre auf, ersetzen Sie 5 durch 18 in der Formel.",
+        "Wenn der berechnete Betrag die gesetzliche Höchstgrenze überschreitet, kann der übersteigende Teil als Ex-gratia gelten und steuerlich anders behandelt werden.",
+        "Nutzen Sie den Rechner, um verschiedene Szenarien für Rundungsregeln und gesetzliche Obergrenzen schnell zu testen."
+      ],
+      "note": "Dieses Beispiel geht davon aus, dass der Betrieb unter den Payment of Gratuity Act fällt und die Standardformel 15/26 verwendet wird."
+    },
+    "taxation": {
+      "heading": "Steuer, Höchstgrenzen & gesetzliche Limits — Was steuerfrei ist und was gedeckelt wird",
+      "paragraphs": [
+        "Der Payment of Gratuity Act legt die Berechnungsmethode fest, und die Regierung hat die gesetzliche Höchstgrenze für auszuzahlende Gratuity durch das Payment of Gratuity (Amendment) Act und spätere Mitteilungen auf ₹20 Lakh erhöht.",
+        "Für steuerliche Zwecke gilt unter dem Einkommensteuergesetz, dass die Steuerbefreiung für Gratuity der niedrigste der folgenden Werte ist: (a) tatsächlich erhaltene Gratuity, (b) Gratuity nach der gesetzlichen Formel (15/26 × Gehalt × Dienstjahre) oder (c) die vorgeschriebene monetäre Obergrenze (derzeit ₹20.00.000).",
+        "Für Regierungsangestellte können abweichende Regeln zur Auszahlung und Besteuerung gelten, die durch die jeweiligen Dienstbedingungen geregelt werden.",
+        "Da sowohl die auszuzahlende Obergrenze als auch die steuerfreien Limits im Laufe der Zeit angepasst wurden, hebt der Gratifikationsrechner die gesetzliche Deckelung hervor und zeigt den voraussichtlich steuerfreien Anteil an. So lassen sich Auszahlungen und steuerliche Meldungen präzise planen."
+      ]
+    },
+    "advantages": {
+      "heading": "Vorteile der Nutzung eines Gratuity Calculators — Schnelle Zusammenfassung",
+      "intro": "Die Verwendung eines Online-Gratuity-Rechners bietet Ihnen:",
+      "points": [
+        "Geschwindigkeit & Genauigkeit — sofortige, fehlerfreie Berechnung der gesetzlichen Gratifikation.",
+        "Transparenz — zeigt alle Annahmen (Formel, Rundung, Höchstgrenzen), sodass Sie Arbeitgeberberechnungen leicht überprüfen können.",
+        "Steuerplanung — identifiziert den voraussichtlich steuerfreien Anteil gemäß Einkommensteuergesetz.",
+        "Szenarioanalyse — vergleichen Sie Ergebnisse für unterschiedliche Dienstzeiten, Rundungsmethoden oder Arbeitgeberprogramme, die großzügiger sind als das gesetzliche Minimum.",
+        "Bessere Vorbereitung — liefert klare Zahlen für Austrittsgespräche, Abschlussformalitäten oder Verhandlungen über Endabrechnungen."
+      ],
+      "note": "Ein praktisches, zeitsparendes Werkzeug — sowohl für Mitarbeitende als auch für HR-Teams."
+    },
+    "notes": {
+      "heading": "Hinweise & Einschränkungen",
+      "points": [
+        "Die gesetzliche Formel gilt für Arbeitnehmer, die unter den Payment of Gratuity Act fallen; Betriebe, die nicht unter das Gesetz fallen, können alternative — meist ähnliche — Formeln verwenden. Prüfen Sie dies immer mit HR oder Ihrem Arbeitsvertrag.",
+        "Die Regierung hat die gesetzliche Höchstgrenze für Gratifikation auf ₹20 Lakh angehoben; auch die Steuerbefreiungsregelungen beziehen sich auf diese Obergrenze. Prüfen Sie aktuelle amtliche Mitteilungen oder steuerliche Richtlinien, um die geltenden Grenzwerte vor der Steuererklärung zu bestätigen."
+      ]
+    }
+  }
+}

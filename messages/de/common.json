@@ -1,0 +1,104 @@
+{
+  "navbar": {
+    "finance": {
+      "page": "Finanzen",
+      "links": {
+        "sip-calculator": {
+          "label": "SIP-Rechner"
+        },
+        "lumpsum-calculator": {
+          "label": "Einmalanlage-Rechner"
+        },
+        "swp-calculator": {
+          "label": "SWP-Rechner"
+        },
+        "mutual-fund-returns-calculator": {
+          "label": "MF-Renditerechner"
+        },
+        "sukanya-samriddhi-yojana-calculator": {
+          "label": "Sukanya Samriddhi Yojana (SSY)"
+        },
+        "ppf-calculator": {
+          "label": "PPF-Rechner"
+        },
+        "epf-calculator": {
+          "label": "EPF-Rechner"
+        },
+        "fd-calculator": {
+          "label": "FD-Rechner"
+        },
+        "rd-calculator": {
+          "label": "RD-Rechner"
+        },
+        "nps-calculator": {
+          "label": "NPS-Rechner"
+        },
+        "simple-interest-calculator": {
+          "label": "Einfacher Zinsrechner"
+        },
+        "compound-interest-calculator": {
+          "label": "Zinseszinsrechner"
+        },
+        "nsc-calculator": {
+          "label": "NSC-Rechner"
+        },
+        "step-up-sip-calculator": {
+          "label": "Step-Up-SIP-Rechner"
+        },
+        "gratuity-calculator": {
+          "label": "Gratifikationsrechner"
+        }
+      }
+    },
+    "students": {
+      "page": "Studierende",
+      "links": {
+        "gpa-calculator": {
+          "label": "GPA-Rechner"
+        },
+        "grade-convertor": {
+          "label": "Notenumrechner"
+        }
+      }
+    },
+    "developer": {
+      "page": "Entwickler",
+      "links": {
+        "about": {
+          "label": "JSON-Formatter"
+        },
+        "customers": {
+          "label": "HTML-Beautifier"
+        }
+      }
+    },
+    "others": {
+      "page": "Sonstiges",
+      "links": {
+        "text-utilities": {
+          "label": "Text-Werkzeuge"
+        },
+        "fun-tools": {
+          "label": "Fun-Tools"
+        }
+      }
+    },
+    "blog": {
+      "page": "Blog",
+      "links": {
+        "finance": {
+          "label": "Finanzen"
+        },
+        "earn": {
+          "label": "Verdienen"
+        }
+      }
+    }
+  },
+  "footer": {
+    "about": "Über uns",
+    "privacy": "Datenschutzrichtlinie",
+    "terms": "Allgemeine Geschäftsbedingungen",
+    "contact": "Kontakt"
+  }
+}

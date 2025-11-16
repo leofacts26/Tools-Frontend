@@ -1,0 +1,261 @@
+{
+  "seo": {
+    "title": "Sukanya Samriddhi Yojana Rechner — SSY Fälligkeitsbetrag & Zinsen berechnen",
+    "description": "Nutzen Sie unseren kostenlosen Sukanya Samriddhi Yojana Rechner, um den Fälligkeitsbetrag, die erzielten Zinsen und Ihre gesamten Ersparnisse für die Zukunft Ihrer Tochter zu berechnen. Planen Sie smarter mit genauen SSY-Prognosen basierend auf dem aktuellen Zinssatz.",
+    "slug": "tools/finance/sukanya-samriddhi-yojana-rechner",
+    "image": "/images/og/ssy-calc.png",
+    "isArticle": true,
+    "publishDate": "2024-01-01",
+    "modifiedDate": "2025-01-01",
+    "author": "Ganaka Hub"
+  },
+  "site": {
+    "heading": "Sukanya Samriddhi Yojana Rechner"
+  },
+  "form": {
+    "yearlyInvestment": "Jährliche Einzahlung",
+    "girlsAge": "Alter des Mädchens (Jahre)",
+    "startPeriod": "Startjahr",
+    "ssyRateLabel": "SSY Zinssatz (fest)",
+    "compoundingNoteShort": "Einzahlungen am Jahresende, monatliche Verzinsung"
+  },
+  "results": {
+    "maturityYear": "Fälligkeitsjahr"
+  },
+  "notes": {
+    "long": "Aktueller SSY-Zinssatz: 8,2 % (im UI fest eingestellt). Dieser Rechner simuliert monatliche Verzinsung und jährliche Einzahlungen, die jeweils am Jahresende erfolgen (z. B. 15 Einzahlungen für eine 15-jährige Einzahlungsdauer). Wenn tuneForGroww auf true gesetzt ist, wird eine kleine Kalibrierung angewendet, um die veröffentlichten Beispiele von Groww exakt nachzubilden. Wenn Sie rohe mathematische Werte bevorzugen (ohne Kalibrierung), setzen Sie tuneForGroww auf false.",
+    "latestRateNote": "Aktueller SSY-Zinssatz: {rate}% (fest im UI). Verwendung von Einzahlung am Jahresende + monatlicher Verzinsung."
+  },
+  "article": {
+    "whatIsHeading": "Sukanya Samriddhi Yojana (SSY) Rechner – Planen Sie eine sichere Zukunft für Ihre Tochter",
+    "whatIsParagraphs": [
+      "Die Sukanya Samriddhi Yojana (SSY) ist eines der attraktivsten, staatlich geförderten Sparprogramme, das entwickelt wurde, um die finanzielle Sicherheit von Mädchen in Indien zu stärken. Eingeführt im Jahr 2015 im Rahmen der Initiative „Beti Bachao, Beti Padhao“, motiviert dieses Programm Eltern dazu, regelmäßig für die zukünftigen Bildungs- und Heiratskosten ihrer Tochter zu sparen – und das mit attraktiven, steuerfreien Renditen.",
+      "Mit einem jährlichen Zinssatz von 8,2 % (Stand 2025) sorgt das SSY-Programm für langfristigen Vermögensaufbau. Um jedoch zu verstehen, wie Ihre Einzahlungen über die Jahre wachsen und welchen Fälligkeitsbetrag Sie erwarten können, benötigen Sie ein einfaches und zuverlässiges Finanztool – den Sukanya Samriddhi Yojana Rechner."
+    ],
+    "whatIsSection": {
+      "id": "what-is-sukanya-samriddhi-yojana-calculator",
+      "heading": "Was ist der Sukanya Samriddhi Yojana Rechner?",
+      "paragraphs": [
+        "Der Sukanya Samriddhi Yojana Rechner ist ein Online-Finanztool, das Eltern oder Erziehungsberechtigten hilft, den Fälligkeitsbetrag und die insgesamt erzielten Zinsen basierend auf ihren jährlichen Einzahlungen zu schätzen.",
+        "Durch Eingabe einfacher Angaben wie jährliche Einzahlung, Alter des Kindes und Startjahr der Investition zeigt der Rechner sofort:"
+      ],
+      "points": [
+        "Das Fälligkeitsjahr,",
+        "Den insgesamt investierten Betrag,",
+        "Die erzielten Gesamtzinsen und",
+        "Den endgültigen Fälligkeitswert."
+      ],
+      "conclusion": "So sparen Sie sich manuelle Berechnungen und erhalten eine klare Vorstellung davon, wie Ihr Vermögen im Rahmen der SSY-Zinseszinsstruktur wächst."
+    },
+    "eligibilitySection": {
+      "id": "who-can-use-ssy-calculator",
+      "heading": "Wer kann den SSY Rechner verwenden?",
+      "intro": "Bevor Sie den Rechner nutzen, stellen Sie sicher, dass Sie für die Sukanya Samriddhi Yojana berechtigt sind. Um ein SSY-Konto zu eröffnen, müssen folgende Voraussetzungen erfüllt sein:",
+      "eligibilityPoints": [
+        "Das Mädchen muss indische Staatsbürgerin sein.",
+        "Das Mädchen muss bei Kontoeröffnung unter 10 Jahre alt sein.",
+        "Pro Familie sind nur zwei Konten erlaubt (eines pro Tochter)."
+      ],
+      "documentsHeading": "Erforderliche Dokumente:",
+      "documents": [
+        "Vollständig ausgefülltes SSY-Kontoeröffnungsformular.",
+        "Geburtsurkunde des Mädchens.",
+        "Identitäts- und Adressnachweis des Erziehungsberechtigten.",
+        "Ärztliches Attest (bei Zwillingen/Drillingen)."
+      ],
+      "conclusion": "Sobald Sie berechtigt sind, können Eltern mit den Einzahlungen beginnen und den Rechner nutzen, um ihre jährlichen Sparpläne effizienter zu gestalten."
+    },
+    "whyUseSection": {
+      "id": "why-use-ssy-calculator",
+      "heading": "Warum sollten Sie den Sukanya Samriddhi Yojana Rechner nutzen?",
+      "intro": "Die finanzielle Planung für Ausbildung und Hochzeit Ihres Kindes gehört zu den wichtigsten Aufgaben der Eltern. Der SSY Rechner hilft Ihnen, klüger zu planen, indem er zeigt, wie Ihr Geld über 21 Jahre hinweg durch Zinseszins wächst. Hier sind die Vorteile:",
+      "points": [
+        {
+          "title": "Genaue Fälligkeitsprognosen",
+          "description": "Erfahren Sie sofort, wie viel Sie bei Fälligkeit erhalten werden."
+        },
+        {
+          "title": "Zielorientierte Planung",
+          "description": "Passen Sie Ihre jährlichen Einzahlungen an, um ein bestimmtes Sparziel zu erreichen."
+        },
+        {
+          "title": "Zeitersparnis",
+          "description": "Überspringen Sie manuelle Berechnungen – erhalten Sie fehlerfreie Ergebnisse in Sekunden."
+        },
+        {
+          "title": "Einfache Steuerplanung",
+          "description": "Sehen Sie, welcher Teil Ihrer Investition gemäß Abschnitt 80C steuerlich abzugsfähig ist."
+        },
+        {
+          "title": "Flexible Anpassungen",
+          "description": "Testen Sie verschiedene Jahresbeiträge, um Ihren finanziellen Möglichkeiten gerecht zu werden."
+        }
+      ],
+      "conclusion": "Kurz gesagt: Der Rechner dient als finanzieller Wegweiser und zeigt Ihnen die langfristigen Vorteile eines disziplinierten Sparens."
+    },
+    "howItWorksSection": {
+      "id": "how-does-ssy-calculator-work",
+      "heading": "Wie funktioniert der SSY Rechner?",
+      "paragraphs": [
+        "Der Sukanya Samriddhi Rechner basiert auf dem Prinzip des Zinseszinses: Die Zinsen werden jährlich berechnet und dem Kontostand hinzugefügt.",
+        "Die verwendete Formel lautet:"
+      ],
+      "formula": {
+        "title": "Zinseszins-Formel:",
+        "body": "A = P × (1 + r/n)^(n × t)"
+      },
+      "variables": [
+        {
+          "symbol": "A",
+          "description": "Fälligkeitsbetrag"
+        },
+        {
+          "symbol": "P",
+          "description": "Kapitalbetrag (Ihre jährliche Einzahlung)"
+        },
+        {
+          "symbol": "r",
+          "description": "Jährlicher Zinssatz (derzeit 8,2 %)"
+        },
+        {
+          "symbol": "n",
+          "description": "Verzinsungshäufigkeit (1 = jährlich)"
+        },
+        {
+          "symbol": "t",
+          "description": "Laufzeit in Jahren (maximal 21 Jahre)"
+        }
+      ],
+      "exampleHeading": "Beispielrechnung:",
+      "exampleIntro": [
+        "Angenommen, Sie investieren jedes Jahr ₹1.00.000 über 14 Jahre.",
+        "Mit dem SSY Rechner und einem Zinssatz von 8,2 % ergibt sich:"
+      ],
+      "exampleResults": [
+        "Ihre Gesamtinvestition = ₹14,00,000",
+        "Erzielte Gesamtzinsen ≈ ₹17,14,000",
+        "Endgültiger Fälligkeitsbetrag ≈ ₹31,14,000"
+      ],
+      "conclusion": "💡 Das ist mehr als das Doppelte Ihres investierten Betrags — ein eindrucksvoller Beweis für die Kraft des Zinseszinses unter SSY."
+    },
+    "featuresSection": {
+      "id": "key-features-of-ssy-calculator",
+      "heading": "Wichtige Funktionen des Sukanya Samriddhi Yojana Rechners",
+      "points": [
+        "Zeigt das Fälligkeitsjahr – Berechnet, wann Ihr SSY-Konto fällig wird (21 Jahre ab Kontoeröffnung).",
+        "Zeigt Gesamtinvestition & Zinsen – Detaillierte Aufschlüsselung von Kapital und Erträgen für volle Transparenz.",
+        "Sofortige Berechnungen – Erhalten Sie genaue Ergebnisse in Sekunden nach Eingabe Ihrer Daten.",
+        "Kostenlos & einfach zu verwenden – Keine Registrierung oder Anmeldung erforderlich.",
+        "Mehrere Durchläufe möglich – Testen Sie verschiedene Beitragshöhen, um Ihr Sparziel zu erreichen."
+      ],
+      "conclusion": "Damit ist er eines der praktischsten Finanzplanungstools für Eltern junger Mädchen."
+    },
+    "taxBenefitsSection": {
+      "id": "tax-benefits-of-ssy",
+      "heading": "Steuervorteile der Sukanya Samriddhi Yojana",
+      "intro": "Einer der größten Vorteile der SSY ist ihr EEE-Status (Exempt–Exempt–Exempt):",
+      "points": [
+        {
+          "title": "Steuerbefreiung auf Einzahlungen",
+          "description": "Beiträge bis zu ₹1,5 Lakh pro Finanzjahr sind gemäß Abschnitt 80C steuerlich abzugsfähig."
+        },
+        {
+          "title": "Steuerfreie Zinsen",
+          "description": "Die während der Laufzeit erzielten Zinsen sind vollständig steuerfrei."
+        },
+        {
+          "title": "Steuerfreier Fälligkeitsbetrag",
+          "description": "Der endgültige Fälligkeitswert ist vollständig steuerfrei."
+        }
+      ],
+      "conclusion": "Damit gehört das SSY-Programm zu den steuerlich effizientesten Sparplänen Indiens."
+    },
+    "howToUseSection": {
+      "id": "how-to-use-ssy-calculator",
+      "heading": "Wie Sie den Sukanya Samriddhi Yojana Rechner verwenden (Schritt für Schritt)",
+      "intro": "Die Nutzung des Online-SSY-Rechners ist äußerst einfach:",
+      "steps": [
+        {
+          "title": "Geben Sie den jährlichen Einzahlungsbetrag ein",
+          "description": "Zum Beispiel ₹50.000 pro Jahr."
+        },
+        {
+          "title": "Geben Sie das Alter des Mädchens ein",
+          "description": "Das Kind muss bei Kontoeröffnung unter 10 Jahre alt sein."
+        },
+        {
+          "title": "Geben Sie das Startjahr der Investition ein",
+          "description": "Dies dient zur Berechnung des Fälligkeitsjahres (21 Jahre ab Start)."
+        },
+        {
+          "title": "Klicken Sie auf „Berechnen“",
+          "description": "Der Rechner zeigt sofort den Fälligkeitsbetrag, die erzielten Zinsen und die Gesamtinvestition an."
+        },
+        {
+          "title": "Werte erneut eingeben",
+          "description": "Sie können mehrere Szenarien testen, bis Sie den idealen Sparbetrag finden."
+        }
+      ]
+    },
+    "benefitsOnlineSection": {
+      "id": "benefits-of-using-ssy-calculator-online",
+      "heading": "Vorteile der Online-Nutzung des SSY Rechners",
+      "intro": "Darum ist die Nutzung eines SSY Rechners besser als manuelle Berechnungen:",
+      "points": [
+        {
+          "title": "Bietet genaue Prognosen",
+          "description": "Vermeiden Sie menschliche Fehler und erhalten Sie präzise Zukunftsprognosen."
+        },
+        {
+          "title": "Spart Zeit",
+          "description": "Sofortige Ergebnisse ohne komplizierte Rechenarbeit."
+        },
+        {
+          "title": "Vereinfacht die Finanzplanung",
+          "description": "Passen Sie Ihre Sparziele anhand realistischer Ergebnisse an."
+        },
+        {
+          "title": "Fördert Beständigkeit",
+          "description": "Wenn Eltern das mögliche Fälligkeitsvermögen sehen, bleiben sie motiviert und diszipliniert."
+        },
+        {
+          "title": "Überall zugänglich",
+          "description": "Sie können das Tool jederzeit und auf jedem Gerät verwenden."
+        }
+      ],
+      "conclusion": "Mit regelmäßiger Nutzung des Rechners können Sie das Wachstum Ihrer Investition verfolgen und die finanzielle Zukunft Ihrer Tochter absichern."
+    },
+    "maturitySection": {
+      "id": "what-happens-at-maturity",
+      "heading": "Was passiert bei Fälligkeit?",
+      "intro": "Das Sukanya Samriddhi Konto wird 21 Jahre nach der Eröffnung fällig oder wenn das Mädchen nach Vollendung des 18. Lebensjahres heiratet – je nachdem, was zuerst eintritt. Bei Fälligkeit:",
+      "points": [
+        "Kann das gesamte Guthaben, einschließlich Kapital und angesammelter Zinsen, vom Mädchen abgehoben werden.",
+        "Der Betrag kann für höhere Bildung oder Heiratskosten verwendet werden.",
+        "Für die Auszahlung müssen gültige Identitätsnachweise, Altersnachweise und unterstützende Dokumente (z. B. Immatrikulations- oder Heiratsurkunden) eingereicht werden.",
+        "Eine Teilabhebung von bis zu 50 % ist zulässig, sobald das Mädchen 18 Jahre alt wird – für bildungsbezogene Ausgaben."
+      ]
+    },
+    "whyBestSection": {
+      "id": "why-ssy-best-investment-for-girl-child",
+      "heading": "Warum das SSY-Programm die beste Investitionsoption für ein Mädchen ist",
+      "points": [
+        "Staatlich garantierte Sicherheit – Sichere, garantierte Renditen durch die indische Regierung.",
+        "Hoher Zinssatz – Einer der höchsten Zinsen unter den staatlichen Klein­spar­programmen.",
+        "Steuerfreies Wachstum – Vollständige Steuerbefreiung gemäß Abschnitt 80C.",
+        "Langfristige finanzielle Stabilität – Ideal zur Finanzierung von Bildung oder Heiratskosten.",
+        "Fördert frühzeitige Finanzplanung – Unterstützt verantwortungsbewusste Spargewohnheiten der Eltern."
+      ]
+    },
+    "finalThoughtsSection": {
+      "id": "final-thoughts",
+      "heading": "Abschließende Gedanken",
+      "paragraphs": [
+        "Der Sukanya Samriddhi Yojana Rechner ist ein unverzichtbares Tool für alle Eltern, die eine sichere und erfolgreiche Zukunft für ihre Tochter planen. Er zeigt nicht nur, wie Ihr Geld wächst, sondern hilft auch bei der Festlegung realistischer finanzieller Ziele für die nächsten zwei Jahrzehnte.",
+        "Durch konsequentes Sparen und die regelmäßige Nutzung dieses Rechners zur Überwachung Ihres Vermögensaufbaus können Sie sicherstellen, dass Ausbildung und Heirat Ihrer Tochter finanziell abgesichert sind – ganz ohne Stress.",
+        "💡 Beginnen Sie noch heute — nutzen Sie unseren kostenlosen Sukanya Samriddhi Yojana Rechner und planen Sie die Zukunft Ihrer Tochter mit Vertrauen.",
+        "Sicher. Smart. Steuerfrei."
+      ]
+    }
+  }
+}

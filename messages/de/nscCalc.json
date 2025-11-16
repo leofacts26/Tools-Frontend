@@ -1,0 +1,130 @@
+{
+  "seo": {
+    "title": "NSC Rechner — National Savings Certificate Zinsen & Fälligkeitswert online berechnen",
+    "description": "Nutzen Sie unseren kostenlosen NSC Rechner, um den Fälligkeitswert und die insgesamt erzielten Zinsen Ihres National Savings Certificate (NSC) zu berechnen. Geben Sie Anlagebetrag, Laufzeit und Zinssatz ein und erhalten Sie sofort präzise Ergebnisse.",
+    "slug": "tools/finance/nsc-calculator",
+    "image": "/images/og/nsc-calculator-en.png",
+    "isArticle": true,
+    "publishDate": "2024-01-01",
+    "modifiedDate": "2025-10-18",
+    "author": "Your Site"
+  },
+  "site": {
+    "heading": "NSC (National Savings Certificate) Rechner"
+  },
+  "form": {
+    "principal": "Anlagebetrag",
+    "interestRate": "Zinssatz (p.a.)",
+    "timePeriod": "Laufzeit",
+    "compoundingFrequency": "Zinseszins-Frequenz"
+  },
+  "article": {
+    "intro": {
+      "heading": "Warum einen NSC-Rechner verwenden?",
+      "paragraphs": [
+        "Das National Savings Certificate (NSC) ist ein sicheres, staatlich garantiertes Sparprodukt, das von vielen Anlegern in Indien zur Kapitalerhaltung und für Steuervorteile genutzt wird.",
+        "Da die NSC-Zinsen jährlich kapitalisiert und erst bei Fälligkeit ausgezahlt werden, hängt der Endbetrag sowohl von der investierten Summe als auch vom geltenden Zinseszins-Satz ab – dieser kann von der Regierung quartalsweise angepasst werden.",
+        "Ein NSC-Rechner beseitigt die manuelle Berechnung: Geben Sie einfach den Anlagebetrag und den aktuellen Zinssatz ein, und das Tool zeigt Ihnen den Fälligkeitsbetrag, die effektive Jahresrendite und die insgesamt erzielten Zinsen für die 5-jährige Laufzeit an.",
+        "So können Sie NSC-Erträge mit anderen sicheren Produkten (PPF, Post Office FD) vergleichen, Ihre 80C-Steuervergünstigungen planen und die passende Anlagesumme zur Erreichung Ihrer finanziellen Ziele bestimmen."
+      ]
+    },
+    "nsccalculator": {
+      "heading": "NSC (National Savings Certificate) Rechner",
+      "subHeading": "NSC-Beispiel: 5 Jahre Laufzeit. Wählen Sie die Zinseszins-Frequenz (jährlich / halbjährlich)."
+    },
+    "whatIs": {
+      "heading": "Was ist NSC? — National Savings Certificate einfach erklärt",
+      "paragraphs": [
+        "Das National Savings Certificate (NSC) ist ein langfristiges, festverzinsliches Sparprogramm, das in Postämtern in ganz Indien angeboten und von der Regierung Indiens garantiert wird.",
+        "NSC hat eine feste Sperrfrist von fünf Jahren und bietet einen garantierten Zinssatz, der jährlich kapitalisiert und bei Fälligkeit ausgezahlt wird.",
+        "NSC-Einzahlungen sind im Rahmen von Section 80C des Income Tax Act steuerlich abzugsfähig (bis zur Obergrenze von ₹1,5 Lakh), was es für Anleger attraktiv macht, die nach steueroptimierten, risikoarmen Sparformen suchen.",
+        "Der Einstieg ist niedrigschwellig — bereits kleine Beträge können investiert werden — und es gibt praktisch keine obere Grenze für Investitionen, auch wenn steuerliche Vorteile in der Regel den Rahmen setzen.",
+        "Da NSC staatlich garantiert ist, bevorzugen es viele sicherheitsorientierte Anleger, die Wert auf Kapitalerhalt und vorhersehbare Renditen legen."
+      ]
+    },
+    "howItHelps": {
+      "heading": "Wie hilft Ihnen ein NSC-Rechner? — Praktische Einsatzmöglichkeiten",
+      "intro": "Ein NSC-Rechner liefert sofort Klarheit über den erwarteten Fälligkeitswert — ganz ohne manuelle Berechnungen. Nutzen Sie ihn, um:",
+      "points": [
+        "Den Fälligkeitsbetrag für einen NSC-Einmalbetrag zum aktuellen Zinssatz zu berechnen.",
+        "Die insgesamt erzielten Zinsen über die 5-jährige Sperrfrist und die effektive Jahresrendite zu sehen.",
+        "NSC-Renditen mit anderen staatlichen Sparprogrammen (PPF, FDs, Sukanya Samriddhi etc.) zu vergleichen.",
+        "Ihre 80C-Steuerplanung zu optimieren — ermitteln Sie, wie viel Sie investieren müssen, um den Steuerabzug effizient zu nutzen.",
+        "„Was-wäre-wenn“-Szenarien zu testen, z. B. bei geänderten Zinssätzen (die Regierung aktualisiert die Sparzinsen quartalsweise) — so können Sie den optimalen Investitionszeitpunkt bestimmen."
+      ],
+      "note": "Das Tool ist schnell, präzise und eliminiert Rechenfehler bei der Finanzplanung."
+    },
+    "formula": {
+      "heading": "Wie der NSC-Rechner funktioniert — Logik, Formel & Annahmen",
+      "intro": "Der NSC-Rechner verwendet jährlichen Zinseszins für eine Einmalanlage über die typische NSC-Laufzeit (normalerweise 5 Jahre). Die zentrale Berechnungsformel ist die klassische Zinseszinsformel:",
+      "methods": [
+        {
+          "title": "Formel (jährliche Verzinsung):",
+          "formulas": [
+            "Fälligkeitsbetrag (A) = P × (1 + r)^n"
+          ]
+        }
+      ],
+      "definitions": [
+        "P = investierter Anlagebetrag (₹)",
+        "r = jährlicher Zinssatz als Dezimalzahl (z. B. 7,7 % → 0,077)",
+        "n = Anzahl der Jahre (bei NSC üblicherweise 5)"
+      ],
+      "note": "Erzielte Zinsen = A − P. Der Rechner zeigt außerdem die jährliche Wertentwicklung, die gesamten Zinsen und die effektive Jahresrendite an. Er weist auch auf Annahmen wie Zinssatz und Laufzeit hin, da die offiziellen NSC-Zinsen quartalsweise geändert werden können."
+    },
+    "inputs": {
+      "heading": "Welche Eingaben Sie benötigen — Geordnete Checkliste für den NSC-Rechner",
+      "intro": "Für eine präzise Berechnung sollten Sie die folgenden Angaben bereithalten (in dieser Reihenfolge eingeben):",
+      "list": [
+        "Anlagebetrag (P) — der Einmalbetrag, den Sie in NSC investieren.",
+        "Zinssatz (R %) — der aktuelle NSC-Zins zum Zeitpunkt Ihrer Investition (Regierung aktualisiert ihn quartalsweise).",
+        "Laufzeit (n) — normalerweise 5 Jahre für das Standard-NSC; ältere Ausgaben hatten teilweise andere Laufzeiten.",
+        "Startdatum (optional) — um Fälligkeitsdatum exakt zu berechnen und die jährliche Verzinsung darzustellen.",
+        "Steuerkennzeichen (optional) — ob Sie diesen Betrag unter Section 80C steuerlich geltend machen möchten."
+      ],
+      "note": "Nach Eingabe dieser Werte zeigt der Rechner den Fälligkeitsbetrag, die gesamten Zinsen, die effektive Jahresrendite und eine Jahr-für-Jahr-Übersicht, die das Wachstum übersichtlich visualisiert."
+    },
+    "calculation": {
+      "heading": "Berechnungsformel (einfach erklärt) — Schrittweise Formel & Beispiel",
+      "intro": "Da NSC jährlich verzinst und kapitalisiert, bleibt die Berechnung unkompliziert:",
+      "steps": [
+        "Zinssatz in eine Dezimalzahl umrechnen: r = R / 100.",
+        "Zinseszinsformel anwenden: A = P × (1 + r)^n.",
+        "Zinsen berechnen: Zinsen = A − P.",
+        "Effektive Jahresrendite (AER) bestimmen: AER = (A / P)^{1/n} − 1 (als Prozentwert)."
+      ],
+      "example": "Kurzbeispiel (illustrativ): Wenn P = ₹10.00.000, R = 7,7 % und n = 5, dann gilt r = 0,077 und A = 10.00.000 × (1,077)^5. Der Rechner berechnet den Wert exakt und zeigt sowohl A als auch die Differenz A − P als Gesamtzinsen an. Nutzen Sie die Jahresübersicht, um zu sehen, wie der Zinseszins das Wachstum beschleunigt."
+    },
+    "howToUse": {
+      "heading": "Wie Sie den NSC-Rechner verwenden — Schritt-für-Schritt-Anleitung",
+      "intro": "Folgen Sie diesen geordneten Schritten, um eine zuverlässige NSC-Berechnung zu erhalten:",
+      "steps": [
+        "Geben Sie den Einmalbetrag ein, den Sie in NSC investieren möchten (P).",
+        "Wählen oder eingeben des aktuellen NSC-Zinssatzes (R %) — prüfen Sie den von der Regierung veröffentlichten Zinssatz für das laufende Quartal.",
+        "Bestätigen Sie die Laufzeit (Standard = 5 Jahre).",
+        "Optional: Geben Sie das Kaufdatum ein, um das genaue Fälligkeitsdatum anzuzeigen.",
+        "Klicken Sie auf „Berechnen“. Ausgaben: Fälligkeitsbetrag (A), insgesamt erzielte Zinsen, effektive Jahresrendite sowie eine Jahr-für-Jahr-Wachstumsübersicht."
+      ],
+      "note": "Vergleichen Sie NSC mit Alternativen wie PPF oder FD, indem Sie Zinssatz oder Laufzeit ändern. Der Rechner ist schnell, präzise und zeigt Ihnen transparente Annahmen, sodass Sie selbstbewusst sparen oder investieren können."
+    },
+    "advantages": {
+      "heading": "Vorteile der Nutzung eines NSC-Rechners — Warum er so hilfreich ist",
+      "intro": "Ein NSC-Rechner spart Zeit, erhöht die Genauigkeit und unterstützt Ihre Steuerplanung:",
+      "points": [
+        "Sofortige Ergebnisse: kein manuelles Rechnen oder komplizierte Tabellenkalkulationen.",
+        "Exakte Zinsaufschlüsselung: sehen Sie genau, wie viel des Fälligkeitsbetrags aus Zinsen und wie viel aus dem ursprünglichen Kapital besteht.",
+        "Steuerplanung: schätzen Sie, wie viel Ihres 80C-Limits durch NSC-Investitionen genutzt wird.",
+        "Quartalszinssatz-Transparenz: da die Zinsen für Kleinsparprodukte regelmäßig angepasst werden, ermöglicht der Rechner realistische Szenariotests und bessere Kaufentscheidungen.",
+        "Benchmarking für risikoarme Anlagen: vergleichen Sie garantierte NSC-Renditen mit anderen konservativen Optionen, um Liquidität und Steuerziele abzustimmen."
+      ],
+      "note": "Verwenden Sie den Rechner vor dem Kauf eines NSC im Postamt, um eine gut informierte und steueroptimierte Entscheidung zu treffen."
+    },
+    "notes": {
+      "heading": "Hinweise & Einschränkungen",
+      "points": [
+        "Die NSC-Zinssätze werden von der Regierung festgelegt und vierteljährlich angepasst; prüfen Sie vor einer Investitionsentscheidung stets den aktuellen Satz.",
+        "NSC-Zinsen sind steuerpflichtig, aber die in früheren Jahren gutgeschriebenen Zinsen gelten als reinvestiert und können im Jahr der Gutschrift unter Section 80C abzugsfähig sein (prüfen Sie die aktuellen Steuervorschriften für Ihr Steuerjahr)."
+      ]
+    }
+  }
+}

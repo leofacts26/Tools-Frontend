@@ -1,0 +1,157 @@
+{
+  "seo": {
+    "title": "Einfacher Zins Rechner — Zinsen und Gesamtbetrag online berechnen",
+    "description": "Nutzen Sie unseren kostenlosen Einfacher-Zins-Rechner, um schnell die Zinsen und den Gesamtbetrag für Ihre Kapitalanlage zu berechnen. Geben Sie Kapital, Zinssatz und Laufzeit ein, um sofortige Ergebnisse für Kredite oder Ersparnisse zu erhalten.",
+    "slug": "tools/finance/einfacher-zins-rechner",
+    "image": "/images/og/simpleinterestcalc-en.png",
+    "isArticle": true,
+    "publishDate": "2024-01-01",
+    "modifiedDate": "2025-01-01",
+    "author": "Your Site"
+  },
+  "site": {
+    "heading": "Einfacher Zins Rechner"
+  },
+  "form": {
+    "principal": "Kapitalbetrag",
+    "interestRate": "Zinssatz (p.a.)",
+    "timePeriod": "Laufzeit"
+  },
+  "article": {
+    "intro": {
+      "heading": "Warum einen Einfacher-Zins-Rechner verwenden?",
+      "paragraphs": [
+        "Der einfache Zins ist die schnellste Methode, um Zinsen auf ein Kapital zu berechnen, wenn keine Zinseszinsen angewendet werden.",
+        "Wenn Sie kurzfristige Kredite, bestimmte Sparprodukte oder Rückzahlungspläne haben, bei denen Zinsen nur auf das ursprüngliche Kapital berechnet werden, liefert Ihnen ein Einfacher-Zins-Rechner in Sekunden exakte Werte.",
+        "Anstatt Formeln manuell anzuwenden oder Rechenfehler zu riskieren, übernimmt der Rechner die Eingaben für Kapital, Jahreszinssatz und Laufzeit und berechnet automatisch Zinsen und Gesamtbetrag bei Fälligkeit.",
+        "Er eignet sich ideal für Studierende, Kreditnehmer, Kreditgeber und Kleinunternehmer, die eine klare und unkomplizierte Übersicht über Zinskosten und Ergebnisse benötigen.",
+        "Nutzen Sie das Tool, um Angebote zu vergleichen, Rückzahlungen zu planen oder zu prüfen, wie viel eine kurzfristige Anlage ohne Zinseszins einbringt."
+      ]
+    },
+    "whatIs": {
+      "heading": "Was ist Einfacher Zins? — Kontext für den Einfacher-Zins-Rechner",
+      "paragraphs": [
+        "Einfacher Zins ist der Zins, der während der gesamten Laufzeit eines Kredits oder einer Anlage ausschließlich auf das ursprüngliche Kapital berechnet wird. Anders als beim Zinseszins — bei dem aufgelaufene Zinsen dem Kapital zugeschlagen werden und selbst wieder Zinsen erzeugen — bleibt das Kapital beim einfachen Zins konstant.",
+        "Typische Anwendungsfälle sind kurzfristige Kredite, bestimmte Anleihezinsen, Fahrzeugkredite mit Festzinssatz oder kurzfristige Schuldscheine. Die Einfachheit sorgt für Transparenz: Die Zinsen steigen linear mit der Zeit. Diese Vorhersehbarkeit ist hilfreich für Budgetplanung und Angebotsvergleiche.",
+        "Bei den meisten langfristigen Anlagen oder Bankprodukten liefern Zinseszinsen jedoch in der Regel höhere Erträge (oder höhere Kosten für Kreditnehmer).",
+        "Ein Einfacher-Zins-Rechner hilft Ihnen, (1) den einfachen Zins (SI) zu berechnen und (2) den Gesamtbetrag (A) = Kapital + SI zu bestimmen — wodurch Vergleiche und Entscheidungen schnell und zuverlässig werden."
+      ]
+    },
+    "formula": {
+      "heading": "Formel für einfachen Zins — Formeln, die der Einfacher-Zins-Rechner verwendet",
+      "intro": "Es gibt zwei gleichwertige Arten, die Formeln für einfachen Zins darzustellen. Verwenden Sie die Notation, die am besten zu Ihren Eingaben passt:",
+      "methods": [
+        {
+          "title": "1. Nutzung des Dezimalzinssatzes r (r = R/100):",
+          "formulas": [
+            "Gesamtbetrag: A = P × (1 + r × t)",
+            "Einfacher Zins: SI = P × r × t"
+          ]
+        },
+        {
+          "title": "2. Nutzung des Prozentsatzes R direkt:",
+          "formulas": [
+            "Einfacher Zins: SI = (P × R × T) / 100",
+            "Gesamtbetrag: A = P + SI = P + (P × R × T) / 100"
+          ]
+        }
+      ],
+      "definitions": [
+        "P = Kapital (anfänglicher Betrag)",
+        "R = Jahreszinssatz in Prozent",
+        "r = Jahreszinssatz als Dezimalzahl (r = R/100)",
+        "T oder t = Laufzeit in Jahren (Monate/Tage in Jahre umrechnen)"
+      ],
+      "note": "Diese linearen Formeln machen die Zinsberechnung besonders einfach — genau das, was der Rechner im Hintergrund anwendet."
+    },
+    "howToCalculate": {
+      "id": "how-to-calculate-simple-interest",
+      "heading": "Wie berechnet man einfachen Zins mit dem Rechner? — Eingaben & Funktionsweise",
+      "intro": "Der Einfacher-Zins-Rechner benötigt drei grundlegende Eingaben: Kapital P, Jahreszinssatz R% und Laufzeit T (in Jahren oder Monaten). Der Rechner folgt dabei diesen Schritten:",
+      "steps": [
+        "Wenn Sie die Laufzeit in Monaten/Tagen eingeben, wird sie in Jahre umgerechnet (T_Jahre = Monate / 12 oder Tage / 365).",
+        "Er berechnet den einfachen Zins über SI = (P × R × T_Jahre) / 100.",
+        "Er gibt den Fälligkeits- bzw. Rückzahlungsbetrag A = P + SI aus."
+      ],
+      "optionalFeatures": [
+        "Schalter für Währung und Formatierung (₹, USD, Rundungsgenauigkeit).",
+        "Option, Ergebnisse als jährliche Zinsen oder Gesamtertrag für die Laufzeit anzuzeigen.",
+        "Eingabevalidierung und hilfreiche Fehlermeldungen bei negativen oder fehlenden Werten."
+      ],
+      "note": "Der Rechner berücksichtigt keinen Zinseszins — wenn Sie Zinseszinsen benötigen, verwenden Sie einen Zinseszins- oder FD-Rechner."
+    },
+    "benefits": {
+      "heading": "Wie kann ein Einfacher-Zins-Rechner Ihnen helfen? — Praktische Vorteile",
+      "intro": "Ein Einfacher-Zins-Rechner unterstützt Sie in vielerlei praktischen Situationen:",
+      "points": [
+        "Budgetierung von Kreditrückzahlungen — kennen Sie die exakten Zinskosten bei kurzfristigen Krediten.",
+        "Angebotsvergleich — vergleichen Sie Flat-Rate-Kredite und einfache Zinsmodelle schnell.",
+        "Anlageplanung — schätzen Sie Erträge von Produkten, die einfachen Zins verwenden.",
+        "Transparenz — vermeiden Sie menschliche Fehler bei mehrstufigen Berechnungen.",
+        "Schnelle „Was-wäre-wenn“-Tests — ändern Sie Kapital, Zinssatz oder Laufzeit und sehen Sie sofort die Auswirkungen."
+      ],
+      "note": "Für Kreditnehmer und Kreditgeber ist das Tool eine schnelle und zuverlässige Möglichkeit, unklare Zinssätze in konkrete Beträge umzuwandeln, die realistisch planbar sind."
+    },
+    "advantages": {
+      "heading": "Vorteile eines Einfacher-Zins-Rechners — Warum er manuelle Berechnung übertrifft",
+      "intro": "Die Nutzung eines Online-Einfacher-Zins-Rechners bietet klare Vorteile:",
+      "points": [
+        "Geschwindigkeit: sofortige Ergebnisse statt zeitaufwendiger Handberechnungen.",
+        "Genauigkeit: vermeidet Rechen- und Umrechnungsfehler.",
+        "Komfort: unterstützt Monate-/Tage-Eingaben und automatische Umrechnung in Jahre.",
+        "Szenariotests: testen Sie mehrere Varianten in Sekunden, um die beste Option zu wählen.",
+        "Zugänglichkeit: nutzbar auf Smartphone oder Desktop ohne Tabellenkalkulation.",
+        "Lerneffekt: zeigt schrittweise Formelausgaben, damit Nutzer die Mathematik hinter den Ergebnissen verstehen."
+      ],
+      "note": "Besonders nützlich bei kurzfristigen Kreditentscheidungen, Rechnungsfinanzierung oder schnellen Prüfungen vor Vertragsabschluss."
+    },
+    "steps": {
+      "heading": "Schritt-für-Schritt: Den Einfacher-Zins-Rechner verwenden — Geordnete Anleitung",
+      "intro": "Befolgen Sie diese Schritte, um genaue Ergebnisse zu erhalten:",
+      "list": [
+        "Kapitalbetrag eingeben (P): der ursprüngliche Kredit- oder Anlagebetrag.",
+        "Jahreszinssatz eingeben (R%): der ausgewiesene jährliche Zinssatz.",
+        "Laufzeit eingeben (T): in Jahren; wenn Sie Monate oder Tage haben, wählen Sie die entsprechende Einheit — der Rechner konvertiert automatisch.",
+        "Rundungsgenauigkeit auswählen (optional): z. B. auf ganze Beträge oder zwei Dezimalstellen.",
+        "Klicken Sie auf „Berechnen“. Die Ausgabe zeigt: SI (einfacher Zins), A (Gesamtbetrag) und eine kleine Aufschlüsselung (P, R, T).",
+        "Nutzen Sie „Was-wäre-wenn“-Eingaben, um Laufzeiten oder Zinssatzänderungen zu vergleichen.",
+        "Exportieren oder speichern Sie die Ergebnisse, wenn Sie die Berechnung dokumentieren müssen."
+      ],
+      "note": "Dieser strukturierte Ablauf sorgt für wiederholbare und nachvollziehbare Berechnungen."
+    },
+    "example": {
+      "heading": "Anschauliches Beispiel — Durchgerechnetes Beispiel mit korrekter Arithmetik",
+      "intro": "Beispiel: Herr A leiht P = ₹15.000 zu R = 5 % pro Jahr für T = 2 Jahre. Berechnung:",
+      "steps": [
+        "SI = (P × R × T) / 100.",
+        "Multiplizieren: 15.000 × 5 = 75.000.",
+        "Mit T multiplizieren: 75.000 × 2 = 150.000.",
+        "Durch 100 teilen: 150.000 / 100 = ₹1.500.",
+        "Einfacher Zins = ₹1.500.",
+        "Gesamtbetrag A = P + SI = 15.000 + 1.500 = ₹16.500."
+      ],
+      "note": "Der Rechner zeigt beide Werte an und kann auch die jährlichen Zinsen ausgeben (₹750 pro Jahr), was die Budgetplanung erleichtert. Für Monate konvertieren Sie T entsprechend — z. B. 6 Monate = 0,5 Jahre."
+    },
+    "decision": {
+      "heading": "Wann einfachen Zins vs. Zinseszins verwenden? — Entscheidungshilfe",
+      "intro": "Wählen Sie den richtigen Rechner basierend darauf, wie Zinsen in Ihrem Finanzprodukt angewendet werden:",
+      "simpleUse": {
+        "title": "Einfachen Zins wählen, wenn:",
+        "points": [
+          "Zinsen ausdrücklich nur auf das ursprüngliche Kapital berechnet werden (Flat-Rate-Modelle, einige kurzfristige Kredite).",
+          "Die Laufzeit kurz ist (einige Monate bis wenige Jahre) und der Kreditgeber keine Zinseszinsen verwendet.",
+          "Sie lineare, vorhersehbare Zinskosten benötigen."
+        ]
+      },
+      "compoundUse": {
+        "title": "Zinseszins wählen, wenn:",
+        "points": [
+          "Zinsen periodisch dem Kapital hinzugefügt werden (Bankeinlagen, viele langfristige Anlagen).",
+          "Sie Wachstum modellieren möchten, bei dem Zinsen selbst wieder Zinsen erzeugen.",
+          "Die Laufzeit lang ist und Zinseszinsen die Ergebnisse deutlich verändern."
+        ]
+      },
+      "note": "Wenn Sie unsicher sind, prüfen Sie die Bedingungen des Finanzprodukts. Unser Einfacher-Zins-Rechner ist für nicht verzinste Szenarien gedacht; für reinvestierte Zinsen nutzen Sie einen Zinseszins- oder FD-Rechner."
+    }
+  }
+}
