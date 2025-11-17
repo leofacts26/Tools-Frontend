@@ -1,0 +1,104 @@
+{
+  "navbar": {
+    "finance": {
+      "page": "المال",
+      "links": {
+        "sip-calculator": {
+          "label": "حاسبة SIP"
+        },
+        "lumpsum-calculator": {
+          "label": "حاسبة المبلغ المقطوع"
+        },
+        "swp-calculator": {
+          "label": "حاسبة SWP"
+        },
+        "mutual-fund-returns-calculator": {
+          "label": "حاسبة عوائد الصناديق المشتركة"
+        },
+        "sukanya-samriddhi-yojana-calculator": {
+          "label": "حاسبة خطة سوكانيا سامرودي (SSY)"
+        },
+        "ppf-calculator": {
+          "label": "حاسبة PPF"
+        },
+        "epf-calculator": {
+          "label": "حاسبة EPF"
+        },
+        "fd-calculator": {
+          "label": "حاسبة الإيداع الثابت (FD)"
+        },
+        "rd-calculator": {
+          "label": "حاسبة الإيداع المتكرر (RD)"
+        },
+        "nps-calculator": {
+          "label": "حاسبة NPS"
+        },
+        "simple-interest-calculator": {
+          "label": "حاسبة الفائدة البسيطة"
+        },
+        "compound-interest-calculator": {
+          "label": "حاسبة الفائدة المركبة"
+        },
+        "nsc-calculator": {
+          "label": "حاسبة NSC"
+        },
+        "step-up-sip-calculator": {
+          "label": "حاسبة SIP المتزايد"
+        },
+        "gratuity-calculator": {
+          "label": "حاسبة المكافأة"
+        }
+      }
+    },
+    "students": {
+      "page": "الطلاب",
+      "links": {
+        "gpa-calculator": {
+          "label": "حاسبة المعدل (GPA)"
+        },
+        "grade-convertor": {
+          "label": "محول الدرجات"
+        }
+      }
+    },
+    "developer": {
+      "page": "المطور",
+      "links": {
+        "about": {
+          "label": "منسق JSON"
+        },
+        "customers": {
+          "label": "منسق HTML"
+        }
+      }
+    },
+    "others": {
+      "page": "أدوات أخرى",
+      "links": {
+        "text-utilities": {
+          "label": "أدوات النصوص"
+        },
+        "fun-tools": {
+          "label": "أدوات ترفيهية"
+        }
+      }
+    },
+    "blog": {
+      "page": "المدونة",
+      "links": {
+        "finance": {
+          "label": "المال"
+        },
+        "earn": {
+          "label": "الربح"
+        }
+      }
+    }
+  },
+  "footer": {
+    "about": "من نحن",
+    "privacy": "سياسة الخصوصية",
+    "terms": "الشروط والأحكام",
+    "contact": "اتصل بنا"
+  }
+}
