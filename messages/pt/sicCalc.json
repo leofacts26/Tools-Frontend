@@ -1,0 +1,157 @@
+{
+  "seo": {
+    "title": "Calculadora de Juros Simples — Calcule Juros e Valor Total Online",
+    "description": "Use nossa Calculadora de Juros Simples gratuita para calcular rapidamente os juros e o valor total sobre o seu investimento. Insira o principal, a taxa e o período para obter resultados instantâneos para empréstimos ou aplicações.",
+    "slug": "tools/finance/simple-interest-calculator",
+    "image": "/images/og/simpleinterestcalc-en.png",
+    "isArticle": true,
+    "publishDate": "2024-01-01",
+    "modifiedDate": "2025-01-01",
+    "author": "Your Site"
+  },
+  "site": {
+    "heading": "Calculadora de Juros Simples"
+  },
+  "form": {
+    "principal": "Valor principal",
+    "interestRate": "Taxa de juros (a.a.)",
+    "timePeriod": "Período de tempo"
+  },
+  "article": {
+    "intro": {
+      "heading": "Por que usar uma Calculadora de Juros Simples",
+      "paragraphs": [
+        "O juro simples é a forma mais rápida de calcular juros sobre um valor principal quando não há capitalização.",
+        "Se você possui empréstimos de curto prazo, certos produtos de poupança ou contratos onde o juro é cobrado apenas sobre o valor original, uma Calculadora de Juros Simples fornece números exatos em segundos.",
+        "Em vez de aplicar fórmulas manualmente ou correr o risco de erros de cálculo, a calculadora utiliza seu principal, taxa anual e período de tempo para gerar o juro e o valor total a pagar no vencimento.",
+        "É ideal para estudantes, tomadores de empréstimo, credores e pequenos empreendedores que precisam de uma visão clara e objetiva dos custos e resultados dos juros.",
+        "Use a ferramenta para comparar ofertas, planejar pagamentos ou verificar quanto um investimento de curto prazo renderá sem capitalização."
+      ]
+    },
+    "whatIs": {
+      "heading": "O que é Juro Simples? — Contexto para a Calculadora de Juros Simples",
+      "paragraphs": [
+        "Juro simples é o juro calculado apenas sobre o valor principal durante toda a duração do investimento ou empréstimo. Diferente do juro composto — onde o juro acumulado é reinvestido e também passa a render — no juro simples o principal permanece fixo.",
+        "Aplicações comuns incluem empréstimos de curto prazo, certos cupons de títulos, financiamentos de veículos com taxa fixa e notas promissórias de curta duração. A simplicidade torna os cálculos transparentes: o juro cresce linearmente com o tempo. Essa previsibilidade é útil para orçamentos e comparações.",
+        "No entanto, para a maioria dos investimentos de longo prazo e muitos produtos bancários, o juro composto geralmente oferece retornos maiores (ou custos maiores para o tomador).",
+        "Uma Calculadora de Juros Simples ajuda você a calcular: (1) o Juro Simples (JS) ganho/devido, e (2) o Valor Total (A) = principal + JS — tornando decisões e comparações rápidas e confiáveis."
+      ]
+    },
+    "formula": {
+      "heading": "Fórmula do Juro Simples — Fórmulas usadas pela Calculadora de Juros Simples",
+      "intro": "Existem duas maneiras equivalentes de apresentar as fórmulas de juro simples. Use a notação que melhor se encaixa nos seus dados:",
+      "methods": [
+        {
+          "title": "1. Usando a taxa em decimal r (r = R/100):",
+          "formulas": [
+            "Valor total: A = P × (1 + r × t)",
+            "Juro simples: JS = P × r × t"
+          ]
+        },
+        {
+          "title": "2. Usando a taxa percentual R diretamente:",
+          "formulas": [
+            "Juro simples: JS = (P × R × T) / 100",
+            "Valor total: A = P + JS = P + (P × R × T) / 100"
+          ]
+        }
+      ],
+      "definitions": [
+        "P = Principal (valor inicial)",
+        "R = Taxa de juros anual em porcentagem",
+        "r = Taxa de juros anual em decimal (r = R/100)",
+        "T ou t = Tempo em anos (converta meses/dias para anos)"
+      ],
+      "note": "Essas fórmulas lineares tornam os cálculos muito simples — exatamente como a calculadora faz automaticamente."
+    },
+    "howToCalculate": {
+      "id": "how-to-calculate-simple-interest",
+      "heading": "Como Calcular Juros Simples Usando a Calculadora — Entradas e Funcionamento",
+      "intro": "A Calculadora de Juros Simples precisa de três entradas principais: valor principal P, taxa anual R% e tempo T (em anos ou meses). Veja as etapas que a ferramenta segue:",
+      "steps": [
+        "Se você inserir o tempo em meses/dias, a calculadora converte para anos (T_anos = meses / 12 ou dias / 365).",
+        "Ela calcula o juro simples usando SI = (P × R × T_anos) / 100.",
+        "Ela retorna o valor final ou de pagamento A = P + SI."
+      ],
+      "optionalFeatures": [
+        "Alternar entre moedas e formatos (₹, USD, precisão de arredondamento).",
+        "Opção para exibir o juro anual ou o total ganho no período.",
+        "Validação de entrada e mensagens de erro úteis para valores negativos ou ausentes."
+      ],
+      "note": "A calculadora não considera capitalização — se você precisa de cálculos com juros compostos, use uma calculadora de juros compostos ou de FDs."
+    },
+    "benefits": {
+      "heading": "Como uma Calculadora de Juros Simples Pode Ajudar Você? — Benefícios Práticos",
+      "intro": "Uma Calculadora de Juros Simples auxilia em várias situações do dia a dia:",
+      "points": [
+        "Planejamento de pagamentos — saiba exatamente quanto de juro você pagará em empréstimos de curto prazo.",
+        "Comparação de ofertas — compare rapidamente empréstimos com taxa fixa versus juros simples.",
+        "Planejamento de investimentos — estime retornos de produtos que utilizam juros simples.",
+        "Transparência — elimine erros humanos em cálculos manuais.",
+        "Testes rápidos — altere principal, taxa ou prazo para ver o impacto imediato."
+      ],
+      "note": "Para tomadores e concedentes de crédito, é uma forma rápida e confiável de transformar taxas e condições em valores reais e planejáveis."
+    },
+    "advantages": {
+      "heading": "Vantagens de Usar uma Calculadora de Juros Simples — Por que Ela é Melhor que Cálculo Manual",
+      "intro": "Usar uma Calculadora de Juros Simples online oferece vantagens claras:",
+      "points": [
+        "Velocidade: resultados instantâneos, sem cálculos manuais.",
+        "Precisão: elimina erros de aritmética e conversão de unidades.",
+        "Conveniência: aceita entrada em meses/dias e converte automaticamente para anos.",
+        "Teste de cenários: execute vários cenários em segundos para escolher a melhor opção.",
+        "Acessibilidade: funciona em celulares ou computadores sem precisar de planilhas.",
+        "Educativa: mostra a aplicação da fórmula passo a passo para que o usuário entenda os cálculos."
+      ],
+      "note": "É especialmente útil para decisões de empréstimos de curto prazo, financiamentos comerciais ou verificações rápidas antes de assinar contratos de crédito."
+    },
+    "steps": {
+      "heading": "Passo a passo: Usando a Calculadora de Juros Simples — Etapas Ordenadas",
+      "intro": "Siga estas etapas para obter resultados precisos:",
+      "list": [
+        "Insira o Principal (P): o valor original do empréstimo ou investimento.",
+        "Insira a Taxa Anual (R%): a taxa de juros anual informada.",
+        "Insira o Tempo (T): em anos; se você tiver meses ou dias, selecione a unidade adequada — a calculadora converte automaticamente.",
+        "Escolha a precisão de arredondamento (opcional): por exemplo, valor inteiro ou duas casas decimais.",
+        "Clique em “Calcular”. A saída mostrará: SI (juros simples), A (montante total) e um pequeno detalhamento (P, R, T).",
+        "Use a função de simulação (“What-if”) para comparar durações ou alterações na taxa.",
+        "Exporte ou salve os resultados caso precise da demonstração para fins documentais."
+      ],
+      "note": "Esse fluxo ordenado mantém os cálculos repetíveis e auditáveis."
+    },
+    "example": {
+      "heading": "Exemplo ilustrativo — Exemplo Resolvido com Cálculo Correto",
+      "intro": "Exemplo: O Sr. A empresta P = ₹15.000 a R = 5% ao ano por T = 2 anos. Calcule:",
+      "steps": [
+        "SI = (P × R × T) / 100.",
+        "Multiplique: 15.000 × 5 = 75.000.",
+        "Multiplique pelo tempo: 75.000 × 2 = 150.000.",
+        "Divida por 100: 150.000 / 100 = ₹1.500.",
+        "Portanto, Juros Simples = ₹1.500.",
+        "Montante total A = P + SI = 15.000 + 1.500 = ₹16.500."
+      ],
+      "note": "A calculadora exibirá ambos os valores e também pode mostrar o juro por ano (₹750 por ano), ajudando no planejamento financeiro. Para meses, converta T corretamente — por exemplo, 6 meses = 0,5 ano."
+    },
+    "decision": {
+      "heading": "Quando Usar Juros Simples vs Juros Compostos — Guia de Decisão",
+      "intro": "Escolha a calculadora correta com base na forma como os juros são aplicados no produto financeiro:",
+      "simpleUse": {
+        "title": "Use Juros Simples quando:",
+        "points": [
+          "Os juros são cobrados apenas sobre o principal original (taxas fixas, alguns empréstimos de curto prazo).",
+          "O prazo é curto (alguns meses a poucos anos) e o credor não utiliza capitalização.",
+          "Você precisa de custos de juros lineares e previsíveis."
+        ]
+      },
+      "compoundUse": {
+        "title": "Use Juros Compostos quando:",
+        "points": [
+          "Os juros são adicionados ao principal periodicamente (depósitos bancários, muitos investimentos de longo prazo).",
+          "Você quer modelar crescimento onde os juros geram novos juros.",
+          "O prazo é longo e a capitalização altera significativamente o resultado final."
+        ]
+      },
+      "note": "Se você não tiver certeza de qual regra se aplica, verifique os termos do produto financeiro. Nossa Calculadora de Juros Simples é para casos sem capitalização; use uma calculadora de juros compostos ou de FD para cenários com reinvestimento de juros."
+    }
+  }
+}

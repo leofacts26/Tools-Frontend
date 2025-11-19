@@ -1,0 +1,325 @@
+{
+  "seo": {
+    "title": "Calculadora PPF — Calcule os Rendimentos do Public Provident Fund Online",
+    "description": "Use nossa Calculadora PPF gratuita para estimar o valor de maturidade do seu Public Provident Fund, o total de juros ganhos e o saldo anual. Planeje sua poupança de longo prazo facilmente com projeções PPF precisas baseadas na taxa de juros mais recente.",
+    "slug": "tools/finance/ppf-calculator",
+    "image": "/images/og/ppf-calc.png",
+    "isArticle": true,
+    "publishDate": "2024-01-01",
+    "modifiedDate": "2025-01-01",
+    "author": "Ganaka Hub"
+  },
+  "site": {
+    "heading": "Calculadora PPF"
+  },
+  "form": {
+    "yearlyInvestment": "Investimento anual",
+    "timePeriod": "Período (anos)",
+    "interestRate": "Taxa de juros (a.a.)"
+  },
+  "article": {
+    "whatIsHeading": "Calculadora PPF – Calcule a Maturidade e os Rendimentos do seu Public Provident Fund",
+    "whatIsParagraphs": [
+      "Economizar dinheiro de forma consistente é o primeiro passo rumo à independência financeira — e, quando falamos de opções seguras de investimento de longo prazo na Índia, o Public Provident Fund (PPF) se destaca como uma das melhores.",
+      "Apoiadas pelo Governo da Índia, as contas PPF permitem que indivíduos façam seu dinheiro crescer com retornos garantidos, benefícios fiscais e risco zero.",
+      "No entanto, calcular manualmente o valor de maturidade, os juros acumulados e o total poupado pode ser complicado. É aí que uma Calculadora PPF online se torna útil.",
+      "Essa ferramenta ajuda você a estimar o valor de maturidade, os juros totais ganhos e o montante final com apenas alguns cliques — ajudando a planejar seus objetivos financeiros com mais eficiência."
+    ],
+    "whatIsPPFSection": {
+      "id": "what-is-ppf",
+      "heading": "O que é PPF (Public Provident Fund)?",
+      "paragraphs": [
+        "O Public Provident Fund (PPF) é um esquema de poupança de longo prazo introduzido pelo Governo da Índia sob o Public Provident Fund Act, de 1968.",
+        "Ele incentiva os cidadãos a poupar regularmente, oferecendo uma combinação de juros fixos e retornos isentos de impostos.",
+        "Qualquer pessoa pode abrir uma conta PPF — funcionários assalariados, profissionais autônomos, pais que economizam para seus filhos ou até indivíduos não assalariados."
+      ],
+      "subHeading": "Uma conta PPF pode ser aberta em:",
+      "points": [
+        "Qualquer banco nacionalizado ou privado, ou",
+        "Agências dos Correios da Índia."
+      ],
+      "conclusion": "O prazo de investimento é de 15 anos, podendo ser estendido em blocos de 5 anos após a maturidade."
+    },
+    "whatIsPPFCalculatorSection": {
+      "id": "what-is-ppf-calculator",
+      "heading": "O que é uma Calculadora PPF?",
+      "paragraphs": [
+        "Uma Calculadora PPF é uma ferramenta online simples desenvolvida para ajudar você a estimar o crescimento total do seu investimento ao longo de um período determinado.",
+        "Ao inserir detalhes como seu depósito anual, taxa de juros e duração do investimento, você pode saber instantaneamente:"
+      ],
+      "points": [
+        "Total investido",
+        "Total de juros ganhos",
+        "Valor de maturidade ao final de 15 anos (ou período estendido)"
+      ],
+      "conclusion": "Essa calculadora elimina suposições e cálculos manuais complexos, oferecendo uma visão clara das suas economias futuras."
+    },
+    "whyUsePPFCalculatorSection": {
+      "id": "why-use-ppf-calculator",
+      "heading": "Por que usar uma Calculadora PPF?",
+      "intro": "Usar uma calculadora do Public Provident Fund é essencial para planejar suas economias com eficiência. Veja por quê:",
+      "points": [
+        {
+          "title": "Estimativas rápidas e precisas",
+          "description": "Ela oferece projeções instantâneas dos seus rendimentos com base nas taxas de juros atualizadas declaradas pelo governo."
+        },
+        {
+          "title": "Planejamento baseado em objetivos",
+          "description": "Planeje aposentadoria, educação dos filhos ou outras metas financeiras de longo prazo com confiança."
+        },
+        {
+          "title": "Clareza sobre economia de impostos",
+          "description": "Saiba exatamente quanto da sua contribuição para o PPF se qualifica para deduções conforme a Seção 80C da Lei do Imposto de Renda."
+        },
+        {
+          "title": "Evite erros manuais",
+          "description": "Esqueça planilhas e fórmulas complexas — a calculadora faz tudo por você."
+        },
+        {
+          "title": "Teste de cenários",
+          "description": "Experimente diferentes valores de investimento ou prazos para descobrir qual estratégia funciona melhor para seus objetivos."
+        }
+      ]
+    },
+    "howPPFCalculatorWorksSection": {
+      "id": "how-does-ppf-calculator-work",
+      "heading": "Como funciona uma Calculadora PPF?",
+      "paragraphs": [
+        "A Calculadora PPF usa a fórmula de juros compostos para calcular o valor de maturidade da sua conta.",
+        "A fórmula utilizada é:"
+      ],
+      "formula": {
+        "title": "Fórmula de Juros Compostos:",
+        "body": "F = P × i × (1 + i)^n − 1"
+      },
+      "variables": [
+        {
+          "symbol": "F",
+          "description": "Valor de Maturidade"
+        },
+        {
+          "symbol": "P",
+          "description": "Investimento Anual"
+        },
+        {
+          "symbol": "i",
+          "description": "Taxa de Juros (dividida por 100)"
+        },
+        {
+          "symbol": "n",
+          "description": "Número de anos (prazo do investimento)"
+        }
+      ],
+      "conclusion": "Os juros são compostos anualmente e o valor final de maturidade inclui tanto o principal quanto os juros acumulados."
+    },
+    "examplePPFCalculationSection": {
+      "id": "example-of-ppf-calculation",
+      "heading": "Exemplo de Cálculo do PPF",
+      "paragraphs": [
+        "Vamos supor que você invista ₹1.50.000 por ano durante 15 anos com uma taxa de juros de 7,1% ao ano.",
+        "Usando a fórmula acima:"
+      ],
+      "formula": {
+        "title": "Exemplo de Fórmula:",
+        "body": "F = 1,50,000 × 0.071 × (1 + 0.071)^15 − 1"
+      },
+      "results": [
+        "O seu valor total de maturidade será de aproximadamente ₹40,68,000.",
+        "Ou seja, após 15 anos de economia consistente, seu investimento total de ₹22,50,000 (₹1.5 lakh × 15 anos) cresce para mais de ₹40 lakh — praticamente dobrando seu patrimônio."
+      ],
+      "conclusion": "Isso é o poder da poupança de longo prazo baseada em juros compostos."
+    },
+    "keyFeaturesPPFCalculatorSection": {
+      "id": "key-features-of-ppf-calculator",
+      "heading": "Principais Funcionalidades da Calculadora PPF",
+      "intro": "A Calculadora PPF online oferece diversos recursos convenientes para investidores:",
+      "points": [
+        "Cálculo Instantâneo: Veja seu valor de maturidade e juros totais em segundos.",
+        "Entradas Personalizáveis: Insira facilmente o valor do investimento e o prazo desejado.",
+        "Resultados Precisos: Baseada nas taxas de juros do PPF declaradas pelo governo.",
+        "Ferramenta de Comparação: Experimente diferentes valores de contribuição para planejar melhor.",
+        "Clareza Visual: Muitas calculadoras exibem o crescimento ano a ano ou uma tabela detalhada para melhor compreensão."
+      ],
+      "conclusion": "Esses recursos tornam o planejamento financeiro rápido e transparente."
+    },
+    "howToUsePPFCalculatorSection": {
+      "id": "how-to-use-ppf-calculator",
+      "heading": "Guia Passo a Passo: Como Usar uma Calculadora PPF",
+      "intro": "Usar uma Calculadora PPF é simples e não exige conhecimento técnico. Siga estes passos:",
+      "steps": [
+        {
+          "title": "Insira o Valor do Investimento",
+          "description": "Digite o valor que você pretende depositar anualmente (entre ₹500 e ₹1,50,000)."
+        },
+        {
+          "title": "Insira o Prazo",
+          "description": "O período mínimo de bloqueio é de 15 anos. Você também pode estender o prazo em blocos de 5 anos após a maturidade."
+        },
+        {
+          "title": "Insira a Taxa de Juros Aplicável",
+          "description": "O governo anuncia a taxa de juros do PPF a cada trimestre (atualmente 7,1% ao ano no FY 2025)."
+        },
+        {
+          "title": "Clique em “Calcular”",
+          "description": "A calculadora exibirá instantaneamente o valor de maturidade, o total investido e os juros ganhos."
+        }
+      ]
+    },
+    "ppfInterestRateHistorySection": {
+      "id": "ppf-interest-rate-over-the-years",
+      "heading": "Taxas de Juros do PPF ao Longo dos Anos",
+      "intro": "A taxa de juros do PPF é revisada trimestralmente pelo Ministério das Finanças. Historicamente, as taxas ficaram entre 7% e 8%, oferecendo retornos estáveis e acima da inflação quando comparadas a contas de poupança tradicionais.",
+      "table": {
+        "headers": [
+          "Ano Financeiro",
+          "Taxa de Juros do PPF (ao ano)"
+        ],
+        "rows": [
+          [
+            "2019–2020",
+            "7,9%"
+          ],
+          [
+            "2020–2021",
+            "7,1%"
+          ],
+          [
+            "2021–2022",
+            "7,1%"
+          ],
+          [
+            "2022–2023",
+            "7,1%"
+          ],
+          [
+            "2023–2024",
+            "7,1%"
+          ],
+          [
+            "2024–2025",
+            "7,1%"
+          ]
+        ]
+      },
+      "conclusion": "A taxa de retorno consistente faz do PPF um dos investimentos de longo prazo mais confiáveis da Índia."
+    },
+    "advantagesOfPPFCalculatorSection": {
+      "id": "advantages-of-using-ppf-calculator",
+      "heading": "Vantagens de Usar uma Calculadora PPF",
+      "points": [
+        {
+          "title": "Planejamento Financeiro Preciso",
+          "description": "Prevê com exatidão o valor de maturidade e os juros totais."
+        },
+        {
+          "title": "Eficiência Fiscal",
+          "description": "Saiba quanto pode ser deduzido sob a Seção 80C pela sua contribuição anual."
+        },
+        {
+          "title": "Economia de Tempo",
+          "description": "Evite cálculos manuais ou fórmulas de Excel — obtenha resultados instantâneos."
+        },
+        {
+          "title": "Abordagem Orientada a Objetivos",
+          "description": "Planeje metas financeiras importantes, como aposentadoria ou educação, usando números reais."
+        },
+        {
+          "title": "Motiva a Consistência",
+          "description": "Ver o crescimento do seu montante incentiva você a manter a disciplina nas economias."
+        }
+      ]
+    },
+    "taxBenefitsPPFSection": {
+      "id": "tax-benefits-of-ppf-account",
+      "heading": "Benefícios Fiscais de uma Conta PPF",
+      "intro": "O Public Provident Fund é um dos poucos instrumentos de investimento que possui status fiscal EEE (Isento-Isento-Isento):",
+      "points": [
+        {
+          "title": "Isenção na Contribuição",
+          "description": "Até ₹1,5 lakh por ano fiscal sob a Seção 80C."
+        },
+        {
+          "title": "Isenção nos Juros Recebidos",
+          "description": "Os juros acumulados a cada ano são totalmente isentos de impostos."
+        },
+        {
+          "title": "Isenção na Maturidade",
+          "description": "O valor final de maturidade é completamente livre de impostos."
+        }
+      ],
+      "conclusion": "Isso faz do PPF uma das opções de investimento mais seguras e fiscalmente eficientes disponíveis."
+    },
+    "ppfWithdrawalSection": {
+      "id": "when-and-how-to-withdraw-from-ppf-account",
+      "heading": "Quando e Como Sacar de uma Conta PPF?",
+      "intro": "O PPF possui um período de bloqueio de 15 anos, mas oferece algumas opções de saque:",
+      "points": [
+        {
+          "title": "Saque Parcial",
+          "description": "Após 6 anos, você pode sacar até 50% do saldo existente no fim do 4º ano ou do ano anterior — o que for menor."
+        },
+        {
+          "title": "Facilidade de Empréstimo",
+          "description": "Entre o 3º e o 6º ano, é possível solicitar um empréstimo com taxas de juros baixas."
+        },
+        {
+          "title": "Opção de Extensão",
+          "description": "Após a maturidade, você pode estender sua conta em blocos de 5 anos, com ou sem novas contribuições."
+        }
+      ]
+    },
+    "ppfVsOtherInvestmentsSection": {
+      "id": "ppf-vs-other-investments",
+      "heading": "PPF vs Outras Opções de Investimento",
+      "table": {
+        "headers": [
+          "Tipo de Investimento",
+          "Nível de Risco",
+          "Período de Bloqueio",
+          "Benefício Fiscal",
+          "Retorno Médio"
+        ],
+        "rows": [
+          [
+            "PPF",
+            "Baixo (Garantido pelo Governo)",
+            "15 anos",
+            "Sim (EEE)",
+            "7–8% a.a."
+          ],
+          [
+            "Depósito a Prazo (FD)",
+            "Baixo",
+            "5 anos (FD com benefício fiscal)",
+            "Sim (sob 80C)",
+            "6–7% a.a."
+          ],
+          [
+            "Fundos Mútuos (ELSS)",
+            "Moderado–Alto",
+            "3 anos",
+            "Sim (sob 80C)",
+            "10–14% a.a."
+          ],
+          [
+            "NSC",
+            "Baixo",
+            "5 anos",
+            "Sim (sob 80C)",
+            "7.7% a.a."
+          ]
+        ]
+      },
+      "conclusion": "O PPF oferece segurança incomparável, previsibilidade e retornos isentos de impostos, sendo ideal para investidores conservadores e poupadores de longo prazo."
+    },
+    "finalThoughtsPPFSection": {
+      "id": "final-thoughts-ppf",
+      "heading": "Considerações Finais",
+      "paragraphs": [
+        "A Calculadora PPF é uma ferramenta essencial para qualquer investidor inteligente. Ela ajuda você a tomar decisões informadas sobre quanto investir, por quanto tempo e quais retornos esperar — tudo isso com risco zero.",
+        "O Public Provident Fund não só protege o seu futuro, como também oferece economia fiscal, garantindo um crescimento constante baseado em juros compostos ao longo dos anos.",
+        "💡 Comece hoje! Use nossa Calculadora PPF gratuita para planejar suas economias e descubra como pequenos investimentos hoje podem se transformar em um grande patrimônio livre de impostos amanhã."
+      ]
+    }
+  }
+}

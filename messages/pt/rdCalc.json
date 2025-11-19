@@ -1,0 +1,199 @@
+{
+  "seo": {
+    "title": "Calculadora RD — Calcule Online a Maturidade e os Juros do Recurring Deposit",
+    "description": "Use nossa Calculadora RD gratuita para estimar o valor de maturidade do seu Recurring Deposit e o total de juros ganhos. Compare prazos, depósitos mensais e taxas de RD dos bancos para planejar suas economias de forma eficiente.",
+    "slug": "tools/finance/rd-calculator",
+    "image": "/images/og/rdcalc-en.png",
+    "isArticle": true,
+    "publishDate": "2024-01-01",
+    "modifiedDate": "2025-01-01",
+    "author": "Your Site"
+  },
+  "site": {
+    "heading": "Calculadora RD"
+  },
+  "form": {
+    "monthlyInvestment": "Investimento mensal",
+    "interestRate": "Taxa de juros (a.a.)",
+    "timePeriod": "Período"
+  },
+  "article": {
+    "intro": {
+      "heading": "Introdução à Calculadora RD — Como Estimar a Maturidade do seu Recurring Deposit na Índia",
+      "paragraphs": [
+        "Um poupador inteligente usa uma Calculadora RD para estimar a maturidade de um Recurring Deposit e transformar economias mensais em um resultado claro e previsível.",
+        "Recurring Deposits (RDs) são planos de poupança sistemática oferecidos por bancos e agências dos correios, onde você investe um valor fixo todos os meses por um prazo escolhido — geralmente de 6 meses até 10 anos.",
+        "Uma Calculadora RD converte instantaneamente seu depósito mensal, taxa de juros e prazo no valor final de maturidade e no total de juros ganhos, eliminando a necessidade de cálculos manuais.",
+        "Ela também ajuda você a comparar diferentes prazos de depósito, taxas de juros e frequências de capitalização (trimestral ou anual), além de mostrar como pequenas contribuições mensais podem crescer em um grande montante ao longo do tempo.",
+        "Use a calculadora antes de abrir uma conta RD para planejar seus investimentos mensais com inteligência e alcançar seus objetivos financeiros de curto ou longo prazo com clareza."
+      ]
+    },
+    "whatIsSection": {
+      "id": "what-is-rd",
+      "heading": "O que é Recurring Deposit (RD)? — Entenda os Fundamentos com a Calculadora RD",
+      "paragraphs": [
+        "Um Recurring Deposit (RD) é um esquema disciplinado e de baixo risco oferecido por bancos, NBFCs e pelos correios, que permite aos indivíduos investir um valor fixo todos os meses por um prazo específico. É ideal para assalariados ou qualquer pessoa que prefira economizar de forma sistemática em vez de fazer um investimento único.",
+        "Diferente dos Fixed Deposits, onde você investe uma única vez, um RD ajuda você a construir patrimônio gradualmente por meio de parcelas mensais que geram juros compostos ao longo do tempo. A taxa de juros costuma ser semelhante à de FDs, mas como o investimento é mensal, cada parcela gera juros por um período diferente até a maturidade.",
+        "Os Recurring Deposits podem ter prazos que variam de 6 meses a 10 anos, com contribuições mensais flexíveis de acordo com sua capacidade de poupança. Idosos frequentemente recebem taxas um pouco maiores.",
+        "Use uma Calculadora RD para entender como suas contribuições mensais, taxa de juros e frequência de capitalização determinam o valor final — ajudando você a planejar economias para objetivos financeiros de curto ou longo prazo com eficiência."
+      ]
+    },
+    "whyUseSection": {
+      "id": "why-use-rd-calculator",
+      "heading": "Por que usar uma Calculadora RD? — Vantagens da Calculadora RD para Decisões de Poupança mais Inteligentes",
+      "intro": "Uma Calculadora RD facilita a poupança sistemática e elimina cálculos manuais complexos. Ela:",
+      "points": [
+        "Converte seu depósito mensal, taxa de juros e prazo em um valor exato de maturidade instantaneamente.",
+        "Permite comparar facilmente diferentes esquemas de RD oferecidos por bancos, NBFCs ou pelos correios, com taxas variadas.",
+        "Ajuda você a entender o impacto de alterações no prazo ou na taxa de juros, permitindo alinhar suas economias aos seus objetivos futuros.",
+        "Suporta testes de múltiplos cenários, como diferentes valores mensais de depósito ou frequências de capitalização.",
+        "Mostra como depósitos pequenos e consistentes podem crescer significativamente ao longo do tempo devido aos juros compostos — ideal para quem deseja poupar com disciplina."
+      ],
+      "conclusion": "Em vez de usar fórmulas manuais ou planilhas, a Calculadora RD oferece projeções precisas e repetíveis, ajudando você a planejar melhor, construir o hábito de poupar e alcançar seus objetivos financeiros com confiança."
+    },
+    "howItWorksSection": {
+      "id": "how-rd-calculator-works",
+      "heading": "Como a nossa Calculadora RD funciona — Lógica de Cálculo do RD e Detalhamento dos Resultados",
+      "paragraphs": [
+        "A nossa Calculadora RD modela juros compostos e depósitos mensais usando fórmulas financeiras padrão para calcular o valor total de maturidade e os juros ganhos.",
+        "Cada depósito mensal em um Recurring Deposit gera juros pelos meses restantes do prazo escolhido. A calculadora usa o valor do depósito mensal, a taxa de juros e a duração para determinar o montante total acumulado na maturidade.",
+        "A fórmula aplicada é: M = P × [ ( (1 + i)^n – 1 ) / (1 – (1 + i)^(-1/12)) ], onde:",
+        "• M = valor de maturidade, P = depósito mensal, i = taxa de juros mensal (taxa anual ÷ 12 ÷ 100), n = número total de meses.",
+        "A Calculadora RD: (1) recebe P, taxa anual (r) e prazo (t); (2) converte r em uma taxa de capitalização mensal; (3) aplica a fórmula de juros compostos a cada parcela; (4) exibe o total de juros ganhos e o valor total na maturidade.",
+        "Ela também pode incluir opções especiais, como taxas adicionais para idosos ou ajustes para RDs dos correios, oferecendo total transparência nas suposições e projeções."
+      ]
+    },
+    "inputsSection": {
+      "id": "rd-calculator-inputs",
+      "heading": "Quais dados você precisa — Checklist de Entradas da Calculadora RD",
+      "intro": "Para obter resultados precisos com a Calculadora de Recurring Deposit, prepare as seguintes informações:",
+      "points": [
+        "Valor do depósito mensal (P) — o montante fixo que você depositará todo mês.",
+        "Taxa de juros anual (r%) — conforme oferecida pelo banco, NBFC ou correios.",
+        "Prazo (t) — duração total do depósito em anos ou meses.",
+        "Frequência de capitalização (n) — normalmente trimestral, mas alguns bancos usam capitalização mensal ou anual.",
+        "Mês/ano de início — para determinar quantas parcelas gerarão juros durante o prazo escolhido.",
+        "Opções especiais — taxa adicional para idosos, RD com benefício fiscal ou variante RD dos correios.",
+        "Opcional: configurações de retirada antecipada ou penalidade — caso planeje encerrar antes da maturidade."
+      ],
+      "conclusion": "Insira esses dados cuidadosamente na calculadora para obter projeções precisas de maturidade e juros. Isso garante um planejamento realista e uma comparação justa entre diferentes opções de RD."
+    },
+    "formulaSection": {
+      "id": "rd-calculator-formula",
+      "heading": "Fórmula de cálculo (explicação simples) — Fórmulas de RD que os usuários devem entender",
+      "intro": "O valor de maturidade de um Recurring Deposit é calculado usando juros compostos, já que cada depósito mensal acumula juros por um número diferente de meses. A Calculadora RD utiliza uma fórmula derivada do valor futuro de pagamentos recorrentes (anuidade):",
+      "steps": [
+        "Passo 1: Converter a taxa anual em taxa mensal — i = r / (12 × 100).",
+        "Passo 2: Determinar o total de meses — n = t × 12.",
+        "Passo 3: Aplicar a fórmula de maturidade do RD:",
+        " M = P × [ (1 + i)^n − 1 ] / (1 − (1 + i)^(-1/12))",
+        " Onde M = valor de maturidade, P = depósito mensal, i = taxa de juros mensal, n = total de meses.",
+        "Passo 4: Calcular o total de juros ganhos: Juros = M − (P × n)."
+      ],
+      "notes": [
+        "Esta fórmula assume capitalização mensal e depósitos feitos no final de cada mês.",
+        "Se o seu banco usar capitalização trimestral, a taxa efetiva será ligeiramente diferente — a Calculadora RD ajusta automaticamente.",
+        "O resultado inclui tanto o valor de maturidade quanto o total de juros ganhos para facilitar a comparação."
+      ]
+    },
+    "stepsSection": {
+      "id": "how-to-use-rd-calculator",
+      "heading": "Passo a passo: Como usar a Calculadora RD — Etapas para Calcular a Maturidade do RD",
+      "intro": "Siga estes passos simples para usar a nossa Calculadora RD e estimar com precisão a maturidade do seu Recurring Deposit e os juros acumulados:",
+      "steps": [
+        "Insira o valor do depósito mensal (P) — o valor fixo que você investirá todos os meses.",
+        "Informe a taxa de juros anual (r%) oferecida pelo seu banco, NBFC ou agência dos correios.",
+        "Selecione o prazo (t) — duração total do seu depósito recorrente em meses ou anos.",
+        "Escolha a frequência de capitalização — geralmente trimestral, mas alguns bancos utilizam capitalização mensal ou anual.",
+        "Opcionalmente, aplique uma taxa especial para idosos ou uma taxa do esquema RD dos correios, se aplicável.",
+        "Clique em ‘Calcular’ para obter o valor de maturidade (M), o total de juros recebidos e o total depositado.",
+        "Compare os resultados em diferentes taxas de juros ou prazos para encontrar o plano ideal que se ajusta às suas metas financeiras."
+      ],
+      "conclusion": "A Calculadora RD torna mais rápido e fácil visualizar como suas economias mensais crescem com juros compostos, ajudando você a planejar investimentos disciplinados e orientados por objetivos."
+    },
+    "exampleSection": {
+      "id": "rd-calculator-example",
+      "heading": "Exemplo ilustrativo — Passo a Passo de Cálculo com a Calculadora RD",
+      "intro": "Vamos entender como a Calculadora RD calcula o valor de maturidade com um exemplo:",
+      "steps": [
+        "Exemplo: Depósito mensal P = ₹5.000, taxa de juros anual r = 7% a.a., prazo t = 5 anos (60 meses).",
+        "Passo 1: Converter a taxa anual em mensal — i = 7 / (12 × 100) = 0,005833 (ou 0,5833% ao mês).",
+        "Passo 2: Calcular o número total de meses — n = 12 × 5 = 60.",
+        "Passo 3: Aplicar a fórmula de maturidade do RD:",
+        " M = P × [ (1 + i)^n − 1 ] / (1 − (1 + i)^(-1/12)).",
+        "Passo 4: Substituir os valores:",
+        " M = 5.000 × [ (1,005833)^60 − 1 ] / (1 − (1,005833)^(-1/12)).",
+        "Passo 5: Simplificar os cálculos — (1,005833)^60 ≈ 1,419, então:",
+        " M ≈ 5.000 × [ (1,419 − 1) / 0,00484 ] ≈ 5.000 × 86,55 ≈ ₹4,32,750.",
+        "Passo 6: Total depositado = ₹5.000 × 60 = ₹3,00,000.",
+        "Passo 7: Total de juros recebidos = ₹4,32,750 − ₹3,00,000 = ₹1,32,750."
+      ],
+      "conclusion": "Assim, ao economizar ₹5.000 por mês durante 5 anos a 7% de juros, seu valor de maturidade será de aproximadamente ₹4,32 lakh — mostrando como pequenas economias mensais crescem de forma consistente com o poder dos juros compostos."
+    },
+    "typesSection": {
+      "id": "types-of-rd",
+      "heading": "Tipos de Recurring Deposits e Suas Características — Guia da Calculadora RD sobre Variantes de RD",
+      "intro": "Conheça os diferentes tipos de RD oferecidos por bancos, NBFCs e agências dos correios antes de investir. A Calculadora RD pode simular a maioria dessas variantes para estimativas precisas de maturidade e juros:",
+      "points": [
+        "RD Regular — o tipo padrão de depósito recorrente onde um valor fixo é investido mensalmente por um prazo determinado e capitalizado periodicamente.",
+        "RD para Idosos — oferece taxas de juros mais altas (geralmente +0,25% a +0,75%) para idosos, garantindo retornos melhores.",
+        "RD dos Correios — um esquema seguro do governo com prazo de 5 anos e capitalização trimestral; oferece retornos previsíveis.",
+        "Flexi RD — permite depósitos mensais flexíveis, em vez de um valor fixo; adequado para pessoas com renda variável.",
+        "NRI RD — disponível para não residentes (NRIs) por meio de contas NRO ou NRE, com regras diferentes de juros e tributação.",
+        "Corporate RD — oferecido por algumas corporações e NBFCs, geralmente com taxas ligeiramente mais altas, mas risco variável; verifique a classificação de crédito.",
+        "RD com Débito Automático — deduz automaticamente as parcelas mensais da sua conta bancária para manter a disciplina de poupança."
+      ],
+      "conclusion": "Selecione o tipo de RD adequado na calculadora para garantir que a taxa correta, frequência de capitalização e prazo sejam aplicados, garantindo projeções de maturidade precisas."
+    },
+    "seniorRatesRDSection": {
+      "id": "senior-citizens-special-rd-rates",
+      "heading": "Taxas especiais de RD para idosos — Como modelar taxas promocionais e para seniores",
+      "intro": "Idosos geralmente recebem um acréscimo na taxa de juros (por exemplo, +0,25% a +0,75%). Use os passos abaixo para modelar isso na Calculadora RD:",
+      "steps": [
+        "Identifique a taxa anual base r_base do RD oferecida pelo banco/agência dos correios.",
+        "Determine o acréscimo anunciado para idosos Δr (ex.: 0,25% ou 0,50%).",
+        "Defina r = r_base + Δr na Calculadora RD (use r para a conversão da taxa mensal).",
+        "Aplique a fórmula de maturidade do RD para visualizar o novo valor de maturidade e compare com o cenário de taxa base."
+      ],
+      "example": {
+        "title": "Exemplo",
+        "body": "Se a taxa base = 7,0% e o acréscimo para idosos = 0,5%, então r = 7,5%. Para um depósito mensal P (ou exemplo ajustado de RD), converta r para a taxa mensal i = r/(12×100) e calcule a maturidade usando a fórmula padrão de RD. A calculadora mostra instantaneamente a comparação entre taxa base e taxa especial, ajudando aposentados a escolher o maior retorno efetivo."
+      },
+      "conclusion": "Use a Calculadora RD para comparar lado a lado os cenários de taxa base e taxa especial — mesmo um pequeno acréscimo compõe-se ao longo do tempo e pode aumentar significativamente o valor final para idosos."
+    },
+    "withdrawalsPrematureTaxSection": {
+      "id": "withdrawals-premature-closure-and-tax-implications",
+      "heading": "Resgates, encerramento antecipado e implicações fiscais — Suposições e ajustes da Calculadora RD",
+      "intro": "Ao simular depósitos recorrentes (RD), inclua cenários reais de saída para que as projeções reflitam resultados prováveis:",
+      "points": [
+        "Penalidade por encerramento antecipado: muitos bancos/NBFCs reduzem a taxa (ex.: 0,5%–1,0% abaixo da taxa original) ou aplicam uma taxa inferior durante todo o período. Na calculadora, reduza r ou aplique a penalidade para simular o encerramento antecipado.",
+        "Resgates parciais / RDs flexíveis: alguns RDs flexíveis permitem resgates parciais — ajuste o cronograma de parcelas futuras e recalcule a capitalização restante para resultados precisos.",
+        "Tributação: os juros de RDs são tributados conforme sua faixa de renda; TDS pode ser aplicado acima de certos limites. A Calculadora RD mostra juros brutos; para estimar o retorno líquido, aplique sua alíquota marginal ao valor Interest = M − (P × n)."
+      ],
+      "formulaAdjustment": {
+        "title": "Ajuste da fórmula para um resgate parcial",
+        "explanation": "Se você resgatar W após t meses (de n meses totais), reduza o valor futuro capitalizando o montante retirado pelos meses restantes:",
+        "expression": "Ajuste = W × (1 + i)^(n − t)    onde i = taxa mensal (r / 12 / 100)"
+      },
+      "example": {
+        "title": "Exemplo de ajuste (pós-impostos)",
+        "body": "Se os juros brutos = ₹50.000 e o imposto marginal = 30%, os juros líquidos ≈ ₹35.000 (50.000 × (1 − 0,30)). Para encerramento antecipado, se a penalidade = 0,75% na taxa, calcule M com r − 0,75 para simular o impacto."
+      },
+      "note": "Sempre confirme as regras de penalidade do banco/NBFC e normas fiscais vigentes. A calculadora fornece projeções e não substitui aconselhamento tributário.",
+      "conclusion": "Modele resgates, penalidades e impostos diretamente nas entradas para obter valores de maturidade e retornos pós-impostos realistas."
+    },
+    "benefitsSection": {
+      "id": "benefits-of-using-rd-calculator",
+      "heading": "Benefícios de usar uma Calculadora RD online — Vantagens claras e suporte à decisão",
+      "intro": "Uma Calculadora RD para planejamento de depósitos recorrentes oferece clareza e rapidez:",
+      "points": [
+        "Estimativas precisas de maturidade em cenários de depósito mensal e juros compostos.",
+        "Ferramenta de comparação para avaliar taxas de bancos e agências dos correios, além de diferentes frequências de capitalização.",
+        "Testes de cenários para taxas especiais de idosos, penalidades de encerramento antecipado e estratégias escalonadas (laddering).",
+        "Planejamento de fluxo de caixa projetando pagamentos periódicos ou valores de maturidade.",
+        "Apoio ao planejamento tributário mostrando juros brutos para cálculo do retorno líquido."
+      ],
+      "conclusion": "Use a calculadora para construir estratégias de RD escalonadas, comparar rendimentos anuais efetivos e alinhar depósitos mensais com despesas futuras ou metas de poupança. Ela elimina a complexidade dos cálculos e ajuda você a escolher com confiança o melhor produto RD."
+    }
+  }
+}

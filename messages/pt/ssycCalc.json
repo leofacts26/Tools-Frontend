@@ -1,0 +1,261 @@
+{
+  "seo": {
+    "title": "Calculadora Sukanya Samriddhi Yojana — Calcule o Valor de Maturidade e os Juros do SSY",
+    "description": "Use gratuitamente a Calculadora Sukanya Samriddhi Yojana para estimar o valor de maturidade, os juros acumulados e a poupança total para o futuro da sua filha. Planeje melhor com projeções precisas do SSY baseadas na taxa de juros atual.",
+    "slug": "tools/finance/sukanya-samriddhi-yojana-calculator",
+    "image": "/images/og/ssy-calc.png",
+    "isArticle": true,
+    "publishDate": "2024-01-01",
+    "modifiedDate": "2025-01-01",
+    "author": "Ganaka Hub"
+  },
+  "site": {
+    "heading": "Calculadora Sukanya Samriddhi Yojana"
+  },
+  "form": {
+    "yearlyInvestment": "Investimento anual",
+    "girlsAge": "Idade da menina (anos)",
+    "startPeriod": "Ano de início",
+    "ssyRateLabel": "Taxa de juros do SSY (fixa)",
+    "compoundingNoteShort": "Depósitos no fim do ano, capitalização mensal"
+  },
+  "results": {
+    "maturityYear": "Ano de maturidade"
+  },
+  "notes": {
+    "long": "Taxa SSY mais recente: 8,2% (fixa na interface). Esta calculadora simula capitalização mensal e depósitos anuais feitos no final de cada ano (por exemplo, 15 depósitos para um período de contribuição de 15 anos). Definir tuneForGroww como verdadeiro aplica um pequeno ajuste para combinar exatamente com os exemplos publicados pelo Groww. Se preferir o resultado matemático puro (sem calibração), defina tuneForGroww como falso.",
+    "latestRateNote": "Taxa SSY mais recente: {rate}% (fixa na interface). Considerando depósito no fim do ano + capitalização mensal."
+  },
+  "article": {
+    "whatIsHeading": "Calculadora Sukanya Samriddhi Yojana (SSY) – Planeje um Futuro Brilhante para Sua Filha",
+    "whatIsParagraphs": [
+      "A Sukanya Samriddhi Yojana (SSY) é um dos programas de poupança mais recompensadores apoiados pelo governo da Índia, criado para promover a segurança financeira da menina. Lançado em 2015 como parte da iniciativa Beti Bachao, Beti Padhao, este plano incentiva os pais a economizar regularmente para a educação futura e despesas de casamento da filha, enquanto recebem retornos atrativos e isentos de impostos.",
+      "Com uma taxa de juros anual de 8,2% (a partir de 2025), o esquema SSY garante acumulação de riqueza a longo prazo. Porém, para entender como seu investimento crescerá ao longo do tempo e qual será o valor final na maturidade, você precisa de uma ferramenta financeira simples — a Calculadora Sukanya Samriddhi Yojana."
+    ],
+    "whatIsSection": {
+      "id": "what-is-sukanya-samriddhi-yojana-calculator",
+      "heading": "O que é a Calculadora Sukanya Samriddhi Yojana?",
+      "paragraphs": [
+        "A Calculadora Sukanya Samriddhi Yojana é uma ferramenta financeira online que ajuda pais ou responsáveis a estimar o valor de maturidade e o total de juros acumulados com base nas contribuições anuais.",
+        "Ao inserir alguns dados simples, como investimento anual, idade da criança e ano de início, a calculadora mostra instantaneamente:"
+      ],
+      "points": [
+        "O ano de maturidade,",
+        "O valor total investido,",
+        "O total de juros acumulados,",
+        "O valor final de maturidade."
+      ],
+      "conclusion": "Isso elimina cálculos manuais e oferece uma visão clara de como suas economias irão crescer de acordo com a estrutura de capitalização do esquema."
+    },
+    "eligibilitySection": {
+      "id": "who-can-use-ssy-calculator",
+      "heading": "Quem Pode Usar a Calculadora SSY?",
+      "intro": "Antes de usar a calculadora, certifique-se de que você é elegível para o Sukanya Samriddhi Yojana. Para abrir uma conta SSY, as seguintes condições devem ser atendidas:",
+      "eligibilityPoints": [
+        "A menina deve ser residente da Índia.",
+        "A menina deve ter menos de 10 anos no momento da abertura da conta.",
+        "Somente duas contas por família são permitidas (uma para cada menina)."
+      ],
+      "documentsHeading": "Documentos Necessários:",
+      "documents": [
+        "Formulário de abertura de conta SSY devidamente preenchido.",
+        "Certidão de nascimento da menina.",
+        "Documento de identificação e comprovante de endereço do responsável.",
+        "Atestado médico (em caso de gêmeas/trigêmeas)."
+      ],
+      "conclusion": "Após atender aos critérios, os pais podem começar a contribuir e usar a calculadora para planejar suas economias anuais com mais eficiência."
+    },
+    "whyUseSection": {
+      "id": "why-use-ssy-calculator",
+      "heading": "Por que você deve usar a Calculadora Sukanya Samriddhi Yojana?",
+      "intro": "O planejamento financeiro para a educação e o casamento da sua filha é uma das maiores responsabilidades da parentalidade. A calculadora SSY ajuda você a planejar melhor, mostrando como seu dinheiro se multiplica ao longo de 21 anos. Veja por que usar a calculadora é tão vantajoso:",
+      "points": [
+        {
+          "title": "Estimativas Precisas de Maturidade",
+          "description": "Saiba instantaneamente quanto você receberá quando o esquema atingir a maturidade."
+        },
+        {
+          "title": "Planejamento Baseado em Metas",
+          "description": "Ajuste suas contribuições anuais para alcançar um valor-alvo específico."
+        },
+        {
+          "title": "Economia de Tempo",
+          "description": "Pule cálculos manuais; obtenha resultados exatos em segundos."
+        },
+        {
+          "title": "Planejamento Tributário Simplificado",
+          "description": "Veja quanto do seu investimento é elegível para deduções sob a Seção 80C."
+        },
+        {
+          "title": "Ajustes Flexíveis",
+          "description": "Experimente diferentes contribuições anuais de acordo com sua capacidade financeira."
+        }
+      ],
+      "conclusion": "Em resumo, a calculadora funciona como um mapa financeiro, ajudando você a visualizar o impacto de longo prazo de uma poupança disciplinada."
+    },
+    "howItWorksSection": {
+      "id": "how-does-ssy-calculator-work",
+      "heading": "Como funciona a Calculadora SSY?",
+      "paragraphs": [
+        "A Calculadora Sukanya Samriddhi funciona com base no princípio dos juros compostos, onde os juros são calculados anualmente e adicionados ao saldo da conta.",
+        "A fórmula utilizada é:"
+      ],
+      "formula": {
+        "title": "Fórmula de Juros Compostos:",
+        "body": "A = P × (1 + r/n)^(n × t)"
+      },
+      "variables": [
+        {
+          "symbol": "A",
+          "description": "Valor de Maturidade"
+        },
+        {
+          "symbol": "P",
+          "description": "Valor Principal (sua contribuição anual)"
+        },
+        {
+          "symbol": "r",
+          "description": "Taxa de juros anual (atualmente 8,2%)"
+        },
+        {
+          "symbol": "n",
+          "description": "Frequência de capitalização (1 para anual)"
+        },
+        {
+          "symbol": "t",
+          "description": "Prazo em anos (máximo de 21 anos)"
+        }
+      ],
+      "exampleHeading": "Exemplo de Cálculo:",
+      "exampleIntro": [
+        "Suponha que você invista ₹1.00.000 todos os anos por 14 anos.",
+        "Usando a calculadora SSY com taxa de 8,2%:"
+      ],
+      "exampleResults": [
+        "Seu investimento total = ₹14.00.000",
+        "Juros totais acumulados ≈ ₹17.14.000",
+        "Valor final na maturidade ≈ ₹31.14.000"
+      ],
+      "conclusion": "💡 Isso é mais do que o dobro do valor investido — mostrando o poder dos juros compostos no SSY."
+    },
+    "featuresSection": {
+      "id": "key-features-of-ssy-calculator",
+      "heading": "Principais recursos da Calculadora Sukanya Samriddhi Yojana",
+      "points": [
+        "Exibe o Ano de Maturidade – Calcula quando sua conta SSY irá amadurecer (21 anos a partir da abertura).",
+        "Mostra o Total Investido e os Juros – Divide claramente o valor principal e os ganhos.",
+        "Cálculos Instantâneos – Resultados precisos em segundos após inserir seus dados.",
+        "Gratuita e Fácil de Usar – Sem necessidade de registro ou login.",
+        "Várias Simulações Possíveis – Teste diferentes valores de contribuição para alcançar seu objetivo financeiro."
+      ],
+      "conclusion": "Isso faz dela uma das ferramentas de planejamento financeiro mais práticas para pais de meninas jovens."
+    },
+    "taxBenefitsSection": {
+      "id": "tax-benefits-of-ssy",
+      "heading": "Benefícios Fiscais do Sukanya Samriddhi Yojana",
+      "intro": "Uma das maiores vantagens do SSY é o seu status fiscal EEE (Isento-Isento-Isento):",
+      "points": [
+        {
+          "title": "Isenção sobre o Investimento",
+          "description": "Contribuições de até ₹1,5 lakh por ano fiscal são elegíveis para dedução conforme a Seção 80C."
+        },
+        {
+          "title": "Juros Isentos de Imposto",
+          "description": "Os juros ganhos durante o período de investimento são totalmente isentos de imposto."
+        },
+        {
+          "title": "Valor de Maturidade Isento",
+          "description": "O valor final recebido na maturidade não é tributado."
+        }
+      ],
+      "conclusion": "Isso torna o SSY um dos planos de poupança mais eficientes em termos fiscais disponíveis na Índia."
+    },
+    "howToUseSection": {
+      "id": "how-to-use-ssy-calculator",
+      "heading": "Como Usar a Calculadora Sukanya Samriddhi Yojana (Passo a Passo)",
+      "intro": "Usar a calculadora SSY online é extremamente simples:",
+      "steps": [
+        {
+          "title": "Insira o Valor de Investimento Anual",
+          "description": "Por exemplo, ₹50.000 por ano."
+        },
+        {
+          "title": "Insira a Idade da Menina",
+          "description": "A criança deve ter menos de 10 anos no momento da abertura da conta."
+        },
+        {
+          "title": "Insira o Ano de Início do Investimento",
+          "description": "Isso ajuda a determinar o ano de maturidade (21 anos após o início)."
+        },
+        {
+          "title": "Clique em “Calcular”",
+          "description": "A calculadora exibe instantaneamente o valor de maturidade, os juros acumulados e o total investido."
+        },
+        {
+          "title": "Insira Novos Valores",
+          "description": "Você pode testar vários cenários até encontrar o valor ideal de poupança."
+        }
+      ]
+    },
+    "benefitsOnlineSection": {
+      "id": "benefits-of-using-ssy-calculator-online",
+      "heading": "Vantagens de Usar a Calculadora SSY Online",
+      "intro": "Veja por que usar uma calculadora SSY é melhor do que cálculos manuais:",
+      "points": [
+        {
+          "title": "Fornece Previsões Precisas",
+          "description": "Evita erros humanos e gera projeções exatas."
+        },
+        {
+          "title": "Economiza Tempo",
+          "description": "Resultados instantâneos sem cálculos manuais."
+        },
+        {
+          "title": "Simplifica o Planejamento Financeiro",
+          "description": "Ajuste metas de poupança com base nos resultados projetados."
+        },
+        {
+          "title": "Estimula a Consistência",
+          "description": "Ver o potencial valor de maturidade motiva os pais a manterem a disciplina."
+        },
+        {
+          "title": "Acessível em Qualquer Lugar",
+          "description": "Você pode usar a ferramenta a qualquer momento e em qualquer dispositivo."
+        }
+      ],
+      "conclusion": "Ao usar esta calculadora regularmente, você pode acompanhar o crescimento do investimento e garantir um futuro financeiro seguro para sua filha."
+    },
+    "maturitySection": {
+      "id": "what-happens-at-maturity",
+      "heading": "O Que Acontece na Maturidade?",
+      "intro": "A conta Sukanya Samriddhi atinge a maturidade após 21 anos a partir da data de abertura ou quando a menina se casa após completar 18 anos — o que ocorrer primeiro. Na maturidade:",
+      "points": [
+        "Todo o montante acumulado, incluindo o principal e os juros acumulados, pode ser retirado pela própria menina.",
+        "O valor pode ser utilizado para educação superior ou despesas de casamento.",
+        "Para o saque, é necessário apresentar comprovante de identidade válido, certificado de idade e documentos de apoio (como certificado de admissão ou de casamento).",
+        "Saques parciais de até 50% são permitidos após a menina completar 18 anos, para despesas relacionadas à educação."
+      ]
+    },
+    "whyBestSection": {
+      "id": "why-ssy-best-investment-for-girl-child",
+      "heading": "Por Que o SSY é o Melhor Investimento para uma Menina",
+      "points": [
+        "Segurança Garantida pelo Governo – Retornos seguros e garantidos pelo Governo da Índia.",
+        "Alta Taxa de Juros – Entre as mais altas entre os esquemas de pequenas economias.",
+        "Crescimento Isento de Imposto – Total isenção fiscal conforme a Seção 80C.",
+        "Estabilidade Financeira de Longo Prazo – Ideal para financiar educação ou casamento.",
+        "Estimula o Planejamento Financeiro Antecipado – Incentiva hábitos responsáveis de poupança para os pais."
+      ]
+    },
+    "finalThoughtsSection": {
+      "id": "final-thoughts",
+      "heading": "Considerações Finais",
+      "paragraphs": [
+        "A Calculadora Sukanya Samriddhi Yojana é uma ferramenta essencial para todos os pais que desejam planejar um futuro seguro e próspero para sua filha. Ela não apenas mostra como o seu dinheiro crescerá, mas também ajuda você a definir metas financeiras alcançáveis para os próximos 20 anos.",
+        "Ao investir de forma consistente e usar a calculadora para acompanhar o crescimento, você garante que a educação e o casamento da sua filha sejam apoiados financeiramente sem estresse.",
+        "💡 Comece hoje — use nossa calculadora gratuita do Sukanya Samriddhi Yojana e planeje o futuro da sua filha com confiança.",
+        "Seguro. Inteligente. Isento de Impostos."
+      ]
+    }
+  }
+}

@@ -1,0 +1,248 @@
+{
+  "seo": {
+    "title": "Calculadora de FD — Calcule Juros e Valor de Maturidade do Fixed Deposit Online",
+    "description": "Use nossa Calculadora de FD gratuita para estimar o valor de maturidade do seu Fixed Deposit e os juros obtidos. Compare prazos, taxas de juros e opções de capitalização para planejar melhor seus investimentos.",
+    "slug": "tools/finance/fd-calculator",
+    "image": "/images/og/fdcalc-pt.png",
+    "isArticle": true,
+    "publishDate": "2024-01-01",
+    "modifiedDate": "2025-01-01",
+    "author": "Seu Site"
+  },
+  "site": {
+    "heading": "Calculadora de FD"
+  },
+  "form": {
+    "principal": "Investimento Total",
+    "interestRate": "Taxa de juros (a.a.)",
+    "timePeriod": "Período",
+    "interestType": "Tipo de juros"
+  },
+  "article": {
+    "intro": {
+      "heading": "Introdução à Calculadora de FD — Como Estimar a Maturidade do Seu Fixed Deposit na Índia",
+      "paragraphs": [
+        "Um poupador inteligente usa uma Calculadora de FD para estimar a maturidade de um Fixed Deposit e transformar um depósito bancário bloqueado em números claros e confiáveis.",
+        "Fixed Deposits (FDs) são investimentos de valor único aplicados por um prazo fixo, que oferecem uma taxa de juros garantida — podendo variar de apenas 7 dias até 10 anos ou mais.",
+        "Uma Calculadora de FD converte instantaneamente seu principal, prazo e taxa de juros no valor de maturidade e no total de juros ganhos, eliminando cálculos manuais.",
+        "Ela também ajuda a comparar FDs com juros simples vs juros compostos, testar diferentes frequências de capitalização (anual, trimestral, mensal) e visualizar como taxas especiais para idosos afetam os resultados.",
+        "Use a calculadora antes de investir para escolher o melhor banco/NBFC e planejar com precisão o valor que você receberá na data de vencimento."
+      ]
+    },
+    "whatIsFDSection": {
+      "id": "what-is-fixed-deposit",
+      "heading": "O que é Fixed Deposit? — Contexto da Calculadora de FD: Entendendo os Fundamentos do Fixed Deposit",
+      "paragraphs": [
+        "Um Fixed Deposit (FD) é um produto de poupança conservador e de baixo risco oferecido por bancos e NBFCs, no qual você deposita um valor por um período fixo em troca de uma taxa de juros garantida.",
+        "Diferente das contas de poupança, as taxas de juros de FDs são mais altas porque o dinheiro fica bloqueado pelo prazo escolhido; retiradas antecipadas geralmente geram penalidades.",
+        "Os FDs podem ser de juros simples (juros pagos sem capitalização) ou juros compostos (juros reinvestidos que também rendem juros). Além disso, existem categorias especiais como FDs para idosos, FDs de economia fiscal, flexi-FDs e sweep-in FDs.",
+        "A frequência de capitalização dos juros (anual, semestral, trimestral, mensal) influencia diretamente o retorno: quanto maior a frequência, maior tende a ser o valor de maturidade.",
+        "Use uma Calculadora de FD para entender como o principal, a taxa, o prazo e a capitalização se combinam para formar o valor final, ajudando você a escolher o tipo de FD ideal para sua meta financeira."
+      ]
+    },
+    "whyUseFDSection": {
+      "id": "why-use-fd-calculator",
+      "heading": "Por que usar uma Calculadora de FD? — Benefícios de uma Calculadora de FD para Escolher o Melhor Fixed Deposit",
+      "intro": "Uma Calculadora de FD para planejamento de Fixed Deposit economiza tempo e evita erros de cálculo. Ela:",
+      "points": [
+        "Converte principal, prazo e taxa de juros em valores exatos de maturidade e juros instantaneamente.",
+        "Permite comparar juros simples vs compostos e diferentes frequências de capitalização.",
+        "Ajuda a escolher entre bancos/NBFCs comparando os retornos efetivos.",
+        "Mostra o impacto de alterações no prazo ou na taxa para planejar liquidez (FDs curtos vs longos).",
+        "Oferece testes de cenário: taxas para idosos, penalidades por saque antecipado ou estratégia de FDs em escada (laddering)."
+      ],
+      "conclusion": "Em vez de depender de fórmulas complicadas no Excel, a Calculadora de FD fornece projeções precisas e consistentes que ajudam você a equilibrar liquidez e rentabilidade — especialmente útil quando as taxas variam entre instituições."
+    },
+    "howItWorksFDSection": {
+      "id": "how-our-fd-calculator-works",
+      "heading": "Como funciona nossa Calculadora de FD — Lógica de Cálculo de FD & Detalhamento dos Resultados",
+      "intro": "Nossa Calculadora de FD, que simula juros simples e compostos, utiliza fórmulas financeiras padronizadas para calcular o valor de maturidade.",
+      "formulas": [
+        {
+          "type": "Fórmula de Juros Simples",
+          "expression": "M = P + (P × r × t / 100)",
+          "explanation": "Usada para FDs sem capitalização, onde os juros são pagos periodicamente ou apenas no vencimento, sem reinvestimento."
+        },
+        {
+          "type": "Fórmula de Juros Compostos",
+          "expression": "M = P × (1 + r_period)^(n × t)",
+          "explanation": "Usada para FDs onde os juros são reinvestidos. Aqui, r_period = r / (100 × n)."
+        }
+      ],
+      "steps": [
+        "(1) Recebe o principal (P), taxa anual (r), prazo (t) e frequência de capitalização (n).",
+        "(2) Converte r para taxa por período: r_period = r / (100 × n).",
+        "(3) Calcula o valor futuro usando a fórmula apropriada dependendo do tipo de FD (juros simples ou compostos).",
+        "(4) Exibe o total de juros (M − P) e o rendimento anual efetivo (AER)."
+      ],
+      "extra": "Também modela penalidades por saque antecipado e taxas especiais para idosos, se você incluir essas opções — fornecendo um detalhamento transparente das premissas e dos valores finais."
+    },
+    "fdInputChecklistSection": {
+      "id": "fd-calculator-input-checklist",
+      "heading": "Quais dados você precisa — Checklist de Entradas da Calculadora de FD",
+      "intro": "Para obter resultados precisos com uma Calculadora de FD, reúna:",
+      "steps": [
+        "Principal (P) — valor único que você pretende depositar.",
+        "Taxa de juros anual (r%) — fornecida pelo banco/NBFC.",
+        "Prazo (t) — duração em anos, meses ou dias.",
+        "Frequência de capitalização (n) — anual (1), semestral (2), trimestral (4), mensal (12) ou diária.",
+        "Tipo de juros — juros simples ou juros compostos.",
+        "Opção de pagamento — cumulativa (reinveste os juros) ou pagamentos periódicos (mensal/trimestral).",
+        "Opções especiais (opcional) — taxa para idosos, FD de economia fiscal, plano de saque antecipado.",
+        "Premissas de penalidade (opcional) — insira taxa/duração caso espere saque antecipado."
+      ],
+      "conclusion": "Insira os dados na ordem acima para obter um detalhamento preciso de maturidade e juros."
+    },
+    "fdFormulaSection": {
+      "id": "fd-calculation-formula",
+      "heading": "Fórmula de cálculo (explicação simples) — Fórmulas de FD que Todo Usuário Deve Conhecer",
+      "intro": "Os cálculos de FD utilizam duas fórmulas principais:",
+      "formulas": [
+        {
+          "title": "FD com juros simples:",
+          "expression": "M = P + (P × r × t / 100)",
+          "explanation": "M = valor de maturidade, P = principal, r = taxa anual (%), t = prazo em anos."
+        },
+        {
+          "title": "FD com juros compostos (capitalização geral):",
+          "steps": [
+            "Taxa por período: r_period = r / (100 × n), onde n = períodos de capitalização por ano.",
+            "Número de períodos: m = n × t.",
+            "M = P × (1 + r_period)^m."
+          ]
+        },
+        {
+          "title": "Taxa Anual Efetiva (EAR ou AER):",
+          "expression": "AER = (1 + r/n)^n − 1 (expresso em %)."
+        },
+        {
+          "title": "Total de juros ganhos:",
+          "expression": "Juros = M − P."
+        }
+      ],
+      "conclusion": "Essas fórmulas mostram como os juros permanecem separados (juros simples) ou se acumulam (juros compostos), e como a frequência de capitalização aumenta o retorno efetivo."
+    },
+    "fdStepByStepSection": {
+      "id": "step-by-step-using-fd-calculator",
+      "heading": "Passo a passo: Usando a Calculadora de FD — Etapas Organizadas para Calcular a Maturidade do FD",
+      "intro": "Siga estas etapas para usar nossa Calculadora de FD para Fixed Deposits:",
+      "steps": [
+        "Insira o principal (P) — o valor que você vai depositar.",
+        "Informe a taxa anual (r%) oferecida pelo banco/NBFC.",
+        "Selecione o prazo (t) em anos (ou forneça meses/dias).",
+        "Escolha a frequência de capitalização (n): anual (1), semestral (2), trimestral (4), mensal (12) ou diária (365).",
+        "Escolha o tipo de juros: cumulativo (composto) ou payout (pagamentos periódicos).",
+        "Adicione opções especiais: taxa para idosos, tag de economia fiscal ou premissas de penalidade por saque antecipado.",
+        "Clique em Calcular para obter M (maturidade), total de juros, pagamentos periódicos (se aplicável) e AER.",
+        "Compare resultados entre prazos ou frequências de capitalização para escolher o melhor produto de FD."
+      ],
+      "conclusion": "Este processo estruturado garante projeções precisas e ajuda você a selecionar o plano de FD mais vantajoso para suas metas financeiras."
+    },
+    "fdExampleWalkthroughSection": {
+      "id": "fd-calculator-example-walkthrough",
+      "heading": "Exemplo ilustrativo — Passo a passo usando a Calculadora de FD",
+      "intro": "Exemplo: depósito P = ₹100.000 por t = 5 anos a r = 10% ao ano.",
+      "examples": [
+        {
+          "type": "FD com juros simples",
+          "steps": [
+            "Juros = P × r × t / 100 = 100.000 × 10 × 5 / 100",
+            "Primeiro calcule 10 × 5 = 50",
+            "Depois 100.000 × 50 = 5.000.000",
+            "Divida por 100 → 5.000.000 / 100 = 50.000",
+            "M = P + Juros = 100.000 + 50.000 = ₹150.000"
+          ]
+        },
+        {
+          "type": "FD com juros compostos (capitalização anual)",
+          "steps": [
+            "Calcule (1 + r/100)^t = (1 + 0.10)^5",
+            "1,10^2 = 1,21; 1,10^3 = 1,331; 1,10^4 = 1,4641; 1,10^5 = 1,61051",
+            "M = 100.000 × 1,61051 = ₹161.051"
+          ],
+          "note": "Juros compostos geram uma maturidade maior porque os juros também rendem juros."
+        }
+      ]
+    },
+    "fdTypesSection": {
+      "id": "types-of-fixed-deposits",
+      "heading": "Tipos de Fixed Deposits e características — Guia da Calculadora de FD sobre Variantes de FD",
+      "intro": "Conheça cada tipo de FD antes de investir; a Calculadora de FD pode simular a maioria deles:",
+      "types": [
+        {
+          "title": "FD Regular (cumulativo)",
+          "description": "Juros compostos; ideal para acumulação de patrimônio."
+        },
+        {
+          "title": "FD Regular (pagamento periódico)",
+          "description": "Juros pagos mensalmente/trimestralmente; ideal para gerar renda."
+        },
+        {
+          "title": "FD para Idosos (Senior Citizen FD)",
+          "description": "Taxas mais altas; insira a taxa aumentada na calculadora."
+        },
+        {
+          "title": "FD de economia fiscal (Tax-saving FD)",
+          "description": "Bloqueio de 5 anos com benefícios fiscais sob regras específicas."
+        },
+        {
+          "title": "Flexi FD / Sweep-in",
+          "description": "Liga a conta poupança ao FD para maior liquidez; a calculadora pode mostrar retiradas parciais."
+        },
+        {
+          "title": "FD para Residentes/NRI",
+          "description": "Documentação e, às vezes, taxas diferentes."
+        },
+        {
+          "title": "FD Corporativo / Não resgatável",
+          "description": "Pode oferecer taxas mais altas; verifique sempre a credibilidade da instituição."
+        }
+      ],
+      "conclusion": "Selecione o tipo de FD na calculadora para que ela aplique a taxa, o prazo e as regras de saque corretas."
+    },
+    "seniorRatesSection": {
+      "id": "senior-citizens-special-fd-rates",
+      "heading": "Taxas especiais de FD para idosos — Como Modelar Taxas Promocionais e para Idosos",
+      "intro": "Idosos geralmente recebem uma taxa de juros adicional (um pequeno aumento sobre a taxa base). Use as etapas abaixo para modelar isso na Calculadora de FD:",
+      "steps": [
+        "Identifique a taxa base r_base do FD e o acréscimo para idosos Δr.",
+        "Defina r = r_base + Δr na Calculadora de FD.",
+        "Execute a fórmula composta M = P × (1 + r/n)^(n×t) para ver o novo valor de maturidade."
+      ],
+      "example": {
+        "title": "Exemplo",
+        "body": "Se a taxa base = 7,0% e o aumento para idosos = 0,5%, então r = 7,5%. Para P = ₹200.000, t = 3 anos e capitalização anual: calcule (1,075)^3 e multiplique por ₹200.000 para obter M. A calculadora compara rapidamente o cenário base com o cenário para idosos para que aposentados escolham o retorno efetivo mais alto."
+      },
+      "conclusion": "Use a calculadora para comparar o cenário de taxa base e o de taxa para idosos para ver o benefício incremental — muitas vezes, um pequeno acréscimo gera uma diferença significativa ao longo de vários anos."
+    },
+    "withdrawalsPrematureTaxSection": {
+      "id": "withdrawals-premature-closure-and-tax-implications",
+      "heading": "Saques, encerramento antecipado e implicações fiscais — Premissas & Ajustes da Calculadora de FD",
+      "intro": "Ao modelar FDs, inclua eventos reais de saída e efeitos fiscais para que as projeções reflitam resultados prováveis:",
+      "points": [
+        "Penalidade por encerramento antecipado: muitos bancos descontam uma penalidade (ex.: 0,5%–1,0% da taxa) ou não pagam juros no período inicial. Na calculadora, reduza r ou subtraia a penalidade para modelar saída antecipada.",
+        "Saques parciais / FDs com liquidez: alguns flexi FDs permitem retiradas; ajuste o cronograma do principal e recalcule a capitalização restante.",
+        "Tributação: os juros de FDs são tributáveis conforme sua faixa de renda; TDS pode ser aplicado acima de certos limites. A Calculadora de FD mostra os juros brutos; para estimar o retorno pós-imposto, aplique sua alíquota marginal ao cálculo Juros = M − P."
+      ],
+      "example": {
+        "title": "Exemplo de ajuste (pós-imposto)",
+        "body": "Se os juros brutos = ₹50.000 e o imposto marginal = 30%, os juros pós-imposto ≈ ₹35.000 (50.000 × (1 − 0,30)). Para encerramento antecipado, se a penalidade = 0,75% da taxa, reduza r em 0,75 ponto percentual ao calcular M."
+      },
+      "note": "Sempre verifique as regras atuais do banco para penalidades e a legislação fiscal vigente. A calculadora fornece projeções, não aconselhamento tributário.",
+      "conclusion": "Modele saques, penalidades e impostos explicitamente nas entradas para obter valores realistas de maturidade e retornos pós-imposto."
+    },
+    "fdBenefitsSection": {
+      "id": "benefits-of-using-fd-calculator",
+      "heading": "Benefícios de usar uma Calculadora de FD online — Vantagens Claras & Suporte à Decisão",
+      "intro": "Uma Calculadora de FD para planejamento de Fixed Deposits oferece clareza e agilidade:",
+      "points": [
+        "Estimativas precisas de maturidade em cenários de juros simples e compostos.",
+        "Ferramenta de comparação para avaliar taxas de bancos/NBFCs e frequências de capitalização.",
+        "Testes de cenário para taxas de idosos, penalidades por encerramento antecipado e estratégias de FDs em escada (FD laddering).",
+        "Planejamento de fluxo de caixa ao projetar pagamentos periódicos ou maturidades em valor único.",
+        "Apoio ao planejamento tributário ao exibir juros brutos para que você calcule retornos pós-imposto."
+      ],
+      "conclusion": "Use a calculadora para montar estratégias de FDs, comparar rendimentos anuais efetivos e alinhar depósitos com despesas futuras ou objetivos financeiros. Ela elimina a complexidade dos cálculos e ajuda você a escolher o produto de FD mais adequado com segurança."
+    }
+  }
+}

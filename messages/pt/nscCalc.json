@@ -1,0 +1,130 @@
+{
+  "seo": {
+    "title": "Calculadora NSC — Calcule Juros e Valor de Maturidade do National Savings Certificate Online",
+    "description": "Use nossa Calculadora NSC gratuita para calcular o valor de maturidade e o total de juros ganhos no seu investimento em National Savings Certificate. Insira o valor investido, o prazo e a taxa de juros para obter resultados precisos instantaneamente.",
+    "slug": "tools/finance/nsc-calculator",
+    "image": "/images/og/nsc-calculator-en.png",
+    "isArticle": true,
+    "publishDate": "2024-01-01",
+    "modifiedDate": "2025-10-18",
+    "author": "Your Site"
+  },
+  "site": {
+    "heading": "Calculadora NSC (National Savings Certificate)"
+  },
+  "form": {
+    "principal": "Valor investido",
+    "interestRate": "Taxa de juros (a.a.)",
+    "timePeriod": "Período",
+    "compoundingFrequency": "Frequência de capitalização"
+  },
+  "article": {
+    "intro": {
+      "heading": "Por que Usar uma Calculadora NSC",
+      "paragraphs": [
+        "O National Savings Certificate (NSC) é um produto de poupança seguro, apoiado pelo governo, amplamente utilizado por investidores indianos para preservação de capital e economia de impostos.",
+        "Como os juros do NSC são compostos anualmente e pagos somente no vencimento, o valor final depende tanto do montante investido quanto da taxa composta aplicável — que o governo pode revisar trimestralmente.",
+        "Uma Calculadora NSC elimina os cálculos manuais: basta inserir o valor principal e a taxa de juros aplicável, e a ferramenta retorna o valor de maturidade, o rendimento anual efetivo e o total de juros ganhos ao longo do período de 5 anos.",
+        "Isso permite comparar os retornos do NSC com outros instrumentos seguros (PPF, Depósitos Fixos dos Correios), planejar deduções sob a Seção 80C e decidir o valor ideal a investir para atingir seus objetivos financeiros."
+      ]
+    },
+    "nsccalculator": {
+      "heading": "Calculadora NSC (National Savings Certificate)",
+      "subHeading": "Exemplo de NSC: prazo de 5 anos. Escolha a frequência de capitalização (Anual / Semestral)."
+    },
+    "whatIs": {
+      "heading": "O que é NSC? — National Savings Certificate Explicado",
+      "paragraphs": [
+        "O National Savings Certificate (NSC) é um esquema de poupança de renda fixa e longo prazo oferecido pelas agências dos correios em toda a Índia e garantido pelo Governo da Índia.",
+        "O NSC possui um bloqueio padrão de cinco anos e paga uma taxa de juros fixa, capitalizada anualmente e creditada no vencimento.",
+        "Os investimentos em NSC são elegíveis para dedução sob a Seção 80C da Lei do Imposto de Renda (limitada a ₹1,5 lakh), o que o torna atraente para contribuintes que buscam instrumentos seguros e eficientes em impostos.",
+        "A contribuição mínima é baixa — é possível começar com pequenas quantias — e, na prática, não há limite máximo para investir, embora limitações práticas possam surgir devido ao teto da Seção 80C.",
+        "Por ser garantido pelo governo, o NSC é frequentemente escolhido por investidores conservadores que priorizam segurança do capital e retornos previsíveis."
+      ]
+    },
+    "howItHelps": {
+      "heading": "Como uma Calculadora NSC pode ajudar você? — Usos Práticos",
+      "intro": "Uma Calculadora NSC oferece clareza imediata sobre o valor de maturidade esperado, sem precisar fazer cálculos manuais. Use-a para:",
+      "points": [
+        "Descobrir o valor de maturidade para uma aplicação única em NSC com a taxa de juros vigente.",
+        "Visualizar o total de juros ganhos durante o bloqueio de 5 anos e o rendimento anual efetivo.",
+        "Comparar os retornos do NSC com outros instrumentos de pequena poupança (PPF, FDs, esquemas Sukanya).",
+        "Planejar alocações do benefício fiscal da Seção 80C — entender quanto investir para utilizar a dedução de forma eficiente.",
+        "Executar cenários “e se?” para diferentes taxas (lembrando que o governo revisa as taxas trimestralmente), ajudando você a decidir o melhor momento e valor para investir."
+      ],
+      "note": "A ferramenta é rápida, precisa e elimina erros de cálculo do seu planejamento."
+    },
+    "formula": {
+      "heading": "Como funciona a Calculadora NSC — Lógica, Fórmula e Premissas",
+      "intro": "A Calculadora NSC aplica juros compostos anuais a um investimento único pelo prazo padrão do NSC (geralmente 5 anos). A fórmula central utilizada é a fórmula tradicional de juros compostos:",
+      "methods": [
+        {
+          "title": "Fórmula (capitalização anual):",
+          "formulas": [
+            "Valor de Maturidade (A) = P × (1 + r)^n"
+          ]
+        }
+      ],
+      "definitions": [
+        "P = Valor investido (₹)",
+        "r = Taxa de juros anual em decimal (ex.: 7,7% → 0,077)",
+        "n = Número de anos (geralmente 5 no NSC)"
+      ],
+      "note": "Juros ganhos = A − P. A calculadora também mostra o crescimento ano a ano, o total de juros e o rendimento anual efetivo, além de indicar claramente as premissas usadas (taxa e prazo), já que as taxas oficiais do NSC podem mudar trimestralmente."
+    },
+    "inputs": {
+      "heading": "Quais dados você precisa — Checklist Ordenado para a Calculadora NSC",
+      "intro": "Para usar a Calculadora NSC, você precisará dos seguintes dados (insira nesta ordem para resultados mais organizados):",
+      "list": [
+        "Valor do investimento (P) — valor único que você aplicará no NSC.",
+        "Taxa de juros (R%) — a taxa do NSC vigente no momento da aplicação (o governo revisa trimestralmente).",
+        "Prazo (n) — normalmente 5 anos para o NSC padrão; alguns certificados antigos tinham prazos diferentes.",
+        "Data de início (opcional) — para mostrar a data exata de vencimento e o crescimento ano a ano.",
+        "Indicador fiscal (opcional) — se você pretende usar esse valor para dedução na Seção 80C."
+      ],
+      "note": "Após inserir os dados, a calculadora retorna o valor de maturidade, juros totais, rendimento anual efetivo e um pequeno cronograma anual para ajudar você a visualizar o crescimento."
+    },
+    "calculation": {
+      "heading": "Fórmula de cálculo (explicação simples) — Fórmula Passo a Passo e Exemplo",
+      "intro": "O NSC utiliza capitalização anual, portanto os cálculos são diretos:",
+      "steps": [
+        "Converter a taxa de juros para decimal: r = R / 100.",
+        "Aplicar a fórmula de juros compostos: A = P × (1 + r)^n.",
+        "Calcular os juros ganhos: Juros = A − P.",
+        "Para o rendimento anual efetivo (AER): AER = (A / P)^{1/n} − 1 (expresso em porcentagem)."
+      ],
+      "example": "Exemplo rápido (ilustrativo): se P = ₹10.00.000, R = 7,7% e n = 5, então r = 0,077 e A = 10.00.000 × (1,077)^5. A calculadora fará esse cálculo exatamente e mostrará tanto A quanto o total de juros (A − P). Use o detalhamento anual para ver como os juros reinvestidos aceleram o crescimento."
+    },
+    "howToUse": {
+      "heading": "Como usar a Calculadora NSC — Passo a Passo",
+      "intro": "Siga estes passos organizados para obter uma projeção NSC confiável:",
+      "steps": [
+        "Digite o valor único que pretende investir no NSC (P).",
+        "Selecione ou insira a taxa de juros atual do NSC (R%) — verifique a taxa anunciada pelo governo para o trimestre vigente.",
+        "Confirme o prazo (padrão = 5 anos).",
+        "Opcional: insira a data de compra para mostrar a data exata de vencimento.",
+        "Clique em Calcular. Resultados: valor de maturidade (A), total de juros, rendimento anual efetivo e um cronograma ano a ano."
+      ],
+      "note": "Faça comparações com outros investimentos (PPF, FD) alterando taxa ou prazo para decidir o melhor instrumento para o seu objetivo. A calculadora é rápida e apresenta as premissas de forma clara, ajudando você a investir com confiança."
+    },
+    "advantages": {
+      "heading": "Vantagens de Usar uma Calculadora NSC — Por Que Ela é Útil",
+      "intro": "Uma Calculadora NSC economiza tempo, aumenta a precisão e auxilia no planejamento tributário:",
+      "points": [
+        "Valores de maturidade instantâneos: sem cálculos manuais de juros compostos ou planilhas complicadas.",
+        "Detalhamento preciso dos juros: veja exatamente quanto do valor final é juros e quanto é principal.",
+        "Apoio no planejamento tributário: estime quanto do seu limite da Seção 80C será utilizado pelos investimentos em NSC.",
+        "Acompanhamento de taxas trimestrais: como as taxas de pequenas economias mudam periodicamente, a calculadora permite testar diferentes cenários e investir quando os números estão mais atrativos.",
+        "Comparação com baixo risco: compare os retornos garantidos do NSC com outras opções conservadoras para alinhar liquidez e objetivos fiscais."
+      ],
+      "note": "Use a calculadora antes de comprar NSC no seu posto dos correios para tomar uma decisão informada e fiscalmente eficiente."
+    },
+    "notes": {
+      "heading": "Notas e Advertências",
+      "points": [
+        "As taxas de juros do NSC são definidas pelo governo e podem ser revisadas trimestralmente; sempre confirme a taxa vigente antes de finalizar o investimento.",
+        "Os juros do NSC são tributáveis, mas os juros creditados nos anos anteriores são tratados como reinvestidos e podem se qualificar para dedução sob a Seção 80C no ano em que são acumulados (confirme as regras fiscais atuais para o seu ano de declaração)."
+      ]
+    }
+  }
+}

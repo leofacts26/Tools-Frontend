@@ -1,0 +1,142 @@
+{
+  "seo": {
+    "title": "Calculadora de Gratificação — Calcule o Valor da Sua Gratuity Online",
+    "description": "Use nossa Calculadora de Gratificação gratuita para calcular o valor de gratuity ao qual você tem direito segundo o Payment of Gratuity Act, 1972. Insira seu último salário recebido, anos de serviço e dearness allowance para obter instantaneamente o valor total da gratificação.",
+    "slug": "tools/finance/gratuity-calculator",
+    "image": "/images/og/gratuitycalc-pt.png",
+    "isArticle": true,
+    "publishDate": "2024-01-01",
+    "modifiedDate": "2025-10-18",
+    "author": "GanakaHub"
+  },
+  "site": {
+    "heading": "Calculadora de Gratificação"
+  },
+  "form": {
+    "monthlyInvestment": "Investimento mensal",
+    "annualStepUp": "Aumento anual",
+    "expectedReturnRate": "Taxa de retorno esperada (a.a.)",
+    "timePeriod": "Período"
+  },
+  "article": {
+    "intro": {
+      "heading": "Por Que Usar uma Calculadora de Gratificação",
+      "paragraphs": [
+        "A gratificação é um benefício obrigatório pago ao funcionário após o término do emprego, desde que ele tenha cumprido o período mínimo exigido de serviço.",
+        "Calcular o valor exato — especialmente quando há anos parciais, regras de arredondamento e limites fiscais — pode ser confuso.",
+        "Uma Calculadora de Gratificação converte seu último salário básico (mais dearness allowance) e seus anos completos de serviço em uma estimativa precisa de gratificação em segundos.",
+        "Ela ajuda você a verificar elegibilidade, planejar finanças na aposentadoria ou demissão e estimar quanto do valor recebido será isento de impostos.",
+        "A ferramenta economiza tempo, evita erros de cálculo e mostra todas as premissas (como regras de arredondamento e limites legais), permitindo que você converse com o empregador ou RH com total clareza."
+      ]
+    },
+    "whatIs": {
+      "heading": "O Que é Gratificação? — Política de Gratuity e Quem Tem Direito",
+      "paragraphs": [
+        "A gratificação é um pagamento único feito pelo empregador ao funcionário como recompensa por serviço longo e contínuo, regulamentado na Índia pela Payment of Gratuity Act, 1972 para estabelecimentos cobertos.",
+        "De acordo com a Lei, um funcionário se torna elegível para receber gratificação após completar cinco anos de serviço contínuo; a regra dos cinco anos é dispensada em casos de morte ou incapacidade permanente decorrente de lesão ou doença.",
+        "O benefício geralmente é calculado com base no último salário básico do funcionário, acrescido do dearness allowance, juntamente com o número de anos de serviço; alguns empregadores podem oferecer esquemas mais generosos, mas nunca podem pagar abaixo do mínimo previsto em lei.",
+        "A Lei e suas emendas também determinam um teto máximo estatutário para o valor da gratificação paga aos funcionários que atendem aos requisitos."
+      ]
+    },
+    "formula": {
+      "heading": "Fórmula de Cálculo da Gratificação — Como o Cálculo Funciona",
+      "intro": "A fórmula estatutária padrão usada para funcionários cobertos pela Payment of Gratuity Act, 1972 é a seguinte:",
+      "methods": [
+        {
+          "title": "Fórmula (para funcionários cobertos pela Lei):",
+          "formulas": [
+            "Gratificação = (15 / 26) × Último Salário Recebido (Básico + DA) × Anos de Serviço"
+          ]
+        }
+      ],
+      "definitions": [
+        "15/26 representa 15 dias de salário em um mês com 26 dias úteis.",
+        "Último Salário Recebido = Salário Básico + Dearness Allowance.",
+        "Anos de Serviço = Total de anos completos de serviço (frações arredondadas conforme orientação do empregador ou da Lei)."
+      ],
+      "note": "Para estabelecimentos não cobertos pela Lei, muitos empregadores seguem a prática de meio salário mensal por ano de serviço, embora os termos possam variar. A gratificação também está sujeita a um limite máximo estatutário conforme previsto na legislação."
+    },
+    "howItHelps": {
+      "heading": "Como a Calculadora de Gratificação Ajuda Você — Benefícios Práticos",
+      "intro": "Uma Calculadora de Gratificação faz muito mais do que calcular um número — ela oferece clareza, precisão e visão financeira:",
+      "points": [
+        "Esclarece a elegibilidade e aplica automaticamente a fórmula legal correta.",
+        "Mostra como as regras de arredondamento afetam o valor final da gratificação com base nos anos de serviço.",
+        "Indica limites legais (teto estatutário) para que você saiba se todo o valor é devido ou se parte será tratada como ex-gratia.",
+        "Ajuda você a planejar finanças, como pagamentos de empréstimos ou despesas de aposentadoria, com estimativas precisas de gratificação.",
+        "Permite comparar benefícios de gratificação da empresa com o mínimo legal exigido pela Lei.",
+        "Prepara você com documentação e clareza ao solicitar o pagamento.",
+        "Auxilia equipes de RH e folha de pagamento ao acelerar cálculos e reduzir disputas com base em premissas transparentes."
+      ],
+      "note": "Use a calculadora antes dos procedimentos de desligamento para verificar a precisão e garantir que o pagamento do empregador esteja alinhado à Payment of Gratuity Act."
+    },
+    "inputs": {
+      "heading": "Quais dados você precisa — Checklist Ordenado para a Calculadora de Gratificação",
+      "intro": "Para obter uma estimativa precisa de gratificação, tenha os seguintes dados prontos (insira nesta ordem):",
+      "list": [
+        "Último salário básico recebido + Dearness Allowance (DA) — valor mensal.",
+        "Total de anos de serviço contínuo — inclua anos completos; observe as regras de arredondamento.",
+        "Data de admissão e data de desligamento — para cálculo exato de tempo de serviço (opcional).",
+        "Motivo do desligamento — aposentadoria, demissão, morte ou incapacidade (morte/incapacidade podem dispensar a regra dos 5 anos).",
+        "Se o estabelecimento é coberto pela Payment of Gratuity Act (a maioria com 10+ funcionários é).",
+        "Qualquer política empregadora que ofereça gratificação superior ao valor legal (opcional)."
+      ],
+      "note": "Insira esses valores e a calculadora exibirá a gratificação legal, eventuais ajustes de teto e a parte tributável."
+    },
+    "howToUse": {
+      "heading": "Passo a passo: Como Usar a Calculadora de Gratificação — Fluxo Ordenado",
+      "intro": "Siga este fluxo organizado para calcular uma estimativa precisa de gratificação:",
+      "steps": [
+        "Insira o último salário básico + DA (mensal).",
+        "Informe o total de anos de serviço completos (ou informe datas de entrada e saída para cálculo automático).",
+        "Selecione o motivo do desligamento (aposentadoria, demissão, morte/incapacidade) — isso afeta as regras de elegibilidade.",
+        "Escolha se o empregador segue a Payment of Gratuity Act (padrão = sim para estabelecimentos cobertos).",
+        "Clique em Calcular para obter: gratificação legal (usando 15/26), qualquer arredondamento aplicado, ajuste do teto legal (se houver) e uma estimativa da parte isenta/tributável.",
+        "Revise as premissas (teto, arredondamento) e salve ou exporte o resultado para discutir com o RH ou planejar impostos."
+      ],
+      "note": "Usar datas exatas e confirmar se o empregador oferece gratificação ampliada resultará no cálculo mais preciso."
+    },
+    "example": {
+      "heading": "Exemplo ilustrativo — Exemplo Prático com Números",
+      "intro": "Aqui está um exemplo prático mostrando como o valor da gratificação é calculado conforme a Payment of Gratuity Act:",
+      "steps": [
+        "Exemplo: Último salário básico + DA = ₹30.000/mês; tempo de serviço concluído = 5 anos.",
+        "Usando a fórmula legal: Gratificação = (15 / 26) × 30.000 × 5",
+        "Passo a passo: 30.000 × 5 = 150.000; 15/26 ≈ 0,5769; 150.000 × 0,5769 ≈ ₹86.538.",
+        "Portanto, a gratificação legal aproximada = ₹86.538.",
+        "Se um funcionário tivesse 17 anos e 6 meses de serviço e o empregador arredondasse para 18 anos, substitua 5 por 18 na fórmula.",
+        "Se o valor calculado ultrapassar o teto legal, o excedente pode ser tratado como ex-gratia e tributado de forma diferente.",
+        "Use a calculadora para testar rapidamente diferentes cenários de arredondamento e limites máximos."
+      ],
+      "note": "Este exemplo considera que o estabelecimento é coberto pela Payment of Gratuity Act e utiliza a fórmula padrão de 15/26 para o cálculo."
+    },
+    "taxation": {
+      "heading": "Tributação, Teto & Limites Legais — O Que é Isento e O Que é Limitado",
+      "paragraphs": [
+        "A Payment of Gratuity Act define o método de cálculo, e o governo aumentou o teto estatutário para pagamento de gratificação para ₹20 lakhs por meio da Payment of Gratuity (Amendment) Act e notificações subsequentes.",
+        "Para fins tributários, a isenção de imposto sobre gratificação conforme a Lei do Imposto de Renda é o menor entre: (a) a gratificação efetivamente recebida, (b) o valor calculado pela fórmula legal (15/26 × salário × anos) ou (c) o teto monetário prescrito (atualmente ₹20.00.000).",
+        "Funcionários do governo podem ter regras diferentes para pagamento e tributação de gratificação, conforme suas condições específicas de serviço.",
+        "Como tanto o teto de pagamento quanto os limites de isenção fiscal mudaram ao longo do tempo, a Calculadora de Gratificação destaca o teto estatutário e indica a provável parte isenta de impostos, ajudando você a planejar retiradas e declarações fiscais com precisão."
+      ]
+    },
+    "advantages": {
+      "heading": "Vantagens de Usar uma Calculadora de Gratificação — Resumo Rápido",
+      "intro": "Usar uma Calculadora de Gratificação online oferece:",
+      "points": [
+        "Velocidade e precisão — cálculo instantâneo e sem erros da gratificação prevista em lei.",
+        "Transparência — mostra premissas (fórmula, arredondamento, teto) para você verificar os cálculos do empregador.",
+        "Planejamento tributário — identifica a parte provavelmente isenta conforme as regras do imposto de renda.",
+        "Testes de cenários — compare resultados para diferentes tempos de serviço, regras de arredondamento ou políticas do empregador mais generosas que o mínimo legal.",
+        "Preparação — fornece números claros ao iniciar procedimentos de saída ou negociar o acerto final."
+      ],
+      "note": "É uma ferramenta prática e eficiente tanto para funcionários quanto para equipes de RH."
+    },
+    "notes": {
+      "heading": "Notas & Observações Importantes",
+      "points": [
+        "A fórmula legal aplica-se aos funcionários cobertos pela Payment of Gratuity Act; empregadores não cobertos podem usar fórmulas alternativas, geralmente semelhantes — confirme sempre com o RH ou com seu contrato de trabalho.",
+        "O governo alterou a Lei para elevar o teto de gratificação para ₹20 lakhs; as regras de isenção fiscal também utilizam esse limite — consulte notificações oficiais ou orientação fiscal atualizada antes de enviar sua declaração."
+      ]
+    }
+  }
+}

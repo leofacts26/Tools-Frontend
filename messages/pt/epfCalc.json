@@ -1,0 +1,275 @@
+{
+  "seo": {
+    "title": "Calculadora de EPF — Calcule Seu Saldo do Fundo de Previdência e Corpus de Aposentadoria",
+    "description": "Use nossa Calculadora de EPF gratuita para estimar seu saldo do Employee Provident Fund, contribuição do empregador e corpus total de aposentadoria. Planeje suas economias com projeções precisas.",
+    "slug": "tools/financas/calculadora-epf",
+    "image": "/images/og/epfcalc-pt.png",
+    "isArticle": true,
+    "publishDate": "2024-01-01",
+    "modifiedDate": "2025-01-01",
+    "author": "Seu Site"
+  },
+  "site": {
+    "heading": "Calculadora de EPF"
+  },
+  "form": {
+    "monthlySalary": "Salário mensal (Básico + DA)",
+    "age": "Sua idade (anos)",
+    "employeeContribution": "Sua contribuição para o EPF",
+    "annualSalaryIncrease": "Aumento anual do salário",
+    "interestRate": "Taxa de juros (a.a.)"
+  },
+  "article": {
+    "intro": {
+      "heading": "Introdução à Calculadora de EPF — Como Estimar a Maturidade do Seu Fundo de Previdência na Índia",
+      "paragraphs": [
+        "Planejar a aposentadoria exige números claros — e a Calculadora de EPF para funcionários assalariados na Índia oferece exatamente isso. Ela projeta como suas contribuições mensais ao EPF, a parte do empregador, o saldo atual e a taxa de juros declarada irão crescer até formar seu corpus de aposentadoria.",
+        "Em vez de adivinhações, você obtém estimativas baseadas em juros compostos que revelam o valor projetado na data de maturidade, o total contribuído e os juros acumulados.",
+        "Use a calculadora após aumentos salariais, trocas de emprego ou ao considerar contribuições voluntárias (VPF) para comparar cenários e definir metas realistas.",
+        "O resultado é fácil de entender e inclui premissas que permitem ajustar entradas — salário, taxa de contribuição, taxa de juros, anos até a aposentadoria — e ver instantaneamente como cada mudança afeta seu corpus final.",
+        "Prática, rápida e alinhada às regras do EPF na Índia."
+      ]
+    },
+    "whatIsEPFSection": {
+      "id": "what-is-epf",
+      "heading": "O que é EPF? — Contexto da Calculadora EPF: Entendendo os Fundamentos do Employee Provident Fund",
+      "paragraphs": [
+        "O Employee Provident Fund (EPF) é o esquema de poupança para aposentadoria regulamentado pelo governo indiano para trabalhadores assalariados do setor organizado, administrado pela Employees’ Provident Fund Organisation (EPFO).",
+        "Tanto o funcionário quanto o empregador contribuem com uma porcentagem fixa do salário básico mais Dearness Allowance (DA) para uma conta EPF vinculada a um Número de Conta Único (UAN).",
+        "Parte da contribuição obrigatória do empregador é direcionada ao Employees’ Pension Scheme (EPS), enquanto o restante acumula no EPF e rende a taxa de juros declarada anualmente pela EPFO.",
+        "As contribuições do EPF crescem por meio de juros compostos, tornando-se um dos principais veículos de poupança de longo prazo. Os saques são permitidos em condições específicas — aposentadoria, desemprego ou retiradas parciais aprovadas para moradia, educação ou necessidades médicas.",
+        "Para a maioria dos funcionários do setor privado, o EPF compõe o maior corpus garantido e de baixo risco; entender sua estrutura ajuda a usar a Calculadora de EPF de forma eficaz para prever resultados e planejar aportes adicionais ou diversificação."
+      ]
+    },
+    "whyUseEPFCalculatorSection": {
+      "id": "why-use-epf-calculator",
+      "heading": "Por que usar uma Calculadora de EPF? — Benefícios da Calculadora de EPF para Decisões de Aposentadoria",
+      "paragraphs": [
+        "A Calculadora de EPF para assalariados indianos elimina a complexidade manual e oferece projeções precisas e baseadas em cenários. Ela calcula o valor futuro usando juros compostos, separa contribuições do empregado e do empregador, considera alocações ao EPS e mostra os juros acumulados.",
+        "Com a calculadora, você pode:",
+        "1) Testar cenários “e se” (aumentos salariais, incrementos em VPF, aposentadoria antecipada ou tardia).",
+        "2) Evitar erros de cálculo manual.",
+        "3) Comparar resultados para decidir se deve reforçar o EPF ou investir em outra opção.",
+        "Também é útil ao mudar de emprego — estimar resultados consolidados no UAN — e quando a EPFO altera as taxas de juros.",
+        "A divisão visual incentiva escolhas de poupança mais inteligentes ao mostrar como contribuições e juros compostos crescem ao longo do tempo, ajudando você a transformar metas vagas em objetivos concretos de corpus."
+      ]
+    },
+    "howEPFCalculatorWorksSection": {
+      "id": "how-epf-calculator-works",
+      "heading": "Como nossa Calculadora de EPF funciona — Lógica de Cálculo do EPF & Explicação dos Resultados",
+      "paragraphs": [
+        "Nossa Calculadora de EPF, que modela juros compostos mensais, combina três blocos principais: (A) contribuições mensais recorrentes (funcionário + parcela do empregador destinada ao EPF), (B) a parte do empregador desviada para o EPS e (C) qualquer saldo atual no EPF.",
+        "Visão geral do processo:",
+        "1) Converter os valores mensais para uma taxa de juros mensal i = r/12.",
+        "2) Calcular o valor futuro da série de depósitos mensais (tratando-os como uma anuidade).",
+        "3) Capitalizar o saldo existente por n anos usando juros anuais ou equivalentes mensais.",
+        "4) Somar ambos os resultados para obter o valor de maturidade.",
+        "A calculadora exibe uma divisão clara: total das contribuições do funcionário, total das contribuições do empregador para EPF, parcela destinada ao EPS (pensão), juros totais acumulados e corpus final.",
+        "Todas as premissas (taxa r, momento do depósito, % do EPS) são mostradas para que você possa refazer cenários com confiança."
+      ]
+    },
+    "epfInputChecklistSection": {
+      "id": "epf-calculator-input-checklist",
+      "heading": "Quais dados você precisa — Lista de Entradas da Calculadora de EPF",
+      "intro": "Para obter projeções precisas com uma Calculadora de EPF na Índia, prepare as seguintes informações:",
+      "steps": [
+        "Salário mensal básico (incluindo DA) — a base para os percentuais do EPF.",
+        "Percentual da contribuição do funcionário — geralmente 12% do básico + DA.",
+        "Percentual da contribuição do empregador — parte obrigatória (ex.: 12%) e quanto disso vai para o EPS.",
+        "Saldo atual do EPF (vinculado ao UAN) — corpus existente a ser capitalizado.",
+        "Anos planejados até a aposentadoria ou idade de aposentadoria.",
+        "Taxa anual esperada de juros do EPF — utilize a taxa mais recente declarada pela EPFO.",
+        "Opcional: VPF (aporte mensal extra) — qualquer contribuição voluntária adicional.",
+        "Opcional: percentual esperado de aumento salarial anual — para modelar reajustes."
+      ],
+      "conclusion": "Insira esses dados na ordem acima para gerar uma projeção precisa e fácil de entender."
+    },
+    "epfFormulaSection": {
+      "id": "epf-calculation-formula",
+      "heading": "Fórmulas de cálculo (explicação simples) — Fórmulas Usadas pela Calculadora de EPF",
+      "intro": "Dividimos a matemática do EPF em duas fórmulas e depois as combinamos:",
+      "formulas": [
+        {
+          "title": "Valor futuro do saldo atual (capitalização anual):",
+          "expression": "FV_balance = PV × (1 + r)^n",
+          "explanation": "PV = saldo atual do EPF; r = taxa anual de juros (decimal); n = anos."
+        },
+        {
+          "title": "Valor futuro das contribuições mensais (anuidade ordinária, juros compostos mensais):",
+          "expression": "Considere PMT = contribuição mensal total ao EPF (funcionário + parcela do empregador destinada ao EPF), i = r/12, m = 12 × n.",
+          "formula": "FV_contributions = PMT × [ ( (1 + i)^m − 1 ) / i ]"
+        },
+        {
+          "title": "Maturidade total do EPF:",
+          "expression": "FV_total = FV_balance + FV_contributions"
+        },
+        {
+          "title": "Parcela do empregador destinada ao EPS (separada):",
+          "expression": "EPS_monthly = Básico × EPS% → usada para estimar pensão, mas não incluída em FV_contributions."
+        }
+      ],
+      "conclusion": "Essas fórmulas modelam depósitos mensais e juros compostos para que os usuários entendam como cada parte contribui para a construção da riqueza."
+    },
+    "stepByStepEPFSection": {
+      "id": "step-by-step-using-epf-calculator",
+      "heading": "Passo a passo: Usando a Calculadora de EPF — Etapas Organizadas para Obter Projeções Precisas",
+      "intro": "Siga estas etapas numeradas para usar a Calculadora de EPF no planejamento da aposentadoria:",
+      "steps": [
+        {
+          "title": "Insira o salário mensal básico (incl. DA) e o saldo atual do EPF",
+          "description": ""
+        },
+        {
+          "title": "Informe os percentuais de contribuição",
+          "description": "Percentual do funcionário (padrão 12%), percentual do empregador e alocação para o EPS (ex.: 8,33%)."
+        },
+        {
+          "title": "Adicione entradas opcionais",
+          "description": "Inclua o valor mensal de VPF e o crescimento salarial anual esperado, se quiser modelar cenários dinâmicos."
+        },
+        {
+          "title": "Defina a taxa de juros e o período",
+          "description": "Defina a taxa de juros r (taxa anual do EPF) e os anos até a aposentadoria n."
+        },
+        {
+          "title": "Escolha a suposição de momento do depósito",
+          "description": "Depósito no final do mês (anuidade ordinária) é o padrão."
+        },
+        {
+          "title": "Clique em Calcular",
+          "description": "Obtenha a maturidade, a divisão das contribuições e o total de juros."
+        },
+        {
+          "title": "Revise e repita",
+          "description": "Revise as premissas exibidas e rode novamente com alterações (maior VPF, r diferente ou aposentadoria antecipada) para comparar resultados."
+        }
+      ],
+      "conclusion": "Esse fluxo organizado garante clareza e testes repetíveis de cenários."
+    },
+    "epfExampleWalkthroughSection": {
+      "id": "epf-calculator-example-walkthrough",
+      "heading": "Exemplo ilustrativo — Passo a Passo da Calculadora de EPF com Fórmulas",
+      "intro": "Caso exemplo para clareza: Salário básico ₹40.000/mês, saldo atual do EPF PV = ₹1.50.000, n = 25 anos, r = 8,5% (0,085), funcionário 12%, empregador 12% com 8,33% destinado ao EPS.",
+      "steps": [
+        {
+          "title": "Calcular a contribuição mensal para o EPF (não EPS):"
+        },
+        {
+          "title": "Contribuição mensal do funcionário",
+          "formula": "0,12 × 40.000 = ₹4.800"
+        },
+        {
+          "title": "Parcela mensal do empregador destinada ao EPF",
+          "formula": "(percentual do empregador − EPS%) × Básico = (12% − 8,33%) × 40.000 = 3,67% × 40.000 = ₹1.468"
+        },
+        {
+          "title": "Contribuição mensal total ao EPF",
+          "formula": "PMT = 4.800 + 1.468 = ₹6.268"
+        },
+        {
+          "title": "Taxa mensal de juros e duração",
+          "formula": "i = 0,085 / 12 ≈ 0,007083; m = 12 × 25 = 300"
+        },
+        {
+          "title": "Valor Futuro das Contribuições",
+          "formula": "FV_contributions = PMT × [ ((1 + i)^m − 1) / i ]"
+        },
+        {
+          "title": "Valor Futuro do Saldo Existente",
+          "formula": "FV_balance = 1.50.000 × (1 + 0,085)^25"
+        },
+        {
+          "title": "Valor Total na Maturidade",
+          "formula": "FV_total = FV_contributions + FV_balance"
+        }
+      ],
+      "conclusion": "Rode esses cálculos na calculadora para obter o corpus final e ver como mudanças em VPF ou na taxa afetam os resultados."
+    },
+    "employerContributionSection": {
+      "id": "employer-contribution-and-eps-split",
+      "heading": "Contribuição do empregador e divisão para o EPS — Como EPF e EPS do empregador afetam seu corpus",
+      "intro": "Entender a alocação do empregador é essencial para projeções de EPF:",
+      "points": [
+        "Contribuição obrigatória do empregador (%) — geralmente 12% do básico + DA.",
+        "Desvio para o EPS (%) — normalmente 8,33% do básico, limitado pelas regras; esse valor vai para o EPS (pensão), não para o EPF.",
+        "Parcela do empregador destinada ao EPF (%) = % do empregador − % do EPS."
+      ],
+      "formulas": [
+        {
+          "title": "Contribuição mensal ao EPS",
+          "formula": "EPS_monthly = Básico × EPS%"
+        },
+        {
+          "title": "Contribuição mensal do empregador ao EPF",
+          "formula": "Employer_EPF_monthly = Básico × (Employer% − EPS%)"
+        },
+        {
+          "title": "Contribuição mensal total ao EPF usada na capitalização",
+          "formula": "PMT_EPF = Employee_monthly + Employer_EPF_monthly"
+        }
+      ],
+      "conclusion": "Como os fundos do EPS não se capitalizam como parte do corpus do EPF, a calculadora modela o EPS separadamente e pode fornecer uma estimativa aproximada da pensão, enquanto mantém o foco da maturidade do EPF no corpus que rende juros compostos."
+    },
+    "boostVPFSection": {
+      "id": "boosting-epf-with-vpf",
+      "heading": "Aumentando o EPF com VPF — Como Contribuições Voluntárias Transformam os Resultados do EPF",
+      "intro": "O VPF (Voluntary Provident Fund) permite aumentar suas poupanças mensais além das contribuições obrigatórias. Use estas etapas para avaliar o impacto do VPF:",
+      "steps": [
+        "Decida o percentual de VPF ou o valor mensal fixo que você pode assumir.",
+        "Adicione o VPF ao PMT ao inserir os dados: PMT_total = EPF_mensal_obrigatório + VPF_mensal.",
+        "Recalcule o FV_contributions usando a mesma fórmula de anuidade com PMT_total.",
+        "Compare os resultados: o FV_total incremental menos o cenário base mostra o benefício do VPF."
+      ],
+      "example": {
+        "title": "Exemplo",
+        "body": "Exemplo: adicionar um VPF de ₹2.000/mês aumenta o PMT e se capitaliza ao longo de n anos — pequenos aumentos mensais se transformam em grandes diferenças devido aos juros compostos. O VPF mantém a segurança garantida pelo governo e as vantagens fiscais do EPF, tornando-o uma opção de baixo risco e altamente eficaz para aumentar o corpus de aposentadoria quando o fluxo de caixa permite."
+      },
+      "conclusion": "Use a calculadora para rodar um cenário base (sem VPF) e outro com VPF — a diferença no corpus final é o valor agregado pelas contribuições voluntárias."
+    },
+    "withdrawalsTransfersTaxSection": {
+      "id": "withdrawals-transfers-and-tax-implications",
+      "heading": "Saques, transferências e implicações fiscais — Premissas da Calculadora de EPF & Visão Geral das Regras Tributárias",
+      "intro": "Ao usar uma Calculadora de EPF, modele eventos reais que você espera: saques, transferências ou pausas na carreira. Considere na ordem:",
+      "points": [
+        "Saques: retiradas parciais reduzem o principal; inclua valores planejados e o momento do saque para ajustar o FV corretamente.",
+        "Transferências: se você trocar de emprego e transferir o EPF sob o mesmo UAN, trate os saldos como contínuos; caso contrário, mapeie períodos sem contribuição e possível perda de juros.",
+        "Implicações fiscais: a maturidade e os juros do EPF são isentos de impostos se as condições de serviço e retirada forem atendidas; saques antecipados ou longas interrupções podem afetar a tributação."
+      ],
+      "formulaAdjustment": {
+        "title": "Ajuste na fórmula para um saque",
+        "explanation": "Se você retirar W no ano t, reduza o valor futuro em:",
+        "expression": "Ajuste = W × (1 + r)^(n − t)"
+      },
+      "note": "Sempre confirme as regras atuais do EPFO e da legislação fiscal — trate o resultado da calculadora como projeção, não como aconselhamento tributário.",
+      "conclusion": "Modele saques, transferências e premissas fiscais explicitamente nas entradas para obter projeções de aposentadoria realistas e acionáveis."
+    },
+    "benefitsOnlineEPFSection": {
+      "id": "benefits-of-using-online-epf-calculator",
+      "heading": "Benefícios de usar uma Calculadora de EPF online — Vantagens Claras & Insights Práticos",
+      "intro": "Uma Calculadora de EPF para trabalhadores assalariados na Índia oferece clareza imediata e prática:",
+      "points": [
+        {
+          "title": "Precisão",
+          "description": "Automatiza cálculos de juros compostos e a divisão EPF/EPS do empregador."
+        },
+        {
+          "title": "Velocidade",
+          "description": "Projeções instantâneas, sem depender de planilhas manuais."
+        },
+        {
+          "title": "Teste de cenários",
+          "description": "Compare opções de VPF, mudanças na taxa de juros e idades de aposentadoria."
+        },
+        {
+          "title": "Suporte à decisão",
+          "description": "Ajuda a decidir se vale a pena aumentar o VPF, adiar a aposentadoria ou diversificar os investimentos."
+        },
+        {
+          "title": "Prontidão para mudança de emprego",
+          "description": "Estime o resultado consolidado do UAN e o impacto da transferência."
+        }
+      ],
+      "conclusion": "Como a ferramenta separa contribuições e juros, você visualiza quanto do seu corpus futuro vem de poupança e quanto vem dos rendimentos — um forte motivador para disciplina financeira. Use a calculadora anualmente ou sempre que houver mudança salarial para manter as projeções alinhadas com a realidade."
+    }
+  }
+}
