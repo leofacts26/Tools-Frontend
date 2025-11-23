@@ -78,7 +78,58 @@ const CustomInput = ({
 }) => {
   // adornment color: red when error, muted when disabled, otherwise brand color
   const adornmentColor = error ? "error.main" : disabled ? "text.disabled" : "var(--clr-primary-1)";
-  const inputTextColor = error ? "#d32f2f" : disabled ? "text.disabled" : "var(--clr-primary-1)";
+
+  // local state to allow the user to clear the field (show empty) while editing
+  const [localValue, setLocalValue] = React.useState(value ?? "");
+  const [editing, setEditing] = React.useState(false);
+
+  // sync prop -> local when not editing
+  React.useEffect(() => {
+    if (!editing) {
+      setLocalValue(value ?? "");
+    }
+  }, [value, editing]);
+
+  const handleFocus = () => setEditing(true);
+  const handleBlurLocal = (e) => {
+    setEditing(false);
+    const raw = localValue;
+    if (raw === "") {
+      if (typeof onBlur === "function") onBlur("");
+      if (typeof onChange === "function") onChange("");
+      return;
+    }
+    let num = Number(raw);
+    if (!isFinite(num)) num = "";
+    if (num !== "" && typeof max !== "undefined" && num > max) num = max;
+    if (typeof onBlur === "function") onBlur(num);
+    if (typeof onChange === "function") onChange(num);
+  };
+
+  const handleChangeLocal = (e) => {
+    const raw = e.target.value;
+    // allow empty string
+    if (raw === "") {
+      setLocalValue("");
+      if (typeof onChange === "function") onChange("");
+      return;
+    }
+    // strip non-digit characters (allow decimal point)
+    const cleaned = raw.replace(/[^0-9.]/g, "");
+    // clamp to max if necessary when it's a valid number
+    const asNum = Number(cleaned);
+    if (cleaned !== "" && isFinite(asNum) && typeof max !== "undefined" && asNum > max) {
+      setLocalValue(String(max));
+      if (typeof onChange === "function") onChange(max);
+      return;
+    }
+    setLocalValue(cleaned);
+    if (cleaned === "") {
+      if (typeof onChange === "function") onChange("");
+    } else if (!isNaN(Number(cleaned))) {
+      if (typeof onChange === "function") onChange(Number(cleaned));
+    }
+  };
 
   return (
     <Box sx={{ display: "flex", alignItems: "center", gap: 1 }}>
@@ -89,7 +140,7 @@ const CustomInput = ({
             sx={{
               color: "error.main",
               cursor: "pointer",
-              opacity: disabled ? 0.9 : 1, // still visible when disabled
+              opacity: disabled ? 0.9 : 1,
             }}
           />
         </RedTooltip>
@@ -97,36 +148,12 @@ const CustomInput = ({
 
       <CssTextField
         disabled={disabled}
-        type="number"
-        value={value ?? ""}
-        onChange={(e) => {
-          // allow user to type anything (including values below min),
-          // but clamp above the max so input cannot grow beyond max.
-          let raw = e.target.value;
-          if (raw === "") {
-            onChange("");
-            return;
-          }
-          let num = Number(raw);
-          if (!isFinite(num)) {
-            onChange("");
-            return;
-          }
-          if (typeof max !== "undefined" && num > max) num = max; // clamp only to max
-          onChange(num);
-        }}
-        onBlur={(e) => {
-          // on blur, clamp to max if needed; don't force up to min
-          const raw = e.target.value;
-          if (raw === "") {
-            if (typeof onBlur === "function") onBlur("");
-            return;
-          }
-          let num = Number(raw);
-          if (!isFinite(num)) num = "";
-          if (num !== "" && typeof max !== "undefined" && num > max) num = max;
-          if (typeof onBlur === "function") onBlur(num);
-        }}
+        type="text"
+        value={localValue}
+        placeholder={localValue === "" && value === 0 ? '0' : undefined}
+        onFocus={handleFocus}
+        onChange={handleChangeLocal}
+        onBlur={handleBlurLocal}
         InputProps={{
           startAdornment: startAdornment ? (
             <InputAdornment position="start" sx={{ pointerEvents: "none" }}>
@@ -153,7 +180,6 @@ const CustomInput = ({
           width,
           "& .MuiInputBase-root": error ? { backgroundColor: "#ffe5e5" } : {},
           "& .MuiInputBase-input": error ? { color: "#d32f2f", fontWeight: 600 } : {},
-          // ensure disabled inputs show our muted color in inline styles too
           "& .MuiInputBase-root.Mui-disabled": {
             backgroundColor: "#f5f5f5",
           },
