@@ -100,5 +100,62 @@
     "privacy": "প্রাইভেসি পলিসি",
     "terms": "শর্তাবলি",
     "contact": "যোগাযোগ"
+  },
+  "popularCalculators": {
+    "title": "জনপ্রিয় ক্যালকুলেটর",
+    "items": [
+      {
+        "title": "SIP ক্যালকুলেটর",
+        "href": "/tools/finance/sip-calculator"
+      },
+      {
+        "title": "লাম্পসম ক্যালকুলেটর",
+        "href": "/tools/finance/lumpsum-calculator"
+      },
+      {
+        "title": "SWP ক্যালকুলেটর",
+        "href": "/tools/finance/swp-calculator"
+      },
+      {
+        "title": "মিউচুয়াল ফান্ড রিটার্ন ক্যালকুলেটর",
+        "href": "/tools/finance/mutual-fund-returns-calculator"
+      },
+      {
+        "title": "সুকন্যা সমৃদ্ধি যোজনা ক্যালকুলেটর",
+        "href": "/tools/finance/sukanya-samriddhi-yojana-calculator"
+      },
+      {
+        "title": "PPF ক্যালকুলেটর",
+        "href": "/tools/finance/ppf-calculator"
+      },
+      {
+        "title": "EPF ক্যালকুলেটর",
+        "href": "/tools/finance/epf-calculator"
+      },
+      {
+        "title": "FD ক্যালকুলেটর",
+        "href": "/tools/finance/fd-calculator"
+      },
+      {
+        "title": "NPS ক্যালকুলেটর",
+        "href": "/tools/finance/nps-calculator"
+      },
+      {
+        "title": "সাধারণ সুদ ক্যালকুলেটর",
+        "href": "/tools/finance/simple-interest-calculator"
+      },
+      {
+        "title": "NSC ক্যালকুলেটর",
+        "href": "/tools/finance/nsc-calculator"
+      },
+      {
+        "title": "স্টেপ আপ SIP ক্যালকুলেটর",
+        "href": "/tools/finance/step-up-sip-calculator"
+      },
+      {
+        "title": "গ্র্যাচুইটি ক্যালকুলেটর",
+        "href": "/tools/finance/gratuity-calculator"
+      }
+    ]
   }
 }

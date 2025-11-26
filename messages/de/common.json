@@ -100,5 +100,62 @@
     "privacy": "Datenschutzrichtlinie",
     "terms": "Allgemeine Geschäftsbedingungen",
     "contact": "Kontakt"
+  },
+  "popularCalculators": {
+    "title": "Beliebte Rechner",
+    "items": [
+      {
+        "title": "SIP Rechner",
+        "href": "/tools/finance/sip-calculator"
+      },
+      {
+        "title": "Lumpsum Rechner",
+        "href": "/tools/finance/lumpsum-calculator"
+      },
+      {
+        "title": "SWP Rechner",
+        "href": "/tools/finance/swp-calculator"
+      },
+      {
+        "title": "Renditerechner für Investmentfonds",
+        "href": "/tools/finance/mutual-fund-returns-calculator"
+      },
+      {
+        "title": "Sukanya Samriddhi Yojana Rechner",
+        "href": "/tools/finance/sukanya-samriddhi-yojana-calculator"
+      },
+      {
+        "title": "PPF Rechner",
+        "href": "/tools/finance/ppf-calculator"
+      },
+      {
+        "title": "EPF Rechner",
+        "href": "/tools/finance/epf-calculator"
+      },
+      {
+        "title": "FD Rechner",
+        "href": "/tools/finance/fd-calculator"
+      },
+      {
+        "title": "NPS Rechner",
+        "href": "/tools/finance/nps-calculator"
+      },
+      {
+        "title": "Zinsrechner (Einfache Verzinsung)",
+        "href": "/tools/finance/simple-interest-calculator"
+      },
+      {
+        "title": "NSC Rechner",
+        "href": "/tools/finance/nsc-calculator"
+      },
+      {
+        "title": "Step-Up SIP Rechner",
+        "href": "/tools/finance/step-up-sip-calculator"
+      },
+      {
+        "title": "Gratifikationsrechner",
+        "href": "/tools/finance/gratuity-calculator"
+      }
+    ]
   }
 }

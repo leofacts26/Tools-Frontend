@@ -100,5 +100,62 @@
     "privacy": "سياسة الخصوصية",
     "terms": "الشروط والأحكام",
     "contact": "اتصل بنا"
+  },
+  "popularCalculators": {
+    "title": "الحاسبات الشائعة",
+    "items": [
+      {
+        "title": "حاسبة SIP",
+        "href": "/tools/finance/sip-calculator"
+      },
+      {
+        "title": "حاسبة المبلغ المقطوع (Lumpsum)",
+        "href": "/tools/finance/lumpsum-calculator"
+      },
+      {
+        "title": "حاسبة SWP",
+        "href": "/tools/finance/swp-calculator"
+      },
+      {
+        "title": "حاسبة عوائد صناديق الاستثمار",
+        "href": "/tools/finance/mutual-fund-returns-calculator"
+      },
+      {
+        "title": "حاسبة خطة سوكانيا سمردهي",
+        "href": "/tools/finance/sukanya-samriddhi-yojana-calculator"
+      },
+      {
+        "title": "حاسبة PPF",
+        "href": "/tools/finance/ppf-calculator"
+      },
+      {
+        "title": "حاسبة EPF",
+        "href": "/tools/finance/epf-calculator"
+      },
+      {
+        "title": "حاسبة الودائع الثابتة (FD)",
+        "href": "/tools/finance/fd-calculator"
+      },
+      {
+        "title": "حاسبة NPS",
+        "href": "/tools/finance/nps-calculator"
+      },
+      {
+        "title": "حاسبة الفائدة البسيطة",
+        "href": "/tools/finance/simple-interest-calculator"
+      },
+      {
+        "title": "حاسبة NSC",
+        "href": "/tools/finance/nsc-calculator"
+      },
+      {
+        "title": "حاسبة SIP المتزايد (Step Up)",
+        "href": "/tools/finance/step-up-sip-calculator"
+      },
+      {
+        "title": "حاسبة المكافأة (Gratuity)",
+        "href": "/tools/finance/gratuity-calculator"
+      }
+    ]
   }
 }

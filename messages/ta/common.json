@@ -100,5 +100,62 @@
     "privacy": "தனியுரிமைக் கொள்கை",
     "terms": "விதிமுறைகள் & நிபந்தனைகள்",
     "contact": "தொடர்பு"
+  },
+  "popularCalculators": {
+    "title": "பிரபல கால்குலேட்டர்கள்",
+    "items": [
+      {
+        "title": "SIP கால்குலேட்டர்",
+        "href": "/tools/finance/sip-calculator"
+      },
+      {
+        "title": "லம்ப்சம் கால்குலேட்டர்",
+        "href": "/tools/finance/lumpsum-calculator"
+      },
+      {
+        "title": "SWP கால்குலேட்டர்",
+        "href": "/tools/finance/swp-calculator"
+      },
+      {
+        "title": "மியூச்சுவல் ஃபண்ட் ரிட்டர்ன் கால்குலேட்டர்",
+        "href": "/tools/finance/mutual-fund-returns-calculator"
+      },
+      {
+        "title": "சுகன்யா சம்ருத்தி யோஜனா கால்குலேட்டர்",
+        "href": "/tools/finance/sukanya-samriddhi-yojana-calculator"
+      },
+      {
+        "title": "PPF கால்குலேட்டர்",
+        "href": "/tools/finance/ppf-calculator"
+      },
+      {
+        "title": "EPF கால்குலேட்டர்",
+        "href": "/tools/finance/epf-calculator"
+      },
+      {
+        "title": "FD கால்குலேட்டர்",
+        "href": "/tools/finance/fd-calculator"
+      },
+      {
+        "title": "NPS கால்குலேட்டர்",
+        "href": "/tools/finance/nps-calculator"
+      },
+      {
+        "title": "எளிய வட்டி கால்குலேட்டர்",
+        "href": "/tools/finance/simple-interest-calculator"
+      },
+      {
+        "title": "NSC கால்க்குலேட்டர்",
+        "href": "/tools/finance/nsc-calculator"
+      },
+      {
+        "title": "ஸ்டெப் அப் SIP கால்குலேட்டர்",
+        "href": "/tools/finance/step-up-sip-calculator"
+      },
+      {
+        "title": "கிராட்யூட்டி கால்குலேட்டர்",
+        "href": "/tools/finance/gratuity-calculator"
+      }
+    ]
   }
 }

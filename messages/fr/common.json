@@ -100,5 +100,62 @@
     "privacy": "Politique de Confidentialité",
     "terms": "Conditions Générales",
     "contact": "Contact"
+  },
+  "popularCalculators": {
+    "title": "Calculatrices Populaires",
+    "items": [
+      {
+        "title": "Calculatrice SIP",
+        "href": "/tools/finance/sip-calculator"
+      },
+      {
+        "title": "Calculatrice Lumpsum",
+        "href": "/tools/finance/lumpsum-calculator"
+      },
+      {
+        "title": "Calculatrice SWP",
+        "href": "/tools/finance/swp-calculator"
+      },
+      {
+        "title": "Calculatrice de Rendement des Fonds Mutuels",
+        "href": "/tools/finance/mutual-fund-returns-calculator"
+      },
+      {
+        "title": "Calculatrice Sukanya Samriddhi Yojana",
+        "href": "/tools/finance/sukanya-samriddhi-yojana-calculator"
+      },
+      {
+        "title": "Calculatrice PPF",
+        "href": "/tools/finance/ppf-calculator"
+      },
+      {
+        "title": "Calculatrice EPF",
+        "href": "/tools/finance/epf-calculator"
+      },
+      {
+        "title": "Calculatrice FD",
+        "href": "/tools/finance/fd-calculator"
+      },
+      {
+        "title": "Calculatrice NPS",
+        "href": "/tools/finance/nps-calculator"
+      },
+      {
+        "title": "Calculatrice d’Intérêt Simple",
+        "href": "/tools/finance/simple-interest-calculator"
+      },
+      {
+        "title": "Calculatrice NSC",
+        "href": "/tools/finance/nsc-calculator"
+      },
+      {
+        "title": "Calculatrice SIP Progressive (Step Up)",
+        "href": "/tools/finance/step-up-sip-calculator"
+      },
+      {
+        "title": "Calculatrice de Gratification",
+        "href": "/tools/finance/gratuity-calculator"
+      }
+    ]
   }
 }
