@@ -3,7 +3,7 @@
     "title": "Calculadora SIP — Calculadora de Investimento SIP Online e Gratuita",
     "description": "Estime os retornos de investimentos mensais via SIP. Compare SIP vs Lumpsum e aprenda a fórmula.",
     "slug": "tools/finance/sip-calculator",
-    "image": "/images/og/sipcalc-en.png",
+    "image": "/calculators/sip-calculator-img.png",
     "isArticle": true,
     "publishDate": "2024-01-01",
     "modifiedDate": "2024-09-01",

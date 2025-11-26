@@ -3,7 +3,7 @@
     "title": "SIP Calculator — இலவச ஆன்லைன் SIP முதலீட்டு கணக்கிடுபான்",
     "description": "மாதாந்திர SIP முதலீட்டின் எதிர்பார்க்கப்பட்ட வருமானத்தை கணக்கிடுங்கள். SIP மற்றும் Lumpsum-ஐ ஒப்பிடவும், பயன்படுத்தப்படும் சூத்திரத்தை புரிந்துகொள்ளவும்.",
     "slug": "tools/finance/sip-calculator",
-    "image": "/images/og/sipcalc-en.png",
+    "image": "/calculators/sip-calculator-img.png",
     "isArticle": true,
     "publishDate": "2024-01-01",
     "modifiedDate": "2024-09-01",

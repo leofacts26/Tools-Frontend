@@ -3,7 +3,7 @@
     "title": "SIP కాల్కులేటర్ — ఉచిత ఆన్‌లైన్ SIP ఇన్వెస్ట్‌మెంట్ కాల్కులేటర్",
     "description": "నెలవారీ SIP పెట్టుబడుల రాబడులను అంచనా వేయండి. SIP vs లంప్‌సమ్‌ని పోల్చండి మరియు ఫార్ములా గురించి తెలుసుకోండి.",
     "slug": "tools/finance/sip-calculator",
-    "image": "/images/og/sipcalc-te.png",
+    "image": "/calculators/sip-calculator-img.png",
     "isArticle": true,
     "publishDate": "2024-01-01",
     "modifiedDate": "2024-09-01",
