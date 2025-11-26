@@ -3,7 +3,7 @@
     "title": "Simple Interest Calculator — எளிய வட்டி மற்றும் மொத்தத் தொகையை ஆன்லைனில் கணக்கிடுங்கள்",
     "description": "எங்கள் இலவச Simple Interest Calculator-ஐ பயன்படுத்தி, உங்கள் முதலீட்டு Principal மீது வட்டி மற்றும் மொத்தத் தொகையை விரைவாகக் கணக்கிடுங்கள். Principal, வட்டி விகிதம் மற்றும் காலத்தை உள்ளிடினால், கடன் அல்லது சேமிப்பிற்கான உடனடி முடிவுகளைப் பெறலாம்.",
     "slug": "tools/finance/simple-interest-calculator",
-    "image": "/images/og/simpleinterestcalc-en.png",
+    "image": "/calculators/Simple-Intrest-Calculator.png",
     "isArticle": true,
     "publishDate": "2024-01-01",
     "modifiedDate": "2025-01-01",

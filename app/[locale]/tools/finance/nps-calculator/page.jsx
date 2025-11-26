@@ -5,6 +5,7 @@ import SWPCalculator from "@/components/calculators/SWPCalculator";
 import { createMetadata, SITE } from "@/lib/seo";
 import FAQAccordion from "@/components/common/FAQAccordion";
 import NPSCalculator from "@/components/calculators/NPSCalculator";
+import Image from 'next/image';
 
 
 
@@ -131,164 +132,178 @@ export default async function Page({ params }) {
           <Grid size={{ xs: 12, sm: 12, md: 12, lg: 8 }}>
             {/* <Paper elevation={0} sx={{ border: "none", borderRadius: 2, p: { xs: 2, md: 4 }, boxShadow: "0 2px 8px rgba(0,0,0,0.05)" }}> */}
 
-              <article aria-labelledby="what-is-nps-calculator" className="finance-article">
-                <header>
-                  <h2 id="what-is-nps-calculator" className="finance-sub-heading">
-                    {npsCalc.article.intro.heading}
-                  </h2>
+            <article aria-labelledby="what-is-nps-calculator" className="finance-article">
 
-                  {npsCalc.article.intro.paragraphs.map((para, idx) => (
-                    <p key={idx}>{para}</p>
+              <Image
+                src={npsCalc?.seo?.image}
+                alt="From ₹0 to ₹1 Crore"
+                className="img-fluid mb-4 img-rounded"
+                width={763}
+                height={429}
+                layout="responsive"
+                objectFit="contain"
+                style={{ marginTop: '20px' }}
+              />
+
+
+
+              <header>
+                <h2 id="what-is-nps-calculator" className="finance-sub-heading">
+                  {npsCalc.article.intro.heading}
+                </h2>
+
+                {npsCalc.article.intro.paragraphs.map((para, idx) => (
+                  <p key={idx}>{para}</p>
+                ))}
+              </header>
+
+              <section aria-labelledby="what-is-nps" className="finance-article-section">
+                <h3 id="what-is-nps" className="finance-sub-heading">
+                  {npsCalc.article.whatIsNps.heading}
+                </h3>
+
+                {npsCalc.article.whatIsNps.paragraphs.map((para, idx) => (
+                  <p key={idx}>{para}</p>
+                ))}
+              </section>
+
+              <section aria-labelledby="why-use-nps-calculator" className="finance-article-section">
+                <h3 id="why-use-nps-calculator" className="finance-sub-heading">
+                  {npsCalc.article.whyUseCalculator.heading}
+                </h3>
+
+                {npsCalc.article.whyUseCalculator.paragraphs.map((para, idx) => (
+                  <p key={idx}>{para}</p>
+                ))}
+              </section>
+
+              <section aria-labelledby="how-nps-calculator-works" className="finance-article-section">
+                <h3 id="how-nps-calculator-works" className="finance-sub-heading">
+                  {npsCalc.article.howItWorks.heading}
+                </h3>
+
+                {npsCalc.article.howItWorks.paragraphs.map((para, idx) => (
+                  <p key={idx}>{para}</p>
+                ))}
+              </section>
+
+              <section aria-labelledby="nps-inputs-checklist" className="finance-article-section">
+                <h3 id="nps-inputs-checklist" className="finance-sub-heading">
+                  {npsCalc.article.inputsChecklist.heading}
+                </h3>
+
+                <p>{npsCalc.article.inputsChecklist.intro}</p>
+
+                <ol className="ou-list">
+                  {npsCalc.article.inputsChecklist.points.map((point, idx) => (
+                    <li key={idx}>{point}</li>
                   ))}
-                </header>
+                </ol>
 
-                <section aria-labelledby="what-is-nps" className="finance-article-section">
-                  <h3 id="what-is-nps" className="finance-sub-heading">
-                    {npsCalc.article.whatIsNps.heading}
-                  </h3>
+                <p>{npsCalc.article.inputsChecklist.conclusion}</p>
+              </section>
 
-                  {npsCalc.article.whatIsNps.paragraphs.map((para, idx) => (
-                    <p key={idx}>{para}</p>
+              <section aria-labelledby="nps-calculation-formula" className="finance-article-section">
+                <h3 id="nps-calculation-formula" className="finance-sub-heading">
+                  {npsCalc.article.calculationFormula.heading}
+                </h3>
+
+                <p>{npsCalc.article.calculationFormula.intro}</p>
+
+                <ol className="ou-list">
+                  {npsCalc.article.calculationFormula.steps.map((step, idx) => (
+                    <li key={idx}>
+                      <strong>{step.title}</strong>
+                      <pre className="formula-block">{step.formula}</pre>
+                      <p>{step.explanation}</p>
+                    </li>
                   ))}
-                </section>
+                </ol>
+              </section>
 
-                <section aria-labelledby="why-use-nps-calculator" className="finance-article-section">
-                  <h3 id="why-use-nps-calculator" className="finance-sub-heading">
-                    {npsCalc.article.whyUseCalculator.heading}
-                  </h3>
+              <section aria-labelledby="how-to-use-nps-calculator" className="finance-article-section">
+                <h3 id="how-to-use-nps-calculator" className="finance-sub-heading">
+                  {npsCalc.article.howToUse.heading}
+                </h3>
 
-                  {npsCalc.article.whyUseCalculator.paragraphs.map((para, idx) => (
-                    <p key={idx}>{para}</p>
+                <ol className="ou-list">
+                  {npsCalc.article.howToUse.steps.map((step, idx) => (
+                    <li key={idx}>{step}</li>
                   ))}
-                </section>
+                </ol>
+              </section>
 
-                <section aria-labelledby="how-nps-calculator-works" className="finance-article-section">
-                  <h3 id="how-nps-calculator-works" className="finance-sub-heading">
-                    {npsCalc.article.howItWorks.heading}
-                  </h3>
+              <section aria-labelledby="nps-example" className="finance-article-section">
+                <h3 id="nps-example" className="finance-sub-heading">
+                  {npsCalc.article.example.heading}
+                </h3>
 
-                  {npsCalc.article.howItWorks.paragraphs.map((para, idx) => (
-                    <p key={idx}>{para}</p>
+                <p>{npsCalc.article.example.intro}</p>
+
+                <ul className="un-list">
+                  {npsCalc.article.example.formulas.map((formula, idx) => (
+                    <li key={idx}>
+                      <code>{formula}</code>
+                    </li>
                   ))}
-                </section>
+                </ul>
 
-                <section aria-labelledby="nps-inputs-checklist" className="finance-article-section">
-                  <h3 id="nps-inputs-checklist" className="finance-sub-heading">
-                    {npsCalc.article.inputsChecklist.heading}
-                  </h3>
+                <p>{npsCalc.article.example.details.totalContributions}</p>
+                <p>{npsCalc.article.example.details.interestEarned}</p>
 
-                  <p>{npsCalc.article.inputsChecklist.intro}</p>
+                <h4>Retirement Split (Typical NPS Rules)</h4>
+                <ul className="un-list">
+                  <li>{npsCalc.article.example.split.lumpSum}</li>
+                  <li>{npsCalc.article.example.split.annuity}</li>
+                </ul>
 
-                  <ol className="ou-list">
-                    {npsCalc.article.inputsChecklist.points.map((point, idx) => (
-                      <li key={idx}>{point}</li>
-                    ))}
-                  </ol>
+                <p><em>{npsCalc.article.example.note}</em></p>
+              </section>
 
-                  <p>{npsCalc.article.inputsChecklist.conclusion}</p>
-                </section>
+              <section aria-labelledby="nps-tax-benefits" className="finance-article-section">
+                <h3 id="nps-tax-benefits" className="finance-sub-heading">
+                  {npsCalc.article.taxBenefits.heading}
+                </h3>
 
-                <section aria-labelledby="nps-calculation-formula" className="finance-article-section">
-                  <h3 id="nps-calculation-formula" className="finance-sub-heading">
-                    {npsCalc.article.calculationFormula.heading}
-                  </h3>
+                {npsCalc.article.taxBenefits.paragraphs.map((para, idx) => (
+                  <p key={idx}>{para}</p>
+                ))}
+              </section>
 
-                  <p>{npsCalc.article.calculationFormula.intro}</p>
+              <section aria-labelledby="nps-withdrawals" className="finance-article-section">
+                <h3 id="nps-withdrawals" className="finance-sub-heading">
+                  {npsCalc.article.withdrawals.heading}
+                </h3>
 
-                  <ol className="ou-list">
-                    {npsCalc.article.calculationFormula.steps.map((step, idx) => (
-                      <li key={idx}>
-                        <strong>{step.title}</strong>
-                        <pre className="formula-block">{step.formula}</pre>
-                        <p>{step.explanation}</p>
-                      </li>
-                    ))}
-                  </ol>
-                </section>
+                {npsCalc.article.withdrawals.paragraphs.map((para, idx) => (
+                  <p key={idx}>{para}</p>
+                ))}
+              </section>
 
-                <section aria-labelledby="how-to-use-nps-calculator" className="finance-article-section">
-                  <h3 id="how-to-use-nps-calculator" className="finance-sub-heading">
-                    {npsCalc.article.howToUse.heading}
-                  </h3>
+              <section aria-labelledby="nps-fund-options" className="finance-article-section">
+                <h3 id="nps-fund-options" className="finance-sub-heading">
+                  {npsCalc.article.fundOptions.heading}
+                </h3>
 
-                  <ol className="ou-list">
-                    {npsCalc.article.howToUse.steps.map((step, idx) => (
-                      <li key={idx}>{step}</li>
-                    ))}
-                  </ol>
-                </section>
+                {npsCalc.article.fundOptions.paragraphs.map((para, idx) => (
+                  <p key={idx}>{para}</p>
+                ))}
+              </section>
 
-                <section aria-labelledby="nps-example" className="finance-article-section">
-                  <h3 id="nps-example" className="finance-sub-heading">
-                    {npsCalc.article.example.heading}
-                  </h3>
+              <section aria-labelledby="nps-benefits" className="finance-article-section">
+                <h3 id="nps-benefits" className="finance-sub-heading">
+                  {npsCalc.article.benefits.heading}
+                </h3>
 
-                  <p>{npsCalc.article.example.intro}</p>
-
-                  <ul className="un-list">
-                    {npsCalc.article.example.formulas.map((formula, idx) => (
-                      <li key={idx}>
-                        <code>{formula}</code>
-                      </li>
-                    ))}
-                  </ul>
-
-                  <p>{npsCalc.article.example.details.totalContributions}</p>
-                  <p>{npsCalc.article.example.details.interestEarned}</p>
-
-                  <h4>Retirement Split (Typical NPS Rules)</h4>
-                  <ul className="un-list">
-                    <li>{npsCalc.article.example.split.lumpSum}</li>
-                    <li>{npsCalc.article.example.split.annuity}</li>
-                  </ul>
-
-                  <p><em>{npsCalc.article.example.note}</em></p>
-                </section>
-
-                <section aria-labelledby="nps-tax-benefits" className="finance-article-section">
-                  <h3 id="nps-tax-benefits" className="finance-sub-heading">
-                    {npsCalc.article.taxBenefits.heading}
-                  </h3>
-
-                  {npsCalc.article.taxBenefits.paragraphs.map((para, idx) => (
-                    <p key={idx}>{para}</p>
-                  ))}
-                </section>
-
-                <section aria-labelledby="nps-withdrawals" className="finance-article-section">
-                  <h3 id="nps-withdrawals" className="finance-sub-heading">
-                    {npsCalc.article.withdrawals.heading}
-                  </h3>
-
-                  {npsCalc.article.withdrawals.paragraphs.map((para, idx) => (
-                    <p key={idx}>{para}</p>
-                  ))}
-                </section>
-
-                <section aria-labelledby="nps-fund-options" className="finance-article-section">
-                  <h3 id="nps-fund-options" className="finance-sub-heading">
-                    {npsCalc.article.fundOptions.heading}
-                  </h3>
-
-                  {npsCalc.article.fundOptions.paragraphs.map((para, idx) => (
-                    <p key={idx}>{para}</p>
-                  ))}
-                </section>
-
-                <section aria-labelledby="nps-benefits" className="finance-article-section">
-                  <h3 id="nps-benefits" className="finance-sub-heading">
-                    {npsCalc.article.benefits.heading}
-                  </h3>
-
-                  {npsCalc.article.benefits.paragraphs.map((para, idx) => (
-                    <p key={idx}>{para}</p>
-                  ))}
-                </section>
+                {npsCalc.article.benefits.paragraphs.map((para, idx) => (
+                  <p key={idx}>{para}</p>
+                ))}
+              </section>
 
 
 
 
-              </article>
+            </article>
 
 
 

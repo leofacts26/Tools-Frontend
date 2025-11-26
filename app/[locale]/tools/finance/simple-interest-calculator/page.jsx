@@ -6,6 +6,7 @@ import { createMetadata, SITE } from "@/lib/seo";
 import FAQAccordion from "@/components/common/FAQAccordion";
 import MFReturnCalculator from "@/components/calculators/MFReturnCalculator";
 import SimpleIntrestCalculator from "@/components/calculators/SimpleIntrestCalculator";
+import Image from 'next/image';
 
 
 
@@ -132,170 +133,183 @@ export default async function Page({ params }) {
           <Grid size={{ xs: 12, sm: 12, md: 12, lg: 8 }}>
             {/* <Paper elevation={0} sx={{ border: "none", borderRadius: 2, p: { xs: 2, md: 4 }, boxShadow: "0 2px 8px rgba(0,0,0,0.05)" }}> */}
 
-              <article aria-labelledby="what-is-sic-calculator" className="finance-article">
-                <header>
-                  <h2 id="what-is-sic-calculator" className="finance-sub-heading">
-                    {sicCalc.article.intro.heading}
-                  </h2>
+            <article aria-labelledby="what-is-sic-calculator" className="finance-article">
 
-                  {sicCalc.article.intro.paragraphs.map((para, idx) => (
-                    <p key={idx}>{para}</p>
+              <Image
+                src={sicCalc?.seo?.image}
+                alt="From ₹0 to ₹1 Crore"
+                className="img-fluid mb-4 img-rounded"
+                width={763}
+                height={429}
+                layout="responsive"
+                objectFit="contain"
+                style={{ marginTop: '20px' }}
+              />
+
+
+              <header>
+                <h2 id="what-is-sic-calculator" className="finance-sub-heading">
+                  {sicCalc.article.intro.heading}
+                </h2>
+
+                {sicCalc.article.intro.paragraphs.map((para, idx) => (
+                  <p key={idx}>{para}</p>
+                ))}
+              </header>
+
+              <section aria-labelledby="what-is-simple-interest" className="finance-article-section">
+                <h3 id="what-is-simple-interest" className="finance-sub-heading">
+                  {sicCalc.article.whatIs.heading}
+                </h3>
+
+                {sicCalc.article.whatIs.paragraphs.map((para, idx) => (
+                  <p key={idx}>{para}</p>
+                ))}
+              </section>
+
+              <section aria-labelledby="simple-interest-formula" className="finance-article-section">
+                <h3 id="simple-interest-formula" className="finance-sub-heading">
+                  {sicCalc.article.formula.heading}
+                </h3>
+
+                <p>{sicCalc.article.formula.intro}</p>
+
+                {sicCalc.article.formula.methods.map((method, idx) => (
+                  <div key={idx} className="formula-block">
+                    <h4>{method.title}</h4>
+                    <ul className="un-list">
+                      {method.formulas.map((formula, fIdx) => (
+                        <li key={fIdx}>
+                          <code>{formula}</code>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                ))}
+
+                <h4>Where:</h4>
+                <ul className="un-list">
+                  {sicCalc.article.formula.definitions.map((def, idx) => (
+                    <li key={idx}>{def}</li>
                   ))}
-                </header>
+                </ul>
 
-                <section aria-labelledby="what-is-simple-interest" className="finance-article-section">
-                  <h3 id="what-is-simple-interest" className="finance-sub-heading">
-                    {sicCalc.article.whatIs.heading}
-                  </h3>
+                <p><em>{sicCalc.article.formula.note}</em></p>
+              </section>
 
-                  {sicCalc.article.whatIs.paragraphs.map((para, idx) => (
-                    <p key={idx}>{para}</p>
+              <section aria-labelledby={sicCalc.article.howToCalculate.id}>
+                <h3 id={sicCalc.article.howToCalculate.id} className="finance-sub-heading">
+                  {sicCalc.article.howToCalculate.heading}
+                </h3>
+
+                <p>{sicCalc.article.howToCalculate.intro}</p>
+
+                <ol className="ou-list">
+                  {sicCalc.article.howToCalculate.steps.map((step, idx) => (
+                    <li key={idx}>{step}</li>
                   ))}
-                </section>
+                </ol>
 
-                <section aria-labelledby="simple-interest-formula" className="finance-article-section">
-                  <h3 id="simple-interest-formula" className="finance-sub-heading">
-                    {sicCalc.article.formula.heading}
-                  </h3>
-
-                  <p>{sicCalc.article.formula.intro}</p>
-
-                  {sicCalc.article.formula.methods.map((method, idx) => (
-                    <div key={idx} className="formula-block">
-                      <h4>{method.title}</h4>
-                      <ul className="un-list">
-                        {method.formulas.map((formula, fIdx) => (
-                          <li key={fIdx}>
-                            <code>{formula}</code>
-                          </li>
-                        ))}
-                      </ul>
-                    </div>
+                <h4 className="finance-sub-heading-h4">Optional features</h4>
+                <ul className="ou-list">
+                  {sicCalc.article.howToCalculate.optionalFeatures.map((f, idx) => (
+                    <li key={idx}>{f}</li>
                   ))}
+                </ul>
 
-                  <h4>Where:</h4>
-                  <ul className="un-list">
-                    {sicCalc.article.formula.definitions.map((def, idx) => (
-                      <li key={idx}>{def}</li>
-                    ))}
-                  </ul>
+                <p><em>{sicCalc.article.howToCalculate.note}</em></p>
+              </section>
 
-                  <p><em>{sicCalc.article.formula.note}</em></p>
-                </section>
+              <section aria-labelledby="simple-interest-benefits" className="finance-article-section">
+                <h3 id="simple-interest-benefits" className="finance-sub-heading">
+                  {sicCalc.article.benefits.heading}
+                </h3>
 
-                <section aria-labelledby={sicCalc.article.howToCalculate.id}>
-                  <h3 id={sicCalc.article.howToCalculate.id} className="finance-sub-heading">
-                    {sicCalc.article.howToCalculate.heading}
-                  </h3>
+                <p>{sicCalc.article.benefits.intro}</p>
 
-                  <p>{sicCalc.article.howToCalculate.intro}</p>
+                <ul className="un-list">
+                  {sicCalc.article.benefits.points.map((point, idx) => (
+                    <li key={idx}>{point}</li>
+                  ))}
+                </ul>
 
-                  <ol className="ou-list">
-                    {sicCalc.article.howToCalculate.steps.map((step, idx) => (
-                      <li key={idx}>{step}</li>
-                    ))}
-                  </ol>
+                <p><em>{sicCalc.article.benefits.note}</em></p>
+              </section>
 
-                  <h4 className="finance-sub-heading-h4">Optional features</h4>
-                  <ul className="ou-list">
-                    {sicCalc.article.howToCalculate.optionalFeatures.map((f, idx) => (
-                      <li key={idx}>{f}</li>
-                    ))}
-                  </ul>
+              <section aria-labelledby="simple-interest-advantages" className="finance-article-section">
+                <h3 id="simple-interest-advantages" className="finance-sub-heading">
+                  {sicCalc.article.advantages.heading}
+                </h3>
 
-                  <p><em>{sicCalc.article.howToCalculate.note}</em></p>
-                </section>
+                <p>{sicCalc.article.advantages.intro}</p>
 
-                <section aria-labelledby="simple-interest-benefits" className="finance-article-section">
-                  <h3 id="simple-interest-benefits" className="finance-sub-heading">
-                    {sicCalc.article.benefits.heading}
-                  </h3>
+                <ul className="un-list">
+                  {sicCalc.article.advantages.points.map((point, idx) => (
+                    <li key={idx}>{point}</li>
+                  ))}
+                </ul>
 
-                  <p>{sicCalc.article.benefits.intro}</p>
+                <p><em>{sicCalc.article.advantages.note}</em></p>
+              </section>
 
-                  <ul className="un-list">
-                    {sicCalc.article.benefits.points.map((point, idx) => (
-                      <li key={idx}>{point}</li>
-                    ))}
-                  </ul>
+              <section aria-labelledby="simple-interest-steps" className="finance-article-section">
+                <h3 id="simple-interest-steps" className="finance-sub-heading">
+                  {sicCalc.article.steps.heading}
+                </h3>
 
-                  <p><em>{sicCalc.article.benefits.note}</em></p>
-                </section>
+                <p>{sicCalc.article.steps.intro}</p>
 
-                <section aria-labelledby="simple-interest-advantages" className="finance-article-section">
-                  <h3 id="simple-interest-advantages" className="finance-sub-heading">
-                    {sicCalc.article.advantages.heading}
-                  </h3>
+                <ol className="ou-list">
+                  {sicCalc.article.steps.list.map((step, idx) => (
+                    <li key={idx}>{step}</li>
+                  ))}
+                </ol>
 
-                  <p>{sicCalc.article.advantages.intro}</p>
+                <p><em>{sicCalc.article.steps.note}</em></p>
+              </section>
 
-                  <ul className="un-list">
-                    {sicCalc.article.advantages.points.map((point, idx) => (
-                      <li key={idx}>{point}</li>
-                    ))}
-                  </ul>
+              <section aria-labelledby="simple-interest-example" className="finance-article-section">
+                <h3 id="simple-interest-example" className="finance-sub-heading">
+                  {sicCalc.article.example.heading}
+                </h3>
 
-                  <p><em>{sicCalc.article.advantages.note}</em></p>
-                </section>
+                <p>{sicCalc.article.example.intro}</p>
 
-                <section aria-labelledby="simple-interest-steps" className="finance-article-section">
-                  <h3 id="simple-interest-steps" className="finance-sub-heading">
-                    {sicCalc.article.steps.heading}
-                  </h3>
+                <ol className="ou-list">
+                  {sicCalc.article.example.steps.map((step, idx) => (
+                    <li key={idx}>{step}</li>
+                  ))}
+                </ol>
 
-                  <p>{sicCalc.article.steps.intro}</p>
+                <p><em>{sicCalc.article.example.note}</em></p>
+              </section>
 
-                  <ol className="ou-list">
-                    {sicCalc.article.steps.list.map((step, idx) => (
-                      <li key={idx}>{step}</li>
-                    ))}
-                  </ol>
+              <section aria-labelledby="simple-vs-compound" className="finance-article-section">
+                <h3 id="simple-vs-compound" className="finance-sub-heading">
+                  {sicCalc.article.decision.heading}
+                </h3>
 
-                  <p><em>{sicCalc.article.steps.note}</em></p>
-                </section>
+                <p>{sicCalc.article.decision.intro}</p>
 
-                <section aria-labelledby="simple-interest-example" className="finance-article-section">
-                  <h3 id="simple-interest-example" className="finance-sub-heading">
-                    {sicCalc.article.example.heading}
-                  </h3>
+                <h4>{sicCalc.article.decision.simpleUse.title}</h4>
+                <ul className="un-list">
+                  {sicCalc.article.decision.simpleUse.points.map((point, idx) => (
+                    <li key={`simple-${idx}`}>{point}</li>
+                  ))}
+                </ul>
 
-                  <p>{sicCalc.article.example.intro}</p>
+                <h4>{sicCalc.article.decision.compoundUse.title}</h4>
+                <ul className="un-list">
+                  {sicCalc.article.decision.compoundUse.points.map((point, idx) => (
+                    <li key={`compound-${idx}`}>{point}</li>
+                  ))}
+                </ul>
 
-                  <ol className="ou-list">
-                    {sicCalc.article.example.steps.map((step, idx) => (
-                      <li key={idx}>{step}</li>
-                    ))}
-                  </ol>
-
-                  <p><em>{sicCalc.article.example.note}</em></p>
-                </section>
-
-                <section aria-labelledby="simple-vs-compound" className="finance-article-section">
-                  <h3 id="simple-vs-compound" className="finance-sub-heading">
-                    {sicCalc.article.decision.heading}
-                  </h3>
-
-                  <p>{sicCalc.article.decision.intro}</p>
-
-                  <h4>{sicCalc.article.decision.simpleUse.title}</h4>
-                  <ul className="un-list">
-                    {sicCalc.article.decision.simpleUse.points.map((point, idx) => (
-                      <li key={`simple-${idx}`}>{point}</li>
-                    ))}
-                  </ul>
-
-                  <h4>{sicCalc.article.decision.compoundUse.title}</h4>
-                  <ul className="un-list">
-                    {sicCalc.article.decision.compoundUse.points.map((point, idx) => (
-                      <li key={`compound-${idx}`}>{point}</li>
-                    ))}
-                  </ul>
-
-                  <p><em>{sicCalc.article.decision.note}</em></p>
-                </section>
+                <p><em>{sicCalc.article.decision.note}</em></p>
+              </section>
 
 
-              </article>
+            </article>
 
 
 
