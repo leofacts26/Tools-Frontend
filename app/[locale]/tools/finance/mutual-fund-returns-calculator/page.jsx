@@ -6,6 +6,7 @@ import { createMetadata, SITE } from "@/lib/seo";
 import FAQAccordion from "@/components/common/FAQAccordion";
 import MFReturnCalculator from "@/components/calculators/MFReturnCalculator";
 import FormulaBlock from "@/components/common/FormulaBlock";
+import Image from 'next/image';
 
 
 
@@ -136,6 +137,19 @@ export default async function Page({ params }) {
 
             {/* JSON object assumed to be imported as `mfcalc` */}
             <article aria-labelledby="what-is-mf-return-calculator" className="finance-article">
+
+              <Image
+                src={mfcalc?.seo?.image}
+                alt="From ₹0 to ₹1 Crore"
+                className="img-fluid mb-4 img-rounded"
+                width={763}
+                height={429}
+                layout="responsive"
+                objectFit="contain"
+                style={{ marginTop: '20px' }}
+              />
+
+
               <header>
                 <h2 id="what-is-mf-return-calculator" className="finance-sub-heading">
                   {mfcalc.article.whatIsHeading}
@@ -228,7 +242,7 @@ export default async function Page({ params }) {
                   <p key={index}>{para}</p>
                 ))}
 
-               
+
                 <FormulaBlock
                   title={mfcalc.article.exampleSection.formula.title}
                   formula={mfcalc.article.exampleSection.formula.body}

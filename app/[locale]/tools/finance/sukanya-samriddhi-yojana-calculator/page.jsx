@@ -7,6 +7,7 @@ import FAQAccordion from "@/components/common/FAQAccordion";
 import MFReturnCalculator from "@/components/calculators/MFReturnCalculator";
 import SukanyaSamriddhiYojanaCalculator from "@/components/calculators/SukanyaSamriddhiYojanaCalculator";
 import FormulaBlock from "@/components/common/FormulaBlock";
+import Image from 'next/image';
 
 
 
@@ -135,6 +136,19 @@ export default async function Page({ params }) {
             {/* <Paper elevation={0} sx={{ border: "none", borderRadius: 2, p: { xs: 2, md: 4 }, boxShadow: "0 2px 8px rgba(0,0,0,0.05)" }}> */}
 
             <article aria-labelledby="what-is-ssy-calculator" className="finance-article">
+
+              <Image
+                src={ssycCalc?.seo?.image}
+                alt="From ₹0 to ₹1 Crore"
+                className="img-fluid mb-4 img-rounded"
+                width={763}
+                height={429}
+                layout="responsive"
+                objectFit="contain"
+                style={{ marginTop: '20px' }}
+              />
+
+
               <header>
                 <h2 id="what-is-ssy-calculator" className="finance-sub-heading">
                   {ssycCalc.article.whatIsHeading}
