@@ -144,7 +144,7 @@ export default async function Page({ params }) {
 
               <Image
                 src={swp?.seo?.image}
-                alt="From ₹0 to ₹1 Crore"
+                alt="SWP (Systematic Withdrawal Plan) Calculator"
                 className="img-fluid mb-4 img-rounded"
                 width={763}
                 height={429}

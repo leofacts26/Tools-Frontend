@@ -141,7 +141,7 @@ export default async function Page({ params }) {
 
               <Image
                 src={ppfCalc?.seo?.image}
-                alt="From ₹0 to ₹1 Crore"
+                alt="PPF Calculator - Public Provident Fund Calculator Online"
                 className="img-fluid mb-4 img-rounded"
                 width={763}
                 height={429}

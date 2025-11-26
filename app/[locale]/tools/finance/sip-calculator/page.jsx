@@ -136,7 +136,7 @@ export default async function Page({ params }) {
 
               <Image
                 src={sipcalc?.seo?.image}
-                alt="From ₹0 to ₹1 Crore"
+                alt="SIP Calculator - Systematic Investment Plan"
                 className="img-fluid mb-4 img-rounded"
                 width={763}
                 height={429}

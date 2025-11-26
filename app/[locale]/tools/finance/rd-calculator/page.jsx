@@ -139,7 +139,7 @@ export default async function Page({ params }) {
 
               <Image
                 src={rdCalc?.seo?.image}
-                alt="From ₹0 to ₹1 Crore"
+                alt="RD Calculator - Recurring Deposit Calculator Online India"
                 className="img-fluid mb-4 img-rounded"
                 width={763}
                 height={429}

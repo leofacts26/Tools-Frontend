@@ -138,7 +138,7 @@ export default async function Page({ params }) {
 
               <Image
                 src={gratuityCalc?.seo?.image}
-                alt="From ₹0 to ₹1 Crore"
+                alt="Gratuity Calculator"
                 className="img-fluid mb-4 img-rounded"
                 width={763}
                 height={429}
