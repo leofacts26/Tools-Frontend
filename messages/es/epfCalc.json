@@ -3,7 +3,7 @@
     "title": "Calculadora EPF — Calcula tu saldo del Fondo de Previsión y tu corpus de jubilación",
     "description": "Utiliza nuestra Calculadora EPF gratuita para estimar tu saldo del Fondo de Previsión para Empleados, la contribución del empleador y tu corpus total para la jubilación. Planifica tus ahorros con proyecciones precisas y fáciles de entender.",
     "slug": "herramientas/finanzas/calculadora-epf",
-    "image": "/images/og/epfcalc-es.png",
+    "image": "/calculators/EPF-Calculator.png",
     "isArticle": true,
     "publishDate": "2024-01-01",
     "modifiedDate": "2025-01-01",

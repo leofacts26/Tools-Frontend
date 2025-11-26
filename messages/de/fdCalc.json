@@ -3,7 +3,7 @@
     "title": "FD-Rechner — Festgeldzinsen & Endbetrag Online Berechnen",
     "description": "Nutzen Sie unseren kostenlosen FD-Rechner, um den Endbetrag Ihres Festgeldes und die erworbenen Zinsen zu berechnen. Vergleichen Sie Laufzeiten, Zinssätze und Zinseszins-Optionen, um bessere Anlageentscheidungen zu treffen.",
     "slug": "tools/finance/fd-calculator",
-    "image": "/images/og/fdcalc-en.png",
+    "image": "/calculators/FD-Calculator.png",
     "isArticle": true,
     "publishDate": "2024-01-01",
     "modifiedDate": "2025-01-01",

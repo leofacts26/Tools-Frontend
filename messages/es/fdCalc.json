@@ -3,7 +3,7 @@
     "title": "Calculadora de FD — Calcula el Interés y el Monto de Vencimiento de tu Depósito a Plazo",
     "description": "Utiliza nuestra calculadora de Depósitos a Plazo (FD) para estimar el monto de vencimiento y los intereses generados. Compara plazos, tasas de interés y opciones de capitalización para planificar mejor tus inversiones.",
     "slug": "tools/finance/fd-calculator",
-    "image": "/images/og/fdcalc-en.png",
+    "image": "/calculators/FD-Calculator.png",
     "isArticle": true,
     "publishDate": "2024-01-01",
     "modifiedDate": "2025-01-01",

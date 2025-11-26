@@ -3,7 +3,7 @@
     "title": "Calculateur EPF — Calculez Votre Solde de Fonds de Prévoyance et Votre Corpus de Retraite",
     "description": "Utilisez notre calculateur EPF gratuit pour estimer votre solde Employee Provident Fund, la contribution de l’employeur et votre corpus total de retraite. Planifiez vos économies efficacement grâce à des projections précises.",
     "slug": "tools/finance/epf-calculator",
-    "image": "/images/og/epfcalc-en.png",
+    "image": "/calculators/EPF-Calculator.png",
     "isArticle": true,
     "publishDate": "2024-01-01",
     "modifiedDate": "2025-01-01",

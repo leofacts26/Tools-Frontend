@@ -6,6 +6,7 @@ import { createMetadata, SITE } from "@/lib/seo";
 import FAQAccordion from "@/components/common/FAQAccordion";
 import EPFCalculator from "@/components/calculators/EPFCalculator";
 import GratuityCalculator from "@/components/calculators/GratuityCalculator";
+import Image from 'next/image';
 
 
 
@@ -133,167 +134,180 @@ export default async function Page({ params }) {
           <Grid size={{ xs: 12, sm: 12, md: 12, lg: 8 }}>
             {/* <Paper elevation={0} sx={{ border: "none", borderRadius: 2, p: { xs: 2, md: 4 }, boxShadow: "0 2px 8px rgba(0,0,0,0.05)" }}> */}
 
-              <article aria-labelledby="what-is-gratuity-calculator" className="finance-article">
-                <header>
-                  <h2 id="what-is-gratuity-calculator" className="finance-sub-heading">
-                    {gratuityCalc.article.intro.heading}
-                  </h2>
+            <article aria-labelledby="what-is-gratuity-calculator" className="finance-article">
 
-                  {gratuityCalc.article.intro.paragraphs.map((para, idx) => (
-                    <p key={idx}>{para}</p>
+              <Image
+                src={gratuityCalc?.seo?.image}
+                alt="From ₹0 to ₹1 Crore"
+                className="img-fluid mb-4 img-rounded"
+                width={763}
+                height={429}
+                layout="responsive"
+                objectFit="contain"
+                style={{ marginTop: '20px' }}
+              />
+
+
+              <header>
+                <h2 id="what-is-gratuity-calculator" className="finance-sub-heading">
+                  {gratuityCalc.article.intro.heading}
+                </h2>
+
+                {gratuityCalc.article.intro.paragraphs.map((para, idx) => (
+                  <p key={idx}>{para}</p>
+                ))}
+              </header>
+
+              <section aria-labelledby="what-is-gratuity" className="finance-article-section">
+                <h3 id="what-is-gratuity" className="finance-sub-heading">
+                  {gratuityCalc.article.whatIs.heading}
+                </h3>
+
+                {gratuityCalc.article.whatIs.paragraphs.map((para, idx) => (
+                  <p key={idx}>{para}</p>
+                ))}
+              </section>
+
+              <section aria-labelledby="gratuity-formula" className="finance-article-section">
+                <h3 id="gratuity-formula" className="finance-sub-heading">
+                  {gratuityCalc.article.formula.heading}
+                </h3>
+
+                <p>{gratuityCalc.article.formula.intro}</p>
+
+                {gratuityCalc.article.formula.methods.map((method, idx) => (
+                  <div key={idx} className="formula-block">
+                    <h4>{method.title}</h4>
+                    <ul className="un-list">
+                      {method.formulas.map((formula, fIdx) => (
+                        <li key={fIdx}>
+                          <code>{formula}</code>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                ))}
+
+                <h4>Where:</h4>
+                <ul className="un-list">
+                  {gratuityCalc.article.formula.definitions.map((def, idx) => (
+                    <li key={idx}>{def}</li>
                   ))}
-                </header>
+                </ul>
 
-                <section aria-labelledby="what-is-gratuity" className="finance-article-section">
-                  <h3 id="what-is-gratuity" className="finance-sub-heading">
-                    {gratuityCalc.article.whatIs.heading}
-                  </h3>
+                <p><em>{gratuityCalc.article.formula.note}</em></p>
+              </section>
 
-                  {gratuityCalc.article.whatIs.paragraphs.map((para, idx) => (
-                    <p key={idx}>{para}</p>
+              <section aria-labelledby="gratuity-how-it-helps" className="finance-article-section">
+                <h3 id="gratuity-how-it-helps" className="finance-sub-heading">
+                  {gratuityCalc.article.howItHelps.heading}
+                </h3>
+
+                <p>{gratuityCalc.article.howItHelps.intro}</p>
+
+                <ul className="un-list">
+                  {gratuityCalc.article.howItHelps.points.map((point, idx) => (
+                    <li key={idx}>{point}</li>
                   ))}
-                </section>
+                </ul>
 
-                <section aria-labelledby="gratuity-formula" className="finance-article-section">
-                  <h3 id="gratuity-formula" className="finance-sub-heading">
-                    {gratuityCalc.article.formula.heading}
-                  </h3>
+                <p><em>{gratuityCalc.article.howItHelps.note}</em></p>
+              </section>
 
-                  <p>{gratuityCalc.article.formula.intro}</p>
+              <section aria-labelledby="gratuity-inputs" className="finance-article-section">
+                <h3 id="gratuity-inputs" className="finance-sub-heading">
+                  {gratuityCalc.article.inputs.heading}
+                </h3>
 
-                  {gratuityCalc.article.formula.methods.map((method, idx) => (
-                    <div key={idx} className="formula-block">
-                      <h4>{method.title}</h4>
-                      <ul className="un-list">
-                        {method.formulas.map((formula, fIdx) => (
-                          <li key={fIdx}>
-                            <code>{formula}</code>
-                          </li>
-                        ))}
-                      </ul>
-                    </div>
+                <p>{gratuityCalc.article.inputs.intro}</p>
+
+                <ol className="ou-list">
+                  {gratuityCalc.article.inputs.list.map((item, idx) => (
+                    <li key={idx}>{item}</li>
                   ))}
+                </ol>
 
-                  <h4>Where:</h4>
-                  <ul className="un-list">
-                    {gratuityCalc.article.formula.definitions.map((def, idx) => (
-                      <li key={idx}>{def}</li>
-                    ))}
-                  </ul>
+                <p><em>{gratuityCalc.article.inputs.note}</em></p>
+              </section>
 
-                  <p><em>{gratuityCalc.article.formula.note}</em></p>
-                </section>
+              <section aria-labelledby="how-to-use-gratuity" className="finance-article-section">
+                <h3 id="how-to-use-gratuity" className="finance-sub-heading">
+                  {gratuityCalc.article.howToUse.heading}
+                </h3>
 
-                <section aria-labelledby="gratuity-how-it-helps" className="finance-article-section">
-                  <h3 id="gratuity-how-it-helps" className="finance-sub-heading">
-                    {gratuityCalc.article.howItHelps.heading}
-                  </h3>
+                <p>{gratuityCalc.article.howToUse.intro}</p>
 
-                  <p>{gratuityCalc.article.howItHelps.intro}</p>
-
-                  <ul className="un-list">
-                    {gratuityCalc.article.howItHelps.points.map((point, idx) => (
-                      <li key={idx}>{point}</li>
-                    ))}
-                  </ul>
-
-                  <p><em>{gratuityCalc.article.howItHelps.note}</em></p>
-                </section>
-
-                <section aria-labelledby="gratuity-inputs" className="finance-article-section">
-                  <h3 id="gratuity-inputs" className="finance-sub-heading">
-                    {gratuityCalc.article.inputs.heading}
-                  </h3>
-
-                  <p>{gratuityCalc.article.inputs.intro}</p>
-
-                  <ol className="ou-list">
-                    {gratuityCalc.article.inputs.list.map((item, idx) => (
-                      <li key={idx}>{item}</li>
-                    ))}
-                  </ol>
-
-                  <p><em>{gratuityCalc.article.inputs.note}</em></p>
-                </section>
-
-                <section aria-labelledby="how-to-use-gratuity" className="finance-article-section">
-                  <h3 id="how-to-use-gratuity" className="finance-sub-heading">
-                    {gratuityCalc.article.howToUse.heading}
-                  </h3>
-
-                  <p>{gratuityCalc.article.howToUse.intro}</p>
-
-                  <ol className="ou-list">
-                    {gratuityCalc.article.howToUse.steps.map((step, idx) => (
-                      <li key={idx}>{step}</li>
-                    ))}
-                  </ol>
-
-                  <p><em>{gratuityCalc.article.howToUse.note}</em></p>
-                </section>
-
-                <section aria-labelledby="gratuity-example" className="finance-article-section">
-                  <h3 id="gratuity-example" className="finance-sub-heading">
-                    {gratuityCalc.article.example.heading}
-                  </h3>
-
-                  <p>{gratuityCalc.article.example.intro}</p>
-
-                  <ol className="ou-list">
-                    {gratuityCalc.article.example.steps.map((step, idx) => (
-                      <li key={idx}>{step}</li>
-                    ))}
-                  </ol>
-
-                  <p><em>{gratuityCalc.article.example.note}</em></p>
-                </section>
-
-
-                <section aria-labelledby="gratuity-taxation" className="finance-article-section">
-                  <h3 id="gratuity-taxation" className="finance-sub-heading">
-                    {gratuityCalc.article.taxation.heading}
-                  </h3>
-
-                  {gratuityCalc.article.taxation.paragraphs.map((para, idx) => (
-                    <p key={idx}>{para}</p>
+                <ol className="ou-list">
+                  {gratuityCalc.article.howToUse.steps.map((step, idx) => (
+                    <li key={idx}>{step}</li>
                   ))}
-                </section>
+                </ol>
 
-                <section aria-labelledby="gratuity-advantages" className="finance-article-section">
-                  <h3 id="gratuity-advantages" className="finance-sub-heading">
-                    {gratuityCalc.article.advantages.heading}
-                  </h3>
+                <p><em>{gratuityCalc.article.howToUse.note}</em></p>
+              </section>
 
-                  <p>{gratuityCalc.article.advantages.intro}</p>
+              <section aria-labelledby="gratuity-example" className="finance-article-section">
+                <h3 id="gratuity-example" className="finance-sub-heading">
+                  {gratuityCalc.article.example.heading}
+                </h3>
 
-                  <ul className="un-list">
-                    {gratuityCalc.article.advantages.points.map((point, idx) => (
-                      <li key={idx}>{point}</li>
-                    ))}
-                  </ul>
+                <p>{gratuityCalc.article.example.intro}</p>
 
-                  <p><em>{gratuityCalc.article.advantages.note}</em></p>
-                </section>
+                <ol className="ou-list">
+                  {gratuityCalc.article.example.steps.map((step, idx) => (
+                    <li key={idx}>{step}</li>
+                  ))}
+                </ol>
 
-                <section aria-labelledby="gratuity-notes" className="finance-article-section">
-                  <h3 id="gratuity-notes" className="finance-sub-heading">
-                    {gratuityCalc.article.notes.heading}
-                  </h3>
-
-                  <ul className="un-list">
-                    {gratuityCalc.article.notes.points.map((note, idx) => (
-                      <li key={idx}>{note}</li>
-                    ))}
-                  </ul>
-                </section>
+                <p><em>{gratuityCalc.article.example.note}</em></p>
+              </section>
 
 
+              <section aria-labelledby="gratuity-taxation" className="finance-article-section">
+                <h3 id="gratuity-taxation" className="finance-sub-heading">
+                  {gratuityCalc.article.taxation.heading}
+                </h3>
+
+                {gratuityCalc.article.taxation.paragraphs.map((para, idx) => (
+                  <p key={idx}>{para}</p>
+                ))}
+              </section>
+
+              <section aria-labelledby="gratuity-advantages" className="finance-article-section">
+                <h3 id="gratuity-advantages" className="finance-sub-heading">
+                  {gratuityCalc.article.advantages.heading}
+                </h3>
+
+                <p>{gratuityCalc.article.advantages.intro}</p>
+
+                <ul className="un-list">
+                  {gratuityCalc.article.advantages.points.map((point, idx) => (
+                    <li key={idx}>{point}</li>
+                  ))}
+                </ul>
+
+                <p><em>{gratuityCalc.article.advantages.note}</em></p>
+              </section>
+
+              <section aria-labelledby="gratuity-notes" className="finance-article-section">
+                <h3 id="gratuity-notes" className="finance-sub-heading">
+                  {gratuityCalc.article.notes.heading}
+                </h3>
+
+                <ul className="un-list">
+                  {gratuityCalc.article.notes.points.map((note, idx) => (
+                    <li key={idx}>{note}</li>
+                  ))}
+                </ul>
+              </section>
 
 
 
 
 
-              </article>
+
+
+            </article>
 
 
 
