@@ -6,6 +6,7 @@ import { createMetadata, SITE } from "@/lib/seo";
 import FAQAccordion from "@/components/common/FAQAccordion";
 import MFReturnCalculator from "@/components/calculators/MFReturnCalculator";
 import StepUpSipCalculator from "@/components/calculators/StepUpSipCalculator";
+import Image from 'next/image';
 
 
 
@@ -134,173 +135,186 @@ export default async function Page({ params }) {
           <Grid size={{ xs: 12, sm: 12, md: 12, lg: 8 }}>
             {/* <Paper elevation={0} sx={{ border: "none", borderRadius: 2, p: { xs: 2, md: 4 }, boxShadow: "0 2px 8px rgba(0,0,0,0.05)" }}> */}
 
-              <article aria-labelledby="what-is-stepup-sip-calculator" className="finance-article">
-                <header>
-                  <h2 id="what-is-stepup-sip-calculator" className="finance-sub-heading">
-                    {stepUpSipCalc.article.intro.heading}
-                  </h2>
+            <article aria-labelledby="what-is-stepup-sip-calculator" className="finance-article">
 
-                  {stepUpSipCalc.article.intro.paragraphs.map((para, idx) => (
-                    <p key={idx}>{para}</p>
+              <Image
+                src={stepUpSipCalc?.seo?.image}
+                alt="From ₹0 to ₹1 Crore"
+                className="img-fluid mb-4 img-rounded"
+                width={763}
+                height={429}
+                layout="responsive"
+                objectFit="contain"
+                style={{ marginTop: '20px' }}
+              />
+
+
+              <header>
+                <h2 id="what-is-stepup-sip-calculator" className="finance-sub-heading">
+                  {stepUpSipCalc.article.intro.heading}
+                </h2>
+
+                {stepUpSipCalc.article.intro.paragraphs.map((para, idx) => (
+                  <p key={idx}>{para}</p>
+                ))}
+              </header>
+
+              <section aria-labelledby="what-is-stepup-sip" className="finance-article-section">
+                <h3 id="what-is-stepup-sip" className="finance-sub-heading">
+                  {stepUpSipCalc.article.whatIs.heading}
+                </h3>
+
+                {stepUpSipCalc.article.whatIs.paragraphs.map((para, idx) => (
+                  <p key={idx}>{para}</p>
+                ))}
+              </section>
+
+              <section aria-labelledby="how-stepup-sip-helps" className="finance-article-section">
+                <h3 id="how-stepup-sip-helps" className="finance-sub-heading">
+                  {stepUpSipCalc.article.howItHelps.heading}
+                </h3>
+
+                <p>{stepUpSipCalc.article.howItHelps.intro}</p>
+
+                <ul className="un-list">
+                  {stepUpSipCalc.article.howItHelps.points.map((point, idx) => (
+                    <li key={idx}>{point}</li>
                   ))}
-                </header>
+                </ul>
 
-                <section aria-labelledby="what-is-stepup-sip" className="finance-article-section">
-                  <h3 id="what-is-stepup-sip" className="finance-sub-heading">
-                    {stepUpSipCalc.article.whatIs.heading}
-                  </h3>
+                <p><em>{stepUpSipCalc.article.howItHelps.note}</em></p>
+              </section>
 
-                  {stepUpSipCalc.article.whatIs.paragraphs.map((para, idx) => (
-                    <p key={idx}>{para}</p>
+              <section aria-labelledby="stepup-sip-formula" className="finance-article-section">
+                <h3 id="stepup-sip-formula" className="finance-sub-heading">
+                  {stepUpSipCalc.article.formula.heading}
+                </h3>
+
+                <p>{stepUpSipCalc.article.formula.intro}</p>
+
+                {stepUpSipCalc.article.formula.methods.map((method, idx) => (
+                  <div key={idx} className="formula-block">
+                    <h4>{method.title}</h4>
+                    <ul className="un-list">
+                      {method.formulas.map((formula, fIdx) => (
+                        <li key={fIdx}>
+                          <code>{formula}</code>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                ))}
+
+                <h4>Where:</h4>
+                <ul className="un-list">
+                  {stepUpSipCalc.article.formula.definitions.map((def, idx) => (
+                    <li key={idx}>{def}</li>
                   ))}
-                </section>
+                </ul>
 
-                <section aria-labelledby="how-stepup-sip-helps" className="finance-article-section">
-                  <h3 id="how-stepup-sip-helps" className="finance-sub-heading">
-                    {stepUpSipCalc.article.howItHelps.heading}
-                  </h3>
+                <p><em>{stepUpSipCalc.article.formula.note}</em></p>
+              </section>
 
-                  <p>{stepUpSipCalc.article.howItHelps.intro}</p>
+              <section aria-labelledby="stepup-sip-inputs" className="finance-article-section">
+                <h3 id="stepup-sip-inputs" className="finance-sub-heading">
+                  {stepUpSipCalc.article.inputs.heading}
+                </h3>
 
-                  <ul className="un-list">
-                    {stepUpSipCalc.article.howItHelps.points.map((point, idx) => (
-                      <li key={idx}>{point}</li>
-                    ))}
-                  </ul>
+                <p>{stepUpSipCalc.article.inputs.intro}</p>
 
-                  <p><em>{stepUpSipCalc.article.howItHelps.note}</em></p>
-                </section>
-
-                <section aria-labelledby="stepup-sip-formula" className="finance-article-section">
-                  <h3 id="stepup-sip-formula" className="finance-sub-heading">
-                    {stepUpSipCalc.article.formula.heading}
-                  </h3>
-
-                  <p>{stepUpSipCalc.article.formula.intro}</p>
-
-                  {stepUpSipCalc.article.formula.methods.map((method, idx) => (
-                    <div key={idx} className="formula-block">
-                      <h4>{method.title}</h4>
-                      <ul className="un-list">
-                        {method.formulas.map((formula, fIdx) => (
-                          <li key={fIdx}>
-                            <code>{formula}</code>
-                          </li>
-                        ))}
-                      </ul>
-                    </div>
+                <ol className="ou-list">
+                  {stepUpSipCalc.article.inputs.list.map((item, idx) => (
+                    <li key={idx}>{item}</li>
                   ))}
+                </ol>
 
-                  <h4>Where:</h4>
-                  <ul className="un-list">
-                    {stepUpSipCalc.article.formula.definitions.map((def, idx) => (
-                      <li key={idx}>{def}</li>
-                    ))}
-                  </ul>
-
-                  <p><em>{stepUpSipCalc.article.formula.note}</em></p>
-                </section>
-
-                <section aria-labelledby="stepup-sip-inputs" className="finance-article-section">
-                  <h3 id="stepup-sip-inputs" className="finance-sub-heading">
-                    {stepUpSipCalc.article.inputs.heading}
-                  </h3>
-
-                  <p>{stepUpSipCalc.article.inputs.intro}</p>
-
-                  <ol className="ou-list">
-                    {stepUpSipCalc.article.inputs.list.map((item, idx) => (
-                      <li key={idx}>{item}</li>
-                    ))}
-                  </ol>
-
-                  <p><em>{stepUpSipCalc.article.inputs.note}</em></p>
-                </section>
+                <p><em>{stepUpSipCalc.article.inputs.note}</em></p>
+              </section>
 
 
-                <section aria-labelledby="stepup-sip-calculation" className="finance-article-section">
-                  <h3 id="stepup-sip-calculation" className="finance-sub-heading">
-                    {stepUpSipCalc.article.calculation.heading}
-                  </h3>
+              <section aria-labelledby="stepup-sip-calculation" className="finance-article-section">
+                <h3 id="stepup-sip-calculation" className="finance-sub-heading">
+                  {stepUpSipCalc.article.calculation.heading}
+                </h3>
 
-                  <p>{stepUpSipCalc.article.calculation.intro}</p>
+                <p>{stepUpSipCalc.article.calculation.intro}</p>
 
-                  {stepUpSipCalc.article.calculation.methods.map((method, idx) => (
-                    <div key={idx} className="formula-block">
-                      <h4>{method.title}</h4>
-                      <ul className="un-list">
-                        {method.formulas.map((formula, fIdx) => (
-                          <li key={fIdx}><code>{formula}</code></li>
-                        ))}
-                      </ul>
-                    </div>
+                {stepUpSipCalc.article.calculation.methods.map((method, idx) => (
+                  <div key={idx} className="formula-block">
+                    <h4>{method.title}</h4>
+                    <ul className="un-list">
+                      {method.formulas.map((formula, fIdx) => (
+                        <li key={fIdx}><code>{formula}</code></li>
+                      ))}
+                    </ul>
+                  </div>
+                ))}
+
+                <h4>Definitions:</h4>
+                <ul className="un-list">
+                  {stepUpSipCalc.article.calculation.definitions.map((def, idx) => (
+                    <li key={idx}>{def}</li>
                   ))}
+                </ul>
 
-                  <h4>Definitions:</h4>
-                  <ul className="un-list">
-                    {stepUpSipCalc.article.calculation.definitions.map((def, idx) => (
-                      <li key={idx}>{def}</li>
-                    ))}
-                  </ul>
-
-                  <p><em>{stepUpSipCalc.article.calculation.note}</em></p>
-                </section>
+                <p><em>{stepUpSipCalc.article.calculation.note}</em></p>
+              </section>
 
 
-                <section aria-labelledby="how-to-use-stepup-sip" className="finance-article-section">
-                  <h3 id="how-to-use-stepup-sip" className="finance-sub-heading">
-                    {stepUpSipCalc.article.howToUse.heading}
-                  </h3>
+              <section aria-labelledby="how-to-use-stepup-sip" className="finance-article-section">
+                <h3 id="how-to-use-stepup-sip" className="finance-sub-heading">
+                  {stepUpSipCalc.article.howToUse.heading}
+                </h3>
 
-                  <p>{stepUpSipCalc.article.howToUse.intro}</p>
+                <p>{stepUpSipCalc.article.howToUse.intro}</p>
 
-                  <ol className="ou-list">
-                    {stepUpSipCalc.article.howToUse.steps.map((step, idx) => (
-                      <li key={idx}>{step}</li>
-                    ))}
-                  </ol>
+                <ol className="ou-list">
+                  {stepUpSipCalc.article.howToUse.steps.map((step, idx) => (
+                    <li key={idx}>{step}</li>
+                  ))}
+                </ol>
 
-                  <p><em>{stepUpSipCalc.article.howToUse.note}</em></p>
-                </section>
+                <p><em>{stepUpSipCalc.article.howToUse.note}</em></p>
+              </section>
 
-                <section aria-labelledby="stepup-sip-example" className="finance-article-section">
-                  <h3 id="stepup-sip-example" className="finance-sub-heading">
-                    {stepUpSipCalc.article.example.heading}
-                  </h3>
+              <section aria-labelledby="stepup-sip-example" className="finance-article-section">
+                <h3 id="stepup-sip-example" className="finance-sub-heading">
+                  {stepUpSipCalc.article.example.heading}
+                </h3>
 
-                  <p>{stepUpSipCalc.article.example.intro}</p>
+                <p>{stepUpSipCalc.article.example.intro}</p>
 
-                  <ol className="ou-list">
-                    {stepUpSipCalc.article.example.steps.map((step, idx) => (
-                      <li key={idx}>{step}</li>
-                    ))}
-                  </ol>
+                <ol className="ou-list">
+                  {stepUpSipCalc.article.example.steps.map((step, idx) => (
+                    <li key={idx}>{step}</li>
+                  ))}
+                </ol>
 
-                  <p><em>{stepUpSipCalc.article.example.note}</em></p>
-                </section>
+                <p><em>{stepUpSipCalc.article.example.note}</em></p>
+              </section>
 
 
-                <section aria-labelledby="stepup-sip-advantages" className="finance-article-section">
-                  <h3 id="stepup-sip-advantages" className="finance-sub-heading">
-                    {stepUpSipCalc.article.advantages.heading}
-                  </h3>
+              <section aria-labelledby="stepup-sip-advantages" className="finance-article-section">
+                <h3 id="stepup-sip-advantages" className="finance-sub-heading">
+                  {stepUpSipCalc.article.advantages.heading}
+                </h3>
 
-                  <p>{stepUpSipCalc.article.advantages.intro}</p>
+                <p>{stepUpSipCalc.article.advantages.intro}</p>
 
-                  <ul className="un-list">
-                    {stepUpSipCalc.article.advantages.points.map((point, idx) => (
-                      <li key={idx}>{point}</li>
-                    ))}
-                  </ul>
+                <ul className="un-list">
+                  {stepUpSipCalc.article.advantages.points.map((point, idx) => (
+                    <li key={idx}>{point}</li>
+                  ))}
+                </ul>
 
-                  <p><em>{stepUpSipCalc.article.advantages.note}</em></p>
-                </section>
+                <p><em>{stepUpSipCalc.article.advantages.note}</em></p>
+              </section>
 
 
 
 
 
-              </article>
+            </article>
 
 
 

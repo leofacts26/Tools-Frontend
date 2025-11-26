@@ -3,7 +3,7 @@
     "title": "Step Up SIP Calculator — వార్షికంగా SIP పెంచితే ఎంత పెరుగుతుందో లెక్కించండి",
     "description": "Step Up SIP Calculator తో మీ మ్యూచువల్ ఫండ్ రిటర్న్స్‌ను ఖచ్చితంగా అంచనా వేయండి. నెల నెలా SIP అమౌంట్, ప్రతి సంవత్సరం SIP పెరుగుదల (Step-up %), పెట్టుబడి వ్యవధి మరియు అంచనా రాబడి రేటు ఇస్తే — మీ ఫైనల్ కార్పస్, మొత్తం వడ్డీ, గ్రోత్ గ్రాఫ్ అన్నీ వెంటనే కనిపిస్తాయి.",
     "slug": "tools/finance/step-up-sip-calculator",
-    "image": "/images/og/stepupsipcalc-en.png",
+    "image": "/calculators/stepup-sip-Calculator.png",
     "isArticle": true,
     "publishDate": "2024-01-01",
     "modifiedDate": "2025-10-18",

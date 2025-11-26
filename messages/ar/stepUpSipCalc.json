@@ -3,7 +3,7 @@
     "title": "حاسبة الزيادة السنوية في الـ SIP — احسب عوائد SIP المتزايدة عبر الإنترنت",
     "description": "استخدم حاسبة Step Up SIP المجانية لحساب عوائد صناديق الاستثمار المشتركة عند زيادة مبلغ الـ SIP سنويًا. أدخل مبلغ الاستثمار الشهري، ونسبة الزيادة السنوية، ومدة الاستثمار، ومعدل العائد المتوقع لمعرفة إجمالي رأس المال المتراكم وتوقعات النمو فورًا.",
     "slug": "tools/finance/step-up-sip-calculator",
-    "image": "/images/og/stepupsipcalc-en.png",
+    "image": "/calculators/stepup-sip-Calculator.png",
     "isArticle": true,
     "publishDate": "2024-01-01",
     "modifiedDate": "2025-10-18",
