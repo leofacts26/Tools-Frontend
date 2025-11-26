@@ -3,7 +3,7 @@
     "title": "PPF கால்குலேட்டர் — Public Provident Fund வருமானத்தை ஆன்லைனில் கணக்கிடுங்கள்",
     "description": "எங்கள் இலவச PPF கால்குலேட்டரைப் பயன்படுத்தி, உங்கள் Public Provident Fund (PPF) முதிர்வு மதிப்பு, மொத்த வட்டி, மற்றும் ஆண்டு வாரியான இருப்பு மாற்றங்களை கணக்கிடுங்கள். சமீபத்திய வட்டி விகிதத்தின் அடிப்படையில் துல்லியமான PPF projection மூலம் நீண்டகால சேமிப்பை எளிதாக திட்டமிடுங்கள்.",
     "slug": "tools/finance/ppf-calculator",
-    "image": "/images/og/ppf-calc.png",
+    "image": "/calculators/ppf-calculator.png",
     "isArticle": true,
     "publishDate": "2024-01-01",
     "modifiedDate": "2025-01-01",
