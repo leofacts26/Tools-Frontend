@@ -3,7 +3,7 @@
     "title": "Calculadora RD — Calcula el Valor de Madurez e Intereses del Depósito Recurrente",
     "description": "Utiliza nuestra Calculadora RD gratuita para estimar el valor de madurez de tu Depósito Recurrente y el interés total generado. Compara plazos, depósitos mensuales y tasas de RD de diferentes bancos para planificar tus ahorros de manera efectiva.",
     "slug": "tools/finance/rd-calculator",
-    "image": "/images/og/rdcalc-en.png",
+    "image": "/calculators/RD-Calculator.png",
     "isArticle": true,
     "publishDate": "2024-01-01",
     "modifiedDate": "2025-01-01",

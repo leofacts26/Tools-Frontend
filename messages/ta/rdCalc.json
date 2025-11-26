@@ -3,7 +3,7 @@
     "title": "RD Calculator — மீள்வங்கி வைப்பு (Recurring Deposit) முதிர்வு & வட்டி கணக்கிடவும்",
     "description": "எங்கள் இலவச RD Calculator-ஐ பயன்படுத்தி உங்கள் Recurring Deposit (RD) முதிர்வு மதிப்பு மற்றும் மொத்த வட்டியை கணக்கிடுங்கள். காலாவதி நேரங்கள், மாதாந்திர வைப்பு தொகை, மற்றும் வங்கி RD வட்டி விகிதங்களை ஒப்பிட்டு உங்கள் சேமிப்பு திட்டங்களை எளிதாக அமைக்கலாம்.",
     "slug": "tools/finance/rd-calculator",
-    "image": "/images/og/rdcalc-en.png",
+    "image": "/calculators/RD-Calculator.png",
     "isArticle": true,
     "publishDate": "2024-01-01",
     "modifiedDate": "2025-01-01",

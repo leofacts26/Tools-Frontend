@@ -7,7 +7,7 @@ import FAQAccordion from "@/components/common/FAQAccordion";
 import MFReturnCalculator from "@/components/calculators/MFReturnCalculator";
 import FDCalculator from "@/components/calculators/FDCalculator";
 import RDCalculator from "@/components/calculators/RDCalculator";
-
+import Image from 'next/image';
 
 
 
@@ -135,211 +135,224 @@ export default async function Page({ params }) {
           <Grid size={{ xs: 12, sm: 12, md: 12, lg: 8 }}>
             {/* <Paper elevation={0} sx={{ border: "none", borderRadius: 2, p: { xs: 2, md: 4 }, boxShadow: "0 2px 8px rgba(0,0,0,0.05)" }}> */}
 
-              <article aria-labelledby="what-is-rd-calculator" className="finance-article">
-                <header>
-                  <h2 id="what-is-rd-calculator" className="finance-sub-heading">
-                    {rdCalc.article.intro.heading}
-                  </h2>
+            <article aria-labelledby="what-is-rd-calculator" className="finance-article">
 
-                  {rdCalc.article.intro.paragraphs.map((para, idx) => (
-                    <p key={idx}>{para}</p>
+              <Image
+                src={rdCalc?.seo?.image}
+                alt="From ₹0 to ₹1 Crore"
+                className="img-fluid mb-4 img-rounded"
+                width={763}
+                height={429}
+                layout="responsive"
+                objectFit="contain"
+                style={{ marginTop: '20px' }}
+              />
+
+
+              <header>
+                <h2 id="what-is-rd-calculator" className="finance-sub-heading">
+                  {rdCalc.article.intro.heading}
+                </h2>
+
+                {rdCalc.article.intro.paragraphs.map((para, idx) => (
+                  <p key={idx}>{para}</p>
+                ))}
+              </header>
+
+              <section aria-labelledby={rdCalc.article.whatIsSection.id}>
+                <h3 id={rdCalc.article.whatIsSection.id} className="finance-sub-heading">
+                  {rdCalc.article.whatIsSection.heading}
+                </h3>
+
+                {rdCalc.article.whatIsSection.paragraphs.map((para, idx) => (
+                  <p key={idx}>{para}</p>
+                ))}
+              </section>
+
+              <section aria-labelledby={rdCalc.article.whyUseSection.id}>
+                <h3 id={rdCalc.article.whyUseSection.id} className="finance-sub-heading">
+                  {rdCalc.article.whyUseSection.heading}
+                </h3>
+
+                <p>{rdCalc.article.whyUseSection.intro}</p>
+
+                <ul className="ou-list">
+                  {rdCalc.article.whyUseSection.points.map((point, idx) => (
+                    <li key={idx}>{point}</li>
                   ))}
-                </header>
+                </ul>
 
-                <section aria-labelledby={rdCalc.article.whatIsSection.id}>
-                  <h3 id={rdCalc.article.whatIsSection.id} className="finance-sub-heading">
-                    {rdCalc.article.whatIsSection.heading}
-                  </h3>
+                <p>{rdCalc.article.whyUseSection.conclusion}</p>
+              </section>
 
-                  {rdCalc.article.whatIsSection.paragraphs.map((para, idx) => (
-                    <p key={idx}>{para}</p>
+              <section aria-labelledby={rdCalc.article.howItWorksSection.id}>
+                <h3 id={rdCalc.article.howItWorksSection.id} className="finance-sub-heading">
+                  {rdCalc.article.howItWorksSection.heading}
+                </h3>
+
+                {rdCalc.article.howItWorksSection.paragraphs.map((para, idx) => (
+                  <p key={idx}>{para}</p>
+                ))}
+              </section>
+
+              <section aria-labelledby={rdCalc.article.inputsSection.id}>
+                <h3 id={rdCalc.article.inputsSection.id} className="finance-sub-heading">
+                  {rdCalc.article.inputsSection.heading}
+                </h3>
+
+                <p>{rdCalc.article.inputsSection.intro}</p>
+
+                <ol className="ou-list">
+                  {rdCalc.article.inputsSection.points.map((point, idx) => (
+                    <li key={idx}>{point}</li>
                   ))}
-                </section>
+                </ol>
 
-                <section aria-labelledby={rdCalc.article.whyUseSection.id}>
-                  <h3 id={rdCalc.article.whyUseSection.id} className="finance-sub-heading">
-                    {rdCalc.article.whyUseSection.heading}
-                  </h3>
+                <p>{rdCalc.article.inputsSection.conclusion}</p>
+              </section>
 
-                  <p>{rdCalc.article.whyUseSection.intro}</p>
+              <section aria-labelledby={rdCalc.article.formulaSection.id}>
+                <h3 id={rdCalc.article.formulaSection.id} className="finance-sub-heading">
+                  {rdCalc.article.formulaSection.heading}
+                </h3>
 
-                  <ul className="ou-list">
-                    {rdCalc.article.whyUseSection.points.map((point, idx) => (
-                      <li key={idx}>{point}</li>
-                    ))}
-                  </ul>
+                <p>{rdCalc.article.formulaSection.intro}</p>
 
-                  <p>{rdCalc.article.whyUseSection.conclusion}</p>
-                </section>
-
-                <section aria-labelledby={rdCalc.article.howItWorksSection.id}>
-                  <h3 id={rdCalc.article.howItWorksSection.id} className="finance-sub-heading">
-                    {rdCalc.article.howItWorksSection.heading}
-                  </h3>
-
-                  {rdCalc.article.howItWorksSection.paragraphs.map((para, idx) => (
-                    <p key={idx}>{para}</p>
+                <ol className="ou-list">
+                  {rdCalc.article.formulaSection.steps.map((step, idx) => (
+                    <li key={idx}>
+                      <pre style={{ fontFamily: "monospace", margin: "4px 0" }}>{step}</pre>
+                    </li>
                   ))}
-                </section>
+                </ol>
 
-                <section aria-labelledby={rdCalc.article.inputsSection.id}>
-                  <h3 id={rdCalc.article.inputsSection.id} className="finance-sub-heading">
-                    {rdCalc.article.inputsSection.heading}
-                  </h3>
+                <ul className="ou-list">
+                  {rdCalc.article.formulaSection.notes.map((note, idx) => (
+                    <li key={idx}>
+                      <em>{note}</em>
+                    </li>
+                  ))}
+                </ul>
+              </section>
 
-                  <p>{rdCalc.article.inputsSection.intro}</p>
+              <section aria-labelledby={rdCalc.article.stepsSection.id}>
+                <h3 id={rdCalc.article.stepsSection.id} className="finance-sub-heading">
+                  {rdCalc.article.stepsSection.heading}
+                </h3>
 
-                  <ol className="ou-list">
-                    {rdCalc.article.inputsSection.points.map((point, idx) => (
-                      <li key={idx}>{point}</li>
-                    ))}
-                  </ol>
+                <p>{rdCalc.article.stepsSection.intro}</p>
 
-                  <p>{rdCalc.article.inputsSection.conclusion}</p>
-                </section>
+                <ol className="ou-list">
+                  {rdCalc.article.stepsSection.steps.map((step, idx) => (
+                    <li key={idx}>{step}</li>
+                  ))}
+                </ol>
 
-                <section aria-labelledby={rdCalc.article.formulaSection.id}>
-                  <h3 id={rdCalc.article.formulaSection.id} className="finance-sub-heading">
-                    {rdCalc.article.formulaSection.heading}
-                  </h3>
+                <p>{rdCalc.article.stepsSection.conclusion}</p>
+              </section>
 
-                  <p>{rdCalc.article.formulaSection.intro}</p>
+              <section aria-labelledby={rdCalc.article.exampleSection.id}>
+                <h3 id={rdCalc.article.exampleSection.id} className="finance-sub-heading">
+                  {rdCalc.article.exampleSection.heading}
+                </h3>
 
-                  <ol className="ou-list">
-                    {rdCalc.article.formulaSection.steps.map((step, idx) => (
-                      <li key={idx}>
-                        <pre style={{ fontFamily: "monospace", margin: "4px 0" }}>{step}</pre>
-                      </li>
-                    ))}
-                  </ol>
+                <p>{rdCalc.article.exampleSection.intro}</p>
 
-                  <ul className="ou-list">
-                    {rdCalc.article.formulaSection.notes.map((note, idx) => (
-                      <li key={idx}>
-                        <em>{note}</em>
-                      </li>
-                    ))}
-                  </ul>
-                </section>
+                <ol className="ou-list">
+                  {rdCalc.article.exampleSection.steps.map((step, idx) => (
+                    <li key={idx}>
+                      <pre style={{ fontFamily: "monospace", margin: "4px 0" }}>{step}</pre>
+                    </li>
+                  ))}
+                </ol>
 
-                <section aria-labelledby={rdCalc.article.stepsSection.id}>
-                  <h3 id={rdCalc.article.stepsSection.id} className="finance-sub-heading">
-                    {rdCalc.article.stepsSection.heading}
-                  </h3>
+                <p>{rdCalc.article.exampleSection.conclusion}</p>
+              </section>
 
-                  <p>{rdCalc.article.stepsSection.intro}</p>
+              <section aria-labelledby={rdCalc.article.typesSection.id}>
+                <h3 id={rdCalc.article.typesSection.id} className="finance-sub-heading">
+                  {rdCalc.article.typesSection.heading}
+                </h3>
 
-                  <ol className="ou-list">
-                    {rdCalc.article.stepsSection.steps.map((step, idx) => (
-                      <li key={idx}>{step}</li>
-                    ))}
-                  </ol>
+                <p>{rdCalc.article.typesSection.intro}</p>
 
-                  <p>{rdCalc.article.stepsSection.conclusion}</p>
-                </section>
+                <ul className="ou-list">
+                  {rdCalc.article.typesSection.points.map((point, idx) => (
+                    <li key={idx}>{point}</li>
+                  ))}
+                </ul>
 
-                <section aria-labelledby={rdCalc.article.exampleSection.id}>
-                  <h3 id={rdCalc.article.exampleSection.id} className="finance-sub-heading">
-                    {rdCalc.article.exampleSection.heading}
-                  </h3>
+                <p>{rdCalc.article.typesSection.conclusion}</p>
+              </section>
 
-                  <p>{rdCalc.article.exampleSection.intro}</p>
+              <section aria-labelledby={rdCalc.article.seniorRatesRDSection.id}>
+                <h3 id={rdCalc.article.seniorRatesRDSection.id} className="finance-sub-heading">
+                  {rdCalc.article.seniorRatesRDSection.heading}
+                </h3>
 
-                  <ol className="ou-list">
-                    {rdCalc.article.exampleSection.steps.map((step, idx) => (
-                      <li key={idx}>
-                        <pre style={{ fontFamily: "monospace", margin: "4px 0" }}>{step}</pre>
-                      </li>
-                    ))}
-                  </ol>
+                <p>{rdCalc.article.seniorRatesRDSection.intro}</p>
 
-                  <p>{rdCalc.article.exampleSection.conclusion}</p>
-                </section>
+                <ol className="ou-list">
+                  {rdCalc.article.seniorRatesRDSection.steps.map((step, idx) => (
+                    <li key={idx}>{step}</li>
+                  ))}
+                </ol>
 
-                <section aria-labelledby={rdCalc.article.typesSection.id}>
-                  <h3 id={rdCalc.article.typesSection.id} className="finance-sub-heading">
-                    {rdCalc.article.typesSection.heading}
-                  </h3>
+                <h4 className="finance-sub-heading-h4">{rdCalc.article.seniorRatesRDSection.example.title}</h4>
+                <p>{rdCalc.article.seniorRatesRDSection.example.body}</p>
 
-                  <p>{rdCalc.article.typesSection.intro}</p>
+                <p>{rdCalc.article.seniorRatesRDSection.conclusion}</p>
+              </section>
 
-                  <ul className="ou-list">
-                    {rdCalc.article.typesSection.points.map((point, idx) => (
-                      <li key={idx}>{point}</li>
-                    ))}
-                  </ul>
+              <section aria-labelledby={rdCalc.article.withdrawalsPrematureTaxSection.id}>
+                <h3 id={rdCalc.article.withdrawalsPrematureTaxSection.id} className="finance-sub-heading">
+                  {rdCalc.article.withdrawalsPrematureTaxSection.heading}
+                </h3>
 
-                  <p>{rdCalc.article.typesSection.conclusion}</p>
-                </section>
+                <p>{rdCalc.article.withdrawalsPrematureTaxSection.intro}</p>
 
-                <section aria-labelledby={rdCalc.article.seniorRatesRDSection.id}>
-                  <h3 id={rdCalc.article.seniorRatesRDSection.id} className="finance-sub-heading">
-                    {rdCalc.article.seniorRatesRDSection.heading}
-                  </h3>
+                <ul className="ou-list">
+                  {rdCalc.article.withdrawalsPrematureTaxSection.points.map((point, idx) => (
+                    <li key={idx}>{point}</li>
+                  ))}
+                </ul>
 
-                  <p>{rdCalc.article.seniorRatesRDSection.intro}</p>
+                <div style={{ marginTop: 12 }}>
+                  <h4 className="finance-sub-heading-h4">{rdCalc.article.withdrawalsPrematureTaxSection.formulaAdjustment.title}</h4>
+                  <p>{rdCalc.article.withdrawalsPrematureTaxSection.formulaAdjustment.explanation}</p>
+                  <pre style={{ margin: "8px 0", fontFamily: "monospace" }}>
+                    {rdCalc.article.withdrawalsPrematureTaxSection.formulaAdjustment.expression}
+                  </pre>
+                </div>
 
-                  <ol className="ou-list">
-                    {rdCalc.article.seniorRatesRDSection.steps.map((step, idx) => (
-                      <li key={idx}>{step}</li>
-                    ))}
-                  </ol>
+                <h4 className="finance-sub-heading-h4">{rdCalc.article.withdrawalsPrematureTaxSection.example.title}</h4>
+                <p>{rdCalc.article.withdrawalsPrematureTaxSection.example.body}</p>
 
-                  <h4 className="finance-sub-heading-h4">{rdCalc.article.seniorRatesRDSection.example.title}</h4>
-                  <p>{rdCalc.article.seniorRatesRDSection.example.body}</p>
+                <p><em>{rdCalc.article.withdrawalsPrematureTaxSection.note}</em></p>
 
-                  <p>{rdCalc.article.seniorRatesRDSection.conclusion}</p>
-                </section>
+                <p>{rdCalc.article.withdrawalsPrematureTaxSection.conclusion}</p>
+              </section>
 
-                <section aria-labelledby={rdCalc.article.withdrawalsPrematureTaxSection.id}>
-                  <h3 id={rdCalc.article.withdrawalsPrematureTaxSection.id} className="finance-sub-heading">
-                    {rdCalc.article.withdrawalsPrematureTaxSection.heading}
-                  </h3>
+              <section aria-labelledby={rdCalc.article.benefitsSection.id}>
+                <h3 id={rdCalc.article.benefitsSection.id} className="finance-sub-heading">
+                  {rdCalc.article.benefitsSection.heading}
+                </h3>
 
-                  <p>{rdCalc.article.withdrawalsPrematureTaxSection.intro}</p>
+                <p>{rdCalc.article.benefitsSection.intro}</p>
 
-                  <ul className="ou-list">
-                    {rdCalc.article.withdrawalsPrematureTaxSection.points.map((point, idx) => (
-                      <li key={idx}>{point}</li>
-                    ))}
-                  </ul>
+                <ul className="ou-list">
+                  {rdCalc.article.benefitsSection.points.map((point, idx) => (
+                    <li key={idx}>{point}</li>
+                  ))}
+                </ul>
 
-                  <div style={{ marginTop: 12 }}>
-                    <h4 className="finance-sub-heading-h4">{rdCalc.article.withdrawalsPrematureTaxSection.formulaAdjustment.title}</h4>
-                    <p>{rdCalc.article.withdrawalsPrematureTaxSection.formulaAdjustment.explanation}</p>
-                    <pre style={{ margin: "8px 0", fontFamily: "monospace" }}>
-                      {rdCalc.article.withdrawalsPrematureTaxSection.formulaAdjustment.expression}
-                    </pre>
-                  </div>
-
-                  <h4 className="finance-sub-heading-h4">{rdCalc.article.withdrawalsPrematureTaxSection.example.title}</h4>
-                  <p>{rdCalc.article.withdrawalsPrematureTaxSection.example.body}</p>
-
-                  <p><em>{rdCalc.article.withdrawalsPrematureTaxSection.note}</em></p>
-
-                  <p>{rdCalc.article.withdrawalsPrematureTaxSection.conclusion}</p>
-                </section>
-
-                <section aria-labelledby={rdCalc.article.benefitsSection.id}>
-                  <h3 id={rdCalc.article.benefitsSection.id} className="finance-sub-heading">
-                    {rdCalc.article.benefitsSection.heading}
-                  </h3>
-
-                  <p>{rdCalc.article.benefitsSection.intro}</p>
-
-                  <ul className="ou-list">
-                    {rdCalc.article.benefitsSection.points.map((point, idx) => (
-                      <li key={idx}>{point}</li>
-                    ))}
-                  </ul>
-
-                  <p>{rdCalc.article.benefitsSection.conclusion}</p>
-                </section>
+                <p>{rdCalc.article.benefitsSection.conclusion}</p>
+              </section>
 
 
 
 
-              </article>
+            </article>
 
 
 
