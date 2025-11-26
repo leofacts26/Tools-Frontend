@@ -8,6 +8,7 @@ import MFReturnCalculator from "@/components/calculators/MFReturnCalculator";
 import FDCalculator from "@/components/calculators/FDCalculator";
 import RDCalculator from "@/components/calculators/RDCalculator";
 import NSCCalculator from "@/components/calculators/NSCCalculator";
+import Image from 'next/image';
 
 
 
@@ -135,148 +136,161 @@ export default async function Page({ params }) {
           <Grid size={{ xs: 12, sm: 12, md: 12, lg: 8 }}>
             {/* <Paper elevation={0} sx={{ border: "none", borderRadius: 2, p: { xs: 2, md: 4 }, boxShadow: "0 2px 8px rgba(0,0,0,0.05)" }}> */}
 
-              <article aria-labelledby="what-is-nsc-calculator" className="finance-article">
-                <header>
-                  <h2 id="what-is-nsc-calculator" className="finance-sub-heading">
-                    {nscCalc.article.intro.heading}
-                  </h2>
+            <article aria-labelledby="what-is-nsc-calculator" className="finance-article">
 
-                  {nscCalc.article.intro.paragraphs.map((para, idx) => (
-                    <p key={idx}>{para}</p>
+              <Image
+                src={nscCalc?.seo?.image}
+                alt="From ₹0 to ₹1 Crore"
+                className="img-fluid mb-4 img-rounded"
+                width={763}
+                height={429}
+                layout="responsive"
+                objectFit="contain"
+                style={{ marginTop: '20px' }}
+              />
+
+
+              <header>
+                <h2 id="what-is-nsc-calculator" className="finance-sub-heading">
+                  {nscCalc.article.intro.heading}
+                </h2>
+
+                {nscCalc.article.intro.paragraphs.map((para, idx) => (
+                  <p key={idx}>{para}</p>
+                ))}
+              </header>
+
+              <section aria-labelledby="what-is-nsc" className="finance-article-section">
+                <h3 id="what-is-nsc" className="finance-sub-heading">
+                  {nscCalc.article.whatIs.heading}
+                </h3>
+
+                {nscCalc.article.whatIs.paragraphs.map((para, idx) => (
+                  <p key={idx}>{para}</p>
+                ))}
+              </section>
+
+              <section aria-labelledby="how-nsc-calculator-helps" className="finance-article-section">
+                <h3 id="how-nsc-calculator-helps" className="finance-sub-heading">
+                  {nscCalc.article.howItHelps.heading}
+                </h3>
+
+                <p>{nscCalc.article.howItHelps.intro}</p>
+
+                <ul className="un-list">
+                  {nscCalc.article.howItHelps.points.map((point, idx) => (
+                    <li key={idx}>{point}</li>
                   ))}
-                </header>
+                </ul>
 
-                <section aria-labelledby="what-is-nsc" className="finance-article-section">
-                  <h3 id="what-is-nsc" className="finance-sub-heading">
-                    {nscCalc.article.whatIs.heading}
-                  </h3>
+                <p><em>{nscCalc.article.howItHelps.note}</em></p>
+              </section>
 
-                  {nscCalc.article.whatIs.paragraphs.map((para, idx) => (
-                    <p key={idx}>{para}</p>
+              <section aria-labelledby="nsc-formula" className="finance-article-section">
+                <h3 id="nsc-formula" className="finance-sub-heading">
+                  {nscCalc.article.formula.heading}
+                </h3>
+
+                <p>{nscCalc.article.formula.intro}</p>
+
+                {nscCalc.article.formula.methods.map((method, idx) => (
+                  <div key={idx} className="formula-block">
+                    <h4>{method.title}</h4>
+                    <ul className="un-list">
+                      {method.formulas.map((formula, fIdx) => (
+                        <li key={fIdx}>
+                          <code>{formula}</code>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                ))}
+
+                <h4>Where:</h4>
+                <ul className="un-list">
+                  {nscCalc.article.formula.definitions.map((def, idx) => (
+                    <li key={idx}>{def}</li>
                   ))}
-                </section>
+                </ul>
 
-                <section aria-labelledby="how-nsc-calculator-helps" className="finance-article-section">
-                  <h3 id="how-nsc-calculator-helps" className="finance-sub-heading">
-                    {nscCalc.article.howItHelps.heading}
-                  </h3>
+                <p><em>{nscCalc.article.formula.note}</em></p>
+              </section>
 
-                  <p>{nscCalc.article.howItHelps.intro}</p>
+              <section aria-labelledby="nsc-inputs" className="finance-article-section">
+                <h3 id="nsc-inputs" className="finance-sub-heading">
+                  {nscCalc.article.inputs.heading}
+                </h3>
 
-                  <ul className="un-list">
-                    {nscCalc.article.howItHelps.points.map((point, idx) => (
-                      <li key={idx}>{point}</li>
-                    ))}
-                  </ul>
+                <p>{nscCalc.article.inputs.intro}</p>
 
-                  <p><em>{nscCalc.article.howItHelps.note}</em></p>
-                </section>
-
-                <section aria-labelledby="nsc-formula" className="finance-article-section">
-                  <h3 id="nsc-formula" className="finance-sub-heading">
-                    {nscCalc.article.formula.heading}
-                  </h3>
-
-                  <p>{nscCalc.article.formula.intro}</p>
-
-                  {nscCalc.article.formula.methods.map((method, idx) => (
-                    <div key={idx} className="formula-block">
-                      <h4>{method.title}</h4>
-                      <ul className="un-list">
-                        {method.formulas.map((formula, fIdx) => (
-                          <li key={fIdx}>
-                            <code>{formula}</code>
-                          </li>
-                        ))}
-                      </ul>
-                    </div>
+                <ol className="ou-list">
+                  {nscCalc.article.inputs.list.map((item, idx) => (
+                    <li key={idx}>{item}</li>
                   ))}
+                </ol>
 
-                  <h4>Where:</h4>
-                  <ul className="un-list">
-                    {nscCalc.article.formula.definitions.map((def, idx) => (
-                      <li key={idx}>{def}</li>
-                    ))}
-                  </ul>
+                <p><em>{nscCalc.article.inputs.note}</em></p>
+              </section>
 
-                  <p><em>{nscCalc.article.formula.note}</em></p>
-                </section>
+              <section aria-labelledby="nsc-calculation" className="finance-article-section">
+                <h3 id="nsc-calculation" className="finance-sub-heading">
+                  {nscCalc.article.calculation.heading}
+                </h3>
 
-                <section aria-labelledby="nsc-inputs" className="finance-article-section">
-                  <h3 id="nsc-inputs" className="finance-sub-heading">
-                    {nscCalc.article.inputs.heading}
-                  </h3>
+                <p>{nscCalc.article.calculation.intro}</p>
 
-                  <p>{nscCalc.article.inputs.intro}</p>
+                <ol className="ou-list">
+                  {nscCalc.article.calculation.steps.map((step, idx) => (
+                    <li key={idx}>{step}</li>
+                  ))}
+                </ol>
 
-                  <ol className="ou-list">
-                    {nscCalc.article.inputs.list.map((item, idx) => (
-                      <li key={idx}>{item}</li>
-                    ))}
-                  </ol>
+                <p><em>{nscCalc.article.calculation.example}</em></p>
+              </section>
 
-                  <p><em>{nscCalc.article.inputs.note}</em></p>
-                </section>
+              <section aria-labelledby="how-to-use-nsc" className="finance-article-section">
+                <h3 id="how-to-use-nsc" className="finance-sub-heading">
+                  {nscCalc.article.howToUse.heading}
+                </h3>
 
-                <section aria-labelledby="nsc-calculation" className="finance-article-section">
-                  <h3 id="nsc-calculation" className="finance-sub-heading">
-                    {nscCalc.article.calculation.heading}
-                  </h3>
+                <p>{nscCalc.article.howToUse.intro}</p>
 
-                  <p>{nscCalc.article.calculation.intro}</p>
+                <ol className="ou-list">
+                  {nscCalc.article.howToUse.steps.map((step, idx) => (
+                    <li key={idx}>{step}</li>
+                  ))}
+                </ol>
 
-                  <ol className="ou-list">
-                    {nscCalc.article.calculation.steps.map((step, idx) => (
-                      <li key={idx}>{step}</li>
-                    ))}
-                  </ol>
+                <p><em>{nscCalc.article.howToUse.note}</em></p>
+              </section>
 
-                  <p><em>{nscCalc.article.calculation.example}</em></p>
-                </section>
+              <section aria-labelledby="nsc-advantages" className="finance-article-section">
+                <h3 id="nsc-advantages" className="finance-sub-heading">
+                  {nscCalc.article.advantages.heading}
+                </h3>
 
-                <section aria-labelledby="how-to-use-nsc" className="finance-article-section">
-                  <h3 id="how-to-use-nsc" className="finance-sub-heading">
-                    {nscCalc.article.howToUse.heading}
-                  </h3>
+                <p>{nscCalc.article.advantages.intro}</p>
 
-                  <p>{nscCalc.article.howToUse.intro}</p>
+                <ul className="un-list">
+                  {nscCalc.article.advantages.points.map((point, idx) => (
+                    <li key={idx}>{point}</li>
+                  ))}
+                </ul>
 
-                  <ol className="ou-list">
-                    {nscCalc.article.howToUse.steps.map((step, idx) => (
-                      <li key={idx}>{step}</li>
-                    ))}
-                  </ol>
+                <p><em>{nscCalc.article.advantages.note}</em></p>
+              </section>
 
-                  <p><em>{nscCalc.article.howToUse.note}</em></p>
-                </section>
+              <section aria-labelledby="nsc-notes" className="finance-article-section">
+                <h3 id="nsc-notes" className="finance-sub-heading">
+                  {nscCalc.article.notes.heading}
+                </h3>
 
-                <section aria-labelledby="nsc-advantages" className="finance-article-section">
-                  <h3 id="nsc-advantages" className="finance-sub-heading">
-                    {nscCalc.article.advantages.heading}
-                  </h3>
-
-                  <p>{nscCalc.article.advantages.intro}</p>
-
-                  <ul className="un-list">
-                    {nscCalc.article.advantages.points.map((point, idx) => (
-                      <li key={idx}>{point}</li>
-                    ))}
-                  </ul>
-
-                  <p><em>{nscCalc.article.advantages.note}</em></p>
-                </section>
-
-                <section aria-labelledby="nsc-notes" className="finance-article-section">
-                  <h3 id="nsc-notes" className="finance-sub-heading">
-                    {nscCalc.article.notes.heading}
-                  </h3>
-
-                  <ul className="un-list">
-                    {nscCalc.article.notes.points.map((note, idx) => (
-                      <li key={idx}>{note}</li>
-                    ))}
-                  </ul>
-                </section>
+                <ul className="un-list">
+                  {nscCalc.article.notes.points.map((note, idx) => (
+                    <li key={idx}>{note}</li>
+                  ))}
+                </ul>
+              </section>
 
 
 
@@ -285,7 +299,7 @@ export default async function Page({ params }) {
 
 
 
-              </article>
+            </article>
 
 
 

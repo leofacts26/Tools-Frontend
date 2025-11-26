@@ -3,7 +3,7 @@
     "title": "NSC கால்குலேட்டர் — தேசிய சேமிப்பு சான்றிதழ் வட்டி & முதிர்வு மதிப்பை ஆன்லைனில் கணக்கிடுங்கள்",
     "description": "எங்கள் இலவச NSC கால்குலேட்டரைப் பயன்படுத்தி, உங்கள் National Savings Certificate (NSC) முதலீட்டின் முதிர்வு மதிப்பு மற்றும் பெறப்படும் மொத்த வட்டியை கணக்கிடுங்கள். முதலீட்டு தொகை, காலம், மற்றும் வட்டி விகிதத்தை உள்ளிடுங்கள் — உடனடி துல்லியமான முடிவுகளைப் பெறுங்கள்.",
     "slug": "tools/finance/nsc-calculator",
-    "image": "/images/og/nsc-calculator-en.png",
+    "image": "/calculators/NSC-Calculator.png",
     "isArticle": true,
     "publishDate": "2024-01-01",
     "modifiedDate": "2025-10-18",
