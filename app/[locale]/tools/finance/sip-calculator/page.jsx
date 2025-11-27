@@ -18,16 +18,16 @@ import Image from 'next/image';
 
 
 export async function generateMetadata({ params }) {
-  const locale = params?.locale || "en";
+  // ⛔ params is async — you MUST await it
+  const resolvedParams = await params;
+  const locale = resolvedParams?.locale || "en";
 
   // load localized common defaults and the page content (sipcalc.json)
   const common = (await import(`../../../../../messages/${locale}/common.json`).catch(() => ({}))).default || {};
   const sipcalc = (await import(`../../../../../messages/${locale}/sipcalc.json`).catch(() => ({}))).default || {};
 
-  // use the seo block from sipcalc.json (user provided)
   const pageSeo = sipcalc.seo || {};
 
-  // build opts for createMetadata (your lib/seo.js expects similar keys)
   const opts = {
     title: pageSeo.title || sipcalc.site?.heading || common.site?.name || SITE.name,
     description: pageSeo.description || common.site?.description || "",
@@ -40,18 +40,16 @@ export async function generateMetadata({ params }) {
     faqs: sipcalc.faqs || [],
   };
 
-  // createMetadata returns { title, description, openGraph, alternates, twitter, jsonLd }
   const meta = createMetadata(opts);
 
-  // Build alternates/hreflang entries for all locales configured in SITE
   const alternates = { canonical: meta.openGraph.url, languages: {} };
+
   for (const lng of SITE.locales) {
     const other = (await import(`../../../../../messages/${lng}/sipcalc.json`).catch(() => ({}))).default || {};
     const otherSlug = other?.seo?.slug || opts.slug;
     if (otherSlug) alternates.languages[lng] = `${SITE.url}/${lng}/${otherSlug}`;
   }
 
-  // return the Next.js metadata object
   return {
     title: meta.title,
     description: meta.description,
@@ -64,7 +62,8 @@ export async function generateMetadata({ params }) {
 
 
 export default async function Page({ params }) {
-  const { locale } = params;
+  const resolvedParams = await params;     // 🔥 FIX
+  const locale = resolvedParams.locale;
   const sipcalc = (await import(`../../../../../messages/${locale}/sipcalc.json`)).default;
 
   // Build JSON-LD for FAQ (if any)

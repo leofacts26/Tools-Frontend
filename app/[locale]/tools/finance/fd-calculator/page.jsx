@@ -13,7 +13,9 @@ import Image from 'next/image';
 
 
 export async function generateMetadata({ params }) {
-  const locale = params?.locale || "en";
+   // ⛔ params is async — you MUST await it
+  const resolvedParams = await params;
+  const locale = resolvedParams?.locale || "en";
 
   // load localized common defaults and the page content (sipcalc.json)
   const common = (await import(`../../../../../messages/${locale}/common.json`).catch(() => ({}))).default || {};
@@ -62,7 +64,8 @@ export async function generateMetadata({ params }) {
 
 export default async function Page({ params }) {
 
-  const { locale } = params;
+  const resolvedParams = await params;     // 🔥 FIX
+  const locale = resolvedParams.locale;
   const fdCalc = (await import(`../../../../../messages/${locale}/fdCalc.json`)).default;
 
 
