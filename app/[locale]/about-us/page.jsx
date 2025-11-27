@@ -72,6 +72,7 @@ export default function Page() {
           feedback and real-world needs.
         </Typography>
 
+
         {/* WHAT WE PROVIDE */}
         <Typography className="terms-heading">3) What We Provide</Typography>
 
