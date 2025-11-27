@@ -1,0 +1,18 @@
+{
+  "seo": {
+    "title": "Online-Dienstprogramme — Kostenlose Rechner, Konverter & Smart Tools | GanakaHub",
+    "description": "Nutzen Sie die kostenlosen Online-Tools von GanakaHub, darunter Finanzrechner, Gesundheitsrechner, Konverter, EMI, SIP, GST und vieles mehr. Schnelle, präzise und benutzerfreundliche Tools für Ihre täglichen Aufgaben.",
+    "slug": "/",
+    "image": "/ganaka-hero.png",
+    "isArticle": false,
+    "publishDate": "2025-01-01",
+    "modifiedDate": "2025-11-27",
+    "author": "GanakaHub"
+  },
+  "hero": {
+    "title": "Halten Sie Ihre Web-Tools schnell und smart mit GanakaHub Utilities",
+    "subtitle": "Erstellen, optimieren und verschönern Sie mit über 200 kostenlosen Tools — vom JSON-Formatter bis zu SEO-Analysetools. Bleiben Sie produktiv und automatisieren Sie Ihren täglichen Workflow mit nur einem Klick.",
+    "tryButton": "Tools kostenlos ausprobieren",
+    "exploreButton": "Kategorien entdecken"
+  }
+}

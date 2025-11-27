@@ -1,10 +1,92 @@
 import { Box, Button, Container, Grid, Stack } from '@mui/material';
-import { useTranslations } from 'next-intl';
 import Image from "next/image";
+import { createMetadata, SITE } from "@/lib/seo";
 
 
-export default function Page() {
-  const t = useTranslations();
+
+export async function generateMetadata({ params }) {
+  const locale = params?.locale || "en";
+
+  // load localized common defaults and the page content (sipcalc.json)
+  const common = (await import(`../../messages/${locale}/common.json`).catch(() => ({}))).default || {};
+  const homeData = (await import(`../../messages/${locale}/pages/home.json`).catch(() => ({}))).default || {};
+
+  // use the seo block from 1-crore-before-35-real-math.json (user provided)
+  const pageSeo = homeData.seo || {};
+
+  // build opts for createMetadata (your lib/seo.js expects similar keys)
+  const opts = {
+    title: pageSeo.title || homeData.site?.heading || common.site?.name || SITE.name,
+    description: pageSeo.description || common.site?.description || "",
+    slug: pageSeo.slug || "",
+    image: pageSeo.image || common.site?.defaultImage || "",
+    locale,
+    isArticle: Boolean(pageSeo.isArticle),
+    publishDate: pageSeo.publishDate,
+    modifiedDate: pageSeo.modifiedDate,
+    faqs: homeData.faqs || [],
+  };
+
+  // createMetadata returns { title, description, openGraph, alternates, twitter, jsonLd }
+  const meta = createMetadata(opts);
+
+  // Build alternates/hreflang entries for all locales configured in SITE
+  const alternates = { canonical: meta.openGraph.url, languages: {} };
+  for (const lng of SITE.locales) {
+    const other = (await import(`../../messages/${locale}/pages/home.json`).catch(() => ({}))).default || {};
+    const otherSlug = other?.seo?.slug || opts.slug;
+    if (otherSlug) alternates.languages[lng] = `${SITE.url}/${lng}/${otherSlug}`;
+  }
+
+  // return the Next.js metadata object
+  return {
+    title: meta.title,
+    description: meta.description,
+    alternates,
+    openGraph: meta.openGraph,
+    twitter: meta.twitter,
+    robots: pageSeo?.noindex ? { index: false, follow: false } : undefined,
+  };
+}
+
+
+
+export default async function Page({ params }) {
+
+  const { locale } = params;
+  const homeData = (await import(`../../messages/${locale}/pages/home.json`)).default;
+
+
+  // Build JSON-LD for FAQ (if any)
+  const faqJsonLd =
+    homeData.faqs && homeData.faqs.length
+      ? {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        mainEntity: homeData.faqs.map((f) => ({
+          "@type": "Question",
+          name: f.q,
+          acceptedAnswer: { "@type": "Answer", text: f.a },
+        })),
+      }
+      : null;
+
+  // Build Article JSON-LD if isArticle true
+  const articleJsonLd = homeData.seo?.isArticle
+    ? {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      headline: homeData.seo?.title || homeData.site?.heading,
+      description: homeData.seo?.description || "",
+      author: { "@type": "Person", name: homeData.seo?.author || "Author" },
+      datePublished: homeData.seo?.publishDate,
+      dateModified: homeData.seo?.modifiedDate,
+      image: homeData.seo?.image ? `${SITE.url}${homeData.seo.image}` : undefined,
+      mainEntityOfPage: { "@type": "WebPage", "@id:": `${SITE.url}/${locale}/${homeData.seo?.slug || ""}` },
+    }
+    : null;
+
+
 
   return (
     <>
@@ -26,8 +108,8 @@ export default function Page() {
                 />
               </Grid>
               <Grid size={{ xs: 12, md: 6 }} sx={{ height: "100%" }}>
-                <h1 className='hero-title'>Keep your web tools fast & smart with GanakaHub Utilities</h1>
-                <p>Create, beautify, and optimize with 200+ free tools — from JSON formatter to SEO analyzers. Stay productive and automate your daily workflow in one click.</p>
+                <h1 className='hero-title'>{homeData.hero.title}</h1>
+                <p>{homeData.hero.subtitle}</p>
 
                 <Stack direction={{ xs: 'column', sm: 'row' }} spacing={2} sx={{ mt: 3 }}>
                   <Button
@@ -46,7 +128,7 @@ export default function Page() {
                       }
                     }}
                   >
-                    Try Tools for Free
+                    {homeData.hero.tryButton}
                   </Button>
 
                   <Button
@@ -63,7 +145,7 @@ export default function Page() {
                       }
                     }}
                   >
-                    Explore Categories
+                    {homeData.hero.exploreButton}
                   </Button>
                 </Stack>
 

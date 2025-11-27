@@ -1,0 +1,18 @@
+{
+  "seo": {
+    "title": "Online Utility Tools — Free Calculators, Converters & Smart Tools | GanakaHub",
+    "description": "Use GanakaHub’s free online utility tools including finance calculators, health calculators, converters, EMIs, SIP, GST, and more. Fast, accurate & easy-to-use tools to simplify your daily tasks.",
+    "slug": "/",
+    "image": "/ganaka-hero.png",
+    "isArticle": false,
+    "publishDate": "2025-01-01",
+    "modifiedDate": "2025-11-27",
+    "author": "GanakaHub"
+  },
+  "hero": {
+    "title": "Keep your web tools fast & smart with GanakaHub Utilities",
+    "subtitle": "Create, beautify, and optimize with 200+ free tools — from JSON formatter to SEO analyzers. Stay productive and automate your daily workflow in one click.",
+    "tryButton": "Try Tools for Free",
+    "exploreButton": "Explore Categories"
+  }
+}

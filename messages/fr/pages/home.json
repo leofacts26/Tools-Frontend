@@ -1,0 +1,18 @@
+{
+  "seo": {
+    "title": "Outils Utilitaires en Ligne — Calculatrices, Convertisseurs et Smart Tools Gratuits | GanakaHub",
+    "description": "Utilisez les outils utilitaires gratuits de GanakaHub, comprenant des calculatrices financières, des calculatrices de santé, des convertisseurs, EMI, SIP, GST et bien plus encore. Des outils rapides, précis et faciles à utiliser pour simplifier vos tâches quotidiennes.",
+    "slug": "/",
+    "image": "/ganaka-hero.png",
+    "isArticle": false,
+    "publishDate": "2025-01-01",
+    "modifiedDate": "2025-11-27",
+    "author": "GanakaHub"
+  },
+  "hero": {
+    "title": "Gardez vos outils web rapides et intelligents avec GanakaHub Utilities",
+    "subtitle": "Créez, améliorez et optimisez avec plus de 200 outils gratuits — du formateur JSON aux analyseurs SEO. Restez productif et automatisez votre flux de travail quotidien en un seul clic.",
+    "tryButton": "Essayer les outils gratuitement",
+    "exploreButton": "Explorer les catégories"
+  }
+}
