@@ -13,7 +13,7 @@ import Menu from "@mui/material/Menu";
 import MenuItem from "@mui/material/MenuItem";
 import { useRouter, usePathname } from "next/navigation";
 import { useLocale, useTranslations } from "next-intl";
-import { LOCALES } from "@/lib/locales";
+import { LOCALES, DEFAULT_LOCALE } from "@/lib/locales";
 import { navSections } from "@/lib/utils";
 import { Typography } from "@mui/material";
 import Link from "next/link";
@@ -36,15 +36,42 @@ export default function Navbar() {
   const handleLangClick = (event) => setLangAnchorEl(event.currentTarget);
   const handleLangClose = () => setLangAnchorEl(null);
 
+  const handleLangButtonClick = (event) => handleLangClick(event);
+
   // Let next-intl swap the locale segment & keep the rest of the path
-  const handleLangChange = (lng) => {
+  React.useEffect(() => {
+    if (mounted) {
+      // mount side-effect only
+    }
+  }, [mounted]);
+
+  const handleLangChange = async (lng) => {
     handleLangClose();
 
     // Remove the current locale prefix (e.g., "/en/about" -> "/about")
     const newPath = pathname.replace(/^\/[a-z]{2}(?=\/|$)/, "") || "/";
 
-    // Push with new locale
-    router.push(`/${lng}${newPath}`);
+    // debug info removed
+
+    // If switching to the default locale, don't include the locale prefix in the URL.
+    // Otherwise include the locale segment (e.g., "/hi/about").
+    // Set middleware cookie so server routing respects user's choice
+    try {
+      try {
+        // eslint-disable-next-line no-undef
+        document.cookie = `NEXT_LOCALE=${lng}; Path=/; Max-Age=${60 * 60 * 24 * 365}`;
+      } catch (e) {
+        // ignore if cookies are not available (e.g., SSR)
+      }
+      if (lng === DEFAULT_LOCALE) {
+        await router.push(newPath);
+      } else {
+        const target = `/${lng}${newPath}`;
+        await router.push(target);
+      }
+    } catch (err) {
+      // swallow navigation errors silently
+    }
   };
 
   const displaySubmenu = (e) => {
@@ -109,7 +136,7 @@ export default function Navbar() {
 
               <IconButton
                 sx={{ ml: 1 }}
-                onClick={handleLangClick}
+                onClick={handleLangButtonClick}
                 color="inherit"
                 aria-controls={Boolean(langAnchorEl) ? "lang-menu" : undefined}
                 aria-haspopup="true"
@@ -130,7 +157,13 @@ export default function Navbar() {
                 {SUPPORTED_LOCALES.map((lng) => (
                   <MenuItem
                     key={lng}
-                    onClick={() => handleLangChange(lng)}
+                    onClick={() => {
+                      // ensure we log the click even if navigation doesn't happen
+                      // eslint-disable-next-line no-console
+                      console.log("Language menu item clicked", { lng, currentLocale, pathname });
+                      handleLangChange(lng);
+                    }}
+                    data-lng={lng}
                     selected={currentLocale === lng}
                     dense
                   >

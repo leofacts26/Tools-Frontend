@@ -61,6 +61,17 @@ export default function Sidebar() {
   const handleLangChange = (lng) => {
     handleLangClose();
     const newPath = pathname.replace(/^\/[a-z]{2}(?=\/|$)/, "") || "/";
+    try {
+      // set cookie to persist locale preference for middleware
+      try {
+        // eslint-disable-next-line no-undef
+        document.cookie = `NEXT_LOCALE=${lng}; Path=/; Max-Age=${60 * 60 * 24 * 365}`;
+      } catch (e) {
+        // ignore in non-browser envs
+      }
+    } catch (e) {
+      // noop
+    }
     router.push(`/${lng}${newPath}`);
   };
 

@@ -5,7 +5,8 @@ import { createMetadata, SITE } from "@/lib/seo";
 
 
 export async function generateMetadata({ params }) {
-  const locale = params?.locale || "en";
+  const resolvedParams = await params;
+  const locale = resolvedParams?.locale || "en";
 
   // load localized common defaults and the page content (sipcalc.json)
   const common = (await import(`../../messages/${locale}/common.json`).catch(() => ({}))).default || {};
@@ -33,7 +34,7 @@ export async function generateMetadata({ params }) {
   // Build alternates/hreflang entries for all locales configured in SITE
   const alternates = { canonical: meta.openGraph.url, languages: {} };
   for (const lng of SITE.locales) {
-    const other = (await import(`../../messages/${locale}/pages/home.json`).catch(() => ({}))).default || {};
+    const other = (await import(`../../messages/${lng}/pages/home.json`).catch(() => ({}))).default || {};
     const otherSlug = other?.seo?.slug || opts.slug;
     if (otherSlug) alternates.languages[lng] = `${SITE.url}/${lng}/${otherSlug}`;
   }
@@ -53,8 +54,9 @@ export async function generateMetadata({ params }) {
 
 export default async function Page({ params }) {
 
-  const { locale } = params;
-  const homeData = (await import(`../../messages/${locale}/pages/home.json`)).default;
+  const resolvedParams = await params;
+  const locale = resolvedParams?.locale || "en";
+  const homeData = (await import(`../../messages/${locale}/pages/home.json`).catch(() => ({}))).default || {};
 
 
   // Build JSON-LD for FAQ (if any)
