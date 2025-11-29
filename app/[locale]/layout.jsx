@@ -1,11 +1,12 @@
 import { NextIntlClientProvider } from "next-intl";
-import { getMessages } from "next-intl/server";
 import { cookies } from "next/headers";
 import ClientLayout from "@/components/ClientLayout";
 import "../../styles/index.css";
 
 export default async function LocaleLayout({ children, params }) {
-  const locale = params?.locale || "en";
+  const resolvedParams = await params;
+  const locale = resolvedParams?.locale || "en";
+
   let messages = {};
 
   try {

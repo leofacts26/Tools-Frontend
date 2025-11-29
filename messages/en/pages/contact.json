@@ -1,0 +1,22 @@
+{
+  "seo": {
+    "title": "Contact Us | GanakaHub",
+    "description": "Get in touch with GanakaHub.com for feedback, suggestions, or inquiries about our finance, student, and utility tools. We’re here to help!",
+    "slug": "/contact",
+    "image": "/ganaka-hero.png",
+    "isArticle": false,
+    "publishDate": "2025-01-01",
+    "modifiedDate": "2025-11-27",
+    "author": "GanakaHub"
+  },
+  "pageContent": {
+    "title": "Get in Touch with GanakaHub",
+    "subtitle": "We’re here to help. Contact us for feedback, questions, or suggestions.",
+    "highlightColor": "#ec407a",
+    "contactInfo": {
+      "email": "ganakahub@gmail.com",
+      "website": "https://www.ganakahub.com"
+    },
+    "footerNote": "Thank you for being a part of GanakaHub. We’re committed to making your financial, academic, and daily life calculations easier — one tool at a time."
+  }
+}

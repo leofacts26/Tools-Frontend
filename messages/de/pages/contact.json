@@ -1,0 +1,22 @@
+{
+  "seo": {
+    "title": "Kontaktieren Sie uns | GanakaHub",
+    "description": "Nehmen Sie Kontakt mit GanakaHub.com auf, um Feedback, Vorschläge oder Anfragen zu unseren Finanz-, Studenten- und Dienstprogrammen zu senden. Wir sind hier, um zu helfen!",
+    "slug": "/contact",
+    "image": "/ganaka-hero.png",
+    "isArticle": false,
+    "publishDate": "2025-01-01",
+    "modifiedDate": "2025-11-27",
+    "author": "GanakaHub"
+  },
+  "pageContent": {
+    "title": "Kontaktieren Sie GanakaHub",
+    "subtitle": "Wir sind hier, um zu helfen. Kontaktieren Sie uns für Feedback, Fragen oder Vorschläge.",
+    "highlightColor": "#ec407a",
+    "contactInfo": {
+      "email": "ganakahub@gmail.com",
+      "website": "https://www.ganakahub.com"
+    },
+    "footerNote": "Vielen Dank, dass Sie ein Teil von GanakaHub sind. Wir setzen uns dafür ein, Ihre finanziellen, akademischen und alltäglichen Berechnungen zu erleichtern — ein Tool nach dem anderen."
+  }
+}
