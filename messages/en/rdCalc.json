@@ -195,5 +195,39 @@
       ],
       "conclusion": "Use the calculator to build RD ladders, compare effective annual yields, and align monthly deposits with future expenses or savings goals. It removes calculation friction and helps you pick the most suitable RD product with confidence."
     }
-  }
+  },
+  "faqs": [
+    {
+      "q": "What is an RD Calculator?",
+      "a": "An RD Calculator helps you find the maturity amount and interest earned from a recurring deposit based on monthly deposits, interest rate, and tenure."
+    },
+    {
+      "q": "How does an RD Calculator work?",
+      "a": "It applies the compound interest formula on every monthly deposit, since each installment earns interest for a different number of months until maturity."
+    },
+    {
+      "q": "Are the calculator results accurate?",
+      "a": "Yes, the results are close estimates. Final figures may vary slightly depending on a bank’s compounding frequency and rounding rules."
+    },
+    {
+      "q": "Can I calculate RD for any bank?",
+      "a": "Yes, you can enter the interest rate of any bank or post office to calculate the maturity amount for that institution."
+    },
+    {
+      "q": "What is the minimum tenure I can calculate?",
+      "a": "RDs usually start from 6 months and can go up to 10 years, but the calculator supports any tenure your bank allows."
+    },
+    {
+      "q": "Does the RD Calculator include taxes or TDS?",
+      "a": "No. The calculator shows only the maturity amount and interest earned. Taxes, if applicable, depend on your income tax slab."
+    },
+    {
+      "q": "Can senior citizens get higher RD interest rates?",
+      "a": "Yes, certain banks offer extra interest to senior citizens. You can enter the higher rate in the calculator for an accurate result."
+    },
+    {
+      "q": "What happens if I miss a monthly RD installment?",
+      "a": "Banks may charge a penalty for missed installments. The calculator assumes all payments are made on time for accurate maturity results."
+    }
+  ]
 }

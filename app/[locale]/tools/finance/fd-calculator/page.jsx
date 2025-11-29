@@ -7,6 +7,7 @@ import FAQAccordion from "@/components/common/FAQAccordion";
 import MFReturnCalculator from "@/components/calculators/MFReturnCalculator";
 import FDCalculator from "@/components/calculators/FDCalculator";
 import Image from 'next/image';
+import FormulaBlock from "@/components/common/FormulaBlock";
 
 
 
@@ -244,17 +245,33 @@ export default async function Page({ params }) {
                   {fdCalc.article.fdFormulaSection.formulas.map((item, index) => (
                     <li key={index}>
                       <strong>{item.title}</strong>
+
+                      {/* Main expression */}
                       {item.expression && (
-                        <pre style={{ margin: "8px 0", fontFamily: "monospace" }}>
-                          {item.expression}
-                        </pre>
+                        <FormulaBlock
+                          title="Formula"
+                          formula={item.expression}
+                          ariaLabel={`fd-formula-${index}`}
+                          showCopy={true}
+                          sx={{ marginTop: 8, marginBottom: 8 }}
+                        />
                       )}
+
+                      {/* Explanation (if exists) */}
                       {item.explanation && <p>{item.explanation}</p>}
+
+                      {/* Steps inside compound-interest formula */}
                       {item.steps && (
                         <ul className="ou-list">
                           {item.steps.map((s, idx) => (
                             <li key={idx}>
-                              <pre style={{ margin: "4px 0", fontFamily: "monospace" }}>{s}</pre>
+                              <FormulaBlock
+                                title={`Step ${idx + 1}`}
+                                formula={s}
+                                ariaLabel={`fd-step-formula-${index}-${idx}`}
+                                showCopy={true}
+                                sx={{ marginTop: 8, marginBottom: 8 }}
+                              />
                             </li>
                           ))}
                         </ul>
@@ -284,6 +301,7 @@ export default async function Page({ params }) {
               </section>
 
 
+
               <section aria-labelledby={fdCalc.article.fdExampleWalkthroughSection.id}>
                 <h3 id={fdCalc.article.fdExampleWalkthroughSection.id} className="finance-sub-heading">
                   {fdCalc.article.fdExampleWalkthroughSection.heading}
@@ -294,14 +312,26 @@ export default async function Page({ params }) {
                 {fdCalc.article.fdExampleWalkthroughSection.examples.map((example, idx) => (
                   <div key={idx} style={{ marginTop: "1rem" }}>
                     <h4 className="finance-sub-heading-h4">{example.type}</h4>
+
                     <ol className="ou-list">
                       {example.steps.map((step, i) => (
                         <li key={i}>
-                          <pre style={{ margin: "4px 0", fontFamily: "monospace" }}>{step}</pre>
+                          <FormulaBlock
+                            title={`Step ${i + 1}`}
+                            formula={step}
+                            ariaLabel={`fd-example-step-${idx}-${i}`}
+                            showCopy={true}
+                            sx={{ marginTop: 8, marginBottom: 8 }}
+                          />
                         </li>
                       ))}
                     </ol>
-                    {example.note && <p><em>{example.note}</em></p>}
+
+                    {example.note && (
+                      <p>
+                        <em>{example.note}</em>
+                      </p>
+                    )}
                   </div>
                 ))}
               </section>
