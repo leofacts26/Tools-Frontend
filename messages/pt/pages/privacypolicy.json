@@ -1,0 +1,112 @@
+{
+  "seo": {
+    "title": "Política de Privacidade | GanakaHub",
+    "description": "Política de Privacidade do GanakaHub.com descrevendo quais dados coletamos, como os usamos, cookies, análises, segurança e suas escolhas.",
+    "slug": "/",
+    "image": "/ganaka-hero.png",
+    "isArticle": false,
+    "publishDate": "2025-01-01",
+    "modifiedDate": "2025-11-27",
+    "author": "GanakaHub"
+  },
+  "privacyIntro": {
+    "title": "Política de Privacidade",
+    "lastUpdated": "01/11/2025",
+    "p1": "Bem-vindo ao <strong>GanakaHub.com</strong> (“<em>GanakaHub</em>”, “nós”, “nosso”, “nos”). Esta Política de Privacidade explica quais informações coletamos, como as usamos e as escolhas que você possui. Ao usar nosso site, ferramentas e serviços (incluindo ferramentas financeiras, ferramentas estudantis e utilitários), você concorda com as práticas aqui descritas. Se não concordar, por favor, interrompa o uso do GanakaHub."
+  },
+  "privacySection1": {
+    "title": "1) Quem Somos",
+    "p1": "O GanakaHub fornece calculadoras e utilitários online projetados para fins informativos e educacionais. Respeitamos sua privacidade e buscamos coletar apenas o necessário para operar e melhorar nossos serviços."
+  },
+  "privacySection2": {
+    "title": "2) Informações que Coletamos",
+    "p1": "Coletamos principalmente informações limitadas e não pessoais para manter o site funcionando corretamente e entender os padrões de uso. Geralmente, <strong>não</strong> exigimos que você crie uma conta ou forneça dados sensíveis para usar nossas calculadoras.",
+    "p2": "Podemos coletar:",
+    "list": [
+      "<strong>Dados Técnicos:</strong> endereço IP (geralmente anonimizado), tipo de dispositivo, sistema operacional, tipo/versão do navegador, idioma, tamanho da tela e localização geral (país/região).",
+      "<strong>Dados de Uso:</strong> páginas visualizadas, tempo na página, URLs de referência, botões clicados, profundidade de rolagem e registros de erros para depuração.",
+      "<strong>Dados de Cookies:</strong> pequenos arquivos de texto armazenados em seu dispositivo para lembrar preferências, medir tráfego e melhorar a experiência.",
+      "<strong>Entradas de Ferramentas (Efêmeras):</strong> valores que você insere em nossas calculadoras. Eles são usados para calcular resultados no seu navegador e geralmente não são armazenados por nós, a menos que explicitamente indicado para um recurso (por exemplo, preferências salvas no futuro)."
+    ],
+    "p3": "Não coletamos <strong>intencionalmente</strong> dados pessoais sensíveis (como senhas, credenciais bancárias, números de Aadhaar ou registros médicos)."
+  },
+  "privacySection3": {
+    "title": "3) Como Usamos as Informações",
+    "p1": "Usamos as informações que coletamos para:",
+    "list": [
+      "Operar, manter e melhorar nossas calculadoras e site.",
+      "Monitorar desempenho, corrigir problemas e aprimorar a usabilidade.",
+      "Medir o tráfego, entender o comportamento do usuário e planejar novos recursos.",
+      "Proteger o site contra abusos, fraudes e ameaças de segurança.",
+      "Cumprir obrigações legais e aplicar nossos Termos & Condições."
+    ]
+  },
+  "privacySection4": {
+    "title": "4) Bases Legais (Quando Aplicável)",
+    "p1": "Dependendo da sua região, podemos nos basear em uma ou mais das seguintes bases legais para processar suas informações: <strong>interesses legítimos</strong> (para operar e proteger nossos serviços), <strong>consentimento</strong> (para certos cookies/análises) e <strong>cumprimento de obrigações legais</strong>."
+  },
+  "privacySection5": {
+    "title": "5) Cookies & Tecnologias Semelhantes",
+    "p1": "Usamos cookies e tecnologias semelhantes para lembrar preferências, analisar o tráfego e melhorar o desempenho. Você pode gerenciar os cookies através das configurações do seu navegador e, quando disponível, pelo banner de cookies ou painel de preferências. Desativar certos cookies pode afetar a funcionalidade do site."
+  },
+  "privacySection6": {
+    "title": "6) Análises, Publicidade & Afiliados",
+    "p1": "Podemos usar ferramentas de análise conscientes de privacidade para medir o engajamento e melhorar o site. Também podemos exibir anúncios ou links de afiliados. Terceiros envolvidos em análises ou anúncios podem definir seus próprios cookies e coletar dados conforme descrito em suas políticas de privacidade. Não vendemos suas informações pessoais."
+  },
+  "privacySection7": {
+    "title": "7) Quando Compartilhamos Informações",
+    "p1": "Não vendemos seus dados. Podemos compartilhar informações limitadas com:",
+    "list": [
+      "<strong>Prestadores de Serviços:</strong> fornecedores que nos ajudam a operar o site (ex.: hospedagem, análises, segurança). Eles estão vinculados por obrigações contratuais de proteção de dados.",
+      "<strong>Jurídico/Conformidade:</strong> quando exigido por lei, regulamento, processo legal ou para proteger os direitos, segurança e integridade do GanakaHub e de seus usuários.",
+      "<strong>Mudanças Empresariais:</strong> se passarmos por uma fusão, aquisição ou transferência de ativos, seus dados podem ser transferidos como parte dessa transação com as devidas salvaguardas."
+    ]
+  },
+  "privacySection8": {
+    "title": "8) Retenção de Dados",
+    "p1": "Retemos logs de análises e de servidores apenas pelo tempo necessário para cumprir os propósitos descritos nesta política, cumprir obrigações legais, resolver disputas e aplicar acordos. As entradas nas calculadoras geralmente são processadas no seu navegador e não são armazenadas em nossos servidores, a menos que um recurso indique claramente a opção de salvar preferências."
+  },
+  "privacySection9": {
+    "title": "9) Segurança de Dados",
+    "p1": "Implementamos medidas técnicas e organizacionais razoáveis para proteger informações contra acesso não autorizado, alteração ou destruição. No entanto, nenhum método de transmissão ou armazenamento é 100% seguro, e não podemos garantir segurança absoluta."
+  },
+  "privacySection10": {
+    "title": "10) Privacidade das Crianças",
+    "p1": "O GanakaHub destina-se a um público geral e não é direcionado a crianças menores de 13 anos (ou a idade aplicável na sua região). Não coletamos conscientemente dados pessoais de crianças. Se você acreditar que uma criança forneceu dados pessoais, entre em contato conosco para que possamos tomar as medidas adequadas."
+  },
+  "privacySection11": {
+    "title": "11) Transferências Internacionais de Dados",
+    "p1": "Podemos processar informações em servidores localizados fora do seu estado ou país. Quando necessário, implementamos salvaguardas projetadas para proteger suas informações durante essas transferências."
+  },
+  "privacySection12": {
+    "title": "12) Suas Escolhas & Controles",
+    "p1": "Você pode controlar certas coletas de dados por meio de:",
+    "list": [
+      "Ajustar as configurações do navegador para bloquear ou excluir cookies.",
+      "Usar modos de proteção de privacidade ou rastreamento quando disponíveis.",
+      "Optar por não participar de cookies de análises/publicidade (quando oferecido)."
+    ]
+  },
+  "privacySection13": {
+    "title": "13) Seus Direitos",
+    "p1": "Dependendo da sua jurisdição, você pode ter direitos para acessar, atualizar, corrigir ou excluir certas informações, ou se opor/limitar o processamento. Você também pode ter o direito de retirar o consentimento quando o processamento se basear no consentimento. Para exercer esses direitos, entre em contato conosco usando os detalhes abaixo. Podemos precisar verificar sua identidade antes de responder."
+  },
+  "privacySection14": {
+    "title": "14) Links de Terceiros",
+    "p1": "Nosso site pode conter links para sites externos que não operamos. Não somos responsáveis pelo conteúdo ou pelas práticas de privacidade desses sites. Revise suas políticas antes de fornecer qualquer informação pessoal."
+  },
+  "privacySection15": {
+    "title": "15) Alterações a Esta Política",
+    "p1": "Podemos atualizar esta Política de Privacidade de tempos em tempos. As alterações serão publicadas nesta página com uma nova data de “Última Atualização”. O uso contínuo do GanakaHub após tais alterações significa que você aceita a política revisada. Recomendamos que você revise esta página periodicamente."
+  },
+  "privacySection16": {
+    "title": "16) Contato & Reclamações",
+    "p1": "Se você tiver perguntas, solicitações ou reclamações relacionadas à privacidade, você pode nos contatar:",
+    "email": "ganakahub@gmail.com",
+    "website": "https://www.ganakahub.com",
+    "p2": "Se você estiver localizado na Índia e desejar apresentar uma preocupação de acordo com as leis aplicáveis, você pode escrever para nosso <strong>Oficial de Reclamações</strong> no e-mail acima. Inclua detalhes suficientes para nos ajudar a tratar sua solicitação (por exemplo, URL específica, descrição do problema e suas informações de contato)."
+  },
+  "privacyFinalNote": {
+    "p1": "Esta Política de Privacidade foi criada para ser clara e simples. Ela não cria direitos contratuais ou legais em nome de nenhuma das partes, exceto conforme exigido pela legislação aplicável. Para entender como regulamentamos o uso do site, consulte nossos <strong>Termos & Condições</strong>."
+  }
+}
