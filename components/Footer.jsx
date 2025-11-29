@@ -234,7 +234,7 @@ export default function Footer() {
                   <FooterLink variant="body2" component="a">About Us</FooterLink>
                 </Link>
 
-                <Link href="#" passHref>
+                <Link href="/contact-us" passHref>
                   <FooterLink variant="body2" component="a">Contact Us</FooterLink>
                 </Link>
               </Stack>
