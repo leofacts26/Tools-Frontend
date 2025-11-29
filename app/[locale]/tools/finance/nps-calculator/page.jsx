@@ -6,6 +6,7 @@ import { createMetadata, SITE } from "@/lib/seo";
 import FAQAccordion from "@/components/common/FAQAccordion";
 import NPSCalculator from "@/components/calculators/NPSCalculator";
 import Image from 'next/image';
+import FormulaBlock from "@/components/common/FormulaBlock";
 
 
 
@@ -216,9 +217,16 @@ export default async function Page({ params }) {
                 <ol className="ou-list">
                   {npsCalc.article.calculationFormula.steps.map((step, idx) => (
                     <li key={idx}>
-                      <strong>{step.title}</strong>
-                      <pre className="formula-block">{step.formula}</pre>
-                      <p>{step.explanation}</p>
+                      <FormulaBlock
+                        title={step.title}
+                        formula={step.formula}
+                        ariaLabel={`nps-formula-${idx}`}
+                        showCopy={true}
+                        sx={{ marginBottom: 0 }} // optional: tweak spacing if needed
+                      >
+                        {/* explanation rendered as the optional children */}
+                        <p style={{ marginTop: 8 }}>{step.explanation}</p>
+                      </FormulaBlock>
                     </li>
                   ))}
                 </ol>

@@ -6,6 +6,7 @@ import { createMetadata, SITE } from "@/lib/seo";
 import FAQAccordion from "@/components/common/FAQAccordion";
 import EPFCalculator from "@/components/calculators/EPFCalculator";
 import Image from 'next/image';
+import FormulaBlock from "@/components/common/FormulaBlock";
 
 
 
@@ -210,6 +211,7 @@ export default async function Page({ params }) {
               </section>
 
 
+
               <section aria-labelledby={epfcalc.article.epfFormulaSection.id}>
                 <h3 id={epfcalc.article.epfFormulaSection.id} className="finance-sub-heading">
                   {epfcalc.article.epfFormulaSection.heading}
@@ -221,16 +223,27 @@ export default async function Page({ params }) {
                   {epfcalc.article.epfFormulaSection.formulas.map((item, index) => (
                     <li key={index}>
                       <strong>{item.title}</strong>
+
                       {item.expression && (
-                        <pre style={{ margin: "8px 0", fontFamily: "monospace" }}>
-                          {item.expression}
-                        </pre>
+                        <FormulaBlock
+                          title="Expression"
+                          formula={item.expression}
+                          ariaLabel={`epf-expression-${index}`}
+                          showCopy={true}
+                          sx={{ marginTop: 8, marginBottom: 8 }}
+                        />
                       )}
+
                       {item.formula && (
-                        <pre style={{ margin: "8px 0", fontFamily: "monospace" }}>
-                          {item.formula}
-                        </pre>
+                        <FormulaBlock
+                          title="Formula"
+                          formula={item.formula}
+                          ariaLabel={`epf-formula-${index}`}
+                          showCopy={true}
+                          sx={{ marginTop: 8, marginBottom: 8 }}
+                        />
                       )}
+
                       {item.explanation && <p>{item.explanation}</p>}
                     </li>
                   ))}
@@ -271,10 +284,15 @@ export default async function Page({ params }) {
                   {epfcalc.article.epfExampleWalkthroughSection.steps.map((step, index) => (
                     <li key={index}>
                       <strong>{step.title}</strong>
+
                       {step.formula && (
-                        <pre style={{ margin: "8px 0", fontFamily: "monospace" }}>
-                          {step.formula}
-                        </pre>
+                        <FormulaBlock
+                          title="Formula"
+                          formula={step.formula}
+                          ariaLabel={`epf-example-formula-${index}`}
+                          showCopy={true}
+                          sx={{ marginTop: 8, marginBottom: 8 }}
+                        />
                       )}
                     </li>
                   ))}
@@ -299,11 +317,19 @@ export default async function Page({ params }) {
 
                 <div style={{ marginTop: "1rem" }}>
                   <h4 className="finance-sub-heading-h4">Formulas:</h4>
+
                   <ul className="ou-list">
                     {epfcalc.article.employerContributionSection.formulas.map((item, index) => (
                       <li key={index}>
                         <strong>{item.title}</strong>
-                        <pre style={{ margin: "8px 0", fontFamily: "monospace" }}>{item.formula}</pre>
+
+                        <FormulaBlock
+                          title="Formula"
+                          formula={item.formula}
+                          ariaLabel={`epf-employer-formula-${index}`}
+                          showCopy={true}
+                          sx={{ marginTop: 8, marginBottom: 8 }}
+                        />
                       </li>
                     ))}
                   </ul>

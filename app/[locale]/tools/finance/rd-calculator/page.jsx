@@ -8,6 +8,7 @@ import MFReturnCalculator from "@/components/calculators/MFReturnCalculator";
 import FDCalculator from "@/components/calculators/FDCalculator";
 import RDCalculator from "@/components/calculators/RDCalculator";
 import Image from 'next/image';
+import FormulaBlock from "@/components/common/FormulaBlock";
 
 
 
@@ -223,11 +224,29 @@ export default async function Page({ params }) {
                 <p>{rdCalc.article.formulaSection.intro}</p>
 
                 <ol className="ou-list">
-                  {rdCalc.article.formulaSection.steps.map((step, idx) => (
-                    <li key={idx}>
-                      <pre style={{ fontFamily: "monospace", margin: "4px 0" }}>{step}</pre>
-                    </li>
-                  ))}
+                  {rdCalc.article.formulaSection.steps.map((step, idx) => {
+                    const isFormula =
+                      step.trim().startsWith("M =") ||
+                      step.trim().startsWith("Where") ||
+                      step.trim().includes("M =") ||
+                      step.trim().includes("=") && step.includes("(");
+
+                    return (
+                      <li key={idx}>
+                        {isFormula ? (
+                          <FormulaBlock
+                            title={`Formula ${idx + 1}`}
+                            formula={step}
+                            ariaLabel={`rd-formula-${idx}`}
+                            showCopy={true}
+                            sx={{ margin: "8px 0" }}
+                          />
+                        ) : (
+                          <p style={{ margin: "6px 0" }}>{step}</p>
+                        )}
+                      </li>
+                    );
+                  })}
                 </ol>
 
                 <ul className="ou-list">
@@ -263,11 +282,26 @@ export default async function Page({ params }) {
                 <p>{rdCalc.article.exampleSection.intro}</p>
 
                 <ol className="ou-list">
-                  {rdCalc.article.exampleSection.steps.map((step, idx) => (
-                    <li key={idx}>
-                      <pre style={{ fontFamily: "monospace", margin: "4px 0" }}>{step}</pre>
-                    </li>
-                  ))}
+                  {rdCalc.article.exampleSection.steps.map((step, idx) => {
+                    const isFormulaLine =
+                      step.trim().startsWith("M =") || step.trim().startsWith(" M =");
+
+                    return (
+                      <li key={idx}>
+                        {isFormulaLine ? (
+                          <FormulaBlock
+                            title="Formula"
+                            formula={step.replace(" ", "")}
+                            ariaLabel={`rd-example-formula-${idx}`}
+                            showCopy={true}
+                            sx={{ margin: "8px 0" }}
+                          />
+                        ) : (
+                          <p style={{ margin: "6px 0" }}>{step}</p>
+                        )}
+                      </li>
+                    );
+                  })}
                 </ol>
 
                 <p>{rdCalc.article.exampleSection.conclusion}</p>
@@ -322,13 +356,20 @@ export default async function Page({ params }) {
                 </ul>
 
                 <div style={{ marginTop: 12 }}>
-                  <h4 className="finance-sub-heading-h4">{rdCalc.article.withdrawalsPrematureTaxSection.formulaAdjustment.title}</h4>
-                  <p>{rdCalc.article.withdrawalsPrematureTaxSection.formulaAdjustment.explanation}</p>
-                  <pre style={{ margin: "8px 0", fontFamily: "monospace" }}>
-                    {rdCalc.article.withdrawalsPrematureTaxSection.formulaAdjustment.expression}
-                  </pre>
-                </div>
+                  <h4 className="finance-sub-heading-h4">
+                    {rdCalc.article.withdrawalsPrematureTaxSection.formulaAdjustment.title}
+                  </h4>
 
+                  <p>{rdCalc.article.withdrawalsPrematureTaxSection.formulaAdjustment.explanation}</p>
+
+                  <FormulaBlock
+                    title="Formula"
+                    formula={rdCalc.article.withdrawalsPrematureTaxSection.formulaAdjustment.expression}
+                    ariaLabel="rd-withdrawal-formula"
+                    showCopy={true}
+                    sx={{ marginTop: 8, marginBottom: 8 }}
+                  />
+                </div>
                 <h4 className="finance-sub-heading-h4">{rdCalc.article.withdrawalsPrematureTaxSection.example.title}</h4>
                 <p>{rdCalc.article.withdrawalsPrematureTaxSection.example.body}</p>
 
