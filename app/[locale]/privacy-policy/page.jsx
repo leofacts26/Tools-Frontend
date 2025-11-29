@@ -1,246 +1,304 @@
 import { Box, Typography, Container } from "@mui/material";
+import { createMetadata, SITE } from "@/lib/seo";
 
-export const metadata = {
-  title: "Privacy Policy | GanakaHub",
-  description:
-    "Privacy Policy for GanakaHub.com describing what data we collect, how we use it, cookies, analytics, security, and your choices.",
-};
 
-export default function Page() {
+export async function generateMetadata({ params }) {
+  const resolvedParams = await params;
+  const locale = resolvedParams?.locale || "en";
+
+  // load localized common defaults and the page content (sipcalc.json)
+  const common = (await import(`../../../messages/${locale}/common.json`).catch(() => ({}))).default || {};
+  const pageContent = (await import(`../../../messages/${locale}/pages/privacypolicy.json`).catch(() => ({}))).default || {};
+
+  // use the seo block from 1-crore-before-35-real-math.json (user provided)
+  const pageSeo = pageContent.seo || {};
+
+  // build opts for createMetadata (your lib/seo.js expects similar keys)
+  const opts = {
+    title: pageSeo.title || pageContent.site?.heading || common.site?.name || SITE.name,
+    description: pageSeo.description || common.site?.description || "",
+    slug: pageSeo.slug || "",
+    image: pageSeo.image || common.site?.defaultImage || "",
+    locale,
+    isArticle: Boolean(pageSeo.isArticle),
+    publishDate: pageSeo.publishDate,
+    modifiedDate: pageSeo.modifiedDate,
+    faqs: pageContent.faqs || [],
+  };
+
+  // createMetadata returns { title, description, openGraph, alternates, twitter, jsonLd }
+  const meta = createMetadata(opts);
+
+  // Build alternates/hreflang entries for all locales configured in SITE
+  const alternates = { canonical: meta.openGraph.url, languages: {} };
+  for (const lng of SITE.locales) {
+    const other = (await import(`../../../messages/${lng}/pages/privacypolicy.json`).catch(() => ({}))).default || {};
+    const otherSlug = other?.seo?.slug || opts.slug;
+    if (otherSlug) alternates.languages[lng] = `${SITE.url}/${lng}/${otherSlug}`;
+  }
+
+  // return the Next.js metadata object
+  return {
+    title: meta.title,
+    description: meta.description,
+    alternates,
+    openGraph: meta.openGraph,
+    twitter: meta.twitter,
+    robots: pageSeo?.noindex ? { index: false, follow: false } : undefined,
+  };
+}
+
+export default async function Page({ params }) {
+
+
+  const resolvedParams = await params;
+  const locale = resolvedParams?.locale || "en";
+  const pageContent = (await import(`../../../messages/${locale}/pages/privacypolicy.json`).catch(() => ({}))).default || {};
+
+
+  // Build Article JSON-LD if isArticle true
+  const articleJsonLd = pageContent.seo?.isArticle
+    ? {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      headline: pageContent.seo?.title || pageContent.site?.heading,
+      description: pageContent.seo?.description || "",
+      author: { "@type": "Person", name: pageContent.seo?.author || "Author" },
+      datePublished: pageContent.seo?.publishDate,
+      dateModified: pageContent.seo?.modifiedDate,
+      image: pageContent.seo?.image ? `${SITE.url}${pageContent.seo.image}` : undefined,
+      mainEntityOfPage: { "@type": "WebPage", "@id:": `${SITE.url}/${locale}/${pageContent.seo?.slug || ""}` },
+    }
+    : null;
+
   return (
-    <Box className="terms-wrapper">
-      <Container maxWidth="md">
-        <Typography className="terms-title">
-          Privacy Policy
-        </Typography>
+    <>
 
-        <Typography className="terms-subtle">
-          Last Updated: 01/11/2025
-        </Typography>
+      {/* JSON-LD: Article */}
+      {
+        articleJsonLd && (
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />
+        )
+      }
 
-        {/* INTRO */}
-        <Typography className="terms-text">
-          Welcome to <strong>GanakaHub.com</strong> (“<em>GanakaHub</em>”,
-          “we”, “our”, “us”). This Privacy Policy explains what information we
-          collect, how we use it, and the choices you have. By using our
-          website, tools, and services (including finance tools, student tools,
-          and utility tools), you agree to the practices described here. If you
-          do not agree, please discontinue use of GanakaHub.
-        </Typography>
 
-        {/* WHO WE ARE */}
-        <Typography className="terms-heading">1) Who We Are</Typography>
-        <Typography className="terms-text">
-          GanakaHub provides online calculators and utilities designed for
-          informational and educational purposes. We respect your privacy and
-          aim to collect only what is necessary to operate and improve our
-          services.
-        </Typography>
 
-        {/* WHAT WE COLLECT */}
-        <Typography className="terms-heading">2) Information We Collect</Typography>
-        <Typography className="terms-text">
-          We primarily collect limited, non-personal information to keep the
-          site running smoothly and understand usage patterns. Generally, we do
-          <strong> not</strong> require you to create an account or provide
-          sensitive data to use our calculators.
-        </Typography>
-        <Typography className="terms-text">We may collect:</Typography>
+      <Box className="terms-wrapper">
+        <Container maxWidth="md">
+          {/* PRIVACY POLICY TITLE */}
+          <Typography className="terms-title">
+            {pageContent.privacyIntro.title}
+          </Typography>
 
-        <ul className="terms-list">
-          <li>
-            <strong>Technical Data:</strong> IP address (often anonymized),
-            device type, operating system, browser type/version, language,
-            screen size, and general location (country/region).
-          </li>
-          <li>
-            <strong>Usage Data:</strong> pages viewed, time on page, referring
-            URLs, buttons clicked, scroll depth, and error logs for debugging.
-          </li>
-          <li>
-            <strong>Cookie Data:</strong> small text files stored on your device
-            to remember preferences, measure traffic, and improve experience.
-          </li>
-          <li>
-            <strong>Tool Inputs (Ephemeral):</strong> values you enter into our
-            calculators. These are used to compute results in your browser and
-            are generally not stored by us unless explicitly stated for a
-            feature (e.g., saved preferences in the future).
-          </li>
-        </ul>
+          <Typography className="terms-subtle">
+            Last Updated: {pageContent.privacyIntro.lastUpdated}
+          </Typography>
 
-        <Typography className="terms-text">
-          We do <strong>not</strong> knowingly collect sensitive personal data
-          (such as passwords, bank credentials, Aadhaar numbers, or medical
-          records).
-        </Typography>
+          {/* INTRO */}
+          <Typography
+            className="terms-text"
+            dangerouslySetInnerHTML={{ __html: pageContent.privacyIntro.p1 }}
+          />
 
-        {/* HOW WE USE */}
-        <Typography className="terms-heading">3) How We Use Information</Typography>
-        <Typography className="terms-text">
-          We use the information we collect to:
-        </Typography>
-        <ul className="terms-list">
-          <li>Operate, maintain, and improve our calculators and website.</li>
-          <li>Monitor performance, fix issues, and enhance usability.</li>
-          <li>Measure traffic, understand user behavior, and plan new features.</li>
-          <li>Protect the site against abuse, fraud, and security threats.</li>
-          <li>Comply with legal obligations and enforce our Terms & Conditions.</li>
-        </ul>
+          {/* SECTION 1: WHO WE ARE */}
+          <Typography className="terms-heading">
+            {pageContent.privacySection1.title}
+          </Typography>
 
-        {/* LEGAL BASIS */}
-        <Typography className="terms-heading">4) Legal Bases (Where Applicable)</Typography>
-        <Typography className="terms-text">
-          Depending on your region, we may rely on one or more of the following
-          legal bases to process your information: <strong>legitimate interests</strong>
-          (to operate and secure our services), <strong>consent</strong> (for
-          certain cookies/analytics), and <strong>compliance with legal obligations</strong>.
-        </Typography>
+          <Typography className="terms-text">
+            {pageContent.privacySection1.p1}
+          </Typography>
 
-        {/* COOKIES */}
-        <Typography className="terms-heading">5) Cookies & Similar Technologies</Typography>
-        <Typography className="terms-text">
-          We use cookies and similar technologies to remember preferences,
-          analyze traffic, and improve performance. You can manage cookies via
-          your browser settings and, where available, a cookie banner or
-          preferences panel. Disabling certain cookies may affect site
-          functionality.
-        </Typography>
+          {/* SECTION 2 - INFORMATION WE COLLECT */}
+          <Typography className="terms-heading">
+            {pageContent.privacySection2.title}
+          </Typography>
 
-        {/* ANALYTICS / ADS */}
-        <Typography className="terms-heading">6) Analytics, Advertising & Affiliates</Typography>
-        <Typography className="terms-text">
-          We may use privacy-conscious analytics tools to measure engagement and
-          improve the site. We may also display ads or affiliate links. Third
-          parties involved in analytics or ads may set their own cookies and
-          collect data as described in their privacy policies. We do not sell
-          your personal information.
-        </Typography>
+          <Typography
+            className="terms-text"
+            dangerouslySetInnerHTML={{ __html: pageContent.privacySection2.p1 }}
+          />
 
-        {/* DATA SHARING */}
-        <Typography className="terms-heading">7) When We Share Information</Typography>
-        <Typography className="terms-text">
-          We do not sell your data. We may share limited information with:
-        </Typography>
-        <ul className="terms-list">
-          <li>
-            <strong>Service Providers:</strong> vendors who help us operate the
-            site (e.g., hosting, analytics, security). They are bound by
-            contractual obligations to protect your data.
-          </li>
-          <li>
-            <strong>Legal/Compliance:</strong> when required by law, regulation,
-            legal process, or to protect rights, safety, and integrity of
-            GanakaHub and its users.
-          </li>
-          <li>
-            <strong>Business Changes:</strong> if we undergo a merger,
-            acquisition, or asset transfer, your data may be transferred as part
-            of that transaction with appropriate safeguards.
-          </li>
-        </ul>
+          <Typography className="terms-text">
+            {pageContent.privacySection2.p2}
+          </Typography>
 
-        {/* DATA RETENTION */}
-        <Typography className="terms-heading">8) Data Retention</Typography>
-        <Typography className="terms-text">
-          We retain analytics and server logs for only as long as necessary to
-          fulfill the purposes outlined in this policy, comply with legal
-          obligations, resolve disputes, and enforce agreements. Calculator
-          inputs are typically processed in your browser and not stored on our
-          servers unless a feature clearly indicates saving preferences.
-        </Typography>
+          <ul className="terms-list">
+            {pageContent.privacySection2.list?.map((item, index) => (
+              <li key={index} dangerouslySetInnerHTML={{ __html: item }} />
+            ))}
+          </ul>
 
-        {/* DATA SECURITY */}
-        <Typography className="terms-heading">9) Data Security</Typography>
-        <Typography className="terms-text">
-          We implement reasonable technical and organizational measures to
-          protect information against unauthorized access, alteration, or
-          destruction. However, no method of transmission or storage is 100%
-          secure, and we cannot guarantee absolute security.
-        </Typography>
+          <Typography
+            className="terms-text"
+            dangerouslySetInnerHTML={{ __html: pageContent.privacySection2.p3 }}
+          />
 
-        {/* CHILDREN */}
-        <Typography className="terms-heading">10) Children’s Privacy</Typography>
-        <Typography className="terms-text">
-          GanakaHub is intended for general audiences and not directed to
-          children under 13 (or the applicable age in your region). We do not
-          knowingly collect personal data from children. If you believe a child
-          has provided personal data, please contact us so we can take
-          appropriate action.
-        </Typography>
+          {/* SECTION 3 - HOW WE USE INFORMATION */}
+          <Typography className="terms-heading">
+            {pageContent.privacySection3.title}
+          </Typography>
 
-        {/* INTERNATIONAL TRANSFERS */}
-        <Typography className="terms-heading">11) International Data Transfers</Typography>
-        <Typography className="terms-text">
-          We may process information on servers located outside your state or
-          country. Where required, we implement safeguards designed to protect
-          your information during such transfers.
-        </Typography>
+          <Typography className="terms-text">
+            {pageContent.privacySection3.p1}
+          </Typography>
 
-        {/* YOUR CHOICES */}
-        <Typography className="terms-heading">12) Your Choices & Controls</Typography>
-        <Typography className="terms-text">
-          You can control certain data collection by:
-        </Typography>
-        <ul className="terms-list">
-          <li>Adjusting browser settings to block or delete cookies.</li>
-          <li>Using privacy or tracking protection modes where available.</li>
-          <li>Opting out of analytics/advertising cookies (where offered).</li>
-        </ul>
+          <ul className="terms-list">
+            {pageContent.privacySection3.list?.map((item, index) => (
+              <li key={index}>{item}</li>
+            ))}
+          </ul>
 
-        {/* YOUR RIGHTS */}
-        <Typography className="terms-heading">13) Your Rights</Typography>
-        <Typography className="terms-text">
-          Depending on your jurisdiction, you may have rights to access, update,
-          correct, or delete certain information, or object to/limit processing.
-          You may also have the right to withdraw consent where processing is
-          based on consent. To exercise these rights, contact us using the
-          details below. We may need to verify your identity before responding.
-        </Typography>
+          {/* SECTION 4 - LEGAL BASES */}
+          <Typography className="terms-heading">
+            {pageContent.privacySection4.title}
+          </Typography>
 
-        {/* THIRD-PARTY LINKS */}
-        <Typography className="terms-heading">14) Third-Party Links</Typography>
-        <Typography className="terms-text">
-          Our website may link to external sites we do not operate. We are not
-          responsible for the content or privacy practices of those websites.
-          Review their policies before providing any personal information.
-        </Typography>
+          <Typography
+            className="terms-text"
+            dangerouslySetInnerHTML={{ __html: pageContent.privacySection4.p1 }}
+          />
 
-        {/* CHANGES */}
-        <Typography className="terms-heading">15) Changes to This Policy</Typography>
-        <Typography className="terms-text">
-          We may update this Privacy Policy from time to time. Changes will be
-          posted on this page with an updated “Last Updated” date. Your
-          continued use of GanakaHub after such changes means you accept the
-          revised policy. We encourage you to review this page periodically.
-        </Typography>
+          {/* SECTION 5 - COOKIES */}
+          <Typography className="terms-heading">
+            {pageContent.privacySection5.title}
+          </Typography>
 
-        {/* CONTACT / GRIEVANCE */}
-        <Typography className="terms-heading">16) Contact & Grievance</Typography>
-        <Typography className="terms-text">
-          If you have questions, requests, or complaints regarding privacy, you
-          can contact us:
-          <br />
-          <strong>Email:</strong> ganakahub@gmail.com
-          <br />
-          <strong>Website:</strong> https://www.ganakahub.com
-        </Typography>
-        <Typography className="terms-text">
-          If you are located in India and wish to raise a concern under
-          applicable laws, you may write to our <strong>Grievance Officer</strong> at
-          the email above. Please include sufficient details to help us address
-          your request (e.g., specific URL, description of the issue, and your
-          contact information).
-        </Typography>
+          <Typography className="terms-text">
+            {pageContent.privacySection5.p1}
+          </Typography>
 
-        {/* FINAL NOTE */}
-        <Typography className="terms-text">
-          This Privacy Policy is intended to be clear and simple. It does not
-          create contractual or legal rights on behalf of any party, except as
-          required by applicable law. For how we govern your use of the site,
-          please refer to our <strong>Terms &amp; Conditions</strong>.
-        </Typography>
-      </Container>
-    </Box>
+          {/* SECTION 6 - ANALYTICS */}
+          <Typography className="terms-heading">
+            {pageContent.privacySection6.title}
+          </Typography>
+
+          <Typography className="terms-text">
+            {pageContent.privacySection6.p1}
+          </Typography>
+
+          {/* SECTION 7 - DATA SHARING */}
+          <Typography className="terms-heading">
+            {pageContent.privacySection7.title}
+          </Typography>
+
+          <Typography className="terms-text">
+            {pageContent.privacySection7.p1}
+          </Typography>
+
+          <ul className="terms-list">
+            {pageContent.privacySection7.list?.map((item, index) => (
+              <li key={index} dangerouslySetInnerHTML={{ __html: item }} />
+            ))}
+          </ul>
+
+
+          {/* SECTION 8 - DATA RETENTION */}
+          <Typography className="terms-heading">
+            {pageContent.privacySection8.title}
+          </Typography>
+
+          <Typography className="terms-text">
+            {pageContent.privacySection8.p1}
+          </Typography>
+
+          {/* SECTION 9 - DATA SECURITY */}
+          <Typography className="terms-heading">
+            {pageContent.privacySection9.title}
+          </Typography>
+
+          <Typography className="terms-text">
+            {pageContent.privacySection9.p1}
+          </Typography>
+
+          {/* SECTION 10 - CHILDREN'S PRIVACY */}
+          <Typography className="terms-heading">
+            {pageContent.privacySection10.title}
+          </Typography>
+
+          <Typography className="terms-text">
+            {pageContent.privacySection10.p1}
+          </Typography>
+
+          {/* SECTION 11 - INTERNATIONAL DATA TRANSFERS */}
+          <Typography className="terms-heading">
+            {pageContent.privacySection11.title}
+          </Typography>
+
+          <Typography className="terms-text">
+            {pageContent.privacySection11.p1}
+          </Typography>
+
+          {/* SECTION 12 - YOUR CHOICES */}
+          <Typography className="terms-heading">
+            {pageContent.privacySection12.title}
+          </Typography>
+
+          <Typography className="terms-text">
+            {pageContent.privacySection12.p1}
+          </Typography>
+
+          <ul className="terms-list">
+            {pageContent.privacySection12.list?.map((item, index) => (
+              <li key={index}>{item}</li>
+            ))}
+          </ul>
+
+
+          {/* SECTION 13 - YOUR RIGHTS */}
+          <Typography className="terms-heading">
+            {pageContent.privacySection13.title}
+          </Typography>
+
+          <Typography className="terms-text">
+            {pageContent.privacySection13.p1}
+          </Typography>
+
+          {/* SECTION 14 - THIRD-PARTY LINKS */}
+          <Typography className="terms-heading">
+            {pageContent.privacySection14.title}
+          </Typography>
+
+          <Typography className="terms-text">
+            {pageContent.privacySection14.p1}
+          </Typography>
+
+          {/* SECTION 15 - CHANGES */}
+          <Typography className="terms-heading">
+            {pageContent.privacySection15.title}
+          </Typography>
+
+          <Typography className="terms-text">
+            {pageContent.privacySection15.p1}
+          </Typography>
+
+          {/* SECTION 16 - CONTACT & GRIEVANCE */}
+          <Typography className="terms-heading">
+            {pageContent.privacySection16.title}
+          </Typography>
+
+          <Typography className="terms-text">
+            {pageContent.privacySection16.p1}
+            <br />
+            <strong>Email:</strong> {pageContent.privacySection16.email}
+            <br />
+            <strong>Website:</strong> {pageContent.privacySection16.website}
+          </Typography>
+
+          <Typography
+            className="terms-text"
+            dangerouslySetInnerHTML={{ __html: pageContent.privacySection16.p2 }}
+          />
+
+          {/* FINAL NOTE */}
+          <Typography
+            className="terms-text"
+            dangerouslySetInnerHTML={{ __html: pageContent.privacyFinalNote.p1 }}
+          />
+
+        </Container>
+      </Box>
+
+    </>
   );
 }

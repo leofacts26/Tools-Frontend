@@ -56,20 +56,6 @@ export default async function Page({ params }) {
   const pageContent = (await import(`../../../messages/${locale}/pages/about.json`).catch(() => ({}))).default || {};
 
 
-  // Build JSON-LD for FAQ (if any)
-  const faqJsonLd =
-    pageContent.faqs && pageContent.faqs.length
-      ? {
-        "@context": "https://schema.org",
-        "@type": "FAQPage",
-        mainEntity: pageContent.faqs.map((f) => ({
-          "@type": "Question",
-          name: f.q,
-          acceptedAnswer: { "@type": "Answer", text: f.a },
-        })),
-      }
-      : null;
-
   // Build Article JSON-LD if isArticle true
   const articleJsonLd = pageContent.seo?.isArticle
     ? {
@@ -87,198 +73,208 @@ export default async function Page({ params }) {
 
 
   return (
-    <Box className="terms-wrapper">
-      <Container maxWidth="md">
+    <>
+      {/* JSON-LD: Article */}
+      {
+        articleJsonLd && (
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />
+        )
+      }
 
-        <Typography className="terms-title">
-          {pageContent.title}
-        </Typography>
+      <Box className="terms-wrapper">
+        <Container maxWidth="md">
 
-        <Typography className="terms-subtle">
-          Last Updated: {pageContent.lastUpdated}
-        </Typography>
+          <Typography className="terms-title">
+            {pageContent.title}
+          </Typography>
 
-        <Typography className="terms-text">
-          {pageContent.intro.p1}
-        </Typography>
+          <Typography className="terms-subtle">
+            Last Updated: {pageContent.lastUpdated}
+          </Typography>
 
-        <Typography className="terms-text">
-          {pageContent.intro.p2}
-        </Typography>
+          <Typography className="terms-text">
+            {pageContent.intro.p1}
+          </Typography>
 
-
-        {/* OUR MISSION */}
-        <Typography className="terms-heading">
-          {pageContent.mission.title}
-        </Typography>
-
-        <Typography className="terms-text">
-          {pageContent.mission.p1}
-        </Typography>
-
-        <ul className="terms-list">
-          {pageContent.mission.list?.map((item, index) => (
-            <li key={index}>{item}</li>
-          ))}
-        </ul>
-
-        <Typography className="terms-text">
-          {pageContent.mission.p2}
-        </Typography>
+          <Typography className="terms-text">
+            {pageContent.intro.p2}
+          </Typography>
 
 
-        {/* STORY */}
-        <Typography className="terms-heading">
-          {pageContent.story.title}
-        </Typography>
+          {/* OUR MISSION */}
+          <Typography className="terms-heading">
+            {pageContent.mission.title}
+          </Typography>
 
-        <Typography className="terms-text">
-          {pageContent.story.p1}
-        </Typography>
+          <Typography className="terms-text">
+            {pageContent.mission.p1}
+          </Typography>
 
-        <ul className="terms-list">
-          {pageContent.story.list?.map((item, index) => (
-            <li key={index}>{item}</li>
-          ))}
-        </ul>
+          <ul className="terms-list">
+            {pageContent.mission.list?.map((item, index) => (
+              <li key={index}>{item}</li>
+            ))}
+          </ul>
 
-        <Typography className="terms-text">
-          {pageContent.story.p2}
-        </Typography>
-
-
-
-        {/* WHAT WE PROVIDE */}
-        <Typography className="terms-heading">
-          {pageContent.provide.title}
-        </Typography>
-
-        <Typography className="terms-text">
-          {pageContent.provide.p1}
-        </Typography>
-
-        <ul className="terms-list">
-          {pageContent.provide.list?.map((item, index) => (
-            <li
-              key={index}
-              dangerouslySetInnerHTML={{ __html: item }}
-            />
-          ))}
-        </ul>
-
-        <Typography className="terms-text">
-          {pageContent.provide.p2}
-        </Typography>
+          <Typography className="terms-text">
+            {pageContent.mission.p2}
+          </Typography>
 
 
-        {/* WHY WE BUILT */}
-        <Typography className="terms-heading">
-          {pageContent.whyBuilt.title}
-        </Typography>
+          {/* STORY */}
+          <Typography className="terms-heading">
+            {pageContent.story.title}
+          </Typography>
 
-        <Typography className="terms-text">
-          {pageContent.whyBuilt.p1}
-        </Typography>
+          <Typography className="terms-text">
+            {pageContent.story.p1}
+          </Typography>
 
-        <ul className="terms-list">
-          {pageContent.whyBuilt.list?.map((item, index) => (
-            <li key={index}>{item}</li>
-          ))}
-        </ul>
+          <ul className="terms-list">
+            {pageContent.story.list?.map((item, index) => (
+              <li key={index}>{item}</li>
+            ))}
+          </ul>
 
-        <Typography className="terms-text">
-          {pageContent.whyBuilt.p2}
-        </Typography>
-
-
-        {/* OUR VALUES */}
-        <Typography className="terms-heading">
-          {pageContent.values.title}
-        </Typography>
-
-        <Typography className="terms-text">
-          {pageContent.values.p1}
-        </Typography>
-
-        <ul className="terms-list">
-          {pageContent.values.list?.map((item, index) => (
-            <li
-              key={index}
-              dangerouslySetInnerHTML={{ __html: item }}
-            />
-          ))}
-        </ul>
+          <Typography className="terms-text">
+            {pageContent.story.p2}
+          </Typography>
 
 
-        {/* WHO WE SERVE */}
-        <Typography className="terms-heading">
-          {pageContent.serve.title}
-        </Typography>
 
-        <Typography className="terms-text">
-          {pageContent.serve.p1}
-        </Typography>
+          {/* WHAT WE PROVIDE */}
+          <Typography className="terms-heading">
+            {pageContent.provide.title}
+          </Typography>
 
-        <ul className="terms-list">
-          {pageContent.serve.list?.map((item, index) => (
-            <li key={index}>{item}</li>
-          ))}
-        </ul>
+          <Typography className="terms-text">
+            {pageContent.provide.p1}
+          </Typography>
 
-        <Typography className="terms-text">
-          {pageContent.serve.p2}
-        </Typography>
+          <ul className="terms-list">
+            {pageContent.provide.list?.map((item, index) => (
+              <li
+                key={index}
+                dangerouslySetInnerHTML={{ __html: item }}
+              />
+            ))}
+          </ul>
 
-        {/* COMMITMENT */}
-        <Typography className="terms-heading">
-          {pageContent.commitment.title}
-        </Typography>
-
-        <Typography className="terms-text">
-          {pageContent.commitment.p1}
-        </Typography>
-
-        <ul className="terms-list">
-          {pageContent.commitment.list?.map((item, index) => (
-            <li key={index}>{item}</li>
-          ))}
-        </ul>
+          <Typography className="terms-text">
+            {pageContent.provide.p2}
+          </Typography>
 
 
-        {/* FUTURE */}
-        <Typography className="terms-heading">
-          {pageContent.future.title}
-        </Typography>
+          {/* WHY WE BUILT */}
+          <Typography className="terms-heading">
+            {pageContent.whyBuilt.title}
+          </Typography>
 
-        <Typography className="terms-text">
-          {pageContent.future.p1}
-        </Typography>
+          <Typography className="terms-text">
+            {pageContent.whyBuilt.p1}
+          </Typography>
 
-        <ul className="terms-list">
-          {pageContent.future.list?.map((item, index) => (
-            <li key={index}>{item}</li>
-          ))}
-        </ul>
+          <ul className="terms-list">
+            {pageContent.whyBuilt.list?.map((item, index) => (
+              <li key={index}>{item}</li>
+            ))}
+          </ul>
+
+          <Typography className="terms-text">
+            {pageContent.whyBuilt.p2}
+          </Typography>
 
 
-        {/* CONTACT */}
-        <Typography className="terms-heading">
-          {pageContent.contact.title}
-        </Typography>
+          {/* OUR VALUES */}
+          <Typography className="terms-heading">
+            {pageContent.values.title}
+          </Typography>
 
-        <Typography className="terms-text">
-          {pageContent.contact.p1}
-          <br />
-          <strong>Email:</strong> {pageContent.contact.email}
-          <br />
-          <strong>Website:</strong> {pageContent.contact.website}
-        </Typography>
+          <Typography className="terms-text">
+            {pageContent.values.p1}
+          </Typography>
 
-        <Typography className="terms-text">
-          {pageContent.contact.p2}
-        </Typography>
+          <ul className="terms-list">
+            {pageContent.values.list?.map((item, index) => (
+              <li
+                key={index}
+                dangerouslySetInnerHTML={{ __html: item }}
+              />
+            ))}
+          </ul>
 
-      </Container>
-    </Box>
+
+          {/* WHO WE SERVE */}
+          <Typography className="terms-heading">
+            {pageContent.serve.title}
+          </Typography>
+
+          <Typography className="terms-text">
+            {pageContent.serve.p1}
+          </Typography>
+
+          <ul className="terms-list">
+            {pageContent.serve.list?.map((item, index) => (
+              <li key={index}>{item}</li>
+            ))}
+          </ul>
+
+          <Typography className="terms-text">
+            {pageContent.serve.p2}
+          </Typography>
+
+          {/* COMMITMENT */}
+          <Typography className="terms-heading">
+            {pageContent.commitment.title}
+          </Typography>
+
+          <Typography className="terms-text">
+            {pageContent.commitment.p1}
+          </Typography>
+
+          <ul className="terms-list">
+            {pageContent.commitment.list?.map((item, index) => (
+              <li key={index}>{item}</li>
+            ))}
+          </ul>
+
+
+          {/* FUTURE */}
+          <Typography className="terms-heading">
+            {pageContent.future.title}
+          </Typography>
+
+          <Typography className="terms-text">
+            {pageContent.future.p1}
+          </Typography>
+
+          <ul className="terms-list">
+            {pageContent.future.list?.map((item, index) => (
+              <li key={index}>{item}</li>
+            ))}
+          </ul>
+
+
+          {/* CONTACT */}
+          <Typography className="terms-heading">
+            {pageContent.contact.title}
+          </Typography>
+
+          <Typography className="terms-text">
+            {pageContent.contact.p1}
+            <br />
+            <strong>Email:</strong> {pageContent.contact.email}
+            <br />
+            <strong>Website:</strong> {pageContent.contact.website}
+          </Typography>
+
+          <Typography className="terms-text">
+            {pageContent.contact.p2}
+          </Typography>
+
+        </Container>
+      </Box>
+
+    </>
   );
 }
