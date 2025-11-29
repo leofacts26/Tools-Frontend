@@ -153,5 +153,39 @@
       },
       "note": "If you’re unsure which applies, check the financial product’s terms. Our Simple Interest Calculator is for non-compounding cases; use a compound interest or FD calculator for reinvested interest scenarios."
     }
-  }
+  },
+  "faqs": [
+    {
+      "q": "What is a Simple Interest Calculator?",
+      "a": "A Simple Interest Calculator helps you find the interest earned or payable on a principal amount over a specific period at a fixed interest rate."
+    },
+    {
+      "q": "How does a Simple Interest Calculator work?",
+      "a": "It uses the formula SI = (Principal × Rate × Time) / 100 to calculate total interest and the final amount you will receive or pay."
+    },
+    {
+      "q": "What inputs do I need to use the calculator?",
+      "a": "You need to enter three values: the principal amount, the annual interest rate, and the time period in months or years."
+    },
+    {
+      "q": "Is simple interest the same as compound interest?",
+      "a": "No. Simple interest is calculated only on the principal amount, while compound interest is calculated on the principal plus accumulated interest."
+    },
+    {
+      "q": "Can I use this calculator for loans and savings?",
+      "a": "Yes. The calculator works for both — personal loans, education loans, and also savings schemes that use simple interest."
+    },
+    {
+      "q": "Does the calculator support different time periods?",
+      "a": "Yes. You can calculate simple interest for days, months, or years by adjusting the time period input."
+    },
+    {
+      "q": "Are the calculator results accurate?",
+      "a": "Yes. Simple interest is straightforward, so the calculator provides exact results based on the formula."
+    },
+    {
+      "q": "Does the calculator include taxes or penalties?",
+      "a": "No. The calculator only computes interest. Taxes, fees, or penalties are not included and may vary by lender or bank."
+    }
+  ]
 }

@@ -66,7 +66,7 @@ export async function generateMetadata({ params }) {
 
 export default async function Page({ params }) {
 
-    const resolvedParams = await params;     // 🔥 FIX
+  const resolvedParams = await params;     // 🔥 FIX
   const locale = resolvedParams.locale;
   const nscCalc = (await import(`../../../../../messages/${locale}/nscCalc.json`)).default;
 
@@ -296,13 +296,11 @@ export default async function Page({ params }) {
               </section>
 
 
-
-
-
-
-
-
             </article>
+
+
+            <FAQAccordion faqs={nscCalc?.faqs ?? []} title="NSC (National Savings Certificate) Calculator: FAQs" />
+
 
 
 

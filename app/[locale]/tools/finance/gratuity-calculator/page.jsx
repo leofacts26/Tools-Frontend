@@ -305,12 +305,11 @@ export default async function Page({ params }) {
               </section>
 
 
-
-
-
-
-
             </article>
+
+
+            <FAQAccordion faqs={gratuityCalc?.faqs ?? []} title="gratuity Calculator: FAQs" />
+
 
 
 

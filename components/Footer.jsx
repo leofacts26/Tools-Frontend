@@ -113,7 +113,7 @@ export default function Footer() {
             sx={{ maxWidth: "1200px", width: "100%" }}
           >
             {/* Column 1 */}
-            <Grid size={{ xs: 12, sm:12, md: 3, lg:3 }}>
+            <Grid size={{ xs: 12, sm: 12, md: 3, lg: 3 }}>
               <Typography variant="h6" fontWeight="bold">
                 Ganaka <span style={{ color: "#ec407a" }}>Hub</span>
               </Typography>
@@ -143,7 +143,7 @@ export default function Footer() {
             </Grid>
 
             {/* Column 2 */}
-            <Grid size={{ xs: 6, sm:6, md: 3, lg:3 }}>
+            <Grid size={{ xs: 6, sm: 6, md: 3, lg: 3 }}>
               <FooterHeading>Finance</FooterHeading>
               <Stack spacing={1}>
                 <Link href="/tools/finance/sip-calculator" passHref>
@@ -179,7 +179,7 @@ export default function Footer() {
             </Grid>
 
             {/* Column 3 */}
-            <Grid size={{ xs: 6, sm:6, md: 3, lg:3 }}>
+            <Grid size={{ xs: 6, sm: 6, md: 3, lg: 3 }}>
               <FooterHeading>Students</FooterHeading>
               <Stack spacing={1}>
                 <Link href="javascript:void(0)" passHref>
@@ -215,7 +215,7 @@ export default function Footer() {
             </Grid>
 
             {/* Column 4 */}
-            <Grid size={{ xs: 6, sm:6, md: 3, lg:3 }}>
+            <Grid size={{ xs: 6, sm: 6, md: 3, lg: 3 }}>
               <FooterHeading>Resources</FooterHeading>
               <Stack spacing={1}>
                 <Link href="/terms-and-conditions" passHref>
@@ -232,6 +232,10 @@ export default function Footer() {
 
                 <Link href="/about-us" passHref>
                   <FooterLink variant="body2" component="a">About Us</FooterLink>
+                </Link>
+
+                <Link href="#" passHref>
+                  <FooterLink variant="body2" component="a">Contact Us</FooterLink>
                 </Link>
               </Stack>
             </Grid>

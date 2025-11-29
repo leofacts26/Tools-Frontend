@@ -382,6 +382,9 @@ export default async function Page({ params }) {
 
             </article>
 
+            <FAQAccordion faqs={epfcalc?.faqs ?? []} title="EPFO (Employees' Provident Fund Organisation): FAQs" />
+
+
 
             {/* </Paper> */}
           </Grid>

@@ -707,7 +707,7 @@ export default async function Page({ params }) {
 
             </article>
 
-            <FAQAccordion faqs={swp?.faqs ?? []} />
+            <FAQAccordion faqs={swp?.faqs ?? []}  title="SWP (Systematic Withdrawal Plan) Calculator: FAQs" />
 
 
             {/* </Paper> */}

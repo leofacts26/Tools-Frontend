@@ -138,5 +138,40 @@
         "The government amended the Act to raise the gratuity ceiling to ₹20 lakh; tax exemption rules also reference this cap — check official notifications or tax guidance for the current effective limits before filing returns."
       ]
     }
+  },
+  "faqs": [
+  {
+    "q": "What is a Gratuity Calculator?",
+    "a": "A Gratuity Calculator helps you estimate the amount you will receive as gratuity when you leave your job, retire, or complete 5 years of continuous service."
+  },
+  {
+    "q": "How does the Gratuity Calculator work?",
+    "a": "It uses the formula: Gratuity = (Last Drawn Salary × Years of Service × 15) / 26, based on the Payment of Gratuity Act, 1972."
+  },
+  {
+    "q": "Who is eligible for gratuity?",
+    "a": "Employees who complete at least 5 years of continuous service in a company are eligible for gratuity. Exceptions apply in case of death or disability."
+  },
+  {
+    "q": "What salary components are used in gratuity calculation?",
+    "a": "The calculator uses Basic Salary + Dearness Allowance (DA), and sometimes commission linked to sales, if applicable."
+  },
+  {
+    "q": "Is the gratuity amount taxable?",
+    "a": "Yes, gratuity received from private companies is taxable above the exemption limit. For government employees, it is fully tax-free."
+  },
+  {
+    "q": "Can I calculate gratuity for more than 5 years of service?",
+    "a": "Yes. The calculator allows you to enter any number of completed years to estimate your total gratuity amount."
+  },
+  {
+    "q": "Does the calculator consider partial years of service?",
+    "a": "Yes. Service above 6 months is rounded to 1 full year, while service below 6 months is ignored, as per gratuity rules."
+  },
+  {
+    "q": "Can the gratuity amount change in the future?",
+    "a": "Yes. Your gratuity amount may change if your salary increases or you complete more years of service before leaving the job."
   }
+]
+
 }

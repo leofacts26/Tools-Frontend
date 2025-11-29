@@ -13,7 +13,7 @@ import Image from 'next/image';
 
 
 export async function generateMetadata({ params }) {
-   // ⛔ params is async — you MUST await it
+  // ⛔ params is async — you MUST await it
   const resolvedParams = await params;
   const locale = resolvedParams?.locale || "en";
 
@@ -388,6 +388,11 @@ export default async function Page({ params }) {
 
 
             </article>
+
+
+
+            <FAQAccordion faqs={fdCalc?.faqs ?? []} title="FD (Fixed Deposit) Calculator: FAQs" />
+
 
 
 

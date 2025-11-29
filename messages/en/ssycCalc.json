@@ -257,5 +257,47 @@
         "Secure. Smart. Tax-Free."
       ]
     }
-  }
+  },
+   "faqs": [
+      {
+        "q": "What is Sukanya Samriddhi Yojana (SSY)?",
+        "a": "Sukanya Samriddhi Yojana is a government-backed savings scheme designed for the financial security of a girl child. It offers high interest rates and tax benefits."
+      },
+      {
+        "q": "Who can open an SSY account?",
+        "a": "Parents or legal guardians of a girl child below 10 years of age can open the SSY account."
+      },
+      {
+        "q": "How many SSY accounts can be opened?",
+        "a": "You can open one SSY account per girl child and a maximum of two accounts for two daughters."
+      },
+      {
+        "q": "What is the minimum and maximum deposit allowed?",
+        "a": "You can deposit a minimum of ₹250 and up to ₹1.5 lakh in a financial year."
+      },
+      {
+        "q": "What is the current interest rate of SSY?",
+        "a": "The interest rate is announced every quarter by the Government of India. It is one of the highest among small savings schemes."
+      },
+      {
+        "q": "How long do I need to deposit in the SSY account?",
+        "a": "Deposits need to be made for 15 years from the date of account opening. The account matures after 21 years."
+      },
+      {
+        "q": "Can the girl operate the SSY account herself?",
+        "a": "Yes, once the girl turns 18, she can operate the account along with the guardian."
+      },
+      {
+        "q": "Is premature withdrawal allowed?",
+        "a": "Yes, up to 50% of the balance can be withdrawn when the girl turns 18, for education or other important needs."
+      },
+      {
+        "q": "Can the SSY account be closed early?",
+        "a": "Early closure is allowed only in special cases such as the death of the girl child or when the guardian faces life-threatening illness."
+      },
+      {
+        "q": "Are SSY deposits eligible for tax benefits?",
+        "a": "Yes, deposits qualify for tax deductions under Section 80C, and the maturity amount is fully tax-free."
+      }
+    ]
 }

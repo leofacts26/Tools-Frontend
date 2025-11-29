@@ -308,6 +308,9 @@ export default async function Page({ params }) {
 
             </article>
 
+            <FAQAccordion faqs={npsCalc?.faqs ?? []} title="NPS (National Pension System) Calculator: FAQs" />
+
+
 
 
 

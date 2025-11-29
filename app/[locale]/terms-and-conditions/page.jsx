@@ -1,12 +1,91 @@
 import { Box, Typography, Container } from "@mui/material";
+import { createMetadata, SITE } from "@/lib/seo";
 
-export const metadata = {
-  title: "Terms & Conditions | GanakaHub",
-  description:
-    "Read the Terms & Conditions for GanakaHub.com, covering the use of finance tools, student tools, and general utility tools.",
-};
 
-export default function Page() {
+export async function generateMetadata({ params }) {
+  const resolvedParams = await params;
+  const locale = resolvedParams?.locale || "en";
+
+  // load localized common defaults and the page content (sipcalc.json)
+  const common = (await import(`../../../messages/${locale}/common.json`).catch(() => ({}))).default || {};
+  const pageContent = (await import(`../../../messages/${locale}/pages/terms.json`).catch(() => ({}))).default || {};
+
+  // use the seo block from 1-crore-before-35-real-math.json (user provided)
+  const pageSeo = pageContent.seo || {};
+
+  // build opts for createMetadata (your lib/seo.js expects similar keys)
+  const opts = {
+    title: pageSeo.title || pageContent.site?.heading || common.site?.name || SITE.name,
+    description: pageSeo.description || common.site?.description || "",
+    slug: pageSeo.slug || "",
+    image: pageSeo.image || common.site?.defaultImage || "",
+    locale,
+    isArticle: Boolean(pageSeo.isArticle),
+    publishDate: pageSeo.publishDate,
+    modifiedDate: pageSeo.modifiedDate,
+    faqs: pageContent.faqs || [],
+  };
+
+  // createMetadata returns { title, description, openGraph, alternates, twitter, jsonLd }
+  const meta = createMetadata(opts);
+
+  // Build alternates/hreflang entries for all locales configured in SITE
+  const alternates = { canonical: meta.openGraph.url, languages: {} };
+  for (const lng of SITE.locales) {
+    const other = (await import(`../../../messages/${lng}/pages/about.json`).catch(() => ({}))).default || {};
+    const otherSlug = other?.seo?.slug || opts.slug;
+    if (otherSlug) alternates.languages[lng] = `${SITE.url}/${lng}/${otherSlug}`;
+  }
+
+  // return the Next.js metadata object
+  return {
+    title: meta.title,
+    description: meta.description,
+    alternates,
+    openGraph: meta.openGraph,
+    twitter: meta.twitter,
+    robots: pageSeo?.noindex ? { index: false, follow: false } : undefined,
+  };
+}
+
+
+export default async function Page({ params }) {
+
+  const resolvedParams = await params;
+  const locale = resolvedParams?.locale || "en";
+  const pageContent = (await import(`../../../messages/${locale}/pages/about.json`).catch(() => ({}))).default || {};
+
+
+  // Build JSON-LD for FAQ (if any)
+  const faqJsonLd =
+    pageContent.faqs && pageContent.faqs.length
+      ? {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        mainEntity: pageContent.faqs.map((f) => ({
+          "@type": "Question",
+          name: f.q,
+          acceptedAnswer: { "@type": "Answer", text: f.a },
+        })),
+      }
+      : null;
+
+  // Build Article JSON-LD if isArticle true
+  const articleJsonLd = pageContent.seo?.isArticle
+    ? {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      headline: pageContent.seo?.title || pageContent.site?.heading,
+      description: pageContent.seo?.description || "",
+      author: { "@type": "Person", name: pageContent.seo?.author || "Author" },
+      datePublished: pageContent.seo?.publishDate,
+      dateModified: pageContent.seo?.modifiedDate,
+      image: pageContent.seo?.image ? `${SITE.url}${pageContent.seo.image}` : undefined,
+      mainEntityOfPage: { "@type": "WebPage", "@id:": `${SITE.url}/${locale}/${pageContent.seo?.slug || ""}` },
+    }
+    : null;
+
+
   return (
     <Box className="terms-wrapper">
       <Container maxWidth="md">
@@ -239,7 +318,7 @@ export default function Page() {
         <Typography className="terms-text">
           You agree to indemnify GanakaHub from any claims arising from your use
           of the website, violation of these Terms, or infringement of any third
-         -party rights.
+          -party rights.
         </Typography>
 
         {/* ------------------------------ SECTION 15 ------------------------------ */}

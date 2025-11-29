@@ -126,5 +126,39 @@
         "Interest on NSC is taxable, but the interest credited in earlier years is treated as reinvested and may qualify for deduction under Section 80C in the year it accrues (confirm current tax rules for your filing year)."
       ]
     }
-  }
+  },
+  "faqs": [
+    {
+      "q": "What is an NSC Calculator?",
+      "a": "An NSC Calculator helps you estimate the maturity value of your National Savings Certificate based on the current interest rate and investment amount."
+    },
+    {
+      "q": "How does an NSC Calculator work?",
+      "a": "It uses the official NSC interest rate and applies annual compounding for the fixed 5-year tenure to show the total amount you will receive at maturity."
+    },
+    {
+      "q": "Is the NSC Calculator result accurate?",
+      "a": "The calculator provides accurate estimates based on the current interest rate, but the actual maturity value may change if the government revises the interest rate before purchase."
+    },
+    {
+      "q": "What is the tenure used in the NSC Calculator?",
+      "a": "The NSC has a fixed lock-in period of 5 years, so the calculator uses this tenure to compute the maturity amount."
+    },
+    {
+      "q": "Does the calculator include tax benefits?",
+      "a": "The calculator shows only the maturity amount. However, NSC investments qualify for Section 80C deductions up to ₹1.5 lakh per year."
+    },
+    {
+      "q": "Can I calculate returns for different investment amounts?",
+      "a": "Yes. You can enter any principal amount, and the calculator will show the final maturity value based on the current NSC interest rate."
+    },
+    {
+      "q": "Does the NSC Calculator include TDS or tax on interest?",
+      "a": "No. The calculator does not factor in taxes. NSC interest is taxable, but no TDS is deducted—tax is paid at the time of filing returns."
+    },
+    {
+      "q": "Can the NSC Calculator be used for older NSC certificates?",
+      "a": "Yes, but you must enter the interest rate applicable during the year you purchased the certificate to get accurate results."
+    }
+  ]
 }

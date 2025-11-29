@@ -271,5 +271,39 @@
       ],
       "conclusion": "Because the tool separates contributions and interest, you see how much of your future corpus is savings versus earnings — a visual motivator for disciplined saving. Use the calculator yearly or after any salary change to keep projections aligned with reality."
     }
-  }
+  },
+  "faqs": [
+    {
+      "q": "What is the Employees' Provident Fund Organisation (EPFO)?",
+      "a": "EPFO is a government body that manages the Employees’ Provident Fund (EPF), Pension Scheme (EPS), and Insurance Scheme (EDLI) for salaried employees in India."
+    },
+    {
+      "q": "Who is eligible for EPF?",
+      "a": "All salaried employees earning up to ₹15,000 per month are mandatorily covered. Employees earning above ₹15,000 can also join with employer consent."
+    },
+    {
+      "q": "How much contribution is made towards EPF?",
+      "a": "Typically, both employee and employer contribute 12% of the employee’s basic salary + DA. A portion of the employer’s contribution goes to the pension scheme."
+    },
+    {
+      "q": "How can I check my EPF balance?",
+      "a": "You can check your balance through the UMANG app, EPFO Member Portal, missed call service, or SMS (if your UAN is linked with your mobile)."
+    },
+    {
+      "q": "What is UAN and why is it important?",
+      "a": "The Universal Account Number (UAN) is a unique ID for each employee that helps manage all EPF accounts under one number, even if you change jobs."
+    },
+    {
+      "q": "Can I withdraw money from my EPF account?",
+      "a": "Yes, withdrawals are allowed for retirement, unemployment, medical emergencies, marriage, education, home loan repayment, and other specific purposes as per EPFO rules."
+    },
+    {
+      "q": "Is EPF withdrawal taxable?",
+      "a": "EPF is tax-free if you complete 5 years of continuous service. If withdrawn before 5 years, it may be taxable depending on the conditions."
+    },
+    {
+      "q": "What happens to my EPF account if I change jobs?",
+      "a": "Your EPF account does not close. You simply transfer your old EPF balance to your new employer’s EPF account using your UAN."
+    }
+  ]
 }

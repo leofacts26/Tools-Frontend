@@ -321,5 +321,39 @@
         "💡 Start today! Use our free PPF Calculator to plan your savings and discover how your small investments today can become a large, tax-free corpus tomorrow."
       ]
     }
-  }
+  },
+  "faqs": [
+    {
+      "q": "What is the Public Provident Fund (PPF)?",
+      "a": "PPF is a long-term, government-backed savings scheme in India that offers a safe way to build a retirement/long-term corpus with tax-free interest and maturity proceeds."
+    },
+    {
+      "q": "Who can open a PPF account?",
+      "a": "Any Indian citizen can open a PPF account. A parent or guardian can open and operate a PPF account on behalf of a minor. (Non-resident Indians cannot open fresh PPF accounts.)"
+    },
+    {
+      "q": "What is the minimum and maximum I can deposit in a financial year?",
+      "a": "The minimum annual deposit required is ₹500 and the maximum allowable deposit is ₹1,50,000 per financial year. Deposits can be made in lump sum or installments during the year."
+    },
+    {
+      "q": "What is the PPF lock-in period and can it be extended?",
+      "a": "The standard lock-in period is 15 years. After maturity (15 years) the account can be extended in blocks of 5 years repeatedly."
+    },
+    {
+      "q": "How is PPF interest set and how often is it credited?",
+      "a": "The Government reviews and notifies the PPF interest rate quarterly. Interest is compounded annually and credited at the end of the financial year."
+    },
+    {
+      "q": "Can I withdraw money before 15 years?",
+      "a": "Partial withdrawals are permitted from the 7th financial year onward (subject to limits). Full withdrawal is normally allowed after the 15-year maturity."
+    },
+    {
+      "q": "Can I take a loan against my PPF balance?",
+      "a": "Yes — a loan facility is available generally between the 3rd and 6th financial years of the account, subject to prescribed limits and rules."
+    },
+    {
+      "q": "Are PPF contributions and returns taxable?",
+      "a": "PPF enjoys EEE status: contributions are eligible for deduction under Section 80C (within limits), the interest earned is tax-exempt, and maturity proceeds are tax-free."
+    }
+  ]
 }

@@ -314,10 +314,11 @@ export default async function Page({ params }) {
               </section>
 
 
-
-
-
             </article>
+
+
+            <FAQAccordion faqs={stepUpSipCalc?.faqs ?? []} title="Step-Up SIP Calculator: FAQs" />
+
 
 
 

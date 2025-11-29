@@ -13,7 +13,7 @@ import Image from 'next/image';
 
 
 export async function generateMetadata({ params }) {
-   // ⛔ params is async — you MUST await it
+  // ⛔ params is async — you MUST await it
   const resolvedParams = await params;
   const locale = resolvedParams?.locale || "en";
 
@@ -64,7 +64,7 @@ export async function generateMetadata({ params }) {
 
 export default async function Page({ params }) {
 
-    const resolvedParams = await params;     // 🔥 FIX
+  const resolvedParams = await params;     // 🔥 FIX
   const locale = resolvedParams.locale;
   const sicCalc = (await import(`../../../../../messages/${locale}/sicCalc.json`)).default;
 
@@ -313,6 +313,9 @@ export default async function Page({ params }) {
 
 
             </article>
+
+            <FAQAccordion faqs={sicCalc?.faqs ?? []} title="Simple Interest Calculator: FAQs" />
+
 
 
 

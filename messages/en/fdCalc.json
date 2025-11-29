@@ -244,5 +244,40 @@
       ],
       "conclusion": "Use the calculator to build FD ladders, compare effective annual yields, and align deposits with future expenses or investment goals. It removes calculation friction and helps you pick the most suitable FD product with confidence."
     }
+  },
+  "faqs": [
+  {
+    "q": "What is an FD Calculator?",
+    "a": "An FD Calculator helps you estimate the maturity amount and interest you will earn on your fixed deposit based on the principal, interest rate, and tenure."
+  },
+  {
+    "q": "How does an FD Calculator work?",
+    "a": "It uses the compound or simple interest formula (depending on the bank's rules) to show how much your investment will grow over a selected period."
+  },
+  {
+    "q": "Is the FD Calculator result guaranteed?",
+    "a": "The calculator gives an estimate. The final maturity amount may vary slightly based on the bank’s actual interest calculation method and payout frequency."
+  },
+  {
+    "q": "What types of FDs can I calculate?",
+    "a": "You can calculate maturity for regular FDs, tax-saving FDs, senior citizen FDs, and cumulative or non-cumulative FDs."
+  },
+  {
+    "q": "Does the calculator include tax deductions?",
+    "a": "No. The calculator only shows the maturity amount. Taxes on FD interest (like TDS) are not included unless the bank deducts them directly."
+  },
+  {
+    "q": "What is the difference between cumulative and non-cumulative FDs?",
+    "a": "In cumulative FDs, interest is added to the principal and paid at maturity. In non-cumulative FDs, interest is paid monthly, quarterly, or annually."
+  },
+  {
+    "q": "Can I change interest rates in the calculator?",
+    "a": "Yes. You can manually enter the interest rate offered by your bank to get an accurate maturity estimate."
+  },
+  {
+    "q": "Are senior citizen FD interest rates higher?",
+    "a": "Yes, most banks offer an extra 0.25% to 0.75% interest for senior citizens, which you can enter in the calculator for better accuracy."
   }
+]
+
 }

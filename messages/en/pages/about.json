@@ -1,0 +1,114 @@
+{
+  "seo": {
+    "title": "About Us | GanakaHub",
+    "description": "Learn about GanakaHub.com — our mission, vision, story, and the purpose behind building finance tools, student tools, and utility tools.",
+    "slug": "/",
+    "image": "/ganaka-hero.png",
+    "isArticle": false,
+    "publishDate": "2025-01-01",
+    "modifiedDate": "2025-11-27",
+    "author": "GanakaHub"
+  },
+  "title": "About Us",
+  "lastUpdated": "01/11/2025",
+  "intro": {
+    "p1": "GanakaHub.com is a modern digital platform built to help people make smarter decisions using fast, accurate, and easy-to-use online tools. Whether it's financial planning, student calculations, daily utilities, or general mathematical conversions, our mission is to make powerful tools accessible to everyone — free of cost.",
+    "p2": "In a world full of complex information, GanakaHub was created with one goal: to simplify calculations and empower users through clarity and accuracy."
+  },
+  "mission": {
+    "title": "1) Our Mission",
+    "p1": "Our mission is to build a comprehensive hub of calculators and digital tools that:",
+    "list": [
+      "Save time and effort",
+      "Remove guesswork from financial and academic decisions",
+      "Provide accurate, fast, and intuitive calculators",
+      "Support students, professionals, and homemakers alike",
+      "Offer reliable tools without ads-heavy or confusing interfaces"
+    ],
+    "p2": "We believe everyone deserves simple tools to understand numbers, plan better, and stay organized in life."
+  },
+  "story": {
+    "title": "2) Our Story",
+    "p1": "GanakaHub started as a small idea — building just one calculator for personal use. But as friends, students, and professionals began asking for more tools, we expanded into a full platform offering calculators for:",
+    "list": [
+      "Finance & Investments (SIP, EPF, NPS, Gratuity, Lumpsum)",
+      "Student Life (GPA, Attendance, Study Timer)",
+      "Daily Utilities (percentage tools, converters, timers)"
+    ],
+    "p2": "What started as a hobby project has grown into a platform used by thousands of people daily. And we continue improving based on user feedback and real-world needs."
+  },
+  "provide": {
+    "title": "3) What We Provide",
+    "p1": "GanakaHub is home to a wide variety of calculators, each designed with precision and ease-of-use. Our tools include:",
+    "list": [
+      "<strong>Finance Tools:</strong> SIP Calculator, Lumpsum Calculator, EPF Calculator, NPS Calculator, Gratuity Calculator, Loan tools, and more.",
+      "<strong>Student Tools:</strong> GPA Calculator, Attendance Calculator, Study Timer, Grade Converter, Flashcard Maker.",
+      "<strong>Utility Tools:</strong> Converters, percentage calculators, time tools, digital counters, and everyday utilities."
+    ],
+    "p2": "Every tool is created to be intuitive, accurate, beginner-friendly, and accessible across all devices."
+  },
+  "whyBuilt": {
+    "title": "4) Why We Built GanakaHub",
+    "p1": "Most calculators online are overloaded with ads, difficult to use, or unclear in their explanations. We built GanakaHub to solve these issues:",
+    "list": [
+      "A clean interface without distractions",
+      "Clear explanations of formulas",
+      "Fast calculations with no lag",
+      "Tools accessible anywhere — mobile or desktop",
+      "One central hub instead of multiple scattered websites"
+    ],
+    "p2": "Our vision is to become the most trusted online hub for mathematics, finance, utilities, and student tools."
+  },
+  "values": {
+    "title": "5) Our Core Values",
+    "p1": "GanakaHub is built on five core values:",
+    "list": [
+      "<strong>Simplicity:</strong> Keep every tool easy to understand.",
+      "<strong>Accuracy:</strong> Use reliable formulas and logic.",
+      "<strong>Transparency:</strong> Show assumptions wherever possible.",
+      "<strong>Accessibility:</strong> Make tools free for everyone.",
+      "<strong>Innovation:</strong> Constantly improve and add new features."
+    ]
+  },
+  "serve": {
+    "title": "6) Who We Serve",
+    "p1": "GanakaHub is built for:",
+    "list": [
+      "Students managing GPA or attendance",
+      "Employees planning PF, NPS, or gratuity",
+      "Investors evaluating SIP or Lumpsum returns",
+      "Professionals needing quick calculations",
+      "Anyone needing simple utility tools for daily life"
+    ],
+    "p2": "Our goal is to support people from all walks of life — regardless of age, background, or education level."
+  },
+  "commitment": {
+    "title": "7) Our Commitment to Users",
+    "p1": "We are committed to continuously improving your experience. We promise:",
+    "list": [
+      "To keep the website fast, clean, and updated",
+      "To provide accurate formulas with logical explanations",
+      "To add new tools based on user suggestions",
+      "To respect your privacy (no sensitive data collection)",
+      "To build features that genuinely make life easier"
+    ]
+  },
+  "future": {
+    "title": "8) Our Future Plans",
+    "p1": "GanakaHub continues to grow rapidly. In the near future, we plan to:",
+    "list": [
+      "Add more advanced financial planning tools",
+      "Introduce personalized dashboards",
+      "Expand student productivity tools",
+      "Launch more global utilities",
+      "Create multi-language support for India & worldwide"
+    ]
+  },
+  "contact": {
+    "title": "9) Contact Us",
+    "p1": "We’d love to hear from you! Whether you have feedback, suggestions, or questions:",
+    "email": "ganakahub@gmail.com",
+    "website": "https://www.ganakahub.com",
+    "p2": "Thank you for being a part of GanakaHub. We’re committed to making your financial, academic, and daily life calculations easier — one tool at a time."
+  }
+}

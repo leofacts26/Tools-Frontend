@@ -159,5 +159,39 @@
       ],
       "note": "The tool removes complex annuity summations and returns clear, actionable numbers so you can commit to a disciplined, scalable investment plan."
     }
-  }
+  },
+  "faqs": [
+    {
+      "q": "What is a Step-Up SIP?",
+      "a": "A Step-Up SIP allows you to increase your SIP investment automatically every year by a fixed amount or percentage to grow your wealth faster."
+    },
+    {
+      "q": "How does a Step-Up SIP work?",
+      "a": "You choose a base SIP amount and decide how much it should increase annually. The SIP amount will automatically rise every year without manual updates."
+    },
+    {
+      "q": "What is the benefit of a Step-Up SIP?",
+      "a": "It helps you match your investments with increasing income, beat inflation, and build a larger long-term corpus compared to a regular SIP."
+    },
+    {
+      "q": "Can I choose how much to increase my SIP every year?",
+      "a": "Yes. You can select a fixed rupee increase (e.g., +₹500 every year) or a percentage increase (e.g., +10% every year)."
+    },
+    {
+      "q": "Is Step-Up SIP better than a normal SIP?",
+      "a": "For long-term goals, yes. Increasing your SIP amount every year can significantly boost your wealth due to higher contributions and compounding."
+    },
+    {
+      "q": "Can I stop or modify the Step-Up SIP later?",
+      "a": "Yes. You can change, pause, or stop your Step-Up SIP anytime based on your financial situation."
+    },
+    {
+      "q": "Does Step-Up SIP guarantee higher returns?",
+      "a": "It doesn't guarantee returns, but it increases your total investment, which can lead to a larger corpus if markets perform well."
+    },
+    {
+      "q": "Can I use a Step-Up SIP Calculator?",
+      "a": "Yes. A Step-Up SIP Calculator helps you estimate how your increasing contributions will grow over time and shows the expected maturity amount."
+    }
+  ]
 }

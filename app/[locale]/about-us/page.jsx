@@ -1,218 +1,283 @@
 import { Box, Typography, Container } from "@mui/material";
+import { createMetadata, SITE } from "@/lib/seo";
 
-export const metadata = {
-  title: "About Us | GanakaHub",
-  description:
-    "Learn about GanakaHub.com — our mission, vision, story, and the purpose behind building finance tools, student tools, and utility tools.",
-};
 
-export default function Page() {
+export async function generateMetadata({ params }) {
+  const resolvedParams = await params;
+  const locale = resolvedParams?.locale || "en";
+
+  // load localized common defaults and the page content (sipcalc.json)
+  const common = (await import(`../../../messages/${locale}/common.json`).catch(() => ({}))).default || {};
+  const pageContent = (await import(`../../../messages/${locale}/pages/about.json`).catch(() => ({}))).default || {};
+
+  // use the seo block from 1-crore-before-35-real-math.json (user provided)
+  const pageSeo = pageContent.seo || {};
+
+  // build opts for createMetadata (your lib/seo.js expects similar keys)
+  const opts = {
+    title: pageSeo.title || pageContent.site?.heading || common.site?.name || SITE.name,
+    description: pageSeo.description || common.site?.description || "",
+    slug: pageSeo.slug || "",
+    image: pageSeo.image || common.site?.defaultImage || "",
+    locale,
+    isArticle: Boolean(pageSeo.isArticle),
+    publishDate: pageSeo.publishDate,
+    modifiedDate: pageSeo.modifiedDate,
+    faqs: pageContent.faqs || [],
+  };
+
+  // createMetadata returns { title, description, openGraph, alternates, twitter, jsonLd }
+  const meta = createMetadata(opts);
+
+  // Build alternates/hreflang entries for all locales configured in SITE
+  const alternates = { canonical: meta.openGraph.url, languages: {} };
+  for (const lng of SITE.locales) {
+    const other = (await import(`../../../messages/${lng}/pages/about.json`).catch(() => ({}))).default || {};
+    const otherSlug = other?.seo?.slug || opts.slug;
+    if (otherSlug) alternates.languages[lng] = `${SITE.url}/${lng}/${otherSlug}`;
+  }
+
+  // return the Next.js metadata object
+  return {
+    title: meta.title,
+    description: meta.description,
+    alternates,
+    openGraph: meta.openGraph,
+    twitter: meta.twitter,
+    robots: pageSeo?.noindex ? { index: false, follow: false } : undefined,
+  };
+}
+
+
+export default async function Page({ params }) {
+
+  const resolvedParams = await params;
+  const locale = resolvedParams?.locale || "en";
+  const pageContent = (await import(`../../../messages/${locale}/pages/about.json`).catch(() => ({}))).default || {};
+
+
+  // Build JSON-LD for FAQ (if any)
+  const faqJsonLd =
+    pageContent.faqs && pageContent.faqs.length
+      ? {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        mainEntity: pageContent.faqs.map((f) => ({
+          "@type": "Question",
+          name: f.q,
+          acceptedAnswer: { "@type": "Answer", text: f.a },
+        })),
+      }
+      : null;
+
+  // Build Article JSON-LD if isArticle true
+  const articleJsonLd = pageContent.seo?.isArticle
+    ? {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      headline: pageContent.seo?.title || pageContent.site?.heading,
+      description: pageContent.seo?.description || "",
+      author: { "@type": "Person", name: pageContent.seo?.author || "Author" },
+      datePublished: pageContent.seo?.publishDate,
+      dateModified: pageContent.seo?.modifiedDate,
+      image: pageContent.seo?.image ? `${SITE.url}${pageContent.seo.image}` : undefined,
+      mainEntityOfPage: { "@type": "WebPage", "@id:": `${SITE.url}/${locale}/${pageContent.seo?.slug || ""}` },
+    }
+    : null;
+
+
   return (
     <Box className="terms-wrapper">
       <Container maxWidth="md">
-        
-        <Typography className="terms-title">About Us</Typography>
 
-        <Typography className="terms-subtle">Last Updated: 01/11/2025</Typography>
+        <Typography className="terms-title">
+          {pageContent.title}
+        </Typography>
 
-        {/* INTRO */}
-        <Typography className="terms-text">
-          <strong>GanakaHub.com</strong> is a modern digital platform built to
-          help people make smarter decisions using fast, accurate, and easy-to-use
-          online tools. Whether it's financial planning, student calculations,
-          daily utilities, or general mathematical conversions, our mission is to
-          make powerful tools accessible to everyone — free of cost.
+        <Typography className="terms-subtle">
+          Last Updated: {pageContent.lastUpdated}
         </Typography>
 
         <Typography className="terms-text">
-          In a world full of complex information, GanakaHub was created with one
-          goal: <strong>to simplify calculations and empower users through clarity and accuracy.</strong>
+          {pageContent.intro.p1}
         </Typography>
+
+        <Typography className="terms-text">
+          {pageContent.intro.p2}
+        </Typography>
+
 
         {/* OUR MISSION */}
-        <Typography className="terms-heading">1) Our Mission</Typography>
+        <Typography className="terms-heading">
+          {pageContent.mission.title}
+        </Typography>
 
         <Typography className="terms-text">
-          Our mission is to build a comprehensive hub of calculators and 
-          digital tools that:
+          {pageContent.mission.p1}
         </Typography>
 
         <ul className="terms-list">
-          <li>Save time and effort</li>
-          <li>Remove guesswork from financial and academic decisions</li>
-          <li>Provide accurate, fast, and intuitive calculators</li>
-          <li>Support students, professionals, and homemakers alike</li>
-          <li>Offer reliable tools without ads-heavy or confusing interfaces</li>
+          {pageContent.mission.list?.map((item, index) => (
+            <li key={index}>{item}</li>
+          ))}
         </ul>
 
         <Typography className="terms-text">
-          We believe everyone deserves simple tools to understand numbers, plan
-          better, and stay organized in life.
+          {pageContent.mission.p2}
         </Typography>
 
-        {/* OUR STORY */}
-        <Typography className="terms-heading">2) Our Story</Typography>
+
+        {/* STORY */}
+        <Typography className="terms-heading">
+          {pageContent.story.title}
+        </Typography>
 
         <Typography className="terms-text">
-          GanakaHub started as a small idea — building just one calculator for
-          personal use. But as friends, students, and professionals began asking
-          for more tools, we expanded into a full platform offering calculators
-          for:
+          {pageContent.story.p1}
         </Typography>
 
         <ul className="terms-list">
-          <li>Finance & Investments (SIP, EPF, NPS, Gratuity, Lumpsum)</li>
-          <li>Student Life (GPA, Attendance, Study Timer)</li>
-          <li>Daily Utilities (percentage tools, converters, timers)</li>
+          {pageContent.story.list?.map((item, index) => (
+            <li key={index}>{item}</li>
+          ))}
         </ul>
 
         <Typography className="terms-text">
-          What started as a hobby project has grown into a platform used by
-          thousands of people daily. And we continue improving based on user
-          feedback and real-world needs.
+          {pageContent.story.p2}
         </Typography>
+
 
 
         {/* WHAT WE PROVIDE */}
-        <Typography className="terms-heading">3) What We Provide</Typography>
+        <Typography className="terms-heading">
+          {pageContent.provide.title}
+        </Typography>
 
         <Typography className="terms-text">
-          GanakaHub is home to a wide variety of calculators, each designed with
-          precision and ease-of-use. Our tools include:
+          {pageContent.provide.p1}
         </Typography>
 
         <ul className="terms-list">
-          <li>
-            <strong>Finance Tools:</strong> SIP Calculator, Lumpsum Calculator, 
-            EPF Calculator, NPS Calculator, Gratuity Calculator, Loan tools, 
-            and more.
-          </li>
-          <li>
-            <strong>Student Tools:</strong> GPA Calculator, Attendance Calculator,
-            Study Timer, Grade Converter, Flashcard Maker.
-          </li>
-          <li>
-            <strong>Utility Tools:</strong> Converters, percentage calculators,
-            time tools, digital counters, and everyday utilities.
-          </li>
+          {pageContent.provide.list?.map((item, index) => (
+            <li
+              key={index}
+              dangerouslySetInnerHTML={{ __html: item }}
+            />
+          ))}
         </ul>
 
         <Typography className="terms-text">
-          Every tool is created to be intuitive, accurate, beginner-friendly, 
-          and accessible across all devices.
+          {pageContent.provide.p2}
         </Typography>
+
 
         {/* WHY WE BUILT */}
-        <Typography className="terms-heading">4) Why We Built GanakaHub</Typography>
+        <Typography className="terms-heading">
+          {pageContent.whyBuilt.title}
+        </Typography>
 
         <Typography className="terms-text">
-          Most calculators online are overloaded with ads, difficult to use, or 
-          unclear in their explanations. We built GanakaHub to solve these issues:
+          {pageContent.whyBuilt.p1}
         </Typography>
 
         <ul className="terms-list">
-          <li>A clean interface without distractions</li>
-          <li>Clear explanations of formulas</li>
-          <li>Fast calculations with no lag</li>
-          <li>Tools accessible anywhere — mobile or desktop</li>
-          <li>One central hub instead of multiple scattered websites</li>
+          {pageContent.whyBuilt.list?.map((item, index) => (
+            <li key={index}>{item}</li>
+          ))}
         </ul>
 
         <Typography className="terms-text">
-          Our vision is to become the most trusted online hub for mathematics,
-          finance, utilities, and student tools.
+          {pageContent.whyBuilt.p2}
         </Typography>
+
 
         {/* OUR VALUES */}
-        <Typography className="terms-heading">5) Our Core Values</Typography>
+        <Typography className="terms-heading">
+          {pageContent.values.title}
+        </Typography>
 
         <Typography className="terms-text">
-          GanakaHub is built on five core values:
+          {pageContent.values.p1}
         </Typography>
 
         <ul className="terms-list">
-          <li>
-            <strong>Simplicity:</strong> Keep every tool easy to understand.
-          </li>
-          <li>
-            <strong>Accuracy:</strong> Use reliable formulas and logic.
-          </li>
-          <li>
-            <strong>Transparency:</strong> Show assumptions wherever possible.
-          </li>
-          <li>
-            <strong>Accessibility:</strong> Make tools free for everyone.
-          </li>
-          <li>
-            <strong>Innovation:</strong> Constantly improve and add new features.
-          </li>
+          {pageContent.values.list?.map((item, index) => (
+            <li
+              key={index}
+              dangerouslySetInnerHTML={{ __html: item }}
+            />
+          ))}
         </ul>
 
-        {/* WHO WE SERVE */}
-        <Typography className="terms-heading">6) Who We Serve</Typography>
 
-        <Typography className="terms-text">GanakaHub is built for:</Typography>
+        {/* WHO WE SERVE */}
+        <Typography className="terms-heading">
+          {pageContent.serve.title}
+        </Typography>
+
+        <Typography className="terms-text">
+          {pageContent.serve.p1}
+        </Typography>
 
         <ul className="terms-list">
-          <li>Students managing GPA or attendance</li>
-          <li>Employees planning PF, NPS, or gratuity</li>
-          <li>Investors evaluating SIP or Lumpsum returns</li>
-          <li>Professionals needing quick calculations</li>
-          <li>Anyone needing simple utility tools for daily life</li>
+          {pageContent.serve.list?.map((item, index) => (
+            <li key={index}>{item}</li>
+          ))}
         </ul>
 
         <Typography className="terms-text">
-          Our goal is to support people from all walks of life — regardless of
-          age, background, or education level.
+          {pageContent.serve.p2}
         </Typography>
 
         {/* COMMITMENT */}
-        <Typography className="terms-heading">7) Our Commitment to Users</Typography>
+        <Typography className="terms-heading">
+          {pageContent.commitment.title}
+        </Typography>
 
         <Typography className="terms-text">
-          We are committed to continuously improving your experience. We promise:
+          {pageContent.commitment.p1}
         </Typography>
 
         <ul className="terms-list">
-          <li>To keep the website fast, clean, and updated</li>
-          <li>To provide accurate formulas with logical explanations</li>
-          <li>To add new tools based on user suggestions</li>
-          <li>To respect your privacy (no sensitive data collection)</li>
-          <li>To build features that genuinely make life easier</li>
+          {pageContent.commitment.list?.map((item, index) => (
+            <li key={index}>{item}</li>
+          ))}
         </ul>
+
 
         {/* FUTURE */}
-        <Typography className="terms-heading">8) Our Future Plans</Typography>
+        <Typography className="terms-heading">
+          {pageContent.future.title}
+        </Typography>
 
         <Typography className="terms-text">
-          GanakaHub continues to grow rapidly. In the near future, we plan to:
+          {pageContent.future.p1}
         </Typography>
 
         <ul className="terms-list">
-          <li>Add more advanced financial planning tools</li>
-          <li>Introduce personalized dashboards</li>
-          <li>Expand student productivity tools</li>
-          <li>Launch more global utilities</li>
-          <li>Create multi-language support for India & worldwide</li>
+          {pageContent.future.list?.map((item, index) => (
+            <li key={index}>{item}</li>
+          ))}
         </ul>
 
+
         {/* CONTACT */}
-        <Typography className="terms-heading">9) Contact Us</Typography>
-
-        <Typography className="terms-text">
-          We’d love to hear from you! Whether you have feedback, suggestions, or
-          questions:
-          <br />
-          <strong>Email:</strong> ganakahub@gmail.com
-          <br />
-          <strong>Website:</strong> https://www.ganakahub.com
+        <Typography className="terms-heading">
+          {pageContent.contact.title}
         </Typography>
 
         <Typography className="terms-text">
-          Thank you for being a part of GanakaHub. We’re committed to making your
-          financial, academic, and daily life calculations easier — one tool at a
-          time.
+          {pageContent.contact.p1}
+          <br />
+          <strong>Email:</strong> {pageContent.contact.email}
+          <br />
+          <strong>Website:</strong> {pageContent.contact.website}
         </Typography>
+
+        <Typography className="terms-text">
+          {pageContent.contact.p2}
+        </Typography>
+
       </Container>
     </Box>
   );

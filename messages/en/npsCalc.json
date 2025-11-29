@@ -172,5 +172,39 @@
         "Use the calculator annually — especially after salary changes — to keep your retirement plan on track and to lock in the right NPS strategy for your goals."
       ]
     }
-  }
+  },
+  "faqs": [
+    {
+      "q": "What is an NPS Calculator?",
+      "a": "An NPS Calculator helps you estimate your retirement corpus, total contributions, and expected pension amount based on your monthly investment, returns, and retirement age."
+    },
+    {
+      "q": "How does an NPS Calculator work?",
+      "a": "The calculator uses your monthly contribution, expected returns on equity and debt, and annuity percentage to show your maturity amount and monthly pension after retirement."
+    },
+    {
+      "q": "Are NPS Calculator results guaranteed?",
+      "a": "No. The maturity amount and pension depend on market returns from equity, corporate bonds, and government securities. The calculator provides an estimate only."
+    },
+    {
+      "q": "What is the minimum monthly contribution for NPS?",
+      "a": "You can start with as little as ₹500 per contribution or ₹1,000 per year for Tier-I. For Tier-II, contributions are flexible with no strict minimum."
+    },
+    {
+      "q": "Can I change my monthly NPS contribution in the calculator?",
+      "a": "Yes. You can increase or decrease your monthly investment to see how your retirement corpus changes based on different contributions."
+    },
+    {
+      "q": "Does the NPS Calculator include tax benefits?",
+      "a": "No, the calculator does not compute tax savings. However, NPS investments offer deductions under Section 80C and an additional ₹50,000 under Section 80CCD(1B)."
+    },
+    {
+      "q": "Does the calculator show both lump sum and pension amounts?",
+      "a": "Yes. It shows your total corpus at retirement, the lump sum you can withdraw, and the remaining amount that will be converted into a monthly pension."
+    },
+    {
+      "q": "Can I calculate NPS for different retirement ages?",
+      "a": "Yes. You can adjust your retirement age in the calculator to understand how a longer or shorter investment period affects your maturity amount and pension."
+    }
+  ]
 }

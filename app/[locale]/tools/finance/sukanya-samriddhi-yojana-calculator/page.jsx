@@ -381,6 +381,9 @@ export default async function Page({ params }) {
 
 
             </article>
+
+            <FAQAccordion faqs={ssycCalc?.faqs ?? []} title="Sukanya Samriddhi Yojana: FAQs" />
+
             {/* </Paper> */}
           </Grid>
 

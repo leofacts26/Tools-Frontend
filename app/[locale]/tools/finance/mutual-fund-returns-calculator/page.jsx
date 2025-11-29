@@ -378,21 +378,10 @@ export default async function Page({ params }) {
                   <p key={index}>{para}</p>
                 ))}
               </section>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
             </article>
+
+            <FAQAccordion faqs={mfcalc?.faqs ?? []} title="Mutual Fund Returns: FAQs" />
+
 
 
 

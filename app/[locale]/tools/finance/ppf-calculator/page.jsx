@@ -66,7 +66,7 @@ export async function generateMetadata({ params }) {
 
 export default async function Page({ params }) {
 
-    const resolvedParams = await params;     // 🔥 FIX
+  const resolvedParams = await params;     // 🔥 FIX
   const locale = resolvedParams.locale;
   const ppfCalc = (await import(`../../../../../messages/${locale}/ppfCalc.json`)).default;
 
@@ -439,6 +439,9 @@ export default async function Page({ params }) {
 
 
             </article>
+
+            <FAQAccordion faqs={ppfCalc?.faqs ?? []} title="PPF (Public Provident Fund): FAQs" />
+
 
             {/* </Paper> */}
           </Grid>

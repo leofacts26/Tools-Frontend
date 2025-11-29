@@ -255,5 +255,47 @@
         "💡 Start today — use our free Mutual Fund Return Calculator and discover how your investments can grow over time with the power of compounding."
       ]
     }
-  }
+  },
+  "faqs": [
+    {
+      "q": "What is a Mutual Fund Return Calculator?",
+      "a": "A Mutual Fund Return Calculator helps you estimate how much your investment may grow over time based on your invested amount, duration and expected rate of return."
+    },
+    {
+      "q": "How does the calculator estimate returns?",
+      "a": "It uses standard financial formulas like compound interest to show your expected maturity value depending on whether you invest through SIP or lump sum."
+    },
+    {
+      "q": "Are the returns shown by this calculator guaranteed?",
+      "a": "No. Mutual fund returns depend on market performance. The calculator only provides an approximate projection, not guaranteed results."
+    },
+    {
+      "q": "Can I calculate returns for both SIP and Lump Sum investments?",
+      "a": "Yes, you can check estimated returns for SIP as well as one-time (lump sum) investments using this calculator."
+    },
+    {
+      "q": "Can I change the expected rate of return?",
+      "a": "Yes. You can adjust the expected return rate depending on fund type like equity, debt, hybrid or index funds."
+    },
+    {
+      "q": "Why do estimated returns differ for different mutual funds?",
+      "a": "Each fund has its own risk level, asset allocation and market strategy, so the performance and expected returns can vary."
+    },
+    {
+      "q": "Does the calculator consider inflation?",
+      "a": "Most mutual fund calculators do not adjust for inflation. They show the estimated future value based on the return rate you enter."
+    },
+    {
+      "q": "Can I calculate returns for multiple investments?",
+      "a": "Yes, you can use the calculator as many times as needed to compare returns across various funds or investment amounts."
+    },
+    {
+      "q": "Do I need to enter personal or bank details?",
+      "a": "No. The calculator is free to use and does not require any personal, bank or login details."
+    },
+    {
+      "q": "Is the Mutual Fund Return Calculator suitable for beginners?",
+      "a": "Yes, the calculator is beginner-friendly and helps new investors understand how mutual funds can grow their money over time."
+    }
+  ]
 }

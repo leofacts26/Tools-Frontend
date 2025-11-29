@@ -321,7 +321,7 @@ export default async function Page({ params }) {
 
 
 
-            <FAQAccordion faqs={lumpsumcalc?.faqs ?? []} />
+            <FAQAccordion faqs={lumpsumcalc?.faqs ?? []} title="Lumpsum Calculator: FAQs" />
 
             {/* </Paper> */}
 
