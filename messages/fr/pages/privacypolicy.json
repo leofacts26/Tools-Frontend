@@ -1,0 +1,112 @@
+{
+  "seo": {
+    "title": "Politique de confidentialité | GanakaHub",
+    "description": "Politique de confidentialité de GanakaHub.com décrivant les données que nous collectons, leur utilisation, les cookies, l’analyse, la sécurité et vos choix.",
+    "slug": "/",
+    "image": "/ganaka-hero.png",
+    "isArticle": false,
+    "publishDate": "2025-01-01",
+    "modifiedDate": "2025-11-27",
+    "author": "GanakaHub"
+  },
+  "privacyIntro": {
+    "title": "Politique de confidentialité",
+    "lastUpdated": "01/11/2025",
+    "p1": "Bienvenue sur <strong>GanakaHub.com</strong> (« <em>GanakaHub</em> », « nous », « notre », « nos »). Cette politique de confidentialité explique quelles informations nous collectons, comment nous les utilisons et les choix dont vous disposez. En utilisant notre site web, nos outils et nos services (y compris les outils financiers, outils étudiants et utilitaires), vous acceptez les pratiques décrites ici. Si vous n’êtes pas d’accord, veuillez cesser d’utiliser GanakaHub."
+  },
+  "privacySection1": {
+    "title": "1) Qui nous sommes",
+    "p1": "GanakaHub fournit des calculateurs et des utilitaires en ligne conçus à des fins d’information et d’apprentissage. Nous respectons votre vie privée et nous nous efforçons de ne collecter que ce qui est nécessaire pour faire fonctionner et améliorer nos services."
+  },
+  "privacySection2": {
+    "title": "2) Informations que nous collectons",
+    "p1": "Nous collectons principalement des informations limitées et non personnelles afin d’assurer le bon fonctionnement du site et de comprendre les habitudes d’utilisation. En général, nous ne vous demandons <strong>pas</strong> de créer un compte ni de fournir des données sensibles pour utiliser nos calculateurs.",
+    "p2": "Nous pouvons collecter :",
+    "list": [
+      "<strong>Données techniques :</strong> adresse IP (souvent anonymisée), type d’appareil, système d’exploitation, type/version du navigateur, langue, taille d’écran et localisation générale (pays/région).",
+      "<strong>Données d’utilisation :</strong> pages consultées, durée de visite, URL de provenance, boutons cliqués, profondeur de défilement et journaux d’erreurs pour le débogage.",
+      "<strong>Données de cookies :</strong> petits fichiers texte enregistrés sur votre appareil pour mémoriser vos préférences, mesurer le trafic et améliorer l’expérience.",
+      "<strong>Données d’entrées dans les outils (éphémères) :</strong> valeurs que vous saisissez dans nos calculateurs. Elles servent uniquement à produire des résultats dans votre navigateur et ne sont généralement pas stockées par nous, sauf si cela est explicitement indiqué pour une fonctionnalité (ex. : préférences enregistrées dans le futur)."
+    ],
+    "p3": "Nous ne collectons <strong>pas</strong> sciemment de données personnelles sensibles (telles que mots de passe, identifiants bancaires, numéros Aadhaar ou dossiers médicaux)."
+  },
+  "privacySection3": {
+    "title": "3) Comment nous utilisons les informations",
+    "p1": "Nous utilisons les informations collectées pour :",
+    "list": [
+      "Exploiter, maintenir et améliorer nos calculateurs et notre site web.",
+      "Surveiller les performances, corriger les problèmes et améliorer l’ergonomie.",
+      "Mesurer le trafic, comprendre le comportement des utilisateurs et planifier de nouvelles fonctionnalités.",
+      "Protéger le site contre les abus, la fraude et les menaces de sécurité.",
+      "Respecter les obligations légales et appliquer nos Conditions générales."
+    ]
+  },
+  "privacySection4": {
+    "title": "4) Bases légales (le cas échéant)",
+    "p1": "Selon votre région, nous pouvons nous appuyer sur une ou plusieurs des bases légales suivantes pour traiter vos informations : <strong>intérêts légitimes</strong> (pour exploiter et sécuriser nos services), <strong>consentement</strong> (pour certains cookies/analyses) et <strong>respect des obligations légales</strong>."
+  },
+  "privacySection5": {
+    "title": "5) Cookies et Technologies Similaires",
+    "p1": "Nous utilisons des cookies et des technologies similaires pour mémoriser vos préférences, analyser le trafic et améliorer les performances. Vous pouvez gérer les cookies via les paramètres de votre navigateur et, lorsque disponible, via une bannière ou un panneau de préférences. La désactivation de certains cookies peut affecter le fonctionnement du site."
+  },
+  "privacySection6": {
+    "title": "6) Analyses, Publicité et Affiliations",
+    "p1": "Nous pouvons utiliser des outils d’analyse respectueux de la vie privée pour mesurer l’engagement et améliorer le site. Nous pouvons également afficher des publicités ou des liens affiliés. Les tiers impliqués dans l’analyse ou la publicité peuvent définir leurs propres cookies et collecter des données, comme décrit dans leurs politiques de confidentialité. Nous ne vendons pas vos informations personnelles."
+  },
+  "privacySection7": {
+    "title": "7) Quand Nous Partageons des Informations",
+    "p1": "Nous ne vendons pas vos données. Nous pouvons partager des informations limitées avec :",
+    "list": [
+      "<strong>Fournisseurs de Services :</strong> des prestataires qui nous aident à exploiter le site (par exemple l’hébergement, les analyses, la sécurité). Ils sont tenus par des obligations contractuelles de protéger vos données.",
+      "<strong>Légal/Conformité :</strong> lorsque la loi, une réglementation, une procédure juridique ou la protection des droits, de la sécurité et de l’intégrité de GanakaHub et de ses utilisateurs l’exige.",
+      "<strong>Changements d’Entreprise :</strong> si nous faisons l’objet d’une fusion, d’une acquisition ou d’un transfert d’actifs, vos données peuvent être transférées dans le cadre de cette opération avec les garanties appropriées."
+    ]
+  },
+  "privacySection8": {
+    "title": "8) Conservation des Données",
+    "p1": "Nous conservons les données d’analyse et les journaux de serveur uniquement pendant la durée nécessaire pour atteindre les objectifs décrits dans cette politique, pour respecter les obligations légales, résoudre les litiges et faire appliquer les accords. Les données saisies dans les calculateurs sont généralement traitées dans votre navigateur et ne sont pas enregistrées sur nos serveurs, sauf si une fonctionnalité indique clairement la sauvegarde des préférences."
+  },
+  "privacySection9": {
+    "title": "9) Sécurité des Données",
+    "p1": "Nous mettons en œuvre des mesures techniques et organisationnelles raisonnables pour protéger les informations contre l’accès, la modification ou la destruction non autorisés. Cependant, aucune méthode de transmission ou de stockage n’est totalement sécurisée, et nous ne pouvons pas garantir une sécurité absolue."
+  },
+  "privacySection10": {
+    "title": "10) Protection de la Vie Privée des Enfants",
+    "p1": "GanakaHub est destiné à un public général et n’est pas conçu pour les enfants de moins de 13 ans (ou l’âge applicable dans votre région). Nous ne collectons pas sciemment de données personnelles auprès d’enfants. Si vous pensez qu’un enfant a fourni des données personnelles, veuillez nous contacter afin que nous puissions prendre les mesures appropriées."
+  },
+  "privacySection11": {
+    "title": "11) Transferts Internationaux de Données",
+    "p1": "Nous pouvons traiter des informations sur des serveurs situés en dehors de votre État ou pays. Lorsque cela est requis, nous mettons en place des garanties destinées à protéger vos informations lors de tels transferts."
+  },
+  "privacySection12": {
+    "title": "12) Vos Choix et Contrôles",
+    "p1": "Vous pouvez contrôler certaines formes de collecte de données en :",
+    "list": [
+      "Ajustant les paramètres de votre navigateur pour bloquer ou supprimer les cookies.",
+      "Utilisant des modes de protection de la vie privée ou de blocage du suivi lorsque disponibles.",
+      "Refusant les cookies d’analyse/publicité (lorsque cette option est proposée)."
+    ]
+  },
+  "privacySection13": {
+    "title": "13) Vos Droits",
+    "p1": "Selon votre juridiction, vous pouvez avoir le droit d’accéder à certaines informations, de les mettre à jour, de les corriger ou de les supprimer, ou encore de vous opposer ou de limiter leur traitement. Vous pouvez également avoir le droit de retirer votre consentement lorsque le traitement est basé sur celui-ci. Pour exercer ces droits, contactez-nous en utilisant les coordonnées ci-dessous. Nous pourrions avoir besoin de vérifier votre identité avant de répondre."
+  },
+  "privacySection14": {
+    "title": "14) Liens de Tiers",
+    "p1": "Notre site peut contenir des liens vers des sites externes que nous n’exploitons pas. Nous ne sommes pas responsables du contenu ou des pratiques de confidentialité de ces sites. Veuillez consulter leurs politiques avant de fournir des informations personnelles."
+  },
+  "privacySection15": {
+    "title": "15) Modifications de la Présente Politique",
+    "p1": "Nous pouvons mettre à jour cette Politique de Confidentialité de temps à autre. Les modifications seront publiées sur cette page avec une nouvelle date de « Dernière mise à jour ». Votre utilisation continue de GanakaHub après ces changements signifie que vous acceptez la politique révisée. Nous vous encourageons à consulter cette page périodiquement."
+  },
+  "privacySection16": {
+    "title": "16) Contact et Réclamations",
+    "p1": "Si vous avez des questions, des demandes ou des réclamations concernant la confidentialité, vous pouvez nous contacter :",
+    "email": "ganakahub@gmail.com",
+    "website": "https://www.ganakahub.com",
+    "p2": "Si vous résidez en Inde et souhaitez soulever une préoccupation en vertu des lois applicables, vous pouvez écrire à notre <strong>Responsable des Réclamations</strong> à l’adresse email ci-dessus. Veuillez inclure suffisamment de détails pour nous aider à traiter votre demande (par exemple, URL spécifique, description du problème et vos coordonnées)."
+  },
+  "privacyFinalNote": {
+    "p1": "Cette Politique de Confidentialité vise à être claire et simple. Elle ne crée pas de droits contractuels ou juridiques pour quelque partie que ce soit, sauf lorsque la loi applicable l’exige. Pour connaître les règles qui régissent votre utilisation du site, veuillez consulter nos <strong>Conditions Générales d’Utilisation</strong>."
+  }
+}

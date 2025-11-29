@@ -1,0 +1,112 @@
+{
+  "seo": {
+    "title": "Datenschutzrichtlinie | GanakaHub",
+    "description": "Datenschutzrichtlinie für GanakaHub.com, die beschreibt, welche Daten wir sammeln, wie wir sie verwenden, Cookies, Analysen, Sicherheit und Ihre Wahlmöglichkeiten.",
+    "slug": "/",
+    "image": "/ganaka-hero.png",
+    "isArticle": false,
+    "publishDate": "2025-01-01",
+    "modifiedDate": "2025-11-27",
+    "author": "GanakaHub"
+  },
+  "privacyIntro": {
+    "title": "Datenschutzrichtlinie",
+    "lastUpdated": "01/11/2025",
+    "p1": "Willkommen bei <strong>GanakaHub.com</strong> („<em>GanakaHub</em>“, „wir“, „unsere“, „uns“). Diese Datenschutzrichtlinie erklärt, welche Informationen wir sammeln, wie wir sie verwenden und welche Wahlmöglichkeiten Sie haben. Durch die Nutzung unserer Website, Tools und Dienste (einschließlich Finanz-Tools, Studenten-Tools und Dienstprogramme) stimmen Sie den hier beschriebenen Praktiken zu. Wenn Sie nicht zustimmen, stellen Sie bitte die Nutzung von GanakaHub ein."
+  },
+  "privacySection1": {
+    "title": "1) Wer wir sind",
+    "p1": "GanakaHub bietet Online-Rechner und Dienstprogramme, die für Informations- und Bildungszwecke entwickelt wurden. Wir respektieren Ihre Privatsphäre und sammeln nur die Daten, die erforderlich sind, um unsere Dienste zu betreiben und zu verbessern."
+  },
+  "privacySection2": {
+    "title": "2) Informationen, die wir sammeln",
+    "p1": "Wir sammeln hauptsächlich begrenzte, nicht-personenbezogene Informationen, um die Website reibungslos laufen zu lassen und Nutzungsmuster zu verstehen. Im Allgemeinen müssen Sie kein Konto erstellen oder sensible Daten bereitstellen, um unsere Rechner zu verwenden.",
+    "p2": "Wir können folgende Daten sammeln:",
+    "list": [
+      "<strong>Technische Daten:</strong> IP-Adresse (oft anonymisiert), Gerätetyp, Betriebssystem, Browsertyp/-version, Sprache, Bildschirmgröße und allgemeiner Standort (Land/Region).",
+      "<strong>Nutzungsdaten:</strong> Angesehene Seiten, Verweildauer auf Seiten, verweisende URLs, geklickte Buttons, Scrolltiefe und Fehlerprotokolle zur Fehlerbehebung.",
+      "<strong>Cookie-Daten:</strong> Kleine Textdateien, die auf Ihrem Gerät gespeichert werden, um Präferenzen zu speichern, den Traffic zu messen und die Nutzungserfahrung zu verbessern.",
+      "<strong>Tool-Eingaben (flüchtig):</strong> Werte, die Sie in unsere Rechner eingeben. Diese werden verwendet, um Ergebnisse in Ihrem Browser zu berechnen und werden in der Regel nicht von uns gespeichert, es sei denn, dies wird ausdrücklich für eine Funktion angegeben (z. B. gespeicherte Präferenzen in der Zukunft)."
+    ],
+    "p3": "Wir sammeln <strong>nicht wissentlich</strong> sensible persönliche Daten (wie Passwörter, Bankdaten, Aadhaar-Nummern oder medizinische Unterlagen)."
+  },
+  "privacySection3": {
+    "title": "3) Wie wir Informationen verwenden",
+    "p1": "Wir verwenden die gesammelten Informationen, um:",
+    "list": [
+      "Unsere Rechner und die Website zu betreiben, zu warten und zu verbessern.",
+      "Die Leistung zu überwachen, Probleme zu beheben und die Benutzerfreundlichkeit zu verbessern.",
+      "Den Traffic zu messen, das Nutzerverhalten zu verstehen und neue Funktionen zu planen.",
+      "Die Website vor Missbrauch, Betrug und Sicherheitsbedrohungen zu schützen.",
+      "Gesetzliche Verpflichtungen einzuhalten und unsere Nutzungsbedingungen durchzusetzen."
+    ]
+  },
+  "privacySection4": {
+    "title": "4) Rechtliche Grundlagen (falls zutreffend)",
+    "p1": "Je nach Ihrer Region können wir uns auf eine oder mehrere der folgenden rechtlichen Grundlagen stützen, um Ihre Informationen zu verarbeiten: <strong>berechtigtes Interesse</strong> (zur Verwaltung und Sicherung unserer Dienste), <strong>Zustimmung</strong> (für bestimmte Cookies/Analysen) und <strong>Einhaltung gesetzlicher Verpflichtungen</strong>."
+  },
+  "privacySection5": {
+    "title": "5) Cookies & ähnliche Technologien",
+    "p1": "Wir verwenden Cookies und ähnliche Technologien, um Präferenzen zu speichern, den Traffic zu analysieren und die Leistung zu verbessern. Sie können Cookies über Ihre Browsereinstellungen verwalten und, falls verfügbar, über ein Cookie-Banner oder ein Einstellungsfeld. Das Deaktivieren bestimmter Cookies kann die Funktionalität der Website beeinträchtigen."
+  },
+  "privacySection6": {
+    "title": "6) Analysen, Werbung & Partner",
+    "p1": "Wir können datenschutzfreundliche Analysetools verwenden, um die Nutzerinteraktion zu messen und die Website zu verbessern. Wir können auch Werbung oder Affiliate-Links anzeigen. Dritte, die an Analysen oder Werbung beteiligt sind, können eigene Cookies setzen und Daten gemäß ihren Datenschutzrichtlinien sammeln. Wir verkaufen keine persönlichen Informationen."
+  },
+  "privacySection7": {
+    "title": "7) Wann wir Informationen weitergeben",
+    "p1": "Wir verkaufen Ihre Daten nicht. Wir können begrenzte Informationen teilen mit:",
+    "list": [
+      "<strong>Dienstleistern:</strong> Anbieter, die uns beim Betrieb der Website unterstützen (z. B. Hosting, Analysen, Sicherheit). Sie sind vertraglich verpflichtet, Ihre Daten zu schützen.",
+      "<strong>Rechtlich/Compliance:</strong> wenn gesetzlich, durch Vorschriften oder rechtliche Verfahren erforderlich, oder zum Schutz der Rechte, Sicherheit und Integrität von GanakaHub und seinen Nutzern.",
+      "<strong>Unternehmensänderungen:</strong> Falls wir eine Fusion, Übernahme oder Vermögensübertragung durchführen, können Ihre Daten im Rahmen dieser Transaktion mit entsprechenden Schutzmaßnahmen übertragen werden."
+    ]
+  },
+  "privacySection8": {
+    "title": "8) Datenspeicherung",
+    "p1": "Wir speichern Analysen und Serverprotokolle nur so lange, wie es zur Erfüllung der in dieser Richtlinie beschriebenen Zwecke, zur Einhaltung gesetzlicher Verpflichtungen, zur Beilegung von Streitigkeiten und zur Durchsetzung von Vereinbarungen erforderlich ist. Eingaben in Rechnern werden in der Regel in Ihrem Browser verarbeitet und nicht auf unseren Servern gespeichert, es sei denn, eine Funktion weist ausdrücklich auf das Speichern von Präferenzen hin."
+  },
+  "privacySection9": {
+    "title": "9) Datensicherheit",
+    "p1": "Wir setzen angemessene technische und organisatorische Maßnahmen ein, um Informationen vor unbefugtem Zugriff, Veränderung oder Zerstörung zu schützen. Allerdings ist keine Übertragungs- oder Speichermethode zu 100 % sicher, und wir können absolute Sicherheit nicht garantieren."
+  },
+  "privacySection10": {
+    "title": "10) Datenschutz für Kinder",
+    "p1": "GanakaHub richtet sich an ein allgemeines Publikum und ist nicht für Kinder unter 13 Jahren (oder das in Ihrer Region geltende Alter) bestimmt. Wir sammeln wissentlich keine persönlichen Daten von Kindern. Wenn Sie glauben, dass ein Kind persönliche Daten bereitgestellt hat, kontaktieren Sie uns bitte, damit wir geeignete Maßnahmen ergreifen können."
+  },
+  "privacySection11": {
+    "title": "11) Internationale Datenübertragungen",
+    "p1": "Wir können Informationen auf Servern verarbeiten, die sich außerhalb Ihres Bundeslands oder Landes befinden. Wo erforderlich, implementieren wir Schutzmaßnahmen, um Ihre Informationen während solcher Übertragungen zu sichern."
+  },
+  "privacySection12": {
+    "title": "12) Ihre Wahlmöglichkeiten & Kontrolle",
+    "p1": "Sie können bestimmte Datenerhebungen kontrollieren durch:",
+    "list": [
+      "Anpassen der Browsereinstellungen, um Cookies zu blockieren oder zu löschen.",
+      "Verwendung von Datenschutz- oder Tracking-Schutzmodi, wo verfügbar.",
+      "Abmeldung von Analyse-/Werbe-Cookies (falls angeboten)."
+    ]
+  },
+  "privacySection13": {
+    "title": "13) Ihre Rechte",
+    "p1": "Je nach Ihrer Rechtsordnung haben Sie möglicherweise Rechte auf Zugriff, Aktualisierung, Korrektur oder Löschung bestimmter Informationen oder das Recht, der Verarbeitung zu widersprechen bzw. sie einzuschränken. Sie können auch das Recht haben, Ihre Zustimmung zurückzuziehen, wenn die Verarbeitung auf Zustimmung basiert. Um diese Rechte auszuüben, kontaktieren Sie uns bitte über die unten angegebenen Details. Wir müssen möglicherweise Ihre Identität überprüfen, bevor wir antworten."
+  },
+  "privacySection14": {
+    "title": "14) Links zu Drittanbietern",
+    "p1": "Unsere Website kann Links zu externen Websites enthalten, die wir nicht betreiben. Wir sind nicht verantwortlich für den Inhalt oder die Datenschutzpraktiken dieser Websites. Bitte überprüfen Sie deren Richtlinien, bevor Sie persönliche Informationen bereitstellen."
+  },
+  "privacySection15": {
+    "title": "15) Änderungen dieser Richtlinie",
+    "p1": "Wir können diese Datenschutzrichtlinie von Zeit zu Zeit aktualisieren. Änderungen werden auf dieser Seite mit einem aktualisierten „Zuletzt aktualisiert“-Datum veröffentlicht. Ihre fortgesetzte Nutzung von GanakaHub nach solchen Änderungen bedeutet, dass Sie die überarbeitete Richtlinie akzeptieren. Wir empfehlen, diese Seite regelmäßig zu überprüfen."
+  },
+  "privacySection16": {
+    "title": "16) Kontakt & Beschwerden",
+    "p1": "Wenn Sie Fragen, Anfragen oder Beschwerden bezüglich des Datenschutzes haben, können Sie uns kontaktieren:",
+    "email": "ganakahub@gmail.com",
+    "website": "https://www.ganakahub.com",
+    "p2": "Wenn Sie sich in Indien befinden und ein Anliegen nach den geltenden Gesetzen vorbringen möchten, können Sie unserem <strong>Beschwerdebeauftragten</strong> unter der oben angegebenen E-Mail schreiben. Bitte geben Sie genügend Details an, damit wir Ihre Anfrage bearbeiten können (z. B. spezifische URL, Beschreibung des Problems und Ihre Kontaktdaten)."
+  },
+  "privacyFinalNote": {
+    "p1": "Diese Datenschutzrichtlinie ist klar und einfach gehalten. Sie begründet keine vertraglichen oder rechtlichen Ansprüche zugunsten einer Partei, außer soweit dies gesetzlich vorgeschrieben ist. Für Informationen darüber, wie wir Ihre Nutzung der Website regeln, verweisen wir auf unsere <strong>Allgemeinen Geschäftsbedingungen</strong>."
+  }
+}

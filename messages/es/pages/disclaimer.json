@@ -1,0 +1,118 @@
+{
+  "seo": {
+    "title": "Aviso Legal | GanakaHub",
+    "description": "Aviso legal para GanakaHub.com que cubre precisión, responsabilidad, limitaciones de herramientas y descargos en cálculos financieros.",
+    "slug": "/",
+    "image": "/ganaka-hero.png",
+    "isArticle": false,
+    "publishDate": "2025-01-01",
+    "modifiedDate": "2025-11-27",
+    "author": "GanakaHub"
+  },
+  "disclaimerIntro": {
+    "title": "Aviso Legal",
+    "lastUpdated": "01/11/2025",
+    "p1": "La información, herramientas, calculadoras y contenido proporcionado en <strong>GanakaHub.com</strong> (“<em>GanakaHub</em>”, “nosotros”, “nuestro”) está destinada únicamente a <strong>propósitos informativos y educativos generales</strong>. Al usar este sitio web, usted reconoce y acepta los términos descritos en este Aviso Legal. Si no está de acuerdo, deje de usar GanakaHub."
+  },
+  "disclaimerSection1": {
+    "title": "1) No Asesoramiento Profesional (Financiero, Legal, Educativo, Técnico)",
+    "p1": "GanakaHub <strong>NO</strong> proporciona:",
+    "list": [
+      "Asesoramiento financiero o de inversiones",
+      "Asesoramiento legal o fiscal",
+      "Juicios educativos o académicos",
+      "Consejos empresariales o profesionales",
+      "Orientación técnica o de ingeniería"
+    ],
+    "p2": "Todos los cálculos, incluidos SIP, Lumpsum, NPS, EPF, gratificaciones, estimaciones de préstamos/intereses, cálculo de GPA, porcentajes de asistencia, temporizadores, contadores u otros resultados, son <strong>solo aproximaciones</strong>. Pueden diferir de los resultados reales proporcionados por bancos, empleadores, instituciones o autoridades."
+  },
+  "disclaimerSection2": {
+    "title": "2) Precisión, Completitud y Confiabilidad",
+    "p1": "Aunque buscamos asegurar la precisión, GanakaHub no ofrece <strong>garantías</strong> de que nuestras calculadoras, herramientas, gráficos, fórmulas o proyecciones sean correctos, precisos, completos o estén actualizados. Muchos cálculos financieros dependen de factores variables fuera de nuestro control, incluyendo:",
+    "list": [
+      "Condiciones del mercado e inflación",
+      "Reglas fiscales gubernamentales",
+      "Cambios en las tasas de interés",
+      "Políticas de bancos o empleadores",
+      "Fórmulas específicas de instituciones",
+      "Métodos de redondeo"
+    ],
+    "p2": "Por lo tanto, no podemos garantizar que los resultados mostrados por nuestras herramientas coincidan con los resultados del mundo real."
+  },
+  "disclaimerSection3": {
+    "title": "3) Uso Bajo Su Propio Riesgo",
+    "p1": "Al usar GanakaHub, usted acepta que todos los resultados se <strong>usan bajo su propio riesgo</strong>. Cualquier acción que tome basada en la información o resultados de este sitio es estrictamente su responsabilidad.",
+    "p2": "GanakaHub no se hace responsable de:",
+    "list": [
+      "Pérdidas o ganancias financieras",
+      "Decisiones académicas tomadas usando nuestras herramientas",
+      "Proyecciones o cálculos incorrectos",
+      "Pérdidas de inversión o rendimientos no obtenidos",
+      "Desajustes en préstamos o intereses",
+      "Cálculos de empleo, salario o beneficios",
+      "Cualquier daño—directo, indirecto, incidental o consecuente"
+    ]
+  },
+  "disclaimerSection4": {
+    "title": "4) Contenido de Terceros, Publicidad y Enlaces Externos",
+    "p1": "GanakaHub puede contener enlaces a sitios web externos, anuncios o productos afiliados. Nosotros <strong>no controlamos, respaldamos ni garantizamos</strong>:",
+    "list": [
+      "La exactitud del contenido de terceros",
+      "Las políticas de privacidad de sitios externos",
+      "La seguridad o disponibilidad de servicios externos",
+      "Afirmaciones hechas por anunciantes o afiliados"
+    ],
+    "p2": "Debe verificar la información de forma independiente antes de confiar en cualquier contenido vinculado o de terceros."
+  },
+  "disclaimerSection5": {
+    "title": "5) Sin Garantías",
+    "p1": "GanakaHub se proporciona sobre una base <strong>“tal cual” y “según disponibilidad”</strong> sin garantías expresas o implícitas. Esto incluye, pero no se limita a:",
+    "list": [
+      "Precisión o completitud de las herramientas",
+      "Disponibilidad continua",
+      "Rendimiento libre de errores",
+      "Seguridad frente a malware o ataques",
+      "Adecuación para decisiones financieras"
+    ],
+    "p2": "Usted reconoce que el rendimiento del sitio web puede variar o interrumpirse."
+  },
+  "disclaimerSection6": {
+    "title": "6) Problemas Técnicos, Herramientas y Errores del Sistema",
+    "p1": "Las calculadoras y herramientas pueden producir a veces resultados inesperados o incorrectos debido a:",
+    "list": [
+      "Incompatibilidad del navegador",
+      "Errores en los datos ingresados por el usuario",
+      "Problemas de red",
+      "Limitaciones del servidor",
+      "Errores de software o de programación"
+    ],
+    "p2": "No asumimos responsabilidad por tales errores ni por sus consecuencias."
+  },
+  "disclaimerSection7": {
+    "title": "7) Sin Garantía de Rendimiento Financiero o Retornos",
+    "p1": "Todas las herramientas relacionadas con inversiones (incluyendo SIP, Lumpsum, Rendimientos de Fondos Mutuos, Proyección NPS y calculadoras de EPF) se basan en datos históricos o suposiciones hipotéticas. El desempeño pasado <strong>no</strong> garantiza rendimientos futuros."
+  },
+  "disclaimerSection8": {
+    "title": "8) Limitación de Responsabilidad",
+    "p1": "En la máxima medida permitida por la ley, GanakaHub no es responsable de:",
+    "list": [
+      "Pérdidas financieras de cualquier tipo",
+      "Impacto en la carrera profesional o académica",
+      "Errores en cálculos o predicciones",
+      "Retrasos o fallos en los servicios",
+      "Resultados inexactos o desactualizados de las herramientas"
+    ],
+    "p2": "Su único recurso ante la insatisfacción con el sitio es dejar de usarlo."
+  },
+  "disclaimerSection9": {
+    "title": "9) Actualizaciones de Este Aviso Legal",
+    "p1": "Podemos actualizar este Aviso Legal en cualquier momento para reflejar cambios en los servicios, herramientas o requisitos legales. Las versiones actualizadas aparecerán en esta página con una nueva fecha de “Última Actualización”. El uso continuado del sitio web significa que acepta el Aviso Legal revisado."
+  },
+  "disclaimerSection10": {
+    "title": "10) Contáctenos",
+    "p1": "Si tiene preguntas sobre este Aviso Legal o desea aclaraciones, puede contactarnos:",
+    "email": "ganakahub@gmail.com",
+    "website": "https://www.ganakahub.com",
+    "p2": "Para cualquier preocupación relacionada con la exactitud o el uso indebido de la información, por favor comuníquese con nosotros con los detalles para que podamos investigarlo de manera oportuna."
+  }
+}

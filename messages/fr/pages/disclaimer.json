@@ -1,0 +1,118 @@
+{
+   "seo": {
+    "title": "Avertissement légal | GanakaHub",
+    "description": "Avertissement légal pour GanakaHub.com couvrant l’exactitude, la responsabilité, les limites des outils et les avertissements relatifs aux calculs financiers.",
+    "slug": "/",
+    "image": "/ganaka-hero.png",
+    "isArticle": false,
+    "publishDate": "2025-01-01",
+    "modifiedDate": "2025-11-27",
+    "author": "GanakaHub"
+  },
+  "disclaimerIntro": {
+    "title": "Avertissement",
+    "lastUpdated": "01/11/2025",
+    "p1": "Les informations, outils, calculateurs et contenus fournis sur <strong>GanakaHub.com</strong> (« <em>GanakaHub</em> », « nous », « notre ») sont destinés uniquement à des <strong>fins d’information et d’éducation générales</strong>. En utilisant ce site, vous reconnaissez et acceptez les conditions énoncées dans cet avertissement. Si vous n’êtes pas d’accord, veuillez cesser d’utiliser GanakaHub."
+  },
+  "disclaimerSection1": {
+    "title": "1) Aucun conseil professionnel (financier, juridique, éducatif, technique)",
+    "p1": "GanakaHub ne fournit <strong>PAS</strong> :",
+    "list": [
+      "De conseils financiers ou d’investissement",
+      "De conseils juridiques ou fiscaux",
+      "D’évaluations éducatives ou académiques",
+      "De conseils professionnels ou de carrière",
+      "De conseils techniques ou d’ingénierie"
+    ],
+    "p2": "Tous les calculs — y compris SIP, Lumpsum, NPS, EPF, Gratuity, estimations de prêts/intérêts, calcul de GPA, pourcentage de présence, minuteurs, compteurs ou autres résultats — sont <strong>uniquement des approximations</strong>. Ils peuvent différer des résultats réels fournis par les banques, employeurs, institutions ou autorités."
+  },
+  "disclaimerSection2": {
+    "title": "2) Exactitude, exhaustivité et fiabilité",
+    "p1": "Bien que nous visons l’exactitude, GanakaHub ne donne <strong>aucune garantie</strong> quant au fait que nos calculateurs, outils, graphiques, formules ou projections soient corrects, précis, complets ou à jour. De nombreux calculs financiers dépendent de facteurs variables indépendants de notre contrôle, notamment :",
+    "list": [
+      "Les conditions du marché et l’inflation",
+      "Les règles fiscales gouvernementales",
+      "Les variations des taux d’intérêt",
+      "Les politiques bancaires ou d’employeurs",
+      "Les formules propres à certaines institutions",
+      "Les méthodes d’arrondissement"
+    ],
+    "p2": "Par conséquent, nous ne pouvons garantir que les résultats affichés par nos outils correspondent aux résultats réels."
+  },
+  "disclaimerSection3": {
+    "title": "3) Utilisation à vos propres risques",
+    "p1": "En utilisant GanakaHub, vous acceptez que tous les résultats soient <strong>utilisés à vos propres risques</strong>. Toute action que vous entreprenez sur la base des informations ou résultats présents sur ce site relève entièrement de votre responsabilité.",
+    "p2": "GanakaHub n’est pas responsable des :",
+    "list": [
+      "Pertes ou gains financiers",
+      "Décisions académiques prises à l’aide de nos outils",
+      "Projections ou calculs incorrects",
+      "Pertes d’investissement ou rendements manqués",
+      "Erreurs liées aux prêts ou aux taux d’intérêt",
+      "Calculs liés à l’emploi, au salaire ou aux avantages",
+      "Dommages—directs, indirects, accidentels ou consécutifs"
+    ]
+  },
+  "disclaimerSection4": {
+    "title": "4) Contenu tiers, publicités et liens externes",
+    "p1": "GanakaHub peut contenir des liens vers des sites externes, des publicités ou des produits affiliés. Nous ne <strong>contrôlons pas, n’approuvons pas et ne garantissons pas</strong> :",
+    "list": [
+      "L’exactitude du contenu tiers",
+      "Les politiques de confidentialité des sites externes",
+      "La sécurité ou la disponibilité des services externes",
+      "Les affirmations faites par les annonceurs ou affiliés"
+    ],
+    "p2": "Vous devriez vérifier indépendamment les informations avant de vous fier à tout contenu lié ou provenant de tiers."
+  },
+  "disclaimerSection5": {
+    "title": "5) Absence de garanties",
+    "p1": "GanakaHub est fourni sur une base <strong>« tel quel » et « selon disponibilité »</strong> sans aucune garantie explicite ou implicite. Cela inclut, sans s’y limiter :",
+    "list": [
+      "L’exactitude ou l’exhaustivité des outils",
+      "La disponibilité continue",
+      "L’absence d’erreurs",
+      "La sécurité contre les logiciels malveillants ou attaques",
+      "L’adéquation pour des décisions financières"
+    ],
+    "p2": "Vous reconnaissez que les performances du site peuvent varier ou être interrompues."
+  },
+  "disclaimerSection6": {
+    "title": "6) Problèmes techniques, outils et erreurs système",
+    "p1": "Les calculateurs et outils peuvent parfois produire des résultats inattendus ou incorrects en raison de :",
+    "list": [
+      "L’incompatibilité du navigateur",
+      "Des erreurs de saisie de l’utilisateur",
+      "Des problèmes de réseau",
+      "Des limitations du serveur",
+      "Des bugs logiciels ou erreurs de programmation"
+    ],
+    "p2": "Nous n’assumons aucune responsabilité pour de telles erreurs ni pour leurs conséquences."
+  },
+   "disclaimerSection7": {
+    "title": "7) Aucune garantie de performance ou de rendement financier",
+    "p1": "Tous les outils liés aux investissements (y compris les calculateurs SIP, Lumpsum, Rendements de fonds communs, projections NPS et EPF) sont basés sur des données historiques ou des hypothèses théoriques. Les performances passées ne <strong>garantissent pas</strong> les rendements futurs."
+  },
+  "disclaimerSection8": {
+    "title": "8) Limitation de responsabilité",
+    "p1": "Dans la mesure maximale permise par la loi, GanakaHub n’est pas responsable des :",
+    "list": [
+      "Pertes financières de toute nature",
+      "Impacts sur la carrière ou les études",
+      "Erreurs dans les calculs ou prévisions",
+      "Retards ou défaillances de services",
+      "Résultats inexacts ou obsolètes des outils"
+    ],
+    "p2": "Votre seul recours en cas d’insatisfaction du site est d’arrêter de l’utiliser."
+  },
+  "disclaimerSection9": {
+    "title": "9) Mises à jour de cet avertissement",
+    "p1": "Nous pouvons mettre à jour cet avertissement à tout moment pour refléter des changements liés aux services, outils ou exigences légales. Les versions mises à jour apparaîtront sur cette page avec une nouvelle date de « Dernière mise à jour ». La poursuite de l’utilisation du site signifie que vous acceptez l’avertissement révisé."
+  },
+  "disclaimerSection10": {
+    "title": "10) Contactez-nous",
+    "p1": "Si vous avez des questions concernant cet avertissement ou si vous souhaitez une clarification, vous pouvez nous contacter :",
+    "email": "ganakahub@gmail.com",
+    "website": "https://www.ganakahub.com",
+    "p2": "Pour toute préoccupation liée à l’exactitude ou à une mauvaise utilisation des informations, veuillez nous contacter avec les détails afin que nous puissions enquêter rapidement."
+  }
+}

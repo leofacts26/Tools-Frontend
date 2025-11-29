@@ -1,0 +1,128 @@
+{
+  "seo": {
+    "title": "Termes et Conditions | GanakaHub",
+    "description": "Lisez les Termes et Conditions de GanakaHub.com concernant l’utilisation des outils financiers, des outils étudiants et des outils utilitaires généraux.",
+    "slug": "/",
+    "image": "/ganaka-hero.png",
+    "isArticle": false,
+    "publishDate": "2025-01-01",
+    "modifiedDate": "2025-11-27",
+    "author": "GanakaHub"
+  },
+  "termsIntro": {
+    "title": "Termes et Conditions",
+    "lastUpdated": "01/11/2025",
+    "p1": "Bienvenue sur <strong>GanakaHub.com</strong> (« <em>GanakaHub</em> », « nous », « notre », « nos »). Ces Termes et Conditions (« <em>Termes</em> ») régissent votre accès et votre utilisation de notre site Web, de nos outils et de nos services. GanakaHub propose une grande variété de calculateurs et utilitaires en ligne, notamment :",
+    "list": [
+      "Outils financiers (calculateurs SIP, Lumpsum, EPF, NPS, Gratuity)",
+      "Outils pour étudiants (GPA, Calculateur de présence, Minuteur d’étude)",
+      "Outils utilitaires (convertisseurs, minuteurs, générateurs, et plus)"
+    ],
+    "p2": "En accédant ou en utilisant notre site Web, vous acceptez de respecter et d’être lié par ces Termes. Si vous n’êtes pas d’accord, vous devez cesser immédiatement d’utiliser GanakaHub."
+  },
+  "section1": {
+    "title": "1) Admissibilité et Acceptation",
+    "p1": "En utilisant GanakaHub, vous confirmez que vous avez au moins 18 ans ou que vous accédez au site sous la supervision d’un parent ou tuteur légal. Vous acceptez également de suivre toutes les lois et réglementations applicables. Si vous continuez à utiliser le site après les mises à jour de ces Termes, cela signifie que vous acceptez la version révisée."
+  },
+  "section2": {
+    "title": "2) Nature des Services",
+    "p1": "GanakaHub fournit des calculateurs automatisés et des outils numériques destinés à simplifier les calculs quotidiens, améliorer la commodité et aider les utilisateurs à comprendre des concepts financiers ou académiques. Les outils incluent des calculateurs SIP, des estimateurs EPF, des outils liés aux prêts, des calculateurs de GPA, des minuteurs, et plus encore.",
+    "p2": "Tous les résultats générés par GanakaHub sont fournis <strong>à titre informatif et éducatif uniquement</strong>. Les calculateurs fonctionnent selon des formules générales, des hypothèses et les valeurs fournies par l’utilisateur. Les résultats financiers ou académiques réels peuvent différer des valeurs affichées par nos outils."
+  },
+  "section3": {
+    "title": "3) Aucun Conseil Financier, Juridique ou Professionnel",
+    "p1": "GanakaHub ne fournit <strong>PAS</strong> de conseils financiers, fiscaux, juridiques, éducatifs, d’investissement ou professionnels. Les résultats affichés dans les calculateurs — tels que les rendements d’investissement, projections d’intérêts, soldes EPF, scores GPA ou pourcentages de présence — ne sont que des estimations.",
+    "p2": "Avant de prendre des décisions financières, académiques ou personnelles, vous devez toujours consulter un professionnel qualifié. GanakaHub n’est pas responsable des décisions basées sur les résultats fournis par nos outils."
+  },
+  "section4": {
+    "title": "4) Exactitude, Hypothèses et Mises à Jour",
+    "p1": "Bien que nous fassions des efforts raisonnables pour garantir l’exactitude, nous ne garantissons pas que nos outils, calculateurs ou contenus soient complets, exacts ou à jour. De nombreuses formules dépendent de :",
+    "list": [
+      "Changements des taux d’intérêt",
+      "Fluctuations du marché",
+      "Règles fiscales gouvernementales",
+      "Politiques propres aux institutions",
+      "Hypothèses d’arrondi"
+    ],
+    "p2": "Étant donné que ces facteurs changent fréquemment, vos résultats réels peuvent varier. Nous pouvons également mettre à jour ou modifier les outils à tout moment sans préavis."
+  },
+  "section5": {
+    "title": "5) Responsabilités de l’Utilisateur",
+    "p1": "Vous acceptez de :",
+    "list": [
+      "Utiliser les outils uniquement à des fins personnelles et non commerciales.",
+      "Ne pas copier, extraire ou rétro-concevoir nos outils ou notre code.",
+      "Ne pas abuser, pirater ou perturber le site Web de quelque manière que ce soit.",
+      "Veiller à ce que les données que vous saisissez soient exactes pour obtenir des résultats fiables."
+    ]
+  },
+  "section6": {
+    "title": "6) Comptes et Sécurité",
+    "p1": "Actuellement, GanakaHub ne nécessite pas de comptes utilisateur pour l’utilisation des outils. Si des fonctionnalités de compte sont ajoutées à l’avenir, vous serez responsable de protéger vos informations de connexion et de signaler tout accès non autorisé."
+  },
+  "section7": {
+    "title": "7) Propriété Intellectuelle",
+    "p1": "Tout le contenu de GanakaHub — y compris les logos, le design de l’interface, les textes, la logique des outils, les graphiques, les icônes, la mise en page et le code — est protégé par les lois sur le droit d’auteur et la propriété intellectuelle. Vous ne pouvez pas copier, modifier, republier, distribuer ou vendre une partie de notre site sans autorisation écrite."
+  },
+  "section8": {
+    "title": "8) Utilisation Acceptable et Comportements Interdits",
+    "p1": "Vous acceptez de NE PAS :",
+    "list": [
+      "Extraire ou collecter de grandes quantités de données depuis notre site.",
+      "Copier ou cloner un outil, une formule ou un calculateur.",
+      "Utiliser des robots ou systèmes automatisés pour surcharger le serveur.",
+      "Tenter de contourner la sécurité ou injecter du code malveillant.",
+      "Utiliser le service à des fins illégales ou frauduleuses."
+    ]
+  },
+  "section9": {
+    "title": "9) Liens de Tiers, Publicités et Affiliations",
+    "p1": "GanakaHub peut inclure des publicités, des liens d’affiliation ou des références à des sites Web tiers. Ces sites externes ne sont pas contrôlés par GanakaHub.",
+    "p2": "Nous ne sommes pas responsables de leur :",
+    "list": [
+      "Exactitude ou contenu",
+      "Pratiques de confidentialité",
+      "Politiques ou conditions",
+      "Sécurité"
+    ]
+  },
+  "section10": {
+    "title": "10) Confidentialité, Données et Cookies",
+    "p1": "Nous collectons uniquement des données analytiques anonymes et limitées (navigateur, appareil, temps passé, etc.) afin d’améliorer les performances du site. Nous ne collectons PAS d’informations personnelles sensibles telles que les coordonnées bancaires, les mots de passe ou les informations Aadhaar.",
+    "p2": "Notre <strong>Politique de Confidentialité</strong> explique comment nous utilisons les cookies et les outils d’analyse."
+  },
+  "section11": {
+    "title": "11) Disponibilité et Modifications des Services",
+    "p1": "Bien que nous nous efforcions d’assurer une disponibilité optimale, nous ne garantissons pas que GanakaHub sera toujours accessible ou exempt d’erreurs. Nous pouvons ajouter, mettre à jour, restreindre ou supprimer des outils à tout moment et sans préavis."
+  },
+  "section12": {
+    "title": "12) Avertissements",
+    "p1": "GanakaHub est fourni sur une base <strong>« tel quel » et « selon disponibilité »</strong>. Nous ne garantissons ni l’exactitude, ni la fiabilité, ni l’exhaustivité. L’utilisation de nos outils se fait à vos propres risques."
+  },
+  "section13": {
+    "title": "13) Limitation de Responsabilité",
+    "p1": "GanakaHub ne pourra être tenu responsable d’aucune perte financière, erreur de calcul, inexactitude des données, dommage commercial ou tout dommage indirect ou accessoire résultant de votre utilisation de nos outils."
+  },
+  "section14": {
+    "title": "14) Indemnisation",
+    "p1": "Vous acceptez d’indemniser GanakaHub contre toute réclamation résultant de votre utilisation du site web, de votre violation des présentes Conditions ou de l’atteinte aux droits d’un tiers."
+  },
+  "section15": {
+    "title": "15) Modifications des Conditions",
+    "p1": "Nous pouvons mettre à jour ces Conditions à tout moment. Votre utilisation continue du site après les modifications signifie que vous acceptez les Conditions mises à jour."
+  },
+  "section16": {
+    "title": "16) Droit Applicable et Résolution des Litiges",
+    "p1": "Ces Conditions sont régies par les lois de l’Inde. Tout litige sera traité par les tribunaux indiens. Avant d'engager une action en justice, nous vous demandons d’essayer d’abord de résoudre le litige de manière informelle en nous contactant."
+  },
+  "section17": {
+    "title": "17) Divisibilité et Accord Complet",
+    "p1": "Si une partie de ces Conditions est jugée invalide ou inapplicable, le reste restera en vigueur. Ces Conditions constituent l'intégralité de l'accord entre vous et GanakaHub."
+  },
+  "section18": {
+    "title": "18) Contactez-nous",
+    "p1": "Si vous avez des questions concernant ces Conditions, vous pouvez nous contacter :",
+    "email": "ganakahub@gmail.com",
+    "website": "https://www.ganakahub.com"
+  }
+}

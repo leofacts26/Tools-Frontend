@@ -1,0 +1,114 @@
+{
+  "seo": {
+    "title": "Sobre Nosotros | GanakaHub",
+    "description": "Conoce GanakaHub.com — nuestra misión, visión, historia y el propósito detrás de la creación de herramientas financieras, para estudiantes y utilidades.",
+    "slug": "/",
+    "image": "/ganaka-hero.png",
+    "isArticle": false,
+    "publishDate": "2025-01-01",
+    "modifiedDate": "2025-11-27",
+    "author": "GanakaHub"
+  },
+  "title": "Sobre Nosotros",
+  "lastUpdated": "01/11/2025",
+  "intro": {
+    "p1": "GanakaHub.com es una plataforma digital moderna diseñada para ayudar a las personas a tomar decisiones más inteligentes usando herramientas en línea rápidas, precisas y fáciles de usar. Ya sea planificación financiera, cálculos estudiantiles, utilidades diarias o conversiones matemáticas generales, nuestra misión es hacer que herramientas poderosas sean accesibles para todos — de forma gratuita.",
+    "p2": "En un mundo lleno de información compleja, GanakaHub fue creado con un objetivo: simplificar los cálculos y empoderar a los usuarios mediante claridad y precisión."
+  },
+  "mission": {
+    "title": "1) Nuestra Misión",
+    "p1": "Nuestra misión es construir un centro completo de calculadoras y herramientas digitales que:",
+    "list": [
+      "Ahorrar tiempo y esfuerzo",
+      "Eliminar conjeturas de decisiones financieras y académicas",
+      "Proporcionar calculadoras precisas, rápidas e intuitivas",
+      "Apoyar a estudiantes, profesionales y personas en el hogar por igual",
+      "Ofrecer herramientas confiables sin interfaces confusas o saturadas de anuncios"
+    ],
+    "p2": "Creemos que todos merecen herramientas simples para entender los números, planificar mejor y mantenerse organizados en la vida."
+  },
+  "story": {
+    "title": "2) Nuestra Historia",
+    "p1": "GanakaHub comenzó como una pequeña idea — crear una sola calculadora para uso personal. Pero a medida que amigos, estudiantes y profesionales comenzaron a pedir más herramientas, expandimos la plataforma completa ofreciendo calculadoras para:",
+    "list": [
+      "Finanzas e Inversiones (SIP, EPF, NPS, Gratificación, Lumpsum)",
+      "Vida Estudiantil (GPA, Asistencia, Temporizador de Estudio)",
+      "Utilidades Diarias (herramientas de porcentaje, convertidores, temporizadores)"
+    ],
+    "p2": "Lo que comenzó como un proyecto hobby se ha convertido en una plataforma utilizada diariamente por miles de personas. Y seguimos mejorando basándonos en los comentarios de los usuarios y las necesidades del mundo real."
+  },
+  "provide": {
+    "title": "3) Lo Que Ofrecemos",
+    "p1": "GanakaHub alberga una amplia variedad de calculadoras, cada una diseñada con precisión y facilidad de uso. Nuestras herramientas incluyen:",
+    "list": [
+      "<strong>Herramientas Financieras:</strong> Calculadora SIP, Calculadora Lumpsum, Calculadora EPF, Calculadora NPS, Calculadora de Gratificación, herramientas de préstamos y más.",
+      "<strong>Herramientas para Estudiantes:</strong> Calculadora GPA, Calculadora de Asistencia, Temporizador de Estudio, Convertidor de Calificaciones, Creador de Tarjetas Didácticas.",
+      "<strong>Herramientas de Utilidad:</strong> Convertidores, calculadoras de porcentaje, herramientas de tiempo, contadores digitales y utilidades diarias."
+    ],
+    "p2": "Cada herramienta está creada para ser intuitiva, precisa, amigable para principiantes y accesible en todos los dispositivos."
+  },
+  "whyBuilt": {
+    "title": "4) Por Qué Construimos GanakaHub",
+    "p1": "La mayoría de las calculadoras en línea están saturadas de anuncios, son difíciles de usar o sus explicaciones no son claras. Construimos GanakaHub para resolver estos problemas:",
+    "list": [
+      "Una interfaz limpia sin distracciones",
+      "Explicaciones claras de las fórmulas",
+      "Cálculos rápidos sin retrasos",
+      "Herramientas accesibles en cualquier lugar — móvil o escritorio",
+      "Un centro centralizado en lugar de múltiples sitios web dispersos"
+    ],
+    "p2": "Nuestra visión es convertirnos en el centro en línea más confiable para matemáticas, finanzas, utilidades y herramientas para estudiantes."
+  },
+  "values": {
+    "title": "5) Nuestros Valores Fundamentales",
+    "p1": "GanakaHub se basa en cinco valores fundamentales:",
+    "list": [
+      "<strong>Simplicidad:</strong> Mantener cada herramienta fácil de entender.",
+      "<strong>Precisión:</strong> Usar fórmulas y lógica confiables.",
+      "<strong>Transparencia:</strong> Mostrar supuestos siempre que sea posible.",
+      "<strong>Accesibilidad:</strong> Hacer que las herramientas sean gratuitas para todos.",
+      "<strong>Innovación:</strong> Mejorar constantemente y agregar nuevas funciones."
+    ]
+  },
+  "serve": {
+    "title": "6) A Quién Servimos",
+    "p1": "GanakaHub está diseñado para:",
+    "list": [
+      "Estudiantes que gestionan GPA o asistencia",
+      "Empleados que planifican PF, NPS o gratificación",
+      "Inversores que evalúan retornos de SIP o Lumpsum",
+      "Profesionales que necesitan cálculos rápidos",
+      "Cualquier persona que necesite herramientas de utilidad simples para la vida diaria"
+    ],
+    "p2": "Nuestro objetivo es apoyar a personas de todos los ámbitos de la vida — sin importar su edad, antecedentes o nivel educativo."
+  },
+  "commitment": {
+    "title": "7) Nuestro Compromiso con los Usuarios",
+    "p1": "Estamos comprometidos a mejorar continuamente su experiencia. Prometemos:",
+    "list": [
+      "Mantener el sitio web rápido, limpio y actualizado",
+      "Proporcionar fórmulas precisas con explicaciones lógicas",
+      "Agregar nuevas herramientas basadas en sugerencias de los usuarios",
+      "Respetar su privacidad (sin recopilación de datos sensibles)",
+      "Crear funciones que realmente hagan la vida más fácil"
+    ]
+  },
+  "future": {
+    "title": "8) Nuestros Planes Futuros",
+    "p1": "GanakaHub sigue creciendo rápidamente. En un futuro cercano, planeamos:",
+    "list": [
+      "Agregar herramientas financieras de planificación más avanzadas",
+      "Introducir paneles personalizados",
+      "Ampliar las herramientas de productividad para estudiantes",
+      "Lanzar más utilidades globales",
+      "Crear soporte multilingüe para India y el resto del mundo"
+    ]
+  },
+  "contact": {
+    "title": "9) Contáctenos",
+    "p1": "¡Nos encantaría saber de usted! Ya sea que tenga comentarios, sugerencias o preguntas:",
+    "email": "ganakahub@gmail.com",
+    "website": "https://www.ganakahub.com",
+    "p2": "Gracias por ser parte de GanakaHub. Estamos comprometidos a hacer que sus cálculos financieros, académicos y de la vida diaria sean más fáciles, una herramienta a la vez."
+  }
+}
