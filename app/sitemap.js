@@ -38,7 +38,7 @@ function extractSlugsFromDataFile() {
 const STATIC_PAGES = [
   "",
   "about-us",
-  "contact",
+  "contact-us",
   "privacy-policy",
   "terms-and-conditions",
   "disclaimer",
