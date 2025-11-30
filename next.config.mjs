@@ -9,6 +9,7 @@ const nextConfig = {
       bodySizeLimit: '2mb'
     }
   },
+  trailingSlash: false,
   transpilePackages: ['next-intl']
 };
 
