@@ -2,18 +2,26 @@
 
 import { useEffect, useMemo, useRef, useState } from "react";
 import { Box, Container, Card, CardContent, Typography, CardActionArea } from "@mui/material";
-import Grid from '@mui/material/Grid';import Image from "next/image";
+import Grid from '@mui/material/Grid'; import Image from "next/image";
 import Link from "next/link";
 
 // Data array
 const financeCardData = [
   {
-    title: "From ₹0 to ₹1 Crore: The Step-by-Step Roadmap No One Shows You",
+    title: "Become a Crorepati Before 35 — The Real Math",
+    description: "You work hard every single day. You earn, you pay bills, you save a little, and still — somehow...",
+    imageUrl: "/finance/1-crore-before-35-real-math.png",
+    altText: "1 crore before 35 thumbnail",
+    link: "/finance/1-crore-before-35-real-math",
+    category: "Finance",
+  },
+  {
+    title: "How Indians Waste ₹10,000 Every Month Without Realizing It",
     description:
-      "Let’s be honest — we’ve all seen those “get rich fast” videos that promise you’ll make crores overnight. But real life doesn’t work like that.",
-    imageUrl: "/finance/From-0-to-1-Crore-The-Step-by-Step-Roadmap-No-One-Shows-You.png",
-    altText: "From ₹0 to ₹1 Crore roadmap thumbnail",
-    link: "/finance/zero-to-one-crore-roadmap",
+      "Every month, your salary comes in… and vanishes. You check your bank balance after two weeks — and it’s already gone.",
+    imageUrl: "/finance/How-Indians-Waste-10,000-Every-Month-Without-Realizing-It.png",
+    altText: "How Indians Waste ₹10,000 thumbnail",
+    link: "/finance/how-indians-waste-10000-every-month",
     category: "Finance",
   },
   {
@@ -22,14 +30,6 @@ const financeCardData = [
     imageUrl: "/finance/Middle-Class-Trap-Finance.png",
     altText: "Middle-Class Trap thumbnail",
     link: "/finance/middle-income-trap",
-    category: "Finance",
-  },
-  {
-    title: "Become a Crorepati Before 35 — The Real Math",
-    description: "You work hard every single day. You earn, you pay bills, you save a little, and still — somehow...",
-    imageUrl: "/finance/1-crore-before-35-real-math.png",
-    altText: "1 crore before 35 thumbnail",
-    link: "/finance/1-crore-before-35-real-math",
     category: "Finance",
   },
   {
@@ -42,14 +42,14 @@ const financeCardData = [
     category: "Finance",
   },
   {
-    title: "How Indians Waste ₹10,000 Every Month Without Realizing It",
+    title: "From ₹0 to ₹1 Crore: The Step-by-Step Roadmap No One Shows You",
     description:
-      "Every month, your salary comes in… and vanishes. You check your bank balance after two weeks — and it’s already gone.",
-    imageUrl: "/finance/How-Indians-Waste-10,000-Every-Month-Without-Realizing-It.png",
-    altText: "How Indians Waste ₹10,000 thumbnail",
-    link: "/finance/how-indians-waste-10000-every-month",
+      "Let’s be honest — we’ve all seen those “get rich fast” videos that promise you’ll make crores overnight. But real life doesn’t work like that.",
+    imageUrl: "/finance/From-0-to-1-Crore-The-Step-by-Step-Roadmap-No-One-Shows-You.png",
+    altText: "From ₹0 to ₹1 Crore roadmap thumbnail",
+    link: "/finance/zero-to-one-crore-roadmap",
     category: "Finance",
-  },
+  }
 ];
 
 export default function FinanceCards({ excludeTitle }) {
