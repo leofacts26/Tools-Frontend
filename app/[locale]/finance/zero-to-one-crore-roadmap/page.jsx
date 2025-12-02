@@ -115,7 +115,7 @@ export default async function Page({ params }) {
         <header className="page-title-wrapper">
           <section className="page-title">
             <div style={{ textAlign: 'center', padding: '40px 0px 0px 0px' }}>
-              <h1 class="page-heading">
+              <h1 className="page-heading">
                 <strong>{ZtoC.site.heading.split("—")[0].trim()}</strong>
                 {" — "}{ZtoC.site.heading.split("—")[1].trim()}
               </h1>
