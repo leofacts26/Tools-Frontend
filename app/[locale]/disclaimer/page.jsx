@@ -5,48 +5,41 @@ import { createMetadata, SITE } from "@/lib/seo";
 
 export async function generateMetadata({ params }) {
   const resolvedParams = await params;
-  const locale = resolvedParams?.locale || "en";
+  const locale = resolvedParams?.locale || SITE.defaultLocale;
 
-  // load localized common defaults and the page content (sipcalc.json)
-  const common = (await import(`../../../messages/${locale}/common.json`).catch(() => ({}))).default || {};
-  const pageContent = (await import(`../../../messages/${locale}/pages/disclaimer.json`).catch(() => ({}))).default || {};
+  // Load localized JSON content
+  const common =
+    (await import(`../../../messages/${locale}/common.json`).catch(() => ({})))
+      .default || {};
 
-  // use the seo block from 1-crore-before-35-real-math.json (user provided)
+  const pageContent =
+    (await import(
+      `../../../messages/${locale}/pages/disclaimer.json`
+    ).catch(() => ({}))).default || {};
+
   const pageSeo = pageContent.seo || {};
 
-  // build opts for createMetadata (your lib/seo.js expects similar keys)
   const opts = {
-    title: pageSeo.title || pageContent.site?.heading || common.site?.name || SITE.name,
+    title:
+      pageSeo.title ||
+      pageContent.site?.heading ||
+      common.site?.name ||
+      SITE.name,
+
     description: pageSeo.description || common.site?.description || "",
-    slug: pageSeo.slug || "",
+
+    slug: pageSeo.slug || "disclaimer", // fallback slug
+
     image: pageSeo.image || common.site?.defaultImage || "",
+
     locale,
+
     isArticle: Boolean(pageSeo.isArticle),
-    publishDate: pageSeo.publishDate,
-    modifiedDate: pageSeo.modifiedDate,
+
     faqs: pageContent.faqs || [],
   };
 
-  // createMetadata returns { title, description, openGraph, alternates, twitter, jsonLd }
-  const meta = createMetadata(opts);
-
-  // Build alternates/hreflang entries for all locales configured in SITE
-  const alternates = { canonical: meta.openGraph.url, languages: {} };
-  for (const lng of SITE.locales) {
-    const other = (await import(`../../../messages/${lng}/pages/disclaimer.json`).catch(() => ({}))).default || {};
-    const otherSlug = other?.seo?.slug || opts.slug;
-    if (otherSlug) alternates.languages[lng] = `${SITE.url}/${lng}/${otherSlug}`;
-  }
-
-  // return the Next.js metadata object
-  return {
-    title: meta.title,
-    description: meta.description,
-    alternates,
-    openGraph: meta.openGraph,
-    twitter: meta.twitter,
-    robots: pageSeo?.noindex ? { index: false, follow: false } : undefined,
-  };
+  return createMetadata(opts);
 }
 
 
@@ -59,32 +52,11 @@ export default async function Page({ params }) {
   const pageContent = (await import(`../../../messages/${locale}/pages/disclaimer.json`).catch(() => ({}))).default || {};
 
 
-  // Build Article JSON-LD if isArticle true
-  const articleJsonLd = pageContent.seo?.isArticle
-    ? {
-      "@context": "https://schema.org",
-      "@type": "Article",
-      headline: pageContent.seo?.title || pageContent.site?.heading,
-      description: pageContent.seo?.description || "",
-      author: { "@type": "Person", name: pageContent.seo?.author || "Author" },
-      datePublished: pageContent.seo?.publishDate,
-      dateModified: pageContent.seo?.modifiedDate,
-      image: pageContent.seo?.image ? `${SITE.url}${pageContent.seo.image}` : undefined,
-      mainEntityOfPage: { "@type": "WebPage", "@id:": `${SITE.url}/${locale}/${pageContent.seo?.slug || ""}` },
-    }
-    : null;
-
-
 
   return (
     <>
 
-      {/* JSON-LD: Article */}
-      {
-        articleJsonLd && (
-          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />
-        )
-      }
+   
 
       
       <Box className="terms-wrapper">

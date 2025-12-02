@@ -10,51 +10,48 @@ import { createMetadata, SITE } from "@/lib/seo";
 import FinanceCards from '@/components/cards/FinanceCards';
 
 
+
 export async function generateMetadata({ params }) {
-  // ⛔ params is async — you MUST await it
   const resolvedParams = await params;
-  const locale = resolvedParams?.locale || "en";
+  const locale = resolvedParams?.locale || SITE.defaultLocale;
 
-  // load localized common defaults and the page content (sipcalc.json)
-  const common = (await import(`../../../../messages/${locale}/common.json`).catch(() => ({}))).default || {};
-  const blogData = (await import(`../../../../messages/${locale}/financeBlogs/what-the-rich-know-schools-never-taught`).catch(() => ({}))).default || {};
+  // Load localized JSON content
+  const common =
+    (await import(
+      `../../../../messages/${locale}/common.json`
+    ).catch(() => ({}))).default || {};
 
-  // use the seo block from what-the-rich-know-schools-never-taught (user provided)
-  const pageSeo = blogData.seo || {};
+  const pageContent =
+    (await import(
+      `../../../../messages/${locale}/financeBlogs/what-the-rich-know-schools-never-taught`
+    ).catch(() => ({}))).default || {};
 
-  // build opts for createMetadata (your lib/seo.js expects similar keys)
+  const pageSeo = pageContent.seo || {};
+
   const opts = {
-    title: pageSeo.title || blogData.site?.heading || common.site?.name || SITE.name,
-    description: pageSeo.description || common.site?.description || "",
-    slug: pageSeo.slug || "",
-    image: pageSeo.image || common.site?.defaultImage || "",
+    title:
+      pageSeo.title ||
+      pageContent.site?.heading ||
+      common.site?.name ||
+      SITE.name,
+
+    description:
+      pageSeo.description || common.site?.description || "",
+
+    slug:
+      pageSeo.slug || "what-the-rich-know-schools-never-taught", // fallback slug
+
+    image:
+      pageSeo.image || common.site?.defaultImage || "",
+
     locale,
+
     isArticle: Boolean(pageSeo.isArticle),
-    publishDate: pageSeo.publishDate,
-    modifiedDate: pageSeo.modifiedDate,
-    faqs: blogData.faqs || [],
+
+    faqs: pageContent.faqs || [],
   };
 
-  // createMetadata returns { title, description, openGraph, alternates, twitter, jsonLd }
-  const meta = createMetadata(opts);
-
-  // Build alternates/hreflang entries for all locales configured in SITE
-  const alternates = { canonical: meta.openGraph.url, languages: {} };
-  for (const lng of SITE.locales) {
-    const other = (await import(`../../../../messages/${lng}/financeBlogs/what-the-rich-know-schools-never-taught`).catch(() => ({}))).default || {};
-    const otherSlug = other?.seo?.slug || opts.slug;
-    if (otherSlug) alternates.languages[lng] = `${SITE.url}/${lng}/${otherSlug}`;
-  }
-
-  // return the Next.js metadata object
-  return {
-    title: meta.title,
-    description: meta.description,
-    alternates,
-    openGraph: meta.openGraph,
-    twitter: meta.twitter,
-    robots: pageSeo?.noindex ? { index: false, follow: false } : undefined,
-  };
+  return createMetadata(opts);
 }
 
 

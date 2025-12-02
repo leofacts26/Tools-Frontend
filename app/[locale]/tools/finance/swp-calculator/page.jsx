@@ -11,51 +11,43 @@ import Image from 'next/image';
 
 
 export async function generateMetadata({ params }) {
-  // ⛔ params is async — you MUST await it
   const resolvedParams = await params;
-  const locale = resolvedParams?.locale || "en";
+  const locale = resolvedParams?.locale || SITE.defaultLocale;
 
+  // Load localized JSON content
+  const common =
+    (await import(
+      `../../../../../messages/${locale}/common.json`
+    ).catch(() => ({}))).default || {};
 
-  // load localized common defaults and the page content (sipcalc.json)
-  const common = (await import(`../../../../../messages/${locale}/common.json`).catch(() => ({}))).default || {};
-  const swpcalc = (await import(`../../../../../messages/${locale}/swpcalc.json`).catch(() => ({}))).default || {};
+  const pageContent =
+    (await import(
+      `../../../../../messages/${locale}/swpcalc.json`
+    ).catch(() => ({}))).default || {};
 
-  // use the seo block from swpcalc.json (user provided)
-  const pageSeo = swpcalc.seo || {};
+  const pageSeo = pageContent.seo || {};
 
-  // build opts for createMetadata (your lib/seo.js expects similar keys)
   const opts = {
-    title: pageSeo.title || swpcalc.site?.heading || common.site?.name || SITE.name,
+    title:
+      pageSeo.title ||
+      pageContent.site?.heading ||
+      common.site?.name ||
+      SITE.name,
+
     description: pageSeo.description || common.site?.description || "",
-    slug: pageSeo.slug || "",
+
+    slug: pageSeo.slug || "swp-calculator", // fallback slug
+
     image: pageSeo.image || common.site?.defaultImage || "",
+
     locale,
+
     isArticle: Boolean(pageSeo.isArticle),
-    publishDate: pageSeo.publishDate,
-    modifiedDate: pageSeo.modifiedDate,
-    faqs: swpcalc.faqs || [],
+
+    faqs: pageContent.faqs || [],
   };
 
-  // createMetadata returns { title, description, openGraph, alternates, twitter, jsonLd }
-  const meta = createMetadata(opts);
-
-  // Build alternates/hreflang entries for all locales configured in SITE
-  const alternates = { canonical: meta.openGraph.url, languages: {} };
-  for (const lng of SITE.locales) {
-    const other = (await import(`../../../../../messages/${lng}/swpcalc.json`).catch(() => ({}))).default || {};
-    const otherSlug = other?.seo?.slug || opts.slug;
-    if (otherSlug) alternates.languages[lng] = `${SITE.url}/${lng}/${otherSlug}`;
-  }
-
-  // return the Next.js metadata object
-  return {
-    title: meta.title,
-    description: meta.description,
-    alternates,
-    openGraph: meta.openGraph,
-    twitter: meta.twitter,
-    robots: pageSeo?.noindex ? { index: false, follow: false } : undefined,
-  };
+  return createMetadata(opts);
 }
 
 

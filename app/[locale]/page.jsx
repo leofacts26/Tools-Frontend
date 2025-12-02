@@ -5,51 +5,35 @@ import { createMetadata, SITE } from "@/lib/seo";
 
 
 export async function generateMetadata({ params }) {
-  const resolvedParams = await params;
-  const locale = resolvedParams?.locale || "en";
+  const locale = (await params)?.locale || SITE.defaultLocale;
 
-  // load localized common defaults and the page content (sipcalc.json)
-  const common = (await import(`../../messages/${locale}/common.json`).catch(() => ({}))).default || {};
-  const homeData = (await import(`../../messages/${locale}/pages/home.json`).catch(() => ({}))).default || {};
+  // load localized JSON
+  const common =
+    (await import(`../../messages/${locale}/common.json`).catch(() => ({})))
+      .default || {};
+  const homeData =
+    (await import(`../../messages/${locale}/pages/home.json`).catch(() => ({})))
+      .default || {};
 
-  // use the seo block from 1-crore-before-35-real-math.json (user provided)
   const pageSeo = homeData.seo || {};
 
-  // build opts for createMetadata (your lib/seo.js expects similar keys)
   const opts = {
-    title: pageSeo.title || homeData.site?.heading || common.site?.name || SITE.name,
+    title:
+      pageSeo.title ||
+      homeData.site?.heading ||
+      common.site?.name ||
+      SITE.name,
     description: pageSeo.description || common.site?.description || "",
     slug: pageSeo.slug || "",
-    image: pageSeo.image || common.site?.defaultImage || "",
+    image: pageSeo.image || common.site?.defaultImage,
     locale,
     isArticle: Boolean(pageSeo.isArticle),
-    publishDate: pageSeo.publishDate,
-    modifiedDate: pageSeo.modifiedDate,
     faqs: homeData.faqs || [],
   };
 
-  // createMetadata returns { title, description, openGraph, alternates, twitter, jsonLd }
-  const meta = createMetadata(opts);
-
-  // Build alternates/hreflang entries for all locales configured in SITE
-  const alternates = { canonical: meta.openGraph.url, languages: {} };
-  for (const lng of SITE.locales) {
-    const other = (await import(`../../messages/${lng}/pages/home.json`).catch(() => ({}))).default || {};
-    const otherSlug = other?.seo?.slug || opts.slug;
-    if (otherSlug) alternates.languages[lng] = `${SITE.url}/${lng}/${otherSlug}`;
-  }
-
-  // return the Next.js metadata object
-  return {
-    title: meta.title,
-    description: meta.description,
-    alternates,
-    openGraph: meta.openGraph,
-    twitter: meta.twitter,
-    robots: pageSeo?.noindex ? { index: false, follow: false } : undefined,
-  };
+  // ⭐ RETURN DIRECTLY FROM createMetadata (DO NOT OVERRIDE)
+  return createMetadata(opts);
 }
-
 
 
 export default async function Page({ params }) {

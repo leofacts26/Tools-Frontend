@@ -1,7 +1,59 @@
 import FinanceCards from "@/components/cards/FinanceCards";
 import { Container, Stack } from "@mui/material";
+import { createMetadata, SITE } from "@/lib/seo";
 
-export default function Page() {
+
+
+export async function generateMetadata({ params }) {
+  const resolvedParams = await params;
+  const locale = resolvedParams?.locale || SITE.defaultLocale;
+
+  // Load localized JSON content
+  const common =
+    (await import(`../../../messages/${locale}/common.json`).catch(() => ({})))
+      .default || {};
+
+  const pageContent =
+    (await import(
+      `../../../messages/${locale}/pages/finance.json`
+    ).catch(() => ({}))).default || {};
+
+  const pageSeo = pageContent.seo || {};
+
+  const opts = {
+    title:
+      pageSeo.title ||
+      pageContent.site?.heading ||
+      common.site?.name ||
+      SITE.name,
+
+    description: pageSeo.description || common.site?.description || "",
+
+    slug: pageSeo.slug || "Finance", // fallback slug
+
+    image: pageSeo.image || common.site?.defaultImage || "",
+
+    locale,
+
+    isArticle: Boolean(pageSeo.isArticle),
+
+    faqs: pageContent.faqs || [],
+  };
+
+  return createMetadata(opts);
+}
+
+
+
+
+
+export default async function Page({ params }) {
+
+  const resolvedParams = await params;
+  const locale = resolvedParams?.locale || "en";
+  const pageContent = (await import(`../../../messages/${locale}/pages/finance.json`).catch(() => ({}))).default || {};
+
+
   return (
     <>
       <section className="blog-bg">
@@ -12,7 +64,8 @@ export default function Page() {
             alignItems="center"
             sx={{ height: "100%", width: "100%", textAlign: "center", mt: 4 }}
           >
-            <h1 className="mb-3">Finance Blogs</h1>
+            <h1 style={{marginBottom: "0px"}}>{pageContent.hero.title}</h1>
+            <p>{pageContent.hero.subtitle}</p>
             <svg
               width="115"
               height="18"
@@ -28,12 +81,12 @@ export default function Page() {
               ></path>
             </svg>
 
-            <p style={{ marginTop: "30px" }}>
+            {/* <p style={{ marginTop: "30px" }}>
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam
               pariatur dolores reprehenderit odio culpa officiis iure tenetur
               explicabo exercitationem cum! Impedit repellendus aperiam mollitia
               laudantium et tenetur iure nostrum cupiditate.
-            </p>
+            </p> */}
           </Stack>
         </Container>
       </section>

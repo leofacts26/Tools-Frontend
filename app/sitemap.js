@@ -1,13 +1,11 @@
+// app/sitemap.js
 import fs from "fs";
 import path from "path";
-import { LOCALES, DEFAULT_LOCALE } from "../lib/locales";
 
-// ✅ Your actual domain
-const SITE_URL = "https://www.ganakahub.com";  
+// Your actual domain
+const SITE_URL = "https://www.ganakahub.com";
 
-// ------------------------------
-// Extract all slugs from lib/data.js
-// ------------------------------
+// 1. Extract slugs from data.js
 function extractSlugsFromDataFile() {
   try {
     const dataPath = path.join(process.cwd(), "lib", "data.js");
@@ -21,7 +19,7 @@ function extractSlugsFromDataFile() {
       const raw = match[1].trim();
       if (!raw || raw === "/") continue;
 
-      const slug = raw.replace(/^\/+/, ""); // remove leading slash
+      const slug = raw.replace(/^\/+/, "");
       if (slug) slugSet.add(slug);
     }
 
@@ -32,9 +30,7 @@ function extractSlugsFromDataFile() {
   }
 }
 
-// ------------------------------
-// Static pages
-// ------------------------------
+// 2. Static English pages
 const STATIC_PAGES = [
   "",
   "about-us",
@@ -46,43 +42,19 @@ const STATIC_PAGES = [
   "tools",
 ];
 
-// ------------------------------
-// FINAL SITEMAP
-// ------------------------------
+// 3. Final Sitemap (ONLY ENGLISH)
 export default async function sitemap() {
   const slugs = extractSlugsFromDataFile();
   const pages = Array.from(new Set([...STATIC_PAGES, ...slugs]));
 
   const lastMod = new Date().toISOString();
 
-  const urls = [];
+  return pages.map((page) => {
+    const pathname = page === "" ? "/" : `/${page}`;
 
-  for (const locale of LOCALES) {
-    for (const page of pages) {
-      let pathname;
-
-      // Root route (homepage)
-      if (page === "") {
-        pathname = locale === DEFAULT_LOCALE ? "/" : `/${locale}/`;
-      } else {
-        pathname =
-          locale === DEFAULT_LOCALE
-            ? `/${page}`
-            : `/${locale}/${page}`;
-      }
-
-      // Ensure valid URL without double slashes
-      const finalURL =
-        pathname === "/"
-          ? SITE_URL
-          : `${SITE_URL}${pathname}`.replace(/([^:]\/)\/+/g, "$1");
-
-      urls.push({
-        url: finalURL,
-        lastModified: lastMod,
-      });
-    }
-  }
-
-  return urls;
+    return {
+      url: `${SITE_URL}${pathname}`,
+      lastModified: lastMod,
+    };
+  });
 }
