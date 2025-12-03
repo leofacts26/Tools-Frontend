@@ -2,7 +2,7 @@
   "seo": {
     "title": "स्टेप-अप SIP कैलकुलेटर — अपने बढ़ते SIP रिटर्न की गणना ऑनलाइन करें",
     "description": "हमारा फ्री स्टेप-अप SIP कैलकुलेटर (Step Up SIP Calculator) उपयोग करें और जानें कि हर साल SIP राशि बढ़ाने पर आपका म्यूचुअल फंड निवेश कितना बढ़ेगा। बस मासिक SIP राशि, वार्षिक स्टेप-अप प्रतिशत, निवेश अवधि और अपेक्षित रिटर्न दर दर्ज करें — और तुरंत देखें कुल कॉर्पस और ग्रोथ प्रोजेक्शन।",
-    "slug": "tools/finance/step-up-sip-calculator",
+    "slug": "hi/tools/finance/step-up-sip-calculator",
     "image": "/calculators/stepup-sip-Calculator.png",
     "isArticle": true,
     "publishDate": "2024-01-01",
