@@ -1,4 +1,14 @@
 {
+  "seo": {
+    "title": "Allgemeine Geschäftsbedingungen | GanakaHub",
+    "description": "Lesen Sie die Allgemeinen Geschäftsbedingungen für GanakaHub.com, einschließlich der Nutzung von Finanzen-Tools, Studenten-Tools und allgemeinen Utility-Tools.",
+    "slug": "/de/terms-and-conditions",
+    "image": "/ganaka-hero.png",
+    "isArticle": false,
+    "publishDate": "2025-01-01",
+    "modifiedDate": "2025-11-27",
+    "author": "GanakaHub"
+  },
   "termsIntro": {
     "title": "Allgemeine Geschäftsbedingungen",
     "lastUpdated": "01/11/2025",
