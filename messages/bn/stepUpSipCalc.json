@@ -2,7 +2,7 @@
   "seo": {
     "title": "স্টেপ আপ SIP ক্যালকুলেটর — বাড়তে থাকা SIP রিটার্ন অনলাইনে হিসাব করুন",
     "description": "আমাদের ফ্রি স্টেপ আপ SIP ক্যালকুলেটর ব্যবহার করে বার্ষিক SIP বাড়ালে আপনার মিউচুয়াল ফান্ডের সম্ভাব্য রিটার্ন কত হতে পারে তা হিসাব করুন। মাসিক SIP পরিমাণ, বার্ষিক স্টেপ-আপ শতাংশ, বিনিয়োগের মেয়াদ এবং প্রত্যাশিত রিটার্ন রেট প্রদান করে মোট কর্পাস এবং বৃদ্ধির প্রজেকশন তৎক্ষণাত দেখুন।",
-    "slug": "tools/finance/step-up-sip-calculator",
+    "slug": "te/tools/finance/step-up-sip-calculator",
     "image": "/calculators/stepup-sip-Calculator.png",
     "isArticle": true,
     "publishDate": "2024-01-01",
