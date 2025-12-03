@@ -2,7 +2,7 @@
   "seo": {
     "title": "حاسبة EPF — احسب رصيد صندوق الادخار التوظيفي ومبلغ التقاعد",
     "description": "استخدم حاسبة EPF المجانية لحساب رصيد صندوق الادخار التوظيفي (EPF)، ومساهمة صاحب العمل، وإجمالي مبلغ التقاعد. خطّط لادخار التقاعد بدقة باستخدام إسقاطات موثوقة.",
-    "slug": "tools/finance/epf-calculator-ar",
+    "slug": "ar/tools/finance/epf-calculator",
     "image": "/calculators/EPF-Calculator.png",
     "isArticle": true,
     "publishDate": "2024-01-01",

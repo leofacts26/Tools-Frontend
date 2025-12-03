@@ -1,4 +1,14 @@
 {
+  "seo": {
+    "title": "سياسة الخصوصية | GanakaHub",
+    "description": "سياسة الخصوصية لموقع GanakaHub.com التي توضح البيانات التي نجمعها وكيف نستخدمها وملفات تعريف الارتباط والتحليلات والأمان والخيارات المتاحة لك.",
+    "slug": "/ar/privacy-policy",
+    "image": "/ganaka-hero.png",
+    "isArticle": false,
+    "publishDate": "2025-01-01",
+    "modifiedDate": "2025-11-27",
+    "author": "GanakaHub"
+  },
   "privacyIntro": {
     "title": "سياسة الخصوصية",
     "lastUpdated": "01/11/2025",
