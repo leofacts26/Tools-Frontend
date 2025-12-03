@@ -2,7 +2,7 @@
   "seo": {
     "title": "NPS கால்குலேட்டர் — தேசிய ஓய்வூதிய திட்ட (NPS) வருமானம் & ஓய்வுக்கால நிதி கணக்கிடுங்கள்",
     "description": "எங்கள் இலவச NPS கால்குலேட்டரைப் பயன்படுத்தி, உங்கள் ஓய்வுக்கால நிதி (retirement corpus), மாத ஓய்வூதியம், மற்றும் NPS வழங்கும் வரி நன்மைகளை கணக்கிடுங்கள். நீண்டகால சேமிப்புகளை துல்லியமான, தரவின் அடிப்படையிலான கணிப்புகளுடன் திட்டமிடுங்கள்.",
-    "slug": "tools/finance/nps-calculator",
+    "slug": "ta/tools/finance/nps-calculator",
     "image": "/calculators/NPS-Calculator.png",
     "isArticle": true,
     "publishDate": "2024-01-01",

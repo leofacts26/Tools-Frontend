@@ -2,7 +2,7 @@
   "seo": {
     "title": "SWP கால்குலேட்டர் — இலவச ஆன்லைன் Systematic Withdrawal Plan கால்குலேட்டர்",
     "description": "SWP கால்குலேட்டரைப் பயன்படுத்தி மாதாந்திர பணப்பறிமாற்றங்களை கணக்கிடுங்கள். உங்கள் முதலீடு எவ்வளவு காலம் நீடிக்கும் என்பதை மதிப்பிடுங்கள், பல்வேறு நிலைகளை ஒப்பிடுங்கள், ஓய்வூதியம் அல்லது மாதாந்திர வருமானத்திற்கான சிறந்த திட்டமிடலை செய்யுங்கள்.",
-    "slug": "tools/finance/swp-calculator",
+    "slug": "ta/tools/finance/swp-calculator",
     "image": "/calculators/swp-calculator.png",
     "isArticle": true,
     "publishDate": "2024-01-01",
