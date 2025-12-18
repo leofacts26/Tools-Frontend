@@ -26,6 +26,7 @@ function collectRoutesFromApp() {
       }
     }
   }
+  
 
   if (!fs.existsSync(appPath)) return [];
   walk(appPath, '');
