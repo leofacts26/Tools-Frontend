@@ -83,6 +83,7 @@ const STATIC_PAGES = [
   "tools",
 ];
 
+
 // 2b. Discover pages under app/[locale] (English-only)
 function extractPagesFromAppLocale() {
   try {
