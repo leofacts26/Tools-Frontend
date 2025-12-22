@@ -1,50 +1,77 @@
 // app/sitemap.js
 import fs from "fs";
 import path from "path";
-import { LOCALES, DEFAULT_LOCALE } from "../lib/locales";
 
 // Your actual domain
 const SITE_URL = "https://www.ganakahub.com";
 
-// Helper: recursively collect routes under app/[locale]
-function collectRoutesFromApp() {
-  const appPath = path.join(process.cwd(), "app", "[locale]");
-  const routes = new Set();
+// 1. Extract slugs from data.js (preserve category context so tool slugs map to /tools/<category>/<slug>)
+function extractSlugsFromDataFile() {
+  try {
+    const dataPath = path.join(process.cwd(), "lib", "data.js");
+    const content = fs.readFileSync(dataPath, "utf8");
 
-  function walk(dir, prefix = "") {
-    const items = fs.readdirSync(dir, { withFileTypes: true });
+    const slugSet = new Set();
 
-    for (const it of items) {
-      const full = path.join(dir, it.name);
+    // Parse each category block to know which 'key' (category) the links belong to
+    // Use a more permissive regex (non-greedy) so the block is captured even if it contains inner braces/objects
+    const categoryRegex = /key:\s*["']([^"']+)["'][\s\S]*?links:\s*\[([\s\S]*?)\]/g;
+    let catMatch;
 
-      if (it.isDirectory()) {
-        // If directory contains a page.jsx (route segment)
-        const pageFile = path.join(full, "page.jsx");
-        const pageFileJs = path.join(full, "page.js");
-        const pageFileTsx = path.join(full, "page.tsx");
-        if (fs.existsSync(pageFile) || fs.existsSync(pageFileJs) || fs.existsSync(pageFileTsx)) {
-          const route = path.posix.join(prefix, it.name === "[locale]" ? "" : it.name);
-          // don't add when it's the [locale] root (prefix empty)
-          if (route && route !== "[locale]") {
-            routes.add(route.replace(/^\/+/, ""));
+    while ((catMatch = categoryRegex.exec(content)) !== null) {
+      const key = catMatch[1].trim(); // e.g., 'finance' or 'students'
+      const linksBlock = catMatch[2];
+
+      const urlRegex = /url:\s*["']([^"']+)["']/g;
+      let urlMatch;
+
+      while ((urlMatch = urlRegex.exec(linksBlock)) !== null) {
+        let raw = urlMatch[1].trim();
+        if (!raw || raw === "/") continue;
+
+        // Normalize by removing leading/trailing slashes and whitespace
+        raw = raw.replace(/^\/+|\/+$/g, "").trim();
+        if (!raw) continue;
+
+        if (raw.startsWith("/")) {
+          // Shouldn't reach here because we trimmed leading slash above, but keep for safety
+          slugSet.add(raw.replace(/^\/+/, ""));
+        } else {
+          // For known tool categories, prefix with tools/<category>
+          if (["finance", "students", "developer", "others"].includes(key)) {
+            slugSet.add(`tools/${key}/${raw}`);
+          } else {
+            // if it's not a tool category, keep the slug as-is
+            slugSet.add(raw);
           }
         }
-
-        // Recurse into the directory
-        const nextPrefix = path.posix.join(prefix, it.name === "[locale]" ? "" : it.name);
-        walk(full, nextPrefix === "[locale]" ? "" : nextPrefix);
       }
     }
+
+    // Fallback: capture any absolute url entries outside the category blocks
+    // NOTE: only include entries that start with '/' (absolute paths).
+    // This avoids adding relative tool slugs again without their category prefix.
+    const fallbackRegex = /url:\s*["']([^"']+)["']/g;
+    let fallbackMatch;
+    while ((fallbackMatch = fallbackRegex.exec(content)) !== null) {
+      const raw = fallbackMatch[1].trim();
+      if (!raw || raw === "/") continue;
+
+      // Only treat absolute paths here; relative paths are handled by category parsing above
+      if (!raw.startsWith("/")) continue;
+
+      const slug = raw.replace(/^\/+/, "");
+      slugSet.add(slug);
+    }
+
+    return Array.from(slugSet);
+  } catch (err) {
+    console.error("❌ Error reading data.js:", err);
+    return [];
   }
-
-  if (!fs.existsSync(appPath)) return [];
-  walk(appPath, "");
-
-  // Normalize routes (remove duplicates)
-  return Array.from(routes).map((r) => r.replace(/\\\\/g, "/")).filter(Boolean);
 }
 
-// Static top-level pages (kept intentionally minimal)
+// 2. Static English pages
 const STATIC_PAGES = [
   "",
   "about-us",
@@ -56,96 +83,56 @@ const STATIC_PAGES = [
   "tools",
 ];
 
-export default async function sitemap() {
-  // 1) Collect routes from the app folder (reflects actual pages)
-  const appRoutes = collectRoutesFromApp();
 
-  // 2) Combine with STATIC_PAGES
-  const pagesSet = new Set(STATIC_PAGES.map((p) => (p === "" ? "" : p)));
-  for (const r of appRoutes) pagesSet.add(r.replace(/^\/+/, ""));
-
-  // 3) Ensure common calculator routes that may be listed in data.js but not as standalone folders
-  // (these often live under /tools/finance or /tools/students). We'll include a safe mapping for common groups.
-  // Scan lib/data.js for 'sublinks' to add any missing calculator slugs.
+// 2b. Discover pages under app/[locale] (English-only)
+function extractPagesFromAppLocale() {
   try {
-    // import at runtime using a file:// URL (robust on Windows)
-    const { pathToFileURL } = await import("url");
-    const dataPath = path.join(process.cwd(), "lib", "data.js");
-    const data = await import(pathToFileURL(dataPath).href);
-    const sublinks = data.default || [];
+    const appLocalePath = path.join(process.cwd(), "app", "[locale]");
+    if (!fs.existsSync(appLocalePath)) return [];
 
-    for (const group of sublinks) {
-      const groupKey = group.key;
-      for (const link of group.links || []) {
-        const raw = (link.url || "").trim();
-        if (!raw || raw === "/") continue;
+    const pages = new Set();
 
-        // If link.url is absolute path like '/finance', keep as is
-        if (raw.startsWith("/")) {
-          pagesSet.add(raw.replace(/^\/+/, ""));
-          continue;
-        }
+    function walk(dir) {
+      const items = fs.readdirSync(dir, { withFileTypes: true });
+      // If this directory contains a page.(js|jsx|ts|tsx) file, add its relative path
+      const hasPage = items.some((it) => it.isFile() && /^(page)\.(js|jsx|ts|tsx)$/.test(it.name));
+      if (hasPage) {
+        // Normalize Windows backslashes to forward slashes
+        const rel = path.relative(appLocalePath, dir).replace(/\\/g, "/");
+        // root of [locale] -> '' (handled by STATIC_PAGES)
+        pages.add(rel || "");
+      }
 
-        // Map by group key (most groups live under tools)
-        let prefix = "";
-        if (groupKey === "finance") prefix = "tools/finance";
-        else if (groupKey === "students") prefix = "tools/students";
-        else if (groupKey) prefix = `tools/${groupKey}`;
-
-        const route = prefix ? `${prefix}/${raw}` : raw;
-        pagesSet.add(route.replace(/^\/+/, ""));
+      for (const it of items) {
+        if (it.isDirectory()) walk(path.join(dir, it.name));
       }
     }
-  } catch (err) {
-    // Not fatal — we will still generate sitemap from app routes and static pages
-    console.warn("Could not import lib/data.js for sitemap enrichment:", err.message || err);
-  }
 
-  const pages = Array.from(pagesSet).filter(Boolean);
+    walk(appLocalePath);
+
+    return Array.from(pages);
+  } catch (err) {
+    console.error("❌ Error reading app/[locale] pages:", err);
+    return [];
+  }
+}
+
+// 3. Final Sitemap (ONLY ENGLISH)
+export default async function sitemap() {
+  const slugs = extractSlugsFromDataFile();
+  const pageDirs = extractPagesFromAppLocale();
+
+  // Merge static pages, slugs from data.js, and page directories discovered in app/[locale]
+  const pages = Array.from(new Set([...STATIC_PAGES, ...slugs, ...pageDirs.filter(Boolean)]));
 
   const lastMod = new Date().toISOString();
 
-  const urls = [];
+  return pages.map((page) => {
+    const pathname = page === "" ? "/" : `/${page}`;
 
-  // Sitemap emission mode
-  // If true: emit only locale-prefixed URLs (e.g. /en/about-us, /hi/about-us)
-  // If false: emit unprefixed URLs for all pages (ONLY MAIN URLs) and no locale-prefixed variants
-  const PREFER_ONLY_LOCALE_PREFIX = false;
-
-  // If you want strictly only the main site URLs (no locale prefixes at all), set this to true.
-  // The user requested "only main urls" — we'll enable this mode by default below.
-  const EMIT_ONLY_UNPREFIXED = true;
-
-  for (const page of pages) {
-    // If the strict only-unprefixed mode is active, emit only the main URL
-    if (EMIT_ONLY_UNPREFIXED) {
-      const pathname = page === "" ? "/" : `/${page}`;
-      urls.push({ url: `${SITE_URL}${pathname}`, lastModified: lastMod });
-      continue;
-    }
-
-    // Otherwise, follow the prefix preference
-    if (!PREFER_ONLY_LOCALE_PREFIX) {
-      // Emit the unprefixed/default URL (e.g. /about-us or /)
-      const pathname = page === "" ? "/" : `/${page}`;
-      urls.push({ url: `${SITE_URL}${pathname}`, lastModified: lastMod });
-    }
-
-    // Add localized variants. If preferring only prefixes, include all locales; otherwise
-    // include only non-default locales to avoid duplicates with the unprefixed default.
-    for (const locale of LOCALES) {
-      if (!PREFER_ONLY_LOCALE_PREFIX && locale === DEFAULT_LOCALE) continue;
-
-      const localizedPath = page === "" ? `/${locale}` : `/${locale}/${page}`;
-      urls.push({ url: `${SITE_URL}${localizedPath}`, lastModified: lastMod });
-    }
-  }
-
-  // Deduplicate final URLs by url
-  const seen = new Set();
-  return urls.filter((u) => {
-    if (seen.has(u.url)) return false;
-    seen.add(u.url);
-    return true;
+    return {
+      url: `${SITE_URL}${pathname}`,
+      lastModified: lastMod,
+    };
   });
 }
