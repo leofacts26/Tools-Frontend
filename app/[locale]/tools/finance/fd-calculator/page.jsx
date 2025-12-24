@@ -62,8 +62,27 @@ export default async function Page({ params }) {
   const locale = resolvedParams.locale;
   const fdCalc = (await import(`../../../../../messages/${locale}/fdCalc.json`)).default;
 
+  // Helper to safely render either plain strings or objects like { title, description }
+  const renderMaybe = (item) => {
+    if (item == null) return null;
+    if (typeof item === "string" || typeof item === "number") return item;
+    if (typeof item === "object") {
+      // If it's an object with title/description, render them; otherwise stringify for safety
+      if (item.title || item.description) {
+        return (
+          <>
+            {item.title && <strong>{item.title}</strong>}
+            {item.description ? <> — {item.description}</> : null}
+          </>
+        );
+      }
+      return String(item);
+    }
+    return String(item);
+  };
 
-  // Build JSON-LD for FAQ (if any)
+
+  // Build JSON-LD for FAQ (if any) 
   const faqJsonLd =
     fdCalc.faqs && fdCalc.faqs.length
       ? {
@@ -175,9 +194,9 @@ export default async function Page({ params }) {
 
                 <ul className="ou-list">
                   {fdCalc.article.whyUseFDSection.points.map((point, idx) => (
-                    <li key={idx}>{point}</li>
+                    <li key={idx}>{renderMaybe(point)}</li>
                   ))}
-                </ul>
+                </ul> 
 
                 <p>{fdCalc.article.whyUseFDSection.conclusion}</p>
               </section>
@@ -202,9 +221,9 @@ export default async function Page({ params }) {
 
                 <ol className="ou-list">
                   {fdCalc.article.howItWorksFDSection.steps.map((step, idx) => (
-                    <li key={idx}>{step}</li>
+                    <li key={idx}>{renderMaybe(step)}</li>
                   ))}
-                </ol>
+                </ol> 
 
                 <p>{fdCalc.article.howItWorksFDSection.extra}</p>
               </section>
@@ -219,9 +238,9 @@ export default async function Page({ params }) {
 
                 <ol className="ou-list">
                   {fdCalc.article.fdInputChecklistSection.steps.map((step, idx) => (
-                    <li key={idx}>{step}</li>
+                    <li key={idx}>{renderMaybe(step)}</li>
                   ))}
-                </ol>
+                </ol> 
 
                 <p>{fdCalc.article.fdInputChecklistSection.conclusion}</p>
               </section>
@@ -286,9 +305,9 @@ export default async function Page({ params }) {
 
                 <ol className="ou-list">
                   {fdCalc.article.fdStepByStepSection.steps.map((step, index) => (
-                    <li key={index}>{step}</li>
+                    <li key={index}>{renderMaybe(step)}</li>
                   ))}
-                </ol>
+                </ol> 
 
                 <p>{fdCalc.article.fdStepByStepSection.conclusion}</p>
               </section>
@@ -378,9 +397,9 @@ export default async function Page({ params }) {
 
                 <ul className="ou-list">
                   {fdCalc.article.withdrawalsPrematureTaxSection.points.map((point, idx) => (
-                    <li key={idx}>{point}</li>
+                    <li key={idx}>{renderMaybe(point)}</li>
                   ))}
-                </ul>
+                </ul> 
 
                 <h4 className="finance-sub-heading-h4">{fdCalc.article.withdrawalsPrematureTaxSection.example.title}</h4>
                 <p>{fdCalc.article.withdrawalsPrematureTaxSection.example.body}</p>
@@ -400,9 +419,9 @@ export default async function Page({ params }) {
 
                 <ul className="ou-list">
                   {fdCalc.article.fdBenefitsSection.points.map((point, idx) => (
-                    <li key={idx}>{point}</li>
+                    <li key={idx}>{renderMaybe(point)}</li>
                   ))}
-                </ul>
+                </ul> 
 
                 <p>{fdCalc.article.fdBenefitsSection.conclusion}</p>
               </section>

@@ -30,6 +30,7 @@ export default function Navbar() {
   const t = useTranslations("common");
 
   const [langAnchorEl, setLangAnchorEl] = React.useState(null);
+  const [pendingLocale, setPendingLocale] = React.useState(null);
   const [mounted, setMounted] = React.useState(false);
   React.useEffect(() => setMounted(true), []);
 
@@ -45,16 +46,29 @@ export default function Navbar() {
     }
   }, [mounted]);
 
+  // Log after the active locale changes (post-navigation) so it's clear the server/client agree
+  React.useEffect(() => {
+    if (!mounted) return;
+    // eslint-disable-next-line no-console
+    console.log("Language changed (confirmed)", { currentLocale, pathname });
+  }, [currentLocale, pathname, mounted]);
+
   const handleLangChange = async (lng) => {
     handleLangClose();
 
     // Remove the current locale prefix (e.g., "/en/about" -> "/about")
-    const newPath = pathname.replace(/^\/[a-z]{2}(?=\/|$)/, "") || "/";
+    const rawNewPath = pathname.replace(/^\/[a-z]{2}(?=\/|$)/, "") || "/";
+    // avoid creating a trailing slash for root ("/"), so '/ar' instead of '/ar/'
+    const pathPart = rawNewPath === "/" ? "" : rawNewPath;
+    const target = lng === DEFAULT_LOCALE ? rawNewPath : `/${lng}${pathPart}`;
 
-    // debug info removed
+    // Optimistically reflect the selection in the UI while navigation happens
+    setPendingLocale(lng);
 
-    // If switching to the default locale, don't include the locale prefix in the URL.
-    // Otherwise include the locale segment (e.g., "/hi/about").
+    // Log the intended navigation
+    // eslint-disable-next-line no-console
+    console.log("Language menu item clicked", { lng, currentLocale, pathname, target });
+
     // Set middleware cookie so server routing respects user's choice
     try {
       try {
@@ -63,14 +77,18 @@ export default function Navbar() {
       } catch (e) {
         // ignore if cookies are not available (e.g., SSR)
       }
-      if (lng === DEFAULT_LOCALE) {
-        await router.push(newPath);
-      } else {
-        const target = `/${lng}${newPath}`;
-        await router.push(target);
+      await router.push(target);
+      // Refresh to ensure middleware picks up cookie on the server (best-effort)
+      try {
+        router.refresh();
+      } catch (e) {
+        // ignore
       }
     } catch (err) {
       // swallow navigation errors silently
+    } finally {
+      // Clear optimistic selection after navigation attempt
+      setPendingLocale(null);
     }
   };
 
@@ -157,14 +175,9 @@ export default function Navbar() {
                 {SUPPORTED_LOCALES.map((lng) => (
                   <MenuItem
                     key={lng}
-                    onClick={() => {
-                      // ensure we log the click even if navigation doesn't happen
-                      // eslint-disable-next-line no-console
-                      console.log("Language menu item clicked", { lng, currentLocale, pathname });
-                      handleLangChange(lng);
-                    }}
+                    onClick={() => handleLangChange(lng)}
                     data-lng={lng}
-                    selected={currentLocale === lng}
+                    selected={(pendingLocale ?? currentLocale) === lng}
                     dense
                   >
                     {lng.toUpperCase()}
